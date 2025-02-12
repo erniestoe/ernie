@@ -113,6 +113,10 @@
 				<?php include "modules/research-and-employ/research-and-employ.php"?>
 			</section>
 
+			<section class="layout-challenge-grid">
+				<?php include "modules/layout-challenge-grid/layout-challenge-grid.php"?>
+			</section>
+
 			<footer class="page-footer">
 				<inner-column>	
 						<a href="#top" class="calm-voice">Back to top</a>
