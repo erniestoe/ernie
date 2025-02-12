@@ -1,6 +1,9 @@
 <?php 
-$root = '/beta-two/ernie';
-define('BASE_URL', $root);
+if ($_SERVER['HTTP_HOST'] === 'ernie.test') {
+    define('BASE_URL', '');
+} else {
+    define('BASE_URL', '/beta-two/ernie');
+}
 ?>
 <!doctype html>
 
@@ -11,11 +14,9 @@ define('BASE_URL', $root);
 		<meta property="og:title" content="Ernies Index!">
 		<meta property="og:image" content="https://peprojects.dev/beta-two/ernie/assets/images/meta-image.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- LOCAL CSS -->
-		<link rel="stylesheet" href="../css/style.css">
 
 		<!-- Deployment CSS -->
-		<!-- <link rel="stylesheet" href="<?= BASE_URL ?>/css/style.css" > -->
+		<link rel="stylesheet" href="<?= BASE_URL ?>/css/style.css" >
 	</head>
 
 	<body>
