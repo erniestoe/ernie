@@ -1,0 +1,26 @@
+split-splash {
+	display: grid;
+
+	@media (min-width: 800px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.text-box {
+		background-color: #1c4ebc;
+		color: white;
+		min-height: 35vh;
+
+		h2 + h3 {
+			margin-top: 20px;
+		}
+
+		h3 {
+			max-width: 75%;
+			line-height: 1.2;
+
+			@media (min-width: 1200px) {
+				font-size: 3.25rem;
+			}
+		}
+	}
+}

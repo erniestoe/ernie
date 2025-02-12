@@ -1,0 +1,36 @@
+bio-card {
+	inner-column {
+		max-width: 1000px;
+	}
+
+	inner-column {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		.card-header {
+			h2 {
+				margin-bottom: 25px;
+			}
+
+			@media (min-width: 800px) {
+				display: flex;
+				justify-content: space-between;
+
+				h2 {
+					margin-bottom: 0;
+				}
+
+				picture {
+					flex-basis: 60%;
+				}
+			}
+		}
+
+		@media (min-width: 800px) {
+			p {
+				margin-left: 40%;
+			}
+		}
+	}
+}

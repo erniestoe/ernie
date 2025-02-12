@@ -1,0 +1,38 @@
+project-description {
+	display: block;
+	background-color: #fff;
+	container-type: inline-size;
+
+	inner-column {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		@container (min-width: 800px) {
+			flex-direction: row-reverse;
+			.title {
+				align-self: end;
+				flex-basis: 60%;
+			}
+
+			.details {
+				flex-basis: 40%;
+			}
+		}
+
+
+
+		.details {
+			li {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				background-color: #f3f3f3;
+				padding: 10px;
+			}
+
+			li + li {
+				margin-top: 5px;
+			}
+		}
+	}
+}

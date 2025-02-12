@@ -1,0 +1,97 @@
+trendy-splash {
+	display: block;
+	container-type: inline-size;
+
+	--dark-orange: #ff5d24;
+	--light-orange: #ffc694;
+	--purple: #dfabf9;
+	--blue: #abd7f9;
+
+	inner-column {
+		picture + div,
+		div + div {
+			margin-top: 25px;
+		}
+
+		h2 + p {
+			margin-top: 25px;
+		}
+
+		h2,
+		p {
+			line-height: 1.6;
+		}
+
+		.orange,
+		.purple,
+		.blue {
+			border-radius: 5px;
+		}
+
+		.orange {
+			background-color: var(--light-orange);
+		}
+
+		.purple {
+			background-color: var(--purple);
+		}
+
+		.blue {
+			background-color: var(--blue);
+		}
+
+		.dark-orange {
+			background-color: var(--dark-orange);
+			color: #fff;
+		}
+
+		@container (min-width: 800px) {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			gap: 50px;
+
+			picture {
+				flex-basis: 50%;
+			}
+
+			h2,
+			p {
+				max-width: 75%;
+			}
+		}
+
+		picture {
+			border-radius: 50%;
+			img {
+				border-radius: inherit;
+			}
+		}
+
+		.buttons {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			align-items:center;
+			margin-top: 25px;
+
+			.button {
+				min-width: 100%;
+				text-align: center;
+				padding: 15px;
+				border-radius: 10px;
+				text-decoration: none;
+				border: 2px solid var(--dark-orange);
+			}
+
+			@container (min-width: 600px) {
+				flex-direction: row;
+				gap: 25px;
+
+				.button {
+					min-width: 25%;
+				}
+			} 
+		}
+	}
+}

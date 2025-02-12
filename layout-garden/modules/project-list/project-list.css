@@ -1,0 +1,49 @@
+project-list {
+	display: block;
+	container-type: inline-size;
+
+	inner-column {
+		.year {
+			display: none;
+
+			@container (min-width: 800px) {
+				display: block;
+			}
+		}
+
+		h2,
+		li {
+			border: 2px solid black;
+			border-radius: 15px;
+		}
+
+		h2,
+		p {
+			padding: 8px;
+		}
+
+		ul {
+			margin-top: 2px;
+
+			li + li {
+				margin-top: 2px;
+			}
+
+			li {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+
+				@container (min-width: 800px) {
+					grid-template-columns: repeat(3, 1fr);
+				}
+
+				.type,
+				.year {
+					border-left: 2px solid black;
+				}
+			}
+		}
+
+		
+	}
+}

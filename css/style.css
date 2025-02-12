@@ -1,0 +1,118 @@
+@import "reset.css";
+@import "setup.css";
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #eee;
+	font-family: monospace;
+	overflow-x: hidden;
+}
+
+inner-column {
+	display: block;
+	max-width: 1200px;
+	margin-inline: auto;
+	padding: 20px;
+}
+
+h2 + p,
+h2 + ul {
+	margin-top: 15px;
+}
+
+
+masthead {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	.logo {
+		width: 25px;
+		height: 25px;
+		background-color: black;
+		border-radius: 50%;
+	}
+}
+
+
+.about {
+	max-width: 85%;
+
+	@media (min-width: 700px) {
+		max-width: 100%;
+	}
+}
+
+/*TYPOGRAPHY*/
+.quiet-voice {
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+.calm-voice {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.strong-voice {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.attention-voice {
+	font-size: 1.5rem;
+	weight: 700;
+}
+
+.loud-voice {
+	font-size: 2rem;
+	weight: 700;
+}
+
+
+.site-title {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.projects { 
+
+	.projects-list {
+		display: grid;
+		gap: 25px;
+
+		@media (min-width: 700px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.projects-list-item {
+			padding: 10px;
+			border: 2px solid black;
+			max-width: 60%;
+			height: 80px;
+
+			a {
+				text-decoration: none;
+				width: 100%;
+				height: 100%;
+			}
+
+			@media (min-width: 700px) {
+				text-align:center;
+			}
+		}
+
+		.projects-list-item:nth-of-type(even):hover {
+			background-color: #44A1A0;
+		}
+
+		.projects-list-item:nth-of-type(odd):hover {
+			background-color: #F8C630;
+		}
+	}
+ }

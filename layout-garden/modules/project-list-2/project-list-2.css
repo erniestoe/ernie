@@ -1,0 +1,34 @@
+project-list-2 {
+	display: block;
+	background-color: #e1d079;
+
+	inner-column {
+		display: grid;
+		gap: 25px;
+
+		.projects {
+			max-width: 80%;
+			a {
+				padding: 20px;
+				background-color: #ce774c;
+				border-radius: 50%;
+			}
+
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 1rem 0;
+			}
+
+			li + li {
+				border-top: 1px solid black;
+			}
+		}
+
+		footer {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
