@@ -11,7 +11,7 @@
 	<research-and-employ>
 		<div class="top">
 			<inner-column>
-				<!-- <h2 class="attention-voice white left">Opernhaus Zürich</h2> -->
+				<h2 class="attention-voice white left">Opernhaus Zürich</h2>
 
 				<h2 class="attention-voice right">Eröffnung der Spielzeit 1968/69</h2>
 			</inner-column>
