@@ -117,6 +117,12 @@
 				<?php include "modules/layout-challenge-grid/layout-challenge-grid.php"?>
 			</section>
 
+			<section class="footer-madness">
+				<inner-column>
+					<?php include "modules/footer-madness/footer-madness.php"?>
+				</inner-column>
+			</section>
+
 			<footer class="page-footer">
 				<inner-column>	
 						<a href="#top" class="calm-voice">Back to top</a>
