@@ -123,6 +123,10 @@
 				</inner-column>
 			</section>
 
+			<section class="opendot-footer">
+				<?php include "modules/opendot-footer/opendot-footer.php"?>
+			</section>
+
 			<footer class="page-footer">
 				<inner-column>	
 						<a href="#top" class="calm-voice">Back to top</a>

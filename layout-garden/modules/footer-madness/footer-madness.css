@@ -2,6 +2,14 @@ footer-madness {
 	display: grid;
 	gap: 25px;
 
+	h3 + ul {
+		margin-top: 20px;
+	}
+
+	li + li {
+		margin-top: 5px;
+	}
+
 	@media (width >= 500px) {
 		grid-template-columns: 1fr 1fr;
 	}
