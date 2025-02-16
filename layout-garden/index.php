@@ -127,6 +127,22 @@
 				<?php include "modules/opendot-footer/opendot-footer.php"?>
 			</section>
 
+			<section class="grid-layout-1">
+				<?php include "modules/grid-layout-1/grid-layout-1.php"?>
+			</section>
+
+			<section class="grid-layout-1">
+				<?php include "modules/grid-layout-2/grid-layout-2.php"?>
+			</section>
+
+			<section class="grid-layout-1">
+				<?php include "modules/grid-layout-3/grid-layout-3.php"?>
+			</section>
+
+			<section class="grid-layout-4">
+				<?php include "modules/grid-layout-4/grid-layout-4.php"?>
+			</section>
+
 			<footer class="page-footer">
 				<inner-column>	
 						<a href="#top" class="calm-voice">Back to top</a>
