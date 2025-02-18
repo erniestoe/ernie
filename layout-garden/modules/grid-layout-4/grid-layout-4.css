@@ -27,7 +27,7 @@ grid-layout-4 {
 
 			h2 {
 				position: sticky;
-				top: 0;
+				top: 10px;
 				left: 0;
 
 				@media (width <= 850px) {
