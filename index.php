@@ -1,37 +1,36 @@
 <?php include 'includes/header.php' ?>
 
-<section class="about">
-				<inner-column>
-					<h2 class="loud-voice">Is currently:</h2>
-					<p class="calm-voice">Studying Web Development and Design via <a href="https://perpetual.education/">Perpetual Education</a></p>
-				</inner-column>
-			</section>
 
-			<section class="projects">
-				<inner-column>
-					<h2 class="projects-title loud-voice">So far has built:</h2>
+	<section class="home-content">
+		<!-- <picture class="bannanas">
+			<img src="assets/images/secret.png">
+		</picture> -->
+		<inner-column>
+			<div class="about">
+				<p class="calm-voice">Winston-Salem-based designer & developer. Currently spending most of my time collecting layouts and adding them to my <a href="layout-garden/index.php">digital garden.</a> Open to opportunities in front-end development & digital design.</p>
 
-					<ul class="projects-list">
-						<li class="projects-list-item">
-							<a class="calm-voice" href="projects/multi-page-site-php-version/index.php">Multi Page Site - PHP version!</a>
-						</li>
-						<li class="projects-list-item">
-							<a class="calm-voice" href="projects/web-portal/index.html">Web Portal</a>
-						</li>
-						<li class="projects-list-item">
-							<a class="calm-voice" href="projects/adventure/index.html">Adventure</a>
-						</li>
-						<li class="projects-list-item">
-							<a class="calm-voice" href="projects/drama-club/index.html">Drama Club</a>
-						</li>
-						<li class="projects-list-item">
-							<a class="calm-voice" href="projects/responsive-layout-challenge-v2/index.html">Super Responsive Layout Challenge</a>
-						</li>
-						<li class="projects-list-item">
-							<a class="calm-voice" href="layout-garden/index.php">Layout Garden</a>
-						</li>
-					</ul>
-				</inner-column>
-			</section>
-			
+				<a class="calm-voice" href="mailto:ersaavedra.nc@gmail.com">Email</a>
+			</div>
+
+			<picture>
+				<img src="assets/images/secret.png">
+			</picture>
+
+			<div class="work">
+				<h2 class="attention-voice">Work</h2>
+				<ul>
+					<li>
+						<p class="calm-voice number">01</p>
+						<a class="calm-voice" href="projects/drama-club/index.html">Drama Club</a>
+					</li>
+
+					<li>
+						<p class="calm-voice number">02</p>
+						<a class="calm-voice" href="projects/web-portal/index.html">Web Portal</a>
+					</li>
+				</ul>
+			</div>
+		</inner-column>
+	</section>
+
 <?php include 'includes/footer.php' ?>

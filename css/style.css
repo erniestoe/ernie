@@ -6,9 +6,13 @@ html {
 }
 
 body {
-	background-color: #eee;
-	font-family: monospace;
+	background-color: #f5f5f5;
+	font-family: "Geist", sans-serif;
 	overflow-x: hidden;
+}
+
+.garden-module {
+	font-family: monospace;
 }
 
 inner-column {
@@ -34,15 +38,6 @@ masthead {
 		height: 25px;
 		background-color: black;
 		border-radius: 50%;
-	}
-}
-
-
-.about {
-	max-width: 85%;
-
-	@media (min-width: 700px) {
-		max-width: 100%;
 	}
 }
 
@@ -80,39 +75,84 @@ masthead {
 	text-transform: uppercase;
 }
 
-.projects { 
+.home-content {
 
-	.projects-list {
-		display: grid;
-		gap: 25px;
+	inner-column {
+		display:grid;
+		grid-template-columns: repeat(4, 1fr);
+/*		grid-template-rows: 300px 300px;*/
+		gap: 50px;
 
-		@media (min-width: 700px) {
-			grid-template-columns: 1fr 1fr;
-		}
+		picture {
+			grid-column: span 2;
+			grid-row: span 2;
+			object-fit: contain;
+			align-self: start;
 
-		.projects-list-item {
-			padding: 10px;
-			border: 2px solid black;
-			max-width: 60%;
-			height: 80px;
+			img {
+				object-fit: contain;
+			}
+
+			@media (width <= 740px) {
+				grid-row: 1;
+				grid-column: 3 / 5;
+			}
+
+			@media (width <= 570px) {
+				grid-column: 1 / 3;
+			}
+
+			@media (width <= 400px) {
+				grid-column: span 4;
+			}
+ 		}
+
+		.about {
+			grid-column: span 2;
+
+			p a {
+				background-color: #EEB761;
+				width: fit-content;
+				color: #000;
+			}
 
 			a {
-				text-decoration: none;
-				width: 100%;
-				height: 100%;
+				margin-top: 20px;
 			}
 
-			@media (min-width: 700px) {
-				text-align:center;
+			@media (width <= 570px) {
+				grid-row: 2;
+				grid-column: span 3;
+				margin-top: 50px;
+			}
+
+			@media (width <= 400px) {
+				grid-column: span 4;
+				margin-top: 0;
 			}
 		}
 
-		.projects-list-item:nth-of-type(even):hover {
-			background-color: #44A1A0;
+		.work {
+			grid-column: span 2;
+			align-self: start;
+
+			li {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			li + li {
+				padding-top: 10px;
+			}
+
+			@media (width <= 740px) {
+				grid-column: span 4;
+			}
+
+			@media (width <= 570px) {
+				grid-row: 3;
+			}
 		}
 
-		.projects-list-item:nth-of-type(odd):hover {
-			background-color: #F8C630;
-		}
 	}
- }
+}
