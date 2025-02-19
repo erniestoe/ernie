@@ -1,36 +1,37 @@
 <?php include 'includes/header.php' ?>
 
+<section class="home-content">
+	<inner-column>
+		<div class="about">
+			<p class="calm-voice">Winston-Salem-based designer & developer. Currently spending most of my time collecting layouts and adding them to my <a href="layout-garden/index.php">garden.</a> Open to opportunities in front-end development & design.</p>
 
-	<section class="home-content">
-		<!-- <picture class="bannanas">
+			<a class="calm-voice" href="mailto:ersaavedra.nc@gmail.com">Email</a>
+		</div>
+
+		<picture>
 			<img src="assets/images/secret.png">
-		</picture> -->
-		<inner-column>
-			<div class="about">
-				<p class="calm-voice">Winston-Salem-based designer & developer. Currently spending most of my time collecting layouts and adding them to my <a href="layout-garden/index.php">digital garden.</a> Open to opportunities in front-end development & digital design.</p>
+		</picture>
 
-				<a class="calm-voice" href="mailto:ersaavedra.nc@gmail.com">Email</a>
-			</div>
+		<div class="work">
+			<h2 class="attention-voice">Work</h2>
+			<ul>
+				<li>
+					<p class="calm-voice number">01</p>
+					<a class="calm-voice" href="projects/drama-club/index.html">Drama Club</a>
+				</li>
 
-			<picture>
-				<img src="assets/images/secret.png">
-			</picture>
+				<li>
+					<p class="calm-voice number">02</p>
+					<a class="calm-voice" href="projects/web-portal/index.html">Web Portal</a>
+				</li>
 
-			<div class="work">
-				<h2 class="attention-voice">Work</h2>
-				<ul>
-					<li>
-						<p class="calm-voice number">01</p>
-						<a class="calm-voice" href="projects/drama-club/index.html">Drama Club</a>
-					</li>
-
-					<li>
-						<p class="calm-voice number">02</p>
-						<a class="calm-voice" href="projects/web-portal/index.html">Web Portal</a>
-					</li>
-				</ul>
-			</div>
-		</inner-column>
-	</section>
+				<li>
+					<p class="calm-voice number">03</p>
+					<a class="calm-voice" href="projects/learning/index.php">Madlib</a>
+				</li>
+			</ul>
+		</div>
+	</inner-column>
+</section>
 
 <?php include 'includes/footer.php' ?>
