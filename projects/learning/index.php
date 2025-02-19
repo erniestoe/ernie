@@ -1,5 +1,11 @@
 <?php include '../../includes/header.php' ?>
 
+<header>
+	<inner-column>
+		<h1 class="loud-voice">PHP Excersises</h1>
+	</inner-column>
+</header>
+
 <section class="madlib">
 	<inner-column>
 		<h2 class="attention-voice">Madlib</h2>
@@ -13,34 +19,34 @@
 			$pluralNounTwo = "potatoes";
 			$adjectiveTwo = "spicy";
 
-			echo "<p class='calm-voice'>Today, every student has a computer small enough to fit into their " . $noun . ". You can solve any math problem by simply pushing the computer’s little " . $pluralNounOne . ".</p>"
+			echo "<p>Today, every student has a computer small enough to fit into their " . $noun . ". You can solve any math problem by simply pushing the computer’s little " . $pluralNounOne . ".</p>"
 		?>
-		<p class="calm-voice">Computers can add, multiply, divide, and <?php echo $verbOne ?>. They can also <?php echo $verbTwo ?> better than a human.</p>
+		<p>Computers can add, multiply, divide, and <?php echo $verbOne ?>. They can also <?php echo $verbTwo ?> better than a human.</p>
 
-		<p class="calm-voice">Some computers have their own <?=$bodyPart?> Other’s have a/an <?=$adjectiveOne?>  screen that shows all kinds of <?=$pluralNounTwo?>  and <?=$adjectiveTwo?>  figures.</p>
+		<p>Some computers have their own <?=$bodyPart?> Other’s have a/an <?=$adjectiveOne?>  screen that shows all kinds of <?=$pluralNounTwo?>  and <?=$adjectiveTwo?>  figures.</p>
 
-		<h2 class="attention-voice">Basic math</h2>
-		<p><?= 2 + 2;?></p>
+		<h3 class="strong-voice">Basic math</h2>
+		<p>2 + 2 = <?= 2 + 2;?></p>
 						
-		<h2 class="attention-voice">Basic math but with some variables</h2>
+		<h3 class="strong-voice">Basic math but with some variables</h2>
 		<?php
 			$numberOne = 2;
 			$numberTwo = 4;
 		?>
 
-		<p>Parenthesis: <?= ($numberOne + $numberTwo) * ($numberOne - $numberTwo); ?></p>
+		<p>Parenthesis: (<?=$numberOne?> + <?=$numberTwo?>) * (<?=$numberOne?> - <?=$numberTwo?>) = <?= ($numberOne + $numberTwo) * ($numberOne - $numberTwo); ?></p>
 
-		<p>Exponents: <?= $numberOne ** $numberTwo;?></p>
+		<p>Exponents: <?=$numberOne?> ^ <?=$numberTwo?> = <?= $numberOne ** $numberTwo;?></p>
 
-		<p>Multiplication: <?= $numberOne * $numberTwo;?></p>
+		<p>Multiplication: <?=$numberOne?> * <?=$numberTwo?> = <?= $numberOne * $numberTwo;?></p>
 
-		<p>Division: <?= $numberTwo / $numberOne;?></p>
+		<p>Division: <?=$numberTwo?> / <?=$numberOne?> = <?= $numberTwo / $numberOne;?></p>
 
-		<p>Addition: <?= $numberTwo + $numberOne;?></p>
+		<p>Addition: <?=$numberTwo?> + <?=$numberOne?> = <?= $numberTwo + $numberOne;?></p>
 
-		<p>Subtraction: <?= $numberTwo - $numberOne;?></p>
+		<p>Subtraction: <?=$numberTwo?> - <?=$numberOne?> = <?= $numberTwo - $numberOne;?></p>
 
-		<h2 class="attention-voice">First name and last name</h2>
+		<h3 class="strong-voice">First name and last name</h2>
 		<?php
 			$firstName = "Ernesto";
 			$lastName = "Rivera - Saavedra";
@@ -49,7 +55,7 @@
 
 		<p><?= $fullName;?></p>
 
-		<h2 class="attention-voice">First name and last name in a sentence with a number and a place</h2>
+		<h3 class="strong-voice">First name and last name in a sentence with a number and a place</h2>
 		<?php 
 			$firstName = "Ernesto";
 			$lastName = "Rivera - Saavedra";
@@ -58,7 +64,7 @@
 
 		<p>Hello, my name is <?= $firstName . " " . $lastName;?> and I have been alive for (almost) <?= $yearsAlive;?> years.</p>
 
-		<h2 class="attention-voice">You come up with an idea</h2>
+		<h3 class="strong-voice">You come up with an idea</h2>
 		<?php 
 			$animal = "dog";
 			$animalName = "Doc";
@@ -70,6 +76,81 @@
 		?>
 
 		<p>There once was a <?= $animal;?> whose name was <?= $animalName;?>. He travelled great distances on his <?=$vehicle;?>, and made his home in the <?= $location?>. One day <?= $animalName;?> met a giant sea serpent who threatened to eat him and his <?= $vehicle;?> whole. The sea serpent said to <?= $animalName;?>: "If you can tell me what <?= $numberOne;?> plus <?= $numberTwo;?> is, I will leave you and your <?= $vehicle;?> in peace." <?= $animalName;?> thought long and hard and finally he gave his answer to the sea serpent: "The answer is <?= $sum;?>, now leave me be." And so the sea serpent left <?= $animalName?> and his <?= $vehicle?> in peace for the rest of his days.</p>
+	</inner-column>
+</section>
+
+<section class="control-flow">
+	<inner-column>
+		<h2 class="attention-voice">Control flow</h2>
+
+		<h3 class="strong-voice">Gift</h2>
+		<?php
+			$gift = "BB gun";
+			$message = "";
+
+			if ($gift == "BB gun") {
+				$message = "You'll shoot your eye out!";
+			} else {
+				$message =  "Sounds like a nice gift";
+			}
+		?>
+
+		<p>You want a <?=$gift?>? <?=$message?></p>
+
+		<h3 class="strong-voice">Gas in the tank</h2>
+		<?php
+			$gasLeft = 25; //percent
+			$message = "";
+
+			if ($gasLeft > 50) {
+				$message = "We can make it!";
+			} elseif ($gasLeft < 10) {
+				$message = "Maybe we should get some gas...";
+			} else {
+				$message = "We're low - but it's fine! I think...";
+			}
+		?>
+
+		<p>I just checked how much gas we have left and, <?=$message?></p>
+	</inner-column>
+</section>
+
+<section class="arrays">
+	<inner-column>
+		<h2 class="attention-voice">Arrays</h2>
+		<h3 class="strong-voice">Product</h3>
+		<?php
+			$product = [
+				"product-title" => "Wireless Earbuds",
+				"color" => "Red",
+				"in-stock" => false,
+				"price" => 100
+			];
+
+			if ($product["in-stock"] == false) {
+				$stockMessage = "Out of Stock!";
+			} else {
+				$stockMessage = "In Stock!";
+			}
+		?>
+
+		<ul>
+			<li><?=$product["product-title"];?></li>
+			<li>$<?=$product["price"];?></li>
+			<li>Color: <?=$product["color"];?></li>
+			<li><?=$stockMessage;?></li>
+		</ul>
+
+		<!-- conditional rendering  https://softwareengineering.stackexchange.com/questions/357782/php-better-way-to-print-html-in-if-else-conditions-->
+		<?php if ($product["in-stock"]) { ?>
+			<ul>
+				<li><?=$product["product-title"];?></li>
+				<li>$<?=$product["price"];?></li>
+				<li>Color: <?=$product["color"];?></li>
+				<li><?=$stockMessage;?></li>
+			</ul>
+		<?php } ?>
+
 	</inner-column>
 </section>
 

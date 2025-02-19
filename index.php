@@ -3,7 +3,7 @@
 <section class="home-content">
 	<inner-column>
 		<div class="about">
-			<p class="calm-voice">Winston-Salem-based designer & developer. Currently spending most of my time collecting layouts and adding them to my <a href="layout-garden/index.php">garden.</a> Open to opportunities in front-end development & design.</p>
+			<p class="calm-voice">Winston-Salem-based designer & developer. Currently spending most of my time collecting layouts and adding them to my <a href="layout-garden/index.php">garden</a>. Open to opportunities in front-end development & design.</p>
 
 			<a class="calm-voice" href="mailto:ersaavedra.nc@gmail.com">Email</a>
 		</div>
@@ -27,8 +27,9 @@
 
 				<li>
 					<p class="calm-voice number">03</p>
-					<a class="calm-voice" href="projects/learning/index.php">Madlib</a>
+					<a class="calm-voice" href="projects/learning/index.php">PHP Excersises</a>
 				</li>
+
 			</ul>
 		</div>
 	</inner-column>
