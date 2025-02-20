@@ -55,6 +55,9 @@ grid-layout-4 {
 					}
 				}
 			}
+			.attention-voice {
+				font-weight: 500;
+			}
 		}
 	}
 

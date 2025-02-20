@@ -1,0 +1,39 @@
+<?php include '../../includes/header.php' ?>
+<header>
+	<inner-column>
+		<h1 class="loud-voice">Design Work</h1>
+	</inner-column>
+</header>
+
+<section class="gallery">
+	<inner-column>
+		<picture>
+			<img src="images/lines-day-3.png">
+		</picture>
+
+		<picture>
+			<img src="images/lines-day-8.png">
+		</picture>
+
+		<picture>
+			<img src="images/lines-day-9.png">
+		</picture>
+
+		<picture>
+			<img src="images/lines-day-14.png">
+		</picture>
+
+		<picture class="square">
+			<img src="images/dead.png">
+		</picture>
+
+		<picture class="square">
+			<img src="images/fresh.png">
+		</picture>
+
+		<picture class="portrait">
+			<img src="images/poster-1.png">
+		</picture>
+	</inner-column>
+</section>
+<?php include '../../includes/footer.php' ?>

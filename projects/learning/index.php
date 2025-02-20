@@ -154,4 +154,18 @@
 	</inner-column>
 </section>
 
+<section class="loops">
+	<inner-column>
+		<h2 class="attention-voice">Loops</h2>
+		<?php 
+
+			$numbers = [18, 28, 23, 512, 68, 55, 44, 20];
+
+			foreach ($numbers as $number) {
+				echo "<li>$number</li>";
+			}
+		?>
+	</inner-column>
+</section>
+
 <?php include '../../includes/footer.php' ?>

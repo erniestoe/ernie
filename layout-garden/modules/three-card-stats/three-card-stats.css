@@ -1,0 +1,43 @@
+three-card-stats {
+	display: block;
+	background-color: #fffdee;
+	header {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		text-align: center;
+
+		@media (width > 800px) {
+			text-align: left;
+			padding-block: 25px;
+		}
+	}
+
+	.stats {
+		@media (width > 800px) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.stat {
+			text-align: center;
+			background-color: #dfff7f;
+			padding-block: 25px;
+
+			@media (width > 800px) {
+				border-bottom: 1px solid black;
+			}
+
+			h3 + p {
+				margin-top: 15px;
+			}
+		}
+
+		div + div {
+			border-top: 1px solid black;
+
+			@media (width > 800px) {
+				border-top: none;
+				border-left: 1px solid black;
+			}
+		}
+	}
+}

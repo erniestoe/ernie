@@ -200,6 +200,9 @@ grid-layout-3 {
 					grid-row: 3;
 				}
 			}
+			.attention-voice {
+				font-weight: 500;
+			}
 		}
 	}
 }

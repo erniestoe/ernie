@@ -11,8 +11,8 @@
 		<grid-layout-1>
 			<inner-column>
 				<header class="titles">
-					<h2 class="loud-voice">How To Kill a City</h2>
-					<h2 class="loud-voice">Gentrification Explained</h2>
+					<h2 class="attention-voice">How To Kill a City</h2>
+					<h2 class="attention-voice">Gentrification Explained</h2>
 				</header>
 
 			

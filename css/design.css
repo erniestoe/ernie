@@ -1,0 +1,28 @@
+@import "style.css";
+
+.gallery {
+	inner-column {
+		display: grid;
+		gap: 25px;
+		grid-template-columns: 1fr 1fr;
+
+		@media (width > 800px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		picture {
+			grid-column: span 2;
+			object-fit: contain;
+			img {
+				object-fit: contain;
+			}
+		}
+
+		.square {
+			grid-column: span 1;
+		}
+
+		.portrait {
+			grid-row: span 2;
+		}
+	}
+}

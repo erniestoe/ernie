@@ -22,12 +22,18 @@
 
 				<li>
 					<p class="calm-voice number">02</p>
-					<a class="calm-voice" href="projects/web-portal/index.html">Web Portal</a>
+					<a class="calm-voice" href="projects/design/index.php">Design</a>
 				</li>
 
 				<li>
 					<p class="calm-voice number">03</p>
 					<a class="calm-voice" href="projects/learning/index.php">PHP Excersises</a>
+				</li>
+
+
+				<li>
+					<p class="calm-voice number">04</p>
+					<a class="calm-voice" href="projects/monster-adoption/index.php">Monster Adoption Agency</a>
 				</li>
 
 			</ul>

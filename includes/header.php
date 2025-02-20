@@ -1,23 +1,28 @@
 <?php 
+	// Checks to see if running on herd server
 	if ($_SERVER['HTTP_HOST'] === 'ernie.test') {
     	define('BASE_URL', '');
 	} else {
-    	define('BASE_URL', '/beta-two/ernie');
+    	define('BASE_URL', '/beta-two/ernie'); //url for deployment server
 	}
 
+	// Defining css files for each page
 	$cssPages = [
-		"home" => "/css/home.css",
-		"layout-garden" => "/css/layout-garden.css"
+		"home" => "/css/home.css", 
+		"layout-garden" => "/css/layout-garden.css",
+		"design" => "/css/design.css"
 	];
 
-	if ($_SERVER['SCRIPT_NAME'] === '/index.php') {
-    	$cssLink = BASE_URL . $cssPages["home"];
-	} elseif ($_SERVER['SCRIPT_NAME'] === '/layout-garden/index.php') {
-    	$cssLink = BASE_URL . $cssPages["layout-garden"];
-	} else {
-		$cssLink = BASE_URL . "/css/style.css";
+	// Finding the full path for the parent folder -- easier than typing it out?
+	$parentFolder = basename(dirname($_SERVER['SCRIPT_NAME']));
+
+	// || to check if its either ernie or blank
+	if ($parentFolder === 'ernie' || $parentFolder === '') {
+		$parentFolder = 'home'; 
 	}
 
+	// Used ?? here to make sure if not found on the left then go to the right (the default)
+	$cssLink = BASE_URL . ($cssPages[$parentFolder] ?? "/css/style.css");
 ?>
 <!doctype html>
 
@@ -40,7 +45,7 @@
 				<masthead>
 					<div class="logo"></div>
 
-					<h2 class="site-title">Ernesto Rivera-Saavedra</h2>
+					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Rivera-Saavedra</a></h2>
 				</masthead>
 			</inner-column>
 		</header>

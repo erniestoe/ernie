@@ -51,6 +51,10 @@ grid-layout-2 {
 				grid-column: 7;
 				justify-self: end;
 			}
+
+			.attention-voice {
+				font-weight: 500;
+			}
 		}
 
 		.subtitles {

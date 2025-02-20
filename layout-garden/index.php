@@ -2,7 +2,7 @@
 
 <header class="page-header" id="top">
 	<inner-column>
-		<h2 class="site-title">Layout Garden</h2>
+		<h1 class="loud-voice">Layout Garden</h1>
 	</inner-column>
 </header>
 
@@ -142,6 +142,10 @@
 
 <section class="grid-layout-4 garden-module">
 	<?php include "modules/grid-layout-4/grid-layout-4.php"?>
+</section>
+
+<section class="three-card-stats garden-module">
+	<?php include "modules/three-card-stats/three-card-stats.php"?>
 </section>
 
 <footer class="page-footer">

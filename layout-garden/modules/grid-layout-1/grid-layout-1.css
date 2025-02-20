@@ -49,6 +49,10 @@ grid-layout-1 {
 					margin-top: 25px;
 				}
 			}
+
+			.attention-voice {
+				font-weight: 500;
+			}
 		}
 
 		.subtitles {
