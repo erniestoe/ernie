@@ -168,4 +168,49 @@
 	</inner-column>
 </section>
 
+<section class="functions">
+	<inner-column>
+		<h2 class="attention-voice">Functions</h2>
+
+		<?php 
+			function monsterGenerator($name, $age, $favoriteFood) {
+				$monster = [
+					"name" => $name,
+					"age" => $age,
+					"favoriteFood" => $favoriteFood
+				];
+
+				return $monster;
+			}
+
+			$crunchy = monsterGenerator("Crunchy", 6, "pork rinds");
+			$crusty = monsterGenerator("Crusty", 62,"pork ears");
+
+			$monsters = [$crunchy, $crusty];
+		?>	
+
+		<?php foreach ($monsters as $m) { ?>
+			<li>
+				<monster-card>
+					<h2><?=$m["name"]?></h2>
+				</monster-card>
+			</li>
+		<?php }?>
+
+		<?php 
+			function makeTen() {
+				$ten = 5 + 5;
+				
+				echo "<h1>Hello, this is $ten</h1>";
+
+				$hundred = $ten * 10;
+
+				echo $hundred;	
+			}
+
+			makeTen();
+		?>
+	</inner-column>
+</section>
+
 <?php include '../../includes/footer.php' ?>
