@@ -30,10 +30,9 @@
 					<a class="calm-voice" href="projects/learning/index.php">PHP Excersises</a>
 				</li>
 
-
 				<li>
 					<p class="calm-voice number">04</p>
-					<a class="calm-voice" href="projects/monster-adoption/index.php">Monster Adoption Agency</a>
+					<a class="calm-voice" href="projects/resource-list/index.php">Resource List</a>
 				</li>
 
 			</ul>

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Monster Adoption Agency LLC</title>
+		<title>Layout garden module!</title>
+		<link rel="stylesheet" href="modules/monster-adoption/monster-adoption.css">
 </head>
 <body>
 	<?php
@@ -14,7 +12,7 @@
 				"favoriteFood" => "Cats",
 				"age" => 7,
 				"adopted" => true,
-				"portrait" => "assets/images/codey.jpg",
+				"portrait" => "modules/monster-adoption/assets/images/codey.jpg",
 				"color" => "red"
 			];
 
@@ -24,7 +22,7 @@
 				"favoriteFood" => "Chicken",
 				"age" => 12,
 				"adopted" => true,
-				"portrait" => "assets/images/fragoo.jpg",
+				"portrait" => "modules/monster-adoption/assets/images/fragoo.jpg",
 				"color" => "pink" 
 			];
 
@@ -34,7 +32,7 @@
 				"favoriteFood" => "Lima beans",
 				"age" => 4,
 				"adopted" => false,
-				"portrait" => "assets/images/limabean.jpg",
+				"portrait" => "modules/monster-adoption/assets/images/limabean.jpg",
 				"color" => "green"
 			];
 
@@ -44,7 +42,7 @@
 				"favoriteFood" => "Madeline cookies and tea",
 				"age" => 9,
 				"adopted" => false,
-				"portrait" => "assets/images/miss-reads-a-lot.jpg",
+				"portrait" => "modules/monster-adoption/assets/images/miss-reads-a-lot.jpg",
 				"color" => "blue"
 			];
 
@@ -54,7 +52,7 @@
 				"favoriteFood" => "Bananas",
 				"age" => 3,
 				"adopted" => true,
-				"portrait" => "assets/images/mr-banana.jpg",
+				"portrait" => "modules/monster-adoption/assets/images/mr-banana.jpg",
 				"color" => "yellow" 
 			];
 
@@ -64,7 +62,7 @@
 				"favoriteFood" => "Burritos",
 				"age" => 16,
 				"adopted" => true,
-				"portrait" => "assets/images/shadow.jpg",
+				"portrait" => "modules/monster-adoption/assets/images/shadow.jpg",
 				"color" => "purple"
 			];
 

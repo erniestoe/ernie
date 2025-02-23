@@ -34,6 +34,10 @@
 		<picture class="portrait">
 			<img src="images/poster-1.png">
 		</picture>
+		
+		<picture class="portrait">
+			<img src="images/circles.png">
+		</picture>
 	</inner-column>
 </section>
 <?php include '../../includes/footer.php' ?>
