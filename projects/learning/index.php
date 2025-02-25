@@ -210,6 +210,19 @@
 
 			makeTen();
 		?>
+
+		<?php 
+
+			function renderThings() {
+				$things = ["one", "two", "three"];
+
+				foreach ($things as $thing) { ?>
+					<p>Thing <?=$thing?></p>
+				<?php }
+			}
+
+			renderThings();
+		?>
 	</inner-column>
 </section>
 

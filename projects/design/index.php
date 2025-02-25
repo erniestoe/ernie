@@ -38,6 +38,22 @@
 		<picture class="portrait">
 			<img src="images/circles.png">
 		</picture>
+
+		<picture class="portrait">
+			<img src="images/squares.png">
+		</picture>
+
+		<picture class="portrait">
+			<img src="images/stacked-1.png">
+		</picture>
+
+		<picture class="portrait">
+			<img src="images/wine-poster-2.png">
+		</picture>
+
+		<picture>
+			<img src="images/graphic-day-2.png">
+		</picture>
 	</inner-column>
 </section>
 <?php include '../../includes/footer.php' ?>

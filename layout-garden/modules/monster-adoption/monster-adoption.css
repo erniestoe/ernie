@@ -1,4 +1,5 @@
 .monsters {
+		overflow-x: hidden;
 	inner-column {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -15,6 +16,7 @@ monster-card {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 50px;
 	position: relative;
+
 
 	@media (width < 600px) {
 		grid-template-columns: 1fr;

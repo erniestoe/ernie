@@ -3,15 +3,15 @@ grid-layout-4 {
 	background-color: #d6dcbf;
 	font-family: Helvetica, sans-serif;	
 	grid-template-columns: repeat(5, 1fr);
-	min-height: 100vh;
 
 	inner-column {
 		max-width: 1450px;
-		height: 100%;
+		height: auto;
 	}
 
 	.text {
 		position:relative;
+		height: auto;
 		grid-column: span 2;
 
 		@media (width <= 850px) {
@@ -24,16 +24,6 @@ grid-layout-4 {
 			justify-content: space-between;
 			gap: 25px;
 			height: 100%;
-
-			h2 {
-				position: sticky;
-				top: 10px;
-				left: 0;
-
-				@media (width <= 850px) {
-					position: relative;
-				}
-			}
 
 			.intro {
 				p {

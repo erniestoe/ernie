@@ -12,6 +12,7 @@
 			grid-row: span 2;
 			object-fit: contain;
 			align-self: start;
+/*			box-shadow: rgb(50, 48, 49) 0px 0px 0px 3px, rgb(255, 200, 87) 0px 0px 0px 6px, rgb(219, 58, 52) 0px 0px 0px 9px, rgb(8, 76, 97) 0px 0px 0px 12px, rgb(23, 126, 137) 0px 0px 0px 15px;*/
 			
 
 			img {
