@@ -32,7 +32,7 @@
 		</picture>
 
 		<picture class="portrait">
-			<img src="images/poster-1.png">
+			<img src="images/summerlark-poster.png">
 		</picture>
 		
 		<picture class="portrait">
@@ -53,6 +53,14 @@
 
 		<picture>
 			<img src="images/graphic-day-2.png">
+		</picture>
+
+		<picture>
+			<img src="images/graphic-day-13.png">
+		</picture>
+
+		<picture class="portrait">
+			<img src="images/soul-sessions.png">
 		</picture>
 	</inner-column>
 </section>

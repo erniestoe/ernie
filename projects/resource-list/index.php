@@ -7,22 +7,18 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<?php 
-		include "includes/functions.php";
-	?>
 	<header>
 		<inner-column id="top">
 			<h1 class="logo loud-voice">Forsyth Community Resources</h1>
+			<a href="#top" aria-label="Go back to the beginning" class="top-button">Back to top</a>
 		</inner-column>
 	</header>
 
 	<main>
-		<?php renderData(); ?>
+		<?php
+			include "includes/functions.php";
+		 	renderData(); 
+		?>
 	</main>
-	<footer>
-		<inner-column>
-			<a href="#top">Back to top</a>
-		</inner-column>
-	</footer>
 </body>
 </html>

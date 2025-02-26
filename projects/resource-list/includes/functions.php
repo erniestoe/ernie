@@ -16,24 +16,24 @@
 					<ul>
 						<?php foreach($resources[$count] as $resource) {?>
 							<li>
-								<h3 class="strong-voice resource-detail" aria-label="Resource Name: <?=$resource["title"]?>"><?=$resource["title"]?></h3>
+								<h3 class="strong-voice resource-detail"><?=$resource["title"]?></h3>
 
-								<p class="resource-detail" aria-label="Resource Information">
+								<p class="resource-detail">
 									<span class="bold">Information:</span>
 									<?=$resource["description"];?>	
 								</p>
 
 								<?php if ($resource["phone"] != "") { ?>
-									<p class="resource-detail" aria-label="Resource Phone Number">
+									<p class="resource-detail">
 										<span class="bold">Phone:</span>
 										<?=$resource["phone"]?>
 									</p>
 								<?php } else { ?>
-									<span aria-label="This Resource does not have a Phone Number listed"></span>
+									<p aria-label="This Resource does not have a Phone Number listed"></p>
 								<?php	}?>
 
 								<?php if ($resource["address"] != "") { ?>
-									<p class="resource-detail" aria-label="Resource Address">
+									<p class="resource-detail">
 										<span class="bold">Address:</span>
 										<?=$resource["address"]?>
 									</p>
@@ -44,7 +44,7 @@
 								<?php if ($resource["website"] != "") { ?>
 									<a class="resource-detail" href="<?=$resource["website"]?>" aria-label="Category: <?=$sectionTitle?> Visit the <?=$resource["title"]?> website">Website</a>
 								<?php } else {?>
-									<span aria-label="This Resource does not have a website listed"></span>
+									<p aria-label="This Resource does not have a website listed"></p>
 								<?php } ?>
 
 							</li>
