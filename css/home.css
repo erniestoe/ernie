@@ -1,18 +1,22 @@
 @import "style.css";
 
 .home-content {
-
 	inner-column {
 		display:grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 50px;
 
+		@media (width >= 500px) {
+			margin-top: 100px;
+		}
+		
+
 		picture {
-			grid-column: span 2;
+			grid-column: 3;
 			grid-row: span 2;
 			object-fit: contain;
 			align-self: start;
-/*			box-shadow: rgb(50, 48, 49) 0px 0px 0px 3px, rgb(255, 200, 87) 0px 0px 0px 6px, rgb(219, 58, 52) 0px 0px 0px 9px, rgb(8, 76, 97) 0px 0px 0px 12px, rgb(23, 126, 137) 0px 0px 0px 15px;*/
+	
 			
 
 			img {
@@ -30,8 +34,6 @@
  		}
 
 		.about {
-			grid-column: span 2;
-
 			p {
 				max-width: 90%;
 			}
@@ -46,6 +48,10 @@
 				margin-top: 20px;
 			}
 
+			@media (width <= 800px) {
+				grid-column: span 2;
+			}
+
 			@media (width <= 500px) {
 				grid-row: 2;
 				grid-column: span 4;
@@ -54,7 +60,6 @@
 		}
 
 		.work {
-			grid-column: span 2;
 			align-self: end;
 
 			li {

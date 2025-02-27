@@ -62,6 +62,18 @@
 		<picture class="portrait">
 			<img src="images/soul-sessions.png">
 		</picture>
+
+		<picture class="portrait">
+			<img src="images/leigh-poster.png">
+		</picture>
+
+		<picture>
+			<img src="images/lines-day-21.png">
+		</picture>
+
+		<picture class="portrait">
+			<img src="images/macbeth-poster.png">
+		</picture>
 	</inner-column>
 </section>
 <?php include '../../includes/footer.php' ?>
