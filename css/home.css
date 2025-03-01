@@ -34,8 +34,9 @@
  		}
 
 		.about {
+			grid-column: span 2;
 			p {
-				max-width: 90%;
+				max-width: 50%;
 			}
 
 			p a {
@@ -44,12 +45,19 @@
 				color: #000;
 			}
 
+			.links {
+				display: flex;
+				gap: 20px;
+			}
+
 			a {
 				margin-top: 20px;
 			}
 
 			@media (width <= 800px) {
-				grid-column: span 2;
+				p {
+					max-width: 100%;
+				}	
 			}
 
 			@media (width <= 500px) {

@@ -5,7 +5,11 @@
 		<div class="about">
 			<p class="calm-voice">Winston-Salem-based designer & developer. Currently spending most of my time collecting layouts and adding them to my <a href="layout-garden/index.php">garden</a>. Open to opportunities in front-end development & design.</p>
 
-			<a class="calm-voice" href="mailto:ersaavedra.nc@gmail.com">Email</a>
+			<div class="links">
+				<a class="calm-voice" href="mailto:ersaavedra.nc@gmail.com">Email</a>
+				<a class="calm-voice" href="#">Github</a>
+				<a class="calm-voice" href="#">Resume</a>
+			</div>
 		</div>
 
 		<picture>
@@ -34,8 +38,11 @@
 					<p class="calm-voice number">04</p>
 					<a class="calm-voice" href="projects/resource-list/index.php">Resource List</a>
 				</li>
-				
 
+				<li>
+					<p class="calm-voice number">05</p>
+					<a class="calm-voice" href="projects/audiophile/index.php">audiophile</a>
+				</li>
 			</ul>
 		</div>
 	</inner-column>
