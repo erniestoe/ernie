@@ -29,6 +29,7 @@ inner-column {
 p {
 	font-size: 1rem;
 	font-weight: 400;
+	color: #333;
 }
 
 .strong-voice {
@@ -179,6 +180,7 @@ header {
 		li { 
 			.bold {
 				font-weight: 700;
+				color: #000;
 			}
 
 			border-bottom: 1px solid black;

@@ -74,6 +74,10 @@
 		<picture class="portrait">
 			<img src="images/macbeth-poster.png">
 		</picture>
+
+		<picture class="portrait">
+			<img src="images/brown-mountain-poster.png">
+		</picture>
 	</inner-column>
 </section>
 <?php include '../../includes/footer.php' ?>
