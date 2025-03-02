@@ -113,13 +113,49 @@ function renderProductData() {
 		echo "<p>Product not found.</p>";
 		return;
 	} ?>
-		<h1 class="loud-voice"><?=$selectedProduct["productName"];?></h1>
-    <p><?=$selectedProduct["description"];?></p>
-    <picture>
-        <img src="<?=$selectedProduct["image"];?>" alt="<?=$selectedProduct["productName"];?>">
-    </picture>
-    <p>Price: $<?php getPrice(); ?></p>
-    <button class="add-to-cart-button">Add to Cart</button>
+	<product>
+		<picture>
+       		<img src="<?=$selectedProduct["image"];?>" alt="<?=$selectedProduct["productName"];?>">
+    	</picture>
+
+    	<div class="product-text">
+    		<div class="product-title">
+    		<h1 class="loud-voice"><?=$selectedProduct["productName"];?></h1>
+    		<p class="quiet-voice"><?=$selectedProduct["tagline"];?></p>
+    	</div>
+
+    	<p class="product-description"><?=$selectedProduct["description"];?></p>
+
+    	<div class="product-features">
+    		<h2 class="attention-voice">Features</h2>
+
+    		<ul>
+    			<?php foreach($selectedProduct["featureTitle"] as $index => $title) {?>
+    				<li>
+    					<p>
+    						<span class="strong-voice"><?=$title?></span> -
+    						<?=$selectedProduct["featureText"][$index];?>
+    					</p>
+    				</li>
+    			<?php } ?>
+    		</ul>
+    	</div>
+    	<?php if ($selectedProduct["onSale"]) { ?>
+    	<div class="original-price">
+    		<div class="sale-sticker"></div>
+			<h3 class="strong-voice">Now on sale! (Was <?=$selectedProduct["price"]?>)</h3>
+    	</div>
+		<?php	}?>
+
+    	<button class="add-to-cart-button">
+			Add to cart <span class="price">$<?php getPrice(); ?></span>
+
+			<?php if ($selectedProduct["onSale"]) { ?>
+						<div class="sale-sticker"></div>
+			<?php	}?>
+		</button>
+    	</div>
+	</product>
 	<?php 
 }
 
