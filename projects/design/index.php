@@ -72,7 +72,7 @@
 		</picture>
 
 		<picture class="portrait">
-			<img src="images/macbeth-poster.png">
+			<img src="images/wmacbeth-poster.png">
 		</picture>
 
 		<picture class="portrait">
