@@ -82,6 +82,14 @@
 		<picture class="portrait">
 			<img src="images/no-idea.png">
 		</picture>
+
+		<picture class="portrait">
+			<img src="images/no-idea-2.png">
+		</picture>
+
+		<picture>
+			<img src="images/lines-day-26.png">
+		</picture>
 	</inner-column>
 </section>
 <?php include '../../includes/footer.php' ?>
