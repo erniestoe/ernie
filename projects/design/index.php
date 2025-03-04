@@ -90,6 +90,20 @@
 		<picture>
 			<img src="images/lines-day-26.png">
 		</picture>
+
+		<picture>
+			<img src="images/lines-day-23.png">
+		</picture>
+
+		<picture class="portrait">
+			<img src="images/spiral.png">
+		</picture>
+
+		<picture class="portrait">
+			<img src="images/madness.png">
+		</picture>
+
+		
 	</inner-column>
 </section>
 <?php include '../../includes/footer.php' ?>
