@@ -25,33 +25,38 @@ function getPrice() {
 }
 
 function renderFilters() {
-	global $productsData;
 	global $currentFilter;
 	global $productCategories;
 
-	// Render an "all" filter
 	?> 
-	<li>
-		<a href="?filter=all" class="quiet-voice <?php 
+	<form method="GET">
+		<label class="strong-voice" for="filter">Filter</label>
+		<select name="filter" id="filter">
+
+			<option value="all" <?php
 			if ($currentFilter === 'all') {
-				echo 'active';
+				echo 'selected';
 			} else {
 				echo '';
 			}
-			?>">
-				Show All
-			</a>
-		</li>
-	<?php 
+			?>>Show All</option>
 
-	if($currentFilter === 'all') {
-		foreach($productCategories as $category) {
-			$filterParameter = urlencode($category); ?>
-			<li>
-				<a href="?filter=<?=$filterParameter?>" class="quiet-voice"><?=$category?></a>
-			</li>
-		<?php }
-	}
+			<?php foreach ($productCategories as $category) {?>
+				<option value="<?=$category?>" <?php 
+					if ($currentFilter === $category) {
+						echo 'selected';
+					}else {
+						echo '';
+					}
+					?>>
+					<?=ucfirst($category)?>	
+				</option>
+			<?php }?>
+		</select>
+
+		<button type="submit">Apply Filter</button>
+	</form>
+	<?php 
 }
 
 // Render data for shop page

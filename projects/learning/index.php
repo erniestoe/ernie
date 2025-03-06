@@ -226,4 +226,72 @@
 	</inner-column>
 </section>
 
+<section class="forms">
+	<style>
+		form {
+			max-width: 400px;
+			margin-top: 20px;
+
+			p + .field {
+				margin-top: 15px;
+			}
+		}
+
+		.field {
+			display: flex;
+			flex-direction: column;
+
+			label + input {
+				margin-top: 10px;
+			}
+		}
+
+		.field label {
+			font-size: 14px;
+		}
+
+		button[type='submit'], .field + .field {
+			margin-top: 10px;
+		}
+
+		form + p {
+			margin-top: 10px;
+		}
+
+		.feedback {
+			color: green;
+		}
+
+		.error {
+			color: red;
+		}
+	</style>
+
+
+	<inner-column>
+		<h2 class="attention-voice">Forms</h2>
+
+		<form method="POST">
+			<p>Saying Hello</p>
+
+			<div class="field">
+				<label>What is your name?</label>
+				<input type="text" name="name">
+			</div>
+
+			<button type="submit" name="submitted">Get your greeting</button>
+		</form>
+
+		<?php 
+			if (isset($_POST["submitted"])) {
+				if (isset($_POST["name"]) && !empty($_POST["name"])) {
+					echo "<p class='feedback'>Hello, $_POST[name], nice to meet you!</p>";
+				} else {
+					echo "<p class='error'>Please enter a name</p>";
+				}
+			}
+		?>
+	</inner-column>
+</section>
+
 <?php include '../../includes/footer.php' ?>

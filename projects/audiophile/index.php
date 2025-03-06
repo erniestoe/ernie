@@ -7,10 +7,7 @@ include 'includes/functions.php';
 		<h1 class="loud-voice">Shop</h1>
 
 		<div class="filters">
-			<p class="strong-voice">Filters</p>
-			<ul>
-				<?php renderFilters(); ?>
-			</ul>
+			<?php renderFilters(); ?>
 		</div>
 	</inner-column>
 </section>

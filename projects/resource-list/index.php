@@ -26,11 +26,7 @@
 	<main>
 		<section class="filters">
 			<inner-column>
-					<h2 class="attention-voice">Filter</h2>
-					<ul class="filters-top">
-						<?php renderFilters(); ?>
-					</ul>
-				
+					<?php renderFilters(); ?>
 			</inner-column>
 		</section>
 
@@ -40,12 +36,11 @@
 
 		<footer>
 			<inner-column>
-				<?php if ($currentFilter !== 'all') {?>
-					<h2 class="attention-voice">Filter</h2>
-					<ul class="filters-bottom">
+				<div class="filters">
+					<?php if ($currentFilter !== 'all') {?>
 						<?php renderFilters(); ?>
-					</ul>
-				<?php }?>
+					<?php }?>
+				</div>
 			</inner-column>
 		</footer>
 	</main>

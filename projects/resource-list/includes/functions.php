@@ -23,34 +23,38 @@
 
 	function renderFilters() {
 		global $resources;
-
 		global $currentFilter;
 
-		//Makes sure the Show All link always renders...
-		?>
-			<li>
-				<a href="?filter=all" class="quiet-voice <?php 
-						if ($currentFilter === 'all') {
-							echo 'active';
-						} else {
-							echo '';
-						}
-					?>">
-					Show All
-				</a>
-			</li>
-		<?php 
-
-		if ($currentFilter === 'all') {
-        foreach (array_keys($resources) as $category) {
-            $filterParameter = urlencode($category); ?>
-            <li>
-            	<a href="?filter=<?=$filterParameter?>" class="quiet-voice"><?=$category?></a>
-            </li>
-        <?php }
-    }
-
 		
+		?> 
+	<form method="GET">
+		<label class="strong-voice" for="filter">Filter</label>
+		<select name="filter" id="filter">
+
+			<option value="all" <?php
+			if ($currentFilter === 'all') {
+				echo 'selected';
+			} else {
+				echo '';
+			}
+			?>>Show All</option>
+
+			<?php foreach (array_keys($resources) as $category) {?>
+				<option value="<?=$category?>" <?php 
+					if ($currentFilter === $category) {
+						echo 'selected';
+					}else {
+						echo '';
+					}
+					?>>
+					<?=$category?>	
+				</option>
+			<?php }?>
+		</select>
+
+		<button type="submit">Apply Filter</button>
+	</form>
+	<?php 
 	}
 
 	function renderData() {
