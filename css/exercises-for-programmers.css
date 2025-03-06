@@ -1,0 +1,39 @@
+@import "style.css";
+
+form {
+			max-width: 400px;
+			margin-top: 20px;
+
+			p + .field {
+				margin-top: 15px;
+			}
+		}
+
+		.field {
+			display: flex;
+			flex-direction: column;
+
+			label + input {
+				margin-top: 10px;
+			}
+		}
+
+		.field label {
+			font-size: 14px;
+		}
+
+		button[type='submit'], .field + .field {
+			margin-top: 10px;
+		}
+
+		form + p {
+			margin-top: 10px;
+		}
+
+		.feedback {
+			color: green;
+		}
+
+		.error {
+			color: red;
+		}

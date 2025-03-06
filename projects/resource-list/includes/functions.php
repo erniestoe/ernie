@@ -30,7 +30,6 @@
 	<form method="GET">
 		<label class="strong-voice" for="filter">Filter</label>
 		<select name="filter" id="filter">
-
 			<option value="all" <?php
 			if ($currentFilter === 'all') {
 				echo 'selected';

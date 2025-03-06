@@ -10,7 +10,8 @@
 	$cssPages = [
 		"home" => "/css/home.css", 
 		"layout-garden" => "/css/layout-garden.css",
-		"design" => "/css/design.css"
+		"design" => "/css/design.css",
+		"learning" => "/css/exercises-for-programmers.css"
 	];
 
 	// Finding the full path for the parent folder -- easier than typing it out?
