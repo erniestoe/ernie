@@ -42,7 +42,7 @@
 				"favoriteFood" => "Madeline cookies and tea",
 				"age" => 9,
 				"adopted" => false,
-				"portrait" => "modules/monster-adoption/images/missreadsalot.jpg",
+				"portrait" => "modules/monster-adoption/images/missreads.jpg",
 				"color" => "blue"
 			];
 
@@ -52,7 +52,7 @@
 				"favoriteFood" => "Bananas",
 				"age" => 3,
 				"adopted" => true,
-				"portrait" => "modules/monster-adoption/images/mrbanana.jpg",
+				"portrait" => "modules/monster-adoption/images/mrb.jpg",
 				"color" => "yellow" 
 			];
 
