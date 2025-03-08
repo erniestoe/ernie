@@ -297,37 +297,37 @@
 </section>
 
 <section class="contact-form">
-	<?php 
-	if ($_POST["sendEmail"] ?? false) {
-		$to = "ersaavedra.dev@gmail.com";
-		$subject = "Contact Form Submission";
-		$message = $_POST["message"];
-
-		if (mail($to, $subject, $message, $headers)) {
-       	 echo "<p>Email sent successfully!</p>";
-    	} else {
-        	echo "<p>Failed to send email.</p>";
-    	}
-	}
-	?>
-
 	<inner-column>
-		<form method="POST" action="#contactForm">
-			<h2 class="attention-voice" id="contactForm">Contact Form</h2>
+		<h2 class="attention-voice" id="contactForm">Contact Form</h2>
 
-			<div class="field">
-				<label>Enter your name</label>
-				<input type="text" name="name">
-			</div>
+		<?php 
+			if ($_POST["sendEmail"] ?? false) {
+				$to = "ersaavedra.dev@gmail.com";
+				$subject = $_POST["subject"] ?? "";
+				$message = $_POST["message"] ?? "";
 
+				if (empty($subject) || empty($message)) {
+					echo "<p style='color:red;'>Please fill in all fields.</p>";
+				} else {
+					if (mail($to, $subject, $message)) {
+						echo "<p style='color:green;'>Email sent successfully!</p>";
+					} else {
+						echo "<p style='color:red;'>Failed to send email.</p>";
+					}
+				}
+
+			}
+		?>
+
+		<form method="POST">
 			<div class="field">
-				<label>Enter your email</label>
-				<input type="email" name="email">
+				<label>Subject:</label>
+				<input type="text" name="subject" required>
 			</div>
 
 			<div class="field">
 				<label>Leave a message</label>
-				<textarea name="message" rows="5" cols="33"></textarea>
+				<textarea name="message" rows="5" required></textarea>
 			</div>
 
 			<button type="submit" name="sendEmail">Send email</button>
