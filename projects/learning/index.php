@@ -300,6 +300,17 @@
 	<inner-column>
 		<h2 class="attention-voice" id="contactForm">Contact Form</h2>
 
+		<?php
+			error_reporting(E_ALL);
+			ini_set('display_errors', 1);
+
+			if (function_exists('mail')) {
+    			echo "mail() is enabled!";
+			} else {
+    			echo "mail() is disabled!";
+			}
+?>
+
 		<?php 
 			if ($_POST["sendEmail"] ?? false) {
 				$to = "ersaavedra.dev@gmail.com";
