@@ -103,6 +103,14 @@
 			<img src="images/madness.png">
 		</picture>
 
+		<picture>
+			<img src="images/lines-day-28.png">
+		</picture>
+
+		<picture>
+			<img src="images/lines-day-30.png">
+		</picture>
+
 		
 	</inner-column>
 </section>

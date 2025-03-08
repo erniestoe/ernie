@@ -26,17 +26,17 @@
 			$squareMeters = $squareFeet * 0.09290304;
 		?>
 
-		<form method="POST">
-			<h2 class="attention-voice">Area of a rectangular room</h3>
+		<form method="POST" action="#area">
+			<h2 class="attention-voice" id="area">Area of a rectangular room</h3>
 
 			<div class="field">
 				<label>What is the length of the room in feet?</label>
-				<input type="number" name="length">
+				<input type="number" name="length" value="<?=isset($_POST["submit"]) ? $length : " " ?>">
 			</div>
 
 			<div class="field">
 				<label>What is the width of the room in feet?</label>
-				<input type="number" name="width">
+				<input type="number" name="width" value="<?=isset($_POST["submit"]) ? $width : " " ?>">
 			</div>
 
 			<button type="submit" name="submit">Get the square footage</button>
@@ -71,17 +71,17 @@
 
 <section class="tax-calculator">
 	<inner-column>
-		<form method="POST">
-			<h2 class="attention-voice">Tax Calculator</h2>
+		<form method="POST" action="#tax">
+			<h2 class="attention-voice" id="tax">Tax Calculator</h2>
 
 			<div class="field">
 				<label>What is the order amount?</label>
-				<input type="number" name="amount" step=".01">
+				<input type="number" name="amount" step=".01"  value="<?=isset($_POST["getTotal"]) ? $_POST["amount"] : " " ?>">
 			</div>
 
 			<div class="field">
 				<label>What is the state?</label>
-				<input type="text" name="state">
+				<input type="text" name="state" value="<?=isset($_POST["getTotal"]) ? $_POST["state"] : " " ?>">
 			</div>
 
 			<button type="submit" name="getTotal">Get total</button>
@@ -105,6 +105,194 @@
 				<?php }
 			}
 		?>
+	</inner-column>
+</section>
+
+<section class="driving-age">
+	<inner-column>
+		<form method="POST" action="#drivingAge">
+			<h2 class="attention-voice" id="#drivingAge">Legal Driving Age</h2>
+
+			<div class="field">
+				<label>What is your age?</label>
+				<input type="number" name="age" value="<?=isset($_POST["getResult"]) ? $_POST["age"] : " " ?>">
+			</div>
+
+			<button type="submit" name="getResult">See if you can legally drive!</button>
+		</form>
+
+		<?php 
+			if (isset($_POST["getResult"])) {
+				$age = intval($_POST["age"]);
+
+				if ($age < 0 || !is_numeric($age) ) {
+					echo "<p class='error'>Please enter a valid age</p>";
+				} else {
+					echo $age >=16 ? "<p>You are old enough to legally drive</p>" : "<p>You are not old enough to legally drive</p>";	
+				}
+
+			}
+		?>
+	</inner-column>
+</section>
+
+<section class="anagrams">
+	<inner-column>
+		<form method="POST" action="#anagrams">
+			<h2 class="attention-voice" id="anagrams">Anagram Checker</h2>
+			<p>Enter two strings and I'll tell you if they are anagrams</p>
+
+			<div class="field">
+				<label>Enter the first string</label>
+				<input type="text" name="first" value="<?=isset($_POST["check"]) ? $_POST["first"] : " " ?>">
+			</div>
+
+			<div class="field">
+				<label>Enter the second string</label>
+				<input type="text" name="second" value="<?=isset($_POST["check"]) ? $_POST["second"] : " " ?>">
+			</div>
+
+			<button type="submit" name="check">Check strings</button>
+		</form>
+
+		<?php 
+			if (isset($_POST["check"])) {
+				function checkStrings() {
+					$wordOne = strtolower(str_replace(" ", "", $_POST["first"]));
+					$wordTwo = strtolower(str_replace(" ", "", $_POST["second"]));
+
+					$arrayOne = str_split($wordOne);
+					$arrayTwo = str_split($wordTwo);
+
+					sort($arrayOne);
+					sort($arrayTwo);
+
+					if ($arrayOne === $arrayTwo) {
+						echo "<p>$_POST[first] and $_POST[second] are anagrams.</p>";
+					} else {
+						echo "<p>$_POST[first] and $_POST[second] are not anagrams.</p>";
+					}
+				}
+
+				checkStrings();
+			}
+		?>
+	</inner-column>
+</section>
+
+<section class="pizza-party">
+	<inner-column>
+		<form method="POST" action="#pizzaParty">
+			<h2 class="attention-voice" id="pizzaParty">Pizza Party</h2>
+
+			<div class="field">
+				<label>How many people?</label>
+				<input type="number" name="people" value="<?=isset($_POST["splitPizzas"]) ? $_POST["people"] : " " ?>">
+			</div>
+
+			<div class="field">
+				<label>How many pizzas do you have?</label>
+				<input type="number" name="pizzas" value="<?=isset($_POST["splitPizzas"]) ? $_POST["pizzas"] : " " ?>">
+			</div>
+
+			<div class="field">
+				<label>How many slices per pizza do you have?</label>
+				<input type="number" name="slices" value="<?=isset($_POST["splitPizzas"]) ? $_POST["slices"] : " " ?>">
+			</div>
+
+			<button type="submit" name="splitPizzas">Divy the pizzas up!</button>
+		</form>
+
+		<?php 
+		if (isset($_POST["splitPizzas"])) {
+			$people = intval($_POST["people"]);
+			$pizzas = intval($_POST["pizzas"]);
+			$slicesPerPizza = intval($_POST["slices"]);
+
+			if ($people != 0 && $pizzas != 0 && $slicesPerPizza != 0) { 
+				$totalSlices = $pizzas * $slicesPerPizza;
+				$slicesPerPerson = $totalSlices / $people;
+				$leftoverSlices = $totalSlices % $people;
+			?>
+				<p><?=$people?> <?=$people === 1 ? "person" : "people"?> with <?=$pizzas?> <?=$pizzas === 1 ? "pizza" : "pizzas"?></p>
+
+				<p><?=$people === 1 ? "They" : "each person"?> gets <?=$slicesPerPerson?> <?=$slicesPerPerson <= 1 ? "piece" : "pieces"?> of pizza</p>
+
+				<p>There <?=$leftoverSlices === 1 ? "is" : "are"?> <?=$leftoverSlices === 0 ? "no" :$leftoverSlices?> leftover <?=$leftoverSlices === 1 ? "piece" : "pieces" ?></p>
+
+		<?php } else { ?>
+					<p class="error">Please enter a number greater than 0</p>
+		<?php }
+		} ?>
+	</inner-column>
+</section>
+
+<section class="temp-converter">
+	<inner-column>
+		<form method="POST" action="#converter">
+			<h2 class="attention-voice" id="converter">Temperature Converter</h2>
+
+			<?php 
+			$error = "";
+
+			if (isset($_POST["nextStep"])) {
+				$choice = strtolower($_POST["choice"]);
+
+				if ($choice !== "c" && $choice !== "f" && $choice !== " ") {
+					$error = "Please enter either Celsius (C) or Fahrenheit (F).";
+				}
+			}
+			?>
+
+			<?php if (!isset($_POST["nextStep"]) && !isset($_POST["convertTemp"]) || isset($_POST["reset"]) || $error) {?>
+				<p>Press C to convert from Farenheit to Celsius</p>
+				<p>Press F to convert from Celsius to Farenheit</p>
+
+				<div class="field">
+					<label>Your Choice:</label>
+					<input type="text" name="choice">
+				</div>
+
+				<button type="submit" name="nextStep">Next Step</button>
+			<?php }
+				if ($error) { ?>
+				<p class="error"><?=$error?></p>
+			<?php	} ?>
+
+			<?php if (isset($_POST["nextStep"]) && !$error) {
+				$choice = strtolower($_POST["choice"]);?>
+				<div class="field">
+					<label>Please enter the temperature in <?php
+						if ($choice === "c") {
+							echo "Farenheit";
+						}
+
+						if ($choice === "f") {
+							echo "Celsius";
+						}
+					 ?></label>
+
+					 <input type="number" name="temp">
+
+					 <input type="hidden" name="choice" value="<?php echo $choice; ?>">
+				</div>
+
+				<button type="submit" name="convertTemp">Get conversion</button>
+			<?php } ?>
+
+			<?php 
+				if (isset($_POST["convertTemp"])) { 
+					$choice = strtolower($_POST["choice"]);
+					$userTemp = intval($_POST["temp"]);
+					$convertedTemp = ($choice === "c") ? ($userTemp - 32) * 5 / 9 : ($userTemp * 9 / 5) + 32;
+					$convertedUnit = ($choice === "c") ? "Celsius" : "Fahrenheit";
+					?>
+					
+					<p>The temperature in <?=$convertedUnit; ?> is <?=round($convertedTemp, 2);?></p>
+						
+					<button type="submit" name="reset">Convert again?</button>
+			<?php	}?>
+		</form>
 	</inner-column>
 </section>
 
