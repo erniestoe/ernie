@@ -302,9 +302,12 @@
 		$to = "ersaavedra.dev@gmail.com";
 		$subject = "Contact Form Submission";
 		$message = $_POST["message"];
-		$headers = "From: {$_POST['email']}";
 
-		mail($to, $subject, $message, $headers);
+		if (mail($to, $subject, $message, $headers)) {
+       	 echo "<p>Email sent successfully!</p>";
+    	} else {
+        	echo "<p>Failed to send email.</p>";
+    	}
 	}
 	?>
 
