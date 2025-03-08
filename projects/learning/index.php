@@ -301,31 +301,31 @@
 		<h2 class="attention-voice" id="contactForm">Contact Form</h2>
 
 		<?php
-			error_reporting(E_ALL);
-			ini_set('display_errors', 1);
 
 			if (function_exists('mail')) {
     			echo "mail() is enabled!";
 			} else {
     			echo "mail() is disabled!";
 			}
-?>
+		?>
 
 		<?php 
+			error_reporting(E_ALL);
+			ini_set('display_errors', 1);
+
 			if ($_POST["sendEmail"] ?? false) {
+				echo "<p>Form submitted successfully!</p>";
+
+    			// Check if data is actually being received
+    			echo "<pre>";
+    			print_r($_POST);
+    			echo "</pre>";
+
 				$to = "ersaavedra.dev@gmail.com";
 				$subject = $_POST["subject"] ?? "";
 				$message = $_POST["message"] ?? "";
 
-				if (empty($subject) || empty($message)) {
-					echo "<p style='color:red;'>Please fill in all fields.</p>";
-				} else {
-					if (mail($to, $subject, $message)) {
-						echo "<p style='color:green;'>Email sent successfully!</p>";
-					} else {
-						echo "<p style='color:red;'>Failed to send email.</p>";
-					}
-				}
+				mail($to, $subject, $message);
 
 			}
 		?>
