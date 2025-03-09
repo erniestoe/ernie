@@ -7,7 +7,7 @@ html {
 
 body {
 	background-color: #f5f5f5;
-	font-family: "Geist", sans-serif;
+	font-family: "Inclusive Sans", sans-serif;
 	overflow-x: hidden;
 	position: relative;
 }
@@ -126,6 +126,7 @@ header {
 		h2 {
 			padding: 20px 10px;
 			text-align:center;
+			text-transform: uppercase;
 
 			@media (width >= 1200px) {
 				align-self: start;

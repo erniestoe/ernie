@@ -317,29 +317,4 @@
 			<?php } ?>
 	</inner-column>
 </section>
-
-<section class="contact-form">
-	<inner-column>
-		<?php 
-		if (isset($_POST["sendEmail"])) {
-			$to = "ersaavedra.dev@gmail.com";
-			$subject = "test";
-			$message = $_POST["message"];
-
-			mail($to, $subject, $message);
-		}
-		?>
-
-		<form method="POST">
-
-			<div class="field">
-				<label>Message</label>
-				<textarea name="message" rows="5"></textarea>
-			</div>
-
-			<button type="submit" name="sendEmail">Send Email</button>
-		</form>
-	</inner-column>
-</section>
-
 <?php include '../../includes/footer.php' ?>
