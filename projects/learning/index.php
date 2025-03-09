@@ -296,52 +296,48 @@
 	</inner-column>
 </section>
 
+<section class="characters">
+	<inner-column>
+		<form method="POST" action="#characters">
+			<h2 class="attention-voice" id="characters">Counting the Number of Characters</h2>
+
+			<div class="field">
+				<label>What is the input string?</label>
+				<input type="text" name="string" value="<?=isset($_POST["countChars"]) ? $_POST["string"] : "" ?>">
+			</div>
+
+			<button type="submit" name="countChars">Count the number of characters</button>
+		</form>
+
+			<?php if (isset($_POST["countChars"])) {
+				$string = $_POST["string"];
+
+				?>
+				<p><?=$string?> has <?=strlen($string)?> characters</p>
+			<?php } ?>
+	</inner-column>
+</section>
+
 <section class="contact-form">
 	<inner-column>
-		<h2 class="attention-voice" id="contactForm">Contact Form</h2>
-
-		<?php
-
-			if (function_exists('mail')) {
-    			echo "mail() is enabled!";
-			} else {
-    			echo "mail() is disabled!";
-			}
-		?>
-
 		<?php 
-			error_reporting(E_ALL);
-			ini_set('display_errors', 1);
+		if (isset($_POST["sendEmail"])) {
+			$to = "ersaavedra.dev@gmail.com";
+			$subject = "test";
+			$message = $_POST["message"];
 
-			if ($_POST["sendEmail"] ?? false) {
-				echo "<p>Form submitted successfully!</p>";
-
-    			// Check if data is actually being received
-    			echo "<pre>";
-    			print_r($_POST);
-    			echo "</pre>";
-
-				$to = "ersaavedra.dev@gmail.com";
-				$subject = $_POST["subject"] ?? "";
-				$message = $_POST["message"] ?? "";
-
-				mail($to, $subject, $message);
-
-			}
+			mail($to, $subject, $message);
+		}
 		?>
 
 		<form method="POST">
-			<div class="field">
-				<label>Subject:</label>
-				<input type="text" name="subject" required>
-			</div>
 
 			<div class="field">
-				<label>Leave a message</label>
-				<textarea name="message" rows="5" required></textarea>
+				<label>Message</label>
+				<textarea name="message" rows="5"></textarea>
 			</div>
 
-			<button type="submit" name="sendEmail">Send email</button>
+			<button type="submit" name="sendEmail">Send Email</button>
 		</form>
 	</inner-column>
 </section>
