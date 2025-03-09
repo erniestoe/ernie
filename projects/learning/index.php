@@ -1,74 +1,89 @@
 <?php include '../../includes/header.php' ?>
 
+<?php $form = isset($_GET['form']) ? $_GET['form'] : 'area'; ?>
+
 <header>
 	<inner-column>
 		<h1 class="loud-voice">Excersises For Programmers</h1>
+
+		<nav class="form-links">
+			<a href="?form=area">Area of a rectangular room</a>
+			<a href="?form=tax">Tax Calculator</a>
+			<a href="?form=driving">Legal Driving Age</a>
+			<a href="?form=anagrams">Anagram Checker</a>
+			<a href="?form=pizza">Pizza Party</a>
+			<a href="?form=temp">Temperature Converter</a>
+			<a href="?form=characters">Counting the Number of Characters</a>
+			<a href="?form=checkout">Self-Checkout</a>
+		</nav>
 	</inner-column>
 </header>
 
-<section class="area-of-rect-room">
-	<inner-column>
-		<?php 
-			$length = 0;
-			$width = 0;
+<?php if ($form === 'area') : ?>
+	<section class="area-of-rect-room">
+		<inner-column>
+			<?php 
+				$length = 0;
+				$width = 0;
 
-			if (isset($_POST["submit"])) {
-				if (isset($_POST["length"]) ) {
-					$length = intval($_POST["length"]);
+				if (isset($_POST["submit"])) {
+					if (isset($_POST["length"]) ) {
+						$length = intval($_POST["length"]);
+					}
+
+					if (isset($_POST["width"]) ) {
+						$width = intval($_POST["width"]);
+					}
 				}
 
-				if (isset($_POST["width"]) ) {
-					$width = intval($_POST["width"]);
-				}
-			}
-
-			$squareFeet = $length * $width;
-			$squareMeters = $squareFeet * 0.09290304;
+				$squareFeet = $length * $width;
+				$squareMeters = $squareFeet * 0.09290304;
 		?>
 
-		<form method="POST" action="#area">
-			<h2 class="attention-voice" id="area">Area of a rectangular room</h3>
+			<form method="POST" action="#area">
+				<h2 class="attention-voice" id="area">Area of a rectangular room</h3>
 
-			<div class="field">
-				<label>What is the length of the room in feet?</label>
-				<input type="number" name="length" value="<?=isset($_POST["submit"]) ? $length : " " ?>">
-			</div>
+				<div class="field">
+					<label>What is the length of the room in feet?</label>
+					<input type="number" name="length" value="<?=isset($_POST["submit"]) ? $length : " " ?>">
+				</div>
 
-			<div class="field">
-				<label>What is the width of the room in feet?</label>
-				<input type="number" name="width" value="<?=isset($_POST["submit"]) ? $width : " " ?>">
-			</div>
+				<div class="field">
+					<label>What is the width of the room in feet?</label>
+					<input type="number" name="width" value="<?=isset($_POST["submit"]) ? $width : " " ?>">
+				</div>
 
-			<button type="submit" name="submit">Get the square footage</button>
-		</form>
+				<button type="submit" name="submit">Get the square footage</button>
+			</form>
 
-		<div class="form-output">
+			<div class="form-output">
 
-			<?php 
-			if (isset($_POST["submit"])) {
-				if (is_numeric($_POST["length"]) && is_numeric($_POST["width"]) ) { ?>
+				<?php 
+				if (isset($_POST["submit"])) {
+					if (is_numeric($_POST["length"]) && is_numeric($_POST["width"]) ) { ?>
 
-					<p>You entered dimensions of <?=$length?> feet by <?=$width?> feet</p>
+						<p>You entered dimensions of <?=$length?> feet by <?=$width?> feet</p>
 
-					<p>The area is:</p>
+						<p>The area is:</p>
 
-					<p><?=$squareFeet?> square feet</p>
+						<p><?=$squareFeet?> square feet</p>
 
-					<p><?=$squareMeters?> square meters</p>
+						<p><?=$squareMeters?> square meters</p>
 				
-			<?php } elseif(!is_numeric($_POST["length"])) {
-					echo "<p>Please enter a number value for the room length</p>";
-				} elseif(!is_numeric($_POST["width"])) {
-					echo "<p>Please enter a number value for the room width</p>";
-				} else {
-					echo "<p>Please enter a number</p>";
-				}
+				<?php } elseif(!is_numeric($_POST["length"])) {
+						echo "<p>Please enter a number value for the room length</p>";
+					} elseif(!is_numeric($_POST["width"])) {
+						echo "<p>Please enter a number value for the room width</p>";
+					} else {
+						echo "<p>Please enter a number</p>";
+					}
 			
-			}?>
-		</div>
-	</inner-column>
-</section>
+				}?>
+			</div>
+		</inner-column>
+	</section>
 
+<?php elseif ($form === 'tax') : ?>
 <section class="tax-calculator">
 	<inner-column>
 		<form method="POST" action="#tax">
@@ -86,8 +101,8 @@
 
 			<button type="submit" name="getTotal">Get total</button>
 		</form>
-
-		<?php 
+		<div class="form-output">
+			<?php 
 			if (isset($_POST["getTotal"])) {
 				$tax = floatval($_POST["amount"]) * 0.055;
 				$total = floatval($_POST["amount"]) + $tax;
@@ -105,9 +120,11 @@
 				<?php }
 			}
 		?>
+		</div>
 	</inner-column>
 </section>
 
+<?php elseif ($form === 'driving') : ?>
 <section class="driving-age">
 	<inner-column>
 		<form method="POST" action="#drivingAge">
@@ -120,7 +137,8 @@
 
 			<button type="submit" name="getResult">See if you can legally drive!</button>
 		</form>
-
+		<div class="form-output">
+			
 		<?php 
 			if (isset($_POST["getResult"])) {
 				$age = intval($_POST["age"]);
@@ -133,9 +151,11 @@
 
 			}
 		?>
+		</div>
 	</inner-column>
 </section>
 
+<?php elseif ($form === 'anagrams') : ?>
 <section class="anagrams">
 	<inner-column>
 		<form method="POST" action="#anagrams">
@@ -155,7 +175,8 @@
 			<button type="submit" name="check">Check strings</button>
 		</form>
 
-		<?php 
+		<div class="form-output">
+			<?php 
 			if (isset($_POST["check"])) {
 				function checkStrings() {
 					$wordOne = strtolower(str_replace(" ", "", $_POST["first"]));
@@ -177,9 +198,11 @@
 				checkStrings();
 			}
 		?>
+		</div>
 	</inner-column>
 </section>
 
+<?php elseif ($form === 'pizza') : ?>
 <section class="pizza-party">
 	<inner-column>
 		<form method="POST" action="#pizzaParty">
@@ -202,8 +225,8 @@
 
 			<button type="submit" name="splitPizzas">Divy the pizzas up!</button>
 		</form>
-
-		<?php 
+		<div class="form-output">
+			<?php 
 		if (isset($_POST["splitPizzas"])) {
 			$people = intval($_POST["people"]);
 			$pizzas = intval($_POST["pizzas"]);
@@ -224,9 +247,11 @@
 					<p class="error">Please enter a number greater than 0</p>
 		<?php }
 		} ?>
+		</div>
 	</inner-column>
 </section>
 
+<?php elseif ($form === 'temp') : ?>
 <section class="temp-converter">
 	<inner-column>
 		<form method="POST" action="#converter">
@@ -296,6 +321,7 @@
 	</inner-column>
 </section>
 
+<?php elseif ($form === 'characters') : ?>
 <section class="characters">
 	<inner-column>
 		<form method="POST" action="#characters">
@@ -309,12 +335,98 @@
 			<button type="submit" name="countChars">Count the number of characters</button>
 		</form>
 
+		<div class="form-output">
 			<?php if (isset($_POST["countChars"])) {
 				$string = $_POST["string"];
 
 				?>
 				<p><?=$string?> has <?=strlen($string)?> characters</p>
 			<?php } ?>
+		</div>
 	</inner-column>
 </section>
+
+<?php elseif ($form === 'checkout') : ?>
+<section class="self-checkout">
+	<inner-column>
+		<?php 
+			function getValue($value) {
+				return isset($_POST["checkOut"]) ? $_POST[$value] : "";
+			}
+
+			function getSubtotal($item1, $item2, $item3) {
+				return $item1 + $item2 + $item3;
+			}
+
+			function getTax($subtotal) {
+				return $subtotal * 0.055;
+			}
+
+			function getTotal($subtotal, $tax) {
+				return $subtotal + $tax;
+			}
+
+			function renderOutput() {
+				$item1Total = intval($_POST["item1Price"]) * intval($_POST["item1Quantity"]);
+				$item2Total = intval($_POST["item2Price"]) * intval($_POST["item2Quantity"]);
+				$item3Total = intval($_POST["item3Price"]) * intval($_POST["item3Quantity"]);
+
+				$subtotal = getSubtotal($item1Total, $item2Total, $item3Total);
+				$tax = getTax($subtotal);
+				$total = getTotal($subtotal, $tax);
+
+				?>
+				<p>Subtotal: $<?=number_format($subtotal, 2)?></p>
+				<p>Tax: $<?=number_format($tax, 2)?></p>
+				<p>Total: $<?=number_format($total, 2)?></p>
+				<?php }
+		?>
+
+		<form method="POST" action="#selfCheckout">
+			<h2 class="attention-voice" >Self-Checkout</h2>
+
+			<div class="field">
+				<label>Enter the price of item 1:</label>
+				<input type="number" name="item1Price" required value="<?=getValue("item1Price")?>">
+			</div>
+
+			<div class="field">
+				<label>Enter the quantity of item 1:</label>
+				<input type="number" name="item1Quantity" required value="<?=getValue("item1Quantity")?>">
+			</div>
+
+			<div class="field">
+				<label>Enter the price of item 2:</label>
+				<input type="number" name="item2Price" required value="<?=getValue("item2Price")?>">
+			</div>
+
+			<div class="field">
+				<label>Enter the quantity of item 2:</label>
+				<input type="number" name="item2Quantity" required value="<?=getValue("item2Quantity")?>">
+			</div>
+
+			<div class="field">
+				<label>Enter the price of item 3:</label>
+				<input type="number" name="item3Price" required value="<?=getValue("item3Price")?>">
+			</div>
+
+			<div class="field">
+				<label>Enter the quantity of item 3:</label>
+				<input type="number" name="item3Quantity" required value="<?=getValue("item3Quantity")?>">
+			</div>
+
+			<button type="submit" name="checkOut">Check out</button>
+		</form>
+
+		<div class="form-output">
+			<?php
+			if (isset($_POST["checkOut"])) {
+				renderOutput(); 
+			}
+			?>
+		</div>
+	</inner-column>
+</section>
+<?php endif;?>
+
 <?php include '../../includes/footer.php' ?>
