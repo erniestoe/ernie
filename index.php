@@ -43,6 +43,11 @@
 					<p class="calm-voice number">05</p>
 					<a class="calm-voice" href="projects/audiophile/index.php">audiophile</a>
 				</li>
+
+				<li>
+					<p class="calm-voice number">06</p>
+					<a class="calm-voice" href="projects/theme-challenge/index.php">Theme Challenge</a>
+				</li>
 			</ul>
 		</div>
 	</inner-column>
