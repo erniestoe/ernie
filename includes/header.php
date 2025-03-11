@@ -44,7 +44,7 @@
 		<header class="site-header">
 			<inner-column>
 				<masthead>
-					<div class="logo"></div>
+					
 
 					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
 				</masthead>

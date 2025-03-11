@@ -30,19 +30,6 @@ h2 + h3{
 }
 
 
-masthead {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-
-	.logo {
-		width: 20px;
-		height: 20px;
-		background-color: black;
-		border-radius: 50%;
-	}
-}
-
 /*TYPOGRAPHY*/
 .quiet-voice {
 	font-size: 0.75rem;

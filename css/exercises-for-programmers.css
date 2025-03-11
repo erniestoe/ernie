@@ -1,5 +1,14 @@
 @import "style.css";
 
+h1 {
+	background-color: #7fbc8c;
+	max-width: fit-content;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+	border: 2px solid black;
+}
+
 button, input {
 	font-family: inherit;
 	padding: 10px;
@@ -10,7 +19,6 @@ button, input {
 button {
 	box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 	transition: box-shadow .2s ;
-
 }
 
 button:hover {
@@ -31,9 +39,10 @@ header {
 
 		a {
 			text-decoration: none;
-			background: #DB504A;
+			background: #7fbc8c;
 			padding: 10px;
 			border-radius: 10px;
+			border: 2px solid black;
 		}
 
 		@media (width > 600px) {
@@ -41,7 +50,7 @@ header {
 			max-width: 100%;
 			max-height: 100px;
 			grid-template-columns: repeat(2, 1fr);
-			gap: 20px;
+			gap: 10px;
 
 			a + a {
 				margin-top: 0;
@@ -62,6 +71,11 @@ form {
 	p + .field{
 		margin-top: 15px;
 	}
+
+	button {
+		background-color: #fbae17;
+		border: 2px solid black;
+	}
 }
 
 .field {
@@ -70,7 +84,11 @@ form {
 
 	label + input {
 		margin-top: 10px;
-		}
+	}
+
+	input {
+		border: 2px solid black;
+	}
 }
 
 .field label {
@@ -79,6 +97,7 @@ form {
 
 button[type='submit'], .field + .field {
 	margin-top: 10px;
+
 }
 
 form + p {
