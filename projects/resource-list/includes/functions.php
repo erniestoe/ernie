@@ -15,57 +15,45 @@
 		"Medical / Mental Health" => $medicalResources
 	];
 
-	if (isset($_GET['filter'])) {
-		$currentFilter = $_GET['filter'];
-	} else {
-		$currentFilter = 'all';
-	}
+	$currentFilters = isset($_GET['filter']) ? (array) $_GET['filter'] : ['all'];
 
 	function renderFilters() {
 		global $resources;
-		global $currentFilter;
-
-		
+		global $currentFilters;
 		?> 
-	<form method="GET">
-		<label class="strong-voice" for="filter">Filter</label>
-		<select name="filter" id="filter">
-			<option value="all" <?php
-			if ($currentFilter === 'all') {
-				echo 'selected';
-			} else {
-				echo '';
-			}
-			?>>Show All</option>
 
-			<?php foreach (array_keys($resources) as $category) {?>
-				<option value="<?=$category?>" <?php 
-					if ($currentFilter === $category) {
-						echo 'selected';
-					}else {
-						echo '';
-					}
-					?>>
-					<?=$category?>	
-				</option>
-			<?php }?>
-		</select>
+		<form method="GET">
+			<label class="strong-voice">Filter</label>
 
-		<button type="submit">Apply Filter</button>
-	</form>
+			<div class="fields">
+				<div class="field">
+				<label>Show All</label>
+				<input type="checkbox" name="filter[]" value="all" <?php if (in_array('all', $currentFilters)) echo 'checked'; ?>>
+			</div>
+
+			<?php foreach(array_keys($resources) as $category) {?>
+				<div class="field">
+					<label><?=$category?></label>
+					<input type="checkbox" name="filter[]" value="<?=$category?>" <?php if (in_array($category, $currentFilters)) echo 'checked'; ?>>
+				</div>
+			<?php } ?>
+			</div>
+		
+			<button type="submit">Apply Filter</button>
+		</form>
+	
 	<?php 
 	}
 
 	function renderData() {
-
 		global $resources;
 
-		global $currentFilter;
+		global $currentFilters;
 
 		foreach ($resources as $category => $resourceList) { 
-			if ($currentFilter !== "all" && $currentFilter !== $category) {
-				continue;
-			}
+			if (!in_array('all', $currentFilters) && !in_array($category, $currentFilters)) {
+			continue;
+		}
 
 			?>
 			<section class="category">

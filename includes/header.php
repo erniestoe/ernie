@@ -46,7 +46,7 @@
 				<masthead>
 					<div class="logo"></div>
 
-					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Rivera-Saavedra</a></h2>
+					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
 				</masthead>
 			</inner-column>
 		</header>

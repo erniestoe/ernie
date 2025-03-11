@@ -40,9 +40,7 @@
 		<footer>
 			<inner-column>
 				<div class="filters">
-					<?php if ($currentFilter !== 'all') {?>
-						<?php renderFilters(); ?>
-					<?php }?>
+					<?php renderFilters(); ?>
 				</div>
 			</inner-column>
 		</footer>

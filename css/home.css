@@ -16,11 +16,12 @@
 			grid-row: span 2;
 			object-fit: contain;
 			align-self: start;
-	
+			border-radius: 10px;
+			overflow: hidden;
 			
-
 			img {
 				object-fit: contain;
+
 			}
 
 			@media (width <= 740px) {
@@ -37,17 +38,49 @@
 			grid-column: span 2;
 			p {
 				max-width: 50%;
+				line-height: 1.6;
 			}
 
 			p a {
 				background-color: #fbae17;
+				border-radius: 5px;
+				padding: 2px;
+				border: 2px solid black;
+				box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+				text-decoration: none;
 				width: fit-content;
 				color: #000;
+				transition: all 0.2s;
 			}
+
+			
 
 			.links {
 				display: flex;
 				gap: 20px;
+
+				a {
+					border-radius: 5px;
+					padding: 5px;
+					border: 2px solid black;
+					box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+					text-decoration: none;
+					width: fit-content;
+					color: #000;
+					transition: all 0.2s;
+				}
+
+				a:nth-of-type(1) {
+					background-color: #DB504A;
+				}
+
+				a:nth-of-type(2) {
+					background-color: #7fbc8c;
+				}
+
+				a:nth-of-type(3) {
+					background-color: #69d2e7;
+				}
 			}
 
 			a {
@@ -56,7 +89,8 @@
 
 			@media (width <= 800px) {
 				p {
-					max-width: 100%;
+					max-width: 85%;
+
 				}	
 			}
 
@@ -70,13 +104,41 @@
 		.work {
 			align-self: end;
 
+			.number {
+				padding: 2px;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background-color: #DB504A;
+/*				box-shadow: 2px 1px 0px 0px rgba(0,0,0,1);	*/
+				border: 2px solid black;
+				text-align: center;
+			}
+
+			li:nth-of-type(even) .number {
+				background-color: #fbae17;
+			}
+
 			li {
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 			}
 
 			li + li {
 				padding-top: 10px;
+			}
+
+
+			li a {
+				text-decoration: none;
+				border-radius: 5px;
+				padding: 2px;
+				border: 2px solid black;
+				box-shadow: 2px 1px 0px 0px rgba(0,0,0,1);
+				flex-basis: 50%;
+				text-align: center;
+				transition: all .3s;
 			}
 
 			@media (width <= 740px) {
