@@ -36,7 +36,7 @@
 					$count++;
 					?>
 					<li>
-						<p class="calm-voice number"><?=$count < 10 ? 0 . $count : $count ?></p>
+						<p class="number"><?=$count < 10 ? 0 . $count : $count ?></p>
 						<a class="calm-voice" href="<?=$work["link"]?>"><?=$work["title"]?></a>
 					</li>
 				<?php }?>
