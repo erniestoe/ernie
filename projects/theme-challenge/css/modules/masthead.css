@@ -1,0 +1,39 @@
+
+mast-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .user-menu {
+  a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-inline: 15px;
+/*    margin-top: 20px;*/
+    margin-left: 10px;
+    box-shadow: 1px 1px 0 0 black;
+
+  }
+}
+}
+
+mast-head nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+mast-head .logo {
+/*  max-width:  60px;*/
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+mast-head a {
+  font-size: 1rem;
+  padding:  10px;
+}
+
+
+
+

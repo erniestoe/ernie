@@ -1,19 +1,47 @@
-<?php include 'includes/header.php' ?>
 
-<section class="splash blue">
-	<?php include 'modules/diptych.php' ?>
+
+<?php include('header.php'); ?>
+
+
+
+<section class='welcome'>
+<inner-column>
+
+	<?php include('modules/graphic-diptych.php'); ?>
+
+</inner-column>
 </section>
 
-<section class="cta purple">
-	<?php include 'modules/cta.php' ?>
+
+
+<section class='get-involved'>
+<inner-column>
+
+	<?php include('modules/call-to-action.php'); ?>
+
+</inner-column>
 </section>
 
-<section class="articles yellow">
-	<?php include 'modules/article-grid.php' ?>
+
+
+<section class='stuff' id="work">
+<inner-column>
+	
+	<?php include('modules/articles-intro.php'); ?>
+
+</inner-column>
 </section>
 
-<section class="cta red">
-	<?php include 'modules/cta.php' ?>
+
+
+<section class='help-us'>
+<inner-column>
+
+	<?php include('modules/call-to-action.php'); ?>
+
+</inner-column>
 </section>
-		
-<?php include 'includes/footer.php' ?>
+
+
+
+<?php include('footer.php'); ?>

@@ -1,45 +1,33 @@
+
 <site-map>
-				<?php 
-				function renderPageLinks() {
-					$pages = ["LOGO", "Some page", "Some other page"];
-					?> 
-					<ul class="pages">
-						<?php foreach($pages as $page) {?>
-							<li><a href="#"><?=$page?></a></li>
-						<?php }?>
-					</ul>
-					<?php
-				}
 
-				function renderLegalLinks() {
-					$legal = ["Legal thing a", "Legal thing b"];
-					?> 
-					<ul class="legal">
-						<?php foreach($legal as $legalLink) {?>
-							<li><a href="#"><?=$legalLink?></a></li>
-						<?php }?>
-					</ul>
-					<?php
-				}
+	<nav class='site-menu'>
+		<a class='logo' href='#'>
+			Haven & Hue
+		</a>
+		<a href='./'>Home</a>
+		<a href='404.php'>404 error</a>
+	</nav>
 
-				function renderSocialLinks() {
-					$social = ["social thing a", "social thing b", "social thing c", "social thing d"];
-					?> 
-					<ul class="social">
-						<?php foreach($social as $socialLink) {?>
-							<li><a href="#"><?=$socialLink?></a></li>
-						<?php }?>
-					</ul>
-					<?php
-				}
-				?>
-				<?=renderPageLinks()?>
+	<nav class='user-menu'>
+		<h3>Quick Links</h3>
 
-				<div class="sign-in">
-					<a href="#">Sign-in</a>
-				</div>
+		<a href='#'>Contact Us</a>
+	</nav>
 
-				<?=renderLegalLinks()?>
-				
-				<?=renderSocialLinks()?>
+	<nav class='legal-menu'>
+		<h3>Legal Menu</h3>
+
+		<a href='#'>Legal thing a</a>
+		<a href='#'>Legal thing b</a>
+	</nav>
+
+	<nav class='social-menu'>
+		<h3>Follow Us!</h3>
+
+		<a href='#'>Instagram</a>
+		<a href='#'>Facebook</a>
+		<a href='#'>Pintrest</a>
+	</nav>
+
 </site-map>

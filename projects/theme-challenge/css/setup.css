@@ -1,15 +1,15 @@
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
 
-p {
-	line-height: 1.4;
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 a {
 	display: block;
+	text-decoration: none;
 	color: inherit;
 }
 
@@ -21,11 +21,21 @@ p a {
 
 picture {
 	display: block;
+	border: 1px solid black;
+	border-radius: 10px;
+	overflow: hidden;
+	object-fit: contain;
 }
 
 img {
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	object-fit: contain;
 }
 
+svg {
+  display: block;
+  width: 100%;
+  /* may need height: 100%; Check all browsers */
+}

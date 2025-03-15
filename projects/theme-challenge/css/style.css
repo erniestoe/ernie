@@ -1,311 +1,124 @@
-@import "reset.css";
-@import "setup.css";
 
+/* RESET */
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+/*@import 'developer-styles.css'; */
+/* comment this ^ out - when you are ready */
+
+
+/* SETTINGS */
+@import 'settings.css'; /* variables/ etc */
+
+
+/* STRUCTURE */
+@import 'structure.css';
+
+
+/* TYPOGRAPHY */
+@import 'typography.css';
+
+
+/* COMPONENTS */
+@import 'components.css';
+
+
+/* MODULES */
+@import 'modules/masthead.css';
+@import 'modules/graphic-diptych.css';
+@import 'modules/call-to-action.css';
+@import 'modules/articles-intro.css';
+@import 'modules/article-card.css';
+@import 'modules/site-map.css';
+/* should everything/nothing be in it's own file? */
+
+
+/* ACTUAL SITE STYLES */
 html {
-	scroll-behavior: smooth;
+	background-color: var(--beige);
 }
 
 body {
-	background-color: #f5f5f5;
 	font-family: "Geist", sans-serif;
-	overflow-x: hidden;
-	position: relative;
-	--green: #b5d8be;
-	--blue: #b5dce9;
-	--purple: #d1a0c5;
-	--yellow: #f3cd9e;
-	--red: #ef9699;
-	--off-white: #f7f0e3;
-	display: flex;
- 	min-height: 100vh;
-  	flex-direction: column;
 }
 
-main {
-	flex: 1;
-}
 
-inner-column {
-	display: block;
-	max-width: 1200px;
-	margin-inline: auto;
-	padding: 20px;
-}
 
-.cta-button {
-	background-color: #000;
-	color: #fff;
-	text-transform: uppercase;
-	max-width: fit-content;
-	padding: 10px 15px;
-	letter-spacing: .1em;
-}
 
-.green {
-	background-color: var(--green);
-}
+/*
+	This the area where you work out your styles 
+	If it makes sense, you can break these out into their own files.
+*/
 
-.blue {
-	background-color: var(--blue);
-}
 
-.purple {
-	background-color: var(--purple);
-}
-
-.yellow {
-	background-color: var(--yellow);
-}
-
-.red {
-	background-color: var(--red);
-}
-
-.off-white {
-	background-color: var(--off-white);
-}
-
-/*TYPOGRAPHY*/
-.quiet-voice {
-	font-size: 0.75rem;
-	font-weight: 500;
-}
-
-.calm-voice,
-p {
-	font-size: 1rem;
-	font-weight: 400;
-	color: #333;
-}
-
-.strong-voice {
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-.attention-voice {
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
-.loud-voice {
-	font-size: 2rem;
-	font-weight: 800;
-}
-
-/*HEADER*/
+/* SITE SECTIONS */
 .site-header {
-	inner-column {
-		nav {
-			display: flex;
-			gap: 20px;
-		}
-
-		nav, .sign-in {
-			padding: 10px;
-		}
-
-		@media (width >= 700px) {
-			display: flex;
-			justify-content: space-between;
-		}
-	}
+	/*background-color: #9ec9eb;*/
+	position: sticky;
+	top: 0;
+	/*box-shadow: 0 2px 5px 0px rgba(0,0,0,.4);*/
+}
+.site-header inner-column {
+	padding: 14px;
 }
 
-/*DIPTYCH MODULE*/
-diptych {
-	display: block;
-	padding-block: 50px;
-	inner-column {
-		display: flex;
-		flex-direction: column;
-		gap: 50px;
 
-		@media(width >= 700px) {
-			flex-direction: row-reverse;
-			align-items: center;
-		}
-		picture {
-			object-fit: contain;
-			aspect-ratio: 1/1;
-			max-width: 500px;
-			img {
-				object-fit: contain;
-			}
-		}
 
-		.text {
-			padding-inline: 10px;
-			h2 + p {
-				margin-top: 25px;
-			}
-		}
-	}
+
+
+
+
+/* OK! SITE STYLES! */
+.site-header {
+/*  background-color: var(--white);*/
+  color: var(--black);
+  
+  inner-column {
+  	background-color: var(--white);
+  	border: 1px solid black;
+  	border-radius: 5px;
+  }
 }
 
-/*CTA MODULE*/
-call-to-action {
-	display: block;
-	padding-block: 50px;
-	inner-column {
-		h2,
-		p {
-			padding: 10px;
-		}
-
-		a {
-			margin-left: 10px;
-		}
-
-		h2 + p {
-			margin-top: 50px;
-		}
-
-		p + .cta-button {
-			margin-top: 25px;
-		}
-
-		@media (width >= 700px) {
-			padding-inline: 10%;
-			max-width: 800px;
-		}
-
-		@media (width >= 1200px) {
-			max-width: 1200px;
-			padding-block: 100px;
-		}
-	}
+.welcome {
+  
 }
 
-/*ARTICLE GRID MODULE*/
-article-grid {
-	display: block;
-	padding-block: 80px;
 
-	@media (width >= 1200px) {
-		padding-block: 100px;
-	}
+/* things kinda just start grouping up... and you'll know when something should be grouped into another file - most of the time */
 
-	inner-column, 
-	.article-cards {
-		display: grid;
 
-		@media (width >= 700px) {
-			grid-template-columns: 1fr 1fr;
-			gap: 25px;
-		}
+.get-involved {
+	
+/*	color: var(--white);*/
+} /* interesting way to include the whole image in your CSS */
 
-		@media (width >= 1200px) {
-			grid-template-columns: repeat(3, 1fr);
-			gap: 50px;
-		}
-	}
-	inner-column {
-		header {
-			h2 + p {
-				margin-top: 25px;
-			}
-		}
-
-		header + .article-cards {
-			margin-top: 50px;
-
-			@media (width >= 700px) {
-				margin-top: 0;
-			}
-		}
-
-		header, .article-card {
-			padding: 10px;
-		}
-
-		@media (width >= 700px) {
-			header {
-				grid-column: span 2;
-				margin-bottom: 25px;
-			}
-
-			.article-cards {
-				grid-column: span 2;
-			}
-		}
-
-		@media (width >= 1200px) {
-			header {
-				grid-column: span 3;
-			}
-
-			.article-cards {
-				grid-column: span 3;
-			}
-		}
-
-		h2 + p {
-			margin-top: 30px;
-
-			@media (width >= 700px) {
-				margin-top: 50px;
-			}
-		}
-
-		p + .cta-button {
-			margin-top: 15px;
-
-			@media (width >= 700px) {
-				margin-top: 25px;
-			}
-		}
-
-		.article-card + .article-card {
-			margin-top: 25px;
-
-			@media (width >= 700px) {
-				margin-top: 0;
-			}
-		}
-	}
+.get-involved inner-column {
+	/*max-width:  700px;*/
 }
 
-/*FOOTER*/
+.get-involved call-to-action {
 
-footer {
-	padding-top: 25px;
-	padding-bottom: 80px;
-	margin-top: auto;
-	inner-column {
-		.footer-title {
-			padding: 10px;
-			h2 + p {
-				margin-top: 25px;
-			}
-		}
-
-		.footer-title + site-map {
-			margin-top: 25px;
-		}
-
-		site-map {
-			display: grid;
-			padding: 10px;
-			grid-template-columns: 1fr 1fr;
-			gap: 25px;
-
-			@media (width >= 700px) {
-				grid-template-columns: repeat(4, 1fr);
-			}
-
-			li + li {
-				margin-top: 10px ;
-			}
-
-			a {
-				padding: 5px;
-			}
-
-			.sign-in {
-				text-align: center;
-
-			}
-		}
-	}
 }
+
+
+.stuff {
+  
+}
+
+.help-us {
+  
+}
+
+.site-footer {
+	background-color: black;
+/*	border-radius: 5px;*/
+	color: var(--white);
+}
+
+.site-footer .logo {
+	font-weight: 900;
+  letter-spacing: .5px;
+  text-decoration: none;
+}
+

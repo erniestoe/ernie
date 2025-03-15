@@ -8,7 +8,7 @@
 	<minimal-layout>
 		<inner-column>
 			<header>
-				<h1 class="attention-voice">Ernesto Saavedra</h1>
+				<h2 class="attention-voice">Ernesto Saavedra</h2>
 			</header>
 
 			<ul class="content">
