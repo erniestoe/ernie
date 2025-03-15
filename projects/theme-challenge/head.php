@@ -5,7 +5,6 @@
 	<title>Super theme challenge</title>
 	<meta property="og:title" content='Theme Challenge!'>
 	<meta property='og:image' content='https://peprojects.dev/beta-two/ernie/projects/theme-challenge/images/default-meta.png'>
-4
 	<link rel='stylesheet' href='css/style.css'>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
