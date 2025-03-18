@@ -1,0 +1,114 @@
+
+/* RESET */
+@import 'meyer-reset.css';
+@import 'setup.css';
+
+/*@import 'developer-styles.css'; */
+/* comment this ^ out - when you are ready */
+
+
+/* SETTINGS */
+@import 'settings.css'; /* variables/ etc */
+
+
+/* STRUCTURE */
+@import 'structure.css';
+
+
+/* TYPOGRAPHY */
+@import 'typography.css';
+
+
+/* COMPONENTS */
+@import 'components.css';
+
+
+/* MODULES */
+@import 'modules/masthead.css';
+@import 'modules/graphic-diptych.css';
+@import 'modules/call-to-action.css';
+@import 'modules/articles-intro.css';
+@import 'modules/article-card.css';
+@import 'modules/site-map.css';
+/* should everything/nothing be in it's own file? */
+
+
+/* ACTUAL SITE STYLES */
+html {
+	background-color: var(--off-white);
+	scroll-behavior: smooth;
+}
+
+
+
+
+/*
+	This the area where you work out your styles 
+	If it makes sense, you can break these out into their own files.
+*/
+
+
+/* SITE SECTIONS */
+.site-header {
+	background-color: var(--blue);
+	position: sticky;
+	top: 0;
+	/*box-shadow: 0 2px 5px 0px rgba(0,0,0,.4);*/
+}
+.site-header inner-column {
+	padding: 14px;
+}
+
+
+
+
+
+
+
+/* OK! SITE STYLES! */
+.button {
+	
+}
+
+.site-header {
+ 
+}
+
+.welcome {
+  
+}
+
+
+/* things kinda just start grouping up... and you'll know when something should be grouped into another file - most of the time */
+
+
+.get-involved {
+  
+} /* interesting way to include the whole image in your CSS */
+
+.get-involved inner-column {
+	/*max-width:  700px;*/
+	@media (width > 900px) {
+		margin-left: 40%;
+	}
+}
+
+.get-involved call-to-action {
+
+}
+
+
+.stuff {
+  
+}
+
+.help-us {
+  
+}
+
+.site-footer {
+	background-color: var(--black);
+	color: var(--off-white);
+}
+
+

@@ -1,0 +1,29 @@
+
+/* COMPONENTS */
+.button {
+  text-transform: uppercase;
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: .05em;
+  /* should a link look like a "button" though? */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border:  1px solid black;
+  padding:  10px 20px;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  transition: all 0.2s; 
+}
+
+@media (width > 900px) {
+  .button:hover {
+    background-color: var(--black);
+    color: var(--off-white);
+  }
+}
+
+.arrow {
+  /* maybe icons in here? Any reusable smaller things */  
+}

@@ -27,6 +27,10 @@
 						"title" => "Theme Challenge",
 						"link" => "projects/theme-challenge/index.php"
 					],
+					[
+						"title" => "Rendered",
+						"link" => "projects/rendered/index.php"
+					],
 				];
 
 				$count = 0;

@@ -1,0 +1,50 @@
+
+site-map {
+  display: block;
+  /* */
+  padding-top: 40px;
+  padding-bottom: 120px;
+  /* */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
+  .logo {
+    max-width: 50%;
+  }
+
+  h4 + a {
+    margin-top: 12px;
+  }
+
+  a + a {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+site-map a {
+  font-size: 1rem;
+/*  padding:  10px;*/
+  text-decoration: underline;
+}
+
+@media (min-width:  700px) {
+  site-map nav {
+    width:  50%;
+  }
+}
+
+@media (min-width:  900px) {
+  site-map nav {
+    width:  10%;
+  }
+}
+
+site-map nav {
+  flex-grow:  1;
+}

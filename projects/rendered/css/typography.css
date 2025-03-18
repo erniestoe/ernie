@@ -1,0 +1,51 @@
+.loud-voice,
+.intro-voice,
+.attention-voice,
+.strong-voice {
+	font-family: "Outfit", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+.loud-voice	{
+	font-size: clamp(36px, 5vw, 60px);
+}
+
+
+.intro-voice {
+	font-size: 40px;
+}
+
+.attention-voice {
+	font-size: 30px;
+}
+
+.strong-voice {
+	font-size: 20px;
+}
+
+.something-for-site-map-headings {
+	/* */
+}
+
+.calm-voice,
+p,
+a {
+	font-family: "Spectral", serif;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+/* these would be scoped to section or to an article element */
+/* this is just a loose setting for now $todo */
+p + p {
+	margin-top: 14px;
+}
+
+h1 + p,
+h2 + p,
+h3 + p{
+	margin-top: 20px;
+}
+
