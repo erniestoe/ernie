@@ -2,7 +2,7 @@
 <graphic-diptych>
 
 	<picture>
-		<img src='images/image-7-small.jpg' alt='$todo'>
+		<img src='https://res.cloudinary.com/dhgciqwbz/image/upload/v1742321382/image-7_bbrwzw.jpg' alt='$todo'>
 	</picture>
 
 	<text-content>
