@@ -14,7 +14,7 @@
 
 
 .intro-voice {
-	font-size: 40px;
+	font-size: clamp(50px, 6vw, 84px);
 }
 
 .attention-voice {
@@ -23,6 +23,10 @@
 
 .strong-voice {
 	font-size: 20px;
+}
+
+.quiet-voice {
+	font-size: .75rem;
 }
 
 .something-for-site-map-headings {

@@ -1,15 +1,11 @@
 
 site-map {
-  display: block;
-  /* */
-  padding-top: 40px;
-  padding-bottom: 120px;
-  /* */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  margin-top: 20px;
 
   .logo {
     max-width: 50%;

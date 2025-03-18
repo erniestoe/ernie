@@ -30,6 +30,7 @@
 @import 'modules/articles-intro.css';
 @import 'modules/article-card.css';
 @import 'modules/site-map.css';
+@import 'modules/scrolling-call-to-action.css';
 /* should everything/nothing be in it's own file? */
 
 
@@ -53,6 +54,7 @@ html {
 	background-color: var(--blue);
 	position: sticky;
 	top: 0;
+	z-index: 100;
 	/*box-shadow: 0 2px 5px 0px rgba(0,0,0,.4);*/
 }
 .site-header inner-column {
@@ -70,6 +72,7 @@ html {
 	
 }
 
+
 .site-header {
  
 }
@@ -83,14 +86,13 @@ html {
 
 
 .get-involved {
+/*	  background-color: var(--red);*/
+	
   
 } /* interesting way to include the whole image in your CSS */
 
 .get-involved inner-column {
-	/*max-width:  700px;*/
-	@media (width > 900px) {
-		margin-left: 40%;
-	}
+
 }
 
 .get-involved call-to-action {
@@ -103,12 +105,31 @@ html {
 }
 
 .help-us {
-  
+/*  background-color: var(--red);*/
+	inner-column {
+		display: grid;
+		call-to-action {
+			background-color: var(--orange);
+
+		}
+
+		@media (width >= 600px) {
+			
+		}
+
+		@media (width >= 900px) {
+			grid-template-columns: repeat(4, 1fr);
+
+			call-to-action {
+				grid-column: span 2;
+			}
+		}
+	}
 }
 
 .site-footer {
-	background-color: var(--black);
-	color: var(--off-white);
+	background-color: var(--green);
+	color: var(--black);
 }
 
 

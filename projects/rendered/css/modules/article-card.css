@@ -1,6 +1,5 @@
 
 article-card {
-  display: block;
   padding-top: 40px;
   padding-bottom: 40px;
   /* */
@@ -11,6 +10,17 @@ article-card {
   h3,
   a {
     margin-top: 20px;
+  }
+
+  .button {
+    border: none;
+    padding: 0;
+    @media (width > 900px) {
+      align-self: end;
+      padding: 10px;
+    }
+    
+/*    border-bottom: 1px solid black;*/
   }
 }
 

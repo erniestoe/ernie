@@ -23,8 +23,10 @@ picture {
 	display: block;
 	object-fit: contain;
 
+
 	img {
 		object-fit: contain;
+		filter: grayscale(100%) contrast(200%);
 	}
 }
 

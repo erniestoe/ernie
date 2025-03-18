@@ -2,8 +2,12 @@
 mast-head {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
+
+  @media (width >= 460px) {
+    align-items: center;
+  }
 }
 
 mast-head nav {
@@ -14,17 +18,9 @@ mast-head nav {
   flex-wrap: wrap;
 }
 
-/*mast-head nav {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}*/
-
-
 
 mast-head .logo {
-  max-width: 100px;
+  max-width: 200px;
 }
 
 mast-head .button {
@@ -37,10 +33,6 @@ mast-head a {
 
 mast-head a:not(a:nth-of-type(1)) {
   text-decoration: underline;
-
-  @media (width > 900px) {
-    align-self: end;
-  }
 /*  align-self: end;*/
 }
 
@@ -55,7 +47,7 @@ mast-head a:not(a:nth-of-type(1)) {
     }
 
     .logo {
-      max-width: 200px;
+      max-width: 250px;
     }
   }
 }

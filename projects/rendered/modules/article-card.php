@@ -17,7 +17,7 @@
 
 	<p class='calm-voice'><?=$article["description"]?></p>
 
-	<a class='link button' href='#'>
+	<a class='link button quiet-voice' href='#'>
 		<span>Read more</span>
 	</a>
 

@@ -2,7 +2,7 @@
 <site-map>
 
 	<a class='logo' href='#'>
-		<img src="./images/footer-logo.svg">
+		<img src="./images/logo.svg">
 	</a>
 
 	<nav class='user-menu'>
@@ -14,7 +14,7 @@
 	</nav>
 
 	<nav class='legal-menu'>
-		<h4 class="strong-voice">Legal Menu</h4>
+		<h4 class="strong-voice">Legal</h4>
 
 		<a href='#'>Privacy Policy</a>
 	</nav>
