@@ -1,3 +1,5 @@
+
+
 .loud-voice,
 .intro-voice,
 .attention-voice,
@@ -38,7 +40,7 @@ p,
 a {
 	font-family: "Spectral", serif;
 	font-size: 1rem;
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 /* these would be scoped to section or to an article element */
@@ -47,8 +49,11 @@ p + p {
 	margin-top: 14px;
 }
 
+h2 + p {
+	margin-top: 10px;
+}
+
 h1 + p,
-h2 + p,
 h3 + p{
 	margin-top: 20px;
 }

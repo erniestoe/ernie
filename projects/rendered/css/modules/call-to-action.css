@@ -3,11 +3,16 @@ call-to-action {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  border: 1px solid var(--black);
 /*  margin-inline: auto;*/
 /*  align-items: end;*/
   
 
   background-color: var(--red);
+
+  .button {
+    margin-top: 10px;
+  }
   
   max-width: 600px;
 
