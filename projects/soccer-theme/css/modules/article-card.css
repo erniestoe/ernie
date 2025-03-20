@@ -1,0 +1,30 @@
+
+article-card {
+  display: block;
+  padding-bottom: 40px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  /* */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+
+  picture {
+    max-height: 221px;
+    overflow: hidden;
+  }
+
+  div {
+    padding-inline: 20px;
+  }
+}
+
+article-card h2 {
+  margin-top: 20px;
+}
+
+article-card a {
+  margin-top: 20px;
+  
+}

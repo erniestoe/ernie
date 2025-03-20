@@ -1,0 +1,27 @@
+
+/* COMPONENTS */
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-decoration: underline;
+
+  /* should a link look like a "button" though? */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 125px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--light-grey);
+  padding:  10px;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight:  400;
+  box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.4);
+}
+
+.arrow {
+  /* maybe icons in here? Any reusable smaller things */  
+}

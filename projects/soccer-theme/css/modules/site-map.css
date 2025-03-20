@@ -1,0 +1,56 @@
+
+site-map {
+  /* */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 80px;
+
+  h3 + a {
+    margin-top: 10px;
+  }
+
+  a + a {
+    margin-top: 5px;
+  }
+}
+
+site-map .logo {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+
+
+site-map a {
+  font-family: sans-serif;
+  font-size: 1rem;
+  
+  text-decoration: underline;
+}
+
+@media (min-width:  700px) {
+  site-map nav {
+    width:  50%;
+  }
+}
+
+@media (min-width:  900px) {
+  site-map {
+    gap: 25px;
+
+    nav {
+      margin-top: 12px;
+    }
+  }
+
+  site-map nav {
+    width:  25%;
+  }
+}
+
+site-map nav {
+  flex-grow:  1;
+}

@@ -31,6 +31,10 @@
 						"title" => "Rendered",
 						"link" => "projects/rendered/index.php"
 					],
+					[
+						"title" => "Soccer Theme",
+						"link" => "projects/soccer-theme/index.php"
+					],
 				];
 
 				$count = 0;
