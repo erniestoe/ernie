@@ -19,8 +19,8 @@
 
 @media (width > 900px) {
   .button:hover {
-    background-color: var(--black);
-    color: var(--off-white);
+    background-color: var(--yellow);
+/*    color: var(--off-white);*/
   }
 }
 
