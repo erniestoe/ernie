@@ -5,7 +5,7 @@
 	</a>
 	
 	<nav class='user-menu'>
-		<h3>Quick Links</h3>
+		<h3 class="strong-voice">Quick Links</h3>
 		<a href='./'>Home</a>
 		<a href='#'>Team</a>
 		<a href='#'>Schedule</a>
@@ -15,15 +15,13 @@
 	</nav>
 
 	<nav class='legal-menu'>
-		<h3>Legal Menu</h3>
-
+		<h3 class="strong-voice">Legal Menu</h3>
 		<a href='#'>Legal thing a</a>
 		<a href='#'>Legal thing b</a>
 	</nav>
 
 	<nav class='social-menu'>
-		<h3>Social Menu</h3>
-
+		<h3 class="strong-voice">Social Menu</h3>
 		<a href='#'>social thing a</a>
 		<a href='#'>social thing b</a>
 		<a href='#'>social thing c</a>
