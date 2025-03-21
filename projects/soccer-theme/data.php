@@ -1,6 +1,6 @@
 <?php 
 $ironCityData = [
-	"headerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742572766/iron-city-logo_be5tig.svg",
+	"headerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742581786/ironcityfc-logo_cc9a23.png",
 	"splashHeading" => "Welcome to Iron City FC",
 	"splashText" => "At Iron City FC, we bring intensity, dedication, and unrelenting passion to every match. From our fans in the stands to the players on the field, our city’s heartbeat is our inspiration.",
 	"splashImage" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742495716/iron-city-main_multuz.png",
@@ -39,11 +39,11 @@ $ironCityData = [
 		],
 
 	],
-	"footerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742572766/iron-city-logo_be5tig.svg",
+	"footerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742581786/ironcityfc-logo_cc9a23.png",
 ];
 
 $emberUnitedData = [
-	"headerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742572460/ember-united-logo_ud6cik.svg",
+	"headerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742581778/emberunited-logo_k3h7jn.png",
 	"splashHeading" => "Forging a legacy of fire and passion.",
 	"splashText" => "At Ember United, we bring the heat to every match. Our team’s dedication and relentless drive make us a force to be reckoned with. From the training ground to the championship stage, we play with the intensity of a blazing fire.",
 	"splashImage" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742560418/ember-main_btxojn.png",
@@ -82,7 +82,7 @@ $emberUnitedData = [
 		],
 
 	],
-	"footerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742572460/ember-united-logo_ud6cik.svg",
+	"footerLogo" => "https://res.cloudinary.com/dhgciqwbz/image/upload/v1742581778/emberunited-logo_k3h7jn.png",
 ];
 
 ?>
