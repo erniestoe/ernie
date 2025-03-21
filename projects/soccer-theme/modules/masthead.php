@@ -3,7 +3,7 @@
 
 	<nav class='site-menu'>
 		<a class='logo' href='#'>
-			<?= $data['headerLogo'];?>
+			<img src="<?= $data['headerLogo'];?>">
 			<!-- or you could actually use the SVG -->
 		</a>
 

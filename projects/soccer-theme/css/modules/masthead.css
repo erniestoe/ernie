@@ -24,6 +24,10 @@ mast-head {
     white-space: nowrap;
     width: 1px;
   }
+
+  .user-menu {
+    margin-top: 20px;
+  }
 }
 
 mast-head nav {
@@ -36,7 +40,7 @@ mast-head nav {
 
 mast-head .logo {
   font-size: 4rem;
-/*  max-width: 600px;*/
+  max-width: 80px;
   padding: 0;
   
 }
@@ -75,6 +79,8 @@ mast-head a {
       align-items: center;
     }
 
-
+    .user-menu {
+    margin-top: 0;
+  }
   }
 }
