@@ -1,7 +1,7 @@
 
 <site-map>
 	<a class='logo' href='#'>
-		<img src="<?=$data['footerLogo'];?>">
+		<?php include($data['footerLogo']); ?>
 	</a>
 	
 	<nav class='user-menu'>
