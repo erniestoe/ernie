@@ -28,6 +28,7 @@ mast-head {
   .user-menu {
     margin-top: 20px;
   }
+
 }
 
 mast-head nav {
@@ -40,7 +41,7 @@ mast-head nav {
 }
 
 mast-head .logo {
-  font-size: 4rem;
+  font-size: 100px;
   max-width: 80px;
   padding: 0;
   

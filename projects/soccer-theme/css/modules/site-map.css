@@ -20,6 +20,7 @@ site-map {
 
 site-map .logo {
   text-decoration: none;
+  font-size: 100px;
   max-width: 80px;
 }
 
