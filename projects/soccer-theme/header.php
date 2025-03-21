@@ -4,7 +4,7 @@
 	<?php include('head.php'); ?>
 
 	<body>
-		<header class='site-header'>
+		<header class='site-header <?= $team === 'ember' ? 'ember-header' : '';?>'>
 		<inner-column>
 
 			<?php include('modules/masthead.php'); ?>

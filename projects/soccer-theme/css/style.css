@@ -55,6 +55,12 @@ html {
 	position: sticky;
 	top: 0;
 /*	box-shadow: 0 2px 5px 0px rgba(0,0,0,.4);*/
+
+
+}
+
+.ember-header {
+	background-color: black;
 }
 .site-header inner-column {
 	padding: 14px;
@@ -103,6 +109,10 @@ html {
 
 .site-footer {
 	background-color: var(--light-grey);
-	
+	padding-bottom: 80px;
+}
+
+.ember-footer {
+/*	background-color: var(--dark-grey);*/
 }
 

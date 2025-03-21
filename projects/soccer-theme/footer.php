@@ -3,7 +3,7 @@
 		</main>
 
 
-		<footer class='site-footer'>
+		<footer class='site-footer <?= $team === 'ember' ? 'ember-footer' : '';?>'>
 		<inner-column>
 
 			<!-- no headers in footers allowed? -->

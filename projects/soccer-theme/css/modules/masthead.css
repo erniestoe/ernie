@@ -6,6 +6,24 @@ mast-head {
     color: var(--charcoal);
     background-color: var(--orange);
   }
+
+  .ember-button {
+/*  background-color: var(--ember-orange);*/
+  }
+
+  .button + .button {
+    margin-left: 10px;
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 }
 
 mast-head nav {
@@ -28,15 +46,35 @@ mast-head a {
   padding:  10px;
 }
 
-@media (min-width: 600px) {
+@media (width >= 756px) {
   mast-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
+    nav {
+
+    }
+
     .logo {
       margin-right: 60px;
     }
+
+    .visually-hidden {
+      clip: auto;
+      clip-path: none;
+      height: auto;
+      overflow: visible;
+      position: static;
+      white-space: normal;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
   }
 }

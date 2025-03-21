@@ -1,9 +1,9 @@
 
 <call-to-action>
 
-	<h2 class='attention-voice'>Become Part of the Pride.</h2>
+	<h2 class='attention-voice'><?= $data['ctaHeading'];?></h2>
 
-	<p class='calm-voice'>Support Iron City FC as we chase victory. Sign up for exclusive news, match updates, and insider content.</p>
+	<p class='calm-voice'><?= $data['ctaText'];?></p>
 
 	<a href='#' class="button">
 		<span>Subscribe Now</span>

@@ -18,10 +18,15 @@ article-card {
   div {
     padding-inline: 20px;
   }
+
+  p {
+    color: #444;
+  }
 }
 
 article-card h2 {
   margin-top: 20px;
+  text-wrap: balance;
 }
 
 article-card a {

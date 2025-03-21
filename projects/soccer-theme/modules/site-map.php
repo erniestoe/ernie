@@ -1,7 +1,7 @@
 
 <site-map>
 	<a class='logo' href='#'>
-		Iron City Fc
+		<?=$data['footerLogo'];?>
 	</a>
 	
 	<nav class='user-menu'>

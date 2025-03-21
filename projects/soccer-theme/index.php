@@ -1,7 +1,14 @@
+<?php 
+	include('data.php');
 
+	$team = $_GET['team'] ?? 'iron';
+	$data = $team === 'ember' ? $emberUnitedData : $ironCityData;
+
+	$otherTeam = $team === 'ember' ? 'iron' : 'ember';
+	$otherTeamName = $team === 'ember' ? "Iron City FC" : 'Ember United';
+?>
 
 <?php include('header.php'); ?>
-
 
 
 <section class='welcome'>
