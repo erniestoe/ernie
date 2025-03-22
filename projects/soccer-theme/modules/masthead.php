@@ -4,7 +4,6 @@
 	<nav class='site-menu'>
 		<a class='logo' href='#'>
 			<?php include($data['headerLogo']); ?>
-			<!-- or you could actually use the SVG -->
 		</a>
 
 		<div class="links visually-hidden">
