@@ -10,18 +10,22 @@
 
 
 	$cssPages = [
-   	 "home" => "home.css", 
+   	"home" => "home.css", 
     	"garden" => "layout-garden.css",
     	"design" => "design.css",
-    	"programming" => "exercises-for-programmers.css"
+    	"programming" => "exercises-for-programmers.css",
+    	"project" => "project.css",
+    	"404" => "404.css"
 	];
 
 	$pageInclude = 'pages/' . $page . '.php';
-	$cssFile = isset($cssPages[$page]) ? 'css/' . $cssPages[$page] : 'css/style.css';
 
 	if (!file_exists($pageInclude)) {
-    $pageInclude = 'pages/home.php'; // Default to home page
+		$page = "404";
+    	$pageInclude = 'pages/404.php';
 	}
+
+	$cssFile = isset($cssPages[$page]) ? 'css/' . $cssPages[$page] : 'css/style.css';
 ?>
 <!doctype html>
 
