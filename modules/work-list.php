@@ -8,14 +8,6 @@
 						"link" => "projects/drama-club/index.html"
 					],
 					[
-						"title" => "Design",
-						"link" => "projects/design/index.php"
-					],
-					[
-						"title" => "Programming Exercises",
-						"link" => "projects/learning/index.php"
-					],
-					[
 						"title" => "Resource List",
 						"link" => "projects/resource-list/index.php"
 					],

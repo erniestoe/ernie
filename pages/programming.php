@@ -1,5 +1,3 @@
-<?php include '../../includes/header.php' ?>
-
 <?php $form = isset($_GET['form']) ? $_GET['form'] : 'area'; ?>
 
 <header>
@@ -7,13 +5,13 @@
 		<h1 class="loud-voice">Excersises For Programmers</h1>
 
 		<nav class="form-links">
-			<a href="?form=area">Area of a rectangular room</a>
-			<a href="?form=tax">Tax Calculator</a>
-			<a href="?form=driving">Legal Driving Age</a>
-			<a href="?form=anagrams">Anagram Checker</a>
-			<a href="?form=pizza">Pizza Party</a>
-			<a href="?form=temp">Temperature Converter</a>
-			<a href="?form=characters">Counting the Number of Characters</a>
+			<a href="?page=programming&form=area">Area of a rectangular room</a>
+			<a href="?page=programming&form=tax">Tax Calculator</a>
+			<a href="?page=programming&form=driving">Legal Driving Age</a>
+			<a href="?page=programming&form=anagrams">Anagram Checker</a>
+			<a href="?page=programming&form=pizza">Pizza Party</a>
+			<a href="?page=programming&form=temp">Temperature Converter</a>
+			<a href="?page=programming&form=characters">Counting the Number of Characters</a>
 			<a href="?form=checkout">Self-Checkout</a>
 		</nav>
 	</inner-column>
@@ -428,5 +426,3 @@
 	</inner-column>
 </section>
 <?php endif;?>
-
-<?php include '../../includes/footer.php' ?>

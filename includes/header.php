@@ -6,24 +6,22 @@
     	define('BASE_URL', '/beta-two/ernie'); //url for deployment server
 	}
 
-	// Defining css files for each page
+	$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+
+
 	$cssPages = [
-		"home" => "/css/home.css", 
-		"layout-garden" => "/css/layout-garden.css",
-		"design" => "/css/design.css",
-		"learning" => "/css/exercises-for-programmers.css"
+   	 "home" => "home.css", 
+    	"garden" => "layout-garden.css",
+    	"design" => "design.css",
+    	"programming" => "exercises-for-programmers.css"
 	];
 
-	// Finding the full path for the parent folder -- easier than typing it out?
-	$parentFolder = basename(dirname($_SERVER['SCRIPT_NAME']));
+	$pageInclude = 'pages/' . $page . '.php';
+	$cssFile = isset($cssPages[$page]) ? 'css/' . $cssPages[$page] : 'css/style.css';
 
-	// || to check if its either ernie or blank
-	if ($parentFolder === 'ernie' || $parentFolder === '') {
-		$parentFolder = 'home'; 
+	if (!file_exists($pageInclude)) {
+    $pageInclude = 'pages/home.php'; // Default to home page
 	}
-
-	// Used ?? here to make sure if not found on the left then go to the right (the default)
-	$cssLink = BASE_URL . ($cssPages[$parentFolder] ?? "/css/style.css");
 ?>
 <!doctype html>
 
@@ -34,7 +32,7 @@
 		<meta property="og:title" content="Ernies Index!">
 		<meta property="og:image" content="https://peprojects.dev/beta-two/ernie/assets/images/meta-image.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="<?= $cssLink ?>" >
+		<link rel="stylesheet" href="<?= $cssFile ?>" >
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
@@ -44,9 +42,11 @@
 		<header class="site-header">
 			<inner-column>
 				<masthead>
-					
-
 					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
+
+					<nav>
+						<a href="index.php?page=garden">Layout Garden</a> <a href="index.php?page=design">Visual Design</a> <a href="index.php?page=programming">E4P</a>
+					</nav>
 				</masthead>
 			</inner-column>
 		</header>

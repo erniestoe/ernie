@@ -1,4 +1,3 @@
-<?php include '../includes/header.php' ?>
 
 <header class="page-header" id="top">
 	<inner-column>
@@ -42,5 +41,3 @@
 			<a href="#top" class="calm-voice">Back to top</a>
 	</inner-column>
 </footer>
-			
-<?php include '../includes/footer.php' ?>

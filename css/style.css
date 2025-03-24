@@ -65,3 +65,33 @@ p {
 	text-decoration: none;
 }
 
+.site-header {
+	masthead {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		@media (width >= 600px) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		nav {
+			display: flex;
+			gap: 20px;
+			a {
+				background-color: #fbae17;
+				border-radius: 5px;
+				padding: 2px;
+				border: 2px solid black;
+				box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+				text-decoration: none;
+				width: fit-content;
+				color: #000;
+				transition: all 0.2s;
+			}
+		}
+	}
+}
+
