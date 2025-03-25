@@ -47,7 +47,7 @@
 		<header class="site-header">
 			<inner-column>
 				<masthead>
-					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
+					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Rivera-Saavedra</a></h2>
 
 					<nav>
 						<a href="index.php?page=garden">Layout Garden</a> <a href="index.php?page=design">Visual Design</a> <a href="index.php?page=programming">E4P</a>

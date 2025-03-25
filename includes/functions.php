@@ -2,6 +2,21 @@
 
 $projectData = include 'data/project-data.php';
 
+function renderProjectList() {
+	global $projectData;
+
+	$count = 0;
+
+	foreach($projectData as $project) {
+		$count++;?>
+		<li>
+			<p class="number"><?=$count < 10 ? 0 . $count : $count ?></p>
+
+			<a class="calm-voice" href="index.php?page=project&id=<?=$project['id'];?>"><?=$project["projectName"]?></a>
+		</li>
+	<?php }
+}
+
 function renderProject() {
 	global $projectData;
 
