@@ -2,24 +2,7 @@
 	<h2 class="attention-voice">Work</h2>
 			<ul>
 				<?php 
-				$works = [
-					[
-						"title" => "Drama Club",
-						"link" => "projects/drama-club/index.html"
-					],
-					[
-						"title" => "Resource List",
-						"link" => "projects/resource-list/index.php"
-					],
-					[
-						"title" => "audiophile",
-						"link" => "projects/audiophile/index.php"
-					],
-					[
-						"title" => "Theme Challenge",
-						"link" => "index.php?page=project"
-					],
-				];
+				$works = include 'data/project-data.php';
 
 				$count = 0;
 
@@ -29,7 +12,7 @@
 					?>
 					<li>
 						<p class="number"><?=$count < 10 ? 0 . $count : $count ?></p>
-						<a class="calm-voice" href="<?=$work["link"]?>"><?=$work["title"]?></a>
+						<a class="calm-voice" href="index.php?page=project&id=<?=$work['id'];?>"><?=$work["projectName"]?></a>
 					</li>
 				<?php }?>
 			</ul>
