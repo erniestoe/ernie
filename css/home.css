@@ -4,7 +4,6 @@
 	inner-column {
 		display:grid;
 		grid-template-columns: repeat(3, 1fr);
-/*		grid-template-columns: 250px 250px 1fr;*/
 		gap: 50px;
 
 		@media (width >= 500px) {
@@ -59,7 +58,7 @@
 					transition: all 0.2s;
 				}
 
-				a:nth-of-type(1) {
+			/*	a:nth-of-type(1) {
 					background-color: #DB504A;
 				}
 
@@ -69,7 +68,7 @@
 
 				a:nth-of-type(3) {
 					background-color: #c9a2c3;
-				}
+				}*/
 			}
 
 			a {
@@ -98,14 +97,14 @@
 				width: 30px;
 				height: 30px;
 				border-radius: 50%;
-				background-color: #DB504A;
+/*				background-color: #DB504A;*/
 /*				box-shadow: 2px 1px 0px 0px rgba(0,0,0,1);	*/
 				border: 2px solid black;
 				text-align: center;
 			}
 
 			li:nth-of-type(even) .number {
-				background-color: #fbae17;
+/*				background-color: #fbae17;*/
 			}
 
 			li {
