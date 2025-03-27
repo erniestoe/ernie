@@ -4,15 +4,16 @@
 	}
 	$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 	$pageInclude = 'pages/' . $page . '.php';
+
 	if (!file_exists($pageInclude)) {
 		http_response_code(404);
 		$page = "404";
     	$pageInclude = 'pages/404.php';
 	}
-	include "functions.php";
-	processForm();
 
 	$cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
+	include "functions.php";
+	processForm();
 ?>
 
 <!DOCTYPE html>
