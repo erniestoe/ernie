@@ -1,19 +1,19 @@
 <?php 
-	include "data.php";
+	if (session_status() === PHP_SESSION_NONE) {
+    	session_start();
+	}
+	
+	$resourcesData = json_decode(file_get_contents('data/resources.json'), true);
 
-	$resources = [
-		"Childcare Assistance" => $childcareResources,
-		"Clothing" => $clothingResources,
-		"Education / Training" => $educationResources,
-		"Employment" => $employmentResources,
-		"Family Services" => $familyResources,
-		"Financial" => $financialResources,
-		"Food" => $foodResources,
-		"Government" => $governmentResources,
-		"Housing" => $housingResources,
-		"Legal" => $legalResources,
-		"Medical / Mental Health" => $medicalResources
-	];
+	$resources = [];
+	foreach ($resourcesData as $resource) {
+		$category = $resource['category'];
+		if (!isset($resources[$category])) {
+			$resources[$category] = [];
+		}
+		$resources[$category][] = $resource;
+	}
+
 
 	$currentFilters = isset($_GET['filter']) ? (array) $_GET['filter'] : ['all'];
 
@@ -59,7 +59,7 @@
 			<section class="category">
 				<inner-column>
 
-					<h2 class="attention-voice red" aria-label="Resource Category:<?=$category?>"><?=$category?></h2>
+					<h2 class="attention-voice category-title" aria-label="Resource Category:<?=$category?>"><?=$category?></h2>
 					<ul>
 						<?php foreach($resourceList as $resource) {?>
 							<li>
@@ -94,7 +94,15 @@
 									<p aria-label="This Resource does not have a website listed"></p>
 								<?php } ?>
 
-								<button class="pdf-button" id="addToPDF">Add to PDF</button>
+								<button class="pdf-button" name="addToPDF" value="<?=$resource["id"]?>" form="addToCartForm">Add to PDF</button>
+
+								<form id="addToCartForm" method="POST" action="index.php?page=cart">
+    								<input type="hidden" name="form_type" value="add_to_cart">
+								</form>
+
+								<?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true) { ?>
+    							<a href="index.php?page=edit&id=<?=$resource["id"]?>" class="edit-button">Edit</a>
+								<?php } ?>
 							</li>
 						<?php }; 
 						?>
@@ -104,4 +112,35 @@
 		<?php
 		}
 	}
+
+	function processForm() {
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["form_type"])) {
+        if ($_POST["form_type"] == "login") {
+            // Process login form
+            $username = $_POST["username"] ?? '';
+            $password = $_POST["password"] ?? '';
+
+            if ($username === 'admin' && $password === 'pass') {
+                $_SESSION["logged_in"] = true;
+                header("Location: index.php?page=admin");
+                exit;
+            } else {
+                echo "Invalid credentials.";
+            }
+
+        } elseif ($_POST["form_type"] == "theme") {
+            // Process theme change
+        	if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark') { 
+        		$_SESSION['theme'] = 'light';
+        	} else {
+        		$_SESSION['theme'] = 'dark';
+        	}
+           header("Location: " . $_SERVER['REQUEST_URI']);
+           exit;
+        }
+    }
+	}
+}
+
 ?>

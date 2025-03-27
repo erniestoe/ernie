@@ -1,8 +1,51 @@
 @import "reset.css";
 @import "setup.css";
 
+:root {
+	--light-bg: #cbcbcb; 
+/*	#c5f9a0
+#d48695
+#ccfbf1
+#ee5595
+*/
+	--light-color: #151515;
+/*	
+#0f766e
+#fffdf6
+*/
+
+
+	--dark-bg: #fd3e56;
+/*	#f5667b
+#57a47a
+#d599ac*/
+	--dark-color: #e0fcfb;
+}
+
 html {
 	scroll-behavior: smooth;
+}
+
+.light {
+	background-color: var(--light-bg);
+	color: var(--light-color);
+
+	.category-title,
+	button{
+		background-color: var(--light-color);
+		color: var(--light-bg);
+	}
+}
+
+.dark {
+	background-color: var(--dark-bg);
+	color: var(--dark-color);
+
+	.category-title,
+	button {
+		background-color: var(--dark-color);
+		color: var(--dark-bg);
+	}
 }
 
 body {
@@ -29,7 +72,7 @@ inner-column {
 p {
 	font-size: 1rem;
 	font-weight: 400;
-	color: #333;
+/*	color: #333;*/
 }
 
 .strong-voice {
@@ -47,10 +90,16 @@ p {
 	font-weight: 800;
 }
 
-.red {
-	background-color: #DB504A;
+button {
+	border: none;
+	padding: 10px;
 }
 
+@media (width >= 1000px) {
+	button:hover {
+		cursor: pointer;
+	}		
+}
 
 header {
 	inner-column {
@@ -74,7 +123,6 @@ header {
 		}
 
 		.top-button {
-			background-color: #f5f5f5;
 			position: fixed;
 			bottom: 0;
 			right: 10px;
@@ -113,7 +161,7 @@ header {
 		}
 
 		button {
-			padding: 10px;
+/*			padding: 10px;*/
 
 			@media (width >= 700px) {
 				align-self: end;
@@ -170,12 +218,13 @@ header {
 
 		li { 
 			.bold {
-				font-weight: 700;
-				color: #000;
+				/*font-weight: 700;
+				color: #000;*/
 			}
 
-			border-bottom: 1px solid black;
+/*			border-bottom: 1px solid black;*/
 			padding-block: 50px;
+			padding-inline: 25px;
 
 			h3 {
 				font-size: 1.25rem;
