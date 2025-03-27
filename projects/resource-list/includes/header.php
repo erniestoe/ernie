@@ -1,7 +1,7 @@
 <?php
-	// if (session_status() === PHP_SESSION_NONE) {
-   //  session_start();
-	// }
+	if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+	}
 	$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 	$pageInclude = 'pages/' . $page . '.php';
 
