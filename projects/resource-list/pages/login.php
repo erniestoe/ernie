@@ -10,14 +10,18 @@ if (session_status() === PHP_SESSION_NONE) {
 	<inner-column>
 		<?php if (isset($error)) { echo "<p style='color: red;'>$error</p>"; } ?>
 
-		<form method="POST">
+		<form method="POST" class="login-form">
 			<input type="hidden" name="form_type" value="login">
-			<label>Username:</label>
-			<input type="text" id="username" name="username" required>
-
-			<label>Password:</label>
-			<input type="password" id="password" name="password" required>
-
+			<div class="field">
+				<label>Username:</label>
+				<input type="text" id="username" name="username" required>
+			</div>
+			
+			<div class="field">
+				<label>Password:</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			
 			<button type="submit">Login</button>
 		</form>
 

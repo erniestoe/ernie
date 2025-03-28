@@ -1,5 +1,8 @@
 @import "reset.css";
 @import "setup.css";
+@import "pages/login.css";
+@import "pages/admin.css";
+@import "pages/update.css";
 
 :root {
 	--light-bg: #cbcbcb; 
@@ -15,11 +18,9 @@
 */
 
 
-	--dark-bg: #fd3e56;
-/*	#f5667b
-#57a47a
-#d599ac*/
-	--dark-color: #e0fcfb;
+	--dark-bg: #d48695;
+
+	--dark-color: #fffdf6;
 }
 
 html {
@@ -31,7 +32,8 @@ html {
 	color: var(--light-color);
 
 	.category-title,
-	button{
+	button,
+	.edit-button{
 		background-color: var(--light-color);
 		color: var(--light-bg);
 	}
@@ -42,7 +44,8 @@ html {
 	color: var(--dark-color);
 
 	.category-title,
-	button {
+	button,
+	.edit-button {
 		background-color: var(--dark-color);
 		color: var(--dark-bg);
 	}
@@ -50,9 +53,21 @@ html {
 
 body {
 	background-color: #f5f5f5;
-	font-family: "Geist", sans-serif;
+	font-family: "Inter", sans-serif;
 	overflow-x: hidden;
 	position: relative;
+}
+
+input,
+textarea {
+	font-family: inherit;
+	border-radius: 0;
+	border: 1px solid var(--light-color);
+/*	background-color: inherit;*/
+}
+
+textarea {
+	resize: none;
 }
 
 inner-column {
@@ -69,7 +84,8 @@ inner-column {
 }
 
 .calm-voice,
-p {
+p,
+button {
 	font-size: 1rem;
 	font-weight: 400;
 /*	color: #333;*/
@@ -90,13 +106,31 @@ p {
 	font-weight: 800;
 }
 
-button {
+.buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+
+}
+
+button,
+.edit-button{
 	border: none;
 	padding: 10px;
+	margin-top: 12px;
+	font-family: inherit;
+}
+
+.edit-button {
+	max-width: fit-content;
+	text-decoration: none;
+	text-align: center;
+/*	*/
 }
 
 @media (width >= 1000px) {
-	button:hover {
+	button:hover,
+	.edit-button:hover {
 		cursor: pointer;
 	}		
 }
@@ -129,6 +163,16 @@ header {
 			padding: 10px;
 			z-index: 10;
 		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.admin-nav {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
 	}
 }
 
@@ -140,6 +184,11 @@ header {
 
 		@media (width >= 1200px) {
 			margin-left: 65%;
+		}
+
+		input[type="checkbox"] {
+			width: 20px;
+			height: 20px;
 		}
 
 		.fields {
@@ -157,15 +206,14 @@ header {
 				justify-content: space-between;
 				align-items: center;
 				padding-right: 20px;
+
 			}
 		}
 
-		button {
-/*			padding: 10px;*/
-
-			@media (width >= 700px) {
-				align-self: end;
-			}
+		.form-buttons {
+			display:flex;
+			align-items: end;
+			justify-content: space-between;
 		}
 	}
 }
@@ -218,8 +266,8 @@ header {
 
 		li { 
 			.bold {
-				/*font-weight: 700;
-				color: #000;*/
+				font-weight: 700;
+				color: #000;
 			}
 
 /*			border-bottom: 1px solid black;*/

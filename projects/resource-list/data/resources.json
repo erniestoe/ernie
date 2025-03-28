@@ -1,14 +1,5 @@
 [
     {
-        "id": 1,
-        "category": "Childcare Assistance",
-        "title": "Child Care Resource Center",
-        "phone": "3362454900",
-        "website": "https:\/\/childcareresourcecenter.org\/",
-        "address": "500 W 4th St #202, Winston-Salem, NC",
-        "description": "CCRC is a private, non-profit child care resource and\r\nreferral agency committed to providing consumer\r\neducation, child care referrals, resources, and\r\nprofessional development opportunities to support\r\nquality child care."
-    },
-    {
         "id": 2,
         "category": "Clothing",
         "title": "Catholic Charities \u2013 Dioceses of Charlotte",

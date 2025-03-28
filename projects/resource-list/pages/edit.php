@@ -43,29 +43,43 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($resource)) {
 }
 ?>
 
-<section class="edit-resource">
+<section class="update-resource">
 	<inner-column>
-		<h2>Edit Resource</h2>
+        <header>
+            <h2 class="loud-voice">Update Resource</h2>
+            <a href="index.php">Cancel</a> 
+        </header>
+		
+		<form action="index.php?page=edit&id=<?= htmlspecialchars($id) ?>"method="POST" class="update-form">
 
-		<form action="index.php?page=edit&id=<?= htmlspecialchars($id) ?>"method="POST">
-			<label for="title">Title:</label>
-        <input type="text" id="title" name="title" value="<?= htmlspecialchars($resource["title"]) ?>" required>
+        <div class="field">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="<?= htmlspecialchars($resource["title"]) ?>" required>
+        </div>
+		
+        <div class="field">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required><?= htmlspecialchars($resource["description"]) ?></textarea>
+        </div>
 
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" required><?= htmlspecialchars($resource["description"]) ?></textarea>
+        <div class="field">
+           <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" value="<?= htmlspecialchars($resource["phone"]) ?>"> 
+        </div>
 
-        <label for="phone">Phone:</label>
-        <input type="text" id="phone" name="phone" value="<?= htmlspecialchars($resource["phone"]) ?>">
-
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" value="<?= htmlspecialchars($resource["address"]) ?>">
-
-        <label for="website">Website:</label>
-        <input type="url" id="website" name="website" value="<?= htmlspecialchars($resource["website"]) ?>">
+        <div class="field">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" value="<?= htmlspecialchars($resource["address"]) ?>">
+        </div>
+        
+        <div class="field">
+           <label for="website">Website:</label>
+            <input type="url" id="website" name="website" value="<?= htmlspecialchars($resource["website"]) ?>"> 
+        </div>
 
         <button type="submit">Update Resource</button>
 		</form>
 
-		<a href="index.php">Cancel</a>
+		
 	</inner-column>
 </section>

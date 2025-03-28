@@ -17,6 +17,16 @@
 
 	$currentFilters = isset($_GET['filter']) ? (array) $_GET['filter'] : ['all'];
 
+	if (count($currentFilters) > 1 && in_array('all', $currentFilters)) {
+    $currentFilters = array_filter($currentFilters, function($filter) {
+        return $filter !== 'all'; 
+	    });
+	}
+
+	if (empty($currentFilters)) {
+    	$currentFilters = ['all'];
+	}
+
 	function renderFilters() {
 		global $resources;
 		global $currentFilters;
@@ -27,9 +37,9 @@
 
 			<div class="fields">
 				<div class="field">
-				<label>Show All</label>
-				<input type="checkbox" name="filter[]" value="all" <?php if (in_array('all', $currentFilters)) echo 'checked'; ?>>
-			</div>
+					<label>Show All</label>
+					<input type="checkbox" name="filter[]" value="all" <?php if (in_array('all', $currentFilters)) echo 'checked'; ?>>
+				</div>
 
 			<?php foreach(array_keys($resources) as $category) {?>
 				<div class="field">
@@ -38,8 +48,13 @@
 				</div>
 			<?php } ?>
 			</div>
-		
-			<button type="submit">Apply Filter</button>
+			
+			<div class="form-buttons">
+				<button type="submit">Apply Filter</button>
+				<?php if(isset($_GET['filter']) && $currentFilters != ['all']) {?>
+				<a href="index.php?page=home">Clear Filters</a> 
+				<?php }?>
+			</div>
 		</form>
 	
 	<?php 
@@ -93,16 +108,13 @@
 								<?php } else {?>
 									<p aria-label="This Resource does not have a website listed"></p>
 								<?php } ?>
-
-								<button class="pdf-button" name="addToPDF" value="<?=$resource["id"]?>" form="addToCartForm">Add to PDF</button>
-
-								<form id="addToCartForm" method="POST" action="index.php?page=cart">
-    								<input type="hidden" name="form_type" value="add_to_cart">
-								</form>
+								<div class="buttons">
+									<button class="pdf-button">Add to PDF</button>
 
 								<?php if (isset($_SESSION["logged_in"]) && $_SESSION["logged_in"] === true) { ?>
-    							<a href="index.php?page=edit&id=<?=$resource["id"]?>" class="edit-button">Edit</a>
+    							<a href="index.php?page=edit&id=<?=$resource["id"]?>" class="edit-button">Update</a>
 								<?php } ?>
+								</div>
 							</li>
 						<?php }; 
 						?>

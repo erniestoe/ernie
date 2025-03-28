@@ -25,9 +25,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="<?php echo isset($_SESSION['theme']) ? $_SESSION['theme'] : 'light'; ?>">
+<body class="<?php echo isset($_SESSION['theme']) ? $_SESSION['theme'] : 'light';?> <?=$page?>">
 	
 	<header>
 		<inner-column id="top">
@@ -35,9 +35,9 @@
 			<a href="#top" aria-label="Go back to the beginning" class="top-button">Back to top</a>
 
 			<div class="pdf-list">
-				<a href="index.php?page=generate-pdf" class="pdf-list-title strong-voice">
-        My PDF <span id="listCount">[<?= $cartCount ?>]</span>
-    </a>
+				<a href="#" class="pdf-list-title strong-voice">
+        			My PDF <span id="listCount">[<?= $cartCount ?>]</span>
+    			</a>
 			</div>
 
 			<form method="POST">
@@ -46,9 +46,12 @@
     			<button type="submit" name="toggle">Toggle Theme</button>
 			</form>
 
-			<nav>
-				<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {?>
-					<a href="index.php?page=admin">Admin</a>
+			<nav class="admin-nav">
+				<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) { ?>
+					<?php if ($page != 'admin') { ?>
+						<a href="index.php?page=admin">Admin</a>
+					<?php }?>
+					
 					<a href="index.php?page=logout">Logout</a>
 				<?php } else {?>
 					<a href="index.php?page=login">Login</a>

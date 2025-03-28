@@ -37,43 +37,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <section class="admin-panel">
 	<inner-column>
-		<h2>Admin Panel</h2>
-		<a href="index.php?page=logout">Logout</a>
+		<header>
+			<h2 class="loud-voice">Admin Panel</h2>
+		</header>
+		
+		<h3 class="strong-voice">Add Resource</h3>
 
-		<h3>Add Resource</h3>
-
-		<form method="POST">
+		<form method="POST" class="add-form">
+		<div class="field">
 			<label>Category:</label>
-        <input type="text" name="category" required>
+       		<input type="text" name="category" required>
+		</div>
+		
+		<div class="field">
+			<label>Title:</label>
+        	<input type="text" name="title" required>
+		</div>
 
-        <label>Title:</label>
-        <input type="text" name="title" required>
+        <div class="field">
+        	<label>Phone:</label>
+        	<input type="text" name="phone">
+        </div>
 
-        <label>Phone:</label>
-        <input type="text" name="phone">
+        <div class="field">
+        	<label>Website:</label>
+        	<input type="text" name="website">
+        </div>
 
-        <label>Website:</label>
-        <input type="text" name="website">
+        <div class="field">
+        	<label>Address:</label>
+       	 	<input type="text" name="address">
+        </div>
 
-        <label>Address:</label>
-        <input type="text" name="address">
-
-        <label>Description:</label>
-        <textarea name="description" required></textarea>
+        <div class="field">
+        	<label>Description:</label>
+        	<textarea name="description" required></textarea>
+        </div>
 
         <button type="submit" name="add_resource">Add Resource</button>
 		</form>
 
-		<h3>Delete Resource</h3>
+		<h3 class="strong-voice">Delete Resource</h3>
 
-		<form method="POST">
-			<label>Select a Resource to Delete</label>
-			<select name="resource_id">
+		<form method="POST" class="delete-form">
+			<div class="field">
+				<label>Select a Resource to Delete</label>
+				<select name="resource_id">
 				<?php foreach ($resources as $resource) {?>
 					<option value="<?=$resource['id']?>"><?=$resource['title']?></option>
 				<?php }?>
-			</select>
-
+				</select>
+			</div>
+			
 			<button type="submit" name="delete_resource">Delete Resource</button>
 		</form>
 
