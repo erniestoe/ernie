@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
 		<?php if (isset($error)) { echo "<p style='color: red;'>$error</p>"; } ?>
 
 		<form method="POST" class="login-form">
-			<input type="hidden" name="form_type" value="login">
+			<input type="hidden" name="formType" value="login">
 			<div class="field">
 				<label>Username:</label>
 				<input type="text" id="username" name="username" required>

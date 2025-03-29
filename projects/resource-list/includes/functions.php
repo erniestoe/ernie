@@ -127,8 +127,8 @@
 
 	function processForm() {
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["form_type"])) {
-        if ($_POST["form_type"] == "login") {
+    if (isset($_POST["formType"])) {
+        if ($_POST["formType"] == "login") {
             // Process login form
             $username = $_POST["username"] ?? '';
             $password = $_POST["password"] ?? '';
@@ -141,7 +141,7 @@
                 echo "Invalid credentials.";
             }
 
-        } elseif ($_POST["form_type"] == "theme") {
+        } elseif ($_POST["formType"] == "theme") {
             // Process theme change
         	if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'dark') { 
         		$_SESSION['theme'] = 'light';

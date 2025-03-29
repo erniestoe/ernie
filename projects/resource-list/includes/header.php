@@ -41,7 +41,7 @@
 			</div>
 
 			<form method="POST">
-				 <input type="hidden" name="form_type" value="theme">
+				 <input type="hidden" name="formType" value="theme">
 				 
     			<button type="submit" name="toggle">Toggle Theme</button>
 			</form>
