@@ -1,0 +1,19 @@
+{
+	"about": "Winston-Salem based designer & developer open to opportunities in front-end development & design.",
+	"image": "assets/images/secret.png",
+	"links": [
+		{
+			"text": "Email",
+			"href": "mailto:ersaavedra.nc@gmail.com"
+		},
+		{
+			"text": "Github",
+			"href": "https://github.com/erniestoe"
+		},
+		{
+			"text": "Resume",
+			"href": "#"
+		}
+	],
+	"modules": ["work-list.php"]
+}

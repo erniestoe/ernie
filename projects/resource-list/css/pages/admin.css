@@ -1,0 +1,58 @@
+.admin-panel {
+	margin-block: 60px;
+
+	header {
+		margin-bottom: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	h3 + form {
+		margin-top: 30px;
+	}
+	form + h3 {
+		margin-top: 60px;
+	}
+
+	.add-form,
+	.delete-form {
+		display: flex;
+		flex-direction: column;
+		max-width: 500px;
+		button {
+			align-self: end;
+			min-width: 180px;
+		}
+	}
+
+	.add-form {
+		gap: 12px;
+
+		.field {
+			display: grid;
+			grid-template-columns: 100px 1fr;
+			align-items: center;
+			gap: 20px;
+			input,
+			textarea {
+				padding: 10px;
+			}
+		}
+	}
+
+	.delete-form {
+		gap: 12px;
+
+		.field {
+			display: flex;
+			flex-direction: column;
+			
+			select {
+				margin-top: 12px;
+				padding: 10px;
+				border-radius: 0;
+/*				max-width: 100%;*/
+			}
+		}
+	}
+}

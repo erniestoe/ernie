@@ -1,22 +1,20 @@
-
-
 <section class="home-content">
 	<inner-column>
 		<div class="about">
-			<p>Winston-Salem based designer & developer open to opportunities in front-end development & design.</p>
+			<p><?=$pageData['about']?></p>
 
 			<div class="links">
-				<a class="calm-voice" href="mailto:ersaavedra.nc@gmail.com">Email</a>
-				<a class="calm-voice" href="https://github.com/erniestoe" target="_blank">Github</a>
-				<a class="calm-voice" href="#">Resume</a>
+			<?php foreach($pageData['links'] as $link){?>
+				<a href="<?=$link['href'];?>"><?=$link['text'];?></a>
+			<?php } ?>
 			</div>
 		</div>
 
 		<picture>
-			<img src="assets/images/secret.png">
+			<img src="<?=$pageData['image'];?>">
 		</picture>
 
-		<?php include 'modules/work-list.php' ?>
+		<?php include 'modules/' . $pageData['modules'][0]; ?>
 	</inner-column>
 </section>
 

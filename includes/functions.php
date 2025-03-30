@@ -1,5 +1,4 @@
 <?php 
-
 $projectData = include 'data/project-data.php';
 
 function renderProjectList() {
@@ -65,4 +64,37 @@ function renderProject() {
     	
 	</project>
 	<?php 
+}
+
+function renderCSS($page) {
+	$cssPages = [
+   	"home" => "home.css", 
+    	"garden" => "layout-garden.css",
+    	"design" => "design.css",
+    	"programming" => "exercises-for-programmers.css",
+    	"project" => "project.css",
+    	"404" => "404.css"
+	];
+
+	return isset($cssPages[$page]) ? 'css/' . $cssPages[$page] : 'css/style.css';
+}
+
+// Checks to see if running on dev or deployment server
+function checkServer() {
+	if ($_SERVER['HTTP_HOST'] === 'ernie.test') {
+    	define('BASE_URL', '');
+	} else {
+    	define('BASE_URL', '/beta-two/ernie'); //url for deployment server
+	}
+}
+
+function getPageData($page) {
+	$filePath = "data/{$page}.json";
+
+	if (file_exists($filePath)) {
+		$jsonData = file_get_contents($filePath);
+		return json_decode($jsonData, true);
+	}
+
+	return null;
 }
