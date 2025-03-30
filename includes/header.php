@@ -1,7 +1,8 @@
 <?php 
 include ('includes/router.php');
 include ('includes/functions.php');
-	
+
+
 checkServer();
 $pageData = getPageData($page);
 ?>
