@@ -14,6 +14,7 @@
 	$cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 	include "functions.php";
 	processForm();
+	checkServer();
 ?>
 
 <!DOCTYPE html>
@@ -35,25 +36,25 @@
 			<a href="#top" aria-label="Go back to the beginning" class="top-button">Back to top</a>
 
 			<div class="pdf-list">
-				<a href="#" class="pdf-list-title strong-voice">
+				<a href="?page=cart" class="pdf-list-title strong-voice">
         			My PDF <span id="listCount">[<?= $cartCount ?>]</span>
     			</a>
 			</div>
 
-			<form method="POST">
+			<!-- <form method="POST">
 				 <input type="hidden" name="formType" value="theme">
 				 
     			<button type="submit" name="toggle">Toggle Theme</button>
-			</form>
+			</form> -->
 
 			<nav class="admin-nav">
-				<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) { ?>
+				<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true && defined('BASE_URL') && BASE_URL !== '') { ?>
 					<?php if ($page != 'admin') { ?>
 						<a href="index.php?page=admin">Admin</a>
 					<?php }?>
 					
 					<a href="index.php?page=logout">Logout</a>
-				<?php } else {?>
+				<?php } elseif (defined('BASE_URL') && BASE_URL === '') {?>
 					<a href="index.php?page=login">Login</a>
 				<?php } ?>
 			</nav>

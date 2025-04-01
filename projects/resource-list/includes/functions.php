@@ -127,7 +127,7 @@
 
 	function processForm() {
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["formType"])) {
+    	if (isset($_POST["formType"])) {
         if ($_POST["formType"] == "login") {
             // Process login form
             $username = $_POST["username"] ?? '';
@@ -150,9 +150,21 @@
         	}
            header("Location: " . $_SERVER['REQUEST_URI']);
            exit;
-        }
-    }
+        		}
+    		}
+		}
 	}
-}
+
+	function checkServer() {
+		if ($_SERVER['HTTP_HOST'] === 'ernie.test') {
+    		define('BASE_URL', '');
+		} else {
+    	define('BASE_URL', '/beta-two/ernie'); //url for deployment server
+		}
+	}
+
+
+
+
 
 ?>
