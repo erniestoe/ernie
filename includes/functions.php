@@ -69,8 +69,7 @@ function renderProject() {
     		</ul>
     	</div>
     	
-
-    	
+		<a href="index.php?page=home" class="home-link">Go back home?</a>  
 	</project>
 	<?php 
 }
