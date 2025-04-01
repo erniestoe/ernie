@@ -1,0 +1,54 @@
+[
+	{
+		"id": 1,
+		"projectName": "Theme Challenge",
+		"projectText": "[[A description should probably go here...]]",
+		"links": [
+			{
+				"text": "Haven & Hue",
+				"href": "projects/theme-challenge/index.php"
+			},
+			{
+				"text": "Rendered",
+				"href": "projects/rendered/index.php"
+			},
+			{
+				"text": "Soccer Leauge",
+				"href": "projects/soccer-theme/index.php"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"projectName": "audiophile",
+		"projectText": "[[A description should probably go here...]]",
+		"links": [
+			{
+				"text": "Check it out",
+				"href": "projects/audiophile/index.php"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"projectName": "Drama Club",
+		"projectText": "[[A description should probably go here...]]",
+		"links": [
+			{
+				"text": "Check it out",
+				"href": "projects/drama-club/index.html"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"projectName": "Resource Site",
+		"projectText": "[[A description should probably go here...]]",
+		"links": [
+			{
+				"text": "Check it out",
+				"href": "projects/resource-list/index.php"
+			}
+		]
+	}
+]
