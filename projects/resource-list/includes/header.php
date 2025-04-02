@@ -1,20 +1,9 @@
 <?php
-	if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-	}
-	$page = isset($_GET['page']) ? $_GET['page'] : 'home';
-	$pageInclude = 'pages/' . $page . '.php';
-
-	if (!file_exists($pageInclude)) {
-		http_response_code(404);
-		$page = "404";
-    	$pageInclude = 'pages/404.php';
-	}
-
-	$cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
 	include "functions.php";
+	startSession();
 	processForm();
 	checkServer();
+	list($page, $pageInclude) = getCurrentPage();
 ?>
 
 <!DOCTYPE html>
@@ -37,18 +26,12 @@
 
 			<div class="pdf-list">
 				<a href="?page=cart" class="pdf-list-title strong-voice">
-        			My PDF <span id="listCount">[<?= $cartCount ?>]</span>
+        			My PDF <span id="listCount">[[]]</span>
     			</a>
 			</div>
 
-			<!-- <form method="POST">
-				 <input type="hidden" name="formType" value="theme">
-				 
-    			<button type="submit" name="toggle">Toggle Theme</button>
-			</form> -->
-
 			<nav class="admin-nav">
-				<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true && defined('BASE_URL') && BASE_URL !== '') { ?>
+				<?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true && defined('BASE_URL') && BASE_URL === '') { ?>
 					<?php if ($page != 'admin') { ?>
 						<a href="index.php?page=admin">Admin</a>
 					<?php }?>
