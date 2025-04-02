@@ -1,37 +1,58 @@
 <?php 
-	if (session_status() === PHP_SESSION_NONE) {
-    	session_start();
-	}
-	
-	$resourcesData = json_decode(file_get_contents('data/resources.json'), true);
-
-	$resources = [];
-	foreach ($resourcesData as $resource) {
-		$category = $resource['category'];
-		if (!isset($resources[$category])) {
-			$resources[$category] = [];
+	function startSession() {
+		if (session_status() === PHP_SESSION_NONE) {
+    		session_start();
 		}
-		$resources[$category][] = $resource;
 	}
 
+	function getCurrentPage() {
+		$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+		$pageInclude = 'pages/' . $page . '.php';
 
-	$currentFilters = isset($_GET['filter']) ? (array) $_GET['filter'] : ['all'];
+		if (!file_exists($pageInclude)) {
+			http_response_code(404);
+			$page = "404";
+    		$pageInclude = 'pages/404.php';
+		}
 
-	if (count($currentFilters) > 1 && in_array('all', $currentFilters)) {
-    $currentFilters = array_filter($currentFilters, function($filter) {
-        return $filter !== 'all'; 
-	    });
+		return [$page, $pageInclude];
 	}
 
-	if (empty($currentFilters)) {
-    	$currentFilters = ['all'];
+	function getResources() {
+		$resourcesData = json_decode(file_get_contents('data/resources.json'), true);
+		$resources = [];
+
+		foreach ($resourcesData as $resource) {
+			$category = $resource['category'];
+			if (!isset($resources[$category])) {
+				$resources[$category] = [];
+			}
+			$resources[$category][] = $resource;
+		}
+
+		return $resources;
+	}
+
+	function getCurrentFilters() {
+		$currentFilters = isset($_GET['filter']) ? (array) $_GET['filter'] : ['all'];
+
+		if (count($currentFilters) > 1 && in_array('all', $currentFilters)) {
+	    	$currentFilters = array_filter($currentFilters, function($filter) {
+	        	return $filter !== 'all'; 
+		    });
+		}
+
+		if (empty($currentFilters)) {
+	    	$currentFilters = ['all'];
+		}
+
+		return $currentFilters;
 	}
 
 	function renderFilters() {
-		global $resources;
-		global $currentFilters;
+		$resources = getResources();
+		$currentFilters = getCurrentFilters();
 		?> 
-
 		<form method="GET">
 			<label class="strong-voice">Filter</label>
 
@@ -56,14 +77,12 @@
 				<?php }?>
 			</div>
 		</form>
-	
 	<?php 
 	}
 
 	function renderData() {
-		global $resources;
-
-		global $currentFilters;
+		$resources = getResources();
+		$currentFilters = getCurrentFilters();
 
 		foreach ($resources as $category => $resourceList) { 
 			if (!in_array('all', $currentFilters) && !in_array($category, $currentFilters)) {
@@ -127,7 +146,7 @@
 
 	function processForm() {
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST["formType"])) {
+    	if (isset($_POST["formType"])) {
         if ($_POST["formType"] == "login") {
             // Process login form
             $username = $_POST["username"] ?? '';
@@ -150,9 +169,21 @@
         	}
            header("Location: " . $_SERVER['REQUEST_URI']);
            exit;
-        }
-    }
+        		}
+    		}
+		}
 	}
-}
+
+	function checkServer() {
+		if ($_SERVER['HTTP_HOST'] === 'ernie.test') {
+    		define('BASE_URL', '');
+		} else {
+    	define('BASE_URL', '/beta-two/ernie'); //url for deployment server
+		}
+	}
+
+
+
+
 
 ?>

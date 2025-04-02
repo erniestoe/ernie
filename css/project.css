@@ -1,1 +1,24 @@
 @import "style.css";
+project {
+	display: grid;
+
+	div + div,
+	div + a {
+		margin-top: 20px;
+	}
+
+	.project-links {
+		li + li {
+			margin-top: 10px;
+		}
+	}
+
+	.home-link {
+		text-decoration: none;
+		border-radius: 5px;
+		padding: 5px;
+		border: 2px solid black;
+		box-shadow: 2px 1px 0px 0px rgba(0,0,0,1);
+		max-width: fit-content;
+	}
+}

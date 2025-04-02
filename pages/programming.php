@@ -2,7 +2,7 @@
 
 <header>
 	<inner-column>
-		<h1 class="loud-voice">Excersises For Programmers</h1>
+		<h1 class="loud-voice"><?=$pageData['title']?></h1>
 
 		<nav class="form-links">
 			<a href="?page=programming&form=area">Area of a rectangular room</a>
