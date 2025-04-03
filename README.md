@@ -1,4 +1,4 @@
-# Ernesto Saavedra - Personal Website (ngl this this AI generated)
+# Ernesto Saavedra - Personal Website
 
 ## Overview
 This is my personal website, showcasing my projects, design work, and coding experiments. It serves as a portfolio and a creative space for me to explore web development and design.
