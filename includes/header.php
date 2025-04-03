@@ -20,8 +20,12 @@ $pageTitle = renderPageTitle($page);
 		<header class="site-header">
 			<inner-column>
 				<masthead>
-					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
-					
+					<!-- <h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2> -->
+					<a class="logo" href="<?=BASE_URL;?>/index.php">
+						<picture>
+							<img src="assets/images/fire-logo-short.svg">
+						</picture>
+					</a>
 
 					<nav>
 						<a href="index.php?page=garden">Layout Garden</a> <a href="index.php?page=design">Visual Design</a> <a href="index.php?page=programming">E4P</a>
