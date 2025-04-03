@@ -1,12 +1,11 @@
 <?php 
-include ('includes/router.php');
-include ('functions/index.php');
-//Checks which server site is currently on
-checkServer();
-//Function to get the current page and to include and its data
-list($page, $pageInclude) = getCurrentPage();
+include ('includes/router.php'); // Handles routing logic
+$currentPage = getCurrentPage(); // Get info for current page (name and file path) -- router function
+
+include ('functions/index.php'); // Loads core functions
+
+checkServer(); //Checks which server site is currently on
 
 include ('includes/header.php');
-
-include $pageInclude; 
+include $currentPage['file']; 
 include ('includes/footer.php');

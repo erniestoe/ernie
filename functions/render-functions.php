@@ -37,7 +37,9 @@ function renderProject() {
 	if (!$selectedProject) {
 		echo "<p>Project not found.</p>";
 		return;
-	} ?>
+	} 
+	
+	?>
 	<project>
 		<picture>
        		
@@ -47,8 +49,6 @@ function renderProject() {
     		<h1 class="loud-voice"><?=$selectedProject["projectName"];?></h1>
   			<p class="project-description"><?=$selectedProject["projectText"];?></p>
     	</div>
-
-    
 
     	<div class="project-links">
     		<ul>
@@ -109,5 +109,11 @@ function renderGardenSection() {
 
 function renderPageTitle($page) {
     $pageData = getPageData($page);
-    return $pageData && isset($pageData['title']) ? $pageData['title'] : "Ernies Site!";
+
+    if ($page != "project") {
+    	return $pageData && isset($pageData['title']) ? $pageData['title'] : "Ernies Site!";
+    } else {
+    	return "A Project!";
+    }
+    
 }
