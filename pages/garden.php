@@ -5,7 +5,7 @@
 	</inner-column>
 </header>
 
-<?php renderSection();?>
+<?php renderGardenSection();?>
 
 <footer class="page-footer">
 	<inner-column>	

@@ -1,5 +1,6 @@
 <?php 
-$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+function getCurrentPage() {
+	$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 	$pageInclude = 'pages/' . $page . '.php';
 
 	if (!file_exists($pageInclude)) {
@@ -7,3 +8,6 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 		$page = "404";
     	$pageInclude = 'pages/404.php';
 	}
+
+	return [$page, $pageInclude];
+}
