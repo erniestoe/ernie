@@ -1,6 +1,7 @@
 <?php
 	include "functions.php";
 	startSession();
+	loadEnv();
 	processForm();
 	checkServer();
 	list($page, $pageInclude) = getCurrentPage();

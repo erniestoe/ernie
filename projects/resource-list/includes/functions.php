@@ -144,7 +144,22 @@
 		}
 	}
 
+	function loadEnv($file = '.env') {
+		if (!file_exists($file)) {
+			return;
+		}
+
+		$lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    	foreach ($lines as $line) {
+        	if (strpos($line, '=') !== false) {
+           		list($key, $value) = explode('=', $line, 2);
+           		$_ENV[trim($key)] = trim($value);
+        	}
+    	}
+	}
+
 	function processForm() {
+
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
     	if (isset($_POST["formType"])) {
         if ($_POST["formType"] == "login") {
@@ -152,7 +167,7 @@
             $username = $_POST["username"] ?? '';
             $password = $_POST["password"] ?? '';
 
-            if ($username === 'admin' && $password === 'pass') {
+            if ($username === $_ENV["USERNAME"] && $password === $_ENV["PASSWORD"]) {
                 $_SESSION["logged_in"] = true;
                 header("Location: index.php?page=admin");
                 exit;
