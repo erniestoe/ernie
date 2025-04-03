@@ -10,10 +10,10 @@
 			</div>
 		</div>
 
-		<picture>
+		<!-- <picture>
 			<img src="<?=$pageData['image'];?>">
 		</picture>
-
+ -->
 		<?php include 'modules/' . $pageData['modules'][0]; ?>
 	</inner-column>
 </section>
