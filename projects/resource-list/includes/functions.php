@@ -197,8 +197,84 @@
 		}
 	}
 
+	function createDB() {
+		$db = new PDO('sqlite:resources.sqlite');
+		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		echo "Database created successfully!";
+	}
 
+	function createDBTable() {
+		try {
+    		$db = new PDO('sqlite:resources.sqlite');
+    		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+    		$query = "CREATE TABLE IF NOT EXISTS resources (
+        		id INTEGER PRIMARY KEY AUTOINCREMENT,
+       			category TEXT NOT NULL,
+        		title TEXT NOT NULL,
+        		phone TEXT,
+        		website TEXT,
+        		address TEXT,
+        		description TEXT
+    		)";
 
+    		$db->exec($query);
+    		echo "Table created successfully!";
+		} catch (PDOException $e) {
+    		echo "Error: " . $e->getMessage();
+		}
+	}
+
+	function populateDB() {
+		try {
+    		$db = new PDO('sqlite:resources.sqlite');
+    		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    		// Read JSON file
+    		$json = file_get_contents('data/resources.json');
+    		$resources = json_decode($json, true);
+
+    		// Prepare SQL insert statement
+    		$stmt = $db->prepare("INSERT INTO resources (id, category, title, phone, website, address, description) 
+    			VALUES (:id, :category, :title, :phone, :website, :address, :description)");
+
+    		foreach ($resources as $resource) {
+        	$stmt->execute([
+            	':id' => $resource['id'],
+            	':category' => $resource['category'],
+            	':title' => $resource['title'],
+            	':phone' => $resource['phone'],
+            	':website' => $resource['website'],
+            	':address' => $resource['address'],
+            	':description' => $resource['description']
+        	]);
+    	}
+
+    	echo "Data imported successfully!";
+		} catch (PDOException $e) {
+    	echo "Error: " . $e->getMessage();
+		}
+	}
+
+	function getFromDB() {
+		try {
+    		$db = new PDO('sqlite:resources.sqlite');
+    		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    	$query = "SELECT * FROM resources";
+    	$stmt = $db->query($query);
+    	$resources = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    	echo "<h1>Resource List</h1><ul>";
+    	foreach ($resources as $resource) {
+        	echo "<li><strong>{$resource['title']}</strong> - {$resource['category']}<br>
+              <a href='{$resource['website']}' target='_blank'>Visit Website</a></li>";
+    	}
+    	echo "</ul>";
+
+		} catch (PDOException $e) {
+    	echo "Error: " . $e->getMessage();
+		}
+	}
 
 ?>

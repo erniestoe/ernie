@@ -4,6 +4,14 @@
 	loadEnv();
 	processForm();
 	checkServer();
+
+	if (!file_exists('resources.sqlite')) {
+		createDB();
+		createDBTable();
+		populateDB();
+	}
+	
+	// getFromDB();
 	list($page, $pageInclude) = getCurrentPage();
 ?>
 

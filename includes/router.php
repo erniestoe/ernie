@@ -1,13 +1,12 @@
 <?php 
 function getCurrentPage() {
-	$page = isset($_GET['page']) ? $_GET['page'] : 'home';
-	$pageInclude = 'pages/' . $page . '.php';
+	$page = $_GET['page'] ?? 'home';
+	$pageFilePath = 'pages/' . $page . '.php';
 
-	if (!file_exists($pageInclude)) {
+	if (!file_exists($pageFilePath)) {
 		http_response_code(404);
-		$page = "404";
-    	$pageInclude = 'pages/404.php';
+    	return ['name' => '404', 'file' => 'pages/404.php'];
 	}
 
-	return [$page, $pageInclude];
+	return ['name' => $page, 'file' => $pageFilePath];
 }

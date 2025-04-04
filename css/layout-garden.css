@@ -7,3 +7,11 @@ h1 {
 	box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 	border: 2px solid black;
 }
+
+.main-garden {
+	inner-column {
+		.garden-module + .garden-module{
+			margin-top: 50px;
+		}
+	}
+}

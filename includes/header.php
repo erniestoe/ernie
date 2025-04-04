@@ -1,6 +1,6 @@
 <?php 
-$pageData = getPageData($page);
-$pageTitle = renderPageTitle($page);
+$pageData = getPageData($currentPage['name']);
+$pageTitle = renderPageTitle($currentPage['name']);
 ?>
 <!doctype html>
 <html lang='en'>
@@ -10,7 +10,7 @@ $pageTitle = renderPageTitle($page);
 		<meta property="og:title" content="Ernies site">
 		<meta property="og:image" content="https://peprojects.dev/beta-two/ernie/assets/images/meta-image.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="<?= renderCSS($page);?>" >
+		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>" >
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
