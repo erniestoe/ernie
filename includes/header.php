@@ -14,19 +14,14 @@ $pageTitle = renderPageTitle($currentPage['name']);
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		<header class="site-header">
 			<inner-column>
 				<masthead>
-					<!-- <h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2> -->
-					<a class="logo" href="<?=BASE_URL;?>/index.php">
-						<picture>
-							<img src="assets/images/fire-logo-short.svg">
-						</picture>
-					</a>
+					<h2 class="site-title"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
+					
 
 					<nav>
 						<a href="index.php?page=garden">Layout Garden</a> <a href="index.php?page=design">Visual Design</a> <a href="index.php?page=programming">E4P</a>
