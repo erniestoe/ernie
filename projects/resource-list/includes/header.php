@@ -6,8 +6,12 @@
 	checkServer();
 
 	if (!file_exists('resources.sqlite')) {
-		createDB();
-		createDBTable();
+		$db = new PDO('sqlite:resources.sqlite');
+    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    	
+		createDB($db);
+		createDBTable($db);
+		poulateDB($db);
 	}
 	
 	list($page, $pageInclude) = getCurrentPage();

@@ -6,9 +6,7 @@
 	</header>
 
 	<section class="main-garden">
-		<inner-column>
 			<?php renderGardenSection();?>
-		</inner-column>
 	</section>
 
 
