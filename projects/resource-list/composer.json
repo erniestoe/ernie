@@ -1,5 +1,7 @@
 {
     "name": "ers/resource-list",
+    "description": "A PHP project for generating community resource PDFs",
+    "license": "proprietary",
     "require": {
         "fpdf/fpdf": "^1.86"
     },
