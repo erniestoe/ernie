@@ -239,4 +239,17 @@
     	echo "Data imported successfully!";
 	}
 
+	function getResourcesFromDB($db) {
+		$query = "SELECT * FROM resources";
+    	$stmt = $db->query($query);
+    	$resources = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    	echo "<h1>Resource List</h1><ul>";
+    	foreach ($resources as $resource) {
+        	echo "<li><strong>{$resource['title']}</strong> - {$resource['category']}<br>
+              <a href='{$resource['website']}' target='_blank'>Visit Website</a></li>";
+    	}
+    	echo "</ul>";
+	}
+
 ?>

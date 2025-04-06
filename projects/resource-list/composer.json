@@ -1,0 +1,12 @@
+{
+    "name": "ers/resource-list",
+    "require": {
+        "fpdf/fpdf": "^1.86"
+    },
+    "authors": [
+        {
+            "name": "Ernie",
+            "email": "ersaavedra.dev@gmail.com"
+        }
+    ]
+}

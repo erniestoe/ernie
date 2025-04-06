@@ -4,14 +4,14 @@
 	loadEnv();
 	processForm();
 	checkServer();
-
+	$db = new PDO('sqlite:resources.sqlite');
+	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	if (!file_exists('resources.sqlite')) {
-		$db = new PDO('sqlite:resources.sqlite');
-    	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    	
 		createDB($db);
 		createDBTable($db);
 		poulateDB($db);
+	} else {
+		// getResourcesFromDB($db);
 	}
 	
 	list($page, $pageInclude) = getCurrentPage();
