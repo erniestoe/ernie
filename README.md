@@ -24,4 +24,3 @@ This is my personal website, showcasing my projects, design work, and coding exp
 
 ## License
 This project is for personal use. Feel free to explore and modify!
-

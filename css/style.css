@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "setup.css";
+@import "typography.css";
 
 html {
 	scroll-behavior: smooth;
@@ -36,32 +37,7 @@ h2 + h3{
 }
 
 
-/*TYPOGRAPHY*/
-.quiet-voice {
-	font-size: 0.75rem;
-	font-weight: 500;
-}
 
-.calm-voice,
-p {
-	font-size: 1rem;
-	font-weight: 400;
-}
-
-.strong-voice {
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-.attention-voice {
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
-.loud-voice {
-	font-size: 2rem;
-	font-weight: 800;
-}
 
 
 .site-title a {
