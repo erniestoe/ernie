@@ -7,13 +7,13 @@
 
 	h2 a {
 		border-radius: 5px;
-					padding: 5px;
-					border: 2px solid black;
-					box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
-					text-decoration: none;
-					width: fit-content;
-					background-color: #c9a2c3;
-					color: #000;
-					transition: all 0.2s;
+		padding: 5px;
+		border: 2px solid black;
+		box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+		text-decoration: none;
+		width: fit-content;
+		background-color: #c9a2c3;
+		color: #000;
+		transition: all 0.2s;
 	}
 }
