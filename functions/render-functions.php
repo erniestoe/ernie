@@ -41,20 +41,75 @@ function renderProject() {
 	
 	?>
 	<project>
-		<picture>
-       		
-    	</picture>
+		<header>
+			<h1 class="loud-voice"><?=$selectedProject["projectName"];?></h1>
+			<picture>
+    			<img src="<?=$selectedProject["images"][1]["src"];?>">
+    		</picture>
+		</header>
 
-    	<div class="project-text">
-    		<h1 class="loud-voice"><?=$selectedProject["projectName"];?></h1>
-  			<p class="project-description"><?=$selectedProject["projectText"];?></p>
+    	<div class="project-goal">
+    		<h2 class="project-goal-title attention-voice">Goal</h2>
+  			<p class="project-goal-text"><?=$selectedProject["projectGoal"];?></p>		
+    	</div>
+
+    	<div class="project-overview">
+    		<h2 class="project-overview-title attention-voice">Overview</h2>
+    		<p class="project-overview-text"><?=$selectedProject["projectOverview"];?></p>
+    	</div>
+
+    	<div class="project-problem">
+    		<h2 class="project-overview-title attention-voice">Problem</h2>
+    		<p class="project-goal"><?=$selectedProject["projectProblem"];?></p>
+    	</div>
+
+    	<div class="project-research">
+    		<h2 class="project-overview-title attention-voice">Research</h2>
+    		<p class="project-goal"><?=$selectedProject["projectResearch"];?></p>
+
+    		<picture>
+    			<img src="<?=$selectedProject["images"][0]["src"];?>">
+    		</picture>
+    	</div>
+
+    	<div class="project-solution">
+    		<h2 class="project-overview-title attention-voice">Solution</h2>
+    		<p class="project-goal"><?=$selectedProject["projectSolution"];?></p>
+    		<ul>
+    			<?php foreach($selectedProject["projectFeatures"] as $feature) {?>
+    				<li>
+    					<p><?= $feature["feature"];?></p>
+    				</li>
+    			<?php } ?>
+    		</ul>
+    	</div>
+
+    	<div class="project-approach">
+    		<h2 class="project-overview-title attention-voice">Approach</h2>
+    		<p class="project-goal"><?=$selectedProject["projectApproach"];?></p>
+    	</div>
+
+    	<div class="project-challenges">
+    		<h2 class="project-overview-title attention-voice">Challenges</h2>
+    		<ul>
+    			<?php foreach($selectedProject["projectChallenges"] as $challenge) {?>
+    				<li>
+    					<p><?= $challenge["text"];?></p>
+    				</li>
+    			<?php } ?>
+    		</ul>
+    	</div>
+
+    	<div class="project-results">
+    		<h2 class="project-results-title attention-voice">Results</h2>
+    		<p><?=$selectedProject["projectResults"];?></p>
     	</div>
 
     	<div class="project-links">
     		<ul>
     			<?php foreach($selectedProject["links"] as $link) {?>
     				<li>
-    					<a href="<?=$link["href"];?>"><?=$link["text"];?></a>
+    					<a target="_blank" href="<?=$link["href"];?>"><?=$link["text"];?></a>
     				</li>
     			<?php } ?>
     		</ul>

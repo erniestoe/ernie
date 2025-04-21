@@ -1,53 +1,107 @@
 [
 	{
 		"id": 1,
-		"projectName": "Theme Challenge",
-		"projectText": "[[A description should probably go here...]]",
+		"projectName": "OpenResource Theme",
+		"projectGoal": "The main goal of this project was to transform inaccessible or outdated physical resource lists into an organized, filterable digital directory. In its current state, that means a simple WordPress theme that’s still being refined and improved. While the WordPress version makes the project accessible to users already familiar with the platform, the long-term goal is to make it even more approachable — especially for the admin or community worker managing the list.",
+		"projectOverview": "OpenResource is a custom WordPress theme I created to streamline the experience of discovering and sharing local community resources. The idea was to take clunky, hard-to-update resource lists and bring them online in a way that’s easy to browse, maintain, and share.",
+		"projectProblem": "In past nonprofit roles, I often struggled to find reliable, up-to-date community resource lists. More often than not, they existed in physical binders or outdated PDFs — hard to distribute and harder to search. I wanted to create a clean, scalable solution that didn’t require technical knowledge to manage and made those resources easily accessible online.",
+		"projectResearch": "This project was more “learn as you go” than some others I’ve worked on — mostly because, at its core, it’s a pretty simple concept. It’s essentially a CRUD app with a PDF cart. The bulk of my research focused on how I wanted the experience to feel — visually and in terms of user flow. I intentionally avoided common tropes like “minimal” or “simple,” and instead focused on more human terms like accessible, welcoming, professional, and friendly. That direction led me to the <a target='_blank' href='https://www.oliviaking.com/inclusivesans/feature'>Inclusive Sans</a> typeface and a palette generated with <a target='_blank' href='https://randoma11y.com/'>randoma11y</a> for accessible color contrast.",
+		"projectSolution": "OpenResource is a lightweight, mobile-friendly WordPress theme powered by PHP templates and ACF (Advanced Custom Fields). A few key features include:",
+		"projectFeatures": [
+			{
+				"feature": "A dynamic filtering system using JavaScript for asynchronous loading"
+			},
+			{
+				"feature": "A session-based PDF “cart” that lets users collect and download custom summaries"
+			},
+			{
+				"feature": "A CMS-friendly admin interface with custom post types and field groups"
+			}
+		],
+		"projectApproach": "The project began as a <a target='_blank' href='../projects/resource-list/index.php'>PHP prototype</a> and was gradually converted into a WordPress theme to make it more accessible for non-technical users. I used semantic HTML, modular CSS, and progressive enhancement to build a working alpha as quickly as possible — prioritizing usability over perfection. While there’s room to add more JavaScript or advanced filtering logic in the future, I chose to get a working version out first. This approach has helped me showcase the project publicly, start receiving feedback, and leave room for others to customize or contribute.",
+		"projectResults": "The theme is now live, functional, and available for others to use via GitHub. It’s still a work in progress, but that’s intentional — I wanted to avoid perfection paralysis and get the project out in the open. This process helped me solidify my knowledge of PHP and WordPress development while also teaching me to balance ambition with momentum. It’s already being used to power <a target='_blank' href='#'>forsythcommunityresources.com</a>, and I’m actively iterating as I learn and grow.",
+		"projectChallenges": [
+			{
+				"text": "Preserving filter state across page loads required combining PHP sessions with JavaScript — something I hadn’t done before."
+			},
+			{
+				"text": "Balancing simplicity with real-world usefulness — deciding when to go native vs when to lean on plugins."
+			},
+			{
+				"text": "Designing for two different user types: the admin maintaining the directory and the visitor browsing the resources."
+			}
+		],
 		"links": [
 			{
-				"text": "Haven & Hue",
-				"href": "projects/theme-challenge/index.php"
+				"text": "Github",
+				"href": "https://github.com/erniestoe/resource-theme"
 			},
 			{
-				"text": "Rendered",
-				"href": "projects/rendered/index.php"
+				"text": "Theme in use (Forsyth Community Resources)",
+				"href": "#"
+			}
+		],
+		"images": [
+			{
+				"alt": "Style Tile",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745244118/resource-site-style-tile-1_riwnsi.png"
 			},
 			{
-				"text": "Soccer Leauge",
-				"href": "projects/soccer-theme/index.php"
+				"alt": "Screenshot",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249661/openresource-theme-screenshot_owtrhj.png"
 			}
 		]
 	},
 	{
 		"id": 2,
-		"projectName": "audiophile",
-		"projectText": "[[A description should probably go here...]]",
-		"links": [
+		"projectName": "OpenResource Site",
+		"projectGoal": "The main goal of this project was to transform inaccessible or outdated physical resource lists into an organized, filterable digital directory. In its current state, that means a simple WordPress theme that’s still being refined and improved. While the WordPress version makes the project accessible to users already familiar with the platform, the long-term goal is to make it even more approachable — especially for the admin or community worker managing the list.",
+		"projectOverview": "The OpenResource Landing Site is a companion marketing and (eventually) documentation site for the OpenResource WordPress theme. Its primary goal is to introduce the project, explain its purpose, offer a clear starting point for users, and share ongoing updates. The site is designed using the same visual language as <a target='_blank' href='#'>forsythcommunityresources.com</a> to maintain consistency between the demo and the theme.",
+		"projectProblem": "While building the OpenResource theme, I realized that simply having the theme on GitHub with a README made the project feel a little incomplete — almost disconnected. I wanted it to feel more intentional and cohesive. Having a standalone landing site would allow me to create a stronger visual and conceptual connection between the theme and its intended use. I also knew that eventually, I’d want to migrate the documentation off GitHub and into the site itself.",
+		"projectResearch": "There wasn’t a ton of research for this project — instead, I reused and lightly restyled the existing style tile from the OpenResource theme to maintain visual consistency. The layout itself was based on a previous <a target='_blank' href='../projects/soccer-theme/index.php'>Soccer Theme project</a> where I practiced conditional rendering with PHP. The goal was to reuse familiar building blocks and adapt them for a more marketing-focused use case.",
+		"projectSolution": "The site uses a lightweight layout and structure with subtle visual differences from the theme — like sharper edges in place of rounded corners — to show how easily the theme can be customized. Key sections include:",
+		"projectFeatures": [
 			{
-				"text": "Check it out",
-				"href": "projects/audiophile/index.php"
+				"feature": "A clean hero section explaining the project’s purpose"
+			},
+			{
+				"feature": "Modular CTA cards linking to GitHub, live demos, and contact"
+			},
+			{
+				"feature": "A quick-start guide (currently offloaded to the GitHub README)"
 			}
-		]
-	},
-	{
-		"id": 3,
-		"projectName": "Drama Club",
-		"projectText": "[[A description should probably go here...]]",
-		"links": [
+		],
+		"projectApproach": "I created the landing site as a separate WordPress install using ACF Pro to manage content. I kept the design simple and responsive, prioritizing speed and clarity. Rather than building full documentation at this stage, I linked directly to GitHub to reduce overhead while keeping critical information available.",
+		"projectResults": "The site now provides a gentle onboarding experience for the OpenResource theme. It adds context, communicates the intent of the project, and demonstrates how the theme can be customized with just a few small changes. It also doubles as another example of design-focused WordPress development that I can do.",
+		"projectChallenges": [
 			{
-				"text": "Check it out",
-				"href": "projects/drama-club/index.html"
+				"text": "Keeping the site visually distinct from the theme, but still clearly related."
+			},
+			{
+				"text": "Deciding how much content should live directly in WordPress versus being linked out."
+			},
+			{
+				"text": "Avoiding overbuilding while still making it feel polished and complete."
 			}
-		]
-	},
-	{
-		"id": 4,
-		"projectName": "Resource Site",
-		"projectText": "[[A description should probably go here...]]",
+		],
 		"links": [
 			{
-				"text": "Check it out",
-				"href": "projects/resource-list/index.php"
+				"text": "Github",
+				"href": "https://github.com/erniestoe/openresource"
+			},
+			{
+				"text": "Live site",
+				"href": "#"
+			}
+		],
+		"images": [
+			{
+				"alt": "Style Tile",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745247519/site-style-tile_r7tioc.png"
+			},
+			{
+				"alt": "Screenshot",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249643/openresource-landing-screenshot_fckkzh.png"
 			}
 		]
 	}
