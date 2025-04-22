@@ -48,72 +48,74 @@ function renderProject() {
     		</picture>
 		</header>
 
-    	<div class="project-goal">
-    		<h2 class="project-goal-title attention-voice">Goal</h2>
-  			<p class="project-goal-text"><?=$selectedProject["projectGoal"];?></p>		
-    	</div>
+		<div class="project-text">
+			<div class="project-goal project-grid">
+    			<h2 class="project-goal-title attention-voice">Goal</h2>
+  				<p class="project-goal-text"><?=$selectedProject["projectGoal"];?></p>		
+    		</div>
 
-    	<div class="project-overview">
-    		<h2 class="project-overview-title attention-voice">Overview</h2>
-    		<p class="project-overview-text"><?=$selectedProject["projectOverview"];?></p>
-    	</div>
+    		<div class="project-overview project-grid">
+    			<h2 class="project-overview-title attention-voice">Overview</h2>
+    			<p class="project-overview-text"><?=$selectedProject["projectOverview"];?></p>
+    		</div>
 
-    	<div class="project-problem">
-    		<h2 class="project-overview-title attention-voice">Problem</h2>
-    		<p class="project-goal"><?=$selectedProject["projectProblem"];?></p>
-    	</div>
+    		<div class="project-problem project-grid">
+    			<h2 class="project-problem-title attention-voice">Problem</h2>
+    			<p class="project-problem-text"><?=$selectedProject["projectProblem"];?></p>
+    		</div>
 
-    	<div class="project-research">
-    		<h2 class="project-overview-title attention-voice">Research</h2>
-    		<p class="project-goal"><?=$selectedProject["projectResearch"];?></p>
+    		<div class="project-research project-grid">
+    			<h2 class="project-research-title attention-voice">Research</h2>
+    			<p class="project-research-text"><?=$selectedProject["projectResearch"];?></p>
 
-    		<picture>
-    			<img src="<?=$selectedProject["images"][0]["src"];?>">
-    		</picture>
-    	</div>
+    			<picture>
+    				<img src="<?=$selectedProject["images"][0]["src"];?>">
+    			</picture>
+    		</div>
 
-    	<div class="project-solution">
-    		<h2 class="project-overview-title attention-voice">Solution</h2>
-    		<p class="project-goal"><?=$selectedProject["projectSolution"];?></p>
-    		<ul>
+    		<div class="project-solution project-grid">
+    			<h2 class="project-solution-title attention-voice">Solution</h2>
+    			<p class="project-solution-text"><?=$selectedProject["projectSolution"];?></p>
+    			<ul>
     			<?php foreach($selectedProject["projectFeatures"] as $feature) {?>
     				<li>
     					<p><?= $feature["feature"];?></p>
     				</li>
     			<?php } ?>
-    		</ul>
-    	</div>
+    			</ul>
+    		</div>
 
-    	<div class="project-approach">
-    		<h2 class="project-overview-title attention-voice">Approach</h2>
-    		<p class="project-goal"><?=$selectedProject["projectApproach"];?></p>
-    	</div>
+    		<div class="project-approach project-grid">
+    			<h2 class="project-approach-title attention-voice">Approach</h2>
+    			<p class="project-approach-text"><?=$selectedProject["projectApproach"];?></p>
+    		</div>
 
-    	<div class="project-challenges">
-    		<h2 class="project-overview-title attention-voice">Challenges</h2>
-    		<ul>
+    		<div class="project-challenges project-grid">
+    			<h2 class="project-challenges-title attention-voice">Challenges</h2>
+    			<ul>
     			<?php foreach($selectedProject["projectChallenges"] as $challenge) {?>
     				<li>
     					<p><?= $challenge["text"];?></p>
     				</li>
     			<?php } ?>
-    		</ul>
-    	</div>
+    			</ul>
+    		</div>
 
-    	<div class="project-results">
-    		<h2 class="project-results-title attention-voice">Results</h2>
-    		<p><?=$selectedProject["projectResults"];?></p>
-    	</div>
+    		<div class="project-results project-grid">
+    			<h2 class="project-results-title attention-voice">Results</h2>
+    			<p><?=$selectedProject["projectResults"];?></p>
+    		</div>
 
-    	<div class="project-links">
-    		<ul>
+    		<div class="project-links ">
+    			<ul>
     			<?php foreach($selectedProject["links"] as $link) {?>
     				<li>
     					<a target="_blank" href="<?=$link["href"];?>"><?=$link["text"];?></a>
     				</li>
     			<?php } ?>
-    		</ul>
-    	</div>
+    			</ul>
+    		</div>
+		</div>
     	
 		<a href="index.php?page=home" class="home-link">Go back home?</a>  
 	</project>
@@ -168,7 +170,18 @@ function renderPageTitle($page) {
     if ($page != "project") {
     	return $pageData && isset($pageData['title']) ? $pageData['title'] : "Ernies Site!";
     } else {
-    	return "A Project!";
+    	$projectData = getProjectData();
+    	$projectID = $_GET['id'];
+		$selectedProject = null;
+
+		foreach ($projectData as $project) {
+			if ($project["id"] == $projectID) {
+				$selectedProject = $project;
+				break;
+			}
+		}
+		
+    	return $selectedProject["projectName"];
     }
     
 }
