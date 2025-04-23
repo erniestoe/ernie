@@ -25,11 +25,15 @@ $pageTitle = renderPageTitle($currentPage['name']);
 					<nav>
 						<a href="index.php?page=garden">Layout Garden</a>
 						<a href="index.php?page=design">Design Work</a>
+						<a href="https://codepen.io/erivera-s">Codepen</a>
+
 						<!-- <a href="index.php?page=programming">E4P</a> -->
 					</nav>
 				</masthead>
 
-				<a class="back-to-top-button" href="#top" class="calm-voice" aria-label="Go back to the beginning">Back to top</a>
+				<a class="back-to-top-button" href="#top" class="calm-voice" aria-label="Go back to the beginning">
+					<?php include("includes/svgs/arrow-up.php"); ?>
+				</a>
 			</inner-column>
 		</header>
 

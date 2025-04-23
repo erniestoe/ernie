@@ -60,7 +60,7 @@ h2 + h3{
 			align-items: center;
 			
 			a {
-				text-decoration: none;
+/*				text-decoration: none;*/
 				color: #000;
 			}
 		}
@@ -73,7 +73,7 @@ h2 + h3{
 		z-index: 1000;
 		background-color: black;
 		color: #f5f5f5;
-		padding: 10px;
+		padding: 2px;
 		border-radius: 8px;
 		text-decoration: none;
 	}
