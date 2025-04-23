@@ -5,11 +5,9 @@
 		display:grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 50px;
-		
 
 		picture {
 			grid-column: 1;
-/*			grid-row: span 2;*/
 			object-fit: contain;
 			align-self: start;
 			border-radius: 10px;
@@ -88,13 +86,7 @@
 
 
 			li a {
-/*				text-decoration: none;*/
-				/*border-radius: 5px;
-				padding: 5px;
-				border: 2px solid black;
-				box-shadow: 2px 1px 0px 0px rgba(0,0,0,1);*/
 				flex-basis: 50%;
-/*				text-align: center;*/
 				transition: all .3s;
 			}
 
