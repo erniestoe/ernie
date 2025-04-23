@@ -17,7 +17,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 	</head>
 
 	<body>
-		<header class="site-header">
+		<header class="site-header" id="top">
 			<inner-column>
 				<masthead>
 					<h2 class="site-title loud-voice"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>

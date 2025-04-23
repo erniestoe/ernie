@@ -50,6 +50,8 @@ h2 + h3{
 		.site-title a {
 			text-transform: uppercase;
 			text-decoration: none;
+			text-wrap: balance;
+/*			text-align: center;*/
 		}
 
 		nav {
