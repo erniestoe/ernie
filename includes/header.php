@@ -24,10 +24,12 @@ $pageTitle = renderPageTitle($currentPage['name']);
 					
 					<nav>
 						<a href="index.php?page=garden">Layout Garden</a>
-						<a href="index.php?page=design">Visual Design</a>
-						<a href="index.php?page=programming">E4P</a>
+						<a href="index.php?page=design">Design Work</a>
+						<!-- <a href="index.php?page=programming">E4P</a> -->
 					</nav>
 				</masthead>
+
+				<a class="back-to-top-button" href="#top" class="calm-voice" aria-label="Go back to the beginning">Back to top</a>
 			</inner-column>
 		</header>
 

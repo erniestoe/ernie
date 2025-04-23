@@ -9,9 +9,7 @@
 
 
 	<footer class="page-footer">
-		<inner-column>	
-			<a href="#top" class="calm-voice">Back to top</a>
-		</inner-column>
+		
 	</footer>
 </section>
 

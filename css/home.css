@@ -5,10 +5,6 @@
 		display:grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 50px;
-
-		@media (width >= 500px) {
-			margin-top: 100px;
-		}
 		
 
 		picture {
@@ -37,12 +33,13 @@
 		.about {
 			grid-column: span 2;
 			p {
-				max-width: 60%;
+				max-width: 90%;
 				line-height: 1.6;
 				text-wrap: pretty;
 			}
 
 			.links {
+				
 				display: flex;
 				gap: 20px;
 
@@ -52,22 +49,12 @@
 					border: 2px solid black;
 					box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 					text-decoration: none;
-					width: fit-content;
+					min-width: 100px;
+					text-align: center;
 					color: #000;
 					transition: all 0.2s;
 				}
 
-				a:nth-of-type(1) {
-					background-color: #DB504A;
-				}
-
-				a:nth-of-type(2) {
-					background-color: #7fbc8c;
-				}
-
-				a:nth-of-type(3) {
-					background-color: #c9a2c3;
-				}
 			}
 
 			a {

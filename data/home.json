@@ -1,5 +1,5 @@
 {
-	"about": "Winston-Salem based designer & developer open to opportunities in front-end development & design.",
+	"about": "I’m a designer and developer based in Winston-Salem, focused on creating thoughtful web experiences. My background in data coordination and community programs guides how I use web technologies to build things that are practical, inclusive, and easy to use. Currently open to opportunities in front-end development, WordPress, and digital product design.",
 	"image": "assets/images/secret.png",
 	"links": [
 		{
@@ -12,7 +12,7 @@
 		},
 		{
 			"text": "Resume",
-			"href": "#"
+			"href": "assets/ernesto-rivera-saavedra-resume.pdf"
 		}
 	],
 	"modules": ["work-list.php"]

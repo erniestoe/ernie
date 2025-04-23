@@ -54,23 +54,26 @@ project {
 				grid-template-columns: 1fr 1fr;
 
 				@media (width >= 1000px) {
-					grid-template-columns: repeat(4,1fr);
+					grid-template-columns: repeat(8, 1fr);
 
 					li:nth-of-type(1){
-						grid-column: 3;
+						grid-column: 5;
 					}
 				}
 
 				li a {
-					text-decoration: none;
 					border-radius: 5px;
 					padding: 5px;
 					border: 2px solid black;
-					box-shadow: 2px 1px 0px 0px rgba(0,0,0,1);
-					max-width: 150px;
+					box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+					text-decoration: none;
+					max-width: 100px;
 					text-align: center;
+					color: #000;
+					transition: all 0.2s;
 				}
 			}
+			padding-bottom: 40px;
 		}
 
 		.project-research {
