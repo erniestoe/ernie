@@ -1,12 +1,6 @@
 @import "style.css";
 
-h1 {
-	max-width: fit-content;
-	padding: 10px;
-	border-radius: 10px;
-	box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
-	border: 2px solid black;
-}
+
 
 .main-garden {
 	inner-column {

@@ -1,8 +1,4 @@
-<header>
-	<inner-column>
-		<h1 class="loud-voice"><?=$pageData['title']?></h1>
-	</inner-column>
-</header>
+
 
 <section class="gallery">
 	<inner-column>

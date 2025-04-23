@@ -1,8 +1,6 @@
 <section class="layout-garden">
 	<header class="page-header" id="top">
-		<inner-column>
-			<h1 class="loud-voice"><?=$pageData['title'];?></h1>
-		</inner-column>
+		
 	</header>
 
 	<section class="main-garden">

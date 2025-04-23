@@ -2,8 +2,6 @@
 
 <header>
 	<inner-column>
-		<h1 class="loud-voice"><?=$pageData['title']?></h1>
-
 		<nav class="form-links">
 			<a href="?page=programming&form=area">Area of a rectangular room</a>
 			<a href="?page=programming&form=tax">Tax Calculator</a>
