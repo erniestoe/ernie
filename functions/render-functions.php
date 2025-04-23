@@ -117,7 +117,7 @@ function renderProject() {
     		</div>
 		</div>
     	
-		<a href="index.php?page=home" class="home-link">Go back home?</a>  
+		<!-- <a href="index.php?page=home" class="home-link">Go back home?</a>   -->
 	</project>
 	<?php 
 }
