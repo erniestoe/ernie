@@ -20,13 +20,13 @@
   			background: linear-gradient(90deg, #F0A202, #F18805, #D95D39, #7B9E89);
   			background-size: 300% 300%;
   			animation: gradientShift 15s ease infinite;
-  			height: 60vh;
+  			min-height: 500px;
   			display: flex;
   			align-items: center;
   			justify-content: center;
 
   			@media (width <= 740px) {
-				grid-column: 1 / 3;
+				grid-column: span 3;
 			}
 
 			@media (width <= 500px) {
