@@ -4,10 +4,8 @@
 			<p><?=$pageData['about']?></p>
 		</div>
 
-		<picture>
-			<img src="<?=$pageData['image'];?>">
-		</picture>
-
+		<div class="animated-bg"></div>
+				
 		<?php include 'modules/' . $pageData['modules'][0]; ?>
 	</inner-column>
 </section>
