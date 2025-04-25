@@ -103,8 +103,8 @@
 		--color-3:#a0f9b9;
 
 		display: block;
-		background-color: #76757e;
-		color: #e0ece4;
+		background-color: var(--color-1);
+		color: var(--color-2);
 
 		inner-column,
 		cards {
@@ -142,7 +142,7 @@
 
 				.teaser {
 					margin-bottom: 10px;
-					color: #a0f9b9;
+					color: var(--color-3);
 					font-weight: 700;
 				}
 			}
@@ -171,8 +171,8 @@
 					}
 
 					@media (width >= 700px) {
-						border: 2px solid #e0ece4;
-						box-shadow: 2px 2px 0 0 #e0ece4;
+						border: 2px solid var(--color-2);
+						box-shadow: 2px 2px 0 0 var(--color-2);
 						padding: 20px;
 
 						p {
@@ -198,7 +198,7 @@
 				.divider {
 					width: 75%;
 					height: 2px;
-					background-color: #a0f9b9;
+					background-color: var(--color-3);
 				}
 
 				p {
@@ -212,14 +212,117 @@
 						display: none;
 					}
 
-					background-color: #a0f9b9;
-					color: #76757e;
+					background-color: var(--color-3);
+					color: var(--color-1);
 					padding: 20px;
 					max-width: 60%;
 
 				}
 
 
+			}
+		}
+	}
+
+	medley-layout-3 {
+		display: block;
+		--color-1: #994578;
+		--color-2: #86f909;
+		background-color: var(--color-1);
+		color: var(--color-2);
+
+		inner-column {
+			max-width: 1400px;
+		}
+
+		header {
+			background-color: var(--color-2);
+			color: var(--color-1);
+			inner-column {
+				padding-top: 80px;
+
+				p {
+					max-width: 85%;
+				}
+
+				@media (width >= 700px){
+					padding-bottom: 120px;
+				}
+
+				@media (width >= 800px) {
+					padding-bottom: 225px;
+
+					p {
+						max-width: 30%;
+					}
+				}
+			}
+		}
+
+		cards {
+			display: block;
+			padding-block: 40px 200px;
+
+			@media (width >= 700px) {
+				position: relative;
+				height: 1000px;
+			}
+
+			@media (width >= 800px) {
+				height: 350px;
+			}
+
+			inner-column {
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+
+
+				@media (width >= 700px) {
+					position: absolute;
+					top: -10%;
+					left: 2%;
+					right: 2%;
+					gap: 20px;
+				}
+
+				@media (width >= 800px) {
+					flex-direction: row;
+					top: -30%;
+				}
+
+				card {
+					display: flex;
+					flex-direction: column;
+					gap: 20px;
+
+					p {
+						max-width: 80%;
+					}
+
+					@media (width >= 700px){
+						background-color: var(--color-2);
+						color: var(--color-1);
+						border: 2px solid black;
+						box-shadow: 2px 2px 0 0 black;
+						padding: 40px 20px;
+
+						p {
+							max-width: 60%;
+						}
+
+						svg {
+							fill: var(--color-1);;
+						}
+					}
+
+					@media (width >= 800px) {
+						p {
+							max-width: 100%;
+						}
+						padding: 60px 20px;
+					}
+				}
 			}
 		}
 	}

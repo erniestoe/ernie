@@ -1,7 +1,3 @@
-<?php 
-
-?>
-
 <medley-layout-2>
 	<inner-column>
 		<header>
