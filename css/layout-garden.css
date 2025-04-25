@@ -96,4 +96,131 @@
 
 		}
 	}
+
+	medley-layout-2 {
+		--color-1:#76757e;
+		--color-2:#e0ece4;
+		--color-3:#a0f9b9;
+
+		display: block;
+		background-color: #76757e;
+		color: #e0ece4;
+
+		inner-column,
+		cards {
+			display: grid;
+			gap: 40px;
+
+			@media (width >= 700px) {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@media (width >= 1000px) {
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+
+		inner-column {
+			max-width: 1400px;
+
+			p {
+				text-wrap: pretty;
+			}
+			
+			header {
+				@media (width >= 700px) {
+					grid-column: span 2;
+
+					p {
+						max-width: 80%;
+					}
+				}
+
+				@media (width >= 1000px) {
+					grid-row: 1;
+				}
+
+				.teaser {
+					margin-bottom: 10px;
+					color: #a0f9b9;
+					font-weight: 700;
+				}
+			}
+
+			cards {
+				@media (width >= 700px) {
+					grid-column: span 2;
+				}
+
+				@media (width >= 1000px) {
+					grid-row: 2;
+					grid-column: span 4;
+				}
+
+				card {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+
+					@media (width >= 1000px) {
+						grid-column: span 2;
+					}
+
+					p {
+						max-width: 80%;
+					}
+
+					@media (width >= 700px) {
+						border: 2px solid #e0ece4;
+						box-shadow: 2px 2px 0 0 #e0ece4;
+						padding: 20px;
+
+						p {
+							max-width: 90%;
+						}
+					}
+
+					@media (width >= 1000px) {
+						padding: 40px;
+						gap: 20px;
+					}
+				}
+			}
+
+			message {
+				display: grid;
+				gap: 20px;
+
+				@media (width >= 1000px) {
+					grid-row: 4;
+				}
+
+				.divider {
+					width: 75%;
+					height: 2px;
+					background-color: #a0f9b9;
+				}
+
+				p {
+					max-width: 80%;
+				}
+
+				@media (width >= 700px) {
+					grid-column: span 2;
+
+					.divider {
+						display: none;
+					}
+
+					background-color: #a0f9b9;
+					color: #76757e;
+					padding: 20px;
+					max-width: 60%;
+
+				}
+
+
+			}
+		}
+	}
 }
