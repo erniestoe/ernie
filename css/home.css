@@ -12,6 +12,10 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 50px;
 
+		@media (width >= 1000px) {
+			gap: 80px;
+		}
+
 		.animated-bg {
 			grid-column: 1;
 			border: 1px solid black;
