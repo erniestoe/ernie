@@ -40,6 +40,16 @@ project {
 		list-style-type: '- ';
 	}
 
+	picture {
+		border: 1px solid black;
+		border-radius: 10px;
+		box-shadow: 2px 2px 0 0 black;
+
+		img {
+			border-radius: inherit;
+		}
+	}
+
 	header {
 		h1 + picture {
 			margin-top: 20px;
