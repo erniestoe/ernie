@@ -130,6 +130,7 @@ function renderCSS($page) {
     	"design" => "design.css",
     	"programming" => "exercises-for-programmers.css",
     	"project" => "project.css",
+    	"style-guide"=> "style-guide.css",
     	"404" => "404.css"
 	];
 

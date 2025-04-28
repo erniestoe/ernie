@@ -12,7 +12,13 @@ body {
 	background-color: #f5f5f5;
 	font-family: "Inter", sans-serif;
 	overflow-x: hidden;
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+}
 
+main {
+	flex: 1;
 }
 
 .garden-module {
@@ -32,8 +38,6 @@ p + h3,
 h2 + h3{
 	margin-top: 15px;
 }
-
-
 
 .site-header {
 	masthead {
@@ -72,3 +76,6 @@ h2 + h3{
 	}
 }
 
+.site-footer {
+	padding-block: 10px;
+}
