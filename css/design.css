@@ -1,14 +1,5 @@
 @import "style.css";
 
-h1 {
-	background-color: #fbae17;
-	max-width: fit-content;
-	padding: 10px;
-	border-radius: 10px;
-	box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
-	border: 2px solid black;
-}
-
 .gallery {
 	inner-column {
 		display: grid;
@@ -21,8 +12,14 @@ h1 {
 		picture {
 			grid-column: span 2;
 			object-fit: contain;
+			border: 1px solid black;
+			border-radius: 10px;
+			box-shadow: 2px 2px 0 0 black;
+			height: 100%;
+			overflow: hidden;
 			img {
-				object-fit: contain;
+				height: 100%;
+				object-fit: fill;
 			}
 		}
 
