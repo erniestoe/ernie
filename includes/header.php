@@ -25,6 +25,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 					<nav>
 						<a href="index.php?page=garden">Layout Garden</a>
 						<a href="index.php?page=design">Visual Design</a>
+						<a target="_blank" href="https://lapanaderia.substack.com/">Writing</a>
 						<!-- <a target="_blank" href="https://codepen.io/erivera-s">CodePen</a> -->
 
 						<!-- <a href="index.php?page=programming">E4P</a> -->
