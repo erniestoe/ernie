@@ -39,20 +39,65 @@ h2 + h3{
 	margin-top: 15px;
 }
 
+
+.menu {
+	display: none;
+}
+
+.menu-container {
+	position: relative;
+}
+
+body.menu-open .menu {
+	display: flex; 
+	flex-direction: column;
+	gap: 20px;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	position: absolute;
+}
+
 .site-header {
 	masthead {
 		display: flex;
 		flex-direction: column;
-
+/*		max-width: 50%;*/
+/*		justify-content: space-between;*/
 		gap: 20px;
-
+		
 		.site-title a {
 			text-transform: uppercase;
 			text-decoration: none;
 			text-wrap: balance;
 		}
 
-		nav {
+		.menu-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		button,
+		.menu a {
+			border-radius: 5px;
+			padding: 5px;
+			border: 1px solid black;
+			box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+			text-decoration: none;
+			max-width: 150px;
+			text-align: center;
+			color: #000;
+			transition: all 0.5s;
+			background-color: #f5f5f5;
+		}
+
+		button:hover,
+		.menu a:hover {
+			box-shadow: none;
+		}
+
+
+		/*nav {
 			display: flex;
 			gap: 20px;
 			align-items: center;
@@ -60,7 +105,7 @@ h2 + h3{
 			a {
 				color: #000;
 			}
-		}
+		}*/
 	}
 
 	.back-to-top-button {

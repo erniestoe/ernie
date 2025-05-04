@@ -21,15 +21,22 @@ $pageTitle = renderPageTitle($currentPage['name']);
 			<inner-column>
 				<masthead>
 					<h2 class="site-title loud-voice"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
-					
-					<nav>
-						<a href="index.php?page=garden">Layout Garden</a>
-						<a href="index.php?page=design">Visual Design</a>
-						<a target="_blank" href="https://lapanaderia.substack.com/">Writing</a>
-						<!-- <a target="_blank" href="https://codepen.io/erivera-s">CodePen</a> -->
 
-						<!-- <a href="index.php?page=programming">E4P</a> -->
-					</nav>
+					<div class="menu-container">
+						<button class="calm-voice" rel='toggle'>Menu</button>
+					
+						<nav class="menu">
+							<a href="index.php?page=garden">Layout Garden</a>
+							<a href="index.php?page=design">Visual Design</a>
+							<a target="_blank" href="https://lapanaderia.substack.com/">Writing</a>
+							<a target="_blank" href="https://codepen.io/erivera-s">CodePen</a>
+							<a href="index.php?page=programming">E4P</a>
+							<a href="#">The Lab</a>
+
+							<button class="calm-voice" rel='toggle'>Close</button>
+						</nav>
+					</div>
+					
 				</masthead>
 
 				<a class="back-to-top-button" href="#top" class="calm-voice" aria-label="Go back to the beginning">
