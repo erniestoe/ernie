@@ -1,9 +1,11 @@
 @import "style.css";
 
 @keyframes gradientShift {
- 	0% { background-position: 0% 50%; }
+ 	0% { background-position: 0% 25%; }
+ 	25% { background-position: 50% 75%;}
   	50% { background-position: 100% 50%; }
-  	100% { background-position: 0% 50%; }
+  	75% { background-position: 75% 50%; }
+  	100% { background-position: 0% 25%; }
 }
 
 .home-content {
@@ -17,25 +19,33 @@
 		}
 
 		.animated-bg {
-			grid-column: 1;
 			border: 1px solid black;
 			border-radius: 10px;
 			box-shadow: 2px 2px 0 0 black;
-  			background: linear-gradient(90deg, #F0A202, #F18805, #D95D39, #7B9E89);
-  			background-size: 300% 300%;
+			background-color: hsla(327, 100%, 50%, 1);
+    		background-image: radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(327, 100%, 50%, 1) 0%, transparent 81%), radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(206, 100%, 9%, 1) 0%, transparent 150%);
+    		background-blend-mode: overlay, normal, normal, normal, normal;
+  			background-size: 200% 200%;  
   			animation: gradientShift 15s ease infinite;
   			min-height: 500px;
   			display: flex;
   			align-items: center;
   			justify-content: center;
 
-  			@media (width <= 740px) {
+  			grid-column: 1;
+
+			@media (width <= 740px) {
 				grid-column: span 3;
 			}
 
 			@media (width <= 500px) {
 				grid-column: span 4;
 			}
+		}
+
+		.overlay {
+			background: moccasin;
+  			mix-blend-mode: multiply;
 		}
 
 		picture {
