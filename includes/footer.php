@@ -7,7 +7,7 @@
 	</footer>
 
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<script src="js/script.js"></script>
+	<script type="module" src="js/script.js"></script>
 	</body>
 
 </html>

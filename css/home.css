@@ -3,7 +3,7 @@
 @keyframes gradientShift {
  	0% { background-position: 0% 25%; }
  	25% { background-position: 50% 75%;}
-  	50% { background-position: 100% 50%; }
+  	50% { background-position: 100% 75%; }
   	75% { background-position: 75% 50%; }
   	100% { background-position: 0% 25%; }
 }
@@ -26,7 +26,7 @@
     		background-image: radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(327, 100%, 50%, 1) 0%, transparent 81%), radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(206, 100%, 9%, 1) 0%, transparent 150%);
     		background-blend-mode: overlay, normal, normal, normal, normal;
   			background-size: 200% 200%;  
-  			animation: gradientShift 15s ease infinite;
+  			animation: gradientShift 10s ease infinite;
   			min-height: 500px;
   			display: flex;
   			align-items: center;

@@ -1,3 +1,5 @@
+import {areaOfRectangularRoom} from "./e4p.js";
+
 const openButton = document.querySelector('#open');
 const closeButton = document.querySelector('#close');
 const menu = document.querySelector('.menu');
@@ -25,3 +27,5 @@ var flkty = new Flickity( elem, {
   cellAlign: 'left',
   contain: true
 });
+
+areaOfRectangularRoom();

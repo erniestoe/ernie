@@ -129,11 +129,11 @@ project {
 			}
 		}
 
+		/*	adding this here just to have it explicitly set	for flickity stuff*/
 		img {
    		max-height: 100%;
     		width: auto;
     		height: auto;
-    		display: block;
   		}
 
 		/* smaller, dark, rounded square */
@@ -142,9 +142,17 @@ project {
   			margin-top: 10px;
   			border: none;
   			padding: 5px;
+  			transition: all .2s ease;
+  			border: 1px solid transparent;
 		}
+
 		.flickity-button:hover {
-  			background: #F90;
+  			background: #f5f5f5;
+  			border: 1px solid black;
+
+  			.flickity-button-icon {
+  				fill: #000;
+  			}
 		}
 
 		.flickity-prev-next-button {

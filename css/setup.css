@@ -11,6 +11,7 @@ p {
 a {
 	display: block;
 	color: inherit;
+	max-width: fit-content;
 }
 
 p a {
