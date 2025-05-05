@@ -6,6 +6,7 @@ html {
 	scroll-behavior: smooth;
 	--black: #151515;
 	--off-white: #cbcbcb;
+	overflow-x: hidden;
 }
 
 body {
