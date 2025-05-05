@@ -105,6 +105,16 @@ function renderProject() {
     			<h2 class="project-results-title attention-voice">Results</h2>
     			<p><?=$selectedProject["projectResults"];?></p>
     		</div>
+
+    		<div class="project-links ">
+    			<ul>
+    			<?php foreach($selectedProject["links"] as $link) {?>
+    				<li>
+    					<a target="_blank" href="<?=$link["href"];?>"><?=$link["text"];?></a>
+    				</li>
+    			<?php } ?>
+    			</ul>
+    		</div>
 		</div>
 
 		<div class="project-gallery main-carousel">
@@ -123,15 +133,7 @@ function renderProject() {
 			<?php }?>
 		</div>
 
-		<div class="project-links ">
-    		<ul>
-    		<?php foreach($selectedProject["links"] as $link) {?>
-    			<li>
-    				<a target="_blank" href="<?=$link["href"];?>"><?=$link["text"];?></a>
-    			</li>
-    		<?php } ?>
-    		</ul>
-    	</div>
+		
     	
 		<!-- <a href="index.php?page=home" class="home-link">Go back home?</a>   -->
 	</project>
