@@ -50,6 +50,53 @@
 				"alt": "Screenshot",
 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249661/openresource-theme-screenshot_owtrhj.png"
 			}
+		],
+		"gallery-images" : [
+			{
+				"alt": "Site Branding",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441997/resource-site-type-and-palette_mh58nl.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Research",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442013/CleanShot_2025-05-04_at_16.53.07_rb1ds4.png",
+				"orientation": "landscape"
+			},
+			{
+				"alt": "Style Tiles",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442021/CleanShot_2025-05-04_at_16.52.14_k5lp57.png",
+				"orientation": "landscape"
+			},
+			{
+				"alt": "Homepage Mobile",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-homepage-mobile_scfpvj.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Homepage Tablet",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-homepage-tablet_sfuerv.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Homepage Desktop",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441995/resource-homepage-desktop_dzdwfg.png",
+				"orientation": "landscape"
+			},
+			{
+				"alt": "Resources Mobile",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-mobile_ql8psa.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Resources Tablet",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-tablet_qogn86.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Resources Desktop",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-desktop_j1uqpm.png",
+				"orientation": "landscape"
+			}
 		]
 	},
 	{
@@ -102,6 +149,38 @@
 			{
 				"alt": "Screenshot",
 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249643/openresource-landing-screenshot_fckkzh.png"
+			}
+		],
+		"gallery-images" : [
+			{
+				"alt": "Site Branding",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-palette-type_wzy3wc.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Style Tiles",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Wireframe",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442067/resource-landing-wireframe_rd73ck.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Homepage Mobile",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-mobile_p97rrk.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Homepage Tablet",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-tablet_sf9fdj.png",
+				"orientation": "portrait"
+			},
+			{
+				"alt": "Homepage Desktop",
+				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442064/resource-landing-desktop_rebusl.png",
+				"orientation": "landscape"
 			}
 		]
 	}

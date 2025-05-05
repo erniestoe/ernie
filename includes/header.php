@@ -23,9 +23,9 @@ $pageTitle = renderPageTitle($currentPage['name']);
 					<h2 class="site-title loud-voice"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
 
 					<div class="menu-container">
-						<button class="calm-voice" rel='toggle'>Menu</button>
+						<button class="calm-voice" rel='toggle' id="open">Menu</button>
 					
-						<nav class="menu">
+						<nav class="menu visually-hidden">
 							<a href="index.php?page=garden">Layout Garden</a>
 							<a href="index.php?page=design">Visual Design</a>
 							<a target="_blank" href="https://lapanaderia.substack.com/">Writing</a>
@@ -33,7 +33,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 							<a href="index.php?page=programming">E4P</a>
 							<a href="#">The Lab</a>
 
-							<button class="calm-voice" rel='toggle'>Close</button>
+							<button class="calm-voice" rel='toggle' id="close">Close</button>
 						</nav>
 					</div>
 					

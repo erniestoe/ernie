@@ -1,7 +1,33 @@
-const body = document.querySelector('body');
+const openButton = document.querySelector('#open');
+const closeButton = document.querySelector('#close');
+const menu = document.querySelector('.menu');
 
-body.addEventListener('click', function(event) {
-	if (event.target.matches('[rel="toggle"]') ) {
-		body.classList.toggle('menu-open');
+openButton.addEventListener('click', function(event) {
+	if (menu.classList.contains('visually-hidden') ) {
+		menu.classList.remove('visually-hidden');
+	} else {
+		menu.classList.add('visually-hidden');
 	}
+});
+
+closeButton.addEventListener('click', function(event) {
+	if (menu.classList.contains('visually-hidden') ) {
+		menu.classList.remove('visually-hidden');
+	} else {
+		menu.classList.add('visually-hidden');
+	}
+});
+
+//Flickity
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
 });

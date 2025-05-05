@@ -39,16 +39,11 @@ h2 + h3{
 	margin-top: 15px;
 }
 
-
-.menu {
-	display: none;
-}
-
 .menu-container {
 	position: relative;
 }
 
-body.menu-open .menu {
+.menu {
 	display: flex; 
 	flex-direction: column;
 	gap: 20px;
