@@ -14,7 +14,6 @@ $pageTitle = renderPageTitle($currentPage['name']);
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-		<script src="../js/script.js" defer></script>
 	</head>
 
 	<body>
