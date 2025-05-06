@@ -11,6 +11,8 @@
 			<a href="?page=programming&form=temp">Temperature Converter</a>
 			<a href="?page=programming&form=characters">Counting the Number of Characters</a>
 			<a href="?page=programming&form=checkout">Self-Checkout</a>
+			<a href="?page=programming&form=paint">Paint Calculator</a>
+			<a href="?page=programming&form=interest">Simple Interest</a>
 		</nav>
 	</inner-column>
 </header>
@@ -21,9 +23,8 @@
 
 			<noscript>
 				<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
-			</noscript>
 
-			<?php 
+				<?php 
 				$length = 0;
 				$width = 0;
 
@@ -40,6 +41,7 @@
 				$squareFeet = $length * $width;
 				$squareMeters = $squareFeet * 0.09290304;
 		?>
+			</noscript>
 
 			<form method="POST" action="#area">
 				<h2 class="attention-voice" id="area">Area of a rectangular room</h3>
@@ -458,4 +460,54 @@
 		</div>
 	</inner-column>
 </section>
+
+<?php elseif($form === 'paint') : ?>
+	<section class="paint-calculator">
+		<inner-column>
+			<form method="POST" action="#paint">
+				<h2 class="attention-voice" >Paint Calculator</h2>
+
+				<div class="field">
+					<label>Enter the Length of the ceiling:</label>
+					<input type="number" name="length" required>
+				</div>
+
+				<div class="field">
+					<label>Enter the width of the ceiling:</label>
+					<input type="number" name="width" required>
+				</div>
+
+				<button type="submit">Calculate</button>
+			</form>
+
+			<div class="form-output">
+				
+			</div>
+		</inner-column>
+	</section>
+
+<?php elseif($form === 'interest') : ?>
+	<section class="simple-interest">
+		<inner-column>
+			<form method="POST" action="#interest">
+				<h2 class="attention-voice" >Paint Calculator</h2>
+
+				<div class="field">
+					<label>Enter the Length of the ceiling:</label>
+					<input type="number" name="length" required>
+				</div>
+
+				<div class="field">
+					<label>Enter the width of the ceiling:</label>
+					<input type="number" name="width" required>
+				</div>
+
+				<button type="submit">Calculate</button>
+			</form>
+
+			<div class="form-output">
+				
+			</div>
+		</inner-column>
+	</section>
 <?php endif;?>

@@ -6,7 +6,8 @@ import {
 	pizzaParty,
 	tempConverter,
 	countingCharacters,
-	selfCheckout
+	selfCheckout,
+	paintCalculator
 } from "./e4p.js";
 
 const openButton = document.querySelector('#open');
@@ -49,3 +50,4 @@ if (formName === 'pizza') {pizzaParty()};
 if (formName === 'temp') {tempConverter()};
 if (formName === 'characters') {countingCharacters()};
 if (formName === 'checkout') {selfCheckout()};
+if (formName === 'paint') {paintCalculator()};
