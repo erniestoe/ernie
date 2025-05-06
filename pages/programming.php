@@ -10,7 +10,7 @@
 			<a href="?page=programming&form=pizza">Pizza Party</a>
 			<a href="?page=programming&form=temp">Temperature Converter</a>
 			<a href="?page=programming&form=characters">Counting the Number of Characters</a>
-			<a href="?form=checkout">Self-Checkout</a>
+			<a href="?page=programming&form=checkout">Self-Checkout</a>
 		</nav>
 	</inner-column>
 </header>
@@ -18,6 +18,11 @@
 <?php if ($form === 'area') : ?>
 	<section class="area-of-rect-room">
 		<inner-column>
+
+			<noscript>
+				<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+			</noscript>
+
 			<?php 
 				$length = 0;
 				$width = 0;
@@ -82,6 +87,10 @@
 <?php elseif ($form === 'tax') : ?>
 <section class="tax-calculator">
 	<inner-column>
+		<noscript>
+			<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+		</noscript>
+
 		<form method="POST" action="#tax">
 			<h2 class="attention-voice" id="tax">Tax Calculator</h2>
 
@@ -123,6 +132,10 @@
 <?php elseif ($form === 'driving') : ?>
 <section class="driving-age">
 	<inner-column>
+		<noscript>
+			<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+		</noscript>
+
 		<form method="POST" action="#drivingAge">
 			<h2 class="attention-voice" id="#drivingAge">Legal Driving Age</h2>
 
@@ -154,6 +167,10 @@
 <?php elseif ($form === 'anagrams') : ?>
 <section class="anagrams">
 	<inner-column>
+		<noscript>
+			<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+		</noscript>
+
 		<form method="POST" action="#anagrams">
 			<h2 class="attention-voice" id="anagrams">Anagram Checker</h2>
 			<p>Enter two strings and I'll tell you if they are anagrams</p>
@@ -201,6 +218,10 @@
 <?php elseif ($form === 'pizza') : ?>
 <section class="pizza-party">
 	<inner-column>
+		<noscript>
+			<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+		</noscript>
+
 		<form method="POST" action="#pizzaParty">
 			<h2 class="attention-voice" id="pizzaParty">Pizza Party</h2>
 
@@ -253,7 +274,14 @@
 		<form method="POST" action="#converter">
 			<h2 class="attention-voice" id="converter">Temperature Converter</h2>
 
-			<?php 
+			<div class="form-step"></div>
+
+			<div class="form-output"></div>
+
+			<noscript>
+				<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+
+				<?php 
 			$error = "";
 
 			if (isset($_POST["nextStep"])) {
@@ -265,7 +293,7 @@
 			}
 			?>
 
-			<?php if (!isset($_POST["nextStep"]) && !isset($_POST["convertTemp"]) || isset($_POST["reset"]) || $error) {?>
+			<?php if (isset($_POST["nextStep"]) && isset($_POST["convertTemp"]) || !isset($_POST["reset"]) || $error) {?>
 				<p>Press C to convert from Farenheit to Celsius</p>
 				<p>Press F to convert from Celsius to Farenheit</p>
 
@@ -313,6 +341,7 @@
 						
 					<button type="submit" name="reset">Convert again?</button>
 			<?php	}?>
+			</noscript>
 		</form>
 	</inner-column>
 </section>
@@ -320,6 +349,9 @@
 <?php elseif ($form === 'characters') : ?>
 <section class="characters">
 	<inner-column>
+		<noscript>
+			<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+		</noscript>
 		<form method="POST" action="#characters">
 			<h2 class="attention-voice" id="characters">Counting the Number of Characters</h2>
 
@@ -345,6 +377,9 @@
 <?php elseif ($form === 'checkout') : ?>
 <section class="self-checkout">
 	<inner-column>
+		<noscript>
+			<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
+		</noscript>
 		<?php 
 			function getValue($value) {
 				return isset($_POST["checkOut"]) ? $_POST[$value] : "";

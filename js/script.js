@@ -1,4 +1,13 @@
-import {areaOfRectangularRoom} from "./e4p.js";
+import {
+	areaOfRectangularRoom,
+	taxCalculator,
+	legalDrivingAge,
+	anagramChecker,
+	pizzaParty,
+	tempConverter,
+	countingCharacters,
+	selfCheckout
+} from "./e4p.js";
 
 const openButton = document.querySelector('#open');
 const closeButton = document.querySelector('#close');
@@ -28,4 +37,15 @@ var flkty = new Flickity( elem, {
   contain: true
 });
 
-areaOfRectangularRoom();
+// E4P
+const urlParameters = new URLSearchParams(window.location.search);
+const formName = urlParameters.get('form');
+
+if (formName === 'area') {areaOfRectangularRoom()};
+if (formName === 'tax') {taxCalculator()};
+if (formName === 'driving') {legalDrivingAge()};
+if (formName === 'anagrams') {anagramChecker()};
+if (formName === 'pizza') {pizzaParty()};
+if (formName === 'temp') {tempConverter()};
+if (formName === 'characters') {countingCharacters()};
+if (formName === 'checkout') {selfCheckout()};

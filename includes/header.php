@@ -31,7 +31,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 							<a target="_blank" href="https://lapanaderia.substack.com/">Writing</a>
 							<a target="_blank" href="https://codepen.io/erivera-s">CodePen</a>
 							<a href="index.php?page=programming">E4P</a>
-							<a href="#">The Lab</a>
+							<a href="index.php?page=lab">The Lab</a>
 
 							<button class="calm-voice" rel='toggle' id="close">Close</button>
 						</nav>
