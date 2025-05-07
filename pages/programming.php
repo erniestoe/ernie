@@ -13,6 +13,7 @@
 			<a href="?page=programming&form=checkout">Self-Checkout</a>
 			<a href="?page=programming&form=paint">Paint Calculator</a>
 			<a href="?page=programming&form=interest">Simple Interest</a>
+			<a href="?page=programming&form=numberstonames">Numbers to Names</a>
 		</nav>
 	</inner-column>
 </header>
@@ -508,6 +509,26 @@
 				</div>
 
 				<button type="submit">Calculate</button>
+			</form>
+
+			<div class="form-output">
+				
+			</div>
+		</inner-column>
+	</section>
+
+<?php elseif($form === 'numberstonames') : ?>
+	<section class="numbers-to-names">
+		<inner-column>
+			<form method="POST" action="#numbersToNames">
+				<h2 class="attention-voice">Numbers to Names</h2>
+
+				<div class="field">
+					<label>Please enter the number of the month:</label>
+					<input type="number" name="monthname" required>
+				</div>
+
+				<button type="submit">Get the name of the month</button>
 			</form>
 
 			<div class="form-output">

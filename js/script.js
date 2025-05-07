@@ -8,7 +8,8 @@ import {
 	countingCharacters,
 	selfCheckout,
 	paintCalculator,
-	simpleInterest
+	simpleInterest,
+	numbersToNames
 } from "./e4p.js";
 
 const openButton = document.querySelector('#open');
@@ -53,3 +54,4 @@ if (formName === 'characters') {countingCharacters()};
 if (formName === 'checkout') {selfCheckout()};
 if (formName === 'paint') {paintCalculator()};
 if (formName === 'interest') {simpleInterest()};
+if (formName === 'numberstonames') {numbersToNames()};
