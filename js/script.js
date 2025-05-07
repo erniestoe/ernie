@@ -45,8 +45,9 @@ var flkty = new Flickity( elem, {
 // E4P
 const urlParameters = new URLSearchParams(window.location.search);
 const formName = urlParameters.get('form');
+const defaultPage = urlParameters.get('page');
 
-if (formName === 'area') {areaOfRectangularRoom()};
+if (formName === 'area' || defaultPage === 'programming') {areaOfRectangularRoom()};
 if (formName === 'tax') {taxCalculator()};
 if (formName === 'driving') {legalDrivingAge()};
 if (formName === 'anagrams') {anagramChecker()};
