@@ -567,7 +567,7 @@
 
 				<div class="field">
 					<label>What is your name?</label>
-					<input type="number" name="name" required>
+					<input type="text" name="name" required>
 				</div>
 
 				<button type="submit">Get your greeting</button>

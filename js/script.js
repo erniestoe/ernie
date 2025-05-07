@@ -10,7 +10,8 @@ import {
 	paintCalculator,
 	simpleInterest,
 	numbersToNames,
-	addingNumbers
+	addingNumbers,
+	sayingHello
 } from "./e4p.js";
 
 const openButton = document.querySelector('#open');
@@ -57,3 +58,4 @@ if (formName === 'paint') {paintCalculator()};
 if (formName === 'interest') {simpleInterest()};
 if (formName === 'numberstonames') {numbersToNames()};
 if (formName === 'addingnumbers') {addingNumbers()};
+if (formName === 'hello') {sayingHello()};

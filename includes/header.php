@@ -20,18 +20,18 @@ $pageTitle = renderPageTitle($currentPage['name']);
 		<header class="site-header" id="top">
 			<inner-column>
 				<masthead>
-					<h2 class="site-title loud-voice"><a href="<?=BASE_URL;?>/index.php">Ernesto Saavedra</a></h2>
+					<h2 class="site-title loud-voice"><a href="<?=BASE_URL;?>">Ernesto Saavedra</a></h2>
 
 					<div class="menu-container">
 						<button class="calm-voice" rel='toggle' id="open">Menu</button>
 					
 						<nav class="menu visually-hidden">
-							<a href="index.php?page=garden">Layout Garden</a>
-							<a href="index.php?page=design">Visual Design</a>
+							<a href="?page=garden">Layout Garden</a>
+							<a href="?page=design">Visual Design</a>
 							<a target="_blank" href="https://lapanaderia.substack.com/">Writing</a>
 							<a target="_blank" href="https://codepen.io/erivera-s">CodePen</a>
-							<a href="index.php?page=programming">E4P</a>
-							<a href="index.php?page=lab">The Lab</a>
+							<a href="?page=programming">E4P</a>
+							<a href="?page=lab">The Lab</a>
 
 							<button class="calm-voice" rel='toggle' id="close">Close</button>
 						</nav>
