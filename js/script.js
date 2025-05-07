@@ -7,7 +7,8 @@ import {
 	tempConverter,
 	countingCharacters,
 	selfCheckout,
-	paintCalculator
+	paintCalculator,
+	simpleInterest
 } from "./e4p.js";
 
 const openButton = document.querySelector('#open');
@@ -51,3 +52,4 @@ if (formName === 'temp') {tempConverter()};
 if (formName === 'characters') {countingCharacters()};
 if (formName === 'checkout') {selfCheckout()};
 if (formName === 'paint') {paintCalculator()};
+if (formName === 'interest') {simpleInterest()};
