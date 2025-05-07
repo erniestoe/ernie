@@ -40,21 +40,6 @@ h2 + h3{
 	margin-top: 15px;
 }
 
-.menu-container {
-	position: relative;
-}
-
-.menu {
-	display: flex; 
-	flex-direction: column;
-	gap: 20px;
-	top: 40px;
-	left: 0;
-	width: 100%;
-	position: absolute;
-	z-index: 1000;
-}
-
 .site-header {
 	masthead {
 		display: flex;
@@ -72,6 +57,33 @@ h2 + h3{
 		.menu-container {
 			display: flex;
 			flex-direction: column;
+			position: relative;
+
+			.menu {
+				display: flex; 
+/*				flex-direction: column;*/
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+				top: 40px;
+				left: 0;
+				width: 100%;
+				max-width: 250px;
+				position: absolute;
+				z-index: 1000;
+/*				background-color: rgb(255 255 255 / 0.9);*/
+				background-color: #f5f5f5;
+				border: 1px solid #0c0c0c;
+				border-radius: 5px;
+				padding: 20px;
+
+				@media (width >= 500px) {
+					max-width: 660px;
+					justify-content: start;
+				}
+			}			
+
 		}
 
 		button,
@@ -86,6 +98,7 @@ h2 + h3{
 			color: #000;
 			transition: all 0.5s;
 			background-color: #f5f5f5;
+			min-width: 190px;
 		}
 
 		button:hover,
