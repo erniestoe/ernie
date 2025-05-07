@@ -19,10 +19,10 @@ function checkServer() {
 	}
 
 	if (ENV === 'local') {
-		define('BASE_URL', '');
+		define('BASE_URL', '?page=home');
 	} elseif (ENV === 'staging') {
-		define('BASE_URL', '/beta-two/ernie');
+		define('BASE_URL', '/beta-two/ernie?page=home');
 	} else {
-		define('BASE_URL', '');
+		define('BASE_URL', '?page=home');
 	}
 }
