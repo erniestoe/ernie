@@ -429,25 +429,6 @@ export function addingNumbers() {
 	});
 };
 
-export function sayingHello() {
-	const form = document.querySelector('.hello form');
-	const nameElement = form.querySelector('input[name="name"]');
-	const outputElement = document.querySelector('.hello .form-output');
-
-	form.addEventListener('submit', function(event){
-		event.preventDefault();
-
-		name = nameElement.value;
-
-		if (!name || Number(name)) {
-			outputElement.innerHTML = `<p class="error">Please make sure there are no empty inputs and that they have a non number string</p>`;
-		} else {
-			outputElement.innerHTML = `<p class="feedback">Hello ${name}, nice to meet you!</p>`;
-		}
-	});
-}
-
-
 
 
 

@@ -10,8 +10,7 @@ import {
 	paintCalculator,
 	simpleInterest,
 	numbersToNames,
-	addingNumbers,
-	sayingHello
+	addingNumbers
 } from "./e4p.js";
 
 const openButton = document.querySelector('#open');
@@ -47,7 +46,9 @@ const urlParameters = new URLSearchParams(window.location.search);
 const formName = urlParameters.get('form');
 const defaultPage = urlParameters.get('page');
 
-if (formName === 'area' || defaultPage === 'programming') {areaOfRectangularRoom()};
+if (!formName && defaultPage === 'programming') {areaOfRectangularRoom()};
+
+if (formName === 'area') {areaOfRectangularRoom()};
 if (formName === 'tax') {taxCalculator()};
 if (formName === 'driving') {legalDrivingAge()};
 if (formName === 'anagrams') {anagramChecker()};
@@ -59,4 +60,3 @@ if (formName === 'paint') {paintCalculator()};
 if (formName === 'interest') {simpleInterest()};
 if (formName === 'numberstonames') {numbersToNames()};
 if (formName === 'addingnumbers') {addingNumbers()};
-if (formName === 'hello') {sayingHello()};

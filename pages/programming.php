@@ -15,7 +15,6 @@
 			<a href="?page=programming&form=interest">Simple Interest</a>
 			<a href="?page=programming&form=numberstonames">Numbers to Names</a>
 			<a href="?page=programming&form=addingnumbers">Adding Numbers</a>
-			<a href="?page=programming&form=hello">Saying Hello</a>
 		</nav>
 	</inner-column>
 </header>
@@ -551,26 +550,6 @@
 				</div>
 
 				<button type="submit">Add</button>
-			</form>
-
-			<div class="form-output">
-				
-			</div>
-		</inner-column>
-	</section>
-
-<?php elseif($form === 'hello') : ?>
-	<section class="hello">
-		<inner-column>
-			<form method="POST" action="#hello">
-				<h2 class="attention-voice">Saying Hello</h2>
-
-				<div class="field">
-					<label>What is your name?</label>
-					<input type="text" name="name" required>
-				</div>
-
-				<button type="submit">Get your greeting</button>
 			</form>
 
 			<div class="form-output">
