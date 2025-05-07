@@ -9,7 +9,8 @@ import {
 	selfCheckout,
 	paintCalculator,
 	simpleInterest,
-	numbersToNames
+	numbersToNames,
+	addingNumbers
 } from "./e4p.js";
 
 const openButton = document.querySelector('#open');
@@ -55,3 +56,4 @@ if (formName === 'checkout') {selfCheckout()};
 if (formName === 'paint') {paintCalculator()};
 if (formName === 'interest') {simpleInterest()};
 if (formName === 'numberstonames') {numbersToNames()};
+if (formName === 'addingnumbers') {addingNumbers()};
