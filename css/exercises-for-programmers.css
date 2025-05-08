@@ -33,6 +33,7 @@ header {
 			box-shadow: 2px 2px 0 0 black;
 			max-width: 100%;
 			text-align: center;
+			transition: box-shadow .2s ;
 		}
 
 		@media (width > 600px) {
@@ -48,6 +49,10 @@ header {
 
 		@media (width > 900px) {
 			grid-template-columns: repeat(3, 1fr);
+
+			a:hover {
+				box-shadow: none;
+			}
 		}
 	}
 }
