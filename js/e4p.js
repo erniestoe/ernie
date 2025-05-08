@@ -306,6 +306,117 @@ export function selfCheckout() {
 	});
 };
 
+export function selfCheckout2() {
+	const itemsElement = document.querySelector('.self-checkout-js .items');
+	const cartElement = document.querySelector('.self-checkout-js .cart');
+	const cartTotalElement = document.querySelector('.self-checkout-js .cart-total');
+	const clearCartButton = document.querySelector('.self-checkout-js .clear-cart');
+	const cart = [];
+	const items = [
+		{
+			id: 1,
+			name: "Apple",
+			price: "1.5"
+		},
+		{
+			id: 2,
+			name: "Bread",
+			price: "4"
+		},
+		{
+			id: 3,
+			name: "Coffee",
+			price: "8"
+		}
+	];
+
+	function renderItems() {
+		itemsElement.innerHTML = items.map(item => `
+			<li>
+				<button data-id="${item.id}">${item.name}</button>
+			</li>
+		`).join('');
+
+		renderCart();
+	}
+
+	function addToCart(id) {
+		const itemInCart = cart.find(item => item.id === id);
+
+		if (itemInCart) {
+			itemInCart.quantity += 1;
+		} else {
+			const item = items.find(item => item.id === id);
+			cart.push({...item, quantity: 1});
+		}
+
+		renderCart();
+	}
+
+	function renderCart() {
+		let subtotal = 0;
+		cartElement.innerHTML = cart.map(item => {
+			const itemTotal = item.price * item.quantity;
+			subtotal += itemTotal;
+
+			return `
+				<li>
+				<p>${item.quantity} ${item.name} $${itemTotal.toFixed(2)}</p>
+				<button class="decrease" data-id="${item.id}">-</button>
+				<button class="increase" data-id="${item.id}">+</button>
+				</li>
+			`
+		}).join('');
+
+		const tax = subtotal * 0.055;
+		const total = subtotal + tax;
+
+		cartTotalElement.innerHTML = `
+			<p>Subtotal: $${subtotal.toFixed(2)}</p>
+			<p>Tax: $${tax.toFixed(2)}</p>
+			<p>Total: $${total.toFixed(2)}</p>
+		`;
+
+		if (cart.length === 0) {
+			clearCartButton.style.display = 'none';
+		} else {
+			clearCartButton.style.display = 'block';
+		}
+	}
+
+	clearCartButton.addEventListener('click', function() {
+		cart.length = 0;
+		renderCart();
+	});
+
+	itemsElement.addEventListener('click', function(event){
+		if (event.target.tagName === 'BUTTON') {
+			const id = Number(event.target.dataset.id);
+			addToCart(id);
+		}
+	});
+
+	cartElement.addEventListener('click', function(event) {
+		const id = Number(event.target.dataset.id);
+		const item = cart.find(item => item.id === id);
+
+		if (event.target.classList.contains('increase')) {
+			item.quantity += 1;
+		} else if (event.target.classList.contains('decrease')) {
+			item.quantity -= 1;
+
+			if (item.quantity <= 0) {
+				const index = cart.indexOf(item);
+				if (index > -1) cart.splice(index, 1);
+			}
+		}
+
+		renderCart();
+	})
+
+	renderItems();
+};
+
 export function paintCalculator() {
 	const form = document.querySelector('.paint-calculator form');
 	const lengthElement = form.querySelector('input[name="length"]');

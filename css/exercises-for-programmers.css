@@ -106,3 +106,25 @@ form + p {
 	margin-top: 25px;
 }
 
+self-checkout {
+	display: grid;
+
+	.text {
+		p {
+			text-wrap: pretty;
+			@media (width > 900px) {
+				max-width: 40%;
+
+			}
+		}
+	}
+
+	.self-checkout-js {
+		margin-top: 20px;
+		.items {
+			display: flex;
+			gap: 10px;
+			padding-block: 20px;
+		}
+	}
+}

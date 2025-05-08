@@ -7,6 +7,7 @@ import {
 	tempConverter,
 	countingCharacters,
 	selfCheckout,
+	selfCheckout2,
 	paintCalculator,
 	simpleInterest,
 	numbersToNames,
@@ -55,7 +56,7 @@ if (formName === 'anagrams') {anagramChecker()};
 if (formName === 'pizza') {pizzaParty()};
 if (formName === 'temp') {tempConverter()};
 if (formName === 'characters') {countingCharacters()};
-if (formName === 'checkout') {selfCheckout()};
+if (formName === 'checkout') {selfCheckout(), selfCheckout2()};
 if (formName === 'paint') {paintCalculator()};
 if (formName === 'interest') {simpleInterest()};
 if (formName === 'numberstonames') {numbersToNames()};
