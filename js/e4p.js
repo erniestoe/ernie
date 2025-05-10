@@ -307,10 +307,11 @@ export function selfCheckout() {
 };
 
 export function selfCheckout2() {
-	const itemsElement = document.querySelector('.self-checkout-js .items');
-	const cartElement = document.querySelector('.self-checkout-js .cart');
-	const cartTotalElement = document.querySelector('.self-checkout-js .cart-total');
-	const clearCartButton = document.querySelector('.self-checkout-js .clear-cart');
+	const selfCheckoutElement = document.querySelector('.self-checkout-js');
+	const itemsElement = selfCheckoutElement.querySelector('.items');
+	const cartElement = selfCheckoutElement.querySelector('.cart');
+	const cartTotalElement = selfCheckoutElement.querySelector('.cart-total');
+	const clearCartButton = selfCheckoutElement.querySelector('.clear-cart');
 	const cart = [];
 	const items = [
 		{
@@ -336,8 +337,6 @@ export function selfCheckout2() {
 				<button data-id="${item.id}">${item.name}</button>
 			</li>
 		`).join('');
-
-		renderCart();
 	}
 
 	function addToCart(id) {
@@ -415,6 +414,7 @@ export function selfCheckout2() {
 	})
 
 	renderItems();
+	renderCart();
 };
 
 export function paintCalculator() {

@@ -42,7 +42,7 @@
 
 			<div class="field">
 				<label>Enter the price of item 1:</label>
-				<input type="number" name="item1Price" required value="<?=getValue("item1Price")?>">
+				<input type="number" name="item1Price" step="any" required value="<?=getValue("item1Price")?>">
 			</div>
 
 			<div class="field">
@@ -52,7 +52,7 @@
 
 			<div class="field">
 				<label>Enter the price of item 2:</label>
-				<input type="number" name="item2Price" required value="<?=getValue("item2Price")?>">
+				<input type="number" name="item2Price" step="any" required value="<?=getValue("item2Price")?>">
 			</div>
 
 			<div class="field">
@@ -62,7 +62,7 @@
 
 			<div class="field">
 				<label>Enter the price of item 3:</label>
-				<input type="number" name="item3Price" required value="<?=getValue("item3Price")?>">
+				<input type="number" name="item3Price" step="any" required value="<?=getValue("item3Price")?>">
 			</div>
 
 			<div class="field">

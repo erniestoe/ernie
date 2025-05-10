@@ -97,15 +97,18 @@
 
 		.work {
 			align-self: end;
+			display: grid;
 			padding-bottom: 40px;
 			@media (width >= 1000px) {
 				padding-bottom: 0;
 			}
 
 			li {
-				display: flex;
-				gap: 20px;
-				align-items: center;
+				/*display: flex;
+				justify-content: space-between;
+				align-items: center;*/
+				display: grid;
+				grid-template-columns: 50px 1fr;
 			}
 
 			li + li {
