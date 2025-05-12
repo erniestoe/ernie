@@ -1,18 +1,15 @@
-import {
-	areaOfRectangularRoom,
-	taxCalculator,
-	legalDrivingAge,
-	anagramChecker,
-	pizzaParty,
-	tempConverter,
-	countingCharacters,
-	selfCheckout,
-	selfCheckout2,
-	paintCalculator,
-	simpleInterest,
-	numbersToNames,
-	addingNumbers
-} from "./e4p.js";
+import { areaOfRectangularRoom } from "./area-of-a-rectangular-room.js";
+import { taxCalculator } from "./tax-calculator.js";
+import { legalDrivingAge } from "./legal-driving-age.js";
+import { anagramChecker } from "./anagram-checker.js";
+import { pizzaParty } from "./pizza-party.js"; 
+import { tempConverter } from "./temp-converter.js"; 
+import { countingCharacters } from "./counting-characters.js"; 
+import { selfCheckout, selfCheckout2 } from "./self-checkout.js"; 
+import { paintCalculator } from "./paint-calculator.js"; 
+import { simpleInterest } from "./simple-interest.js"; 
+import { numbersToNames } from "./numbers-to-names.js"; 
+import { addingNumbers } from "./adding-numbers.js"; 
 
 const openButton = document.querySelector('#open');
 const closeButton = document.querySelector('#close');
