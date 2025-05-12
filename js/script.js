@@ -1,4 +1,4 @@
-import { areaOfRectangularRoom } from "./area-of-a-rectangular-room.js";
+import { areaOfRectangularRoom, areaOfRectangularRoom2 } from "./area-of-a-rectangular-room.js";
 import { taxCalculator } from "./tax-calculator.js";
 import { legalDrivingAge } from "./legal-driving-age.js";
 import { anagramChecker } from "./anagram-checker.js";
@@ -44,9 +44,8 @@ const urlParameters = new URLSearchParams(window.location.search);
 const formName = urlParameters.get('form');
 const defaultPage = urlParameters.get('page');
 
-if (!formName && defaultPage === 'programming') {areaOfRectangularRoom()};
-
-if (formName === 'area') {areaOfRectangularRoom()};
+if (!formName && defaultPage === 'programming') {areaOfRectangularRoom(), areaOfRectangularRoom2()};
+if (formName === 'area') {areaOfRectangularRoom(), areaOfRectangularRoom2()};
 if (formName === 'tax') {taxCalculator()};
 if (formName === 'driving') {legalDrivingAge()};
 if (formName === 'anagrams') {anagramChecker()};
