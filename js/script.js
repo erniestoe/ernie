@@ -32,11 +32,13 @@ closeButton.addEventListener('click', function(event) {
 });
 
 //Flickity
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true
+document.addEventListener("DOMContentLoaded", (event) => {
+	var elem = document.querySelector('.main-carousel');
+	var flkty = new Flickity( elem, {
+  	// options
+  	cellAlign: 'left',
+  	contain: true
+	});
 });
 
 // E4P
