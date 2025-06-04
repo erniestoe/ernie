@@ -6,9 +6,7 @@ export class ShowDetailPage {
 	}
 
 	render(data) {
-		const nav = document.querySelector('nav');
-		nav.style.display = 'block';
-		const allShowsButton = nav.querySelector('#allShows');
+		const allShowsButton = document.querySelector('#allShows');
 		if (allShowsButton) allShowsButton.style.display = 'block';
 
 		const showId = data?.showId;

@@ -4,9 +4,6 @@ export class LandingPage {
 	}
 
 	render() {
-		const nav = document.querySelector('nav');
-		nav.style.display = 'none';
-		
 		const section = document.createElement('section');
 		section.innerHTML = `
 			<inner-column>
