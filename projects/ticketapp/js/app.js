@@ -1,72 +1,128 @@
-import {LandingPage} from './pages/landing-page.js';
-import {ShowListPage} from './pages/show-list-page.js';
-import {ShowDetailPage} from './pages/show-detail-page.js';
-import {CartPage} from './pages/cart-page.js';
+import { shows } from './data.js';
 
-//"main (or central)" class, modeled after react...kinda?
-class App {
-	constructor(rootSelector) {
-		this.root = document.querySelector(rootSelector);
-		//routing like in PHP but in js?
-		this.routes = {
-			landing: () => new LandingPage(this),
-			shows: () => new ShowListPage(this),
-			showDetails: () => new ShowDetailPage(this),
-			cart: () => new CartPage(this), 
-		};
-		this.currentPage = null; 
+const APP = document.querySelector('#app');
 
-		const allShowsButton = document.querySelector('#allShows');
-		const cartButton = document.querySelector('#cart');
-		const homeButton = document.querySelector('#home');
-
-		if (allShowsButton) {
-			allShowsButton.addEventListener('click', () => {
-				this.navigate('shows');
-			})
-		}
-
-		if (cartButton) {
-			cartButton.addEventListener('click', () => {
-				this.navigate('cart');
-			})
-		}
-
-		if (homeButton) {
-			homeButton.addEventListener('click', () => {
-				localStorage.clear();
-				this.start();
-			})
-		}
-
-	}
-
-	navigate(pageName, data = {}) {
-		localStorage.setItem('currentPage', JSON.stringify({ page: pageName, data }));
-
-		this.root.innerHTML = '';
-		document.querySelector('nav').style.display = pageName === 'landing' ? 'none' : 'block';
-		if (pageName === 'showDetails') {
-			this.currentPage = new ShowDetailPage(this);
-			this.currentPage.render(data);
-		} else {
-			this.currentPage = this.routes[pageName]();
-			this.currentPage.render();
-		}	
-	}
-
-	start() {
-		const saved = localStorage.getItem('currentPage');
-		if (saved) {
-			const { page, data } = JSON.parse(saved);
-			if (this.routes[page]) {
-				this.navigate(page, data);
-				return;
-			}
-		}
-		this.navigate('landing');
+function renderPage(page, show) {
+	if (page === 'home') {
+		APP.innerHTML = landingPage();
+	} else if (page === 'list') {
+		APP.innerHTML = listPage();
+	} else if (page === 'cart') {
+		APP.innerHTML = cartPage();
+	} else if (page === 'detail') {
+		APP.innerHTML = detailPage(show);
+	} else {
+		APP.innerHTML = landingPage();
 	}
 }
 
-const app = new App('#app');
-app.start();
+function landingPage() {
+	return `
+		<h1>ticketapp</h1>
+
+		<h2>The best ticket buying app you have ever used.</h2>
+
+		<button data-page="list">Get Started</button>
+	`;
+}
+
+function showCard() {
+	
+}
+
+function showList() {
+	return shows.map((show) => {
+		return `
+			<li>
+			<h3>${show.title}</h3>
+			<picture>
+				<img src="${show.image}">
+			</picture>
+			<button data-page="detail" data-id="${show.id}">Show Info</button>
+			<button>Buy Tickets</button>
+			</li>
+		`;
+	}).join('');
+}
+
+function listPage() {
+	return `
+		${listPageMenu()}
+
+		<h2>Now Showing</h2>
+
+		<ul>
+			${showList()}
+		</ul>
+	`;
+}
+
+function detailPage(show) {
+	return `
+		${mainMenu()}
+
+		<h2>${show.title}</h2>
+
+		<picture>
+			<img src="${show.image}">
+		</picture>
+
+		<p>${show.description}</p>
+
+		<button>Buy Tickets</button>
+	`;
+}
+
+function cartPage() {
+	return `
+		${cartPageMenu()}
+
+		<h2>Cart</h2>
+	`;
+}
+
+//menus
+function mainMenu() {
+	return `
+		<nav>
+			<button data-page="home">Home</button>
+			<button data-page="list">All Shows</button>
+			<button data-page="cart">Cart</button>
+		</nav>
+	`;
+}
+
+function listPageMenu() {
+	return `
+		<nav>
+			<button data-page="home">Home</button>
+			<button data-page="cart">Cart</button>
+		</nav>
+	`;
+}
+
+function cartPageMenu() {
+	return `
+		<nav>
+			<button data-page="home">Home</button>
+			<button data-page="list">All Shows</button>
+		</nav>
+	`;
+}
+
+
+document.addEventListener('click', (event) => {
+	if (event.target.matches('[data-page]')) {
+		const page = event.target.dataset.page;
+		const showId = event.target.dataset.id;
+		//null is a placeholder... just means "there is no show found yet, there might be one eventually tho"
+		let foundShow = null;
+
+		if(showId) {
+			foundShow = shows.find(show => show.id === Number(showId));
+		} 
+		renderPage(page, foundShow);
+	}
+});
+
+renderPage('list');
