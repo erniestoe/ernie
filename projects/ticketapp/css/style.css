@@ -1,2 +1,19 @@
 @import "reset.css";
 @import "setup.css";
+
+#app {
+	--phone-color: #333;
+
+	width: 100%;
+	max-width: 360px;
+	height: 700px;
+	border-block: 50px solid var(--phone-color);
+	border-inline: 5px solid var(--phone-color);
+	border-block-end: 80px solid var(--phone-color);
+	border-radius: 20px;
+
+	padding: 30px 16px;
+	
+	overflow: scroll;
+
+}

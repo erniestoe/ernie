@@ -48,7 +48,7 @@ export const shows = [
     id: 4,
     image:"https://res.cloudinary.com/dhgciqwbz/image/upload/v1749142446/guffman-poster_wsmbwl.png",
     title: "The Spotlight Chronicles (Student Showcase)",
-    description: "An evening of monologues, short scenes, and original works performed by our rising stars. Celebrate the talent and passion of our aspiring actors!.",
+    description: "An evening of monologues, short scenes, and original works performed by our rising stars. Celebrate the talent and passion of our aspiring actors!",
     theatreId: 102,
     showtimes: {
       dates: [
