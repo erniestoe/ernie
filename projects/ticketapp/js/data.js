@@ -16,7 +16,7 @@ export const shows = [
   },
   {
     id: 2,
-    image:"https://res.cloudinary.com/dhgciqwbz/image/upload/v1749142448/mns-poster_apohpz.png",
+    image:"https://res.cloudinary.com/dhgciqwbz/image/upload/v1749142446/guffman-poster_wsmbwl.png",
     title: "Waiting for Guffman (Reprise)",
     description: "Back by popular demand! Our beloved satire of small-town theatre returns. Join us as we lovingly lampoon the quirks and charm of the theatrical world.",
     theatreId: 102,
@@ -31,7 +31,7 @@ export const shows = [
   },
   {
     id: 3,
-    image:"https://res.cloudinary.com/dhgciqwbz/image/upload/v1749142448/spotlight-poster_rfpauk.png",
+    image:"https://res.cloudinary.com/dhgciqwbz/image/upload/v1749142448/mns-poster_apohpz.png",
     title: "A Midsummer Night’s Dream",
     description: "Love, magic, and mischief collide in Shakespeare’s timeless comedy. Follow a cast of star-crossed lovers and mischievous fairies as they navigate the whimsical world of Athens’ enchanted woods.",
     theatreId: 101,
@@ -46,7 +46,7 @@ export const shows = [
   },
   {
     id: 4,
-    image:"https://res.cloudinary.com/dhgciqwbz/image/upload/v1749142446/guffman-poster_wsmbwl.png",
+    image:"https://res.cloudinary.com/dhgciqwbz/image/upload/v1749142448/spotlight-poster_rfpauk.png",
     title: "The Spotlight Chronicles (Student Showcase)",
     description: "An evening of monologues, short scenes, and original works performed by our rising stars. Celebrate the talent and passion of our aspiring actors!",
     theatreId: 102,

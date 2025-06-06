@@ -12,8 +12,10 @@ function renderPage(page, show) {
 		APP.innerHTML = cartPage();
 	} else if (page === 'detail') {
 		APP.innerHTML = detailPage(show);
-	} else if (page === 'theatre') {
-		APP.innerHTML = theatrePage();
+	} else if (page === '101') {
+		APP.innerHTML = theatre101Page();
+	} else if (page == '102') {
+		APP.innerHTML = theatre102Page();
 	} else {
 		APP.innerHTML = landingPage();
 	}
@@ -81,10 +83,38 @@ function detailPage(show) {
 	`;
 }
 
-function theatrePage() {
+function renderTheaterSeats(seatCount) {
+	let seats = '';
+	for (let i = 0; i < seatCount; i++) {
+		seats += `<div class="seat"></div>`
+	}
+
+	return seats;
+}
+
+function theatre101Page() {
 	return `
 		${mainMenu()}
-		<h2>Theatre<h2>
+		<h2>Theatre 101<h2>
+
+		<div class="stage">STAGE</div>
+
+		<div class="seats-container">
+			${renderTheaterSeats(25)}
+		</div>
+	`;
+}
+
+function theatre102Page() {
+	return `
+		${mainMenu()}
+		<h2>Theatre 102<h2>
+
+		<div class="stage">STAGE</div>
+
+		<div class="seats-container">
+			${renderTheaterSeats(50)}
+		</div>
 	`;
 }
 
@@ -137,12 +167,11 @@ function renderShowtimes(show) {
 
 		${show.showtimes.times.map((time) => {
 			return `
-				<button data-page="theatre">${time}</button>
+				<button data-page="${show.theatreId}">${time}</button>
 			`;
 		}).join('')}
 	`;
 }
-
 
 document.addEventListener('click', (event) => {
 	if (event.target.matches('[data-page]')) {
@@ -166,6 +195,10 @@ document.addEventListener('click', (event) => {
 		if(element && foundShow) {
 			element.innerHTML = renderShowtimes(foundShow);
 		}
+	}
+
+	if (event.target.matches('.seat')) {
+		event.target.classList.toggle('selected');
 	}
 });
 

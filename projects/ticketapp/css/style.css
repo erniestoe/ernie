@@ -16,4 +16,26 @@
 	
 	overflow: scroll;
 
+
+	.stage {
+		border: 1px solid black;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.seats-container {
+		margin-top: 10px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+
+		.seat {
+			border: 1px solid black;
+			padding: 20px;
+		}
+
+		.seat.selected {
+			background-color: red;
+		}
+	}
 }
