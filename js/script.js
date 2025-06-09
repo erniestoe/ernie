@@ -32,7 +32,7 @@ closeButton.addEventListener('click', function(event) {
 });
 
 //Flickity
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = () => {
 	var elem = document.querySelector('.main-carousel');
 	if (elem) {
 		new Flickity( elem, {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   		contain: true
 		});
 	}
-});
+};
 
 // E4P
 const urlParameters = new URLSearchParams(window.location.search);
