@@ -95,9 +95,17 @@ function confirmationPage(){
 function renderTheaterSeats(seatCount, theatre, showId, time, date) {
 	let seats = '';
 	for (let i = 0; i < seatCount; i++) {
+		const seatId = `${theatre} ${i + 1}`;
+		const isSelected = cart.find(ticket =>
+			ticket.seatId === seatId &&
+			ticket.showId === showId &&
+			ticket.time === time &&
+			ticket.date === date
+		);
+
 		seats += `<div 
-		class="seat"
-		data-seatId="${theatre} ${i + 1}"
+		class="seat ${isSelected ? 'selected' : ''}"
+		data-seatId="${seatId}"
 		data-id="${showId}"
 		data-time="${time}"
 		data-date="${date}">
@@ -117,6 +125,12 @@ function theatre101Page(show, time, date) {
 		<div class="seats-container">
 			${renderTheaterSeats(25, 101, show.id, time, date)}
 		</div>
+
+		<div class="ticket-overview">
+			<ul>
+				${renderCartItems()}
+			</ul>
+		</div>
 	`;
 }
 
@@ -129,6 +143,12 @@ function theatre102Page(show, time, date) {
 
 		<div class="seats-container">
 			${renderTheaterSeats(50, 102, show.id, time, date)}
+		</div>
+
+		<div class="ticket-overview">
+			<ul>
+				${renderCartItems()}
+			</ul>
 		</div>
 	`;
 }
@@ -147,10 +167,11 @@ function renderCartItems() {
 	return Object.entries(groups).map(([key, seats]) => {
 		return `
 			<li>
-				<strong>${key}</strong>
+				<p>${key}</p>
 				<ul>
 					${seats.map(seat => `<li>Seat ${seat}</li>`).join('')}
 				</ul>
+				<p>Total: $${seats.length * 10}</p>
 			</li>
 		`;
 	}).join('');
@@ -267,7 +288,7 @@ document.addEventListener('click', (event) => {
 		const foundShow = shows.find(show => show.id === showId);
 		if (!foundShow) return; 
 
-		event.target.classList.toggle('selected');
+		// event.target.classList.toggle('selected');
 
 		const seatIndex = cart.indexOf(seatId);
 
@@ -284,6 +305,9 @@ document.addEventListener('click', (event) => {
 		}
 
 		updateCartCount();
+
+		const page = String(foundShow.theatreId);
+		renderPage(page, foundShow, time, date);
 		
 	}
 
