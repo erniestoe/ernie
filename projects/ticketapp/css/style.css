@@ -1,8 +1,10 @@
 @import "reset.css";
 @import "setup.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 #app {
 	--phone-color: #333;
+	font-family: "Inter", sans-serif;
 
 	width: 100%;
 	max-width: 360px;
@@ -16,6 +18,35 @@
 	
 	overflow: scroll;
 
+	.calm-voice, p {
+		font-size: 1rem;
+	}
+
+	.strong-voice {
+		font-weight: 700;
+	}
+
+	.loud-voice {
+		font-size: 2.5rem;
+		font-weight: 900;
+	}
+
+	button,
+	select {
+		font-family: inherit;
+		border-radius: 5px;
+		min-width: 100px;
+	}
+	button {
+		color: white;
+		background-color: black;
+		border: none;
+		padding: 10px;
+	}
+	select {
+		color: black;
+		padding: 8px;
+	}
 
 	.stage {
 		border: 1px solid black;
@@ -32,10 +63,18 @@
 		.seat {
 			border: 1px solid black;
 			padding: 20px;
+			border-radius: 5px;
 		}
 
 		.seat.selected {
 			background-color: red;
 		}
+	}
+
+	.ticket {
+		border: 1px solid black;
+	}
+	.ticket + .ticket {
+		margin-top: 20px;
 	}
 }

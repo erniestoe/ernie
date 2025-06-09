@@ -25,9 +25,9 @@ function renderPage(page, show, time, date) {
 
 function landingPage() {
 	return `
-		<h1>ticketapp</h1>
+		<h1 class="strong-voice">ticketapp</h1>
 
-		<h2>The best ticket buying app you have ever used.</h2>
+		<h2 class="loud-voice">The best ticket buying app you have ever used.</h2>
 
 		<button data-page="list">Get Started</button>
 	`;
@@ -47,7 +47,7 @@ function showList() {
 				</picture>
 
 				<button data-page="detail" data-id="${show.id}">Show Info</button>
-				<button data-showtimes="notActive" data-id="${show.id}">Check Showtimes</button>
+				<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
 
 				<div data-showtimes-container="${show.id}"></div>
 			</li>
@@ -79,7 +79,7 @@ function detailPage(show) {
 
 		<p>${show.description}</p>
 
-		<button data-showtimes="notActive" data-id="${show.id}">Check Showtimes</button>
+		<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
 
 		<div data-showtimes-container="${show.id}"></div>
 	`;
@@ -89,6 +89,12 @@ function confirmationPage(){
 	return `
 		${cartPageMenu()}
 		<h2>Thank you!<h2>
+
+		<p>Here are your tickets!</p>
+
+		<ul>
+		${renderTickets()}
+		</ul>
 	`;
 }
 
@@ -130,6 +136,8 @@ function theatre101Page(show, time, date) {
 			<ul>
 				${renderCartItems()}
 			</ul>
+
+			${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
 		</div>
 	`;
 }
@@ -149,6 +157,7 @@ function theatre102Page(show, time, date) {
 			<ul>
 				${renderCartItems()}
 			</ul>
+			${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
 		</div>
 	`;
 }
@@ -166,7 +175,7 @@ function renderCartItems() {
 
 	return Object.entries(groups).map(([key, seats]) => {
 		return `
-			<li>
+			<li class="cart-item">
 				<p>${key}</p>
 				<ul>
 					${seats.map(seat => `<li>Seat ${seat}</li>`).join('')}
@@ -177,10 +186,33 @@ function renderCartItems() {
 	}).join('');
 }
 
+function renderTickets() {
+	const groups = {};
+
+	cart.forEach(ticket => {
+		const key = `${ticket.title} | ${ticket.date} @ ${ticket.time}`;
+		if (!groups[key]) {
+			groups[key] = []
+		}
+		groups[key].push(ticket.seatId);
+	});
+
+	return Object.entries(groups).map(([key, seats]) => {
+		return `
+			<li class="ticket">
+				<p>${key}</p>
+				<ul>
+					${seats.map(seat => `<li>Seat ${seat}</li>`).join('')}
+				</ul>
+			</li>
+		`;
+	}).join('');
+}
+
 function updateCartCount() {
 	const cartButton = document.querySelector('[data-page="cart"]');
 	if (cartButton) {
-		cartButton.textContent = `Cart ${cart.length}`;
+		cartButton.textContent = `Cart (${cart.length})`;
 	}
 }
 
@@ -205,7 +237,7 @@ function mainMenu() {
 		<nav>
 			<button data-page="home">Home</button>
 			<button data-page="list">All Shows</button>
-			<button data-page="cart">Cart ${cart.length}</button>
+			<button data-page="cart">Cart (${cart.length})</button>
 		</nav>
 	`;
 }
@@ -214,7 +246,7 @@ function listPageMenu() {
 	return `
 		<nav>
 			<button data-page="home">Home</button>
-			<button data-page="cart">Cart ${cart.length}</button>
+			<button data-page="cart">Cart (${cart.length})</button>
 		</nav>
 	`;
 }
