@@ -3,6 +3,7 @@
 	<footer class="site-footer">
 		<inner-column>
 			<a href="index.php?page=style-guide">Style Guide</a>
+			<a href="index.php?page=goals">Goals</a>
 		</inner-column>
 	</footer>
 
