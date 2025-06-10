@@ -25,11 +25,13 @@ function renderPage(page, show, time, date) {
 
 function landingPage() {
 	return `
-		<h1 class="strong-voice">ticketapp</h1>
+		<section class="landing-page">
+			<h1 class="strong-voice">ticketapp</h1>
 
-		<h2 class="loud-voice">The best ticket buying app you have ever used.</h2>
+			<h2 class="loud-voice">The best ticket buying app you have ever used.</h2>
 
-		<button data-page="list">Get Started</button>
+			<button data-page="list">Get Started</button>
+		</section>
 	`;
 }
 
@@ -40,16 +42,18 @@ function showCard() {
 function showList() {
 	return shows.map((show) => {
 		return `
-			<li>
-				<h3>${show.title}</h3>
+			<li class="show-card">
+				<h3 class="loud-voice">${show.title}</h3>
 				<picture>
 					<img src="${show.image}">
 				</picture>
 
-				<button data-page="detail" data-id="${show.id}">Show Info</button>
-				<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
-
-				<div data-showtimes-container="${show.id}"></div>
+				<div class="buttons">
+					<button data-page="detail" data-id="${show.id}">Show Info</button>
+					<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
+				</div>
+				
+				<div data-showtimes-container="${show.id}" class="showtimes-container"></div>
 			</li>
 		`;
 	}).join('');
@@ -59,7 +63,7 @@ function listPage() {
 	return `
 		${listPageMenu()}
 
-		<h2>Now Showing</h2>
+		<h2 class="strong-voice">Now Showing</h2>
 
 		<ul>
 			${showList()}
@@ -70,25 +74,26 @@ function listPage() {
 function detailPage(show) {
 	return `
 		${mainMenu()}
+		<div class="show-card">
+			<h2 class="loud-voice">${show.title}</h2>
 
-		<h2>${show.title}</h2>
+			<picture>
+				<img src="${show.image}">
+			</picture>
 
-		<picture>
-			<img src="${show.image}">
-		</picture>
+			<p>${show.description}</p>
 
-		<p>${show.description}</p>
+			<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
 
-		<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
-
-		<div data-showtimes-container="${show.id}"></div>
+			<div data-showtimes-container="${show.id}" class="showtimes-container"></div>
+		</div>
 	`;
 }
 
 function confirmationPage(){
 	return `
 		${cartPageMenu()}
-		<h2>Thank you!<h2>
+		<h2 class="strong-voice">Thank you!<h2>
 
 		<p>Here are your tickets!</p>
 
@@ -123,42 +128,55 @@ function renderTheaterSeats(seatCount, theatre, showId, time, date) {
 
 function theatre101Page(show, time, date) {
 	return `
-		${mainMenu()}
-		<h2>${show.title} Theatre 101 at ${time} on ${date}<h2>
+		<section class="theatre-page">
+			${mainMenu()}
 
-		<div class="stage">STAGE</div>
+			<div class="theatre-title">
+				<h2 class="loud-voice">${show.title}<h2>
 
-		<div class="seats-container">
-			${renderTheaterSeats(25, 101, show.id, time, date)}
-		</div>
+				<h3 class="strong-voice">Theatre 102 at ${time} on ${date}</h3>
+			</div>
 
-		<div class="ticket-overview">
-			<ul>
-				${renderCartItems()}
-			</ul>
+			<div class="stage strong-voice">STAGE</div>
 
-			${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
-		</div>
+			<div class="seats-container">
+				${renderTheaterSeats(25, 101, show.id, time, date)}
+			</div>
+
+			<div class="ticket-overview">
+				<ul>
+					${renderCartItems()}
+				</ul>
+
+				${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
+			</div>
+		</section>
 	`;
 }
 
 function theatre102Page(show, time, date) {
 	return `
-		${mainMenu()}
-		<h2>${show.title} Theatre 102 at ${time} on ${date}<h2>
+		<section class="theatre-page">
+			${mainMenu()}
+			<div class="theatre-title">
+				<h2 class="loud-voice">${show.title}<h2>
 
-		<div class="stage">STAGE</div>
+				<h3 class="strong-voice">Theatre 102 at ${time} on ${date}</h3>
+			</div>
 
-		<div class="seats-container">
-			${renderTheaterSeats(50, 102, show.id, time, date)}
-		</div>
+			<div class="stage">STAGE</div>
 
-		<div class="ticket-overview">
-			<ul>
-				${renderCartItems()}
-			</ul>
-			${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
-		</div>
+			<div class="seats-container">
+				${renderTheaterSeats(50, 102, show.id, time, date)}
+			</div>
+
+			<div class="ticket-overview">
+				<ul>
+					${renderCartItems()}
+				</ul>
+				${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
+			</div>
+		</section>
 	`;
 }
 
@@ -176,11 +194,11 @@ function renderCartItems() {
 	return Object.entries(groups).map(([key, seats]) => {
 		return `
 			<li class="cart-item">
-				<p>${key}</p>
+				<p class="strong-voice">${key}</p>
 				<ul>
 					${seats.map(seat => `<li>Seat ${seat}</li>`).join('')}
 				</ul>
-				<p>Total: $${seats.length * 10}</p>
+				<p><span class="strong-voice">Total:</span> $${seats.length * 10}</p>
 			</li>
 		`;
 	}).join('');
@@ -200,7 +218,7 @@ function renderTickets() {
 	return Object.entries(groups).map(([key, seats]) => {
 		return `
 			<li class="ticket">
-				<p>${key}</p>
+				<p class="strong-voice">${key}</p>
 				<ul>
 					${seats.map(seat => `<li>Seat ${seat}</li>`).join('')}
 				</ul>
@@ -218,16 +236,20 @@ function updateCartCount() {
 
 function cartPage() {
 	return `
-		${cartPageMenu()}
+		<section class="cart-page"?>
+			${cartPageMenu()}
 
-		<h2>Cart</h2>
+			${cart.length === 0 ? `<h2 class="strong-voice">No seats picked yet!</h2>` : ''}
 
-		<ul>
-			${renderCartItems()}
-		</ul>
+			<ul>
+				${renderCartItems()}
+			</ul>
 
-		${cart.length > 0 ? '<button id="clearCart">Clear Cart</button>' : ''}
-		${cart.length > 0 ? '<button data-page="confirmation">Buy Tickets</button>' : ''}
+			<div class="cart-buttons">
+				${cart.length > 0 ? '<button id="clearCart">Clear Cart</button>' : ''}
+				${cart.length > 0 ? '<button data-page="confirmation">Buy Tickets</button>' : ''}
+			</div
+		</section>
 	`;
 }
 
@@ -270,11 +292,13 @@ function renderShowtimes(show) {
 				}).join('')}
 		</select>
 
+		<div class="showtimes-buttons">
 		${show.showtimes.times.map((time) => {
 			return `
 				<button data-page="${show.theatreId}" data-id="${show.id}" data-time="${time}">${time}</button>
 			`;
 		}).join('')}
+		</div>
 	`;
 }
 
