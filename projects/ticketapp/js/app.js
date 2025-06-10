@@ -3,6 +3,11 @@ import { shows } from './data.js';
 const APP = document.querySelector('#app');
 let cart = [];
 
+const savedCart = localStorage.getItem('cart');
+if (savedCart) {
+	cart = JSON.parse(savedCart);
+}
+
 function renderPage(page, show, time, date) {
 	if (page === 'home') {
 		APP.innerHTML = landingPage();
@@ -322,6 +327,7 @@ document.addEventListener('click', (event) => {
 			foundShow = shows.find(show => show.id === Number(showId));
 		}
 
+		history.pushState({ page, showId, time, date }, '', '');
 		renderPage(page, foundShow, time, date);
 	}
 
@@ -355,9 +361,12 @@ document.addEventListener('click', (event) => {
 				time,
 				date,
 				seatId
-			})
+			});
+
+			localStorage.setItem('cart', JSON.stringify(cart));
 		} else {
 			cart = cart.filter(item => item.seatId !== seatId);
+			localStorage.setItem('cart', JSON.stringify(cart));
 		}
 
 		updateCartCount();
@@ -370,9 +379,31 @@ document.addEventListener('click', (event) => {
 	if (event.target.matches('#clearCart')) {
 		
 		cart = [];
+		localStorage.removeItem('cart');
 		renderPage('cart');
 		
 	}
 });
 
-renderPage('list');
+window.addEventListener('popstate', (event) => {
+	const state = event.state;
+	if (!state) return;
+
+	let foundShow = null;
+	if (state.showId) {
+		foundShow = shows.find(show => show.id === Number(state.showId));
+	}
+	renderPage(state.page, foundShow, state.time, state.date);
+});
+
+const currentState = history.state;
+
+if (currentState) {
+	let foundShow = null;
+	if (currentState.showId) {
+		foundShow = shows.find(show => show.id === Number(currentState.showId));
+	}
+	renderPage(currentState.page, foundShow, currentState.time, currentState.date);
+} else {
+	renderPage('home');
+}
