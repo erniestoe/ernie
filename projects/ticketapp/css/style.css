@@ -59,9 +59,26 @@
 	}
 
 	.show-card {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
+		flex-direction: column;
 		gap: 10px;
+
+		.buttons,
+		.showtimes-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+		}
+
+		.showtimes-container {
+			align-items: start;
+		}
+
+		.showtimes-buttons {
+			display: grid;
+			gap: 10px;
+		}
+
 
 	}
 	.show-card + .show-card {
@@ -101,91 +118,12 @@
 	}
 
 	.landing-page {
-		header + .splash {
+		h1+h2 {
 			margin-top: 40px;
 		}
 
-		.splash + button {
+		h2 + button {
 			margin-top: 20px;
-		}
-	}
-
-	.list-page {
-		.show-card {
-			h3 {
-				grid-column: span 2;
-			}
-
-			picture {
-				/*max-width: 50%;*/
-				grid-column: 1;
-			}
-
-			.showtimes-container {
-				grid-column: span 2;
-				h4 {
-					align-self: center;
-					justify-self: center;
-				}
-
-				ul {
-					display: grid;
-					margin-top: 20px;
-					gap: 20px;
-
-					li {
-						display: grid;
-						grid-template-columns: 1fr 1fr;
-						/*display: flex;*/
-						/*flex-direction: column;*/
-						gap: 10px;
-
-						.times {
-							button + button {
-								margin-top: 10px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	.detail-page {
-		.show-card {
-			h2,
-			.detail-image,
-			.description,
-			.showtimes-container {
-				grid-column: span 2;
-			}
-
-			.showtimes-container {
-				h3 {
-					align-self: center;
-					justify-self: center;
-				}
-
-				ul {
-					display: grid;
-					margin-top: 20px;
-					gap: 20px;
-
-					li {
-						display: grid;
-						grid-template-columns: 1fr 1fr;
-						/*display: flex;*/
-						/*flex-direction: column;*/
-						gap: 10px;
-
-						.times {
-							button + button {
-								margin-top: 10px;
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 
