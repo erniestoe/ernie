@@ -176,6 +176,8 @@
 						grid-template-columns: 1fr 1fr;
 						/*display: flex;*/
 						/*flex-direction: column;*/
+
+						/*I am adding a comment here because I am losing my mind*/
 						gap: 10px;
 
 						.times {
