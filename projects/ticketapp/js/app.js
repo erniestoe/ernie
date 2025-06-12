@@ -26,16 +26,37 @@ function renderPage(page, show, time, date) {
 	} else {
 		APP.innerHTML = landingPage();
 	}
+
+	APP.scrollTo(0, 0);
 }
 
 function landingPage() {
 	return `
 		<section class="landing-page">
-			<h1 class="strong-voice">ticketapp</h1>
+			<header>
+				<h1 class="strong-voice">ticketapp</h1>
+			</header>
+			
+			<div class="splash">
+				<h2 class="loud-voice">The best ticket buying app you have ever used.</h2>
+			</div>
 
-			<h2 class="loud-voice">The best ticket buying app you have ever used.</h2>
+			<form id="loginForm">
+				<div class="field">
+					<label>Username: </label>
+					<input type="text" name="username">
+				</div>
 
-			<button data-page="list">Get Started</button>
+				<div class="field">
+					<label>Password: </label>
+					<input type="password" name="password">
+				</div>
+
+				<div class="buttons">
+					<button type="submit">Login</button>
+					<button type="button" id="autoLogin">Auto Login</button>
+				</div>
+			</form>
 		</section>
 	`;
 }
@@ -46,19 +67,43 @@ function showCard() {
 
 function showList() {
 	return shows.map((show) => {
+		const showtimes = show.showtimes.dates.map(date => {
+			return `
+				<li>
+					<h5 class="strong-voice">${date}</h4>
+
+					<div class="times">
+						${show.showtimes.times.map(time => `
+							<button 
+								data-page="${show.theatreId}" 
+								data-id="${show.id}" 
+								data-time="${time}" 
+								data-date="${date}"
+							>${time}</button>
+						`).join('')}
+					</div>
+				</li>
+			`;
+		}).join('');
+
 		return `
 			<li class="show-card">
 				<h3 class="loud-voice">${show.title}</h3>
-				<picture>
+				<picture class="list-image">
 					<img src="${show.image}">
 				</picture>
 
 				<div class="buttons">
 					<button data-page="detail" data-id="${show.id}">Show Info</button>
-					<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
 				</div>
 				
-				<div data-showtimes-container="${show.id}" class="showtimes-container"></div>
+				<div data-showtimes-container="${show.id}" class="showtimes-container">
+					<h4 class="strong-voice">Showtimes</h3>
+
+					<ul>
+						${showtimes}
+					</ul>
+				</div>
 			</li>
 		`;
 	}).join('');
@@ -66,32 +111,59 @@ function showList() {
 
 function listPage() {
 	return `
-		${listPageMenu()}
+		<section class="list-page">
+			${listPageMenu()}
 
-		<h2 class="strong-voice">Now Showing</h2>
+			<h2 class="strong-voice">Now Showing</h2>
 
-		<ul>
-			${showList()}
-		</ul>
+			<ul>
+				${showList()}
+			</ul>
+		</section>
 	`;
 }
 
 function detailPage(show) {
+	const showtimes = show.showtimes.dates.map(date => {
+			return `
+				<li>
+					<h4 class="strong-voice">${date}</h4>
+
+					<div class="times">
+						${show.showtimes.times.map(time => `
+							<button 
+								data-page="${show.theatreId}" 
+								data-id="${show.id}" 
+								data-time="${time}" 
+								data-date="${date}"
+							>${time}</button>
+						`).join('')}
+					</div>
+				</li>
+			`;
+		}).join('');
+
 	return `
-		${mainMenu()}
-		<div class="show-card">
-			<h2 class="loud-voice">${show.title}</h2>
+		<section class="detail-page">
+			${mainMenu()}
+			<div class="show-card">
+				<h2 class="loud-voice">${show.title}</h2>
 
-			<picture>
-				<img src="${show.image}">
-			</picture>
+				<picture class="detail-image">
+					<img src="${show.image}">
+				</picture>
 
-			<p>${show.description}</p>
+				<p class="description">${show.description}</p>
 
-			<button data-showtimes="notActive" data-id="${show.id}">Showtimes</button>
+				<div data-showtimes-container="${show.id}" class="showtimes-container">
+					<h3 class="strong-voice">Showtimes</h3>
 
-			<div data-showtimes-container="${show.id}" class="showtimes-container"></div>
-		</div>
+					<ul>
+						${showtimes}
+					</ul>
+				</div>
+			</div>
+		</section>
 	`;
 }
 
@@ -175,12 +247,7 @@ function theatre102Page(show, time, date) {
 				${renderTheaterSeats(50, 102, show.id, time, date)}
 			</div>
 
-			<div class="ticket-overview">
-				<ul>
-					${renderCartItems()}
-				</ul>
-				${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
-			</div>
+			<div class="ticket-overview"></div>
 		</section>
 	`;
 }
@@ -207,6 +274,18 @@ function renderCartItems() {
 			</li>
 		`;
 	}).join('');
+}
+
+function renderMiniCartItems() {
+	const container = document.querySelector('.ticket-overview');
+	if (!container) return;
+
+	container.innerHTML = `
+		<ul>
+			${renderCartItems()}
+		</ul>
+		${cart.length > 0 ? '<button data-page="cart">Checkout</button>' : ''}
+	`;
 }
 
 function renderTickets() {
@@ -314,14 +393,7 @@ document.addEventListener('click', (event) => {
 		const time = event.target.dataset.time;
 		//null is a placeholder... just means "there is no show found yet, there might be one eventually tho"
 		let foundShow = null;
-		let date = null;
-
-		if(showId) {
-			const selectedDate = document.querySelector(`[data-date="${showId}"]`);
-			if (selectedDate) {
-				date = selectedDate.value;
-			}
-		}
+		const date = event.target.dataset.date;
 
 		if(showId) {
 			foundShow = shows.find(show => show.id === Number(showId));
@@ -329,16 +401,6 @@ document.addEventListener('click', (event) => {
 
 		history.pushState({ page, showId, time, date }, '', '');
 		renderPage(page, foundShow, time, date);
-	}
-
-	if (event.target.matches('[data-showtimes]')) {
-		const showId = event.target.dataset.id;
-		const element = document.querySelector(`[data-showtimes-container="${showId}"]`);
-		const	foundShow = shows.find(show => show.id === Number(showId));
-
-		if(element && foundShow) {
-			element.innerHTML = renderShowtimes(foundShow);
-		}
 	}
 
 	if (event.target.matches('.seat')) {
@@ -363,16 +425,17 @@ document.addEventListener('click', (event) => {
 				seatId
 			});
 
-			localStorage.setItem('cart', JSON.stringify(cart));
+			
+			event.target.classList.add('selected');
 		} else {
 			cart = cart.filter(item => item.seatId !== seatId);
-			localStorage.setItem('cart', JSON.stringify(cart));
+		
+			event.target.classList.remove('selected');
 		}
 
+		localStorage.setItem('cart', JSON.stringify(cart));
 		updateCartCount();
-
-		const page = String(foundShow.theatreId);
-		renderPage(page, foundShow, time, date);
+		renderMiniCartItems();
 		
 	}
 
@@ -382,6 +445,41 @@ document.addEventListener('click', (event) => {
 		localStorage.removeItem('cart');
 		renderPage('cart');
 		
+	}
+
+	if (event.target.id === 'autoLogin') {
+		setTimeout(() => {
+			const form = document.querySelector('#loginForm');
+			if (!form) {
+				return;
+			}
+
+			const usernameInput = form.querySelector('input[type="text"]');
+			const passwordInput = form.querySelector('input[type="password"]');
+
+			if (usernameInput && passwordInput) {
+				usernameInput.value = 'username';
+				passwordInput.value = 'password';
+				form.requestSubmit();
+			}
+		}, 0);	
+	}
+});
+
+document.addEventListener('submit', (event) => {
+	event.preventDefault();
+
+	const form = event.target;
+	if (form.id === 'loginForm') {
+		const username = form.username.value.trim();
+		const password = form.password.value.trim();
+
+		if (username === 'username' && password === 'password') {
+			renderPage('list');
+			history.pushState({page: 'list'}, '', '');
+		} else {
+			alert ('Whoops thats not right... Try "username" and "password"');
+		}
 	}
 });
 
