@@ -205,28 +205,65 @@ function confirmationPage(tickets) {
 }
 
 
-function renderTheaterSeats(seatCount, theatre, showId, time, date) {
-	let seats = '';
-	for (let i = 0; i < seatCount; i++) {
-		const seatId = `${theatre} ${i + 1}`;
-		const isSelected = cart.find(ticket =>
-			ticket.seatId === seatId &&
-			ticket.showId === showId &&
-			ticket.time === time &&
-			ticket.date === date
-		);
+// function renderTheaterSeats(seatCount, theatre, showId, time, date) {
+// 	let seats = '';
+// 	for (let i = 0; i < seatCount; i++) {
+// 		const seatId = `${theatre} ${i + 1}`;
+// 		const isSelected = cart.find(ticket =>
+// 			ticket.seatId === seatId &&
+// 			ticket.showId === showId &&
+// 			ticket.time === time &&
+// 			ticket.date === date
+// 		);
 
-		seats += `<div 
-		class="seat ${isSelected ? 'selected' : ''}"
-		data-seatId="${seatId}"
-		data-id="${showId}"
-		data-time="${time}"
-		data-date="${date}">
-		</div>`
+// 		seats += `<div 
+// 		class="seat ${isSelected ? 'selected' : ''}"
+// 		data-seatId="${seatId}"
+// 		data-id="${showId}"
+// 		data-time="${time}"
+// 		data-date="${date}">
+// 		</div>`
+// 	}
+
+// 	return seats;
+// }
+function renderTheaterSeats(seatCount, theatre, showId, time, date) {
+	const seatsPerRow = 8;
+	const rowCount = Math.ceil(seatCount / seatsPerRow);
+	let html = '';
+
+	for (let row = 0; row < rowCount; row++) {
+		html += `<div class="seat-row">`;
+
+		for (let col = 0; col < seatsPerRow; col++) {
+			const seatNumber = row * seatsPerRow + col + 1;
+			if (seatNumber > seatCount) break;
+
+			const seatId = `${theatre} ${seatNumber}`;
+			const isSelected = cart.find(ticket =>
+				ticket.seatId === seatId &&
+				ticket.showId === showId &&
+				ticket.time === time &&
+				ticket.date === date
+			);
+
+			html += `
+				<div 
+					class="seat ${isSelected ? 'selected' : ''}" 
+					data-seatId="${seatId}" 
+					data-id="${showId}" 
+					data-time="${time}" 
+					data-date="${date}"
+				></div>
+			`;
+		}
+
+		html += `</div>`; // end .seat-row
 	}
 
-	return seats;
+	return html;
 }
+
 
 function theatre101Page(show, time, date) {
 	return `
@@ -385,7 +422,7 @@ function cartPage() {
 
 			<div class="empty-cart">
 				${cart.length === 0 ? `<h2 class="strong-voice">No seats picked yet!</h2>` : ''}
-				${isLoggedIn && hasTickets ? `<button data-page="tickets">See purchased tickets?</button>` : ''}
+				${isLoggedIn && hasTickets ? `<button data-page="tickets">See Purchased Tickets?</button>` : ''}
 			</div>
 
 			<ul>
