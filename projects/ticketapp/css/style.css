@@ -49,7 +49,7 @@
 		color: white;
 		background-color: black;
 		border: none;
-		padding: 10px;
+		padding: 4px;
 	}
 	select {
 		background-color: white;
@@ -83,12 +83,12 @@
 	.seats-container {
 		margin-top: 10px;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 20px;
+		grid-template-columns: repeat(8, 1fr);
+		gap: 10px;
 
 		.seat {
 			border: 1px solid black;
-			padding: 20px;
+			padding: 12px;
 			border-radius: 5px;
 		}
 
@@ -106,13 +106,47 @@
 		margin-top: 20px;
 	}
 
+
 	.landing-page {
 		header + .splash {
 			margin-top: 40px;
 		}
 
-		.splash + button {
+		.splash + form {
 			margin-top: 20px;
+		}
+
+		form {
+			.field + .field {
+				margin-top: 10px;
+			}
+
+			.field + .buttons {
+				margin-top: 20px;
+			}
+
+			.field {
+				display: grid;
+				/*grid-template-columns: 1fr 1fr;*/
+
+				label + input {
+					margin-top: 5px;
+				}
+
+				input {
+					max-width: 50%;
+				}
+			}
+
+			.buttons {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				button {
+					max-width: 50%;
+				}
+			}
 		}
 	}
 
@@ -193,7 +227,16 @@
 		}
 	}
 
+	.confirmation-page {
+		h2 + p,
+		ul + .buttons {
+			margin-top: 10px;
+		}
 
+		p + ul {
+			margin-top: 20px;
+		}
+	}
 
 	.theatre-page {
 		.theatre-title {
@@ -206,6 +249,33 @@
 
 		.stage {
 			margin-bottom: 40px;
+		}
+
+		.seating-legend {
+			padding-block: 20px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			.info {
+				display:flex;
+				align-items: center;
+				gap: 5px;
+			}
+
+			.key {
+				border: 1px solid black;
+				padding: 10px;
+				border-radius: 5px;
+			}
+
+			.reserved-info .key {
+				background-color: grey;
+			}
+
+			.selected-info .key {
+				background-color: var(--selected-color);
+			}
+
 		}
 
 		.ticket-overview {
@@ -227,6 +297,12 @@
 	}
 
 	.cart-page {
+		.empty-cart {
+			h2 + button {
+				margin-top: 20px;
+			}
+		}
+
 		ul {
 			margin-top: 10px;
 			display: grid;
@@ -239,6 +315,16 @@
 		}
 
 		.cart-buttons{
+			margin-top: 10px;
+		}
+	}
+
+	.tickets-page {
+		h2 + ul {
+			margin-top: 20px;
+		}
+
+		li + li {
 			margin-top: 10px;
 		}
 	}

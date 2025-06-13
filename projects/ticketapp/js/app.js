@@ -8,7 +8,7 @@ if (savedCart) {
 	cart = JSON.parse(savedCart);
 }
 
-function renderPage(page, show, time, date) {
+function renderPage(page, show, time, date, confirmationTickets = null) {
 	if (page === 'home') {
 		APP.innerHTML = landingPage();
 	} else if (page === 'list') {
@@ -16,7 +16,7 @@ function renderPage(page, show, time, date) {
 	} else if (page === 'cart') {
 		APP.innerHTML = cartPage();
 	} else if (page === 'confirmation') {
-		APP.innerHTML = confirmationPage();
+		APP.innerHTML = confirmationPage(confirmationTickets);
 	} else if (page === 'detail') {
 		APP.innerHTML = detailPage(show);
 	} else if (page === '101') {
@@ -166,22 +166,43 @@ function detailPage(show) {
 	`;
 }
 
-function confirmationPage(){
+function confirmationPage(tickets) {
+	tickets = tickets || JSON.parse(localStorage.getItem('tickets')) || [];
+
+	const groups = {};
+
+	tickets.forEach(ticket => {
+		const key = `${ticket.title} | ${ticket.date} @ ${ticket.time}`;
+		if (!groups[key]) {
+			groups[key] = [];
+		}
+		groups[key].push(ticket.seatId);
+	});
+
+	const renderedTickets = Object.entries(groups).map(([key, seats]) => {
+		return `
+			<li class="ticket">
+				<p class="strong-voice">${key}</p>
+				<ul>
+					${seats.map(seat => `<li>Seat ${seat}</li>`).join('')}
+				</ul>
+			</li>
+		`;
+	}).join('');
+
 	return `
-		${mainMenu()}
-		<h2 class="strong-voice">Thank you!<h2>
-
-		<p>Here are your tickets!</p>
-
-		<ul>
-		${renderTickets()}
-		</ul>
-
-		<div class="buttons">
-			<button data-page="tickets">View Tickets</button>
-		</div>
+		<section class="confirmation-page">
+			${mainMenu()}
+			<h2 class="strong-voice">Thank you!</h2>
+			<p>Here are your tickets!</p>
+			<ul>${renderedTickets}</ul>
+			<div class="buttons">
+				<button data-page="tickets">View Tickets</button>
+			</div>
+		</section>
 	`;
 }
+
 
 function renderTheaterSeats(seatCount, theatre, showId, time, date) {
 	let seats = '';
@@ -223,6 +244,24 @@ function theatre101Page(show, time, date) {
 				${renderTheaterSeats(25, 101, show.id, time, date)}
 			</div>
 
+			<div class="seating-legend">
+				<div class="reserved-info info">
+					<p>Reserved</p>
+
+					<div class="key"></div>
+				</div>
+				<div class="selected-info info">
+					<p>Selected</p>
+
+					<div class="key"></div>
+				</div>
+				<div class="available-info info">
+					<p>Available</p>
+
+					<div class="key"></div>
+				</div>
+			</div>
+
 			<div class="ticket-overview"></div>
 		</section>
 	`;
@@ -242,6 +281,24 @@ function theatre102Page(show, time, date) {
 
 			<div class="seats-container">
 				${renderTheaterSeats(50, 102, show.id, time, date)}
+			</div>
+
+			<div class="seating-legend">
+				<div class="reserved-info info">
+					<p>Reserved</p>
+
+					<div class="key"></div>
+				</div>
+				<div class="selected-info info">
+					<p>Selected</p>
+
+					<div class="key"></div>
+				</div>
+				<div class="available-info info">
+					<p>Available</p>
+
+					<div class="key"></div>
+				</div>
 			</div>
 
 			<div class="ticket-overview"></div>
@@ -307,6 +364,7 @@ function renderTickets() {
 			</li>
 		`;
 	}).join('');
+
 }
 
 function updateCartCount() {
@@ -324,8 +382,10 @@ function cartPage() {
 		<section class="cart-page"?>
 			${cartPageMenu()}
 
-			${cart.length === 0 ? `<h2 class="strong-voice">No seats picked yet!</h2>` : ''}
-			${isLoggedIn && hasTickets ? `<button data-page="tickets">See purchased tickets?</button>` : ''}
+			<div class="empty-cart">
+				${cart.length === 0 ? `<h2 class="strong-voice">No seats picked yet!</h2>` : ''}
+				${isLoggedIn && hasTickets ? `<button data-page="tickets">See purchased tickets?</button>` : ''}
+			</div>
 
 			<ul>
 				${renderCartItems()}
@@ -344,8 +404,10 @@ function ticketsPage() {
 
 	if (tickets.length === 0) {
 		return `
-			${mainMenu()};
-			<h2 class="strong-voice">No tickets yet!</h2>
+			<section class="tickets-page">
+				${mainMenu()};
+				<h2 class="strong-voice">No tickets yet!</h2>
+			</section>
 		`
 	}
 
@@ -371,9 +433,13 @@ function ticketsPage() {
 	}).join('');
 
 	return `
-		${mainMenu()}
-		<h2 class="strong-voice">Your Tickets</h2>
-		<ul>${rendered}</ul>
+		<section class="tickets-page">
+			${mainMenu()}
+
+			<h2 class="strong-voice">Your Tickets</h2>
+
+			<ul>${rendered}</ul>
+		</section>
 	`;
 }
 
@@ -442,18 +508,21 @@ function renderShowtimes(show) {
 	`;
 }
 
+
+
 document.addEventListener('click', (event) => {
 	if (event.target.dataset.page === 'confirmation') {
-		const existingTickets = JSON.parse(localStorage.getItem('tickets')) || [];
-		const updatedTickets = [...existingTickets, ...cart];
-		localStorage.setItem('tickets', JSON.stringify(updatedTickets));
+	const existingTickets = JSON.parse(localStorage.getItem('tickets')) || [];
+	const newTickets = [...cart];
+	const updatedTickets = [...existingTickets, ...newTickets];
 
-		cart = [];
-		localStorage.removeItem('cart');
+	localStorage.setItem('tickets', JSON.stringify(updatedTickets));
+	localStorage.removeItem('cart');
+	cart = [];
 
-		renderPage('confirmation');
-		history.pushState({page: 'confirmation'}, '', '');
-	}
+	renderPage('confirmation', null, null, null, newTickets);
+	history.pushState({ page: 'confirmation' }, '', '');
+}
 
 	if (event.target.matches('[data-page]')) {
 		const page = event.target.dataset.page;
@@ -540,6 +609,7 @@ document.addEventListener('submit', (event) => {
 
 		if (username === 'username' && password === 'password') {
 			localStorage.setItem('isLoggedIn', 'true');
+			// localStorage.getItem('tickets');
 			renderPage('list');
 			history.pushState({page: 'list'}, '', '');
 		} else {
