@@ -32,6 +32,12 @@
 		font-weight: 900;
 	}
 
+	nav {
+		max-width: 100%;
+		display:flex;
+		flex-wrap: wrap;
+	}
+
 	button,
 	select {
 		font-family: inherit;
@@ -174,10 +180,6 @@
 					li {
 						display: grid;
 						grid-template-columns: 1fr 1fr;
-						/*display: flex;*/
-						/*flex-direction: column;*/
-
-						/*I am adding a comment here because I am losing my mind*/
 						gap: 10px;
 
 						.times {

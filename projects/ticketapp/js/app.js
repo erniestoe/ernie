@@ -23,6 +23,8 @@ function renderPage(page, show, time, date) {
 		APP.innerHTML = theatre101Page(show, time, date);
 	} else if (page == '102') {
 		APP.innerHTML = theatre102Page(show, time, date);
+	} else if (page === 'tickets') {
+		APP.innerHTML = ticketsPage();
 	} else {
 		APP.innerHTML = landingPage();
 	}
@@ -143,7 +145,7 @@ function detailPage(show) {
 			`;
 		}).join('');
 	return `
-		section class="detail-page">
+		<section class="detail-page">
 			${mainMenu()}
 			<div class="show-card">
 				<h2 class="loud-voice">${show.title}</h2>
@@ -166,7 +168,7 @@ function detailPage(show) {
 
 function confirmationPage(){
 	return `
-		${cartPageMenu()}
+		${mainMenu()}
 		<h2 class="strong-voice">Thank you!<h2>
 
 		<p>Here are your tickets!</p>
@@ -174,6 +176,10 @@ function confirmationPage(){
 		<ul>
 		${renderTickets()}
 		</ul>
+
+		<div class="buttons">
+			<button data-page="tickets">View Tickets</button>
+		</div>
 	`;
 }
 
@@ -311,11 +317,15 @@ function updateCartCount() {
 }
 
 function cartPage() {
+	const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+	const hasTickets = (JSON.parse(localStorage.getItem('tickets')) || []).length > 0;
+
 	return `
 		<section class="cart-page"?>
 			${cartPageMenu()}
 
 			${cart.length === 0 ? `<h2 class="strong-voice">No seats picked yet!</h2>` : ''}
+			${isLoggedIn && hasTickets ? `<button data-page="tickets">See purchased tickets?</button>` : ''}
 
 			<ul>
 				${renderCartItems()}
@@ -329,31 +339,85 @@ function cartPage() {
 	`;
 }
 
+function ticketsPage() {
+	const tickets = JSON.parse(localStorage.getItem('tickets')) || [];
+
+	if (tickets.length === 0) {
+		return `
+			${mainMenu()};
+			<h2 class="strong-voice">No tickets yet!</h2>
+		`
+	}
+
+	const groups = {};
+
+	tickets.forEach(ticket => {
+		const key = `${ticket.title} | ${ticket.date} at ${ticket.time}`; 
+		if(!groups[key]) {
+			groups[key] = []
+		}
+		groups[key].push(ticket.seatId);
+	});
+
+	const rendered = Object.entries(groups).map(([key, seats]) => {
+		return `
+			<li class="ticket">
+				<p class="strong-voice">${key}</p>
+				<ul>
+					${seats.map(seat => `<li>Seat ${seat}</li>`).join('')}
+				</ul>
+			</li>
+		`;
+	}).join('');
+
+	return `
+		${mainMenu()}
+		<h2 class="strong-voice">Your Tickets</h2>
+		<ul>${rendered}</ul>
+	`;
+}
+
 //menus
 function mainMenu() {
+	const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+	const hasTickets = (JSON.parse(localStorage.getItem('tickets')) || []).length > 0;
+
 	return `
 		<nav>
-			<button data-page="home">Home</button>
+			${isLoggedIn 
+				? `<button id="logout">Logout</button>` 
+				: `<button data-page="home">Home</button>`}
 			<button data-page="list">All Shows</button>
 			<button data-page="cart">Cart (${cart.length})</button>
+			${isLoggedIn && hasTickets ? `<button data-page="tickets">Tickets</button>` : ''}
 		</nav>
 	`;
 }
 
 function listPageMenu() {
+	const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+	const hasTickets = (JSON.parse(localStorage.getItem('tickets')) || []).length > 0;
 	return `
 		<nav>
-			<button data-page="home">Home</button>
+			${isLoggedIn 
+				? `<button id="logout">Logout</button>` 
+				: `<button data-page="home">Home</button>`}
 			<button data-page="cart">Cart (${cart.length})</button>
+			${isLoggedIn && hasTickets ? `<button data-page="tickets">Tickets</button>` : ''}
 		</nav>
 	`;
 }
 
 function cartPageMenu() {
+	const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+	const hasTickets = (JSON.parse(localStorage.getItem('tickets')) || []).length > 0;
 	return `
 		<nav>
-			<button data-page="home">Home</button>
+			${isLoggedIn 
+				? `<button id="logout">Logout</button>` 
+				: `<button data-page="home">Home</button>`}
 			<button data-page="list">All Shows</button>
+			${isLoggedIn && hasTickets ? `<button data-page="tickets">Tickets</button>` : ''}
 		</nav>
 	`;
 }
@@ -379,6 +443,18 @@ function renderShowtimes(show) {
 }
 
 document.addEventListener('click', (event) => {
+	if (event.target.dataset.page === 'confirmation') {
+		const existingTickets = JSON.parse(localStorage.getItem('tickets')) || [];
+		const updatedTickets = [...existingTickets, ...cart];
+		localStorage.setItem('tickets', JSON.stringify(updatedTickets));
+
+		cart = [];
+		localStorage.removeItem('cart');
+
+		renderPage('confirmation');
+		history.pushState({page: 'confirmation'}, '', '');
+	}
+
 	if (event.target.matches('[data-page]')) {
 		const page = event.target.dataset.page;
 		const showId = event.target.dataset.id;
@@ -441,21 +517,16 @@ document.addEventListener('click', (event) => {
 	}
 
 	if (event.target.id === 'autoLogin') {
-		setTimeout(() => {
-			const form = document.querySelector('#loginForm');
-			if (!form) {
-				return;
-			}
+		localStorage.setItem('isLoggedIn', 'true');
+		history.pushState({ page: 'list' }, '', '');
+		renderPage('list');
+	}
 
-			const usernameInput = form.querySelector('input[type="text"]');
-			const passwordInput = form.querySelector('input[type="password"]');
-
-			if (usernameInput && passwordInput) {
-				usernameInput.value = 'username';
-				passwordInput.value = 'password';
-				form.requestSubmit();
-			}
-		}, 0);	
+	if (event.target.id === 'logout') {
+		localStorage.removeItem('isLoggedIn');
+		localStorage.removeItem('tickets');
+		renderPage('home');
+		history.pushState({ page: 'home' }, '', '');
 	}
 });
 
@@ -468,6 +539,7 @@ document.addEventListener('submit', (event) => {
 		const password = form.password.value.trim();
 
 		if (username === 'username' && password === 'password') {
+			localStorage.setItem('isLoggedIn', 'true');
 			renderPage('list');
 			history.pushState({page: 'list'}, '', '');
 		} else {
