@@ -114,7 +114,8 @@ function showList() {
 function listPage() {
 	return `
 		<section class="list-page">
-			${listPageMenu()}
+		
+			${mainMenu()}
 
 			<h2 class="strong-voice">Now Showing</h2>
 
@@ -241,7 +242,7 @@ function theatre101Page(show, time, date) {
 			<div class="stage strong-voice">STAGE</div>
 
 			<div class="seats-container">
-				${renderTheaterSeats(25, 101, show.id, time, date)}
+				${renderTheaterSeats(88, 101, show.id, time, date)}
 			</div>
 
 			<div class="seating-legend">
@@ -280,7 +281,7 @@ function theatre102Page(show, time, date) {
 			<div class="stage">STAGE</div>
 
 			<div class="seats-container">
-				${renderTheaterSeats(50, 102, show.id, time, date)}
+				${renderTheaterSeats(120, 102, show.id, time, date)}
 			</div>
 
 			<div class="seating-legend">
@@ -380,7 +381,7 @@ function cartPage() {
 
 	return `
 		<section class="cart-page"?>
-			${cartPageMenu()}
+			${mainMenu()}
 
 			<div class="empty-cart">
 				${cart.length === 0 ? `<h2 class="strong-voice">No seats picked yet!</h2>` : ''}
@@ -405,7 +406,7 @@ function ticketsPage() {
 	if (tickets.length === 0) {
 		return `
 			<section class="tickets-page">
-				${mainMenu()};
+				${mainMenu()}
 				<h2 class="strong-voice">No tickets yet!</h2>
 			</section>
 		`
@@ -455,7 +456,7 @@ function mainMenu() {
 				: `<button data-page="home">Home</button>`}
 			<button data-page="list">All Shows</button>
 			<button data-page="cart">Cart (${cart.length})</button>
-			${isLoggedIn && hasTickets ? `<button data-page="tickets">Tickets</button>` : ''}
+			${isLoggedIn ? `<button data-page="tickets">Tickets</button>` : ''}
 		</nav>
 	`;
 }
@@ -507,8 +508,6 @@ function renderShowtimes(show) {
 		</div>
 	`;
 }
-
-
 
 document.addEventListener('click', (event) => {
 	if (event.target.dataset.page === 'confirmation') {
