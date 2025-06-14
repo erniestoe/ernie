@@ -204,29 +204,6 @@ function confirmationPage(tickets) {
 	`;
 }
 
-
-// function renderTheaterSeats(seatCount, theatre, showId, time, date) {
-// 	let seats = '';
-// 	for (let i = 0; i < seatCount; i++) {
-// 		const seatId = `${theatre} ${i + 1}`;
-// 		const isSelected = cart.find(ticket =>
-// 			ticket.seatId === seatId &&
-// 			ticket.showId === showId &&
-// 			ticket.time === time &&
-// 			ticket.date === date
-// 		);
-
-// 		seats += `<div 
-// 		class="seat ${isSelected ? 'selected' : ''}"
-// 		data-seatId="${seatId}"
-// 		data-id="${showId}"
-// 		data-time="${time}"
-// 		data-date="${date}">
-// 		</div>`
-// 	}
-
-// 	return seats;
-// }
 function renderTheaterSeats(seatCount, theatre, showId, time, date) {
 	const seatsPerRow = 8;
 	const rowCount = Math.ceil(seatCount / seatsPerRow);
@@ -258,7 +235,7 @@ function renderTheaterSeats(seatCount, theatre, showId, time, date) {
 			`;
 		}
 
-		html += `</div>`; // end .seat-row
+		html += `</div>`;
 	}
 
 	return html;
@@ -421,8 +398,8 @@ function cartPage() {
 			${mainMenu()}
 
 			<div class="empty-cart">
-				${cart.length === 0 ? `<h2 class="strong-voice">No seats picked yet!</h2>` : ''}
-				${isLoggedIn && hasTickets ? `<button data-page="tickets">See Purchased Tickets?</button>` : ''}
+				${cart.length === 0 && !hasTickets ?  `<h2 class="strong-voice">Your cart is empty... sad. <a data-page="list">Check out some more shows?</a></h2>` : ''}
+				${cart.length === 0 && hasTickets ?  `<h2 class="strong-voice">Your cart is empty... sad. <a data-page="list">Check out some more shows?</a> or <a data-page="tickets">see your tickets?</a></h2>` : ''}
 			</div>
 
 			<ul>
@@ -444,7 +421,7 @@ function ticketsPage() {
 		return `
 			<section class="tickets-page">
 				${mainMenu()}
-				<h2 class="strong-voice">No tickets yet!</h2>
+				<h2 class="strong-voice">No tickets yet!... <a data-page="list">Check out some shows?</a></h2>
 			</section>
 		`
 	}

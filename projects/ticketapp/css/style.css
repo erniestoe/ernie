@@ -64,6 +64,14 @@
 		margin-bottom: 20px;
 	}
 
+	h2 a {
+		text-decoration: underline;
+	}
+
+	h2 a:hover{
+		cursor: pointer;
+	}
+
 	.show-card {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -309,9 +317,7 @@
 
 	.cart-page {
 		.empty-cart {
-			h2 + button {
-				margin-top: 20px;
-			}
+
 		}
 
 		ul {
