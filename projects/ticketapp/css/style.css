@@ -36,6 +36,18 @@
 		max-width: 100%;
 		display:flex;
 		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 20px;
+
+		button {
+			border: 1px solid transparent;
+		}
+
+		.active {
+			background-color: white;
+			color: black;
+			border: 1px solid black;
+		}
 	}
 
 	button,
@@ -58,12 +70,6 @@
 		padding: 8px;
 	}
 
-	nav {
-		display: flex;
-		gap: 8px;
-		margin-bottom: 20px;
-	}
-
 	h2 a {
 		text-decoration: underline;
 	}
@@ -71,6 +77,8 @@
 	h2 a:hover{
 		cursor: pointer;
 	}
+
+	
 
 	.show-card {
 		display: grid;

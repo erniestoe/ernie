@@ -2,6 +2,7 @@ import { shows } from './data.js';
 
 const APP = document.querySelector('#app');
 let cart = [];
+let currentPage = 'home'; 
 
 const savedCart = localStorage.getItem('cart');
 if (savedCart) {
@@ -9,6 +10,7 @@ if (savedCart) {
 }
 
 function renderPage(page, show, time, date, confirmationTickets = null) {
+	currentPage = page;
 	if (page === 'home') {
 		APP.innerHTML = landingPage();
 	} else if (page === 'list') {
@@ -458,7 +460,7 @@ function ticketsPage() {
 	`;
 }
 
-//menus
+//menu
 function mainMenu() {
 	const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 	const hasTickets = (JSON.parse(localStorage.getItem('tickets')) || []).length > 0;
@@ -467,38 +469,10 @@ function mainMenu() {
 		<nav>
 			${isLoggedIn 
 				? `<button id="logout">Logout</button>` 
-				: `<button data-page="home">Home</button>`}
-			<button data-page="list">All Shows</button>
-			<button data-page="cart">Cart (${cart.length})</button>
-			${isLoggedIn ? `<button data-page="tickets">Tickets</button>` : ''}
-		</nav>
-	`;
-}
-
-function listPageMenu() {
-	const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-	const hasTickets = (JSON.parse(localStorage.getItem('tickets')) || []).length > 0;
-	return `
-		<nav>
-			${isLoggedIn 
-				? `<button id="logout">Logout</button>` 
-				: `<button data-page="home">Home</button>`}
-			<button data-page="cart">Cart (${cart.length})</button>
-			${isLoggedIn && hasTickets ? `<button data-page="tickets">Tickets</button>` : ''}
-		</nav>
-	`;
-}
-
-function cartPageMenu() {
-	const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-	const hasTickets = (JSON.parse(localStorage.getItem('tickets')) || []).length > 0;
-	return `
-		<nav>
-			${isLoggedIn 
-				? `<button id="logout">Logout</button>` 
-				: `<button data-page="home">Home</button>`}
-			<button data-page="list">All Shows</button>
-			${isLoggedIn && hasTickets ? `<button data-page="tickets">Tickets</button>` : ''}
+				: `<button data-page="home" class="${currentPage === 'home' ? 'active' : ''}">Home</button>`}
+			<button data-page="list" class="${currentPage === 'list' ? 'active' : ''}">All Shows</button>
+			<button data-page="cart" class="${currentPage === 'cart' ? 'active' : ''}">Cart (${cart.length})</button>
+			${isLoggedIn ? `<button data-page="tickets" class="${currentPage === 'tickets' ? 'active' : ''}">Tickets</button>` : ''}
 		</nav>
 	`;
 }
