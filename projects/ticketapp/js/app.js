@@ -65,10 +65,6 @@ function landingPage() {
 	`;
 }
 
-function showCard() {
-	
-}
-
 function showList() {
 	return shows.map((show) => {
 		const showtimes = show.showtimes.dates.map(date => {
