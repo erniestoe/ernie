@@ -1,3 +1,103 @@
+:root {
+	/*System Grey*/
+	--system-0: #FFFFFF;
+	--system-50: #FAFAFA;
+	--system-100: #F5F5F5;
+	--system-200: #EEEEEE;
+	--system-300: #E0E0E0;
+	--system-350: #D6D6D6;
+	--system-400: #BDBDBD;
+	--system-450: #ADADAD;
+	--system-500: #9E9E9E;
+	--system-600: #757575;
+	--system-700: #616161;
+	--system-800: #424242;
+	--system-850: #292929;
+	--system-900: #212121;
+	--system-1000: #000000;
+
+	/*Primary-light*/
+	--darker-blue-light: #2851E3;
+	--origin-blue-light: #3563E9;
+	--lighter-blue-light: #7292F0;
+	--a56-blue-light: #8EA8F3;
+	--a32-blue-light: #BECDF8;
+	--a24-blue-light: #CFDAFA;
+	--a16-blue-light: #DFE6FC;
+	--a12-blue-light: #E7ECFC;
+	--a8-blue-light: #EFF3FD;
+	--a4-blue-light: #F7F9FE;
+
+	/*Secondary-light*/
+	--darker-red-light: #E43749;
+	--origin-red-light: #E43749;
+	--lighter-red-light: #F07E8C;
+	--a56-red-light: #F398A3;
+	--a32-red-light: #F8C4CB;
+	--a24-red-light: #FAD3D8;
+	--a16-red-light: #FCE2E5;
+	--a12-red-light: #FDE9EB;
+	--a8-red-light: #FDF0F2;
+	--a4-red-light: #FEF8F8;
+
+	/*Semantic-light*/
+	--error-light: #DE2C28;
+	--warning-light: #E65100;
+	--info-light: #2F98F5;
+	--success-light: #69A333;
+
+	/*Surface-light*/
+	--level-0-light: #FFF;
+	--level-1-light: #FAFAFA;
+	--level-2-light: #F5F5F5;
+
+	/*Primary-dark*/
+	--darker-blue-dark: #3261E9;
+	--origin-blue-dark: #7292F0;
+	--lighter-blue-dark: #B2C4F7;
+	--a56-blue-dark: #485A8E;
+	--a32-blue-dark: #293147;
+	--a24-blue-dark: #293147;
+	--a16-blue-dark: #212736;
+	--a12-blue-dark: #1E212D;
+	--a8-blue-dark: #1A1C24;
+	--a4-blue-dark: #16171B;
+
+	/*Secondary-dark*/
+	--darker-red-dark: #E83C52;
+	--origin-red-dark: #F07E8C;
+	--lighter-red-dark: #F8C0C7;
+	--a56-red-dark: #8E4F56;
+	--a32-red-dark: #593539;
+	--a24-red-dark: #472C2F;
+	--a16-red-dark: #362326;
+	--a12-red-dark: #2D1F21;
+	--a8-red-dark: #241B1C;
+	--a4-red-dark: #1B1617;
+
+	/*Semantic-dark*/
+	--error-dark: #E53935;
+	--warning-dark: #EE854D;
+	--info-dark: #6DB7F8;
+	--success-dark: #7CB342;
+
+	/*Surface-dark*/
+	--level-0-dark: #121212;
+	--level-1-dark: #242424;
+	--level-2-dark: #1B1B1B;
+
+	/*Focus*/
+	--dark: radial-gradient(rgba(53, 99, 233, 0.3), rgba(53, 99, 233, 0));
+	--light: radial-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+	--outline: radial-gradient(
+		rgba(181, 200, 255, 0.3),
+		rgba(181, 200, 255, 0.29),
+		rgba(53, 99, 233, 0.29),
+		rgba(53, 99, 233, 0)
+	);
+
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
