@@ -10,8 +10,9 @@ molestie at vulputate.</h2>
 		</header>
 
 		<div id="featuresCardsContainer" class="features-cards-container">
-			<!-- TODO: render with PHP -->
-			<ul id="featuresCards" class="features-cards"></ul>
+			<ul id="featuresCards" class="features-cards">
+				<?= renderFeaturesCards(); ?>
+			</ul>
 		</div>
 	</inner-column>
 </section>

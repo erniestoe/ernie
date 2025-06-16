@@ -1,9 +1,11 @@
 <header class="site-header">
 	<inner-column>
 		<masthead class="flex-center">
-			<picture>
-				<img src="./includes/svgs/logo.svg">
-			</picture>
+			<a href="#" class='link logo'>
+				<svg viewBox='0 0 10 3'>
+					<rect width='10' height='3' />
+				</svg>
+			</a>
 
 			<nav>
 				<ul class="flex-center">

@@ -9,9 +9,11 @@
 		<form class="hero-signup flex-center">
 			<div class="field flex-center">
 				<label>
-					<picture class="flex-center">
-						<?php include './includes/svgs/mail.svg';?>
-					</picture>
+					<div class="icon">
+						<svg viewBox='0 0 10 10'>
+							<circle cx='5' cy='5' r='5' />
+						</svg>
+					</div>
 				</label>
 				<input type="text">
 			</div>

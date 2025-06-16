@@ -4,5 +4,6 @@
 <?php include 'modules/features.php'; ?>
 <?php include 'modules/clients.php'; ?>
 <?php include 'modules/faqs.php'; ?>
+<?php include 'modules/cta.php'; ?>
 
 <?php include 'includes/footer.php'; ?>

@@ -131,6 +131,27 @@ inner-column {
 	padding: 20px;
 }
 
+svg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	fill: currentColor; /* takes from context */
+}
+
+.link {
+	display: block;
+	max-width: 80px;
+}
+
+.logo {
+	color: var(--color);
+}
+
+.icon {
+	color: orange;
+	max-width: 30px;
+}
+
 p {
 	line-height: 1.4;
 }

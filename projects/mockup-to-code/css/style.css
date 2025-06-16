@@ -26,6 +26,13 @@
 	flex-direction: column;
 }
 
+.circle {
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+}
+
 .site-header {
 	masthead {
 		justify-content: space-between;
@@ -120,6 +127,10 @@
 			grid-template-columns: repeat(3, 1fr);
 			gap: 39px;
 
+			.feature-card {
+				flex-direction: column;
+			}
+
 		}
 	}
 }
@@ -145,4 +156,70 @@
 				flex-basis: 50%;
 			}
 		}
+	}
+}
+
+.faqs {
+	inner-column {
+		flex-direction:row;
+		align-items: center;
+		padding-block: 80px;
+		padding-inline: 120px;
+		text-align: center;
+		gap: 70px;
+
+		.text {
+			flex-basis: 50%;
+		}
+
+		accordion {
+			display: grid;
+			flex-basis: 50%;
+		}
+	}
+	
+}
+
+.cta {
+	inner-column {
+		flex-direction:row;
+		align-items: center;
+		padding-block: 80px;
+		padding-inline: 120px;
+		text-align: center;
+		gap: 48px;
+
+		.text-and-signup {
+			flex-basis: 50%;
+		}
+
+		picture {
+			flex-basis: 50%;
+		}
+	}
+	
+}
+
+footer {
+	.links-and-subscribe {
+		padding-inline: 120px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		.links {
+			grid-column: span 3;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.divider {
+		width: 100%;
+		height: 1px;
+		border: 1px solid black;
+	}
+
+	.legal-and-social-links {
+		justify-content: space-between;
+	}
 }
