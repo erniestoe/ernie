@@ -76,13 +76,73 @@
 
 .center-content {
 	inner-column {
+		align-items: center;
 		padding-block: 80px;
 		padding-inline: 120px;
+		gap: 60px;
 
-		text-align:center;
+		text-align: center;
 
 		header {
 			padding-inline: 120px;
 		}
+
+		.center-content-cards-container {
+			.center-content-cards {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 32px;
+			}
+		}
+
+		.link {
+			gap: 10px;
+			img {
+				width: 25%;
+			}
+		}
 	}
+}
+
+.features {
+	inner-column {
+		align-items: center;
+		padding-block: 80px;
+		padding-inline: 120px;
+		text-align: center;
+
+		header {
+			padding-inline: 120px;
+		}
+
+		.features-cards{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 39px;
+
+		}
+	}
+}
+
+.clients {
+	inner-column {
+		align-items: center;
+		padding-block: 80px;
+		padding-inline: 120px;
+		text-align: center;
+
+		header {
+			padding-inline: 120px;
+		}
+
+		graphic-diptych {
+			gap: 39px;
+			picture {
+				flex-basis: 50%;
+			}
+
+			.text {
+				flex-basis: 50%;
+			}
+		}
 }

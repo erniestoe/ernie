@@ -1,0 +1,3 @@
+<section class="faqs">
+	
+</section>
