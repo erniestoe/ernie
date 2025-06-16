@@ -1,4 +1,4 @@
-<section class="center-content">
+<center-content class="module">
 	<inner-column>
 		<header>
 			<p class="info">Your Visual Language Partner</p>
@@ -14,7 +14,7 @@
 			</ul>
 		</div>
 
-		<a class="link flex-center" href="#">
+		<a class="link flex-center-row" href="#">
 			See All 
 			<div class="icon">
 				<svg viewBox='0 0 10 10'>
@@ -23,4 +23,4 @@
 			</div>
 		</a>
 	</inner-column>
-</section>
+</center-content>

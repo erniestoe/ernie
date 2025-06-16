@@ -1,4 +1,4 @@
-<section class="features">
+<features class="module">
 	<inner-column>
 		<header>
 			<p>Rhoncus, Accumsan Dictum</p>
@@ -15,4 +15,4 @@ molestie at vulputate.</h2>
 			</ul>
 		</div>
 	</inner-column>
-</section>
+</features>

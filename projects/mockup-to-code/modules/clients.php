@@ -1,4 +1,4 @@
-<section class="clients">
+<clients class="module">
 	<inner-column>
 		<header>
 			<h2 class="attention-voice">What our clients Say</h2>
@@ -18,4 +18,4 @@
 			</div>
 		</graphic-diptych>
 	</inner-column>
-</section>
+</clients>

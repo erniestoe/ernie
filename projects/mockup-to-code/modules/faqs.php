@@ -1,4 +1,4 @@
-<section class="faqs">
+<faqs class="module">
 	<inner-column>
 		<div class="text">
 			<h2 class="attention-voice">Frequently Asked Questions</h2>
@@ -12,4 +12,4 @@
 			</ul>
 		</accordion>
 	</inner-column>
-</section>
+</faqs>

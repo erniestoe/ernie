@@ -1,4 +1,4 @@
-<section class="cta">
+<cta class="module">
 	<inner-column>
 		<div class="text-and-signup">
 			<div class="text">
@@ -7,8 +7,8 @@
 				<p>Fringilla non proin nec in in lorem amet eget ac. Mauris.</p>
 			</div>
 
-			<form class="cta-signup flex-center">
-				<div class="field flex-center">
+			<form class="cta-signup flex-center-row">
+				<div class="field flex-center-row">
 					<label>
 						<div class="icon">
 							<svg viewBox='0 0 10 10'>
@@ -28,4 +28,4 @@
 			<img src="https://peprojects.dev/images/landscape.jpg">
 		</picture>
 	</inner-column>
-</section>
+</cta>

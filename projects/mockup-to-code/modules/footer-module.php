@@ -39,13 +39,13 @@
 				</svg>
 			</a>
 
-			<ul class="legal flex-center">
+			<ul class="legal flex-center-row">
 				<li><a href="#">Terms</a></li>
 				<li><a href="#">Privacy</a></li>
 				<li><a href="#">Cookies</a></li>
 			</ul>
 
-			<ul class="social flex-center">
+			<ul class="social flex-center-row">
 				<li>
 					<a href="#" class='link'>
 						<div class="icon">
