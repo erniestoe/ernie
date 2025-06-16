@@ -1,3 +1,88 @@
 @import "reset.css";
 @import "setup.css";
 
+.loud-voice {
+	font-size: clamp(1rem, 10vw, 4rem);
+	font-weight: 800;
+}
+
+.strong-voice {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.attention-voice {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.site-header {
+	masthead {
+		justify-content: space-between;
+
+		nav {
+			ul {
+				gap: 30px;
+			}
+		}
+
+		.login-and-signup {
+			gap: 20px;
+		}
+	}
+}
+
+.hero {
+	inner-column {
+		padding-block: 80px;
+		padding-inline: 120px;
+		gap: 50px;
+
+		text-align: center;
+
+		.hero-text {
+			justify-content: center;
+			align-items: center;
+			gap: 16px;
+
+			h1 {
+				text-transform: uppercase;
+				letter-spacing: 3.2px;
+				line-height: 80px;
+			}
+
+			p {
+				padding-inline: 120px;
+			}
+			
+		}
+
+		.hero-signup {
+			justify-content: center;
+			gap: 20px;
+		}
+	}
+}
+
+.center-content {
+	inner-column {
+		padding-block: 80px;
+		padding-inline: 120px;
+
+		text-align:center;
+
+		header {
+			padding-inline: 120px;
+		}
+	}
+}
