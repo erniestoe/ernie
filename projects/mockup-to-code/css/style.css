@@ -338,8 +338,11 @@
 
 		.features-cards {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
 			gap: 39px;
+
+			@media (width >= 650px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
 
 			.feature-card {
 				flex-direction: column;
@@ -347,6 +350,7 @@
 				padding: 10px;
 				max-width: 374px;
 			}
+
 		}
 		@media (width >= 1000px) {
 
