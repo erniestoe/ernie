@@ -5,7 +5,7 @@ function renderFaqList() {
 	foreach($data as $card) {?>
 		<li class="faq">
 			<details class="grey-600">
-			  <summary><?= $card["title"]?></summary>
+			  <summary><?= $card["title"]?> <span class="summary-toggle"></span></summary>
 			  <?=$card["text"]?>
 			</details>
 		</li>

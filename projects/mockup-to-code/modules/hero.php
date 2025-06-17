@@ -6,7 +6,7 @@
 			<p class="strong-voice">Creating visual languages for brands with bold identities and even bolder appetites, keeping every detail on-brand.</p>
 		</div>
 
-		<form class="hero-signup flex-center-row">
+		<form class="hero-signup ">
 			<div class="field flex-center-row">
 				<label>
 					<div class="icon">

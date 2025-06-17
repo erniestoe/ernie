@@ -7,7 +7,7 @@
 				<p class="grey-600">Fringilla non proin nec in in lorem amet eget ac. Mauris.</p>
 			</div>
 
-			<form class="cta-signup flex-center-row">
+			<form class="cta-signup ">
 				<div class="field flex-center-row">
 					<label>
 						<div class="icon">
