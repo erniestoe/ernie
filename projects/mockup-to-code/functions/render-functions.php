@@ -4,13 +4,10 @@ function renderFaqList() {
 
 	foreach($data as $card) {?>
 		<li class="faq">
-			<div class="title-and-button flex-center-row">
-				<h3 class="strong-voice"><?= $card["title"]?></h3>
-				<button class="show-text-button">+</button>
-			</div>
-			
-
-			<p class="hidden-text visually-hidden"><?=$card["text"]?></p>
+			<details>
+			  <summary><?= $card["title"]?></summary>
+			  <?=$card["text"]?>
+			</details>
 		</li>
 	<?php }
 }

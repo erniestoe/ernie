@@ -10,6 +10,7 @@
 			<ul id="faqList" class="faq-list">
 				<?= renderFaqList()?>
 			</ul>
+
 		</accordion>
 	</inner-column>
 </faqs>
