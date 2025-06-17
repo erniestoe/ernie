@@ -1,12 +1,12 @@
 <features class="module">
 	<inner-column>
 		<header>
-			<p>Rhoncus, Accumsan Dictum</p>
+			<p class="grey-600">Rhoncus, Accumsan Dictum</p>
 
 			<h2 class="attention-voice">Etiam Nulla lectus amet nunc 
 molestie at vulputate.</h2>
 
-			<p>Neque, pulvinar vestibulum non aliquam.</p>
+			<p class="grey-600">Neque, pulvinar vestibulum non aliquam.</p>
 		</header>
 
 		<div id="featuresCardsContainer" class="features-cards-container">

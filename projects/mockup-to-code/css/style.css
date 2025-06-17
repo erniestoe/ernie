@@ -35,6 +35,14 @@
 	color: var(--system-50);;
 }
 
+.grey-600 {
+	color: var(--system-600);
+}
+
+.bold {
+	font-weight: bold;
+}
+
 .flex-center {
 	display: flex;
 	flex-direction: column;
@@ -209,6 +217,8 @@
 				padding: 15px 20px;
 				border: none;
 				border-radius: 5px;
+				background-color: white;
+				color: var(--origin-blue-light);
 			}
 		}
 
@@ -246,22 +256,40 @@
 
 .center-content {
 	inner-column {
+		padding-block: 80px;
 		align-items: center;
-		gap: 30px;
+		gap: 60px;
 
 		text-align: center;
+
+		header {
+			p + h2 {
+				margin-top: 16px;
+			}
+		}
 
 		.center-content-cards-container {
 			.center-content-cards {
 				display: grid;
 				gap: 32px;
+
+				li {
+					max-width: 356px;
+					h3 + p {
+						margin-top: 16px;
+					}
+				}
 			}
 		}
+
+		.link {
+			max-width: 100%;
+			gap: 10px;
+			color: var(--origin-blue-light);
+		}
 		
-		@media (width >= 1000px) {
-			padding-block: 80px;
+		@media (width >= 1000px) {	
 			padding-inline: 120px;
-			gap: 60px;
 
 			header {
 				padding-inline: 120px;
@@ -274,7 +302,7 @@
 			}
 
 			.link {
-				gap: 10px;
+				
 			}
 		}
 	}
@@ -283,12 +311,26 @@
 
 .features {
 	inner-column {
+		padding-block: 40px;
+		gap: 60px;
 		align-items: center;
 		text-align: center;
+
+		header {
+			display: grid;
+			gap: 32px;
+		}
 
 		.features-cards {
 			display: grid;
 			gap: 39px;
+
+			.feature-card {
+				flex-direction: column;
+				gap: 22px;
+				padding: 10px;
+				max-width: 374px;
+			}
 		}
 		@media (width >= 1000px) {
 
@@ -305,7 +347,7 @@
 				grid-template-columns: repeat(3, 1fr);
 				
 				.feature-card {
-					flex-direction: column;
+					padding: 20px;
 				}
 			}
 		}
@@ -315,17 +357,30 @@
 
 .clients {
 	inner-column {
+		padding-block: 40px;
 		align-items: center;
 		text-align: center;
+		gap: 35px;
+
+		header {
+			display: grid;
+			gap: 32px;
+		}
 
 		graphic-diptych {
 			gap: 39px;
+
+			.text {
+				display: grid;
+				gap: 16px;
+			}
 		}
 	}
 	@media (width >= 1000px) {
 		inner-column {
 			padding-block: 80px;
 			padding-inline: 120px;
+			gap: 70px;
 			
 			header {
 				padding-inline: 120px;
@@ -338,6 +393,7 @@
 
 				.text {
 					flex-basis: 50%;
+					gap: 32px;
 				}
 			}
 		}
@@ -347,9 +403,15 @@
 
 .faqs {
 	inner-column {
+		padding-block: 80px;
 		align-items: center;
 		text-align: center;
 		gap: 35px;
+
+		.text {
+			display: grid;
+			gap: 16px;
+		}
 
 		accordion {
 			display: grid;
@@ -365,9 +427,10 @@
 				}
 
 				summary {
-				  font-weight: bold;
-				  margin: -0.5em -0.5em 0;
-				  padding: 0.5em;
+					color: black;
+				  	font-weight: bold;
+				  	margin: -0.5em -0.5em 0;
+				  	padding: 0.5em;
 				}
 
 				details[open] {
@@ -409,11 +472,45 @@
 		align-items: center;
 		text-align: center;
 		gap: 48px;
+		padding-block: 40px;
 
 		.text-and-signup {
+			display: grid;
+			gap: 24px;
+
+			.text {
+				h2 + p {
+					margin-top: 16px;
+				}
+			}
+
 			.cta-signup {
 				justify-content: center;
 				gap: 20px;
+
+				.field {
+					background-color: white;
+					border-radius: 5px;
+					border: 1px solid var(--system-500);
+					padding: 10px 20px;
+					gap: 10px;
+
+					input {
+						padding: 5px 10px;
+						background-color: white;
+						color: var(--system-500);
+						border: none;
+					}
+				}	
+
+				button {
+					min-height: 50px;
+					padding: 15px 20px;
+					border: none;
+					border-radius: 5px;
+					background-color: var(--origin-blue-light);
+					color: white;
+				}
 			}
 		}
 

@@ -1,7 +1,7 @@
 <center-content class="module">
 	<inner-column>
 		<header>
-			<p class="info">Your Visual Language Partner</p>
+			<p class="info grey-600">Your Visual Language Partner</p>
 
 			<h2 class="attention-voice">Consistency Across All Faces (And Tentacles)</h2>
 		</header>

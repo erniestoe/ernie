@@ -4,7 +4,7 @@
 			<div class="text">
 				<h2 class="attention-voice">Etiam nulla lectus amet nunc </h2>
 
-				<p>Fringilla non proin nec in in lorem amet eget ac. Mauris.</p>
+				<p class="grey-600">Fringilla non proin nec in in lorem amet eget ac. Mauris.</p>
 			</div>
 
 			<form class="cta-signup flex-center-row">

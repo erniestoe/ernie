@@ -4,7 +4,7 @@ function renderFaqList() {
 
 	foreach($data as $card) {?>
 		<li class="faq">
-			<details>
+			<details class="grey-600">
 			  <summary><?= $card["title"]?></summary>
 			  <?=$card["text"]?>
 			</details>
@@ -19,7 +19,7 @@ function renderFeaturesCards() {
 		<li class="feature-card flex-center">
 			<div class="icon"><?= $card["svg"]?></div>
 				<h3 class="strong-voice"><?= $card["title"]?></h3>
-				<p><?= $card["text"]?></p>
+				<p class="grey-600"><?= $card["text"]?></p>
 		</li>
 	<?php }
 }
@@ -30,7 +30,7 @@ function renderCenterContentCards() {
 	foreach($data as $card) {?>
 		<li>
 			<h3 class="strong-voice"><?= $card["title"] ?></h3>
-			<p><?= $card["text"] ?></p>
+			<p class="grey-600"><?= $card["text"] ?></p>
 		</li>
 	<?php }
 }
