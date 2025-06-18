@@ -1,0 +1,43 @@
+.module {
+	display: block;
+}
+
+.blue {
+	background-color: var(--origin-blue-light);
+	color: var(--system-50);;
+}
+
+.grey-600 {
+	color: var(--system-600);
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.flex-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media (width >= 1000px) {
+		flex-direction: row;
+	}
+}
+
+.flex-center-row {
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.circle {
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+}

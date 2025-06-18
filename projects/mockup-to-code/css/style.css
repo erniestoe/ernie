@@ -1,73 +1,10 @@
 @import "reset.css";
 @import "setup.css";
+@import "typography.css";
+@import "utilities.css";
 
-.loud-voice {
-	font-size: clamp(1rem, 10vw, 4rem);
-	font-weight: 800;
-}
-
-.strong-voice {
-	font-size: 1.15;
-	font-weight: medium;
-
-	@media(width >= 1000px) {
-		font-size: 1.25rem;
-	}
-}
-
-.attention-voice {
-	font-size: clamp(1rem, 8vw, 3rem);
-	font-weight: 600;
-}
-
-.quiet-voice {
-	@media(width >= 1000px) {
-		font-size: 0.875rem;
-	}
-}
-
-.module {
-	display: block;
-}
-
-.blue {
-	background-color: var(--origin-blue-light);
-	color: var(--system-50);;
-}
-
-.grey-600 {
-	color: var(--system-600);
-}
-
-.bold {
-	font-weight: bold;
-}
-
-.flex-center {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	@media (width >= 1000px) {
-		flex-direction: row;
-	}
-}
-
-.flex-center-row {
-	display: flex;
-	flex-direction: row;
-	align-items:center;
-}
-
-.flex-column {
-	display: flex;
-	flex-direction: column;
-}
-
-.circle {
-	width: 10px;
-	height: 10px;
-	background-color: black;
-	border-radius: 50%;
+button {
+	transition: all .2s ease;
 }
 
 .site-header {
@@ -166,7 +103,16 @@
 					gap: 10px;
 				}
 			}
-			
+
+			.signup-button:hover {
+				background-color: var(--origin-blue-light);
+				color: white;
+			}
+
+			.login-button:hover {
+				background-color: white;
+				color: var(--origin-blue-light);
+			}
 		}
 	}
 }
@@ -229,7 +175,7 @@
 			button {
 				min-height: 50px;
 				padding: 15px 20px;
-				border: none;
+				border: 1px solid transparent;
 				border-radius: 5px;
 				background-color: white;
 				color: var(--origin-blue-light);
@@ -263,6 +209,12 @@
 
 				button {
 					min-width: 105px;
+				}
+
+				button:hover {
+					border: 1px solid white;
+					background-color: var(--origin-blue-light);
+					color: white;
 				}
 			}
 		}
@@ -554,6 +506,7 @@
 					border-radius: 5px;
 					background-color: var(--origin-blue-light);
 					color: white;
+					border: 1px solid transparent;
 				}
 			}
 		}
@@ -571,6 +524,12 @@
 					justify-content: center;
 					align-items: center;
 					gap: 20px;
+				}
+
+				button:hover {
+					background-color: white;
+					color: var(--origin-blue-light);
+					border: 1px solid var(--origin-blue-light);
 				}
 			}
 

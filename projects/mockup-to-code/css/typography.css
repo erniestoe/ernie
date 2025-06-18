@@ -1,0 +1,24 @@
+.loud-voice {
+	font-size: clamp(1rem, 10vw, 4rem);
+	font-weight: 800;
+}
+
+.strong-voice {
+	font-size: 1.15;
+	font-weight: medium;
+
+	@media(width >= 1000px) {
+		font-size: 1.25rem;
+	}
+}
+
+.attention-voice {
+	font-size: clamp(1rem, 8vw, 3rem);
+	font-weight: 600;
+}
+
+.quiet-voice {
+	@media(width >= 1000px) {
+		font-size: 0.875rem;
+	}
+}
