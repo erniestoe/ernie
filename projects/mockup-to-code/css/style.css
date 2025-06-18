@@ -3,10 +3,6 @@
 @import "typography.css";
 @import "utilities.css";
 
-button {
-	transition: all .2s ease;
-}
-
 .site-header {
 	position: fixed;
 	top: 0;
