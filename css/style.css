@@ -28,9 +28,19 @@ main {
 
 inner-column {
 	display: block;
-	max-width: 1200px;
+	max-width: 345px;
 	margin-inline: auto;
-	padding: 20px;
+	padding-inline: 24px;
+
+	@media (width >= 630px){
+		padding-inline: 30px;
+		max-width: 774px;
+	}
+
+	@media (width >= 1024px) {
+		padding-inline: 72px;
+		max-width: 1584px;
+	}
 }
 
 h2 + p,

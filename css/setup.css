@@ -1,3 +1,48 @@
+:root {
+	/*MAIN PALETTE*/
+	--main-white: #FBFBF6;
+	--main-black: #000000;
+
+	/*ACCENT PALETTE*/
+	--yellow: #FFE317;
+	--orange: #F98A03;
+	--red: #F16C6A;
+	--brick: #D47D8D;
+	--purple: #A390B2;
+	--dark-purple: #584D84;
+	--purple-blue: #8594D1;
+	--blue: #589DDA;
+	--teal: #2EB0B8;
+	--green: #69CF79;
+};
+
+.ernies-grid {
+	display:grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+
+	@media (width >= 630px) {
+		gap: 30px;
+	}
+
+	@media (width >= 1024px) {
+		grid-template-columns: repeat(6, 1fr);
+		gap: 36px;
+	}
+}
+
+.ernies-subgrid {
+	display: grid;
+	grid-template-columns: subbrid;
+	grid-column: span 3;
+	gap: inherit;
+
+	@media (width >= 1024) {
+		grid-column: span 6;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
