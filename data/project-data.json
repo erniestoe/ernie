@@ -1,292 +1,292 @@
-[
-	{
-		"id": 1,
-		"projectName": "OpenResource Theme",
-		"projectGoal": "The main goal of this project was to see if I could make a digital directory of community resources thats accessible for everyone and easily replicated to have information from all communities. ",
-		"projectOverview": "The thought here was to take clunky, hard-to-update resource lists and bring them online in a way that’s easy to browse, maintain, and share… For now, that led me to a simple WordPress theme that’s still being refined and improved as I learn more about things like accessibility and usability. While the WordPress version makes the project accessible to users already familiar with the platform, long-term I’d like to make it even more approachable / platform independent.",
-		"projectProblem": "In past roles at nonprofits, I often saw that it was hard to find reliable, up-to-date lists of community of resources. Most of the time, they were literal physical binders of papers or outdated PDFs... so... not great.",
-		"projectResearch": "This project was a bit light on the actual research. Reason being, at its core, It’s essentially a CRUD app with a PDF cart so... a very simple concept. The bulk of my research focused on how I wanted the experience to feel both in terms of the visuals and the user flow. I tried to avoid leaning on terms like “minimal” or “simple,” and instead moved towards more human terms like “accessible,” “welcoming,” and “professional” when making my style tiles. I eventually landed on the <a target='_blank' href='https://www.oliviaking.com/inclusivesans/feature'>Inclusive Sans</a> typeface and a palette generated with <a target='_blank' href='https://randoma11y.com/'>randoma11y</a> for accessible color contrast.",
-		"projectSolution": "Right now my solution is OpenResource - a lightweight, mobile-friendly WordPress theme utilizing PHP templates and ACF (Advanced Custom Fields). Some current features are:",
-		"projectFeatures": [
-			{
-				"feature": "A dynamic filtering system using JavaScript for asynchronous loading"
-			},
-			{
-				"feature": "A session-based PDF “cart” that lets users collect and download custom summaries"
-			},
-			{
-				"feature": "A CMS-friendly admin interface with custom post types and field groups"
-			}
-		],
-		"projectApproach": "I started out making a <a target='_blank' href='https://peprojects.dev/beta-two/ernie/projects/resource-list/index.php'>PHP only prototype</a> and converted that into a WordPress theme to make it more accessible for non-technical users. I used semantic HTML, modular CSS, and progressive enhancement to build a working alpha up and running without getting stuck on it being perfect. I chose this approach to help me showcase the project publicly, start receiving feedback, and leave room for others to customize or contribute.",
-		"projectResults": "So right now OpenResource is live, functional, and available for others to use via GitHub. It’s still a work in progress, but that’s on purpose! I wanted to avoid perfection paralysis and get the project out in the open. This process helped me solidify my knowledge of PHP and WordPress development while also teaching me to balance ambition with momentum. It’s already being used to power <a target='_blank' href='https://forsythcommunityresources.com/'>forsythcommunityresources.com</a>, and I’m actively iterating as I learn and grow.",
-		"projectChallenges": [
-			{
-				"text": "Preserving filter state across page loads required combining PHP sessions with JavaScript... something completely new to me haha."
-			},
-			{
-				"text": "Balancing simplicity with real-world usefulness (deciding when to go native vs when to lean on plugins)."
-			},
-			{
-				"text": "Designing for two very different users: the admin maintaining the directory and the visitor browsing the resources."
-			}
-		],
-		"links": [
-			{
-				"text": "Github",
-				"href": "https://github.com/erniestoe/resource-theme"
-			},
-			{
-				"text": "Demo site",
-				"href": "https://forsythcommunityresources.com/"
-			}
-		],
-		"images": [
-			{
-				"alt": "Style Tile",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745244118/resource-site-style-tile-1_riwnsi.png"
-			},
-			{
-				"alt": "Screenshot",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249661/openresource-theme-screenshot_owtrhj.png"
-			}
-		],
-		"gallery-images" : [
-			{
-				"alt": "Site Branding",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441997/resource-site-type-and-palette_mh58nl.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Research",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442013/CleanShot_2025-05-04_at_16.53.07_rb1ds4.png",
-				"orientation": "landscape"
-			},
-			{
-				"alt": "Style Tiles",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442021/CleanShot_2025-05-04_at_16.52.14_k5lp57.png",
-				"orientation": "landscape"
-			},
-			{
-				"alt": "Homepage Mobile",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-homepage-mobile_scfpvj.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Homepage Tablet",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-homepage-tablet_sfuerv.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Homepage Desktop",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441995/resource-homepage-desktop_dzdwfg.png",
-				"orientation": "landscape"
-			},
-			{
-				"alt": "Resources Mobile",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-mobile_ql8psa.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Resources Tablet",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-tablet_qogn86.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Resources Desktop",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-desktop_j1uqpm.png",
-				"orientation": "landscape"
-			}
-		]
-	},
-	{
-		"id": 2,
-		"projectName": "OpenResource Site",
-		"projectGoal": "Create a landing and eventual docs site for the OpenResouce theme.",
-		"projectOverview": "The OpenResource Landing Site is a companion marketing and (eventually) documentation site for the OpenResource WordPress theme. Its primary goal is to introduce the project, explain its purpose, offer a clear starting point for users, and share ongoing updates. The site is designed using the same visual language as <a target='_blank' href='https://forsythcommunityresources.com/'>forsythcommunityresources.com</a> to maintain consistency between the demo and the theme.",
-		"projectProblem": "While building the OpenResource theme, I realized that simply having the theme on GitHub with a README made the project feel a little disconnected (lonely?). I wanted things to feel more intentional and cohesive. Having a standalone landing site allows me to create a stronger visual and conceptual connection between the theme and its intended use. I also don't like the idea of just leaving my documentation just on the Github page.",
-		"projectResearch": "There wasn’t a ton of research for this project — instead, I reused and lightly restyled the existing style tile from the OpenResource theme to maintain visual consistency. The layout itself was based on a previous <a target='_blank' href='../projects/soccer-theme/index.php'>Soccer Theme project</a> where I practiced conditional rendering with PHP.",
-		"projectSolution": "The site uses a pretty common layout with subtle visual differences from the theme - like sharper edges instead of roundy ones and a different main color (green). I did this mainly to subtly show how easily the theme can be customized. Features:",
-		"projectFeatures": [
-			{
-				"feature": "A clean hero section explaining the project’s purpose"
-			},
-			{
-				"feature": "Modular CTA cards linking to GitHub, live demos, and contact"
-			},
-			{
-				"feature": "A quick-start guide (currently offloaded to the GitHub README)"
-			}
-		],
-		"projectApproach": "I created the landing site as a separate WordPress install using ACF Pro to manage content. I kept the design simple and responsive, prioritizing speed and clarity. Rather than building full documentation at this stage, I linked directly to GitHub to reduce overhead while keeping critical information available.",
-		"projectResults": "The site now provides a gentle onboarding experience for the OpenResource theme. It adds context, communicates the intent of the project, and demonstrates how the theme can be customized with just a few small changes. It also doubles as another example of thoughtful design-focused WordPress development that I can do.",
-		"projectChallenges": [
-			{
-				"text": "Keeping the site visually distinct from the theme, but still clearly related."
-			},
-			{
-				"text": "Deciding how much content should live directly in WordPress versus being linked out."
-			},
-			{
-				"text": "Avoiding overbuilding while still making it feel polished and complete."
-			}
-		],
-		"links": [
-			{
-				"text": "Github",
-				"href": "https://github.com/erniestoe/openresource"
-			},
-			{
-				"text": "Live site",
-				"href": "https://openresource.io/"
-			}
-		],
-		"images": [
-			{
-				"alt": "Style Tile",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745247519/site-style-tile_r7tioc.png"
-			},
-			{
-				"alt": "Screenshot",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249643/openresource-landing-screenshot_fckkzh.png"
-			}
-		],
-		"gallery-images" : [
-			{
-				"alt": "Site Branding",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-palette-type_wzy3wc.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Style Tiles",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Wireframe",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442067/resource-landing-wireframe_rd73ck.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Homepage Mobile",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-mobile_p97rrk.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Homepage Tablet",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-tablet_sf9fdj.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Homepage Desktop",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442064/resource-landing-desktop_rebusl.png",
-				"orientation": "landscape"
-			}
-		]
-	},
-	{
-		"id": 3,
-		"projectName": "JS App Prototype",
-		"projectGoal": "To plan and code a “finished” app prototype using only JavaScript in three weeks (sprint!).",
-		"projectOverview": "So, for this I decided to try and make a “ticket buying app” using only javascript. It was a doozy. From the prototyping in Figma to writing a big messy JavaScript file full of functions, I really stretched my mental muscles. I also needed a way to really sit down and write a lot of JavaScript, and this was my way of achieving that. I also needed to practice my UX skills",
-		"projectProblem": "Two-fold: One, ticketing apps in general… are not great. Two, I have never sat down to plan out and make an dedicated app like this. Does beg the question though… is a website just a type of app?",
-		"projectResearch": "Since I dedicated one week to planning I had to move fast. Meaning I used a couple apps, took some screenshots and then got to work on whipping up a wireframe-esque prototype in figma. Beyond the flow of things I landed on Inter for the font… well… because… it's popular? I felt that Inter was a nice neutral choice that allowed me to focus on the more JavaScripty stuff knowing that my font… just works. Sorry to all the Inter haters out there.",
-		"projectSolution": "Right now my three week sprint has led me to a prototype where I can:",
-		"projectFeatures": [
-			{
-				"feature": "Have a list of shows"
-			},
-			{
-				"feature": "Select those shows"
-			},
-			{
-				"feature": "Select seats related to those shows"
-			},
-			{
-				"feature": "Build tickets from selected show seats"
-			}
-		],
-		"projectApproach": "I decided to simulate a mobile view at all times by making a nifty little phone that contains all of my apps content. After that I jumped right  into JavaScript, at first I thought I was modeling my setup after React – creating a div with an id of app and then rendering everything in there. I was later informed that that isn't just a React thing! So yes, React does not have a complete monopoly on JavaScript structuring just yet!",
-		"projectResults": "Full fledged js app prototype… Is it really the best ticket app out there? No. Is it a solid base to build from if I ever decide to flesh it out? Yes. Though the bigger thing I got out of this was clarity. Not that I should box myself in at this stage but I really don’t feel a draw or passion in building out apps like this. The whole time I kept thinking “what if this was a part of a bigger site, like a small local theatre or something, and what if I could design their whole brand / site / whatever… now that’d be cool!” So I really think I want to make cool brands that make cool websites to hold their cool stuff. Maybe ticketapp just wasn't the right app to grab my attention but hey I still learned a lot! All this to say, from adversity comes solutions and from solutions come app prototypes like these.",
-		"projectChallenges": [
-			{
-				"text": "Overcomplication. Starting with my prototype, I initially went way too far on the minimal wireframing, trying to turn my paper sketch into a Figma prototype. It quickly became evident that I had create a secret flow where you just had to guess what was what… a IFYKYK kinda deal."
-			},
-			{
-				"text": "Class based code. During the two weeks of dedicated coding, I ran into a big issue: classes. At first I thought yes, I must use class based code here… it’s what all the real codes and the cool kids use. But after my 50th this, the confusion started to set in…"
-			},
-			{
-				"text": "Starting over to move forward. I ended up starting from scratch when classes became to much and used something I know that I know how to use… functions!"
-			}
-		],
-		"links": [
-			{
-				"text": "Github",
-				"href": "https://github.com/erniestoe/ernie/tree/main/projects/mockup-to-code"
-			},
-			{
-				"text": "Live site",
-				"href": "https://ersaavedra.dev/projects/ticketapp/index.html"
-			}
-		],
-		"images": [
-			{
-				"alt": "Styles",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255235/CleanShot_2025-06-18_at_09.57.57_ggkwpw.png"
-			},
-			{
-				"alt": "Screenshot",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255404/CleanShot_2025-06-18_at_10.02.13_2x_ijxqo3.png"
-			}
-		],
-		"gallery-images" : [
-			{
-				"alt": "Figma mockups",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255235/CleanShot_2025-06-18_at_09.58.17_rb6nnc.png",
-				"orientation": "landscape"
-			},
-			{
-				"alt": "flow 2",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255236/CleanShot_2025-06-18_at_09.58.46_ohycbu.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "flow 1",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255236/CleanShot_2025-06-18_at_09.58.39_iyhlyc.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Show details",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255233/CleanShot_2025-06-18_at_09.56.16_2x_lzpjrh.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Theatre view",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.27_2x_exfrsc.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "Theatre cart",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.33_2x_efbhso.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "cart view",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.39_2x_kejpau.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "confirmation view",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.43_2x_zmykt4.png",
-				"orientation": "portrait"
-			},
-			{
-				"alt": "tickets view",
-				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255727/CleanShot_2025-06-18_at_10.08.30_2x_gvmgkt.png",
-				"orientation": "portrait"
-			}
+// [
+// 	{
+// 		"id": 1,
+// 		"projectName": "OpenResource Theme",
+// 		"projectGoal": "The main goal of this project was to see if I could make a digital directory of community resources thats accessible for everyone and easily replicated to have information from all communities. ",
+// 		"projectOverview": "The thought here was to take clunky, hard-to-update resource lists and bring them online in a way that’s easy to browse, maintain, and share… For now, that led me to a simple WordPress theme that’s still being refined and improved as I learn more about things like accessibility and usability. While the WordPress version makes the project accessible to users already familiar with the platform, long-term I’d like to make it even more approachable / platform independent.",
+// 		"projectProblem": "In past roles at nonprofits, I often saw that it was hard to find reliable, up-to-date lists of community of resources. Most of the time, they were literal physical binders of papers or outdated PDFs... so... not great.",
+// 		"projectResearch": "This project was a bit light on the actual research. Reason being, at its core, It’s essentially a CRUD app with a PDF cart so... a very simple concept. The bulk of my research focused on how I wanted the experience to feel both in terms of the visuals and the user flow. I tried to avoid leaning on terms like “minimal” or “simple,” and instead moved towards more human terms like “accessible,” “welcoming,” and “professional” when making my style tiles. I eventually landed on the <a target='_blank' href='https://www.oliviaking.com/inclusivesans/feature'>Inclusive Sans</a> typeface and a palette generated with <a target='_blank' href='https://randoma11y.com/'>randoma11y</a> for accessible color contrast.",
+// 		"projectSolution": "Right now my solution is OpenResource - a lightweight, mobile-friendly WordPress theme utilizing PHP templates and ACF (Advanced Custom Fields). Some current features are:",
+// 		"projectFeatures": [
+// 			{
+// 				"feature": "A dynamic filtering system using JavaScript for asynchronous loading"
+// 			},
+// 			{
+// 				"feature": "A session-based PDF “cart” that lets users collect and download custom summaries"
+// 			},
+// 			{
+// 				"feature": "A CMS-friendly admin interface with custom post types and field groups"
+// 			}
+// 		],
+// 		"projectApproach": "I started out making a <a target='_blank' href='https://peprojects.dev/beta-two/ernie/projects/resource-list/index.php'>PHP only prototype</a> and converted that into a WordPress theme to make it more accessible for non-technical users. I used semantic HTML, modular CSS, and progressive enhancement to build a working alpha up and running without getting stuck on it being perfect. I chose this approach to help me showcase the project publicly, start receiving feedback, and leave room for others to customize or contribute.",
+// 		"projectResults": "So right now OpenResource is live, functional, and available for others to use via GitHub. It’s still a work in progress, but that’s on purpose! I wanted to avoid perfection paralysis and get the project out in the open. This process helped me solidify my knowledge of PHP and WordPress development while also teaching me to balance ambition with momentum. It’s already being used to power <a target='_blank' href='https://forsythcommunityresources.com/'>forsythcommunityresources.com</a>, and I’m actively iterating as I learn and grow.",
+// 		"projectChallenges": [
+// 			{
+// 				"text": "Preserving filter state across page loads required combining PHP sessions with JavaScript... something completely new to me haha."
+// 			},
+// 			{
+// 				"text": "Balancing simplicity with real-world usefulness (deciding when to go native vs when to lean on plugins)."
+// 			},
+// 			{
+// 				"text": "Designing for two very different users: the admin maintaining the directory and the visitor browsing the resources."
+// 			}
+// 		],
+// 		"links": [
+// 			{
+// 				"text": "Github",
+// 				"href": "https://github.com/erniestoe/resource-theme"
+// 			},
+// 			{
+// 				"text": "Demo site",
+// 				"href": "https://forsythcommunityresources.com/"
+// 			}
+// 		],
+// 		"images": [
+// 			{
+// 				"alt": "Style Tile",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745244118/resource-site-style-tile-1_riwnsi.png"
+// 			},
+// 			{
+// 				"alt": "Screenshot",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249661/openresource-theme-screenshot_owtrhj.png"
+// 			}
+// 		],
+// 		"gallery-images" : [
+// 			{
+// 				"alt": "Site Branding",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441997/resource-site-type-and-palette_mh58nl.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Research",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442013/CleanShot_2025-05-04_at_16.53.07_rb1ds4.png",
+// 				"orientation": "landscape"
+// 			},
+// 			{
+// 				"alt": "Style Tiles",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442021/CleanShot_2025-05-04_at_16.52.14_k5lp57.png",
+// 				"orientation": "landscape"
+// 			},
+// 			{
+// 				"alt": "Homepage Mobile",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-homepage-mobile_scfpvj.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Homepage Tablet",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-homepage-tablet_sfuerv.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Homepage Desktop",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441995/resource-homepage-desktop_dzdwfg.png",
+// 				"orientation": "landscape"
+// 			},
+// 			{
+// 				"alt": "Resources Mobile",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-mobile_ql8psa.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Resources Tablet",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-tablet_qogn86.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Resources Desktop",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441996/resource-site-desktop_j1uqpm.png",
+// 				"orientation": "landscape"
+// 			}
+// 		]
+// 	},
+// 	{
+// 		"id": 2,
+// 		"projectName": "OpenResource Site",
+// 		"projectGoal": "Create a landing and eventual docs site for the OpenResouce theme.",
+// 		"projectOverview": "The OpenResource Landing Site is a companion marketing and (eventually) documentation site for the OpenResource WordPress theme. Its primary goal is to introduce the project, explain its purpose, offer a clear starting point for users, and share ongoing updates. The site is designed using the same visual language as <a target='_blank' href='https://forsythcommunityresources.com/'>forsythcommunityresources.com</a> to maintain consistency between the demo and the theme.",
+// 		"projectProblem": "While building the OpenResource theme, I realized that simply having the theme on GitHub with a README made the project feel a little disconnected (lonely?). I wanted things to feel more intentional and cohesive. Having a standalone landing site allows me to create a stronger visual and conceptual connection between the theme and its intended use. I also don't like the idea of just leaving my documentation just on the Github page.",
+// 		"projectResearch": "There wasn’t a ton of research for this project — instead, I reused and lightly restyled the existing style tile from the OpenResource theme to maintain visual consistency. The layout itself was based on a previous <a target='_blank' href='../projects/soccer-theme/index.php'>Soccer Theme project</a> where I practiced conditional rendering with PHP.",
+// 		"projectSolution": "The site uses a pretty common layout with subtle visual differences from the theme - like sharper edges instead of roundy ones and a different main color (green). I did this mainly to subtly show how easily the theme can be customized. Features:",
+// 		"projectFeatures": [
+// 			{
+// 				"feature": "A clean hero section explaining the project’s purpose"
+// 			},
+// 			{
+// 				"feature": "Modular CTA cards linking to GitHub, live demos, and contact"
+// 			},
+// 			{
+// 				"feature": "A quick-start guide (currently offloaded to the GitHub README)"
+// 			}
+// 		],
+// 		"projectApproach": "I created the landing site as a separate WordPress install using ACF Pro to manage content. I kept the design simple and responsive, prioritizing speed and clarity. Rather than building full documentation at this stage, I linked directly to GitHub to reduce overhead while keeping critical information available.",
+// 		"projectResults": "The site now provides a gentle onboarding experience for the OpenResource theme. It adds context, communicates the intent of the project, and demonstrates how the theme can be customized with just a few small changes. It also doubles as another example of thoughtful design-focused WordPress development that I can do.",
+// 		"projectChallenges": [
+// 			{
+// 				"text": "Keeping the site visually distinct from the theme, but still clearly related."
+// 			},
+// 			{
+// 				"text": "Deciding how much content should live directly in WordPress versus being linked out."
+// 			},
+// 			{
+// 				"text": "Avoiding overbuilding while still making it feel polished and complete."
+// 			}
+// 		],
+// 		"links": [
+// 			{
+// 				"text": "Github",
+// 				"href": "https://github.com/erniestoe/openresource"
+// 			},
+// 			{
+// 				"text": "Live site",
+// 				"href": "https://openresource.io/"
+// 			}
+// 		],
+// 		"images": [
+// 			{
+// 				"alt": "Style Tile",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745247519/site-style-tile_r7tioc.png"
+// 			},
+// 			{
+// 				"alt": "Screenshot",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745249643/openresource-landing-screenshot_fckkzh.png"
+// 			}
+// 		],
+// 		"gallery-images" : [
+// 			{
+// 				"alt": "Site Branding",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-palette-type_wzy3wc.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Style Tiles",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Wireframe",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442067/resource-landing-wireframe_rd73ck.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Homepage Mobile",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-mobile_p97rrk.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Homepage Tablet",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442066/resource-landing-tablet_sf9fdj.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Homepage Desktop",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442064/resource-landing-desktop_rebusl.png",
+// 				"orientation": "landscape"
+// 			}
+// 		]
+// 	},
+// 	{
+// 		"id": 3,
+// 		"projectName": "JS App Prototype",
+// 		"projectGoal": "To plan and code a “finished” app prototype using only JavaScript in three weeks (sprint!).",
+// 		"projectOverview": "So, for this I decided to try and make a “ticket buying app” using only javascript. It was a doozy. From the prototyping in Figma to writing a big messy JavaScript file full of functions, I really stretched my mental muscles. I also needed a way to really sit down and write a lot of JavaScript, and this was my way of achieving that. I also needed to practice my UX skills",
+// 		"projectProblem": "Two-fold: One, ticketing apps in general… are not great. Two, I have never sat down to plan out and make an dedicated app like this. Does beg the question though… is a website just a type of app?",
+// 		"projectResearch": "Since I dedicated one week to planning I had to move fast. Meaning I used a couple apps, took some screenshots and then got to work on whipping up a wireframe-esque prototype in figma. Beyond the flow of things I landed on Inter for the font… well… because… it's popular? I felt that Inter was a nice neutral choice that allowed me to focus on the more JavaScripty stuff knowing that my font… just works. Sorry to all the Inter haters out there.",
+// 		"projectSolution": "Right now my three week sprint has led me to a prototype where I can:",
+// 		"projectFeatures": [
+// 			{
+// 				"feature": "Have a list of shows"
+// 			},
+// 			{
+// 				"feature": "Select those shows"
+// 			},
+// 			{
+// 				"feature": "Select seats related to those shows"
+// 			},
+// 			{
+// 				"feature": "Build tickets from selected show seats"
+// 			}
+// 		],
+// 		"projectApproach": "I decided to simulate a mobile view at all times by making a nifty little phone that contains all of my apps content. After that I jumped right  into JavaScript, at first I thought I was modeling my setup after React – creating a div with an id of app and then rendering everything in there. I was later informed that that isn't just a React thing! So yes, React does not have a complete monopoly on JavaScript structuring just yet!",
+// 		"projectResults": "Full fledged js app prototype… Is it really the best ticket app out there? No. Is it a solid base to build from if I ever decide to flesh it out? Yes. Though the bigger thing I got out of this was clarity. Not that I should box myself in at this stage but I really don’t feel a draw or passion in building out apps like this. The whole time I kept thinking “what if this was a part of a bigger site, like a small local theatre or something, and what if I could design their whole brand / site / whatever… now that’d be cool!” So I really think I want to make cool brands that make cool websites to hold their cool stuff. Maybe ticketapp just wasn't the right app to grab my attention but hey I still learned a lot! All this to say, from adversity comes solutions and from solutions come app prototypes like these.",
+// 		"projectChallenges": [
+// 			{
+// 				"text": "Overcomplication. Starting with my prototype, I initially went way too far on the minimal wireframing, trying to turn my paper sketch into a Figma prototype. It quickly became evident that I had create a secret flow where you just had to guess what was what… a IFYKYK kinda deal."
+// 			},
+// 			{
+// 				"text": "Class based code. During the two weeks of dedicated coding, I ran into a big issue: classes. At first I thought yes, I must use class based code here… it’s what all the real codes and the cool kids use. But after my 50th this, the confusion started to set in…"
+// 			},
+// 			{
+// 				"text": "Starting over to move forward. I ended up starting from scratch when classes became to much and used something I know that I know how to use… functions!"
+// 			}
+// 		],
+// 		"links": [
+// 			{
+// 				"text": "Github",
+// 				"href": "https://github.com/erniestoe/ernie/tree/main/projects/mockup-to-code"
+// 			},
+// 			{
+// 				"text": "Live site",
+// 				"href": "https://ersaavedra.dev/projects/ticketapp/index.html"
+// 			}
+// 		],
+// 		"images": [
+// 			{
+// 				"alt": "Styles",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255235/CleanShot_2025-06-18_at_09.57.57_ggkwpw.png"
+// 			},
+// 			{
+// 				"alt": "Screenshot",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255404/CleanShot_2025-06-18_at_10.02.13_2x_ijxqo3.png"
+// 			}
+// 		],
+// 		"gallery-images" : [
+// 			{
+// 				"alt": "Figma mockups",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255235/CleanShot_2025-06-18_at_09.58.17_rb6nnc.png",
+// 				"orientation": "landscape"
+// 			},
+// 			{
+// 				"alt": "flow 2",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255236/CleanShot_2025-06-18_at_09.58.46_ohycbu.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "flow 1",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255236/CleanShot_2025-06-18_at_09.58.39_iyhlyc.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Show details",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255233/CleanShot_2025-06-18_at_09.56.16_2x_lzpjrh.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Theatre view",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.27_2x_exfrsc.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "Theatre cart",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.33_2x_efbhso.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "cart view",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.39_2x_kejpau.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "confirmation view",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255234/CleanShot_2025-06-18_at_09.56.43_2x_zmykt4.png",
+// 				"orientation": "portrait"
+// 			},
+// 			{
+// 				"alt": "tickets view",
+// 				"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1750255727/CleanShot_2025-06-18_at_10.08.30_2x_gvmgkt.png",
+// 				"orientation": "portrait"
+// 			}
 
 
-		]
-	}
-]
+// 		]
+// 	}
+// ]
