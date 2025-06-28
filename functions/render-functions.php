@@ -148,7 +148,9 @@ function renderCSS($page) {
     	"project" => "project.css",
     	"style-guide"=> "style-guide.css",
     	"lab"=> "lab.css",
-    	"case-study-index"=> "work.css",
+    	"case-study-index"=> "case-study-index.css",
+    	"e4p-index" => "e4p-index.css",
+    	"exercise" => "exercise.css",
     	"404" => "404.css"
 	];
 

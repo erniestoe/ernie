@@ -40,7 +40,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 									?>Options<?php
 								} else if ($currentPage['name'] === 'exercise') {
 									?>Index<?php
-								} else if ($currentPage['name'] === 'case') {
+								} else if ($currentPage['name'] === 'case-study') {
 									?>Index<?php
 								} else {
 									?><?php
@@ -81,7 +81,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 									<a href="?page=lab">The Lab</a>
 								</li>
 								<li>
-									<a href="?page=programming">Exercises for Programmers</a>
+									<a href="?page=e4p-index">Exercises for Programmers</a>
 								</li>
 							</ul>
 							
