@@ -1,3 +1,65 @@
 {
-	"title": "Excersises For Programmers"
+	"title": "Excersises For Programmers",
+	"exercises": [
+		{
+		   "id": "area",
+		   "title": "Area of a rectangular room",
+		   "path": "modules/e4p/area-of-a-rect-room/index.php"
+		 },
+		 {
+		   "id": "tax",
+		   "title": "Tax Calculator",
+		   "path": "modules/e4p/tax-calculator/index.php"
+		 },
+		 {
+		   "id": "driving",
+		   "title": "Legal Driving Age",
+		   "path": "modules/e4p/legal-driving-age/index.php"
+		 },
+		 {
+		   "id": "anagrams",
+		   "title": "Anagram Checker",
+		   "path": "modules/e4p/anagrams/index.php"
+		 },
+		 {
+		   "id": "pizzaParty",
+		   "title": "Pizza Party",
+		   "path": "modules/e4p/pizza-party/index.php"
+		 },
+		 {
+		   "id": "converter",
+		   "title": "Temperature Converter",
+		   "path": "modules/e4p/temp-converter/index.php"
+		 },
+		 {
+		   "id": "characters",
+		   "title": "Counting the Number of Characters",
+		   "path": "modules/e4p/num-of-chars/index.php"
+		 },
+		 {
+		   "id": "selfCheckout",
+		   "title": "Self Checkout",
+		   "path": "modules/e4p/self-checkout/index.php"
+		 },
+		 {
+		   "id": "paint",
+		   "title": "Paint Calculator",
+		   "path": "modules/e4p/paint-calculator/index.php"
+		 },
+		 {
+		   "id": "interest",
+		   "title": "Computing Simple Interest",
+		   "path": "modules/e4p/simple-interest/index.php"
+		 },
+		 {
+		   "id": "numbersToNames",
+		   "title": "Numbers to Names",
+		   "path": "modules/e4p/nums-to-names/index.php"
+		 },
+		 {
+		   "id": "addingNumbers",
+		   "title": "Adding Numbers",
+		   "path": "modules/e4p/adding-nums/index.php"
+		 }
+	]
 }

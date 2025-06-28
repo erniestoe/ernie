@@ -10,14 +10,18 @@ import { paintCalculator } from "./paint-calculator.js";
 import { simpleInterest } from "./simple-interest.js"; 
 import { numbersToNames } from "./numbers-to-names.js"; 
 import { addingNumbers } from "./adding-numbers.js"; 
+import { layoutGardenOptions } from './layout-garden-options.js';
 
 window.onload = () => {
 	const mainMenu = document.querySelector('.menu');
 	const optionsMenu = document.querySelector('.options-menu');
+	const exerciseIndexMenu = document.querySelector('.exercise-menu');
 	const openMainButton = document.querySelector('#open');
 	const closeMainButton = document.querySelector('#close');
 	const openOptionsButton = document.querySelector('#openOptionsMenu');
 	const closeOptionsButton = document.querySelector('#closeOptionsMenu');
+	const openExerciseIndexButton = document.querySelector('#openExerciseIndexMenu');
+	const closeExerciseIndexButton = document.querySelector('#closeExerciseIndexMenu');
 
 	if (openMainButton && mainMenu) {
 		openMainButton.addEventListener('click', () => {
@@ -26,7 +30,10 @@ window.onload = () => {
 
 			if (optionsMenu && !optionsMenu.classList.contains('visually-hidden')) {
 				optionsMenu.classList.add('visually-hidden');
+			}
 
+			if (exerciseIndexMenu && !exerciseIndexMenu.classList.contains('visually-hidden')) {
+				exerciseIndexMenu.classList.add('visually-hidden');
 			}
 		});
 	}
@@ -44,6 +51,7 @@ window.onload = () => {
 			optionsMenu.classList.toggle('visually-hidden');
 			if (mainMenu && !mainMenu.classList.contains('visually-hidden')) {
 				mainMenu.classList.add('visually-hidden');
+				openMainButton.classList.toggle('main-menu-opened');
 			}
 		});
 	}
@@ -51,6 +59,22 @@ window.onload = () => {
 	if (closeOptionsButton && optionsMenu) {
 		closeOptionsButton.addEventListener('click', () => {
 			optionsMenu.classList.add('visually-hidden');
+		});
+	}
+
+	if (openExerciseIndexButton && exerciseIndexMenu) {
+		openExerciseIndexButton.addEventListener('click', () => {
+			exerciseIndexMenu.classList.toggle('visually-hidden');
+			if (mainMenu && !mainMenu.classList.contains('visually-hidden')) {
+				mainMenu.classList.add('visually-hidden');
+				openMainButton.classList.toggle('main-menu-opened');
+			}
+		});
+	}
+
+	if (closeExerciseIndexButton && exerciseIndexMenu) {
+		closeExerciseIndexButton.addEventListener('click', () => {
+			exerciseIndexMenu.classList.add('visually-hidden');
 		});
 	}
 
@@ -62,6 +86,8 @@ window.onload = () => {
   		contain: true
 		});
 	}
+
+	layoutGardenOptions();
 }
 
 // // Homepage canvas
@@ -271,19 +297,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // E4P
 const urlParameters = new URLSearchParams(window.location.search);
-const formName = urlParameters.get('form');
-const defaultPage = urlParameters.get('page');
+const exerciseId = urlParameters.get('id');
+const currentPage = urlParameters.get('page');
 
-if (!formName && defaultPage === 'programming') {areaOfRectangularRoom(), areaOfRectangularRoom2()};
-if (formName === 'area') {areaOfRectangularRoom(), areaOfRectangularRoom2()};
-if (formName === 'tax') {taxCalculator()};
-if (formName === 'driving') {legalDrivingAge()};
-if (formName === 'anagrams') {anagramChecker()};
-if (formName === 'pizza') {pizzaParty()};
-if (formName === 'temp') {tempConverter()};
-if (formName === 'characters') {countingCharacters()};
-if (formName === 'checkout') {selfCheckout(), selfCheckout2()};
-if (formName === 'paint') {paintCalculator()};
-if (formName === 'interest') {simpleInterest()};
-if (formName === 'numberstonames') {numbersToNames()};
-if (formName === 'addingnumbers') {addingNumbers()};
+if (!exerciseId && currentPage === 'programming') {
+	areaOfRectangularRoom();
+	areaOfRectangularRoom2();
+}
+
+if (exerciseId === 'area') {
+	areaOfRectangularRoom();
+	areaOfRectangularRoom2();
+}
+if (exerciseId === 'tax') taxCalculator();
+if (exerciseId === 'driving') legalDrivingAge();
+if (exerciseId === 'anagrams') anagramChecker();
+if (exerciseId === 'pizzaParty') pizzaParty();
+if (exerciseId === 'converter') tempConverter();
+if (exerciseId === 'characters') countingCharacters();
+if (exerciseId === 'selfCheckout') {
+	selfCheckout();
+	selfCheckout2();
+}
+if (exerciseId === 'paint') paintCalculator();
+if (exerciseId === 'interest') simpleInterest();
+if (exerciseId === 'numbersToNames') numbersToNames();
+if (exerciseId === 'addingNumbers') addingNumbers();

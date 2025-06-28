@@ -1,6 +1,8 @@
 <?php 
 $pageData = getPageData($currentPage['name']);
 $pageTitle = renderPageTitle($currentPage['name']);
+$data = json_decode(file_get_contents('data/e4p-index.json'), true);
+$exercises = $data['exercises'];
 ?>
 <!doctype html>
 <html lang='en'>
@@ -28,7 +30,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 								if ($currentPage['name'] === 'garden') {
 									?>openOptionsMenu<?php
 								} else if ($currentPage['name'] === 'exercise') {
-									?>openE4pIndexMenu<?php
+									?>openExerciseIndexMenu<?php
 								} else if ($currentPage['name'] === 'case') {
 									?>openWorkIndexMenu<?php
 								} else {
@@ -50,12 +52,58 @@ $pageTitle = renderPageTitle($currentPage['name']);
 
 						<?php if ($currentPage['name'] === 'garden') {?>
 							<div class="options-menu visually-hidden">
-								<form></form>
+								<form id="gardenControls" class="garden-controls">
+									<div class="field">
+										<label>border-radius</label>
+										<input type="range" name="borderRadius" min="0" max="100" value="8">
+									</div>
+
+									<div class="field">
+										<label>font-size</label>
+										<input type="range" name="fontSize" min="14" max="128" value="16">
+									</div>
+
+									<div class="field">
+										<label>font-weight</label>
+										<input type="range" name="fontWeight" min="100" max="900" step="100" value="400">
+									</div>
+
+									<div class="field color-mode main-subgrid">
+										<div class="subfield">
+											<label>Color</label>
+											<input type="radio" name="colorMode" value="color" checked>
+										</div>
+										
+										<div class="subfield">
+											<label>Black & White</label>
+											<input type="radio" name="colorMode" value="bw">
+										</div>
+									</div>
+
+								</form>
+
+
 								<div class="menu-button">
 									<button class="calm-voice button" rel='toggle' id="closeOptionsMenu">Close</button>
 								</div>
 							</div>
 						<?php }?>
+
+						<?php if ($currentPage['name'] === 'exercise') {?>
+							<div class="exercise-menu visually-hidden">
+								<nav class="exercise-links">
+										<?php foreach ($exercises as $exercise): ?>
+											<a href="?page=exercise&id=<?= $exercise['id'] ?>">
+												<?= $exercise['title'] ?>
+											</a>
+										<?php endforeach; ?>
+									</nav>
+
+								<div class="menu-button">
+									<button class="calm-voice button" rel='toggle' id="closeExerciseIndexMenu">Close</button>
+								</div>
+							</div>
+						<?php } ?>
 					
 						<nav class="menu visually-hidden">
 							<ul>
