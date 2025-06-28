@@ -2,8 +2,12 @@
 
 	<footer class="site-footer">
 		<inner-column>
-			<a href="index.php?page=style-guide">Style Guide</a>
-			<a href="index.php?page=goals">Goals</a>
+			<nav class="main-grid">
+				<a href="?page=goals" class="button calm-voice">Goals</a>
+				<a href="?page=style-guide" class="button calm-voice">Style Guide</a>
+				<a href="?page=resume" class="button calm-voice">Resume</a>
+			</nav>
+			
 		</inner-column>
 	</footer>
 

@@ -20,28 +20,80 @@ $pageTitle = renderPageTitle($currentPage['name']);
 		<header class="site-header" id="top">
 			<inner-column>
 				<masthead>
-					<h2 class="site-title loud-voice"><a href="<?=BASE_URL;?>">Ernesto Saavedra</a></h2>
+					<div class="menu-container main-grid">
+						<button class="calm-voice button" rel='toggle' id="open">Menu</button>
+						<button class="calm-voice button" rel='toggle' id="<?php
+								if ($currentPage['name'] === 'garden') {
+									?>openOptionsMenu<?php
+								} else if ($currentPage['name'] === 'exercise') {
+									?>openE4pIndexMenu<?php
+								} else if ($currentPage['name'] === 'case') {
+									?>openWorkIndexMenu<?php
+								} else {
+									?><?php
+								}
+							 ?>">
+							<?php
+								if ($currentPage['name'] === 'garden') {
+									?>Options<?php
+								} else if ($currentPage['name'] === 'exercise') {
+									?>Index<?php
+								} else if ($currentPage['name'] === 'case') {
+									?>Index<?php
+								} else {
+									?><?php
+								}
+							 ?>
+						</button>
 
-					<div class="menu-container">
-						<button class="calm-voice" rel='toggle' id="open">Menu</button>
+						<?php if ($currentPage['name'] === 'garden') {?>
+							<div class="options-menu visually-hidden">
+								<form></form>
+								<div class="menu-button">
+									<button class="calm-voice button" rel='toggle' id="closeOptionsMenu">Close</button>
+								</div>
+							</div>
+						<?php }?>
 					
 						<nav class="menu visually-hidden">
-							<a href="?page=garden">Layout Garden</a>
-							<a href="?page=design">Visual Design</a>
-							<a target="_blank" href="https://lapanaderia.substack.com/">Writing</a>
-							<a target="_blank" href="https://codepen.io/erivera-s">CodePen</a>
-							<a href="?page=programming">E4P</a>
-							<a href="?page=lab">The Lab</a>
-
-							<button class="calm-voice" rel='toggle' id="close">Close</button>
+							<ul>
+								<li>
+									<a href="?page=home">Home</a>
+								</li>
+								<li>
+									<a href="?page=garden">Layout Garden</a>
+								</li>
+								<li>
+									<a href="?page=design">Visual Design</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://lapanaderia.substack.com/">Blog</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://codepen.io/erivera-s">CodePen</a>
+								</li>
+								<li>
+									<a href="#">Work</a>
+								</li>
+								<li>
+									<a href="?page=lab">The Lab</a>
+								</li>
+								<li>
+									<a href="?page=programming">Exercises for Programmers</a>
+								</li>
+							</ul>
+							
+							<div class="menu-button">
+								<button class="calm-voice button" rel='toggle' id="close">Close</button>
+							</div>
 						</nav>
 					</div>
 					
 				</masthead>
 
-				<a class="back-to-top-button" href="#top" class="calm-voice" aria-label="Go back to the beginning">
+				<!-- <a class="back-to-top-button" href="#top" class="calm-voice" aria-label="Go back to the beginning">
 					<?php include("includes/svgs/arrow-up.php"); ?>
-				</a>
+				</a> -->
 			</inner-column>
 		</header>
 

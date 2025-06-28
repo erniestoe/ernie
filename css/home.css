@@ -1,98 +1,61 @@
 @import "style.css";
 
-@keyframes gradientShift {
- 	0% { background-position: 0% 25%; }
- 	25% { background-position: 50% 75%;}
-  	50% { background-position: 100% 75%; }
-  	75% { background-position: 75% 50%; }
-  	100% { background-position: 0% 25%; }
-}
-
 .home-content {
 	inner-column {
-		display:grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 50px;
-
-		@media (width >= 1000px) {
-			gap: 80px;
+		.logo + .homepage-canvas{
+			margin-top: 24px;
 		}
 
-		.animated-bg {
-			border: 1px solid black;
-			border-radius: 10px;
-			box-shadow: 2px 2px 0 0 black;
-			background-color: hsla(327, 100%, 50%, 1);
-    		background-image: radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(327, 100%, 50%, 1) 0%, transparent 81%), radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(206, 100%, 9%, 1) 0%, transparent 150%);
-    		background-blend-mode: overlay, normal, normal, normal, normal;
-  			background-size: 200% 200%;  
-  			animation: gradientShift 10s ease infinite;
-  			min-height: 500px;
-  			display: flex;
-  			align-items: center;
-  			justify-content: center;
+		.homepage-canvas + .about{
+			margin-top: 24px;
+		}
 
-  			grid-column: 1;
+		.logo {
+			grid-column: span 3;
 
-			@media (width <= 740px) {
-				grid-column: span 3;
-			}
-
-			@media (width <= 500px) {
-				grid-column: span 4;
+			@media (width >= 1024px) {
+				grid-column: span 6;
 			}
 		}
 
-		.overlay {
-			background: moccasin;
-  			mix-blend-mode: multiply;
+		.homepage-canvas {
+			grid-column: span 3;
+			display: block;
+			width: 345px;
+			height: 390px;
+			max-width: 100%;
+
+			@media (width >= 630px) {
+				width: 774px;
+				height: 701px;
+			}
+
+			@media (width >= 1024px) {
+				width: 1584px;
+				height: 450px;
+				grid-row: 2;
+				grid-column: span 6;
+			}
 		}
-
-		picture {
-			grid-column: 1;
-			object-fit: contain;
-			align-self: start;
-			border-radius: 10px;
-			overflow: hidden;
-			
-			img {
-				object-fit: contain;
-
-			}
-
-			@media (width <= 740px) {
-				grid-column: 1 / 3;
-			}
-
-			@media (width <= 500px) {
-				grid-column: span 4;
-			}
- 		}
 
 		.about {
-			grid-column: span 2;
-			p {
-				max-width: 90%;
-				line-height: 1.6;
-				text-wrap: pretty;
+			grid-column: span 3;
+			
+
+			 a {
+				font-weight: 700;
 			}
 
-			p a {
-				font-weight: 600;
+			@media (width >= 630px) {
+				grid-column: span 2;
 			}
 
-			@media (width <= 800px) {
+			@media (width >= 1024px) {
 				grid-column: span 3;
-				p {
-/*					max-width: 85%;*/
-				}	
+				grid-row: 3;
+				
 			}
 
-			@media (width <= 500px) {
-				grid-row: 2;
-				grid-column: span 4;
-				margin-top: 0;
-			}
 		}
 
 		.work {

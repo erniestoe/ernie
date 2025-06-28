@@ -1,6 +1,27 @@
 /*TYPOGRAPHY*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: "../assets/fonts/PPNeueMontreal-Regular.woff2" format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: "../assets/fonts/PPNeueMontreal-Bold.woff2" format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: "../assets/fonts/PPNeueMontreal-Italic.woff2" format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
 
 .quiet-voice {
 	font-size: 0.75rem;
@@ -11,6 +32,9 @@
 p {
 	font-size: 1rem;
 	font-weight: 400;
+	@media (width >= 1024px) {
+		font-size: 1.125rem;
+	}
 }
 
 .strong-voice {
@@ -21,9 +45,27 @@ p {
 .attention-voice {
 	font-size: 1.5rem;
 	font-weight: 700;
+
+	@media (width >= 630px) {
+		font-size: 3rem;
+	}
+
+	@media (width >= 1024px) {
+		font-size: 4rem;
+	}
 }
 
 .loud-voice {
 	font-size: 2rem;
 	font-weight: 800;
+}
+
+.logo {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: clamp(2.5rem, 10vw, 8rem);
+}
+
+p {
+	text-wrap: pretty;
 }

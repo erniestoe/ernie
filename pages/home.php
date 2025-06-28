@@ -1,12 +1,16 @@
 <section class="home-content">
-	<inner-column>
-		<div class="about">
-			<p><?=$pageData['about']?></p>
-		</div>
+	<inner-column class="main-grid">
+		<h1 class="logo">Ernesto Saavedra</h1>
+
+		<canvas id="homepageCanvas" class="homepage-canvas"></canvas>
+
+	
+		<p class="about"><?=$pageData['about']?></p>
+	
 		
-		<div class="animated-bg"></div>
+		
 				
-		<?php include 'modules/' . $pageData['modules'][0]; ?>
+		
 	</inner-column>
 </section>
 
