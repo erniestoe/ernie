@@ -1,6 +1,10 @@
 @import "style.css";
 
 .e4p-index {
+	header + ul {
+		margin-top: 60px;
+	}
+
 	header {
 		h2 {
 			grid-column: span 3;
@@ -17,5 +21,47 @@
 				grid-column: span 3;
 			}
 		}
+	}
+
+	.index-list {
+		width: 100%;
+
+		li {
+			display: flex;
+			align-items: center;
+			gap: 48px;
+			border-bottom: 1px solid black;
+
+
+			a {
+				padding-block: 24px;
+
+				@media (width >= 1024px) {
+					padding-block: 32px;
+				}
+			}
+
+			.selected {
+				width: 0;
+				height: 0;
+				opacity: 0;
+				border-radius: 50%;
+				background-color: var(--purple);
+				transition: all 0.6s ease;
+			}
+
+		}
+
+		@media (width >= 1024px) {
+			li:hover {
+				cursor: pointer;
+				.selected {
+					width: 25px;
+					height: 25px;
+					opacity: 1;
+				}
+			}
+		}
+		
 	}
 }

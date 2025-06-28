@@ -12,11 +12,18 @@ $exercises = $data['exercises'];
 				<p>A collection of programming exercises done by me using PHP, JavaScript, and Vue. Think of them as mini case studies. </p>
 		</header>
 
-		<?php foreach ($exercises as $exercise): ?>
-				<a href="?page=exercise&id=<?= $exercise['id'] ?>">
-					<?= $exercise['title'] ?>
-				</a>
+		<ul class="index-list">
+			<?php foreach ($exercises as $exercise): ?>
+				<li>
+					<a class="calm-voice" href="?page=exercise&id=<?= $exercise['id'] ?>">
+						<?= $exercise['title'] ?>
+					</a>
+
+					<div class="selected"></div>
+				</li>
 			<?php endforeach; ?>
+		</ul>
+		
 
 
 	</inner-column>

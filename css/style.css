@@ -221,28 +221,23 @@ h2 + h3{
 				border: 1px solid var(--main-black);
 				border-radius: 5px;
 
-				form {
-					.field {
-						border-bottom: 1px solid var(--main-black);
-						padding: 12px 6px;
-						width: 100%;
-						
-						@media (width >= 1024px) {
-							padding: 24px 12px;
-						}
-					}
+				nav {
+					overflow-y: auto;
+					max-height: 500px;
+				}
 
-					.field.color-mode {
-						.subfield:nth-of-type(1) {
-							grid-column: 1;
-						}
+				a {
+					border-bottom: 1px solid black;
+					padding: 12px 6px;
 
-						.subfield:nth-of-type(2) {
-							grid-column: 2;
-						}
+					@media (width >= 1024px) {
+						padding: 24px 12px;
 					}
 				}
-				
+
+				a:last-of-type {
+					border: none;
+				}
 
 				.menu-button {
 					width: 100%;
@@ -250,6 +245,7 @@ h2 + h3{
 					align-items: center;
 					justify-content: center;
 					padding-block: 28.5px;
+					border-top: 1px solid black;
 				}
 
 
