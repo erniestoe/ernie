@@ -1,5 +1,9 @@
 <section class="lab">
 	<inner-column>
-		<h2 class="attention-voice">No experiments yet... <a href="javascript:history.back()">Go back?</a></h2>
+		<header class="main-grid">
+			<h2 class="attention-voice"><?= $pageTitle; ?></h2>
+
+			<p>Welcome to the lab. A collection of weird and fun things... Go crazy.</p>
+		</header>
 	</inner-column>
 </section>

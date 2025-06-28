@@ -2,6 +2,29 @@
 
 .home-content {
 	inner-column {
+		.canvas-hint {
+			grid-row: 3;
+			grid-column: span 3;
+		}
+
+		.canvas-hint.fade-out {
+			opacity: 0;
+		}
+
+		.bobbing {
+			display: inline-block;
+			animation: bob 1.5s ease-in-out infinite;
+		}
+
+		@keyframes bob {
+			0%, 100% {
+				transform: translateY(0);
+			}
+			50% {
+				transform: translateY(-4px);
+			}
+		}
+		
 		.logo + .homepage-canvas{
 			margin-top: 24px;
 		}
@@ -40,6 +63,7 @@
 
 		.about {
 			grid-column: span 3;
+			grid-row: 4;
 			
 
 			 a {
@@ -52,7 +76,7 @@
 
 			@media (width >= 1024px) {
 				grid-column: span 3;
-				grid-row: 3;
+				grid-row: 4;
 				
 			}
 

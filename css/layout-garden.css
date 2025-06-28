@@ -1,5 +1,29 @@
 @import "style.css";
 
+.layout-garden {
+	header {
+		h2 {
+			grid-column: span 3;
+
+			@media (width >=1024px) {
+				grid-column: span 6;
+			}
+		}
+
+		p {
+			grid-column: span 2;
+
+			@media (width >=1024px) {
+				grid-column: span 3;
+			}
+		}
+	}
+
+	header + .main-garden {
+		margin-top: 60px;
+	}
+}
+
 .main-garden {
 	inner-column {
 		.garden-module + .garden-module{

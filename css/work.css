@@ -1,0 +1,21 @@
+@import "style.css";
+
+.work {
+	header {
+		h2 {
+			grid-column: span 3;
+
+			@media (width >=1024px) {
+				grid-column: span 6;
+			}
+		}
+
+		p {
+			grid-column: span 2;
+
+			@media (width >=1024px) {
+				grid-column: span 3;
+			}
+		}
+	}
+}

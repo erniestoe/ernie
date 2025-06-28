@@ -22,6 +22,8 @@ $pageTitle = renderPageTitle($currentPage['name']);
 				<masthead>
 					<div class="menu-container main-grid">
 						<button class="calm-voice button" rel='toggle' id="open">Menu</button>
+
+
 						<button class="calm-voice button" rel='toggle' id="<?php
 								if ($currentPage['name'] === 'garden') {
 									?>openOptionsMenu<?php
@@ -73,7 +75,7 @@ $pageTitle = renderPageTitle($currentPage['name']);
 									<a target="_blank" href="https://codepen.io/erivera-s">CodePen</a>
 								</li>
 								<li>
-									<a href="#">Work</a>
+									<a href="?page=case-study-index">Work</a>
 								</li>
 								<li>
 									<a href="?page=lab">The Lab</a>

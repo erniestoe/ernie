@@ -1,5 +1,25 @@
 @import "style.css";
 
+.design {
+	header {
+		h2 {
+			grid-column: span 3;
+
+			@media (width >=1024px) {
+				grid-column: span 6;
+			}
+		}
+
+		p {
+			grid-column: span 2;
+
+			@media (width >=1024px) {
+				grid-column: span 3;
+			}
+		}
+	}
+}
+
 .gallery {
 	inner-column {
 		display: grid;
@@ -12,9 +32,6 @@
 		picture {
 			grid-column: span 2;
 			object-fit: contain;
-			border: 1px solid black;
-			border-radius: 10px;
-			box-shadow: 2px 2px 0 0 black;
 			height: 100%;
 			overflow: hidden;
 			img {

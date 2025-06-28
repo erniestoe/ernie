@@ -22,6 +22,13 @@ main {
 	flex: 1;
 }
 
+.main-menu-opened {
+	background-color: var(--main-black);
+	color: var(--main-white);
+}
+
+
+
 inner-column {
 	display: block;
 	/*max-width: 345px;*/
