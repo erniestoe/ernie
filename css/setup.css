@@ -24,6 +24,19 @@
 	margin: 0;
 }
 
+*::selection {
+  background: var(--main-black);
+  color: var(--main-white);
+}
+*::-moz-selection {
+  background: var(--main-black);
+  color: var(--main-white);
+}
+*::-webkit-selection {
+  background: var(--main-black);
+  color: var(--main-white);
+}
+
 .main-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

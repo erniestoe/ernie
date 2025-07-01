@@ -1,16 +1,16 @@
 {
 	"id": 1,
 	"projectName": "OpenResource",
-	"tags": [
-		{
-			"tag": "Visual Identity"
-		},
-		{
-			"tag": "Product Design"
-		},
-		{
-			"tag": "WordPress Development"
-		}
-	],
-	"caseStudy": "OpenResource is a project led by me to create an online presence to list out local community resources while remaining open sourced and accessible to allow for usage by anyone. Anywhere. Eventually.In its current state it's a two part WordPress powered project. Part one being the index site where the resources are displayed, filterable, and the user is able to create PDFs from them. Part two is a marketing and (eventual) documentation site for the project itself.Along with the actual sites I created a visual identity for OpenResource that was friendly, professional and flexible enough for anyone to take the resource index theme and make it their own without having to change much."
+	"tags": ["Visual Identity", "Product Design", "WordPress Development"],
+	"caseStudy": "OpenResource is a project led by me to create an online presence to list out local community resources while remaining open sourced and accessible to allow for usage by anyone. Anywhere. Eventually.In its current state it's a two part WordPress powered project. Part one being the index site where the resources are displayed, filterable, and the user is able to create PDFs from them. Part two is a marketing and (eventual) documentation site for the project itself.Along with the actual sites I created a visual identity for OpenResource that was friendly, professional and flexible enough for anyone to take the resource index theme and make it their own without having to change much.",
+	"gallery": [
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745244118/resource-site-style-tile-1_riwnsi.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745247519/site-style-tile_r7tioc.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442013/CleanShot_2025-05-04_at_16.53.07_rb1ds4.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442021/CleanShot_2025-05-04_at_16.52.14_k5lp57.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441997/resource-site-type-and-palette_mh58nl.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442064/resource-landing-desktop_rebusl.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442067/resource-landing-wireframe_rd73ck.png"}
+	]
 }

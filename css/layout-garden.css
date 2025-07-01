@@ -1,6 +1,7 @@
 @import "style.css";
 
 .layout-garden {
+	/*overflow: hidden;*/
 	.bw-mode {
   		background-color: var(--main-white) !important;
   		color: var(--main-black) !important;

@@ -153,6 +153,7 @@ function renderCSS($page) {
     	"e4p-index" => "e4p-index.css",
     	"exercise" => "exercise.css",
     	"resume" => "resume.css",
+    	"goals" => "goals.css",
     	"404" => "404.css"
 	];
 

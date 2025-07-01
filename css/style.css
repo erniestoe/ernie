@@ -99,6 +99,8 @@ inner-column {
 				li {
 					width: 100%;
 					border-bottom: 1px solid black;
+					display: flex;
+					align-items: center;
 
 					a {
 						padding: 12px 6px;

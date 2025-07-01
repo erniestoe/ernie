@@ -1,0 +1,17 @@
+@import "style.css";
+
+.goals {
+	.goal {
+		padding-block: 24px;
+	}
+
+	.goal {
+		h3 + ul {
+			margin-top: 24px;
+		}
+
+		ul {
+			list-style-type: " - ";
+		}
+	}
+}

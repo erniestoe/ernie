@@ -29,7 +29,7 @@
 			<form-container>
 				<inner-column>
 					<header>
-						<h2 class="strong-voice">Attempt 1</h2>
+						<h3 class="strong-voice">Attempt 1</h2>
 						<p>A basic form made with PHP but upgraded with some JavaScript... Still requires you to click a button to get the result :(</p>
 					</header>
 
@@ -81,7 +81,7 @@
 			<form-container>
 				<inner-column>
 					<header>
-						<h2 class="strong-voice">Attempt 2</h2>
+						<h3 class="strong-voice">Attempt 2</h2>
 						<p>Still a basic form made with PHP but this time no button! (Asynchronous updates)</p>
 					</header>
 					

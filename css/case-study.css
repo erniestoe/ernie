@@ -15,7 +15,7 @@
 			}
 
 			h2+.tag-list {
-				margin-top: 12px;
+				margin-top: 24px;
 			}
 
 			.tag-list+p {
@@ -57,13 +57,31 @@
 					li + li {
 						margin-top: 12px;
 					}
+
+					li {
+						display: flex;
+						align-items:center;
+						gap: 6px;
+					}
 				}
 			}
 		}
 
 		case-study-gallery {
+			grid-column: span 3;
+
+			picture {
+				grid-column: span 3;
+
+				height: auto;
+
+				img {
+					height: inherit;
+				}
+			}
 			@media (width >= 1024px) {
 				grid-row: 3;
+				grid-column: span 6;
 			}
 		}
 
