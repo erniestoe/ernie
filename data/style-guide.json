@@ -1,3 +1,47 @@
 {
-	"title": "Style guide"
+	"title": "Style guide",
+	"guide":[
+		{"toneOfVoice": 
+			{
+				"title": "Tone of Voice",
+				"list": [
+					"Approachable",
+					"Knowledgable",
+					"Fun to be around",
+					"Human"
+				]
+			}
+		},
+		{"mainPalette": 
+			{
+				"title": "Main Palette",
+				"text": "Color is something that should be used to invoke emotion. Spark conversation. Compliment, not overpower. That’s why the main palette is a simple monochromatic “black and white”, this creates a blank canvas and leaves space for color to be introduced in key locations."
+			}
+		},
+		{"accentPalette":
+			{
+				"title": "Accent Palette",
+				"text": "The color palette famously used by Ellsworth Kelly in his art work. The addition of the green allows for a full “rainbow” of potential accent colors that compliment the main palette."
+			}
+		},
+		{"typeface":
+			{
+				"title": "Typeface",
+				"showcase": "PP neue Montreal",
+				"text": "Versatile, yet professional. Quiet yet says plenty. My personal favorite typeface is Helvetica, with other Geometric Sans typefaces being comparable but always lacking... something. This typeface has that something. It is the something."
+			}
+		},
+		{"typeSystem":
+			{
+				"title": "Type System",
+				"list": [
+					"quiet-voice",
+					"calm-voice",
+					"strong-voice",
+					"attention-voice",
+					"loud-voice"
+				]
+			}
+		}
+	]
 }

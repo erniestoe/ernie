@@ -1,0 +1,72 @@
+@import "style.css";
+
+.case-study {
+	inner-column {
+		a {
+			text-decoration: underline;
+		}
+		
+		.text {
+			grid-column: span 3;
+
+			@media (width >= 1024px) {
+				grid-row: 1;
+				grid-column: span 4;
+			}
+
+			h2+.tag-list {
+				margin-top: 12px;
+			}
+
+			.tag-list+p {
+				margin-top: 24px;
+			}
+
+			.tag-list {
+				grid-column: span 3;
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 12px;
+
+				.tag {
+					border: 1px solid var(--main-black);
+					border-radius: 6px;
+					padding: 6px 12px;
+					text-align: center;
+					max-width: fit-content;
+				}
+			}
+		}
+
+		links {
+			display: grid;
+			gap: 24px;
+			grid-column: span 3;
+
+			@media (width >= 1024px) {
+				grid-row: 2;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+
+				ul {
+					li + li {
+						margin-top: 12px;
+					}
+				}
+			}
+		}
+
+		case-study-gallery {
+			@media (width >= 1024px) {
+				grid-row: 3;
+			}
+		}
+
+		
+	}
+}

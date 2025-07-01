@@ -149,8 +149,10 @@ function renderCSS($page) {
     	"style-guide"=> "style-guide.css",
     	"lab"=> "lab.css",
     	"case-study-index"=> "case-study-index.css",
+    	"case-study"=> "case-study.css",
     	"e4p-index" => "e4p-index.css",
     	"exercise" => "exercise.css",
+    	"resume" => "resume.css",
     	"404" => "404.css"
 	];
 

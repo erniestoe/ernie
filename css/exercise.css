@@ -1,1 +1,58 @@
 @import "style.css";
+
+section {
+	header {
+		grid-column: span 3;
+		grid-row: 1;
+
+		@media (width >= 1024px) {
+			grid-column: span 6;
+		}
+	}
+
+	.forms {
+		grid-column: span 3;
+
+		@media (width >= 1024px) {
+			grid-column: span 6;
+		}
+	}
+}
+
+form-container {
+	display: block;
+	max-width: 774px;
+	grid-column: span 3;
+	
+
+	header {
+		padding-block: 12px;
+		border-bottom: 1px solid var(--main-black);
+
+		h2 + p {
+			margin-top: 12px;
+		}
+	}
+
+	form,
+	.field{
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+	}
+
+	form {
+		padding-block: 12px;
+
+		.field {
+			input {
+				
+				border: 1px solid var(--main-black);
+				border-radius: 6px;
+				background-color: var(--main-white);
+				padding: 6px 12px;
+			}
+		}
+	}
+}

@@ -88,6 +88,35 @@ window.onload = () => {
 	}
 
 	layoutGardenOptions();
+
+	// E4P
+	const urlParameters = new URLSearchParams(window.location.search);
+	const exerciseId = urlParameters.get('id');
+	const currentPage = urlParameters.get('page');
+
+	if (!exerciseId && currentPage === 'programming') {
+		areaOfRectangularRoom();
+		areaOfRectangularRoom2();
+	}
+
+	if (exerciseId === 'area') {
+		areaOfRectangularRoom();
+		areaOfRectangularRoom2();
+	}
+	if (exerciseId === 'tax') taxCalculator();
+	if (exerciseId === 'driving') legalDrivingAge();
+	if (exerciseId === 'anagrams') anagramChecker();
+	if (exerciseId === 'pizzaParty') pizzaParty();
+	if (exerciseId === 'converter') tempConverter();
+	if (exerciseId === 'characters') countingCharacters();
+	if (exerciseId === 'selfCheckout') {
+		selfCheckout();
+		selfCheckout2();
+	}
+	if (exerciseId === 'paint') paintCalculator();
+	if (exerciseId === 'interest') simpleInterest();
+	if (exerciseId === 'numbersToNames') numbersToNames();
+	if (exerciseId === 'addingNumbers') addingNumbers();
 }
 
 // // Homepage canvas
@@ -295,31 +324,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// E4P
-const urlParameters = new URLSearchParams(window.location.search);
-const exerciseId = urlParameters.get('id');
-const currentPage = urlParameters.get('page');
-
-if (!exerciseId && currentPage === 'programming') {
-	areaOfRectangularRoom();
-	areaOfRectangularRoom2();
-}
-
-if (exerciseId === 'area') {
-	areaOfRectangularRoom();
-	areaOfRectangularRoom2();
-}
-if (exerciseId === 'tax') taxCalculator();
-if (exerciseId === 'driving') legalDrivingAge();
-if (exerciseId === 'anagrams') anagramChecker();
-if (exerciseId === 'pizzaParty') pizzaParty();
-if (exerciseId === 'converter') tempConverter();
-if (exerciseId === 'characters') countingCharacters();
-if (exerciseId === 'selfCheckout') {
-	selfCheckout();
-	selfCheckout2();
-}
-if (exerciseId === 'paint') paintCalculator();
-if (exerciseId === 'interest') simpleInterest();
-if (exerciseId === 'numbersToNames') numbersToNames();
-if (exerciseId === 'addingNumbers') addingNumbers();

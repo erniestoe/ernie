@@ -1,7 +1,8 @@
-<section class="area-of-rect-room">
-		<inner-column>
-
-			<noscript>
+<section class="area-of-rect-room main-grid">
+		<header>
+			<inner-column>
+				<h2 class="attention-voice" id="area">Area of a rectangular room</h2>
+				<noscript>
 				<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
 
 				<?php 
@@ -19,67 +20,87 @@
 				}
 
 				$squareFeet = $length * $width;
-				$squareMeters = $squareFeet * 0.09290304;
-		?>
+				$squareMeters = $squareFeet * 0.09290304;?>
 			</noscript>
+			</inner-column>
+		</header>
 
-			<form method="POST" action="#area">
-				<h2 class="attention-voice" id="area">Area of a rectangular room</h3>
+		<div class="forms main-subgrid">
+			<form-container>
+				<inner-column>
+					<header>
+						<h2 class="strong-voice">Attempt 1</h2>
+						<p>A basic form made with PHP but upgraded with some JavaScript... Still requires you to click a button to get the result :(</p>
+					</header>
 
-				<div class="field">
-					<label>What is the length of the room in feet?</label>
-					<input type="number" name="length" value="<?=isset($_POST["submit"]) ? $length : " " ?>">
-				</div>
+					
 
-				<div class="field">
-					<label>What is the width of the room in feet?</label>
-					<input type="number" name="width" value="<?=isset($_POST["submit"]) ? $width : " " ?>">
-				</div>
+					<form method="POST" action="#area">
+						
 
-				<button type="submit" name="submit">Get the square footage</button>
-			</form>
+						<div class="field">
+							<label>What is the length of the room in feet?</label>
+							<input type="number" name="length" value="<?=isset($_POST["submit"]) ? $length : " " ?>">
+						</div>
 
-			<div class="form-output">
+						<div class="field">
+							<label>What is the width of the room in feet?</label>
+							<input type="number" name="width" value="<?=isset($_POST["submit"]) ? $width : " " ?>">
+						</div>
 
-				<?php 
-				if (isset($_POST["submit"])) {
-					if (is_numeric($_POST["length"]) && is_numeric($_POST["width"]) ) { ?>
+						<button class="button" type="submit" name="submit">Get Results</button>
+					</form>
 
-						<p>You entered dimensions of <?=$length?> feet by <?=$width?> feet</p>
+					<div class="form-output">
 
-						<p>The area is:</p>
+						<?php 
+						if (isset($_POST["submit"])) {
+							if (is_numeric($_POST["length"]) && is_numeric($_POST["width"]) ) { ?>
 
-						<p><?=$squareFeet?> square feet</p>
+								<p>You entered dimensions of <?=$length?> feet by <?=$width?> feet</p>
 
-						<p><?=$squareMeters?> square meters</p>
-				
-				<?php } elseif(!is_numeric($_POST["length"])) {
-						echo "<p>Please enter a number value for the room length</p>";
-					} elseif(!is_numeric($_POST["width"])) {
-						echo "<p>Please enter a number value for the room width</p>";
-					} else {
-						echo "<p>Please enter a number</p>";
-					}
-			
-				}?>
-			</div>
+								<p>The area is:</p>
 
-			<div class="area-v2">
-				<h2 class="attention-voice">Version 2!</h2>
+								<p><?=$squareFeet?> square feet</p>
 
-				<form>
-					<div class="field">
-						<label>What is the length of the room in feet?</label>
-						<input type="number" name="length">
+								<p><?=$squareMeters?> square meters</p>
+						
+						<?php } elseif(!is_numeric($_POST["length"])) {
+								echo "<p>Please enter a number value for the room length</p>";
+							} elseif(!is_numeric($_POST["width"])) {
+								echo "<p>Please enter a number value for the room width</p>";
+							} else {
+								echo "<p>Please enter a number</p>";
+							}
+					
+						}?>
 					</div>
+				</inner-column>
+			</form-container>
 
-					<div class="field">
-						<label>What is the width of the room in feet?</label>
-						<input type="number" name="width">
-					</div>
-				</form>
+			<form-container>
+				<inner-column>
+					<header>
+						<h2 class="strong-voice">Attempt 2</h2>
+						<p>Still a basic form made with PHP but this time no button! (Asynchronous updates)</p>
+					</header>
+					
 
-				<div class="form-output"></div>
-			</div>
-		</inner-column>
-	</section>
+					<form class="area-v2">
+						<div class="field">
+							<label>What is the length of the room in feet?</label>
+							<input type="number" name="length">
+						</div>
+
+						<div class="field">
+							<label>What is the width of the room in feet?</label>
+							<input type="number" name="width">
+						</div>
+					</form>
+
+					<div class="form-output"></div>
+				</inner-column>
+			</form-container>
+		</div>
+		
+</section>

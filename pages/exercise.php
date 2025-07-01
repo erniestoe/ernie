@@ -11,13 +11,11 @@ foreach ($exercises as $item) {
 }
 ?>
 
-<section class="exercise">
-	<inner-column>
-		<?php if ($exercise): ?>
+
+<?php if ($exercise): ?>
 					
-					<?php include($exercise['path']); ?>
-				<?php else: ?>
-					<p class="error">No exercise found for ID “<?= htmlspecialchars($exerciseId) ?>”.</p>
-				<?php endif; ?>
-	</inner-column>
-</section>
+<?php include($exercise['path']); ?>
+
+<?php else: ?>
+	<p class="error">No exercise found for ID “<?= htmlspecialchars($exerciseId) ?>”.</p>
+<?php endif; ?>

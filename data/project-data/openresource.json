@@ -1,0 +1,16 @@
+{
+	"id": 1,
+	"projectName": "OpenResource",
+	"tags": [
+		{
+			"tag": "Visual Identity"
+		},
+		{
+			"tag": "Product Design"
+		},
+		{
+			"tag": "WordPress Development"
+		}
+	],
+	"caseStudy": "OpenResource is a project led by me to create an online presence to list out local community resources while remaining open sourced and accessible to allow for usage by anyone. Anywhere. Eventually.In its current state it's a two part WordPress powered project. Part one being the index site where the resources are displayed, filterable, and the user is able to create PDFs from them. Part two is a marketing and (eventual) documentation site for the project itself.Along with the actual sites I created a visual identity for OpenResource that was friendly, professional and flexible enough for anyone to take the resource index theme and make it their own without having to change much."
+}

@@ -3,6 +3,7 @@ $pageData = getPageData($currentPage['name']);
 $pageTitle = renderPageTitle($currentPage['name']);
 $data = json_decode(file_get_contents('data/e4p-index.json'), true);
 $exercises = $data['exercises'];
+$isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 ?>
 <!doctype html>
 <html lang='en'>
@@ -18,7 +19,7 @@ $exercises = $data['exercises'];
 		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 	</head>
 
-	<body>
+	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?>">
 		<header class="site-header" id="top">
 			<inner-column>
 				<masthead>
@@ -26,12 +27,17 @@ $exercises = $data['exercises'];
 						<button class="calm-voice button" rel='toggle' id="open">Menu</button>
 
 
-						<button class="calm-voice button" rel='toggle' id="<?php
+						<button class="
+						calm-voice button 
+						<?php
+						if ($currentPage['name'] === 'style-guide') {
+							?>hidden<?php }?>
+						" rel='toggle' id="<?php
 								if ($currentPage['name'] === 'garden') {
 									?>openOptionsMenu<?php
 								} else if ($currentPage['name'] === 'exercise') {
 									?>openExerciseIndexMenu<?php
-								} else if ($currentPage['name'] === 'case') {
+								} else if ($currentPage['name'] === 'case-study') {
 									?>openWorkIndexMenu<?php
 								} else {
 									?><?php
@@ -44,11 +50,20 @@ $exercises = $data['exercises'];
 									?>Index<?php
 								} else if ($currentPage['name'] === 'case-study') {
 									?>Index<?php
+								} else if ($currentPage['name'] === 'style-guide') {
+									?><?php
 								} else {
 									?><?php
 								}
 							 ?>
 						</button>
+
+						<?php if ($currentPage['name'] === 'style-guide') { ?>
+							<a class="calm-voice button <?= $isSlidesMode ? 'slides-mode-active' : '' ?>" href="?page=style-guide<?= $isSlidesMode ? '' : '&slides=true' ?>">
+						<?= $isSlidesMode ? 'Normal Mode' : 'Slides Mode' ?></a>
+						<?php } ?>
+
+
 
 						<?php if ($currentPage['name'] === 'garden') {?>
 							<div class="options-menu visually-hidden">

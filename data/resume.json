@@ -1,3 +1,22 @@
 {
-	"title": "Resume"
+	"title": "Resume",
+	"image": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751387695/me_dflmgc.jpg",
+	"content": 
+		{
+			"intro":
+				{
+					"title": "Ernesto Rivera-Saavedra",
+					"text": "Interdisciplinary designer & front-end developer with a knack for nailing visual identities and crafting bespoke WordPress websites."
+				},
+			"education": 
+				{
+					"title": "Education",
+					"text": "B.S. in Computer Science, Western Governors University",
+					"year": "2023"
+				},
+			"experience":
+				{
+					"title": "Experience"
+				}
+		}
 }

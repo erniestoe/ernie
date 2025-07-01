@@ -1,6 +1,10 @@
 @import "style.css";
 
 .work {
+	header + ul {
+		margin-top: 60px;
+	}
+
 	header {
 		h2 {
 			grid-column: span 3;
@@ -17,5 +21,28 @@
 				grid-column: span 3;
 			}
 		}
+	}
+
+	.project-index-list {
+		width: 100%;
+
+		li {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid black;
+
+
+			a {
+				text-decoration: underline;
+
+				@media (width >= 1024px) {
+					padding-block: 32px;
+				}
+			}
+
+		}
+		
 	}
 }
