@@ -31,5 +31,8 @@ foreach ($projectFiles as $file) {
 			</li>
 		<?php }?>
 		</ul>
+
+		<div class="p5-container" id="p5Container"></div>
+
 	</inner-column>
 </section>

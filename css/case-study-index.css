@@ -45,4 +45,15 @@
 		}
 		
 	}
+
+	.p5-container {
+		width: 100%;
+		overflow: hidden;
+
+		canvas {
+			display: block;
+			width:100%;
+			height: auto;
+		}
+	}
 }
