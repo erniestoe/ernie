@@ -42,17 +42,14 @@ if ($projectId) {
 					<h2 class="strong-voice">Live sites</h2>
 
 					<ul>
-						<li>
-							<a target="_blank" href="#">Forsyth Community Resources</a>
+						<?php foreach ($project['liveLinks'] as $liveLink):?>
+							<li>
+								<a target="_blank" href="<?=$liveLink['href']?>"><?=$liveLink['text']?></a>
 
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
-						</li>
-
-						<li>
-							<a target="_blank" href="#">OpenResource.io</a>
-
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
-						</li>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+							</li>
+						<?php endforeach; ?>
+						
 					</ul>
 				</div>
 
@@ -60,17 +57,13 @@ if ($projectId) {
 					<h2 class="strong-voice">Github</h2>
 
 					<ul>
-						<li>
-							<a target="_blank" href="#">Forsyth Community Resources</a>
+						<?php foreach ($project['githubLinks'] as $githubLink):?>
+							<li>
+								<a target="_blank" href="<?=$githubLink['href']?>"><?=$githubLink['text']?></a>
 
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
-						</li>
-
-						<li>
-							<a target="_blank" href="#">OpenResource.io</a>
-
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
-						</li>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+							</li>
+						<?php endforeach; ?>
 					</ul>
 
 				</div>

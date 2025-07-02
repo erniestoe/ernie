@@ -32,14 +32,15 @@
 			align-items: center;
 			justify-content: space-between;
 			border-bottom: 1px solid black;
+			padding-block: 12px;
+
+			@media (width >= 1024px) {
+				padding-block: 24px;
+			}
 
 
 			a {
 				text-decoration: underline;
-
-				@media (width >= 1024px) {
-					padding-block: 32px;
-				}
 			}
 
 		}

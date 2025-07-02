@@ -25,6 +25,7 @@ window.onload = () => {
 	const closeWorkIndexButton = document.querySelector('#closeWorkIndexMenu')
 	const openExerciseIndexButton = document.querySelector('#openExerciseIndexMenu');
 	const closeExerciseIndexButton = document.querySelector('#closeExerciseIndexMenu');
+	const circleCursor = document.getElementById('circle-cursor');
 
 	if (openMainButton && mainMenu) {
 		openMainButton.addEventListener('click', () => {
@@ -142,6 +143,11 @@ window.onload = () => {
 	if (exerciseId === 'interest') simpleInterest();
 	if (exerciseId === 'numbersToNames') numbersToNames();
 	if (exerciseId === 'addingNumbers') addingNumbers();
+
+	document.addEventListener('mousemove', (e) => {
+	   circleCursor.style.left = `${e.clientX}px`;
+	   circleCursor.style.top = `${e.clientY}px`;
+	});
 }
 
 // // Homepage canvas
@@ -211,6 +217,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		initCanvas();
 	});
 });
+
+
 
 
 // const canvas = document.getElementById("homepageCanvas");

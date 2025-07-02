@@ -29,6 +29,7 @@ foreach ($projectFiles as $file) {
 	</head>
 
 	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?>">
+		<div id="circle-cursor"></div>
 		<header class="site-header" id="top">
 			<inner-column>
 				<masthead>

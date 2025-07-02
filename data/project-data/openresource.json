@@ -13,5 +13,26 @@
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442064/resource-landing-desktop_rebusl.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442067/resource-landing-wireframe_rd73ck.png"}
+	],
+	"liveLinks": [
+		{
+			"href": "https://forsythcommunityresources.com/",
+			"text": "Forsyth Community Resources"
+		},
+		{
+			"href": "https://openresource.io/",
+			"text": "OpenResource Marketing Site"
+		}
+	],
+	"githubLinks": [
+		{
+			"href": "https://github.com/erniestoe/resource-theme",
+			"text": "OpenResource Theme"
+		},
+		{
+			"href": "https://github.com/erniestoe/openresource",
+			"text": "OpenResource Marketing Site"
+		}
 	]
+
 }

@@ -11,10 +11,22 @@ body {
 	background-color: var(--main-white);
 	color: var(--main-black);
 	font-family: "PP Neue Montreal", sans-serif;
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 	display: flex;
   	min-height: 100vh;
   	flex-direction: column;
+  	cursor: none;
+}
+
+#circle-cursor {
+   position: fixed;
+   z-index: 100000000000; 
+   width: 20px;
+   height: 20px;
+   background-color: var(--red);
+   border-radius: 50%;
+   pointer-events: none; 
+   transform: translate(-50%, -50%); 
 }
 
 main {
