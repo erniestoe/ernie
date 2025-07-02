@@ -4,6 +4,15 @@ $pageTitle = renderPageTitle($currentPage['name']);
 $data = json_decode(file_get_contents('data/e4p-index.json'), true);
 $exercises = $data['exercises'];
 $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
+$projectFiles = glob('data/project-data/*.json');
+$projects = [];
+
+foreach ($projectFiles as $file) {
+	$data = json_decode(file_get_contents($file), true);
+	if ($data) {
+		$projects[] = $data;
+	}
+}
 ?>
 <!doctype html>
 <html lang='en'>
@@ -118,6 +127,21 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 									<button class="calm-voice button" rel='toggle' id="closeExerciseIndexMenu">Close</button>
 								</div>
 							</div>
+						<?php } ?>
+
+						<?php if ($currentPage['name'] === 'case-study') {?>
+							<div class="case-menu visually-hidden">
+									<nav class="case-links">
+										<?php foreach ($projects as $project): ?>
+											<a href="?page=case-study&id=<?= $project['id'] ?>">
+												<?= $project['projectName'] ?>
+											</a>
+										<?php endforeach; ?>
+									</nav>
+									<div class="menu-button">
+										<button class="calm-voice button" rel='toggle' id="closeWorkIndexMenu">Close</button>
+									</div>
+								</div>
 						<?php } ?>
 					
 						<nav class="menu visually-hidden">

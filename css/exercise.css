@@ -1,6 +1,7 @@
 @import "style.css";
 
 section {
+
 	header {
 		grid-column: span 3;
 		grid-row: 1;

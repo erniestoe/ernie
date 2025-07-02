@@ -16,13 +16,14 @@ if ($projectId) {
 ?>
 
 <section class="case-study ">
+	<?php if ($project): ?>
 	<header>
 		<picture>
-			<img loading="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1751379392/CleanShot_2025-07-01_at_10.16.02_2x_wn8upc.png">
+			<img loading="lazy" src="<?= $project['headerImage'] ?>">
 		</picture>
 	</header>
 	<inner-column class="main-grid">
-		<?php if ($project): ?>
+		
 			<div class="text">
 				<h2 class="attention-voice"><?= $project['projectName'] ?></h2>
 

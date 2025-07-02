@@ -16,10 +16,13 @@ window.onload = () => {
 	const mainMenu = document.querySelector('.menu');
 	const optionsMenu = document.querySelector('.options-menu');
 	const exerciseIndexMenu = document.querySelector('.exercise-menu');
+	const workIndexMenu = document.querySelector('.case-menu');
 	const openMainButton = document.querySelector('#open');
 	const closeMainButton = document.querySelector('#close');
 	const openOptionsButton = document.querySelector('#openOptionsMenu');
 	const closeOptionsButton = document.querySelector('#closeOptionsMenu');
+	const openWorkIndexButton = document.querySelector('#openWorkIndexMenu');
+	const closeWorkIndexButton = document.querySelector('#closeWorkIndexMenu')
 	const openExerciseIndexButton = document.querySelector('#openExerciseIndexMenu');
 	const closeExerciseIndexButton = document.querySelector('#closeExerciseIndexMenu');
 
@@ -34,6 +37,10 @@ window.onload = () => {
 
 			if (exerciseIndexMenu && !exerciseIndexMenu.classList.contains('visually-hidden')) {
 				exerciseIndexMenu.classList.add('visually-hidden');
+			}
+
+			if (workIndexMenu && !workIndexMenu.classList.contains('visually-hidden')) {
+				workIndexMenu.classList.add('visually-hidden');
 			}
 		});
 	}
@@ -77,6 +84,24 @@ window.onload = () => {
 			exerciseIndexMenu.classList.add('visually-hidden');
 		});
 	}
+
+	if (openWorkIndexButton && workIndexMenu) {
+		openWorkIndexButton.addEventListener('click', () => {
+			workIndexMenu.classList.toggle('visually-hidden');
+
+			if (mainMenu && !mainMenu.classList.contains('visually-hidden')) {
+				mainMenu.classList.add('visually-hidden');
+				openMainButton.classList.toggle('main-menu-opened');
+			}
+		});
+	}
+
+	if (closeWorkIndexButton && workIndexMenu) {
+		closeWorkIndexButton.addEventListener('click', () => {
+			workIndexMenu.classList.add('visually-hidden');
+		});
+	}
+
 
 	var elem = document.querySelector('.main-carousel');
 	if (elem) {

@@ -9,7 +9,7 @@ let circles = [];
 let num = 5;
 
 function setup() {
-  let cnv = createCanvas(windowWidth, 400);
+  let cnv = createCanvas(windowWidth, 624);
   cnv.parent('p5Container');
 
   cols = width / size + 1;

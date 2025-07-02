@@ -33,11 +33,8 @@
 						<p>A basic form made with PHP but upgraded with some JavaScript... Still requires you to click a button to get the result :(</p>
 					</header>
 
-					
-
 					<form method="POST" action="#area">
 						
-
 						<div class="field">
 							<label>What is the length of the room in feet?</label>
 							<input type="number" name="length" value="<?=isset($_POST["submit"]) ? $length : " " ?>">

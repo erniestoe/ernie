@@ -254,7 +254,53 @@ inner-column {
 					max-width: 660px;
 					justify-content: start;
 				}
-			}					
+			}	
+
+			.case-menu {
+				top: 48px;
+				right: 0;
+				width: 100%;
+				/*max-width: 250px;*/
+				position: absolute;
+				z-index: 1000;
+
+				background-color: var(--main-white);
+				border: 1px solid var(--main-black);
+				border-radius: 5px;
+
+				nav {
+					overflow-y: auto;
+					max-height: 500px;
+				}
+
+				a {
+					border-bottom: 1px solid black;
+					padding: 12px 6px;
+
+					@media (width >= 1024px) {
+						padding: 24px 12px;
+					}
+				}
+
+				a:last-of-type {
+					border: none;
+				}
+
+				.menu-button {
+					width: 100%;
+					display: grid;
+					align-items: center;
+					justify-content: center;
+					padding-block: 28.5px;
+					border-top: 1px solid black;
+				}
+
+
+				@media (width >= 500px) {
+					max-width: 660px;
+					justify-content: start;
+				}
+			}				
 
 		}
 

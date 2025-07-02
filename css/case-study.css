@@ -1,6 +1,9 @@
 @import "style.css";
 
 .case-study {
+	header {
+		
+	}
 	inner-column {
 		a {
 			text-decoration: underline;
