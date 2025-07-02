@@ -2,9 +2,11 @@
 
 .case-study {
 	header {
-		
+		max-height: 600px;
+		overflow: hidden;
 	}
 	inner-column {
+		
 		a {
 			text-decoration: underline;
 		}
