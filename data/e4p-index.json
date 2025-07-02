@@ -14,7 +14,7 @@
 		 {
 		   "id": "driving",
 		   "title": "Legal Driving Age",
-		   "path": "modules/e4p/legal-driving-age/index.php"
+		   "path": "modules/e4p/driving-age/index.php"
 		 },
 		 {
 		   "id": "anagrams",

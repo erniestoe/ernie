@@ -1,15 +1,18 @@
 <section class="tax-calculator main-grid">
-	<inner-column>
+	
 		<header>
+			<inner-column>
 			<noscript>
 				<p class="error">JavaScript is disabled 😱 -- no worries! This form will reload the page when submitted (shout out to the homie PHP)</p>
 			</noscript>
 
 			<h2 class="attention-voice" id="tax">Tax Calculator</h2>
+			</inner-column>
 		</header>
 
 		<div class="forms main-subgrid">
 			<form-container>
+				<inner-column>
 				<header>
 					<h3 class="strong-voice">Attempt 1</h3>
 				</header>
@@ -49,10 +52,8 @@
 					}
 				?>
 				</div>
+				</inner-column>
 			</form-container>
 		</div>
 		
-
-		
-	</inner-column>
 </section>

@@ -6,6 +6,13 @@
 	}
 
 	header {
+		h2 + p {
+			margin-top: 12px;
+			@media (width >=1024px) {
+				margin-top: 24px;
+			}
+		}
+
 		h2 {
 			grid-column: span 3;
 

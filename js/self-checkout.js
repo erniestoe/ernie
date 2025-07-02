@@ -78,7 +78,7 @@ export function selfCheckout2() {
 	function renderItems() {
 		itemsElement.innerHTML = items.map(item => `
 			<li>
-				<button data-id="${item.id}">${item.name}</button>
+				<button class="button" data-id="${item.id}">${item.name}</button>
 			</li>
 		`).join('');
 	}
@@ -105,8 +105,8 @@ export function selfCheckout2() {
 			return `
 				<li>
 				<p>${item.quantity} ${item.name} $${itemTotal.toFixed(2)}</p>
-				<button class="decrease" data-id="${item.id}">-</button>
-				<button class="increase" data-id="${item.id}">+</button>
+				<button class="decrease button" data-id="${item.id}">-</button>
+				<button class="increase button" data-id="${item.id}">+</button>
 				</li>
 			`
 		}).join('');
