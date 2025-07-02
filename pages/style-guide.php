@@ -9,39 +9,49 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 	
 	<?php foreach ($styleGuide['guide'] as $section): ?>
 		<section class="<?= $isSlidesMode ? 'slide' : '' ?>">
-			<inner-column>
+			<inner-column class="main">
 				<?php if (isset($section['toneOfVoice'])): ?>
-					<h2><?= $section['toneOfVoice']['title'] ?></h2>
-					<ol>
-						<?php foreach ($section['toneOfVoice']['list'] as $item): ?>
-							<li><strong><?= $item ?></strong></li>
-						<?php endforeach; ?>
-					</ol>
+					<div class="tone-of-voice">
+						<h2 class="attention-voice"><?= $section['toneOfVoice']['title'] ?></h2>
+						<ol>
+							<?php foreach ($section['toneOfVoice']['list'] as $item): ?>
+								<li><strong><?= $item ?></strong></li>
+							<?php endforeach; ?>
+						</ol>
+					</div>
 				<?php endif; ?>
 
 				<?php if (isset($section['mainPalette'])): ?>
-					<h2><?= $section['mainPalette']['title'] ?></h2>
-					<p><?= $section['mainPalette']['text'] ?></p>
+					<div class="main-palette">
+						<h2 class="attention-voice"><?= $section['mainPalette']['title'] ?></h2>
+						<p><?= $section['mainPalette']['text'] ?></p>
+					</div>
 				<?php endif; ?>
 
 				<?php if (isset($section['accentPalette'])): ?>
-					<h2><?= $section['accentPalette']['title'] ?></h2>
-					<p><?= $section['accentPalette']['text'] ?></p>
+					<div class="accent-palette">
+						<h2 class="attention-voice"><?= $section['accentPalette']['title'] ?></h2>
+						<p><?= $section['accentPalette']['text'] ?></p>
+					</div>
 				<?php endif; ?>
 
 				<?php if (isset($section['typeface'])): ?>
-					<h2><?= $section['typeface']['title'] ?></h2>
-					<h3><?= $section['typeface']['showcase'] ?></h3>
-					<p><?= $section['typeface']['text'] ?></p>
+					<div class="typeface">
+						<h2 class="attention-voice"><?= $section['typeface']['title'] ?></h2>
+						<h3 class="loud-voice"><?= $section['typeface']['showcase'] ?></h3>
+						<p><?= $section['typeface']['text'] ?></p>
+					</div>
 				<?php endif; ?>
 
 				<?php if (isset($section['typeSystem'])): ?>
-					<h2><?= $section['typeSystem']['title'] ?></h2>
-					<ul>
-						<?php foreach ($section['typeSystem']['list'] as $item): ?>
-							<li class="<?= $item ?>"><?= $item ?></li>
-						<?php endforeach; ?>
-					</ul>
+					<div class="type-system">
+						<h2 class="attention-voice"><?= $section['typeSystem']['title'] ?></h2>
+						<ul class="type-system-list">
+							<?php foreach ($section['typeSystem']['list'] as $item): ?>
+								<li class="<?= $item ?>"><?= $item ?></li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
 				<?php endif; ?>
 			</inner-column>
 		</section>

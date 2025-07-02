@@ -3,12 +3,17 @@
 .slide {
 	height: 100vh;
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	justify-content: center;
-	text-align: center;
+	text-align: left;
 	flex-direction: column;
 	padding: 2rem;
 	scroll-snap-align: start;
+
+	inner-column {
+		margin-inline: 0;
+	}
+
 }
 
 body.slides-mode {
@@ -19,4 +24,46 @@ body.slides-mode {
 
 .slides-mode-active {
 	background-color: var(--blue);
+}
+
+.style-guide {
+	section + section {
+		margin-top: 24px;
+
+		@media (width >= 1024px) {
+			margin-top: 64px;
+		}
+	}
+
+	ol {
+		list-style-type: disk;
+		margin-left: 12px;
+	}
+
+	inner-column {
+
+		div {
+			grid-column: span 3;
+
+			@media (width >= 1024px) {
+				grid-column: span 6;
+			}
+
+			h2 + p,
+			h2 + h3,
+			h3 + p,
+			h2 + ul,
+			h2 + ol,
+			li + li {
+				margin-top: 12px;
+
+				@media (width >= 1024px) {
+					margin-top: 24px;
+				}
+			}
+
+			
+		}
+
+	}
 }
