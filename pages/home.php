@@ -6,7 +6,7 @@
 
 			<canvas id="homepageCanvas" class="homepage-canvas"></canvas>
 			<p class="canvas-hint quiet-voice">
-				<span class="bobbing">↑</span> Try moving your mouse here
+				<span class="bobbing">↑</span> Try moving your mouse here (tap on mobile)
 			</p>
 
 			<!-- <button id="fallButton" class="calm-voice button">DESTROY</button> -->
