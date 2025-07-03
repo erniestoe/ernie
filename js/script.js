@@ -152,186 +152,64 @@ window.onload = () => {
 
 // // Homepage canvas
 
-const canvas = document.getElementById("homepageCanvas");
-const ctx = canvas.getContext("2d");
-
-// Match canvas internal pixel resolution to CSS size
-function resizeCanvasToMatchCSS(canvas) {
-	const dpr = window.devicePixelRatio || 1;
-	const rect = canvas.getBoundingClientRect();
-
-	// Set actual pixel dimensions (internal resolution)
-	canvas.width = Math.floor(rect.width * dpr);
-	canvas.height = Math.floor(rect.height * dpr);
-
-	// Set canvas style width/height (visual size)
-	canvas.style.width = `${rect.width}px`;
-	canvas.style.height = `${rect.height}px`;
-
-	// Scale the drawing context so 1 unit = 1 CSS pixel
-	ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transform
-	ctx.scale(dpr, dpr);
-}
-
-// Redraw background fill
-function fillCanvasBackground() {
-	ctx.fillStyle = "#FBFBF6";
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
-}
-
-// Animation logic
-const boxSize = 20;
-
-function eraseRandomSquare() {
-	const cols = Math.floor(canvas.width / boxSize);
-	const rows = Math.floor(canvas.height / boxSize);
-
-	const randCol = Math.floor(Math.random() * cols);
-	const randRow = Math.floor(Math.random() * rows);
-
-	const x = randCol * boxSize;
-	const y = randRow * boxSize;
-
-	ctx.fillStyle = "black";
-	ctx.fillRect(x, y, boxSize, boxSize);
-}
-
-function startErasing() {
-	setInterval(() => {
-		const count = Math.floor(Math.random() * 5) + 1;
-		for (let i = 0; i < count; i++) {
-			eraseRandomSquare();
-		}
-	}, Math.random() * 150 + 10);
-}
-
-// Initialize
-function initCanvas() {
-	resizeCanvasToMatchCSS(canvas);
-	fillCanvasBackground();
-	startErasing();
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-	requestAnimationFrame(() => {
-		initCanvas();
-	});
-});
-
-
-
-
 // const canvas = document.getElementById("homepageCanvas");
 // const ctx = canvas.getContext("2d");
 
-// const boxSize = 50;
-// const filledSquares = []; // Array of square objects now
-// const colors = ["#FFE317", "#F98A03", "#F16C6A", "#D47D8D", "#A390B2", "#584D84", "#8594D1", "#589DDA", "#2EB0B8", "#69CF79"];
-
+// // Match canvas internal pixel resolution to CSS size
 // function resizeCanvasToMatchCSS(canvas) {
 // 	const dpr = window.devicePixelRatio || 1;
 // 	const rect = canvas.getBoundingClientRect();
 
+// 	// Set actual pixel dimensions (internal resolution)
 // 	canvas.width = Math.floor(rect.width * dpr);
 // 	canvas.height = Math.floor(rect.height * dpr);
 
+// 	// Set canvas style width/height (visual size)
 // 	canvas.style.width = `${rect.width}px`;
 // 	canvas.style.height = `${rect.height}px`;
 
-// 	ctx.setTransform(1, 0, 0, 1, 0, 0);
+// 	// Scale the drawing context so 1 unit = 1 CSS pixel
+// 	ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transform
 // 	ctx.scale(dpr, dpr);
 // }
 
+// // Redraw background fill
 // function fillCanvasBackground() {
 // 	ctx.fillStyle = "#FBFBF6";
 // 	ctx.fillRect(0, 0, canvas.width, canvas.height);
 // }
 
-// function drawSquare(x, y) {
-// 	const color = colors[Math.floor(Math.random() * colors.length)];
-// 	filledSquares.push({
-// 		x,
-// 		y,
-// 		color,
-// 		isFalling: false,
-// 		velocityY: 0
-// 	});
-// 	ctx.fillStyle = color;
+// // Animation logic
+// const boxSize = 20;
+
+// function eraseRandomSquare() {
+// 	const cols = Math.floor(canvas.width / boxSize);
+// 	const rows = Math.floor(canvas.height / boxSize);
+
+// 	const randCol = Math.floor(Math.random() * cols);
+// 	const randRow = Math.floor(Math.random() * rows);
+
+// 	const x = randCol * boxSize;
+// 	const y = randRow * boxSize;
+
+// 	ctx.fillStyle = "black";
 // 	ctx.fillRect(x, y, boxSize, boxSize);
 // }
 
-// function handleMouseMove(e) {
-// 	const rect = canvas.getBoundingClientRect();
-// 	const x = Math.floor((e.clientX - rect.left) / boxSize) * boxSize;
-// 	const y = Math.floor((e.clientY - rect.top) / boxSize) * boxSize;
-
-// 	// Check if square already exists at that position
-// 	const key = `${x},${y}`;
-// 	const exists = filledSquares.some(sq => sq.x === x && sq.y === y);
-// 	if (!exists) {
-// 		drawSquare(x, y);
-// 	}
-// }
-
-// // Animation logic
-// function drawSquares() {
-// 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-// 	for (let square of filledSquares) {
-// 		if (square.isFalling) {
-// 			// Explosion physics
-// 			square.vy += .5; // gravity
-// 			square.x += square.vx;
-// 			square.y += square.vy;
+// function startErasing() {
+// 	setInterval(() => {
+// 		const count = Math.floor(Math.random() * 5) + 1;
+// 		for (let i = 0; i < count; i++) {
+// 			eraseRandomSquare();
 // 		}
-// 		ctx.fillStyle = square.color;
-// 		ctx.fillRect(square.x, square.y, boxSize, boxSize);
-// 	}
+// 	}, Math.random() * 150 + 10);
 // }
 
-
-// let isAnimating = false;
-// function animate() {
-// 	if (!isAnimating) return;
-
-// 	drawSquares();
-
-// 	// Stop animation if all blocks have fallen out of view
-// 	const anyOnScreen = filledSquares.some(sq => sq.y < canvas.height);
-// 	if (anyOnScreen) {
-// 		requestAnimationFrame(animate);
-// 	} else {
-// 		isAnimating = false;
-// 	}
-// }
-
-// // Setup fall button
-// document.addEventListener("DOMContentLoaded", () => {
-// 	const fallButton = document.getElementById("fallButton");
-// 	if (fallButton) {
-// 		fallButton.addEventListener("click", () => {
-// 			for (let square of filledSquares) {
-// 				square.isFalling = true;
-
-// 				// Explosion-style velocity
-// 				const angle = Math.random() * Math.PI * 2; // Random direction
-// 				const speed = Math.random() * 10 + 5;      // Random speed
-
-// 				square.vx = Math.cos(angle) * speed;
-// 				square.vy = Math.sin(angle) * speed;
-// 			}
-// 			isAnimating = true;
-// 			animate();
-// 		});
-
-// 	}
-// });
-
-// // Initialize canvas + listeners
+// // Initialize
 // function initCanvas() {
 // 	resizeCanvasToMatchCSS(canvas);
 // 	fillCanvasBackground();
-// 	canvas.addEventListener("mousemove", handleMouseMove);
+// 	startErasing();
 // }
 
 // document.addEventListener("DOMContentLoaded", () => {
@@ -340,19 +218,141 @@ document.addEventListener("DOMContentLoaded", () => {
 // 	});
 // });
 
-// // Hint fade-out logic
-// let hasInteractedWithCanvas = false;
-// if (canvas) {
-// 	canvas.addEventListener("mouseenter", () => {
-// 		if (!hasInteractedWithCanvas) {
-// 			hasInteractedWithCanvas = true;
-// 			const hint = document.querySelector(".canvas-hint");
-// 			if (hint) {
-// 				hint.classList.add("fade-out");
-// 			}
-// 		}
-// 	});
-// }
+
+
+
+const canvas = document.getElementById("homepageCanvas");
+const ctx = canvas.getContext("2d");
+
+const boxSize = 50;
+const filledSquares = []; // Array of square objects now
+const colors = ["#FFE317", "#F98A03", "#F16C6A", "#D47D8D", "#A390B2", "#584D84", "#8594D1", "#589DDA", "#2EB0B8", "#69CF79"];
+
+function resizeCanvasToMatchCSS(canvas) {
+	const dpr = window.devicePixelRatio || 1;
+	const rect = canvas.getBoundingClientRect();
+
+	canvas.width = Math.floor(rect.width * dpr);
+	canvas.height = Math.floor(rect.height * dpr);
+
+	canvas.style.width = `${rect.width}px`;
+	canvas.style.height = `${rect.height}px`;
+
+	ctx.setTransform(1, 0, 0, 1, 0, 0);
+	ctx.scale(dpr, dpr);
+}
+
+function fillCanvasBackground() {
+	ctx.fillStyle = "#FBFBF6";
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+function drawSquare(x, y) {
+	const color = colors[Math.floor(Math.random() * colors.length)];
+	filledSquares.push({
+		x,
+		y,
+		color,
+		isFalling: false,
+		velocityY: 0
+	});
+	ctx.fillStyle = color;
+	ctx.fillRect(x, y, boxSize, boxSize);
+}
+
+function handleMouseMove(e) {
+	const rect = canvas.getBoundingClientRect();
+	const x = Math.floor((e.clientX - rect.left) / boxSize) * boxSize;
+	const y = Math.floor((e.clientY - rect.top) / boxSize) * boxSize;
+
+	// Check if square already exists at that position
+	const key = `${x},${y}`;
+	const exists = filledSquares.some(sq => sq.x === x && sq.y === y);
+	if (!exists) {
+		drawSquare(x, y);
+	}
+}
+
+// Animation logic
+function drawSquares() {
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	for (let square of filledSquares) {
+		if (square.isFalling) {
+			// Explosion physics
+			square.vy += .5; // gravity
+			square.x += square.vx;
+			square.y += square.vy;
+		}
+		ctx.fillStyle = square.color;
+		ctx.fillRect(square.x, square.y, boxSize, boxSize);
+	}
+}
+
+
+let isAnimating = false;
+function animate() {
+	if (!isAnimating) return;
+
+	drawSquares();
+
+	// Stop animation if all blocks have fallen out of view
+	const anyOnScreen = filledSquares.some(sq => sq.y < canvas.height);
+	if (anyOnScreen) {
+		requestAnimationFrame(animate);
+	} else {
+		isAnimating = false;
+	}
+}
+
+// Setup fall button
+document.addEventListener("DOMContentLoaded", () => {
+	const fallButton = document.getElementById("fallButton");
+	if (fallButton) {
+		fallButton.addEventListener("click", () => {
+			for (let square of filledSquares) {
+				square.isFalling = true;
+
+				// Explosion-style velocity
+				const angle = Math.random() * Math.PI * 2; // Random direction
+				const speed = Math.random() * 10 + 5;      // Random speed
+
+				square.vx = Math.cos(angle) * speed;
+				square.vy = Math.sin(angle) * speed;
+			}
+			isAnimating = true;
+			animate();
+		});
+
+	}
+});
+
+// Initialize canvas + listeners
+function initCanvas() {
+	resizeCanvasToMatchCSS(canvas);
+	fillCanvasBackground();
+	canvas.addEventListener("mousemove", handleMouseMove);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+	requestAnimationFrame(() => {
+		initCanvas();
+	});
+});
+
+// Hint fade-out logic
+let hasInteractedWithCanvas = false;
+if (canvas) {
+	canvas.addEventListener("mouseenter", () => {
+		if (!hasInteractedWithCanvas) {
+			hasInteractedWithCanvas = true;
+			const hint = document.querySelector(".canvas-hint");
+			if (hint) {
+				hint.classList.add("fade-out");
+			}
+		}
+	});
+}
 
 
 

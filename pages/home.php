@@ -5,11 +5,11 @@
 		<!-- <canvas id="homepageCanvas" class="homepage-canvas"></canvas> -->
 
 			<canvas id="homepageCanvas" class="homepage-canvas"></canvas>
-			<!-- <p class="canvas-hint">
+			<p class="canvas-hint quiet-voice">
 				<span class="bobbing">↑</span> Try moving your mouse here
 			</p>
 
-			<button id="fallButton" class="calm-voice button">DESTROY</button> -->
+			<!-- <button id="fallButton" class="calm-voice button">DESTROY</button> -->
 
 	
 		<p class="about"><?=$pageData['about']?></p>
