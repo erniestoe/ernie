@@ -19,14 +19,18 @@ body {
 }
 
 #circle-cursor {
-   position: fixed;
-   z-index: 100000000000; 
-   width: 20px;
-   height: 20px;
-   background-color: var(--red);
-   border-radius: 50%;
-   pointer-events: none; 
-   transform: translate(-50%, -50%); 
+
+	@media (width >= 1024px) {
+		position: fixed;
+		z-index: 100000000000; 
+		width: 20px;
+		height: 20px;
+		background-color: var(--red);
+		border-radius: 50%;
+		pointer-events: none; 
+		transform: translate(-50%, -50%);
+	}
+    
 }
 
 main {
