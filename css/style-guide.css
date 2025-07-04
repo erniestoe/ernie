@@ -27,6 +27,7 @@ body.slides-mode {
 }
 
 .style-guide {
+
 	section + section {
 		margin-top: 24px;
 
@@ -45,6 +46,13 @@ body.slides-mode {
 		div {
 			grid-column: span 3;
 
+			picture {
+				@media (width >= 700px) {
+					max-width: 75%;
+				}
+				
+			}
+
 			@media (width >= 1024px) {
 				grid-column: span 6;
 			}
@@ -54,7 +62,8 @@ body.slides-mode {
 			h3 + p,
 			h2 + ul,
 			h2 + ol,
-			li + li {
+			li + li,
+			p + picture {
 				margin-top: 12px;
 
 				@media (width >= 1024px) {

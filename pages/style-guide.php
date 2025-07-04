@@ -25,6 +25,10 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 					<div class="main-palette">
 						<h2 class="attention-voice"><?= $section['mainPalette']['title'] ?></h2>
 						<p><?= $section['mainPalette']['text'] ?></p>
+
+						<picture>
+							<img loading="lazy" src="<?= $section['mainPalette']['img']?>">
+						</picture>
 					</div>
 				<?php endif; ?>
 
@@ -32,6 +36,10 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 					<div class="accent-palette">
 						<h2 class="attention-voice"><?= $section['accentPalette']['title'] ?></h2>
 						<p><?= $section['accentPalette']['text'] ?></p>
+
+						<picture>
+							<img loading="lazy" src="<?= $section['accentPalette']['img']?>">
+						</picture>
 					</div>
 				<?php endif; ?>
 
