@@ -13,11 +13,23 @@
 
 	
 		<p class="about"><?=$pageData['about']?></p>
-	
-		
-		
-				
-		
+
+		<work-list>
+			<h2 class="strong-voice">Select work</h2>
+
+			<ul class="home-work-list">
+			<?php foreach ($projects as $project) {?>
+				<li>
+					<p><?= $project['projectName']?></p>
+
+					<a href="?page=case-study&id=<?=$project['id']?>">
+						View Case
+					</a>
+				</li>
+			<?php }?>
+			</ul>
+		</work-list>
+
 	</inner-column>
 </section>
 

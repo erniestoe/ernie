@@ -33,6 +33,10 @@
 			margin-top: 24px;
 		}
 
+		.about + work-list {
+			margin-top: 24px;
+		}
+
 		.logo {
 			grid-column: span 3;
 
@@ -82,36 +86,25 @@
 
 		}
 
-		.work {
-			align-self: end;
+		work-list {
 			display: grid;
-			padding-bottom: 40px;
-			@media (width >= 1000px) {
-				padding-bottom: 0;
-			}
+			grid-column: span 3;
+			grid-row: 5;
 
 			li {
-				/*display: flex;
+				display: flex;
+				align-items: center;
 				justify-content: space-between;
-				align-items: center;*/
-				display: grid;
-				grid-template-columns: 50px 1fr;
-			}
+				border-bottom: 1px solid black;
+				padding-block: 12px;
 
-			li + li {
-				padding-top: 10px;
-			}
+				@media (width >= 1024px) {
+					padding-block: 24px;
+				}
 
-			.number {
-				font-weight: 700;
-			}
-
-			@media (width <= 740px) {
-				grid-column: span 4;
-			}
-
-			@media (width <= 500px) {
-				grid-row: 3;
+				a {
+					text-decoration: underline;
+				}
 			}
 		}
 

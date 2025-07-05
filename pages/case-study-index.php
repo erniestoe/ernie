@@ -1,15 +1,3 @@
-<?php
-$projects = [];
-$projectFiles = glob('data/project-data/*.json');
-
-foreach ($projectFiles as $file) {
-	$data = json_decode(file_get_contents($file),true);
-	if ($data) {
-		$projects[] = $data;
-	}
-}
-?>
-
 <section class="work">
 	<inner-column>
 		<header>
