@@ -35,6 +35,13 @@
 			ul {
 				padding-block: 12px;
 			}
+
+		}
+
+		.intro {
+			p {
+				padding-block: 12px;
+			}
 		}
 
 		.experience {
