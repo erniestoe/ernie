@@ -50,6 +50,11 @@
 			@media (width >= 1024px) {
 				grid-row: 3;
 			}
+
+			iframe {
+				
+				aspect-ratio: 16/9;
+			}
 		}
 
 		links {
