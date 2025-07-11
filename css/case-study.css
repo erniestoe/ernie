@@ -77,7 +77,11 @@
 
 			iframe {
 				aspect-ratio: 16/9;
-				grid-column: span 6;
+				grid-column: span 3;
+
+				@media (width >= 1024px ){ 
+					grid-column: span 6;
+				}
 			}
 
 			picture {
