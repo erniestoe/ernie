@@ -65,8 +65,12 @@ inner-column {
 	}
 }
 
+.site-header + main {
+	margin-top: 96px;
+}
+
 .site-header {
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;

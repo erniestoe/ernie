@@ -2,6 +2,10 @@
 
 section {
 
+	.button {
+		min-width: 200px;
+	}
+
 	header {
 		grid-column: span 3;
 		grid-row: 1;
