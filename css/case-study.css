@@ -52,8 +52,8 @@
 			}
 
 			iframe {
-				
 				aspect-ratio: 16/9;
+				min-width: 1000px;
 			}
 		}
 
