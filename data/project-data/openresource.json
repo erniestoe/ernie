@@ -11,10 +11,13 @@
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442021/CleanShot_2025-05-04_at_16.52.14_k5lp57.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441997/resource-site-type-and-palette_mh58nl.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442064/resource-landing-desktop_rebusl.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442067/resource-landing-wireframe_rd73ck.png"}
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png"}
 	],
 	"video": "https://www.youtube.com/embed/s4yvmZxdEbo?si=7P6EgnI7GtiK_g1I",
+	"figma": [
+		{"src": "https://embed.figma.com/board/Y5ispu3Xv5rTNLTfMWUOqo/Resource-list?node-id=0-1&embed-host=share"},
+		{"src": "https://embed.figma.com/design/OInnEQ2tcL5JHVquyCjuhv/Resource-Site?node-id=0-1&embed-host=share"}
+	],
 	"liveLinks": [
 		{
 			"href": "https://forsythcommunityresources.com/",

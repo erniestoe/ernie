@@ -8,6 +8,10 @@
 	
 	],
 	"video": "https://www.youtube.com/embed/1D-mGgpdHsA?si=J2V4BC50dZwHfF47",
+	"figma": [
+		{"src": "https://embed.figma.com/design/dGuEHOUzxiLfEjUF3vEeiX/studio-ernie---style-tile-and-mockup?node-id=4-879&embed-host=share"},
+		{"src": "https://embed.figma.com/board/JluCVbyIGt9TC6J6J5HtaS/Studio-Ernie?node-id=0-1&embed-host=share"}
+	],
 	"liveLinks": [
 		{
 			"href": "https://studio.ersaavedra.dev/",

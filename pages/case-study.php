@@ -37,12 +37,6 @@ if ($projectId) {
 				<p><?= $project['caseStudy'] ?></p>
 			</div>
 
-			<?php if ($project['video']): ?>
-				<div class="video">
-					<iframe  src="<?= $project['video'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
-			<?php endif; ?>
-
 			<links>
 				<div class="live">
 					<h2 class="strong-voice">Live sites</h2>
@@ -78,6 +72,16 @@ if ($projectId) {
 			</links>
 
 			<case-study-gallery class="main-subgrid">
+				<?php if ($project['video']): ?>
+					<iframe loading="lazy" src="<?= $project['video'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<?php endif; ?>
+
+				<?php if ($project['figma']): ?>
+					<?php foreach ($project['figma'] as $figmaEmbed): ?>
+						<iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="<?= $figmaEmbed['src']; ?>" allowfullscreen></iframe>
+					<?php endforeach ?>
+				<?php endif; ?>
+
 				<?php foreach ($project['gallery']  as $image): ?>
 					<picture>
 						<img loading="lazy" src="<?= $image['src']; ?>">
