@@ -1,0 +1,84 @@
+spotlight-cards {
+	--pink: #f5a2c5;
+	--orange: #fa8e44;
+	--yellow: #ffce00;
+
+	inner-column {
+		max-width: 1300px;
+	}
+
+	card-grid {
+		display: grid;
+		gap: 20px;
+		margin-top: 25px;
+
+		h2 + p {
+			margin-top: 0;
+		}
+
+		.pink {
+			background-color: var(--pink);
+		}
+
+		.orange {
+			background-color: var(--orange);
+		}
+
+		.yellow {
+			background-color: var(--yellow);
+		}
+
+		card {
+			display: flex;
+			flex-direction: column;
+
+			.card-text {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				padding: 25px 50px;
+			}
+		}
+
+		@media (min-width: 900px) {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+
+			.pink {
+				grid-column: 1 / span 2;
+				grid-row: 1 / span 2;
+				flex-direction: column-reverse;
+			}
+
+			.orange {
+				grid-column: span 2;
+				flex-direction: row;
+			}
+
+			.yellow {
+				grid-column: span 2;
+				flex-direction: row-reverse;	
+			}
+
+			.pink {
+				picture {
+					flex-basis: 75%;
+				}
+			}
+
+			.orange,
+				.yellow {
+					picture {
+						flex-basis: 80%;
+					}
+
+					.card-text {
+						align-items: start;
+						justify-content: center;
+						text-align: left;
+					}
+				}
+		}
+	}
+}

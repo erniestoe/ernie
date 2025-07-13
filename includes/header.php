@@ -76,7 +76,7 @@ foreach ($projectFiles as $file) {
 
 
 						<?php if ($currentPage['name'] === 'garden') {?>
-							<div class="options-menu visually-hidden">
+							<!-- <div class="options-menu visually-hidden">
 								<form id="gardenControls" class="garden-controls">
 									<div class="field">
 										<label>border-radius</label>
@@ -107,6 +107,65 @@ foreach ($projectFiles as $file) {
 
 								</form>
 
+
+								<div class="menu-button">
+									<button class="calm-voice button" rel='toggle' id="closeOptionsMenu">Close</button>
+								</div>
+							</div> -->
+							<div class="options-menu visually-hidden">
+								<form id="gardenControls" class="garden-controls">
+									<div class="field">
+										<label>border-radius</label>
+										<input type="range" name="borderRadius" min="0" max="100" value="8">
+									</div>
+
+									<div class="field">
+										<label>font-size</label>
+										<input type="range" name="fontSize" min="14" max="128" value="16">
+									</div>
+
+									<div class="field">
+										<label>font-weight</label>
+										<input type="range" name="fontWeight" min="100" max="900" step="100" value="400">
+									</div>
+
+									<div class="field">
+										<label>unit</label>
+										<input type="range" name="unit" min="0.4" max="0.8" step="0.01" value="0.5">
+									</div>
+
+									<div class="field">
+										<label>space increment</label>
+										<input type="range" name="spaceIncrement" min="1" max="2" step="0.01" value="1">
+									</div>
+
+									<div class="field">
+										<label>accent hue</label>
+										<input type="range" name="accentHue" min="0" max="360" step="1" value="180">
+									</div>
+
+									<div class="field">
+										<label>accent saturation</label>
+										<input type="range" name="accentSaturation" min="0" max="100" step="1" value="50">
+									</div>
+
+									<div class="field">
+										<label>accent lightness</label>
+										<input type="range" name="accentLightness" min="0" max="100" step="1" value="50">
+									</div>
+
+									<div class="field color-mode main-subgrid">
+										<div class="subfield">
+											<label>Color</label>
+											<input type="radio" name="colorMode" value="color" checked>
+										</div>
+										
+										<div class="subfield">
+											<label>Black & White</label>
+											<input type="radio" name="colorMode" value="bw">
+										</div>
+									</div>
+								</form>
 
 								<div class="menu-button">
 									<button class="calm-voice button" rel='toggle' id="closeOptionsMenu">Close</button>

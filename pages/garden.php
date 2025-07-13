@@ -10,7 +10,5 @@
 				<?php renderGardenSection();?>
 		</section>
 	</inner-column>
-	
-
 </section>
 

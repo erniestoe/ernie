@@ -1,6 +1,45 @@
 @import "style.css";
+@import "garden-modules/ad-card.css";
+@import "garden-modules/bento-grid.css";
+@import "garden-modules/bio-and-list.css";
+@import "garden-modules/bio-card.css";
+@import "garden-modules/block-layout.css";
+@import "garden-modules/bold-cards.css";
+@import "garden-modules/circle-bio.css";
+@import "garden-modules/event-section.css";
+@import "garden-modules/footer-madness.css";
+@import "garden-modules/grid-layout-1.css";
+@import "garden-modules/grid-layout-2.css";
+@import "garden-modules/grid-layout-3.css";
+@import "garden-modules/grid-layout-4.css";
+@import "garden-modules/info-card.css";
+@import "garden-modules/info-grid.css";
+@import "garden-modules/layout-challenge-grid.css";
+@import "garden-modules/layout-challenge.css";
+@import "garden-modules/minimal-layout.css";
+@import "garden-modules/news-section.css";
+@import "garden-modules/nice-header.css";
+@import "garden-modules/opendot-footer.css";
+@import "garden-modules/project-description.css";
+@import "garden-modules/project-list-2.css";
+@import "garden-modules/project-list.css";
+@import "garden-modules/research-and-employ.css";
+@import "garden-modules/services-section.css";
+@import "garden-modules/specs-section.css";
+@import "garden-modules/split-hero.css";
+@import "garden-modules/split-splash.css";
+@import "garden-modules/spotlight-cards.css";
+@import "garden-modules/staggered-grid.css";
+@import "garden-modules/stats-grid.css";
+@import "garden-modules/testimonial-cards.css";
+@import "garden-modules/text-grid.css";
+@import "garden-modules/three-card-stats.css";
+@import "garden-modules/trendy-splash.css";
 
 .layout-garden {
+	padding: calc(var(--spacing-unit) * var(--space-increment));
+	color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
+
 	/*overflow: hidden;*/
 	.bw-mode {
   		background-color: var(--main-white) !important;

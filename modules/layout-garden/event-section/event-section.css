@@ -1,0 +1,65 @@
+/*#af539e - puprle*/
+
+event-section {
+	display: block;
+
+	header {
+		background-color: #af539e;
+		min-height: 20vh;
+		padding-top: 85px;
+	}
+
+	.event-info {
+		inner-column {
+			.event-type,
+			.event-register
+			 {
+			 	padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			.event-type {
+				border-bottom: 2px solid black;
+			}
+
+			.event-register {
+				max-width: 80%;
+
+				a {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	.event-speakers {
+		inner-column {
+			display: grid;
+			gap: 15px;
+
+			@media (min-width: 700px) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			speaker-card {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				border: 1px solid black;
+				box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+				padding: 12px;
+
+				picture {
+					border: 1px solid black;
+				}
+
+				.card-text {
+					display: flex;
+					flex-direction: column;
+					gap: 20px;
+					align-items: center;
+				}
+			}
+		}
+	}
+}

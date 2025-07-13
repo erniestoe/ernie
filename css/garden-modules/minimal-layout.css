@@ -1,0 +1,30 @@
+minimal-layout{
+	display: block;
+	background-color: #d8f585;
+	min-height: 65vh;
+
+	inner-column {
+		display: grid;
+		gap: 50px;
+
+		@media (min-width: 1000px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.content {
+			display: grid;
+			gap: 25px;
+
+			@media (min-width: 1000px) {
+				grid-template-columns: 1fr 1fr;
+				gap: 30px;
+			}
+
+			li {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+		}
+	}
+}

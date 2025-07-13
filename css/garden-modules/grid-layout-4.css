@@ -1,0 +1,66 @@
+grid-layout-4 {
+	display: grid;
+	background-color: #d6dcbf;
+	grid-template-columns: repeat(5, 1fr);
+
+	inner-column {
+		max-width: 1450px;
+		height: auto;
+	}
+
+	.text {
+		position:relative;
+		height: auto;
+		grid-column: span 2;
+
+		@media (width <= 850px) {
+			grid-column: span 5;
+		}
+
+		inner-column {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 25px;
+			height: 100%;
+
+			.intro {
+				p {
+					max-width: 65%;
+					margin-top: 100px;
+
+					@media (width <= 1120px) {
+						margin-top: 50px;
+						max-width: 90%;
+					}
+
+					@media (width <= 850px) {
+						margin-top: 25px;
+						max-width: 65%;
+					}
+
+					@media (width <= 450px) {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.cities {
+		grid-column: span 3;
+		align-self: end;
+
+		@media (width <= 850px) {
+			grid-row: 2;
+			grid-column: span 5;
+		}
+
+		.city-list {
+			li {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+}

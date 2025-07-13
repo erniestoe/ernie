@@ -164,27 +164,57 @@ function renderCSS($page) {
 function renderGardenSection() {
 		$modules = [
 			"innerColumn" => [
-				"modules/footer-madness/footer-madness.php",
-				"modules/bold-cards/bold-cards.php"
+				"modules/layout-garden/footer-madness/footer-madness.php",
+				"modules/layout-garden/bold-cards/bold-cards.php"
 			],
 			"noInnerColumn" => [
-				"modules/layout-challenge/layout-challenge.php", "modules/info-card/info-card.php", "modules/intro-grid/intro-grid.php", "modules/news-section/news-section.php", "modules/split-splash/split-splash.php", "modules/bento-grid/bento-grid.php", "modules/ad-card/ad-card.php", "modules/spotlight-cards/spotlight-cards.php", "modules/nice-header/nice-header.php", "modules/bio-and-list/bio-and-list.php", "modules/event-section/event-section.php", "modules/staggered-grid/staggered-grid.php", "modules/specs-section/specs-section.php", "modules/project-description/project-description.php", "modules/block-layout/block-layout.php", "modules/project-list/project-list.php", "modules/split-hero/split-hero.php", "modules/trendy-splash/trendy-splash.php", "modules/testimonial-cards/testimonial-cards.php", "modules/circle-bio/circle-bio.php", "modules/services-section/services-section.php", "modules/project-list-2/project-list-2.php", "modules/text-grid/text-grid.php", "modules/minimal-layout/minimal-layout.php", "modules/stats-grid/stats-grid.php", "modules/research-and-employ/research-and-employ.php", "modules/layout-challenge-grid/layout-challenge-grid.php", "modules/opendot-footer/opendot-footer.php", "modules/grid-layout-1/grid-layout-1.php", "modules/grid-layout-2/grid-layout-2.php", "modules/grid-layout-3/grid-layout-3.php", "modules/grid-layout-4/grid-layout-4.php", "modules/three-card-stats/three-card-stats.php", "modules/medley-week-layout-1/medley-week-layout-1.php", "modules/medley-week-layout-2/medley-week-layout-2.php", "modules/medley-week-layout-3/medley-week-layout-3.php", "modules/fun-cta/fun-cta.php"
+				"modules/layout-garden/layout-challenge/layout-challenge.php",
+				"modules/layout-garden/info-card/info-card.php",
+				"modules/layout-garden/intro-grid/intro-grid.php",
+				"modules/layout-garden/news-section/news-section.php",
+				"modules/layout-garden/split-splash/split-splash.php",
+				"modules/layout-garden/bento-grid/bento-grid.php",
+				"modules/layout-garden/ad-card/ad-card.php",
+				"modules/layout-garden/spotlight-cards/spotlight-cards.php",
+				"modules/layout-garden/nice-header/nice-header.php",
+				"modules/layout-garden/bio-and-list/bio-and-list.php",
+				"modules/layout-garden/event-section/event-section.php",
+				"modules/layout-garden/staggered-grid/staggered-grid.php",
+				"modules/layout-garden/specs-section/specs-section.php",
+				"modules/layout-garden/project-description/project-description.php",
+				"modules/layout-garden/block-layout/block-layout.php",
+				"modules/layout-garden/project-list/project-list.php",
+				"modules/layout-garden/split-hero/split-hero.php",
+				"modules/layout-garden/trendy-splash/trendy-splash.php",
+				"modules/layout-garden/testimonial-cards/testimonial-cards.php",
+				"modules/layout-garden/circle-bio/circle-bio.php",
+				"modules/layout-garden/services-section/services-section.php",
+				"modules/layout-garden/project-list-2/project-list-2.php",
+				"modules/layout-garden/text-grid/text-grid.php",
+				"modules/layout-garden/minimal-layout/minimal-layout.php",
+				"modules/layout-garden/stats-grid/stats-grid.php",
+				"modules/layout-garden/research-and-employ/research-and-employ.php",
+				"modules/layout-garden/layout-challenge-grid/layout-challenge-grid.php",
+				"modules/layout-garden/opendot-footer/opendot-footer.php",
+				"modules/layout-garden/grid-layout-1/grid-layout-1.php",
+				"modules/layout-garden/grid-layout-2/grid-layout-2.php",
+				"modules/layout-garden/grid-layout-3/grid-layout-3.php",
+				"modules/layout-garden/grid-layout-4/grid-layout-4.php",
+				"modules/layout-garden/three-card-stats/three-card-stats.php",
+				"modules/layout-garden/medley-week-layout-1/medley-week-layout-1.php",
+				"modules/layout-garden/medley-week-layout-2/medley-week-layout-2.php",
+				"modules/layout-garden/medley-week-layout-3/medley-week-layout-3.php",
+				"modules/layout-garden/fun-cta/fun-cta.php"
 			]
 		];
 
 		foreach ($modules["noInnerColumn"] as $module) { ?>
-			<section class="garden-module">
-					<?php include $module?>
-			</section>
+			<?php include $module?>
 		<?php } ?>
 
 	<?php 
 		foreach ($modules["innerColumn"] as $module) { ?>
-			<section class="garden-module">
-				<inner-column>
-					<?php include $module?>
-				</inner-column>
-			</section>
+			<?php include $module?>
 		<?php } 
 }
 

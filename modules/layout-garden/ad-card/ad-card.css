@@ -1,0 +1,50 @@
+ad-card {
+	inner-column {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align:center;
+
+			h3 + p,
+			.text-links {
+				margin-top: 25px;
+			}
+
+			.text-links {
+				display: flex;
+				gap: 20px;
+
+				a {
+					text-decoration: none;
+					background-color: #333;
+					color: whitesmoke;
+					padding: 15px 20px;
+					border-radius: 8px;
+				}
+			}
+		}
+
+		@media (min-width: 1000px) {
+			flex-direction: row-reverse;
+			align-items: center;
+
+			picture {
+				flex-basis: 60%;
+			}
+
+			.text {
+				text-align: left;
+				align-items: start;
+
+				p {
+					max-width: 75%;
+				}
+			}
+		}
+	}
+}

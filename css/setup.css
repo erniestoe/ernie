@@ -14,6 +14,17 @@
 	--blue: #589DDA;
 	--teal: #2EB0B8;
 	--green: #69CF79;
+
+
+	--spacing-unit: 0.5rem;
+	--space-increment: 1;
+	--accent-hue: 180;
+	--accent-saturation: 0;
+	--accent-lightness: 50%;
+	--grey-saturation: 50%;
+	--text-frame-y: 0.5em;
+	--text-frame-ratio: 1.5;
+
 }
 
 *,
