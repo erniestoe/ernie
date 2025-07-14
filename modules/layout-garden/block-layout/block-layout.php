@@ -1,22 +1,22 @@
 	<block-layout class="garden-module">
 		<header class="module-header">
 				<nav>
-					<a class="attention-voice" href="#">
+					<a href="#">
 						<inner-column>
 							Intro
 						</inner-column>
 					</a>
-					<a class="attention-voice" href="#">
+					<a href="#">
 						<inner-column>
 							Archive
 						</inner-column>
 					</a>
-					<a class="attention-voice" href="#">
+					<a href="#">
 						<inner-column>
 							About
 						</inner-column>
 					</a>
-					<a class="attention-voice" href="#">
+					<a href="#">
 						<inner-column>
 							Contact
 						</inner-column>
@@ -31,7 +31,7 @@
 				</inner-column>
 			</h1>
 
-			<p class="attention-voice">
+			<p>
 				<inner-column>
 					Madrid-based designer with a focus on Product Design, Brand Identity, and Art Direction. He believes beauty can be found in unexpected places and thinks there's no such thing as an ugly colour.
 				</inner-column>

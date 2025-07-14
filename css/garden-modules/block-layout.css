@@ -4,10 +4,6 @@ block-layout {
 	display: grid;
 	gap: 2px;
 
-	inner-column {
-		max-width: 1800px;
-	}
-
 	.module-header {
 		nav {
 			display: grid;
@@ -36,10 +32,10 @@ block-layout {
 		display: grid;
 		gap: 2px;
 
-		.module-title {
+		/*.module-title {
 			font-size: clamp(2rem, 10vw, 12rem);
 			font-weight: 900;
-		}
+		}*/
 
 		h1,
 		p {
