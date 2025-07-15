@@ -1,0 +1,123 @@
+@import 'reset.css';
+@import 'setup.css';
+@import 'typography.css';
+
+body {
+	background-color: var(--red);
+	color: var(--main-white);
+	font-family: "PP Editorial New Ultralight";
+}
+
+header {
+	grid-row: 1;
+	.title-number {
+		margin-top: -75px;
+
+		@media(width >= 300px) {
+			margin-top: -100px;
+		}
+	}
+
+	@media (width >= 600px) {
+		grid-column: span 3;
+	}
+
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+.fadeInRight-animation {
+	animation: 1.5s fadeInRight;
+}
+
+picture {
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 508px;
+	height: 100vh;
+}
+
+@media (width >= 876px) {
+	picture {
+		width: 900px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media (width >= 1000px) {
+	picture {
+		width: 900px;
+		top: 50%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1/1;
+	object-fit: contain;
+}
+
+
+.info-text {
+	grid-row: 3;
+	grid-column: span 3;
+	align-self: end;
+
+}
+
+footer {
+	grid-row: 4;
+	align-self: end;
+	#audio-toggle {
+	    background: none;
+	    border: none;
+	    color: white;
+	    font: inherit;
+	    cursor: pointer;
+	    text-transform: uppercase;
+	    letter-spacing: 0.05em;
+	    /*padding: 0.5em 1em;*/
+	    opacity: 0.75;
+	}
+
+	#audio-toggle:hover {
+	    opacity: 1;
+	}
+
+	@media(width >= 470px) {
+		grid-row: 3;
+	}
+}

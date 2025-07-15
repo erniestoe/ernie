@@ -151,76 +151,6 @@ window.onload = () => {
 }
 
 // // Homepage canvas
-
-// const canvas = document.getElementById("homepageCanvas");
-// const ctx = canvas.getContext("2d");
-
-// // Match canvas internal pixel resolution to CSS size
-// function resizeCanvasToMatchCSS(canvas) {
-// 	const dpr = window.devicePixelRatio || 1;
-// 	const rect = canvas.getBoundingClientRect();
-
-// 	// Set actual pixel dimensions (internal resolution)
-// 	canvas.width = Math.floor(rect.width * dpr);
-// 	canvas.height = Math.floor(rect.height * dpr);
-
-// 	// Set canvas style width/height (visual size)
-// 	canvas.style.width = `${rect.width}px`;
-// 	canvas.style.height = `${rect.height}px`;
-
-// 	// Scale the drawing context so 1 unit = 1 CSS pixel
-// 	ctx.setTransform(1, 0, 0, 1, 0, 0); // Reset transform
-// 	ctx.scale(dpr, dpr);
-// }
-
-// // Redraw background fill
-// function fillCanvasBackground() {
-// 	ctx.fillStyle = "#FBFBF6";
-// 	ctx.fillRect(0, 0, canvas.width, canvas.height);
-// }
-
-// // Animation logic
-// const boxSize = 20;
-
-// function eraseRandomSquare() {
-// 	const cols = Math.floor(canvas.width / boxSize);
-// 	const rows = Math.floor(canvas.height / boxSize);
-
-// 	const randCol = Math.floor(Math.random() * cols);
-// 	const randRow = Math.floor(Math.random() * rows);
-
-// 	const x = randCol * boxSize;
-// 	const y = randRow * boxSize;
-
-// 	ctx.fillStyle = "black";
-// 	ctx.fillRect(x, y, boxSize, boxSize);
-// }
-
-// function startErasing() {
-// 	setInterval(() => {
-// 		const count = Math.floor(Math.random() * 5) + 1;
-// 		for (let i = 0; i < count; i++) {
-// 			eraseRandomSquare();
-// 		}
-// 	}, Math.random() * 150 + 10);
-// }
-
-// // Initialize
-// function initCanvas() {
-// 	resizeCanvasToMatchCSS(canvas);
-// 	fillCanvasBackground();
-// 	startErasing();
-// }
-
-// document.addEventListener("DOMContentLoaded", () => {
-// 	requestAnimationFrame(() => {
-// 		initCanvas();
-// 	});
-// });
-
-
-
-
 const canvas = document.getElementById("homepageCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -353,7 +283,3 @@ if (canvas) {
 		}
 	});
 }
-
-
-
-

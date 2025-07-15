@@ -1,0 +1,108 @@
+/*TYPOGRAPHY*/
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: "../../assets/fonts/PPNeueMontreal-Regular.woff2" format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: "../../assets/fonts/PPNeueMontreal-Bold.woff2" format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PP Neue Montreal";
+	src: "../../assets/fonts/PPNeueMontreal-Italic.woff2" format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PP Editorial New Ultralight";
+	src: "../../assets/fonts/PPEditorialNew-Ultralight.woff2" format("woff2");
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PP Editorial New Bold Italic";
+	src: "../../assets/fonts/PPEditorialNew-BoldItalic.woff2" format("woff2");
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+.quiet-voice {
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+.calm-voice,
+p,
+input,
+button {
+	font-size: 0.875rem;
+	font-weight: 400;
+	@media (width >= 1024px) {
+		font-size: 1rem;
+	}
+}
+
+.strong-voice {
+	font-size: 0.875rem;
+	font-weight: 600;
+	@media (width >= 1024px) {
+		font-size: 1rem;
+	}
+}
+
+.attention-voice {
+	font-size: 1.5rem;
+	font-weight: 700;
+
+	@media (width >= 630px) {
+		font-size: 3rem;
+	}
+
+	@media (width >= 1024px) {
+		font-size: 4rem;
+	}
+}
+
+.loud-voice {
+	font-size: clamp(2.5rem, 10vw, 8rem);
+	font-weight: 800;
+}
+
+p {
+	text-wrap: pretty;
+	max-width: 75ch;
+	line-height: 1.45;
+}
+
+.title-text {
+	font-size: clamp(2rem, 5vw, 4rem);
+	text-transform: uppercase;
+}
+
+.title-number {
+	font-family: "PP Editorial New Bold Italic";
+	font-size: clamp(3rem, 80vw, 18.75rem);
+	font-weight: 900;
+	font-style: italic;
+	letter-spacing: -0.09em;
+}
+
+.info-text {
+	p {
+		font-family: "PP Neue Montreal";
+		letter-spacing: 0.015em;
+	}
+}
