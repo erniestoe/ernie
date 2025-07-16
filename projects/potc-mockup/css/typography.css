@@ -1,7 +1,7 @@
 /*TYPOGRAPHY*/
 @font-face {
 	font-family: "PP Neue Montreal";
-	src: "../assets/fonts/PPNeueMontreal-Regular.woff2" format("woff2");
+	src: url("../assets/fonts/PPNeueMontreal-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
 	font-family: "PP Neue Montreal";
-	src: "../assets/fonts/PPNeueMontreal-Bold.woff2" format("woff2");
+	src: url("../assets/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
@@ -17,31 +17,31 @@
 
 @font-face {
 	font-family: "PP Neue Montreal";
-	src: "../assets/fonts/PPNeueMontreal-Italic.woff2" format("woff2");
+	src: url("../assets/fonts/PPNeueMontreal-Italic.woff2") format("woff2");
 	font-weight: 400;
-	font-style: italic;
+	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "PP Editorial New Ultralight";
-	src: "../assets/fonts/PPEditorialNew-Ultralight.woff2" format("woff2");
+	src: url("../assets/fonts/PPEditorialNew-Ultralight.woff2") format("woff2");
 	font-weight: 200;
-	font-style: italic;
+	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "PP Editorial New Bold Italic";
-	src: "../assets/fonts/PPEditorialNew-BoldItalic.woff2" format("woff2");
+	src: url("../assets/fonts/PPEditorialNew-BoldItalic.woff2") format("woff2");
 	font-weight: 900;
-	font-style: italic;
+	font-style: normal;
 	font-display: swap;
 }
 
 .quiet-voice {
 	font-size: 0.75rem;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .calm-voice,
@@ -78,7 +78,7 @@ button {
 
 .loud-voice {
 	font-size: clamp(2.5rem, 10vw, 8rem);
-	font-weight: 800;
+	font-weight: 900;
 }
 
 p {
@@ -90,14 +90,23 @@ p {
 .title-text {
 	font-size: clamp(2rem, 5vw, 4rem);
 	text-transform: uppercase;
+
+	span {
+		font-size: 2rem;
+		text-transform: none;
+		font-style: italic;
+	}
 }
 
 .title-number {
 	font-family: "PP Editorial New Bold Italic";
 	font-size: clamp(3rem, 80vw, 18.75rem);
 	font-weight: 900;
-	font-style: italic;
+	/*font-style: italic;*/
 	letter-spacing: -0.09em;
+	padding:0;
+	margin:0;
+	margin-left: -32px;
 }
 
 .info-text {
