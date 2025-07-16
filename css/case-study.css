@@ -8,6 +8,12 @@
 	header {
 		max-height: 600px;
 		overflow: hidden;
+		object-fit: contain;
+
+		picture {
+			aspect-ratio: 16/9;
+			object-fit: contain;
+		}
 	}
 	inner-column {
 		
