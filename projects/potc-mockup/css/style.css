@@ -9,13 +9,13 @@ body {
 }
 
 header {
-	/*grid-row: 1;*/
+	grid-row: 1;
 	.title-number {
 		margin-top: -24px;
 		padding:0;
 		margin-left: -12px;
 
-		@media(width >= 300px) {
+		@media(width >= 900px) {
 			margin-top: -100px;
 		}
 	}
