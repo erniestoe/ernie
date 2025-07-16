@@ -12,6 +12,8 @@ header {
 	grid-row: 1;
 	.title-number {
 		margin-top: -25px;
+		padding:0;
+		margin-left: -32px;
 
 		@media(width >= 300px) {
 			margin-top: -50px;
