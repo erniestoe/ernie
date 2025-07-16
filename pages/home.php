@@ -14,6 +14,8 @@
 	
 		<p class="about"><?=$pageData['about']?></p>
 
+		<p class="contact"><?=$pageData['contact']?></p>
+
 		<work-list>
 			<h2 class="strong-voice">Select work</h2>
 

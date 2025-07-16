@@ -89,6 +89,10 @@ p a {
 	text-decoration: underline;
 }
 
+p {
+	max-width: 75ch;
+}
+
 
 picture {
 	display: block;

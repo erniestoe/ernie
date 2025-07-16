@@ -1,6 +1,10 @@
 @import "style.css";
 
 .case-study {
+	case-study-gallery + links {
+		margin-top: 24px;
+	}
+
 	header {
 		max-height: 600px;
 		overflow: hidden;
@@ -44,34 +48,6 @@
 			}
 		}
 
-		links {
-			display: grid;
-			gap: 24px;
-			grid-column: span 3;
-
-			@media (width >= 1024px) {
-				grid-row: 2;
-			}
-
-			div {
-				display: flex;
-				flex-direction: column;
-				gap: 12px;
-
-				ul {
-					li + li {
-						margin-top: 12px;
-					}
-
-					li {
-						display: flex;
-						align-items:center;
-						gap: 6px;
-					}
-				}
-			}
-		}
-
 		case-study-gallery {
 			grid-column: span 3;
 
@@ -90,14 +66,44 @@
 				grid-column: span 3;
 
 				height: auto;
+				max-width: 80%;
 
 				img {
 					height: inherit;
 				}
 			}
 			@media (width >= 1024px) {
-				grid-row: 3;
+				grid-row: 2;
 				grid-column: span 6;
+			}
+		}
+
+		links {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 24px;
+			grid-column: span 3;
+
+			@media (width >= 1024px) {
+				grid-row: 3;
+			}
+
+			div {
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+
+				ul {
+					li + li {
+						margin-top: 12px;
+					}
+
+					li {
+						display: flex;
+						align-items:center;
+						gap: 6px;
+					}
+				}
 			}
 		}
 

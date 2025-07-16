@@ -29,12 +29,8 @@
 			margin-top: 24px;
 		}
 
-		.homepage-canvas + .about{
-			margin-top: 24px;
-		}
-
-		.about + work-list {
-			margin-top: 24px;
+		.canvas-hint + .about {
+			margin-top: -12px;
 		}
 
 		.logo {
@@ -86,10 +82,19 @@
 
 		}
 
+		.contact {
+			grid-column: span 3;
+			grid-row: 5;
+		}
+
+		.contact + work-list {
+			margin-top: 48px;
+		}
+
 		work-list {
 			display: grid;
 			grid-column: span 3;
-			grid-row: 5;
+			grid-row: 6;
 
 			li {
 				display: flex;
