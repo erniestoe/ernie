@@ -94,7 +94,7 @@ p {
 	span {
 		font-size: 2rem;
 		text-transform: none;
-		/*font-style: italic;*/
+		font-style: italic;
 	}
 }
 
@@ -104,9 +104,6 @@ p {
 	font-weight: 900;
 	font-style: italic;
 	letter-spacing: -0.09em;
-	padding:0;
-	margin:0;
-	margin-left: -32px;
 }
 
 .info-text {
