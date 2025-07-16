@@ -48,7 +48,7 @@
 p,
 input,
 button {
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 400;
 	@media (width >= 1024px) {
 		font-size: 1rem;
@@ -56,7 +56,7 @@ button {
 }
 
 .strong-voice {
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 600;
 	@media (width >= 1024px) {
 		font-size: 1rem;
