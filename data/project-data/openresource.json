@@ -2,30 +2,32 @@
 	"id": 1,
 	"projectName": "OpenResource",
 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751483002/openresource-header-image_a2fn2a.jpg",
-	"tags": ["Visual Identity", "Product Design", "WordPress Development"],
-	"caseStudy": "OpenResource is a two part WordPress powered project aimed at listing and sharing local community resources. I designed a flexible visual identity and built both the resource index and the marketing/documentation site. The index site lets users filter and browse resources, then generate printable PDFs. The marketing site introduces the mission and eventually houses open-source documentation. I designed both sites to be approachable, accessible, and easily rebranded by others in their own communities.",
+	"tags": ["Visual Identity", "Branding", "WordPress Development", "UI/UX Design"],
+	"caseStudy": "OpenResource is a community-focused project designed to help people share and access local resources with clarity and ease. Built on values of community, accessibility, and openness, OpenResource provides both a flexible visual identity and a practical digital tool. I designed a unified brand system — including a refreshed logo, typography, color palette, and communication materials — and created a clear, approachable landing site to explain its purpose. I also designed and developed a custom WordPress theme as OpenResource’s core tool, allowing any community to build and maintain its own resource directory. This theme supports browsing, filtering, and downloading of resources in accessible, printable formats. A key part of this project was separating OpenResource’s visual system from the WordPress theme itself — allowing the brand to stand on its own while showcasing the theme’s flexibility through real-world use, like Forsyth Community Resources.",
 	"gallery": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745244118/resource-site-style-tile-1_riwnsi.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1745247519/site-style-tile_r7tioc.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442013/CleanShot_2025-05-04_at_16.53.07_rb1ds4.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442021/CleanShot_2025-05-04_at_16.52.14_k5lp57.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746441997/resource-site-type-and-palette_mh58nl.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746442064/resource-landing-desktop_rebusl.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1746445226/CleanShot_2025-05-05_at_07.39.50_2x_opzehb.png"}
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-card-2_qzdhvr.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-ig-post-2_bps3cf.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-ig-post-1_huqwdg.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876703/openresource-ig-post-3_qnehc3.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-iphone-view_pqxajk.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-tablet-view_t8mtga.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg"}
 	],
-	"video": "https://www.youtube.com/embed/s4yvmZxdEbo?si=7P6EgnI7GtiK_g1I",
+	"video": "",
 	"figma": [
-		{"src": "https://embed.figma.com/board/Y5ispu3Xv5rTNLTfMWUOqo/Resource-list?node-id=0-1&embed-host=share"},
-		{"src": "https://embed.figma.com/design/OInnEQ2tcL5JHVquyCjuhv/Resource-Site?node-id=0-1&embed-host=share"}
+		{"src": "https://embed.figma.com/board/6PHZuYVnuWr5jGGtvenC0o/OpenResource?node-id=0-1&embed-host=share"},
+		{"src": "https://embed.figma.com/design/gm7jiJr9g2qxCUqiRPlxHk/Resource-theme-landing---marketing-site?node-id=0-1&embed-host=share"}
 	],
 	"liveLinks": [
 		{
 			"href": "https://forsythcommunityresources.com/",
-			"text": "Forsyth Community Resources"
+			"text": "Forsyth Community Resources (Template in use)"
 		},
 		{
 			"href": "https://openresource.io/",
-			"text": "OpenResource Marketing Site"
+			"text": "OpenResource"
 		}
 	],
 	"githubLinks": [
@@ -35,7 +37,7 @@
 		},
 		{
 			"href": "https://github.com/erniestoe/openresource",
-			"text": "OpenResource Marketing Site"
+			"text": "OpenResource Site"
 		}
 	]
 
