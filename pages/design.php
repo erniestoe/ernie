@@ -4,7 +4,7 @@
 			<inner-column class="main-grid">
 				<h2 class="attention-voice"><?= $pageTitle; ?></h2>
 
-				<p>A collection of my graphic design works.</p>
+				<p>A collection of my graphic design works that don't really fit anywhere else.</p>
 			</inner-column>
 			
 		</header>
