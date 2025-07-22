@@ -1,52 +1,5 @@
 @import "style.css";
 
 .design {
-	header {
-		h2 {
-			grid-column: span 3;
-
-			@media (width >=1024px) {
-				grid-column: span 6;
-			}
-		}
-
-		p {
-			grid-column: span 2;
-
-			@media (width >=1024px) {
-				grid-column: span 3;
-			}
-		}
-	}
-}
-
-.gallery {
-	inner-column {
-		display: grid;
-		gap: 25px;
-		grid-template-columns: 1fr 1fr;
-
-		@media (width > 800px) {
-			grid-template-columns: repeat(4, 1fr);
-		}
-		picture {
-			grid-column: span 2;
-			object-fit: contain;
-			height: 100%;
-			overflow: hidden;
-			img {
-				height: auto;
-				object-fit: contain;
-			}
-		}
-
-		.square {
-			grid-column: span 1;
-		}
-
-		.portrait {
-			grid-row: span 2;
-			align-self: start;
-		}
-	}
+	
 }

@@ -2,10 +2,9 @@
 
 	<footer class="site-footer">
 		<inner-column>
-			<nav class="main-grid">
-				<a href="?page=goals" class="button calm-voice">Goals</a>
-				<a href="?page=style-guide" class="button calm-voice">Style Guide</a>
-				<a href="?page=resume" class="button calm-voice">Resume</a>
+			<nav class="footer-nav">
+				<a href="?page=resume" class=" quiet-voice">Resume</a>
+				<a href="?page=style-guide" class="quiet-voice">Style Guide</a>
 			</nav>
 			
 		</inner-column>
@@ -18,6 +17,12 @@
 		
 		<script src="assets/p5/circle.js"></script>
 		<script src="assets/p5/sketch.js"></script>
+	<?php endif; ?>
+
+	<?php if ($currentPage['name'] === 'home') : ?>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
 	<?php endif; ?>
 
 	</body>

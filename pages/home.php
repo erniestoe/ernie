@@ -1,37 +1,67 @@
 <section class="home-content">
-	<inner-column class="main-grid">
-		<h1 class="logo">Ernesto Saavedra</h1>
+	<inner-column>
+		<h2 class="intro strong-voice"><?= $pageData["tagline"]?></h2>
 
-		<!-- <canvas id="homepageCanvas" class="homepage-canvas"></canvas> -->
+		<work-cards>
+			<h3 class="attention-voice">Select Work</h3>
 
-			<canvas id="homepageCanvas" class="homepage-canvas"></canvas>
-			<p class="canvas-hint quiet-voice">
-				<span class="bobbing">↑</span> Try moving your mouse here (tap on mobile)
-			</p>
+			<work-card>
+				<a href="?page=case-study&id=1">
+					<picture>
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1751483002/openresource-header-image_a2fn2a.jpg">
+					</picture>
+				</a>
+				
 
-			<!-- <button id="fallButton" class="calm-voice button">DESTROY</button> -->
+				<h4 class="quiet-voice bold">OpenResource</h4>
 
-	
-		<p class="about"><?=$pageData['about']?></p>
+				<ul class="tags">
+					<li class="quiet-voice">Visual Identity</li>
+					<li class="quiet-voice">UI/UX Design</li>
+				</ul>
+			</work-card>
 
-		<p class="contact"><?=$pageData['contact']?></p>
+			<work-card>
+				<picture>
+					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1752717091/studio-ernie-header_pq3lqo.jpg">
+				</picture>
 
-		<work-list>
-			<h2 class="strong-voice">Select work</h2>
+				<h4 class="quiet-voice bold">Studio Ernie</h4>
 
-			<ul class="home-work-list">
-			<?php foreach ($projects as $project) {?>
-				<li>
-					<p><?= $project['projectName']?></p>
+				<ul class="tags">
+					<li class="quiet-voice">Visual Identity</li>
+					<li class="quiet-voice">UI/UX Design</li>
+				</ul>
+			</work-card>
 
-					<a href="?page=case-study&id=<?=$project['id']?>">
-						View Case
-					</a>
-				</li>
-			<?php }?>
-			</ul>
-		</work-list>
+			<work-card>
+				<picture>
+					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1751484540/ticketapp-header-green_fiefby.jpg">
+				</picture>
 
+				<h4 class="quiet-voice bold">ticketapp</h4>
+
+				<ul class="tags">
+					<li class="quiet-voice">Visual Identity</li>
+					<li class="quiet-voice">UI/UX Design</li>
+				</ul>
+			</work-card>
+
+		</work-cards>
+
+		<div class="about">
+			<h3 class="attention-voice">Ethos</h3>
+
+			<svg class="morph" viewBox="0 0 200 200">
+			  <path id="shape" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
+			</svg>
+
+
+			<h4 class="loud-voice">Less noise, <br> more intention.</h4>
+
+			<p class="strong-voice">I take a deliberate approach to design, caring about something works as much as how it looks. Cut through the noise and stand out.</p>
+
+		</div>
 	</inner-column>
 </section>
 
