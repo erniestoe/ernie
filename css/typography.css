@@ -29,14 +29,14 @@ p,
 .strong-voice {
 	font-size: 1.25rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 641, "ital" 0;
+	font-variation-settings: "wght" 441, "ital" 0;
 	letter-spacing: .02em;
 }
 
 .attention-voice {
 	font-size: 2rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 741, "ital" 0;
+	font-variation-settings: "wght" 641, "ital" 0;
 	/*letter-spacing: .02em;*/
 
 }
@@ -60,6 +60,7 @@ em {
 }
 
 .bold {
-	font-weight: 800;
+	font-variation-settings: "wght" 441, "ital" 0;
+	/*font-weight: 800;*/
 	/*letter-spacing: .01em;*/
 }

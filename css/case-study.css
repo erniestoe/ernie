@@ -12,7 +12,7 @@
 	inner-column {
 
 		.tags li {
-			border: 2px solid var(--main-black);
+			border: 1px solid var(--main-black);
 		}
 
 		.tags + p {
