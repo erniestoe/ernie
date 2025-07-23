@@ -1,74 +1,62 @@
 @import "style.css";
 
 .resume {
-	header {
-		grid-column:span 3;
+	picture {
+
+		max-width: 100%;
+
+		@media (width >= 900px){
+			max-width: 70%;
+		}
 	}
 
 	resume {
-		display: grid;
-		grid-column:span 3;
-
-
-		picture {
-			max-width: 390px;
-		}
-
-		.experience-sublist {
-			list-style-type: "-";
-		}
-
-		picture + .intro,
-		.intro + .education,
-		.education + .experience {
-			margin-top: 24px;
-		}
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
 
 		.intro,
 		.education,
 		.experience {
-			h3 {
-				border-bottom: 1px solid black;
-				padding-block: 12px;
-			}
-
-			ul {
-				padding-block: 12px;
-			}
-
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
 		}
 
-		.intro {
-			p {
-				padding-block: 12px;
+		.education li {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			.date {
+				justify-self: end;
 			}
 		}
 
 		.experience {
 			.experience-list {
-				.job {
-					border-bottom: 1px solid black;
-					padding-top: 12px;
-				}
-
-				.title {
-					p:nth-of-type(1) {
-						font-style: italic;
-					}
-
-					display: flex;
-					align-items: center;
-					justify-content: space-between;
-				}
-
-				.title + p {
-					margin-top: 12px;
-				}
+				display: flex;
+				flex-direction: column;
+				gap: 48px;
 			}
 
 			.experience-sublist {
+				padding-top: 24px;
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+
+				li {
+					max-width: 45ch;
+				}
+			}
+			
+			.title {
 				display: grid;
-				gap: 12px;
+				grid-template-columns: 1fr 1fr;
+
+				.date {
+					justify-self: end;
+				}
 			}
 		}
 	}

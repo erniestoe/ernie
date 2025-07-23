@@ -1,37 +1,76 @@
 <section class="home-content">
-	<inner-column class="main-grid">
-		<h1 class="logo">Ernesto Saavedra</h1>
+	<inner-column>
+		<h2 class="intro strong-voice"><?= $pageData["tagline"]?></h2>
 
-		<!-- <canvas id="homepageCanvas" class="homepage-canvas"></canvas> -->
+		<work-cards>
+			<h3 class="attention-voice">Select Work</h3>
 
-			<canvas id="homepageCanvas" class="homepage-canvas"></canvas>
-			<p class="canvas-hint quiet-voice">
-				<span class="bobbing">↑</span> Try moving your mouse here (tap on mobile)
-			</p>
+			<work-card>
+				<a href="?page=case-study&id=1">
+					<picture>
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/openresource-header_yw163p.png">
+					</picture>
+				</a>
+				
 
-			<!-- <button id="fallButton" class="calm-voice button">DESTROY</button> -->
+				<h4 class="quiet-voice bold">OpenResource</h4>
 
-	
-		<p class="about"><?=$pageData['about']?></p>
+				<ul class="tags">
+					<li class="quiet-voice">Visual Identity</li>
+					<li class="quiet-voice">UI/UX Design</li>
+					<li class="quiet-voice">Branding</li>
+					<li class="quiet-voice">WordPress Development</li>
+				</ul>
+			</work-card>
 
-		<p class="contact"><?=$pageData['contact']?></p>
+			<work-card>
+				<a href="?page=case-study&id=4">
+					<picture>
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/layout-garden-header_djkz4c.png">
+					</picture>
+				</a>
 
-		<work-list>
-			<h2 class="strong-voice">Select work</h2>
+				<h4 class="quiet-voice bold">Layout Garden</h4>
 
-			<ul class="home-work-list">
-			<?php foreach ($projects as $project) {?>
-				<li>
-					<p><?= $project['projectName']?></p>
+				<ul class="tags">
+					<li class="quiet-voice">Front-End Development</li>
+					<li class="quiet-voice">UI/UX Design</li>
+					<li class="quiet-voice">Component Library</li>
+				</ul>
+			</work-card>
 
-					<a href="?page=case-study&id=<?=$project['id']?>">
-						View Case
-					</a>
-				</li>
-			<?php }?>
-			</ul>
-		</work-list>
+			<work-card>
+				<a href="?page=case-study&id=5">
+					<picture>
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226742/e4p-header_hi3xk7.png">
+					</picture>
+				</a>
 
+				<h4 class="quiet-voice bold">Exercises for Programmers</h4>
+
+				<ul class="tags">
+					<li class="quiet-voice">Progressive Enhancement</li>
+					<li class="quiet-voice">UI/UX Design</li>
+					<li class="quiet-voice">Form Handling</li>
+					<li class="quiet-voice">PHP Development</li>
+				</ul>
+			</work-card>
+
+		</work-cards>
+
+		<div class="about">
+			<h3 class="attention-voice">Ethos</h3>
+
+			<svg class="morph" viewBox="0 0 200 200">
+			  <path id="shape" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
+			</svg>
+
+
+			<h4 class="loud-voice">Less noise, <br> more intention.</h4>
+
+			<p class="strong-voice">My approach to design is deliberate and careful, thoughtful, yet effective. <br> I care about how something <em>works</em> as much as how it <em>looks</em>.<br>Let's cut through the noise and stand out.</p>
+
+		</div>
 	</inner-column>
 </section>
 

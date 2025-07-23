@@ -1,33 +1,34 @@
-{
-	"id": 5,
-	"projectName": "Pirates of the Caribbean",
-	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752717091/potc-header_jrm6vl.jpg",
-	"tags": ["Visual Identity", "UI/UX Design", "Graphic Design", "Sprint"],
-	"caseStudy": "Found this brief from the book Hello Design World (good read, would recommend!). So the distilled version of it was: Disney(the client) wants to see one homepage (the deliverable) to promote the newest Pirates of the Caribbean movie to 10-34 year olds (target audience) and want to make it seem like the new movie is new and different (visual goal). So right off the bat I decided to time box this brief to one day, to add a little challenge. After conducting some research I quickly decided on a visual direction to take things: I decided that if Pirates of the Caribbean was a person then it would probably be Jack Sparrow so I focused it around that. Red for his bandana, the infamous skull and bones of Jack Sparrow (unofficial logo?) for imagery, a Serif font to suggest brand heritage paired with a more modern Sans Serif to make things feel new and fresh. In terms of feeling I really leaned into movie posters and in particular the posters / marketing from Alien Romulus as I felt they were trying to do the same thing: Introduce a new Alien movie to the franchise, that was both fresh and not like the others while also staying true to the franchise. So the main deliverable was a live mockup site followed by designs, and a poster to be used in potential campaigns.",
-	"gallery": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/mockup_giqigp.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/phone-mockup_egc0a3.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/potc_jxzvyh.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/potc-billboard-1_w6o3v1.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/potc-billboard-2_afdvre.jpg"}
-	],
-	"video": "https://www.youtube.com/embed/6_s51cZ60dM?si=AsPphOAYOQMvzfYh",
-	"figma": [
-		{"src": "https://embed.figma.com/board/wW9b1T0Ur6kzbl0yYSsfVB/creative-brief-1?node-id=0-1&embed-host=share"},
-		{"src": "https://embed.figma.com/design/k35ZdrTdEnOjWoH7H2JkdX/one-day-potc-sprint?node-id=0-1&embed-host=share"}
-	],
-	"liveLinks": [
-		{
-			"href": "https://ersaavedra.dev/projects/potc-mockup/index.html",
-			"text": "Live Site"
-		}
+// {
+// 	"id": 5,
+// 	"projectName": "Pirates of the Caribbean",
+// 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752717091/potc-header_jrm6vl.jpg",
+// 	"altHeaderImage": "",
+// 	"tags": ["Visual Identity", "UI/UX Design", "Graphic Design", "Sprint"],
+// 	"caseStudy": "Found this brief from the book Hello Design World (good read, would recommend!). So the distilled version of it was: Disney(the client) wants to see one homepage (the deliverable) to promote the newest Pirates of the Caribbean movie to 10-34 year olds (target audience) and want to make it seem like the new movie is new and different (visual goal). So right off the bat I decided to time box this brief to one day, to add a little challenge. After conducting some research I quickly decided on a visual direction to take things: I decided that if Pirates of the Caribbean was a person then it would probably be Jack Sparrow so I focused it around that. Red for his bandana, the infamous skull and bones of Jack Sparrow (unofficial logo?) for imagery, a Serif font to suggest brand heritage paired with a more modern Sans Serif to make things feel new and fresh. In terms of feeling I really leaned into movie posters and in particular the posters / marketing from Alien Romulus as I felt they were trying to do the same thing: Introduce a new Alien movie to the franchise, that was both fresh and not like the others while also staying true to the franchise. So the main deliverable was a live mockup site followed by designs, and a poster to be used in potential campaigns.",
+// 	"gallery": [
+// 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/mockup_giqigp.jpg"},
+// 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/phone-mockup_egc0a3.jpg"},
+// 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/potc_jxzvyh.jpg"},
+// 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/potc-billboard-1_w6o3v1.jpg"},
+// 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752674083/potc-billboard-2_afdvre.jpg"}
+// 	],
+// 	"video": "https://www.youtube.com/embed/6_s51cZ60dM?si=AsPphOAYOQMvzfYh",
+// 	"figma": [
+// 		{"src": "https://embed.figma.com/board/wW9b1T0Ur6kzbl0yYSsfVB/creative-brief-1?node-id=0-1&embed-host=share"},
+// 		{"src": "https://embed.figma.com/design/k35ZdrTdEnOjWoH7H2JkdX/one-day-potc-sprint?node-id=0-1&embed-host=share"}
+// 	],
+// 	"liveLinks": [
+// 		{
+// 			"href": "https://ersaavedra.dev/projects/potc-mockup/index.html",
+// 			"text": "Live Site"
+// 		}
 		
-	],
-	"githubLinks": [
-		{
-			"href": "https://github.com/erniestoe/ernie/tree/main/projects/potc-mockup",
-			"text": "GitHub Repo"
-		}
-	]
+// 	],
+// 	"githubLinks": [
+// 		{
+// 			"href": "https://github.com/erniestoe/ernie/tree/main/projects/potc-mockup",
+// 			"text": "GitHub Repo"
+// 		}
+// 	]
 
-}
+// }

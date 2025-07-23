@@ -9,7 +9,7 @@ let circles = [];
 let num = 5;
 
 function setup() {
-  let cnv = createCanvas(windowWidth, 624);
+  let cnv = createCanvas(windowWidth, 100);
   cnv.parent('p5Container');
 
   cols = width / size + 1;
@@ -29,11 +29,12 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, 400); // adjust height as needed
+  resizeCanvas(windowWidth, 200);
 }
 
 function draw() {
-  background(251,251,246);
+  background('#141414');
+  stroke('#f5f5f5');
   
    for (let i=0; i<cols; i++) {
     for (let j=0; j<rows; j++) {

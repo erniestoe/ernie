@@ -1,118 +1,80 @@
 @import "style.css";
 
 .case-study {
-	case-study-gallery + links {
-		margin-top: 24px;
-	}
-
 	header {
-		max-height: 600px;
-		overflow: hidden;
-		object-fit: contain;
 
-		picture {
+		picture{
 			aspect-ratio: 16/9;
-			object-fit: contain;
+			border-radius: 0;
 		}
 	}
+
 	inner-column {
-		
-		a {
-			text-decoration: underline;
+
+		.tags li {
+			border: 2px solid var(--main-black);
 		}
-		
-		.text {
-			grid-column: span 3;
 
-			@media (width >= 1024px) {
-				grid-row: 1;
-				grid-column: span 4;
+		.tags + p {
+			margin-top: 48px;
+
+			@media(width >= 1024px) {
+				margin-top: 160px;
+			}
+		}
+
+		.text + case-study-gallery {
+			margin-top: 64px;
+
+			@media(width >= 1024px) {
+				margin-top: 160px;
+			}
+		}
+	}
+
+	case-study-gallery {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 24px;
+
+		iframe {
+			aspect-ratio: 16/9;
+		}
+
+		iframe,
+		picture {
+			grid-column: span 4;
+		}
+
+		@media (width >=1024px) {
+			picture:nth-of-type(even){
+				grid-column: 2/5;
 			}
 
-			h2+.tag-list {
-				margin-top: 24px;
-			}
-
-			.tag-list+p {
-				margin-top: 24px;
-			}
-
-			.tag-list {
+			picture:nth-of-type(odd){
 				grid-column: span 3;
-				display: flex;
-				align-items: center;
-				flex-wrap: wrap;
-				gap: 12px;
-
-				.tag {
-					border: 1px solid var(--main-black);
-					border-radius: 6px;
-					padding: 6px 12px;
-					text-align: center;
-					max-width: fit-content;
-				}
 			}
 		}
+	}
 
-		case-study-gallery {
-			grid-column: span 3;
+	links {
+		padding-top: 24px;
+		display: grid;
+		grid-template-columns: 200px 200px;
+		gap: 24px;
 
-			iframe {
-				display: block;
-				width: 100%;
-				aspect-ratio: 16/9;
-				grid-column: span 3;
-
-				@media (width >= 1024px ){ 
-					grid-column: span 6;
-				}
-			}
-
-			picture {
-				grid-column: span 3;
-
-				height: auto;
-				max-width: 80%;
-
-				img {
-					height: inherit;
-				}
-			}
-			@media (width >= 1024px) {
-				grid-row: 2;
-				grid-column: span 6;
-			}
+		@media (width >= 1024px) {
+			padding-top: 78px;
 		}
 
-		links {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 24px;
-			grid-column: span 3;
-
-			@media (width >= 1024px) {
-				grid-row: 3;
-			}
-
-			div {
-				display: flex;
-				flex-direction: column;
-				gap: 12px;
-
-				ul {
-					li + li {
-						margin-top: 12px;
-					}
-
-					li {
-						display: flex;
-						align-items:center;
-						gap: 6px;
-					}
-				}
-			}
+		li {
+			display: flex;
+			align-items: center;
+			gap: 8px;
 		}
 
-		
+		li + li {
+			margin-top: 16px;
+		}
 	}
 }

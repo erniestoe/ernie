@@ -1,20 +1,13 @@
 :root {
 	/*MAIN PALETTE*/
-	--main-white: #FBFBF6;
-	--main-black: #000000;
+	--main-white: #F5F5F5;
+	--main-black: #141414;
+	--main-red: #FF002F;
 
 	/*ACCENT PALETTE*/
-	--yellow: #FFE317;
-	--orange: #F98A03;
-	--red: #F16C6A;
-	--brick: #D47D8D;
-	--purple: #A390B2;
-	--dark-purple: #584D84;
-	--purple-blue: #8594D1;
-	--blue: #589DDA;
-	--teal: #2EB0B8;
+	--yellow: #FFC800;
 	--green: #69CF79;
-
+	--teal: #2EB0B8;
 
 	--spacing-unit: 0.5rem;
 	--space-increment: 1;
@@ -35,7 +28,7 @@
 	margin: 0;
 }
 
-*::selection {
+/**::selection {
   background: var(--main-black);
   color: var(--main-white);
 }
@@ -46,41 +39,25 @@
 *::-webkit-selection {
   background: var(--main-black);
   color: var(--main-white);
-}
+}*/
 
 .main-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 12px;
+	grid-template-columns: repeat(4, 1fr);
 
 	@media (width >= 630px) {
-		gap: 30px;
+		grid-template-columns: repeat(8, 1fr);
 	}
 
 	@media (width >= 1024px) {
-		grid-template-columns: repeat(6, 1fr);
-		gap: 36px;
+		grid-template-columns: repeat(12, 1fr);
 	}
 }
-
-.main-subgrid {
-	display: grid;
-	grid-template-columns: subgrid;
-	grid-column: span 3;
-	gap: inherit;
-
-	@media (width >= 1024) {
-		grid-column: span 6;
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
 
 a {
 	text-decoration: none;
 	display: block;
 	color: inherit;
-	/*max-width: fit-content;*/
 }
 
 p a {
@@ -96,31 +73,43 @@ p {
 
 picture {
 	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+	object-fit: contain;
 }
 
 img {
 	display: block;
 	width: 100%;
 	height: 100%;
+	object-fit: contain;
 }
 
+inner-column {
+	display: block;
+	max-width: 1440px;
+	padding-block: 48px;
+	padding-inline: 16px;
 
-.button {
+	@media (width > 1024px){
+		padding-inline: 48px;
+	}
+}
+
+section inner-column {
+	@media(width >= 1024px) {
+			padding-left: 0;
+		}
+}
+
+.body-invert {
 	background-color: var(--main-white);
 	color: var(--main-black);
-	border: 1px solid var(--main-black);
-	border-radius: 50px;
-	padding: 6px 0px;
-	width: 100px;
-	text-align: center;
-	display: grid;
-	align-items: center;
-	justify-content: center;
+}
 
-	@media (width >= 1024px) {
-		width: 125px;
-		
-	}
+.header-invert {
+	background-color: var(--main-black);
+	color: var(--main-white);
 }
 
 .visually-hidden {

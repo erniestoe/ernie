@@ -15,7 +15,7 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 						<h2 class="attention-voice"><?= $section['toneOfVoice']['title'] ?></h2>
 						<ol>
 							<?php foreach ($section['toneOfVoice']['list'] as $item): ?>
-								<li><strong><?= $item ?></strong></li>
+								<li class="calm-voice"><?= $item ?></li>
 							<?php endforeach; ?>
 						</ol>
 					</div>
@@ -26,9 +26,21 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 						<h2 class="attention-voice"><?= $section['mainPalette']['title'] ?></h2>
 						<p><?= $section['mainPalette']['text'] ?></p>
 
-						<picture>
-							<img loading="lazy" src="<?= $section['mainPalette']['img']?>">
-						</picture>
+						<div class="colors">
+							<div class="color white">
+								<p class="bold">--main-white</p>
+							</div>
+
+							<div class="color black">
+								<p class="bold">--main-black</p>
+							</div>
+
+							<div class="color red">
+								<p class="bold">--main-red</p>
+							</div>
+						</div>
+
+
 					</div>
 				<?php endif; ?>
 
@@ -36,10 +48,20 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 					<div class="accent-palette">
 						<h2 class="attention-voice"><?= $section['accentPalette']['title'] ?></h2>
 						<p><?= $section['accentPalette']['text'] ?></p>
+						
+						<div class="colors">
+							<div class="color yellow">
+								<p class="bold">--yellow</p>
+							</div>
 
-						<picture>
-							<img loading="lazy" src="<?= $section['accentPalette']['img']?>">
-						</picture>
+							<div class="color green">
+								<p class="bold">--green</p>
+							</div>
+
+							<div class="color teal">
+								<p class="bold">--teal</p>
+							</div>
+						</div>
 					</div>
 				<?php endif; ?>
 

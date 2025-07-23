@@ -1,117 +1,63 @@
 @import "style.css";
 
 .home-content {
+	
+	/*picture{
+	  filter: contrast(800%) grayscale(1);
+	}*/
+
+	.morph {
+		width: 300px;
+		height: 300px;
+
+		path {
+			fill: #2EB0B8;
+		}
+	}
+
 	inner-column {
-		.canvas-hint {
-			grid-row: 3;
-			grid-column: span 3;
-		}
-
-		.canvas-hint.fade-out {
-			opacity: 0;
-		}
-
-		.bobbing {
-			display: inline-block;
-			animation: bob 1.5s ease-in-out infinite;
-		}
-
-		@keyframes bob {
-			0%, 100% {
-				transform: translateY(0);
-			}
-			50% {
-				transform: translateY(-4px);
-			}
-		}
 		
-		.logo + .homepage-canvas{
-			margin-top: 24px;
-		}
 
-		.canvas-hint + .about {
-			margin-top: -12px;
-		}
+		.intro {
+			padding-top: 72px;
+			padding-bottom: 120px;
 
-		.logo {
-			grid-column: span 3;
-
-			@media (width >= 1024px) {
-				grid-column: span 6;
+			@media(width >= 1024px) {
+				padding-top: 0;
+				padding-bottom: 200px;
 			}
 		}
 
-		.homepage-canvas {
-			grid-column: span 3;
-			display: block;
-			width: 345px;
-			height: 390px;
-			max-width: 100%;
+	}
+	
 
-			@media (width >= 630px) {
-				width: 774px;
-				height: 701px;
-			}
+	work-cards {
+		display: grid;
 
-			@media (width >= 1024px) {
-				width: 1584px;
-				height: 450px;
-				grid-row: 2;
-				grid-column: span 6;
-			}
-		}
-
-		.about {
-			grid-column: span 3;
-			grid-row: 4;
-			
-
-			 a {
-				font-weight: 700;
-			}
-
-			@media (width >= 630px) {
-				grid-column: span 2;
-			}
-
-			@media (width >= 1024px) {
-				grid-column: span 3;
-				grid-row: 4;
-				
-			}
+		work-card {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
 
 		}
 
-		.contact {
-			grid-column: span 3;
-			grid-row: 5;
+		h3 + work-card {
+			margin-top: 16px;
 		}
 
-		.contact + work-list {
+		work-card + work-card {
 			margin-top: 48px;
 		}
+	}
 
-		work-list {
-			display: grid;
-			grid-column: span 3;
-			grid-row: 6;
 
-			li {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				border-bottom: 1px solid black;
-				padding-block: 12px;
+	work-cards + .about {
+		margin-top: 120px;
+	}
 
-				@media (width >= 1024px) {
-					padding-block: 24px;
-				}
-
-				a {
-					text-decoration: underline;
-				}
-			}
+	.about {
+		h4 + p {
+			margin-top: 24px;
 		}
-
 	}
 }

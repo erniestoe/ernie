@@ -24,59 +24,51 @@
 }
 
 .quiet-voice {
-	font-size: 0.75rem;
-	font-weight: 500;
-}
-
-.calm-voice,
-p,
-input,
-button {
 	font-size: 1rem;
 	font-weight: 400;
-	@media (width >= 1024px) {
-		font-size: 1.125rem;
-	}
+	line-height: 1.25em;
+}
+
+p,
+.calm-voice
+{
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: .01em;
+	
 }
 
 .strong-voice {
-	font-size: 1rem;
-	font-weight: 600;
-	@media (width >= 1024px) {
-		font-size: 1.125rem;
-	}
+	font-size: 1.25rem;
+	font-weight: 800;
+	letter-spacing: .02em;
 }
 
 .attention-voice {
-	font-size: 1.5rem;
-	font-weight: 700;
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: .02em;
 
-	@media (width >= 630px) {
-		font-size: 3rem;
-	}
-
-	@media (width >= 1024px) {
-		font-size: 4rem;
-	}
 }
 
 .loud-voice {
-	font-size: clamp(2.5rem, 10vw, 8rem);
+	font-size: 2.5rem;
 	font-weight: 800;
+	letter-spacing: -.021em;
 }
 
 .logo {
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: clamp(2.5rem, 10vw, 8rem);
-}
-
-p {
-	text-wrap: pretty;
-	max-width: 75ch;
-	line-height: 1.45;
+	font-size: 1rem;
+	font-weight: 900;
+	letter-spacing: .02em;
+	/*text-transform: uppercase;*/
 }
 
 em {
 	font-style: italic;
+}
+
+.bold {
+	font-weight: 800;
+	letter-spacing: .02em;
 }

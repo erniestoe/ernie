@@ -22,12 +22,12 @@ if ($projectId) {
 			<img loading="lazy" src="<?= $project['headerImage'] ?>">
 		</picture>
 	</header>
-	<inner-column class="main-grid">
+	<inner-column>
 		
 			<div class="text">
 				<h2 class="attention-voice"><?= $project['projectName'] ?></h2>
 
-				<ul class="tag-list">
+				<ul class="tags">
 					<?php foreach ($project['tags'] as $tag): ?>
 						<li class="tag"><?= $tag ?></li>
 					<?php endforeach; ?>
@@ -57,14 +57,13 @@ if ($projectId) {
 
 			<links>
 				<div class="live">
-					<h2 class="strong-voice">Live sites</h2>
 
 					<ul>
 						<?php foreach ($project['liveLinks'] as $liveLink):?>
 							<li>
-								<a target="_blank" href="<?=$liveLink['href']?>"><?=$liveLink['text']?></a>
+								<a class="quiet-voice bold" target="_blank" href="<?=$liveLink['href']?>"><?=$liveLink['text']?></a>
 
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#141414" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
 							</li>
 						<?php endforeach; ?>
 						
@@ -73,14 +72,14 @@ if ($projectId) {
 
 				<?php if ($project['githubLinks']): ?>
 					<div class="github">
-						<h2 class="strong-voice">Github</h2>
+
 
 						<ul>
 							<?php foreach ($project['githubLinks'] as $githubLink):?>
 								<li>
-									<a target="_blank" href="<?=$githubLink['href']?>"><?=$githubLink['text']?></a>
+									<a class="quiet-voice bold" target="_blank" href="<?=$githubLink['href']?>"><?=$githubLink['text']?></a>
 
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+									<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#141414" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
 								</li>
 							<?php endforeach; ?>
 						</ul>

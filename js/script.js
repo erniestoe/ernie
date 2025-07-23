@@ -13,36 +13,15 @@ import { addingNumbers } from "./adding-numbers.js";
 import { layoutGardenOptions } from './layout-garden-options.js';
 
 window.onload = () => {
-	const mainMenu = document.querySelector('.menu');
-	const optionsMenu = document.querySelector('.options-menu');
-	const exerciseIndexMenu = document.querySelector('.exercise-menu');
-	const workIndexMenu = document.querySelector('.case-menu');
+	const mainMenu = document.querySelector('.mobile-menu');
 	const openMainButton = document.querySelector('#open');
 	const closeMainButton = document.querySelector('#close');
-	const openOptionsButton = document.querySelector('#openOptionsMenu');
-	const closeOptionsButton = document.querySelector('#closeOptionsMenu');
-	const openWorkIndexButton = document.querySelector('#openWorkIndexMenu');
-	const closeWorkIndexButton = document.querySelector('#closeWorkIndexMenu')
-	const openExerciseIndexButton = document.querySelector('#openExerciseIndexMenu');
-	const closeExerciseIndexButton = document.querySelector('#closeExerciseIndexMenu');
 	const circleCursor = document.getElementById('circle-cursor');
 
 	if (openMainButton && mainMenu) {
 		openMainButton.addEventListener('click', () => {
 			mainMenu.classList.toggle('visually-hidden');
 			openMainButton.classList.toggle('main-menu-opened');
-
-			if (optionsMenu && !optionsMenu.classList.contains('visually-hidden')) {
-				optionsMenu.classList.add('visually-hidden');
-			}
-
-			if (exerciseIndexMenu && !exerciseIndexMenu.classList.contains('visually-hidden')) {
-				exerciseIndexMenu.classList.add('visually-hidden');
-			}
-
-			if (workIndexMenu && !workIndexMenu.classList.contains('visually-hidden')) {
-				workIndexMenu.classList.add('visually-hidden');
-			}
 		});
 	}
 
@@ -51,55 +30,6 @@ window.onload = () => {
 			mainMenu.classList.add('visually-hidden');
 			openMainButton.classList.toggle('main-menu-opened');
 
-		});
-	}
-
-	if (openOptionsButton && optionsMenu) {
-		openOptionsButton.addEventListener('click', () => {
-			optionsMenu.classList.toggle('visually-hidden');
-			if (mainMenu && !mainMenu.classList.contains('visually-hidden')) {
-				mainMenu.classList.add('visually-hidden');
-				openMainButton.classList.toggle('main-menu-opened');
-			}
-		});
-	}
-
-	if (closeOptionsButton && optionsMenu) {
-		closeOptionsButton.addEventListener('click', () => {
-			optionsMenu.classList.add('visually-hidden');
-		});
-	}
-
-	if (openExerciseIndexButton && exerciseIndexMenu) {
-		openExerciseIndexButton.addEventListener('click', () => {
-			exerciseIndexMenu.classList.toggle('visually-hidden');
-			if (mainMenu && !mainMenu.classList.contains('visually-hidden')) {
-				mainMenu.classList.add('visually-hidden');
-				openMainButton.classList.toggle('main-menu-opened');
-			}
-		});
-	}
-
-	if (closeExerciseIndexButton && exerciseIndexMenu) {
-		closeExerciseIndexButton.addEventListener('click', () => {
-			exerciseIndexMenu.classList.add('visually-hidden');
-		});
-	}
-
-	if (openWorkIndexButton && workIndexMenu) {
-		openWorkIndexButton.addEventListener('click', () => {
-			workIndexMenu.classList.toggle('visually-hidden');
-
-			if (mainMenu && !mainMenu.classList.contains('visually-hidden')) {
-				mainMenu.classList.add('visually-hidden');
-				openMainButton.classList.toggle('main-menu-opened');
-			}
-		});
-	}
-
-	if (closeWorkIndexButton && workIndexMenu) {
-		closeWorkIndexButton.addEventListener('click', () => {
-			workIndexMenu.classList.add('visually-hidden');
 		});
 	}
 
@@ -114,6 +44,31 @@ window.onload = () => {
 	}
 
 	layoutGardenOptions();
+
+	//morphing shape
+	gsap.registerPlugin(MorphSVGPlugin);
+
+	const timeline = gsap.timeline({ repeat: -1 });
+
+	timeline
+	  .to("#shape", {
+	    duration: 5,
+	    morphSVG: "M50,50 H150 V150 H50 Z",
+	    fill: "#FFC800",
+	    ease: "elastic.out(1, 0.5)"
+	  })
+	  .to("#shape", {
+	    duration: 5,
+	    morphSVG: "M100,40 L160,160 L40,160 Z",
+	    fill: "#69CF79",
+	    ease: "elastic.out(1, 0.5)"
+	  })
+	  .to("#shape", {
+	    duration: 5,
+	    morphSVG: "M100,50 A50,50 0 1,0 100.01,50 Z",
+	    fill: "#2EB0B8",
+	    ease: "elastic.out(1, 0.5)"
+	  });
 
 	// E4P
 	const urlParameters = new URLSearchParams(window.location.search);
@@ -147,139 +102,5 @@ window.onload = () => {
 	document.addEventListener('mousemove', (e) => {
 	   circleCursor.style.left = `${e.clientX}px`;
 	   circleCursor.style.top = `${e.clientY}px`;
-	});
-}
-
-// // Homepage canvas
-const canvas = document.getElementById("homepageCanvas");
-const ctx = canvas.getContext("2d");
-
-const boxSize = 50;
-const filledSquares = []; // Array of square objects now
-const colors = ["#FFE317", "#F98A03", "#F16C6A", "#D47D8D", "#A390B2", "#584D84", "#8594D1", "#589DDA", "#2EB0B8", "#69CF79"];
-
-function resizeCanvasToMatchCSS(canvas) {
-	const dpr = window.devicePixelRatio || 1;
-	const rect = canvas.getBoundingClientRect();
-
-	canvas.width = Math.floor(rect.width * dpr);
-	canvas.height = Math.floor(rect.height * dpr);
-
-	canvas.style.width = `${rect.width}px`;
-	canvas.style.height = `${rect.height}px`;
-
-	ctx.setTransform(1, 0, 0, 1, 0, 0);
-	ctx.scale(dpr, dpr);
-}
-
-function fillCanvasBackground() {
-	ctx.fillStyle = "#FBFBF6";
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
-}
-
-function drawSquare(x, y) {
-	const color = colors[Math.floor(Math.random() * colors.length)];
-	filledSquares.push({
-		x,
-		y,
-		color,
-		isFalling: false,
-		velocityY: 0
-	});
-	ctx.fillStyle = color;
-	ctx.fillRect(x, y, boxSize, boxSize);
-}
-
-function handleMouseMove(e) {
-	const rect = canvas.getBoundingClientRect();
-	const x = Math.floor((e.clientX - rect.left) / boxSize) * boxSize;
-	const y = Math.floor((e.clientY - rect.top) / boxSize) * boxSize;
-
-	// Check if square already exists at that position
-	const key = `${x},${y}`;
-	const exists = filledSquares.some(sq => sq.x === x && sq.y === y);
-	if (!exists) {
-		drawSquare(x, y);
-	}
-}
-
-// Animation logic
-function drawSquares() {
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-	for (let square of filledSquares) {
-		if (square.isFalling) {
-			// Explosion physics
-			square.vy += .5; // gravity
-			square.x += square.vx;
-			square.y += square.vy;
-		}
-		ctx.fillStyle = square.color;
-		ctx.fillRect(square.x, square.y, boxSize, boxSize);
-	}
-}
-
-
-let isAnimating = false;
-function animate() {
-	if (!isAnimating) return;
-
-	drawSquares();
-
-	// Stop animation if all blocks have fallen out of view
-	const anyOnScreen = filledSquares.some(sq => sq.y < canvas.height);
-	if (anyOnScreen) {
-		requestAnimationFrame(animate);
-	} else {
-		isAnimating = false;
-	}
-}
-
-// Setup fall button
-document.addEventListener("DOMContentLoaded", () => {
-	const fallButton = document.getElementById("fallButton");
-	if (fallButton) {
-		fallButton.addEventListener("click", () => {
-			for (let square of filledSquares) {
-				square.isFalling = true;
-
-				// Explosion-style velocity
-				const angle = Math.random() * Math.PI * 2; // Random direction
-				const speed = Math.random() * 10 + 5;      // Random speed
-
-				square.vx = Math.cos(angle) * speed;
-				square.vy = Math.sin(angle) * speed;
-			}
-			isAnimating = true;
-			animate();
-		});
-
-	}
-});
-
-// Initialize canvas + listeners
-function initCanvas() {
-	resizeCanvasToMatchCSS(canvas);
-	fillCanvasBackground();
-	canvas.addEventListener("mousemove", handleMouseMove);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-	requestAnimationFrame(() => {
-		initCanvas();
-	});
-});
-
-// Hint fade-out logic
-let hasInteractedWithCanvas = false;
-if (canvas) {
-	canvas.addEventListener("mouseenter", () => {
-		if (!hasInteractedWithCanvas) {
-			hasInteractedWithCanvas = true;
-			const hint = document.querySelector(".canvas-hint");
-			if (hint) {
-				hint.classList.add("fade-out");
-			}
-		}
 	});
 }

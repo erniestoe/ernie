@@ -5,23 +5,7 @@
 		margin-top: 60px;
 	}
 
-	header {
-		h2 {
-			grid-column: span 3;
-
-			@media (width >=1024px) {
-				grid-column: span 6;
-			}
-		}
-
-		p {
-			grid-column: span 2;
-
-			@media (width >=1024px) {
-				grid-column: span 3;
-			}
-		}
-	}
+	
 
 	.project-index-list {
 		width: 100%;
@@ -50,11 +34,12 @@
 	.p5-container {
 		width: 100%;
 		overflow: hidden;
+		height: 100px;
 
 		canvas {
 			display: block;
 			width: 100%;
-			height: auto;
+			height: inherit;
 		}
 	}
 }
