@@ -10,7 +10,7 @@
 @font-face {
 	font-family: "PP Neue Montreal";
 	src: url("../assets/fonts/PPNeueMontreal-Bold.woff2") format("woff2");
-	font-weight: 700;
+	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
 }
@@ -21,6 +21,18 @@
 	font-weight: 400;
 	font-style: italic;
 	font-display: swap;
+}
+
+@font-face {
+	font-family: "Overused Grotesk";
+	src: url("../assets/fonts/OverusedGrotesk-VF.woff2") format("woff2-variations");
+	font-weight: 300 900;
+}
+
+@font-face {
+	font-family: "Uncut Sans";
+	src: url("../assets/fonts/UncutSans-Variable.ttf") format("truetype");
+	font-weight: 300 900;
 }
 
 .quiet-voice {
@@ -34,41 +46,44 @@ p,
 {
 	font-size: 1.25rem;
 	font-weight: 400;
-	letter-spacing: .01em;
+	/*letter-spacing: .01em;*/
 	
 }
 
 .strong-voice {
 	font-size: 1.25rem;
-	font-weight: 800;
+	/*font-weight: 800;*/
+	font-variation-settings: "wght" 641, "ital" 0;
 	letter-spacing: .02em;
 }
 
 .attention-voice {
 	font-size: 2rem;
-	font-weight: 800;
-	letter-spacing: .02em;
+	/*font-weight: 800;*/
+	font-variation-settings: "wght" 741, "ital" 0;
+	/*letter-spacing: .02em;*/
 
 }
 
 .loud-voice {
 	font-size: 2.5rem;
-	font-weight: 800;
-	letter-spacing: -.021em;
+	/*font-weight: 900;*/
+	font-variation-settings: "wght" 741, "ital" 0;
+	/*letter-spacing: -.021em;*/
 }
 
 .logo {
 	font-size: 1rem;
-	font-weight: 900;
-	letter-spacing: .02em;
+	font-variation-settings: "wght" 741, "ital" 0;
+	/*letter-spacing: .01em;*/
 	/*text-transform: uppercase;*/
 }
 
 em {
-	font-style: italic;
+	font-variation-settings: "slnt" -5;
 }
 
 .bold {
 	font-weight: 800;
-	letter-spacing: .02em;
+	letter-spacing: .01em;
 }

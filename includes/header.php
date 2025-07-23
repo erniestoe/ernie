@@ -24,7 +24,7 @@ foreach ($projectFiles as $file) {
 		<meta property="og:image" content="https://peprojects.dev/beta-two/ernie/assets/images/meta-image.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>" >
-		
+		<link rel="stylesheet" href="https://use.typekit.net/gnm8vwc.css">
 	</head>
 
 	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$currentPage['name'] === 'case-study' ? 'body-invert' : ''?>">

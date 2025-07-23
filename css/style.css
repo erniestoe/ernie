@@ -19,7 +19,7 @@ h2{
 body {
 	background-color: var(--main-black);
 	color: var(--main-white);
-	font-family: "PP Neue Montreal", sans-serif;
+	font-family: "Overused Grotesk";
 	overflow-x: hidden;
 	display: flex;
   	min-height: 100vh;
