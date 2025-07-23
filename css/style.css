@@ -11,8 +11,10 @@ html {
 p,
 h2{
 		text-wrap: pretty;
-		max-width: 35ch;
+		max-width: 45ch;
+		line-height: 1.4em;
 }
+
 
 body {
 	background-color: var(--main-black);

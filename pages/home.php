@@ -18,32 +18,41 @@
 				<ul class="tags">
 					<li class="quiet-voice">Visual Identity</li>
 					<li class="quiet-voice">UI/UX Design</li>
+					<li class="quiet-voice">Branding</li>
+					<li class="quiet-voice">WordPress Development</li>
 				</ul>
 			</work-card>
 
 			<work-card>
-				<picture>
-					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/layout-garden-header_djkz4c.png">
-				</picture>
+				<a href="?page=case-study&id=4">
+					<picture>
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/layout-garden-header_djkz4c.png">
+					</picture>
+				</a>
 
 				<h4 class="quiet-voice bold">Layout Garden</h4>
 
 				<ul class="tags">
-					<li class="quiet-voice">Visual Identity</li>
+					<li class="quiet-voice">Front-End Development</li>
 					<li class="quiet-voice">UI/UX Design</li>
+					<li class="quiet-voice">Component Library</li>
 				</ul>
 			</work-card>
 
 			<work-card>
-				<picture>
-					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226742/e4p-header_hi3xk7.png">
-				</picture>
+				<a href="?page=case-study&id=5">
+					<picture>
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226742/e4p-header_hi3xk7.png">
+					</picture>
+				</a>
 
 				<h4 class="quiet-voice bold">Exercises for Programmers</h4>
 
 				<ul class="tags">
-					<li class="quiet-voice">Visual Identity</li>
+					<li class="quiet-voice">Progressive Enhancement</li>
 					<li class="quiet-voice">UI/UX Design</li>
+					<li class="quiet-voice">Form Handling</li>
+					<li class="quiet-voice">PHP Development</li>
 				</ul>
 			</work-card>
 
@@ -59,7 +68,7 @@
 
 			<h4 class="loud-voice">Less noise, <br> more intention.</h4>
 
-			<p class="strong-voice">My approach to design is deliberate and careful, thoughtful, yet effective. <br> I care about how something <em>works</em> as much as how it <em>looks</em>. <br>Let's cut through the noise and stand out.</p>
+			<p class="strong-voice">My approach to design is deliberate and careful, thoughtful, yet effective. <br> I care about how something <em>works</em> as much as how it <em>looks</em>.<br>Let's cut through the noise and stand out.</p>
 
 		</div>
 	</inner-column>

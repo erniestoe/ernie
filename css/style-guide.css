@@ -69,9 +69,53 @@ body.slides-mode {
 				@media (width >= 1024px) {
 					margin-top: 24px;
 				}
+			}	
+		}
+
+		.colors {
+			padding-top: 24px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 24px;
+
+			.color {
+				min-width: 100px;
+				padding: 8px;
+				border-radius: 8px;
+				border: 2px solid transparent;
+				text-align: center;
 			}
 
-			
+			.white {
+				background-color: var(--main-white);
+				color: var(--main-black);
+			}
+
+			.black {
+				background-color: var(--main-black);
+				color: var(--main-white);
+				border: 2px solid var(--main-white);
+			}
+
+			.red {
+				background-color: var(--main-red);
+				color: var(--main-black);
+			}
+
+			.yellow {
+				background-color: var(--yellow);
+				color: var(--main-black);
+			}
+
+			.green {
+				background-color: var(--green);
+				color: var(--main-black);
+			}
+
+			.teal {
+				background-color: var(--teal);
+				color: var(--main-black);
+			}
 		}
 
 	}

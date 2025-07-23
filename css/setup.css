@@ -8,13 +8,6 @@
 	--yellow: #FFC800;
 	--green: #69CF79;
 	--teal: #2EB0B8;
-	--orange: #F98A03;
-	--red: #F16C6A;
-	--brick: #D47D8D;
-	--purple: #A390B2;
-	--dark-purple: #584D84;
-	--purple-blue: #8594D1;
-	--blue: #589DDA;
 
 	--spacing-unit: 0.5rem;
 	--space-increment: 1;
@@ -35,7 +28,7 @@
 	margin: 0;
 }
 
-*::selection {
+/**::selection {
   background: var(--main-black);
   color: var(--main-white);
 }
@@ -46,7 +39,7 @@
 *::-webkit-selection {
   background: var(--main-black);
   color: var(--main-white);
-}
+}*/
 
 .main-grid {
 	display: grid;
@@ -60,7 +53,6 @@
 		grid-template-columns: repeat(12, 1fr);
 	}
 }
-
 
 a {
 	text-decoration: none;

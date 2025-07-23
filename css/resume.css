@@ -1,6 +1,64 @@
 @import "style.css";
 
 .resume {
-	
+	picture {
+
+		max-width: 100%;
+
+		@media (width >= 900px){
+			max-width: 70%;
+		}
+	}
+
+	resume {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		.intro,
+		.education,
+		.experience {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		.education li {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			.date {
+				justify-self: end;
+			}
+		}
+
+		.experience {
+			.experience-list {
+				display: flex;
+				flex-direction: column;
+				gap: 48px;
+			}
+
+			.experience-sublist {
+				padding-top: 24px;
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+
+				li {
+					max-width: 45ch;
+				}
+			}
+			
+			.title {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+
+				.date {
+					justify-self: end;
+				}
+			}
+		}
+	}
 	
 }

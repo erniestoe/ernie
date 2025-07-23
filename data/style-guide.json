@@ -7,7 +7,7 @@
 				"list": [
 					"Approachable",
 					"Knowledgable",
-					"Fun to be around",
+					"Confident",
 					"Human"
 				]
 			}
@@ -15,14 +15,14 @@
 		{"mainPalette": 
 			{
 				"title": "Main Palette",
-				"text": "Color is something that should be used to invoke emotion. Spark conversation. Compliment, not overpower. That’s why the main palette is a simple monochromatic “black and white”, this creates a blank canvas and leaves space for color to be introduced in key locations.",
+				"text": "Simple, yet effective. Classic yet modern. No need to get crazy, just colors that <em>work</em>.",
 				"img": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751626066/bw_ifmptn.png"
 			}
 		},
 		{"accentPalette":
 			{
 				"title": "Accent Palette",
-				"text": "The color palette famously used by Ellsworth Kelly in his art work. The addition of the green allows for a full “rainbow” of potential accent colors that compliment the main palette.",
+				"text": "The color palette should compliment not compete. So in the essence of being as basic as I can be I introduce the most uncommon colors out there... Yellow, Green, and Blue.",
 				"img": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751626066/color_o95vah.png"
 			}
 		},

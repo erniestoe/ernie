@@ -23,22 +23,22 @@
 	],
 	"liveLinks": [
 		{
-			"href": "https://forsythcommunityresources.com/",
-			"text": "Forsyth Community Resources (Template in use)"
-		},
-		{
 			"href": "https://openresource.io/",
 			"text": "OpenResource"
+		},
+		{
+			"href": "https://forsythcommunityresources.com/",
+			"text": "Template in use"
 		}
 	],
 	"githubLinks": [
 		{
-			"href": "https://github.com/erniestoe/resource-theme",
-			"text": "OpenResource Theme"
+			"href": "https://github.com/erniestoe/openresource",
+			"text": "GitHub (Site)"
 		},
 		{
-			"href": "https://github.com/erniestoe/openresource",
-			"text": "OpenResource Site"
+			"href": "https://github.com/erniestoe/resource-theme",
+			"text": "GitHub (Theme)"
 		}
 	]
 

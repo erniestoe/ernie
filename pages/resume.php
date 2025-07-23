@@ -1,18 +1,18 @@
 <section class="resume">
 	<inner-column>
-		<header>
+		<!-- <header>
 			<h2 class="attention-voice"><?= $pageTitle; ?></h2>
-		</header>
+		</header> -->
 
 		<resume>
 			<picture>
-				<img src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1751387695/me_dflmgc.jpg">
+				<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753279197/resume-photo-2_wwhl4o.jpg">
 			</picture>
 
 			<div class="intro">
 				<h3 class="strong-voice">Ernesto Rivera-Saavedra</h3>
 
-				<p>Interdisciplinary designer & front-end developer with a knack for nailing visual identities and crafting bespoke WordPress websites.</p>
+				<p>Interdisciplinary designer with a focus on making good stuff.</p>
 			</div>
 
 			<div class="education">
@@ -22,7 +22,7 @@
 					<li>
 						<p>B.S. in Computer Science, Western Governors University</p>
 
-						<p>2023</p>
+						<p class="date">2023</p>
 					</li>
 				</ul>
 			</div>
@@ -33,55 +33,59 @@
 				<ul class="experience-list">
 					<li class="job">
 						<div class="title">
-							<p>Product Designer, OpenResource</p>
+							<p><em>Product Designer, OpenResource</em></p>
 
-							<p>2025</p>
+							<p class="date">2025</p>
 						</div>
 
-						<p>Custom WordPress themes and visual Identity.</p>
-
 						<ul class="experience-sublist">
-							<li>Created custom WordPress themes for community resource directories, and a marketing site for OpenResource</li>
+							<li class="quiet-voice">Created custom WordPress themes for community resource directories, and a marketing site for OpenResource</li>
 
-							<li>Used HTML, CSS, JS, PHP combined with Advanced Custom Fields (free and pro versions)</li>
+							<li class="quiet-voice">Used HTML, CSS, JS, PHP combined with Advanced Custom Fields (free and pro versions)</li>
 
-							<li>Used Figma for UX research, user testing, and UI design </li>
+							<li class="quiet-voice">Used Figma for UX research, user testing, and UI design </li>
 						</ul>
 					</li>
 
 					<li class="job">
 						<div class="title">
-							<p>Data Analyst, Rural Coalition</p>
+							<p><em>Project Coordinator, Rural Coalition</em></p>
 
-							<p>2023-2025</p>
+							<p class="date">2023-2025</p>
 						</div>
 
-						<p>Non-Profit data work.</p>
 
 						<ul class="experience-sublist">
-							<li>Organized and managed records using Google Sheets, Excel, and internal databases.</li>
+							<li class="quiet-voice">Designed flyers, posters, and promotional materials for outreach and events</li>
 
-							<li>Mediated between different departments to help reduce delays and keep tasks moving</li>
+							<li class="quiet-voice">Updated websites with program content, ensuring information was accurate, and accessible</li>
 
-							<li>Created reports using Tableau to support shareholder understanding</li>
+							<li class="quiet-voice">Collaborated across teams to improve the clarity of reports and stakeholder communications</li>
+
+							<li class="quiet-voice">Designed systems in Google Sheets and Excel to track deadlines, deliverables, and performance metrics</li>
+
+							<li class="quiet-voice">Worked cross-functionally to align messaging, visuals, and data for presentations and advocacy materials</li>
 						</ul>
 					</li>
 
 					<li class="job">
 						<div class="title">
-							<p>Program Manager, Urban Ministries of Wake County</p>
+							<p><em>Program Manager, Urban Ministries of Wake County</em></p>
 
-							<p>2018-2022</p>
+							<p class="date">2018-2022</p>
 						</div>
 
-						<p>Managed a food pantry.</p>
-
 						<ul class="experience-sublist">
-							<li>Managed day-to-day operations of a nonprofit program, including coordinating schedules for over 100 volunteers monthly</li>
+							<li class="quiet-voice">Designed and optimized operational systems to track client services, volunteer schedules, and donor interactions</li>
 
-							<li>Used Excel to create and maintain systems to track client visits, donations, and volunteer hours.</li>
+							<li class="quiet-voice">Coordinated and communicated with over 100 monthly volunteers, ensuring a consistent and welcoming program experience</li>
 
-							<li>Supported leadership to promote community events and fundraising activities.</li>
+							<li class="quiet-voice">Produced internal materials and digital assets to promote community events and fundraising campaigns</li>
+
+							<li class="quiet-voice">Contributed to outreach strategy, focusing on accessibility, inclusivity, and brand voice consistency</li>
+
+							<li class="quiet-voice">Supported leadership by translating program impact into clear visuals, reports, and community-facing communications</li>
+
 						</ul>
 					</li>
 				</ul>
