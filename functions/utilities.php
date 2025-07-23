@@ -26,3 +26,17 @@ function checkServer() {
 		define('BASE_URL', '?page=home');
 	}
 }
+
+function getBasePath() {
+	$env = getEnvironment();
+
+	if ($env === 'local') {
+		return '/';
+	} elseif ($env === 'staging') {
+		return '/beta-two/ernie/';
+	} elseif ($env === 'production') {
+		return '/';
+	} else {
+		return '/';
+	}
+}
