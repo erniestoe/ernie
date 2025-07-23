@@ -7,6 +7,7 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 $projectFiles = glob('data/project-data/*.json');
 $projects = [];
 
+
 foreach ($projectFiles as $file) {
 	$data = json_decode(file_get_contents($file), true);
 	if ($data) {
@@ -23,7 +24,7 @@ foreach ($projectFiles as $file) {
 		<meta property="og:image" content="https://peprojects.dev/beta-two/ernie/assets/images/meta-image.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>" >
-		<base href="/">
+		<base href="<?=BASE_URL?>">
 	</head>
 
 	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$currentPage['name'] === 'case-study' ? 'body-invert' : ''?>">
@@ -68,11 +69,11 @@ foreach ($projectFiles as $file) {
 						<div class="circle <?= $currentPage['name'] === 'home' ? 'filled' : ''?>"></div>
 					</li>
 					<li>
-						<a class="loud-voice" href="<?=getBasePath()?>case-study-index">Work</a>
+						<a class="loud-voice" href="/case-study-index">Work</a>
 						<div class="circle <?= $currentPage['name'] === 'case-study-index' ? 'filled' : ''?>"></div>
 					</li>
 					<li>
-						<a class="loud-voice" href="<?=getBasePath()?>design">Playground</a>
+						<a class="loud-voice" href="/design">Playground</a>
 						<div class="circle <?= $currentPage['name'] === 'design' ? 'filled' : ''?>"></div>
 					</li>
 					<li>
