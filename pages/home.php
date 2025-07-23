@@ -8,7 +8,7 @@
 			<work-card>
 				<a href="?page=case-study&id=1">
 					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/openresource-header_yw163p.png">
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png">
 					</picture>
 				</a>
 				
@@ -26,7 +26,7 @@
 			<work-card>
 				<a href="?page=case-study&id=4">
 					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/layout-garden-header_djkz4c.png">
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/layout-garden-header-alt_h8g9rq.png">
 					</picture>
 				</a>
 
@@ -42,7 +42,7 @@
 			<work-card>
 				<a href="?page=case-study&id=5">
 					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226742/e4p-header_hi3xk7.png">
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/e4p-header-alt_snd5bp.png">
 					</picture>
 				</a>
 

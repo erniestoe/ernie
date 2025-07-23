@@ -32,8 +32,8 @@ body {
 }
 
 .circle {
-	width: 24px;
-	height: 24px;
+	width: 32px;
+	height: 32px;
 	border-radius: 50%;
 	opacity: 0;
 	background-color: var(--main-white);
@@ -67,7 +67,7 @@ nav {
 
 		li {
 			display: flex;
-			align-items: center;
+			align-items: end;
 			gap: 16px;
 
 			.arrow {
