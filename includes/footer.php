@@ -4,6 +4,7 @@
 		<inner-column>
 			<nav class="footer-nav">
 				<a href="?page=resume" class=" quiet-voice">Resume</a>
+				<a class="attention-voice footer-contact" href="mailto:ersaavedra.nc@gmail.com">Let's Chat</a>
 				<a href="?page=style-guide" class="quiet-voice">Style Guide</a>
 			</nav>
 			

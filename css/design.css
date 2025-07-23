@@ -1,5 +1,23 @@
 @import "style.css";
 
 .design {
-	
+	.gallery inner-column{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 24px;
+
+		picture {
+			grid-column: span 4;
+		}
+
+		@media (width >=1024px) {
+			picture:nth-of-type(even){
+				grid-column: 2/5;
+			}
+
+			picture:nth-of-type(odd){
+				grid-column: span 3;
+			}
+		}
+	}
 }

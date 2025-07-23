@@ -34,11 +34,12 @@
 	.p5-container {
 		width: 100%;
 		overflow: hidden;
+		height: 100px;
 
 		canvas {
 			display: block;
 			width: 100%;
-			height: auto;
+			height: inherit;
 		}
 	}
 }

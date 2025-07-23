@@ -3,8 +3,8 @@ class Circle {
     this.x = random (0, width);
     this.y = random (0, height);
     this.r = random(20, 50);
-    this.dx = 2;
-    this.dy = 1;
+    this.dx = -1;
+    this.dy = -1;
   }
   
   move() {

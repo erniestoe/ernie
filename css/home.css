@@ -2,9 +2,9 @@
 
 .home-content {
 	
-	picture{
+	/*picture{
 	  filter: contrast(800%) grayscale(1);
-	}
+	}*/
 
 	.morph {
 		width: 300px;
@@ -16,10 +16,6 @@
 	}
 
 	inner-column {
-
-		@media(width >= 1024px) {
-			padding-left: 0;
-		}
 		
 
 		.intro {
@@ -28,7 +24,7 @@
 
 			@media(width >= 1024px) {
 				padding-top: 0;
-				padding-bottom: 348px;
+				padding-bottom: 200px;
 			}
 		}
 
@@ -43,20 +39,6 @@
 			flex-direction: column;
 			gap: 8px;
 
-			.tags {
-				display: flex;
-				flex-wrap: wrap;
-				padding-top: 8px;
-				gap: 8px;
-
-				li {
-					border-radius: 4px;
-					background-color: var(--main-white);
-					color: var(--main-black);
-					padding: 8px;
-					min-width: fit-content;
-				}
-			}
 		}
 
 		h3 + work-card {

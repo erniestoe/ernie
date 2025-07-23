@@ -8,7 +8,7 @@
 			<work-card>
 				<a href="?page=case-study&id=1">
 					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1751483002/openresource-header-image_a2fn2a.jpg">
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/openresource-header_yw163p.png">
 					</picture>
 				</a>
 				
@@ -23,10 +23,10 @@
 
 			<work-card>
 				<picture>
-					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1752717091/studio-ernie-header_pq3lqo.jpg">
+					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226741/layout-garden-header_djkz4c.png">
 				</picture>
 
-				<h4 class="quiet-voice bold">Studio Ernie</h4>
+				<h4 class="quiet-voice bold">Layout Garden</h4>
 
 				<ul class="tags">
 					<li class="quiet-voice">Visual Identity</li>
@@ -36,10 +36,10 @@
 
 			<work-card>
 				<picture>
-					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1751484540/ticketapp-header-green_fiefby.jpg">
+					<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753226742/e4p-header_hi3xk7.png">
 				</picture>
 
-				<h4 class="quiet-voice bold">ticketapp</h4>
+				<h4 class="quiet-voice bold">Exercises for Programmers</h4>
 
 				<ul class="tags">
 					<li class="quiet-voice">Visual Identity</li>
@@ -59,7 +59,7 @@
 
 			<h4 class="loud-voice">Less noise, <br> more intention.</h4>
 
-			<p class="strong-voice">I take a deliberate approach to design, caring about something works as much as how it looks. Cut through the noise and stand out.</p>
+			<p class="strong-voice">My approach to design is deliberate and careful, thoughtful, yet effective. <br> I care about how something <em>works</em> as much as how it <em>looks</em>. <br>Let's cut through the noise and stand out.</p>
 
 		</div>
 	</inner-column>

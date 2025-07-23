@@ -1,26 +1,23 @@
 <section class="work">
 	<inner-column>
-		<header>
-			<h2 class="attention-voice">
-				<?= $pageTitle; ?>
-			</h2>
+ 	<work-cards>
+ 		<?php foreach ($projects as $project) {?>
+ 			<work-card>
+ 				<a href="?page=case-study&id=<?=$project['id']?>">
+ 					<picture>
+ 						<img load="lazy" src="<?=$project['altHeaderImage'] != '' ? $project['altHeaderImage'] : $project['headerImage']?>">
+ 					</picture>
+ 				</a>
 
-			<p>All my case studies in one place. Enjoy .</p>
-		</header>
+ 				<h4 class="quiet-voice bold"><?=$project['projectName'] ?></h4>
 
-		<ul class="project-index-list">
-		<?php foreach ($projects as $project) {?>
-			<li>
-				<p><?= $project['projectName']?></p>
-
-				<a href="?page=case-study&id=<?=$project['id']?>">
-					View Case
-				</a>
-			</li>
-		<?php }?>
-		</ul>
-
-		<div class="p5-container" id="p5Container"></div>
-
+ 				<ul class="tags">
+ 					<?php foreach ($project['tags'] as $tag){ ?>
+ 						<li class="quiet-voice"><?=$tag?></li>
+ 					<?php } ?>
+ 				</ul>
+ 			</work-card>
+ 		<?php }?>
+		</work-cards>
 	</inner-column>
 </section>

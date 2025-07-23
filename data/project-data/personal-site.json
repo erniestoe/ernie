@@ -2,6 +2,7 @@
 	"id": 4,
 	"projectName": "Personal Site",
 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752692464/personal-site-header_r5lpke.jpg",
+	"altHeaderImage": "",
 	"tags": ["Visual Identity", "UI/UX Design", "PHP Development"],
 	"caseStudy": "A PHP site made to be a mini CMS system to house all of my stuff that I want to share on the interweb.",
 	"gallery": [

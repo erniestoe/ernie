@@ -1,14 +1,5 @@
 <section class="design">
 
-		<header>
-			<inner-column class="main-grid">
-				<h2 class="attention-voice"><?= $pageTitle; ?></h2>
-
-				<p>A collection of my graphic design works that don't really fit anywhere else.</p>
-			</inner-column>
-			
-		</header>
-
 		<div class="gallery">
 			<inner-column>
 			<?php foreach ($pageData['portrait'] as $portrait){?>

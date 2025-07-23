@@ -1,5 +1,5 @@
 <section class="resume">
-	<inner-column class="main-grid">
+	<inner-column>
 		<header>
 			<h2 class="attention-voice"><?= $pageTitle; ?></h2>
 		</header>

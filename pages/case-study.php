@@ -22,12 +22,12 @@ if ($projectId) {
 			<img loading="lazy" src="<?= $project['headerImage'] ?>">
 		</picture>
 	</header>
-	<inner-column class="main-grid">
+	<inner-column>
 		
 			<div class="text">
 				<h2 class="attention-voice"><?= $project['projectName'] ?></h2>
 
-				<ul class="tag-list">
+				<ul class="tags">
 					<?php foreach ($project['tags'] as $tag): ?>
 						<li class="tag"><?= $tag ?></li>
 					<?php endforeach; ?>
