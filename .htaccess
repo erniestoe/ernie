@@ -1,8 +1,4 @@
 RewriteEngine On
 
-# Allow existing files and folders to load normally
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+ReriteRule ^([0-9a-zA-Z_-]+)$		?page=$1 [NC, L]
 
-# Rewrite everything else to index.php?page=...
-RewriteRule ^([^/]+)/?$ index.php?page=$1 [L,QSA]
