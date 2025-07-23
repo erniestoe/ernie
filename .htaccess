@@ -1,4 +1,4 @@
 RewriteEngine On
 
 # page-name → ?page=page-name
-RewriteRule ^([0-9a-zA-Z_-]+)$ ?page=$1 [NC,L]
+RewriteRule ^([0-9a-zA-Z_-]+)$ index.php?page=$1 [NC,L]
