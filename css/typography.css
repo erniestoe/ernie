@@ -14,35 +14,35 @@
 .quiet-voice {
 	font-size: 1rem;
 	font-weight: 400;
-	line-height: 1.25em;
+	/*line-height: 1.25em;*/
 }
 
 p,
 .calm-voice
 {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	font-weight: 400;
 	/*letter-spacing: .01em;*/
 	
 }
 
 .strong-voice {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 441, "ital" 0;
+	font-variation-settings: "wght" 585, "ital" 0;
 	letter-spacing: .02em;
 }
 
 .attention-voice {
 	font-size: 2rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 641, "ital" 0;
+	font-variation-settings: "wght" 645, "ital" 0;
 	/*letter-spacing: .02em;*/
 
 }
 
 .loud-voice {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	/*font-weight: 900;*/
 	font-variation-settings: "wght" 741, "ital" 0;
 	/*letter-spacing: -.021em;*/
