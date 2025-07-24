@@ -69,7 +69,7 @@ foreach ($projectFiles as $file) {
 						<div class="circle <?= $currentPage['name'] === 'home' ? 'filled' : ''?>"></div>
 					</li>
 					<li>
-						<a class="loud-voice" href="/case-study-index">Work</a>
+						<a class="loud-voice" href="?page=case-study-index">Work</a>
 						<div class="circle <?= $currentPage['name'] === 'case-study-index' ? 'filled' : ''?>"></div>
 					</li>
 					<li>
