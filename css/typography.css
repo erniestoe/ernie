@@ -45,7 +45,7 @@ p,
 	font-size: 3rem;
 	/*font-weight: 900;*/
 	font-variation-settings: "wght" 741, "ital" 0;
-	/*letter-spacing: -.021em;*/
+	letter-spacing: -.021em;
 }
 
 .logo {
