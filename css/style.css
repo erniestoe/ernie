@@ -93,8 +93,6 @@ aside {
 	@media (width >= 1024px){
 		grid-column: span 4;
 		grid-row: span 2;
-
-		
 	}
 
 	.logo {
@@ -141,9 +139,7 @@ aside {
 			}
 		}
 
-		@media (width >= 1024px) {
-			display: none;
-		}
+		
 	}
 
 	.main-nav {
@@ -221,6 +217,16 @@ footer {
 			position: absolute;
 			white-space: nowrap;
 			width: 1px;
+		}
+	}
+}
+
+.garden-footer {
+	@media (width >= 1024px) {
+		grid-column: 3/14;
+
+		inner-column {
+			padding-left: 8px;
 		}
 	}
 }

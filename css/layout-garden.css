@@ -36,8 +36,23 @@
 @import "garden-modules/three-card-stats.css";
 @import "garden-modules/trendy-splash.css";
 
+.garden-nav {
+	@media (width > 1024px) {
+		position: relative;
+		h2 {
+			transform: rotate(-90deg);
+			position: fixed;
+			/*top: 196px;*/
+			left: 96px;
+		}
+	}
+}
+
 .layout-garden {
-	padding: calc(var(--spacing-unit) * var(--space-increment));
+	inner-column {
+		max-width: 100%;
+	}
+	/*padding: calc(var(--spacing-unit) * var(--space-increment));*/
 	color: hsl(var(--accent-hue), var(--accent-saturation), var(--accent-lightness));
 
 	/*overflow: hidden;*/
@@ -53,27 +68,7 @@
   		border-color: inherit !important;
 	}
 
-	header {
-		h2 {
-			grid-column: span 3;
-
-			@media (width >=1024px) {
-				grid-column: span 6;
-			}
-		}
-
-		p {
-			grid-column: span 2;
-
-			@media (width >=1024px) {
-				grid-column: span 3;
-			}
-		}
-	}
-
-	header + .main-garden {
-		margin-top: 60px;
-	}
+	
 }
 
 .main-garden {

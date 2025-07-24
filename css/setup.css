@@ -102,14 +102,58 @@ section inner-column {
 		}
 }
 
-.body-invert {
+.body-invert,
+.body-garden {
 	background-color: var(--main-white);
 	color: var(--main-black);
 }
 
-.header-invert {
+.header-invert,
+.header-garden {
 	background-color: var(--main-black);
 	color: var(--main-white);
+}
+
+.header-garden {
+
+		@media (width >= 1024px){
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+}
+
+.main-garden {
+
+	@media (width >= 630px) {
+		grid-column: span 8;
+	}	
+
+	@media (width >= 1024px) {
+		grid-row: auto;
+		grid-column: 3/14;
+
+		inner-column {
+			max-width: 100%;
+			padding: 0;
+			padding: 8px;
+		}
+	}
+}
+
+.logo.hidden {
+	display: none;
+}
+
+.hidden {
+	@media (width >= 1024px) {
+			display: none;
+	}
+}
+
+.show {
+	@media (width >= 1024px) {
+			display: block;
+	}
 }
 
 .visually-hidden {

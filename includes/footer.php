@@ -1,6 +1,6 @@
 	</main>
 
-	<footer class="site-footer">
+	<footer class="site-footer <?=$currentPage['name'] === 'garden'? 'garden-footer': ''?>">
 		<inner-column>
 			<nav class="footer-nav">
 				<a href="?page=resume" class=" quiet-voice">Resume</a>

@@ -14,7 +14,20 @@ foreach ($projectFiles as $file) {
 		$projects[] = $data;
 	}
 }
+
+if ($currentPage['name'] === 'case-study') {
+	$bodyClass = "body-invert";
+	$headerClass = "header-invert";
+} else if ($currentPage['name'] === 'garden') {
+	$bodyClass = "body-garden";
+	$headerClass = "header-garden";
+	$mainClass= "main-garden";
+} else {
+	$bodyClass = "";
+	$headerClass = "";
+}
 ?>
+
 <!doctype html>
 <html lang='en'>
 	<head>
@@ -27,10 +40,10 @@ foreach ($projectFiles as $file) {
 		<link rel="stylesheet" href="https://use.typekit.net/gnm8vwc.css">
 	</head>
 
-	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$currentPage['name'] === 'case-study' ? 'body-invert' : ''?>">
-		<aside class="<?=$currentPage['name'] === 'case-study' ? 'header-invert' : ''?>">
+	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$bodyClass?>">
+		<aside class="<?=$headerClass?>">
 			<header>
-				<button id="open" class="quiet-voice bold">Menu</button>
+				<button id="open" class="quiet-voice <?=$currentPage['name'] === 'garden' ? 'show' : 'hidden'?>">Menu</button>
 
 				<div class="mobile-menu visually-hidden">
 					<inner-column>
@@ -57,11 +70,16 @@ foreach ($projectFiles as $file) {
 				</div>
 			</header>
 			<inner-column>
-
-
 			
-			<h1 class="logo">Ernesto <br> Rivera-Saavedra</h1>
+			<h1 class="logo <?=$currentPage['name'] === 'garden' ? 'hidden': ''?>">Ernesto <br> Rivera-Saavedra</h1>
 
+			<?php if($currentPage['name'] === 'garden'):?>
+				<nav class="garden-nav">
+					<h2 class="calm-voice bold">Layout Garden.</h2>
+				</nav>
+			<?php endif;?>
+
+			<?php if($currentPage['name'] != 'garden'):?>
 			<nav class="main-nav visually-hidden">
 				<ul>
 					<li>
@@ -85,6 +103,7 @@ foreach ($projectFiles as $file) {
 
 			<a class="attention-voice contact visually-hidden" href="mailto:ersaavedra.nc@gmail.com">Let's Chat</a>
 			</inner-column>
+			<?php endif;?>
 		</aside>
 
-		<main>
+		<main class="<?=$mainClass?>">
