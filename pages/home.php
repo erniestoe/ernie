@@ -40,7 +40,7 @@
 			</work-card>
 
 			<work-card>
-				<a href="?page=case-study&id=5">
+				<a href="/case-study/5">
 					<picture>
 						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/e4p-header-alt_snd5bp.png">
 					</picture>
