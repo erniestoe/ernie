@@ -31,17 +31,9 @@ body {
     
 }
 
-.circle {
-	width: 32px;
-	height: 32px;
-	border-radius: 50%;
-	opacity: 0;
-	background-color: var(--main-white);
-	transition: all .2s ease;
-}
-
-.filled {
-	opacity: 1;
+.highlight {
+	text-decoration: underline;
+	text-underline-offset: 10px;
 }
 
 .tags {
@@ -63,12 +55,13 @@ nav {
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 48px;
+		gap: 24px;
 
 		li {
 			display: flex;
-			align-items: end;
+			align-items: center;
 			gap: 16px;
+
 
 			.arrow {
 				align-self: end;

@@ -83,16 +83,13 @@ if ($currentPage['name'] === 'case-study') {
 			<nav class="main-nav visually-hidden">
 				<ul>
 					<li>
-						<a class="loud-voice" href="/">Home</a>
-						<div class="circle <?= $currentPage['name'] === 'home' ? 'filled' : ''?>"></div>
+						<a class="loud-voice <?= $currentPage['name'] === 'home' ? 'highlight' : ''?>" href="/">Home</a>
 					</li>
 					<li>
-						<a class="loud-voice" href="?page=case-study-index">Work</a>
-						<div class="circle <?= $currentPage['name'] === 'case-study-index' ? 'filled' : ''?>"></div>
+						<a class="loud-voice <?= $currentPage['name'] === 'case-study-index' ? 'highlight' : ''?>" href="?page=case-study-index">Work</a>
 					</li>
 					<li>
-						<a class="loud-voice" href="?page=design">Playground</a>
-						<div class="circle <?= $currentPage['name'] === 'design' ? 'filled' : ''?>"></div>
+						<a class="loud-voice <?= $currentPage['name'] === 'design' ? 'highlight' : ''?>" href="?page=design">Playground</a>
 					</li>
 					<li>
 						<a class="loud-voice" target="_blank" href="https://lapanaderia.substack.com/">Blog</a>

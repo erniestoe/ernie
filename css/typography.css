@@ -44,13 +44,17 @@ p,
 .loud-voice {
 	font-size: 3rem;
 	/*font-weight: 900;*/
-	font-variation-settings: "wght" 741, "ital" 0;
+	font-variation-settings: "wght" 641, "ital" 0;
 	letter-spacing: -.021em;
 }
 
+/*.loud-voice.highlight {
+	font-variation-settings: "wght" 641, "ital" 0;
+}*/
+
 .logo {
 	font-size: 1rem;
-	font-variation-settings: "wght" 741, "ital" 0;
+	font-variation-settings: "wght" 585, "ital" 0;
 	/*letter-spacing: .01em;*/
 	/*text-transform: uppercase;*/
 }
@@ -60,7 +64,7 @@ em {
 }
 
 .bold {
-	font-variation-settings: "wght" 441, "ital" 0;
+	font-variation-settings: "wght" 641, "ital" 0;
 	/*font-weight: 800;*/
 	/*letter-spacing: .01em;*/
 }
