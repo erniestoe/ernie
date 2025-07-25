@@ -10,8 +10,7 @@
 			
 		</inner-column>
 	</footer>
-
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	
 	<script type="module" src="js/script.js"></script>
 	<?php if ($currentPage['name'] === 'case-study-index') : ?>
 		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>

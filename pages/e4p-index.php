@@ -6,11 +6,6 @@ $exercises = $data['exercises'];
 
 <section class="e4p-index">
 	<inner-column>
-		<header>
-				<h2 class="attention-voice"><?= $pageTitle; ?></h2>
-
-				<p>A collection of programming exercises done by me using PHP and, JavaScript.</p>
-		</header>
 
 		<ul class="index-list">
 			<?php foreach ($exercises as $exercise): ?>

@@ -79,6 +79,7 @@ if ($currentPage['name'] === 'case-study') {
 				</nav>
 			<?php endif;?>
 
+
 			<?php if($currentPage['name'] != 'garden'):?>
 			<nav class="main-nav visually-hidden">
 				<ul>

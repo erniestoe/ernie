@@ -42,7 +42,8 @@
 		}
 
 		iframe,
-		picture {
+		picture
+		 {
 			grid-column: span 4;
 		}
 

@@ -44,8 +44,8 @@ if ($projectId) {
 					<?php endforeach ?>
 				<?php endif; ?>
 				
-				<?php if ($project['video']): ?>
-					<iframe loading="lazy" src="<?= $project['video'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<?php if ($project['youtube']): ?>
+					<iframe loading="lazy" src="<?= $project['youtube'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				<?php endif; ?>
 
 				<?php foreach ($project['gallery']  as $image): ?>
@@ -57,7 +57,6 @@ if ($projectId) {
 
 			<links>
 				<div class="live">
-
 					<ul>
 						<?php foreach ($project['liveLinks'] as $liveLink):?>
 							<li>

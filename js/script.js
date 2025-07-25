@@ -75,12 +75,7 @@ window.onload = () => {
 	const exerciseId = urlParameters.get('id');
 	const currentPage = urlParameters.get('page');
 
-	if (!exerciseId && currentPage === 'programming') {
-		areaOfRectangularRoom();
-		areaOfRectangularRoom2();
-	}
-
-	if (exerciseId === 'area') {
+	if (currentPage === 'exercise' && exerciseId === 'area') {
 		areaOfRectangularRoom();
 		areaOfRectangularRoom2();
 	}

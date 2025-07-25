@@ -24,6 +24,23 @@
 			</work-card>
 
 			<work-card>
+				<a href="?page=case-study&id=6">
+					<picture>
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753478430/studio-ernie-header-alt_byckos.png">
+					</picture>
+				</a>
+
+				<h4 class="quiet-voice bold">Studio Ernie</h4>
+
+				<ul class="tags">
+					<li class="quiet-voice">Visual Identity</li>
+					<li class="quiet-voice">UI/UX Design</li>
+					<li class="quiet-voice">WordPress Developmen</li>
+					<li class="quiet-voice">Sprint</li>
+				</ul>
+			</work-card>
+
+			<work-card>
 				<a href="?page=case-study&id=4">
 					<picture>
 						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/layout-garden-header-alt_h8g9rq.png">
@@ -36,23 +53,6 @@
 					<li class="quiet-voice">Front-End Development</li>
 					<li class="quiet-voice">UI/UX Design</li>
 					<li class="quiet-voice">Component Library</li>
-				</ul>
-			</work-card>
-
-			<work-card>
-				<a href="?page=case-study&id=5">
-					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/e4p-header-alt_snd5bp.png">
-					</picture>
-				</a>
-
-				<h4 class="quiet-voice bold">Exercises for Programmers</h4>
-
-				<ul class="tags">
-					<li class="quiet-voice">Progressive Enhancement</li>
-					<li class="quiet-voice">UI/UX Design</li>
-					<li class="quiet-voice">Form Handling</li>
-					<li class="quiet-voice">PHP Development</li>
 				</ul>
 			</work-card>
 

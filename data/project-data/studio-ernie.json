@@ -1,27 +1,29 @@
-// {
-// 	"id": 3,
-// 	"projectName": "Studio Ernie",
-// 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752717091/studio-ernie-header_pq3lqo.jpg",
-// 	"altHeaderImage": "",
-// 	"tags": ["Visual Identity", "UI/UX Design", "WordPress Development"],
-// 	"caseStudy": "Utilized the WordPress block editor to spin up a proof of concept site for Studio Ernie in a three day sprint. The main goal was to spin up a site and give Studio Ernie a visual direction within three days (who doesn't love a good sprint?). Am I suddenly a Block Editor master or lover? No. Can I take a design and make something with the Block Editor effectively? Yes.",
-// 	"gallery": [
-	
-// 	],
-// 	"video": "https://www.youtube.com/embed/1D-mGgpdHsA?si=J2V4BC50dZwHfF47",
-// 	"figma": [
-// 		{"src": "https://embed.figma.com/design/dGuEHOUzxiLfEjUF3vEeiX/studio-ernie---style-tile-and-mockup?node-id=4-879&embed-host=share"},
-// 		{"src": "https://embed.figma.com/board/JluCVbyIGt9TC6J6J5HtaS/Studio-Ernie?node-id=0-1&embed-host=share"}
-// 	],
-// 	"liveLinks": [
-// 		{
-// 			"href": "https://studio.ersaavedra.dev/",
-// 			"text": "Live Site"
-// 		}
+{
+	"id": 6,
+	"projectName": "Studio Ernie",
+	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753478429/studio-ernie-header_wjpgya.png",
+	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753478430/studio-ernie-header-alt_byckos.png",
+	"tags": ["Visual Identity", "UI/UX Design", "WordPress Development", "Sprint"],
+	"caseStudy": "<span class='bold'>Bold, fun, <em>French?</em></span><br>The goal here was to create a brand / visual identity and website for Studio Ernie (conceptual studio) in 72 hrs. Deliverables included the website (WordPress Block editor and custom CSS), logo work, and a visual identity to guide the studio's visual direction.",
+	"gallery": [
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-mobile_jcclpx.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-tablet_sqk5h1.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-desktop_a3ybb3.jpg"}
+	],
+	"youtube": "https://www.youtube.com/embed/1D-mGgpdHsA?si=J2V4BC50dZwHfF47",
+	"figma": [
+		{"src": "https://embed.figma.com/design/dGuEHOUzxiLfEjUF3vEeiX/studio-ernie---style-tile-and-mockup?node-id=4-879&embed-host=share"},
+		{"src": "https://embed.figma.com/board/JluCVbyIGt9TC6J6J5HtaS/Studio-Ernie?node-id=0-1&embed-host=share"}
+	],
+	"liveLinks": [
+		{
+			"href": "https://studio.ersaavedra.dev/",
+			"text": "Live Site"
+		}
 		
-// 	],
-// 	"githubLinks": [
+	],
+	"githubLinks": [
 		
-// 	]
+	]
 
-// }
+}
