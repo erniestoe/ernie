@@ -26,4 +26,3 @@ function checkServer() {
 		define('BASE_URL', '?page=home');
 	}
 }
-
