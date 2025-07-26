@@ -35,7 +35,7 @@
 				<ul class="tags">
 					<li class="quiet-voice">Visual Identity</li>
 					<li class="quiet-voice">UI/UX Design</li>
-					<li class="quiet-voice">WordPress Developmen</li>
+					<li class="quiet-voice">WordPress Development</li>
 					<li class="quiet-voice">Sprint</li>
 				</ul>
 			</work-card>
