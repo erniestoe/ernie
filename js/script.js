@@ -1,16 +1,15 @@
-import { areaOfRectangularRoom, areaOfRectangularRoom2 } from "./area-of-a-rectangular-room.js";
-import { taxCalculator } from "./tax-calculator.js";
-import { legalDrivingAge } from "./legal-driving-age.js";
-import { anagramChecker } from "./anagram-checker.js";
-import { pizzaParty } from "./pizza-party.js"; 
-import { tempConverter } from "./temp-converter.js"; 
-import { countingCharacters } from "./counting-characters.js"; 
-import { selfCheckout, selfCheckout2 } from "./self-checkout.js"; 
-import { paintCalculator } from "./paint-calculator.js"; 
-import { simpleInterest } from "./simple-interest.js"; 
-import { numbersToNames } from "./numbers-to-names.js"; 
-import { addingNumbers } from "./adding-numbers.js"; 
-import { layoutGardenOptions } from './layout-garden-options.js';
+// import { areaOfRectangularRoom, areaOfRectangularRoom2 } from "./area-of-a-rectangular-room.js";
+// import { taxCalculator } from "./tax-calculator.js";
+// import { legalDrivingAge } from "./legal-driving-age.js";
+// import { anagramChecker } from "./anagram-checker.js";
+// import { pizzaParty } from "./pizza-party.js"; 
+// import { tempConverter } from "./temp-converter.js"; 
+// import { countingCharacters } from "./counting-characters.js"; 
+// import { selfCheckout, selfCheckout2 } from "./self-checkout.js"; 
+// import { paintCalculator } from "./paint-calculator.js"; 
+// import { simpleInterest } from "./simple-interest.js"; 
+// import { numbersToNames } from "./numbers-to-names.js"; 
+// import { addingNumbers } from "./adding-numbers.js"; 
 
 window.onload = () => {
 	const mainMenu = document.querySelector('.mobile-menu');
@@ -43,8 +42,6 @@ window.onload = () => {
 		});
 	}
 
-	layoutGardenOptions();
-
 	//morphing shape
 	gsap.registerPlugin(MorphSVGPlugin);
 
@@ -71,31 +68,26 @@ window.onload = () => {
 	  });
 
 	// E4P
-	const urlParameters = new URLSearchParams(window.location.search);
-	const exerciseId = urlParameters.get('id');
-	const currentPage = urlParameters.get('page');
+	// const urlParameters = new URLSearchParams(window.location.search);
+	// const exerciseId = urlParameters.get('id');
+	// const currentPage = urlParameters.get('page');
 
-	if (currentPage === 'exercise' && exerciseId === 'area') {
-		areaOfRectangularRoom();
-		areaOfRectangularRoom2();
-	}
-	if (exerciseId === 'tax') taxCalculator();
-	if (exerciseId === 'driving') legalDrivingAge();
-	if (exerciseId === 'anagrams') anagramChecker();
-	if (exerciseId === 'pizzaParty') pizzaParty();
-	if (exerciseId === 'converter') tempConverter();
-	if (exerciseId === 'characters') countingCharacters();
-	if (exerciseId === 'selfCheckout') {
-		selfCheckout();
-		selfCheckout2();
-	}
-	if (exerciseId === 'paint') paintCalculator();
-	if (exerciseId === 'interest') simpleInterest();
-	if (exerciseId === 'numbersToNames') numbersToNames();
-	if (exerciseId === 'addingNumbers') addingNumbers();
-
-	document.addEventListener('mousemove', (e) => {
-	   circleCursor.style.left = `${e.clientX}px`;
-	   circleCursor.style.top = `${e.clientY}px`;
-	});
+	// if (currentPage === 'exercise' && exerciseId === 'area') {
+	// 	areaOfRectangularRoom();
+	// 	areaOfRectangularRoom2();
+	// }
+	// if (exerciseId === 'tax') taxCalculator();
+	// if (exerciseId === 'driving') legalDrivingAge();
+	// if (exerciseId === 'anagrams') anagramChecker();
+	// if (exerciseId === 'pizzaParty') pizzaParty();
+	// if (exerciseId === 'converter') tempConverter();
+	// if (exerciseId === 'characters') countingCharacters();
+	// if (exerciseId === 'selfCheckout') {
+	// 	selfCheckout();
+	// 	selfCheckout2();
+	// }
+	// if (exerciseId === 'paint') paintCalculator();
+	// if (exerciseId === 'interest') simpleInterest();
+	// if (exerciseId === 'numbersToNames') numbersToNames();
+	// if (exerciseId === 'addingNumbers') addingNumbers();
 }
