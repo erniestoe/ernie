@@ -10,7 +10,7 @@ $exercises = $data['exercises'];
 		<ul class="index-list">
 			<?php foreach ($exercises as $exercise): ?>
 				<li>
-					<a class="calm-voice" href="?page=exercise&id=<?= $exercise['id'] ?>">
+					<a class="calm-voice" href="<?= ENV === 'production' ? '/exercise/' . $exercise['id'] : '?page=exercise&id=' .  $exercise['id']?>">
 						<?= $exercise['title'] ?>
 					</a>
 
