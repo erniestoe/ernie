@@ -65,7 +65,7 @@ if ($projectSlug) {
 					<nav>
 						<ul>
 							<li>
-								<a class="loud-voice" href="?">Home</a>
+								<a class="loud-voice" href="<?= ENV === 'production'? '/' : '?page=home'?>">Home</a>
 							</li>
 							<li>
 								<a class="loud-voice" href="<?= ENV === 'production'? '/case-study-index' : '?page=case-study-index'?>">Work</a>
@@ -99,7 +99,7 @@ if ($projectSlug) {
 			<nav class="main-nav visually-hidden">
 				<ul>
 					<li>
-						<a class="loud-voice <?= $currentPage['name'] === 'home' ? 'highlight' : ''?>" href="/">Home</a>
+						<a class="loud-voice <?= $currentPage['name'] === 'home' ? 'highlight' : ''?>" href="<?= ENV === 'production'? '/' : '?page=home'?>">Home</a>
 					</li>
 					<li>
 					<?php if(ENV === 'local'): ?>
