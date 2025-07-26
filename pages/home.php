@@ -6,7 +6,8 @@
 			<h3 class="attention-voice">Select Work</h3>
 
 			<work-card>
-				<a href="?page=case-study&id=1">
+				<a href="<?= ENV === 'production'? '/case-study/openresource
+				' : '?page=case-study&slug=openresource'?>">
 					<picture>
 						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png">
 					</picture>
