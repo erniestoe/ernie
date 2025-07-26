@@ -24,7 +24,8 @@
 			</work-card>
 
 			<work-card>
-				<a href="?page=case-study&id=6">
+				<a href="<?= ENV === 'production'? '/case-study/studio-ernie
+				' : '?page=case-study&slug=studio-ernie'?>">
 					<picture>
 						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753478430/studio-ernie-header-alt_byckos.png">
 					</picture>
@@ -41,7 +42,7 @@
 			</work-card>
 
 			<work-card>
-				<a href="?page=case-study&id=4">
+				<a href="<?= ENV === 'production'? '/case-study/layout-garden' : '?page=case-study&slug=layout-garden'?>">
 					<picture>
 						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/layout-garden-header-alt_h8g9rq.png">
 					</picture>

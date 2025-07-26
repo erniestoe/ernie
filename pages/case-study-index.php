@@ -3,7 +3,7 @@
  	<work-cards>
  		<?php foreach ($projects as $project) {?>
  			<work-card>
- 				<a href="?page=case-study&id=<?=$project['id']?>">
+ 				<a href="?page=case-study&slug=<?=$project['slug']?>">
  					<picture>
  						<img load="lazy" src="<?=$project['altHeaderImage'] != '' ? $project['altHeaderImage'] : $project['headerImage']?>">
  					</picture>

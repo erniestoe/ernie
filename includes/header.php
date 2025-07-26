@@ -6,6 +6,9 @@ $exercises = $data['exercises'];
 $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 $projectFiles = glob('data/project-data/*.json');
 $projects = [];
+$projectSlug = $_GET['slug'] ?? null;
+$projectId = $_GET['id'] ?? null;
+$project = null;
 
 
 foreach ($projectFiles as $file) {
@@ -25,6 +28,18 @@ if ($currentPage['name'] === 'case-study') {
 } else {
 	$bodyClass = "";
 	$headerClass = "";
+}
+
+if ($projectSlug) {
+	$projectFiles = glob('data/project-data/*.json');
+
+	foreach ($projectFiles as $file) {
+		$data = json_decode(file_get_contents($file), true);
+		if ($data && $data['slug'] == $projectSlug) {
+			$project = $data;
+			break;
+		}
+	}
 }
 ?>
 
@@ -87,7 +102,18 @@ if ($currentPage['name'] === 'case-study') {
 						<a class="loud-voice <?= $currentPage['name'] === 'home' ? 'highlight' : ''?>" href="/">Home</a>
 					</li>
 					<li>
+					<?php if(ENV === 'local'): ?>
 						<a class="loud-voice <?= $currentPage['name'] === 'case-study-index' ? 'highlight' : ''?>" href="?page=case-study-index">Work</a>
+					<?php endif; ?>
+
+					<?php if(ENV === 'staging'): ?>
+						<a class="loud-voice <?= $currentPage['name'] === 'case-study-index' ? 'highlight' : ''?>" href="?page=case-study-index">Work</a>
+					<?php endif; ?>
+
+
+					<?php if(ENV === 'production'): ?>
+						<a class="loud-voice <?= $currentPage['name'] === 'case-study-index' ? 'highlight' : ''?>" href="/case-study-index">Work</a>
+					<?php endif; ?>	
 					</li>
 					<li>
 						<a class="loud-voice <?= $currentPage['name'] === 'design' ? 'highlight' : ''?>" href="?page=design">Playground</a>

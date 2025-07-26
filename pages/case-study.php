@@ -1,18 +1,19 @@
 <?php 
-$projectId = $_GET['id'] ?? null;
-$project = null;
+// $projectSlug = $_GET['slug'] ?? null;
+// $projectId = $_GET['id'] ?? null;
+// $project = null;
 
-if ($projectId) {
-	$projectFiles = glob('data/project-data/*.json');
+// if ($projectSlug) {
+// 	$projectFiles = glob('data/project-data/*.json');
 
-	foreach ($projectFiles as $file) {
-		$data = json_decode(file_get_contents($file), true);
-		if ($data && $data['id'] == $projectId) {
-			$project = $data;
-			break;
-		}
-	}
-}
+// 	foreach ($projectFiles as $file) {
+// 		$data = json_decode(file_get_contents($file), true);
+// 		if ($data && $data['slug'] == $projectSlug) {
+// 			$project = $data;
+// 			break;
+// 		}
+// 	}
+// }
 ?>
 
 <section class="case-study ">
