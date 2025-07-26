@@ -157,7 +157,12 @@ function renderCSS($page) {
     	"404" => "404.css"
 	];
 
-	return isset($cssPages[$page]) ? '/css/' . $cssPages[$page] : '/css/style.css';
+	if (ENV === 'staging') {
+		return isset($cssPages[$page]) ? 'css/' . $cssPages[$page] : 'css/style.css';
+	} else {
+		return isset($cssPages[$page]) ? '/css/' . $cssPages[$page] : '/css/style.css';
+	}
+	
 }
 
 //Renders Layout garden section
