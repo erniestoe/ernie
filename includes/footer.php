@@ -11,7 +11,7 @@
 		</inner-column>
 	</footer>
 	
-	<script type="module" src="js/script.js"></script>
+	<script type="module" src="<?= ENV === 'production' ? '/js/script.js' : 'js/script.js'?>"></script>
 	<?php if ($currentPage['name'] === 'case-study-index') : ?>
 		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
 		
