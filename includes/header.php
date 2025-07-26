@@ -68,10 +68,10 @@ if ($projectSlug) {
 								<a class="loud-voice" href="?">Home</a>
 							</li>
 							<li>
-								<a class="loud-voice" href="?page=case-study-index">Work</a>
+								<a class="loud-voice" href="<?= ENV === 'production'? '/case-study-index' : '?page=case-study-index'?>">Work</a>
 							</li>
 							<li>
-								<a class="loud-voice" href="?page=design">Playground</a>
+								<a class="loud-voice" href="<?= ENV === 'production'? '/design' : '?page=design'?>">Playground</a>
 							</li>
 							<li>
 								<a class="loud-voice" href="">Blog</a>
@@ -116,7 +116,7 @@ if ($projectSlug) {
 					<?php endif; ?>	
 					</li>
 					<li>
-						<a class="loud-voice <?= $currentPage['name'] === 'design' ? 'highlight' : ''?>" href="?page=design">Playground</a>
+						<a class="loud-voice <?= $currentPage['name'] === 'design' ? 'highlight' : ''?>" href="<?= ENV === 'production'? '/design' : '?page=design'?>">Playground</a>
 					</li>
 					<li>
 						<a class="loud-voice" target="_blank" href="https://lapanaderia.substack.com/">Blog</a>
