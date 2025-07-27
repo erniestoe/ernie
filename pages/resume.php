@@ -5,7 +5,7 @@
 		</header> -->
 
 		<resume>
-			<picture>
+			<picture data-tilt>
 				<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753279197/resume-photo-2_wwhl4o.jpg">
 			</picture>
 

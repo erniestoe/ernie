@@ -50,9 +50,11 @@
 				<?php endif; ?>
 
 				<?php foreach ($project['gallery']  as $image): ?>
-					<picture>
-						<img loading="lazy" src="<?= $image['src']; ?>">
-					</picture>
+					<a data-fslightbox="gallery" href="<?= $image['src']; ?>">
+						<picture>
+							<img loading="lazy" src="<?= $image['src']; ?>">
+						</picture>
+					</a>
 				<?php endforeach; ?>
 			</case-study-gallery>
 

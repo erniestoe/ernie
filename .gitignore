@@ -2,3 +2,5 @@
 /assets/fonts/*
 /projects/potc-mockup/assets/fonts
 config.php
+/js/fslightbox.js
+/js/vanilla-tilt.js

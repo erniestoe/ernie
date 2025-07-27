@@ -5,7 +5,7 @@
 		<work-cards>
 			<h3 class="attention-voice">Select Work</h3>
 
-			<work-card>
+			<work-card >
 				<a href="<?= ENV === 'production'? '/case-study/openresource
 				' : '?page=case-study&slug=openresource'?>">
 					<picture>
@@ -38,23 +38,23 @@
 					<li class="quiet-voice">Visual Identity</li>
 					<li class="quiet-voice">UI/UX Design</li>
 					<li class="quiet-voice">WordPress Development</li>
-					<li class="quiet-voice">Sprint</li>
+					<li class="quiet-voice">Concept</li>
 				</ul>
 			</work-card>
 
 			<work-card>
-				<a href="<?= ENV === 'production'? '/case-study/layout-garden' : '?page=case-study&slug=layout-garden'?>">
+				<a href="<?= ENV === 'production'? '/case-study/crft' : '?page=case-study&slug=crft'?>">
 					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/layout-garden-header-alt_h8g9rq.png">
+						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png">
 					</picture>
 				</a>
 
-				<h4 class="quiet-voice bold">Layout Garden</h4>
+				<h4 class="quiet-voice bold">CRFT</h4>
 
 				<ul class="tags">
-					<li class="quiet-voice">Front-End Development</li>
 					<li class="quiet-voice">UI/UX Design</li>
-					<li class="quiet-voice">Component Library</li>
+					<li class="quiet-voice">Branding</li>
+					<li class="quiet-voice">Concept</li>
 				</ul>
 			</work-card>
 
@@ -63,9 +63,12 @@
 		<div class="about">
 			<h3 class="attention-voice">Ethos</h3>
 
-			<svg class="morph" viewBox="0 0 200 200">
-			  <path id="shape" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-			</svg>
+			<div data-tilt data-tilt-full-page-listening>
+				<svg class="morph" viewBox="0 0 200 200">
+				  <path id="shape" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
+				</svg>
+			</div>
+			
 
 
 			<h4 class="loud-voice">Less noise, <br> more intention.</h4>
