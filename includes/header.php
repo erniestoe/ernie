@@ -9,7 +9,9 @@ $projects = [];
 $projectSlug = $_GET['slug'] ?? null;
 $projectId = $_GET['id'] ?? null;
 $project = null;
-
+$bodyClass = "";
+$headerClass = "";
+$mainClass = "";
 
 foreach ($projectFiles as $file) {
 	$data = json_decode(file_get_contents($file), true);

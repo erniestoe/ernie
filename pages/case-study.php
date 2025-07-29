@@ -1,21 +1,3 @@
-<?php 
-// $projectSlug = $_GET['slug'] ?? null;
-// $projectId = $_GET['id'] ?? null;
-// $project = null;
-
-// if ($projectSlug) {
-// 	$projectFiles = glob('data/project-data/*.json');
-
-// 	foreach ($projectFiles as $file) {
-// 		$data = json_decode(file_get_contents($file), true);
-// 		if ($data && $data['slug'] == $projectSlug) {
-// 			$project = $data;
-// 			break;
-// 		}
-// 	}
-// }
-?>
-
 <section class="case-study ">
 	<?php if ($project): ?>
 	<header>
