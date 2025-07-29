@@ -35,7 +35,7 @@
 	case-study-gallery {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 48px;
+		gap: 64px;
 
 		iframe {
 			aspect-ratio: 16/9;
