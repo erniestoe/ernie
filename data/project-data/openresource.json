@@ -7,13 +7,34 @@
 	"tags": ["Visual Identity", "Branding", "WordPress Development", "UI/UX Design"],
 	"caseStudy": "<span class='strong-voice'>A community project, for communites.</span> <br>Created a brand identity for OpenResource, A project originally created as a standalone WordPress template made so local communites can create their own sites to list local resources. The goal here was to expand out from the template and into a brand, or visual identity, showcasing how they (OpenResource) could present themselves on social media, and designed / coded a marketing site.",
 	"gallery": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-card-2_qzdhvr.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753495856/openresource-social-media-assets_wtxcrp.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-iphone-view_pqxajk.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-tablet-view_t8mtga.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg"}
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-card-2_qzdhvr.jpg",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753495856/openresource-social-media-assets_wtxcrp.png",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-iphone-view_pqxajk.jpg",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-tablet-view_t8mtga.jpg",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg",
+			"caption": ""
+		}
 	],
 	"youtube": "",
 	"figma": [

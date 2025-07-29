@@ -7,12 +7,30 @@
 	"tags": ["UI/UX Design", "App Protoyping", "Javascript Development", "Concept"],
 	"caseStudy": "ticketapp is a JavaScript only prototype simulating a mobile ticket booking experience. I styled the app to be inside a fake phone container, and used vanilla JavaScript with a single render root. I was inspired by frameworks like react but was motivated to purposefully not use them to get a better understanding on how they work under the hood. While I did build out full flows for browsing shows, selecting seats, and viewing tickets, the biggest thing I learned from this was learning how to design user flows. After going through this I realized I do have more breadth than I initially thought. Overall, this project was a solid learning experience for DOM logic, localStorage, and when to simplify when code gets too complicated.",
 	"gallery": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461440/CleanShot_2025-07-02_at_09.02.56_2x_j66t7f.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.06_2x_cxv5fb.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.10_2x_ftye7f.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.31_2x_ees74b.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.36_2x_inl7cu.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461442/CleanShot_2025-07-02_at_09.03.41_2x_iv84n6.png"}
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461440/CleanShot_2025-07-02_at_09.02.56_2x_j66t7f.png",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.06_2x_cxv5fb.png",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.10_2x_ftye7f.png",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.31_2x_ees74b.png",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461441/CleanShot_2025-07-02_at_09.03.36_2x_inl7cu.png",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1751461442/CleanShot_2025-07-02_at_09.03.41_2x_iv84n6.png",
+			"caption": ""
+		}
 	],
 	"youtube": "",
 	"figma": [

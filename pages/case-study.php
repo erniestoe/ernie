@@ -38,7 +38,7 @@
 				<p><?= $project['caseStudy'] ?></p>
 			</div>
 
-			<case-study-gallery class="main-subgrid">
+			<case-study-gallery>
 				<?php if ($project['figma']): ?>
 					<?php foreach ($project['figma'] as $figmaEmbed): ?>
 						<iframe width="100%" loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="<?= $figmaEmbed['src']; ?>" allowfullscreen></iframe>
@@ -50,11 +50,17 @@
 				<?php endif; ?>
 
 				<?php foreach ($project['gallery']  as $image): ?>
-					<a data-fslightbox="gallery" href="<?= $image['src']; ?>">
-						<picture>
-							<img loading="lazy" src="<?= $image['src']; ?>">
-						</picture>
-					</a>
+					<figure>
+						<a data-fslightbox="gallery" href="<?= $image['src']; ?>">
+							<picture>
+								<img loading="lazy" src="<?= $image['src']; ?>">
+							</picture>
+						</a>
+
+						<?php if (!empty($image['caption'])): ?>
+							<figcaption class="calm-voice"><?=$image['caption']?></figcaption>
+						<?php endif;?>
+					</figure>
 				<?php endforeach; ?>
 			</case-study-gallery>
 

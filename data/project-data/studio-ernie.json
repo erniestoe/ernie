@@ -7,9 +7,18 @@
 	"tags": ["Visual Identity", "UI/UX Design", "WordPress Development", "Concept"],
 	"caseStudy": "<span class='bold'>Bold, fun, <em>French?</em></span><br>The goal here was to create a brand / visual identity and website for Studio Ernie (conceptual studio) in 72 hrs. Deliverables included the website (WordPress Block editor and custom CSS), logo work, and a visual identity to guide the studio's visual direction.",
 	"gallery": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-mobile_jcclpx.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-tablet_sqk5h1.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-desktop_a3ybb3.jpg"}
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-mobile_jcclpx.jpg",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-tablet_sqk5h1.jpg",
+			"caption": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753466725/studio-ernie-desktop_a3ybb3.jpg",
+			"caption": ""
+		}
 	],
 	"youtube": "https://www.youtube.com/embed/1D-mGgpdHsA?si=J2V4BC50dZwHfF47",
 	"figma": [
