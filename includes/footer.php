@@ -10,23 +10,16 @@
 			
 		</inner-column>
 	</footer>
-	
+
 	<script type="module" src="<?= ENV === 'production' ? '/js/script.js' : 'js/script.js'?>"></script>
 	<script type="text/javascript" src="<?= ENV === 'production' ? '/js/vanilla-tilt.js' : 'js/vanilla-tilt.js'?>"></script>
 	<script src="<?= ENV === 'production' ? '/js/fslightbox.js' : 'js/fslightbox.js'?>"></script>
-	<?php if ($currentPage['name'] === 'case-study-index') : ?>
-		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.min.js"></script>
-		
-		<script src="assets/p5/circle.js"></script>
-		<script src="assets/p5/sketch.js"></script>
-	<?php endif; ?>
 
-	<?php if ($currentPage['name'] === 'home') : ?>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
 
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
-	<?php endif; ?>
+	<!-- unpkg -->
+	<script src="https://unpkg.com/@barba/core"></script>
 
 	</body>
-
 </html>

@@ -16,6 +16,7 @@ window.onload = () => {
 	const openMainButton = document.querySelector('#open');
 	const closeMainButton = document.querySelector('#close');
 	const circleCursor = document.getElementById('circle-cursor');
+	const navItems = document.querySelectorAll('.main-nav ul li');
 
 	if (openMainButton && mainMenu) {
 		openMainButton.addEventListener('click', () => {
@@ -46,6 +47,7 @@ window.onload = () => {
 	gsap.registerPlugin(MorphSVGPlugin);
 
 	const timeline = gsap.timeline({ repeat: -1 });
+	const timeline2 = gsap.timeline();
 
 	timeline
 	  .to("#shape", {
@@ -67,27 +69,16 @@ window.onload = () => {
 	    ease: "elastic.out(1, 0.5)"
 	  });
 
-	// E4P
-	// const urlParameters = new URLSearchParams(window.location.search);
-	// const exerciseId = urlParameters.get('id');
-	// const currentPage = urlParameters.get('page');
+	timeline2
+		gsap.set('[data-tilt]', { opacity: 1 });
+		if (navItems.length) {
+				gsap.from('[data-tilt]', {
+					x: -100,
+					opacity: 0,
+					ease: "elastic.out(1, 0.5)",
+					duration: 1,
+					stagger: 0.15,
+				});
+			}
 
-	// if (currentPage === 'exercise' && exerciseId === 'area') {
-	// 	areaOfRectangularRoom();
-	// 	areaOfRectangularRoom2();
-	// }
-	// if (exerciseId === 'tax') taxCalculator();
-	// if (exerciseId === 'driving') legalDrivingAge();
-	// if (exerciseId === 'anagrams') anagramChecker();
-	// if (exerciseId === 'pizzaParty') pizzaParty();
-	// if (exerciseId === 'converter') tempConverter();
-	// if (exerciseId === 'characters') countingCharacters();
-	// if (exerciseId === 'selfCheckout') {
-	// 	selfCheckout();
-	// 	selfCheckout2();
-	// }
-	// if (exerciseId === 'paint') paintCalculator();
-	// if (exerciseId === 'interest') simpleInterest();
-	// if (exerciseId === 'numbersToNames') numbersToNames();
-	// if (exerciseId === 'addingNumbers') addingNumbers();
 }

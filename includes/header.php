@@ -53,7 +53,7 @@ if ($projectSlug) {
 		<meta property="og:title" content="Portfolio of Ernesto Rivera-Saavedra">
 		<meta property="og:image" content="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753554690/meta-image_oiqu9a.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>" >
+		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>">
 	</head>
 
 	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$bodyClass?>">
@@ -116,6 +116,15 @@ if ($projectSlug) {
 						<a class="loud-voice <?= $currentPage['name'] === 'case-study-index' ? 'highlight' : ''?>" href="/case-study-index">Work</a>
 					<?php endif; ?>	
 					</li>
+
+					<?php if($currentPage['name'] === 'case-study'):?>
+						<?php foreach ($projects as $projectLink):?>
+						<li data-tilt data-tilt-scale="1">
+							<a class="quiet-voice <?= $projectSlug === $projectLink['slug'] ? 'highlight' : ''?>" href="<?= ENV === 'production' ? '/case-study/' . $projectLink['slug'] : '?page=case-study&slug=' . $projectLink['slug'] ?>"><?=$projectLink['projectName'] ?></a>
+						</li>
+						<?php endforeach;?>
+					<?php endif;?>
+
 					<li data-tilt data-tilt-scale="1.1">
 						<a class="loud-voice <?= $currentPage['name'] === 'design' ? 'highlight' : ''?>" href="<?= ENV === 'production'? '/design' : '?page=design'?>">Playground</a>
 					</li>
