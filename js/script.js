@@ -18,6 +18,10 @@ window.onload = () => {
 	const circleCursor = document.getElementById('circle-cursor');
 	const navItems = document.querySelectorAll('.main-nav ul li');
 
+	document.querySelectorAll('[data-tilt]').forEach(el => {
+	  el.style.opacity = 1;
+	});
+
 	if (openMainButton && mainMenu) {
 		openMainButton.addEventListener('click', () => {
 			mainMenu.classList.toggle('visually-hidden');
@@ -70,15 +74,32 @@ window.onload = () => {
 	  });
 
 	timeline2
-		gsap.set('[data-tilt]', { opacity: 1 });
 		if (navItems.length) {
-				gsap.from('[data-tilt]', {
-					x: -100,
-					opacity: 0,
-					ease: "elastic.out(1, 0.5)",
-					duration: 1,
-					stagger: 0.15,
-				});
-			}
+	  		timeline2.from('[data-tilt]', {
+	   		x: -100,
+	    		opacity: 0,
+	    		ease: "elastic.out(1, 0.5)",
+	    		duration: 1,
+	    		stagger: 0.15,
+	  		});
+		}
+
+
+	timeline2
+	  gsap.from('work-card', {
+	    x: 100,
+	    opacity: 0,
+	    ease: "elastic.out(1, 0.5)",
+	    duration: 1,
+	    stagger: 0.2,
+	  }, "<");
+
+	  gsap.from('.tag', {
+	    y: -100,
+	    opacity: 0,
+	    ease: "elastic.out(1, 0.5)",
+	    duration: 1,
+	    stagger: 0.3,
+	  }, "<");
 
 }

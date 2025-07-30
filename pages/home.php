@@ -17,10 +17,10 @@
 				<h4 class="quiet-voice bold">OpenResource</h4>
 
 				<ul class="tags">
-					<li class="quiet-voice">Visual Identity</li>
-					<li class="quiet-voice">UI/UX Design</li>
-					<li class="quiet-voice">Branding</li>
-					<li class="quiet-voice">WordPress Development</li>
+					<li class="tag quiet-voice">Visual Identity</li>
+					<li class="tag quiet-voice">UI/UX Design</li>
+					<li class="tag quiet-voice">Branding</li>
+					<li class="tag quiet-voice">WordPress Development</li>
 				</ul>
 			</work-card>
 
@@ -35,10 +35,10 @@
 				<h4 class="quiet-voice bold">Studio Ernie</h4>
 
 				<ul class="tags">
-					<li class="quiet-voice">Visual Identity</li>
-					<li class="quiet-voice">UI/UX Design</li>
-					<li class="quiet-voice">WordPress Development</li>
-					<li class="quiet-voice">Concept</li>
+					<li class="tag quiet-voice">Visual Identity</li>
+					<li class="tag quiet-voice">UI/UX Design</li>
+					<li class="tag quiet-voice">WordPress Development</li>
+					<li class="tag quiet-voice">Concept</li>
 				</ul>
 			</work-card>
 
@@ -52,9 +52,9 @@
 				<h4 class="quiet-voice bold">CRFT</h4>
 
 				<ul class="tags">
-					<li class="quiet-voice">UI/UX Design</li>
-					<li class="quiet-voice">Branding</li>
-					<li class="quiet-voice">Concept</li>
+					<li class="tag quiet-voice">UI/UX Design</li>
+					<li class="tag quiet-voice">Branding</li>
+					<li class="tag quiet-voice">Concept</li>
 				</ul>
 			</work-card>
 

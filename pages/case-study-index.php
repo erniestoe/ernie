@@ -13,7 +13,7 @@
 
  				<ul class="tags">
  					<?php foreach ($project['tags'] as $tag){ ?>
- 						<li class="quiet-voice"><?=$tag?></li>
+ 						<li class="tag quiet-voice"><?=$tag?></li>
  					<?php } ?>
  				</ul>
  			</work-card>
