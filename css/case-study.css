@@ -19,7 +19,7 @@
 			margin-top: 48px;
 
 			@media(width >= 1024px) {
-				margin-top: 160px;
+				margin-top: 64px;
 			}
 		}
 
@@ -27,7 +27,7 @@
 			margin-top: 64px;
 
 			@media(width >= 1024px) {
-				margin-top: 160px;
+				/*margin-top: 160px;*/
 			}
 		}
 	}
