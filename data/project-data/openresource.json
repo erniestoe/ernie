@@ -20,16 +20,28 @@
 			"caption": "This is when I moved into creating a brand or identity for OpenResource, which was different from Forsyth Community Resources. A wholly backwards way of doing things but hey, that's life sometimes."
 		},
 		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753883503/openresource-original-site_vka9jp.png",
+			"caption": "I started this process by making a separate WordPress site for OpenResource that would act as an introduction to the project / documentation page (once moved out of GitHub).<br><br>As you can see I just borrowed the visual identity used for Forsyth Community Resources to try and make a visual language that tied the two things together. However I realized later that this missed the mark. I was technically tying two completely unrelated things together.<br><br>OpenResource is one thing: a project which main product is a free open sourced WordPress theme that can be used to make things <em>like</em> FCR. Forsyth Community Resources != OpenResource instead OpenResource allows for things <em>like</em> FCR.<br><br>This is when I really broke things down and re-evaluated OpenResource itself."
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg",
+			"caption": "The site in its current state (desktop)."
+		},
+		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg",
-			"caption": ""
+			"caption": "It took a while to really break down OpenResource into its own thing (a brand if you will) due to the fact that I had really engrained the product (template) with the project. Kind of how everyone knows about ChatGPT but <em>not</em> everyone knows about Open AI. The project boils down to one word ‘clarity’, meaning OpenResource wants to make getting resources as available and easy to get for as many people as possible. So this is where the great divide began."
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753883827/CleanShot_2025-07-30_at_09.56.51_gtmlme.png",
+			"caption": "One of the biggest visual changes was the typeface. Initially I used the same typeface from the template: Inclusive Sans, and while I feel that this typeface is still a good choice for the actual theme it made less sense for OpenResource as a brand. Its human touches made it feel almost <em>not serious</em>. So that is why I changed to using a more neutral and definitely not overused type: Inter. The main reason being that if I was going to be using the green (explained later) as a main color, it would need to be contrasted by something with a little less character or opinions."
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg",
-			"caption": ""
+			"caption": "I used this typeface to create a wordmark because I felt that a full logo would detract from the project's message of clarity and just didn’t really fit in this context. With its name clearly printed it speaks to the fact that OpenResource strives for clarity.<br><br>As seen here it can even be used in more professional scenarios like business cards."
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-card-2_qzdhvr.jpg",
-			"caption": ""
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753884014/CleanShot_2025-07-30_at_10.00.00_wflxqq.png",
+			"caption": "I did explore a more fun option however, <em>fun</em> wasn’t a brand keyword, friendly was and I felt that while those can work in tandem, in this case it made it feel like I wasn’t taking things seriously, so I axed that idea."
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753495856/openresource-social-media-assets_wtxcrp.png",
@@ -41,10 +53,6 @@
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-tablet-view_t8mtga.jpg",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg",
 			"caption": ""
 		}
 	],
