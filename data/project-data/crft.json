@@ -2,10 +2,13 @@
 	"id": 5,
 	"projectName": "CRFT",
 	"slug": "crft",
-	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633785/crft-header_o0rayj.png",
+	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753965659/crft-header_xsvaxu.png",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png",
 	"tags": ["UI/UX Design", "Concept", "Branding"],
-	"caseStudy": "The concept client here was Crft and they were looking for a quick branding / visual suite including a web site to prepare for the grand opening of their music venue.<br><br><span class='bold'>Deliverables included</span> logowork, promotional material (print), and a website design",
+	"caseStudy": [
+		{"content": "<p>The concept client here was Crft and they were looking for a quick branding / visual suite including a web site to prepare for the grand opening of their music venue.</p>"},
+		{"content": "<p><span class='bold'>Deliverables included</span> logowork, promotional material (print), and a website design.</p>"}
+	],
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753790322/crft-logo_e3hz5n.png",

@@ -2,10 +2,13 @@
 	"id": 1,
 	"projectName": "OpenResource",
 	"slug": "openresource",
-	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312244/openresource-header_tkafog.png",
+	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753965659/openresource-header_n43y5b.png",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png",
 	"tags": ["Visual Identity", "Branding", "WordPress Development", "UI/UX Design"],
-	"caseStudy": "Initially OpenResource was just a passion project of mine, something I had been thinking about doing but just hadn’t… Until I did.<br><br> After creating OpenResource, I decided it would be better if it was more than just a WordPress template floating around in the ether. So in an unusual fashion I worked backwards and created a brand to center around the template. Essentially turning OpenResource the theme into OpenResource the project behind the theme.",
+	"caseStudy": [
+		{"content": "<p>Initially OpenResource was just a passion project of mine, something I had been thinking about doing but just hadn’t… Until I did.</p>"},
+		{"content": "<p>After creating OpenResource, I decided it would be better if it was more than just a WordPress template floating around in the ether. So in an unusual fashion I worked backwards and created a brand to center around the template. Essentially turning OpenResource the theme into OpenResource the project behind the theme.</p>"}
+	],
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753881111/CleanShot_2025-07-29_at_16.12.29_2x_pyhs5m.png",

@@ -2,80 +2,8 @@
 	<inner-column>
 		<h2 class="intro strong-voice"><?= $pageData["tagline"]?></h2>
 
-		<work-cards>
-			<h3 class="attention-voice">Select Work</h3>
+		<?php include ('modules/work-cards-home.php'); ?>
 
-			<work-card >
-				<a href="<?= ENV === 'production'? '/case-study/openresource
-				' : '?page=case-study&slug=openresource'?>">
-					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png">
-					</picture>
-				</a>
-				
-
-				<h4 class="quiet-voice bold">OpenResource</h4>
-
-				<ul class="tags">
-					<li class="tag quiet-voice">Visual Identity</li>
-					<li class="tag quiet-voice">UI/UX Design</li>
-					<li class="tag quiet-voice">Branding</li>
-					<li class="tag quiet-voice">WordPress Development</li>
-				</ul>
-			</work-card>
-
-			<work-card>
-				<a href="<?= ENV === 'production'? '/case-study/studio-ernie
-				' : '?page=case-study&slug=studio-ernie'?>">
-					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753478430/studio-ernie-header-alt_byckos.png">
-					</picture>
-				</a>
-
-				<h4 class="quiet-voice bold">Studio Ernie</h4>
-
-				<ul class="tags">
-					<li class="tag quiet-voice">Visual Identity</li>
-					<li class="tag quiet-voice">UI/UX Design</li>
-					<li class="tag quiet-voice">WordPress Development</li>
-					<li class="tag quiet-voice">Concept</li>
-				</ul>
-			</work-card>
-
-			<work-card>
-				<a href="<?= ENV === 'production'? '/case-study/crft' : '?page=case-study&slug=crft'?>">
-					<picture>
-						<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png">
-					</picture>
-				</a>
-
-				<h4 class="quiet-voice bold">CRFT</h4>
-
-				<ul class="tags">
-					<li class="tag quiet-voice">UI/UX Design</li>
-					<li class="tag quiet-voice">Branding</li>
-					<li class="tag quiet-voice">Concept</li>
-				</ul>
-			</work-card>
-
-		</work-cards>
-
-		<div class="about">
-			<h3 class="attention-voice">Ethos</h3>
-
-			<div data-tilt data-tilt-full-page-listening>
-				<svg class="morph" viewBox="0 0 200 200">
-				  <path id="shape" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-				</svg>
-			</div>
-			
-
-
-			<h4 class="loud-voice">Less noise, <br> more intention.</h4>
-
-			<p class="strong-voice">My approach to design is deliberate and careful, thoughtful, yet effective. I could write a whole ten paragraphs full of buzzwords but just know that I care about what I do and <em>how</em> I do it</p>
-
-		</div>
+		<?php include ('modules/home-about.php'); ?>
 	</inner-column>
 </section>
-

@@ -7,6 +7,7 @@
 			aspect-ratio: 16/9;
 			border-radius: 0;
 		}
+
 	}
 
 	inner-column {
@@ -20,6 +21,12 @@
 
 			@media(width >= 1024px) {
 				margin-top: 64px;
+			}
+		}
+
+		.text {
+			p + p {
+				margin-top: 24px;
 			}
 		}
 
@@ -77,10 +84,10 @@
 	links {
 		padding-top: 24px;
 		display: grid;
-		grid-template-columns: 200px 200px;
 		gap: 24px;
 
 		@media (width >= 1024px) {
+			grid-template-columns: 200px 200px;
 			padding-top: 78px;
 		}
 
