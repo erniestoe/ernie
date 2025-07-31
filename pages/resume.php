@@ -6,7 +6,7 @@
 
 		<resume>
 			<picture data-tilt>
-				<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753279197/resume-photo-2_wwhl4o.jpg">
+				<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753279197/resume-photo-2_wwhl4o.jpg" alt="Picture of Ernie drinking a soda">
 			</picture>
 
 			<div class="intro">

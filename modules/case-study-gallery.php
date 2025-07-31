@@ -3,7 +3,7 @@
 		<figure>
 			<a data-fslightbox="gallery" href="<?= $image['src']; ?>">
 				<picture>
-					<img loading="lazy" src="<?= $image['src']; ?>">
+					<img loading="lazy" src="<?= $image['src']; ?>" alt="Case study image">
 				</picture>
 			</a>
 
