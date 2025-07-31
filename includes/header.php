@@ -50,7 +50,8 @@ if ($projectSlug) {
 	<head>
 		<title><?=$pageTitle?></title>
 		<meta charset="utf-8">
-		<meta property="og:title" content="Portfolio of Ernesto Rivera-Saavedra">
+		<meta property="og:title" content="Ernestos Personal Site">
+		<meta property="og:description" content="Portfolio of Ernesto Rivera-Saavedra">
 		<meta property="og:image" content="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753554690/meta-image_oiqu9a.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>">
