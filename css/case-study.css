@@ -38,7 +38,11 @@
 		gap: 64px;
 
 		iframe {
-			aspect-ratio: 16/9;
+			display: none;
+			@media (width >=1024px) {
+				display: block;
+				aspect-ratio: 16/9;
+			} 
 		}
 
 		iframe,

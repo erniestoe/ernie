@@ -37,7 +37,6 @@ window.onload = () => {
 		});
 	}
 
-
 	var elem = document.querySelector('.main-carousel');
 	if (elem) {
 		new Flickity( elem, {
