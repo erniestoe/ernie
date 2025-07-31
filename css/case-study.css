@@ -2,12 +2,14 @@
 
 .case-study {
 	header {
-
+		margin-left: 16px;
 		picture{
 			aspect-ratio: 16/9;
 			border-radius: 0;
 		}
-
+		@media (width > 1024px){
+			margin-left: 0;
+		}
 	}
 
 	inner-column {
