@@ -73,12 +73,14 @@
 			figure:nth-of-type(odd){
 				grid-column: span 3;
 			}
-			a {
+			/*a {
 				width: fit-content;
+				height: auto;
 			}
 			picture {
-				height: 50vh;
-			}
+				height: 75vh;
+
+			}*/
 		}
 	}
 
