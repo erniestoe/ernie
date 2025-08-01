@@ -18,5 +18,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
 
+	<?php if ($currentPage['name'] === 'design'): ?>
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.9/lib/p5.min.js"></script>
+		<script src="/js/p5/eyeballs/sketch.js"></script>
+	<?php endif ?>
+
 	</body>
 </html>

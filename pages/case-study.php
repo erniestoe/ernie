@@ -2,7 +2,7 @@
 <?php if ($project): ?>
 	<header>
 		<picture>
-			<img loading="lazy" src="<?= $project['headerImage'] ?>">
+			<img loading="lazy" src="<?= $project['headerImage'] ?>" alt="Case study header image">
 		</picture>
 	</header>
 	

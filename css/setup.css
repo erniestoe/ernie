@@ -72,11 +72,19 @@ figcaption {
 }
 
 
-picture {
+picture,
+.sketch {
 	display: block;
 	border-radius: 10px;
 	overflow: hidden;
 	object-fit: contain;
+}
+
+.sketch {
+	max-width: 500px;
+	max-height: 500px;
+	object-fit: contain;
+	aspect-ratio: 1/1;
 }
 
 img {

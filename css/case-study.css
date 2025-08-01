@@ -66,19 +66,18 @@
 		}
 
 		@media (width >=1024px) {
-			a:nth-of-type(even){
-				grid-column: 2/5;
-			}
-
-			a:nth-of-type(odd){
-				grid-column: span 3;
-			}
 			figure:nth-of-type(even){
 				grid-column: 2/5;
 			}
 
 			figure:nth-of-type(odd){
 				grid-column: span 3;
+			}
+			a {
+				width: fit-content;
+			}
+			picture {
+				height: 50vh;
 			}
 		}
 	}

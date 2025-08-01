@@ -6,16 +6,19 @@
 		grid-template-columns: repeat(4, 1fr);
 		gap: 24px;
 
-		picture {
+		picture,
+		.sketch {
 			grid-column: span 4;
 		}
 
 		@media (width >=1024px) {
-			picture:nth-of-type(even){
+			picture:nth-of-type(even),
+			.sketch:nth-of-type(even) {
 				grid-column: 2/5;
 			}
 
-			picture:nth-of-type(odd){
+			picture:nth-of-type(odd),
+			.sketch:nth-of-type(odd) {
 				grid-column: span 3;
 			}
 		}

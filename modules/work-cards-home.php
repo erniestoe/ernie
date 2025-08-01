@@ -8,7 +8,6 @@
 				<img load="lazy" src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png" alt="Header image for project">
 			</picture>
 		</a>
-		
 
 		<h4 class="quiet-voice bold">OpenResource</h4>
 

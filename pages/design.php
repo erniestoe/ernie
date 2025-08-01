@@ -19,6 +19,8 @@
 					<img loading="lazy" src="<?=$landscape['src']?>" alt="Landscape image">
 				</picture>
 			<?php }?>
+
+			<div id="eyeballs" class="sketch"></div>
 			</inner-column>
 		</div>
 

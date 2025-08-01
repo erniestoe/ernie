@@ -71,7 +71,6 @@ if ($projectSlug) {
 				</nav>
 			<?php endif;?>
 
-
 			<?php if($currentPage['name'] != 'garden'):?>
 			
 			<?php include ('modules/site-header.php'); ?>
