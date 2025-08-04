@@ -11,6 +11,13 @@
 				<li>
 					<a class="loud-voice" href="<?= ENV === 'production'? '/case-study-index' : '?page=case-study-index'?>">Work</a>
 				</li>
+				<?php if($currentPage['name'] === 'case-study'):?>
+					<?php foreach ($projects as $projectLink):?>
+					<li>
+						<a class="quiet-voice <?= $projectSlug === $projectLink['slug'] ? 'highlight' : ''?>" href="<?= ENV === 'production' ? '/case-study/' . $projectLink['slug'] : '?page=case-study&slug=' . $projectLink['slug'] ?>"><?=$projectLink['projectName'] ?></a>
+					</li>
+					<?php endforeach;?>
+				<?php endif;?>
 				<li>
 					<a class="loud-voice" href="<?= ENV === 'production'? '/design' : '?page=design'?>">Playground</a>
 				</li>
