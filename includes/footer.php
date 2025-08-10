@@ -21,6 +21,7 @@
 	<?php if ($currentPage['name'] === 'design'): ?>
 		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.9/lib/p5.min.js"></script>
 		<script src="/js/p5/eyeballs/sketch.js"></script>
+		<script src="/js/p5/circles/sketch.js"></script>
 	<?php endif ?>
 
 	</body>

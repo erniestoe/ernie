@@ -1,27 +1,40 @@
-const black = '#000000';
-const white = '#eee';
+const eyeballsSketch = (p) => {
+  const black = '#000000';
+  const white = '#eee';
 
-function setup() {
-  const canvas = createCanvas(500, 500);
-  canvas.parent('eyeballs');
-}
+  p.setup = () => {
+    const parent = document.getElementById('eyeballs');
+    const w = parent?.clientWidth || 500;
+    const h = 500;
+    const c = p.createCanvas(w, h);
+    c.parent('eyeballs');
+    p.rectMode(p.CENTER);
+    p.noStroke();
+  };
 
-function draw() {
-  background('#f1f1f1');
-  fill(0);
-  noStroke();
-  rectMode(CENTER);
-    
-  push();
-  translate(width/2, height/2);
-  rotate(radians(frameCount));
-  rect(0,0,50,500);
-  pop();
-    
-  fill('#aaaaaa');
-  push();
-  translate(width/2, height/2);
-  rotate(radians(-frameCount));
-  rect(0,0,50,500);
-  pop();
-}
+  p.windowResized = () => {
+    const parent = document.getElementById('eyeballs');
+    const w = parent?.clientWidth || 500;
+    p.resizeCanvas(w, p.height);
+  };
+
+  p.draw = () => {
+    p.background('#f1f1f1');
+
+    p.fill(black);
+    p.push();
+    p.translate(p.width / 2, p.height / 2);
+    p.rotate(p.radians(p.frameCount));
+    p.rect(0, 0, 50, 500);
+    p.pop();
+
+    p.fill('#aaaaaa');
+    p.push();
+    p.translate(p.width / 2, p.height / 2);
+    p.rotate(p.radians(-p.frameCount));
+    p.rect(0, 0, 50, 500);
+    p.pop();
+  };
+};
+
+new p5(eyeballsSketch, 'eyeballs');

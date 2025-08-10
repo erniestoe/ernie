@@ -21,6 +21,7 @@
 			<?php }?>
 
 			<div id="eyeballs" class="sketch"></div>
+			<div id="circles" class="sketch"></div>
 			</inner-column>
 		</div>
 
