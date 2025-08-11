@@ -14,7 +14,6 @@
 		<ul class="tags">
 			<li class="tag quiet-voice">Visual Identity</li>
 			<li class="tag quiet-voice">UI/UX Design</li>
-			<li class="tag quiet-voice">Branding</li>
 			<li class="tag quiet-voice">WordPress Development</li>
 		</ul>
 	</work-card>
@@ -48,7 +47,7 @@
 
 		<ul class="tags">
 			<li class="tag quiet-voice">UI/UX Design</li>
-			<li class="tag quiet-voice">Branding</li>
+			<li class="tag quiet-voice">Visual Identity</li>
 			<li class="tag quiet-voice">Concept</li>
 		</ul>
 	</work-card>

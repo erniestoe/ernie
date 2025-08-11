@@ -60,7 +60,6 @@ function renderGardenSection() {
 				"modules/layout-garden/minimal-layout/minimal-layout.php",
 				"modules/layout-garden/stats-grid/stats-grid.php",
 				"modules/layout-garden/research-and-employ/research-and-employ.php",
-				"modules/layout-garden/layout-challenge-grid/layout-challenge-grid.php",
 				"modules/layout-garden/opendot-footer/opendot-footer.php",
 				"modules/layout-garden/grid-layout-1/grid-layout-1.php",
 				"modules/layout-garden/grid-layout-2/grid-layout-2.php",
