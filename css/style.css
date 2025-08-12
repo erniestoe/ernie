@@ -20,6 +20,25 @@ figcaption {
 	line-height: 1.4em;
 }
 
+.video {
+	pointer-events:none;
+	@media(width >= 1024px) {
+		pointer-events: auto;
+	}
+}
+
+.video-control {
+	@media(width >= 1024px) {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+}
+
 body {
 	background-color: var(--main-black);
 	color: var(--main-white);

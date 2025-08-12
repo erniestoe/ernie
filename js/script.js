@@ -88,4 +88,59 @@ window.onload = () => {
 	    stagger: 0.3,
 	  }, "<");
 
+	  document.querySelectorAll('work-card').forEach(card => {
+	    const btn = card.querySelector('.video-control');
+	    const video = card.querySelector('video');
+
+	    if (!btn || !video) return;
+
+	    btn.addEventListener('click', (e) => {
+	      e.stopPropagation();
+
+	      // Pause all other videos + reset their buttons
+	      document.querySelectorAll('work-card video').forEach(v => {
+	        if (v !== video) {
+	          v.pause();
+	          const otherBtn = v.closest('work-card')?.querySelector('.video-control');
+	          if (otherBtn) {
+	            otherBtn.setAttribute('aria-pressed', 'false');
+	            otherBtn.textContent = 'PLAY';
+	          }
+	        }
+	      });
+
+	      if (video.paused) {
+	        video.play();
+	        btn.setAttribute('aria-pressed', 'true');
+	        btn.textContent = 'PAUSE';
+	      } else {
+	        video.pause();
+	        btn.setAttribute('aria-pressed', 'false');
+	        btn.textContent = 'PLAY';
+	      }
+	    });
+
+	    // Keep UI in sync if video is paused/played by other means
+	    video.addEventListener('play', () => {
+	      btn.setAttribute('aria-pressed', 'true');
+	      btn.textContent = 'PAUSE';
+	    });
+	    video.addEventListener('pause', () => {
+	      btn.setAttribute('aria-pressed', 'false');
+	      btn.textContent = 'PLAY';
+	    });
+	  });
+
+
+	  const videos = document.querySelectorAll('.video');
+
+	  videos.forEach(video => {
+	    video.addEventListener('mouseenter', () => {
+	      video.play();
+	    });
+	    
+	    video.addEventListener('mouseleave', () => {
+	      video.pause();
+	    });
+	  });
 }

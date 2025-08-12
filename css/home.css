@@ -48,6 +48,11 @@
 		work-card + work-card {
 			margin-top: 48px;
 		}
+
+		.text {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 
 
