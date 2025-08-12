@@ -129,11 +129,6 @@ window.onload = () => {
 	      btn.setAttribute('aria-pressed', 'false');
 	      btn.textContent = 'PLAY';
 	    });
-
-	    video.addEventListener('loadedmetadata', () => {
-	      // Try to draw a frame; may be blocked on some iOS versions.
-	      video.currentTime = 0.01;
-	    });
 	  });
 
 
