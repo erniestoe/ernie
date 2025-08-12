@@ -1,5 +1,5 @@
 <work-cards>
-	<h3 class="attention-voice">Select Work</h3>
+	<h3 class="attention-voice">Featured Work</h3>
 
 	<work-card >
 		<a href="<?= ENV === 'production'? '/case-study/openresource

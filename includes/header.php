@@ -75,7 +75,7 @@ if ($projectSlug) {
 			
 			<?php include ('modules/site-header.php'); ?>
 
-			<a class="attention-voice contact visually-hidden" href="mailto:ersaavedra.nc@gmail.com">Let's Chat</a>
+			<!-- <a class="attention-voice contact visually-hidden" href="mailto:ersaavedra.nc@gmail.com">Let's Chat</a> -->
 			
 			</inner-column>
 			<?php endif;?>

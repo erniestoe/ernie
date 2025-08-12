@@ -59,16 +59,16 @@ window.onload = () => {
 	    ease: "elastic.out(1, 0.5)"
 	  });
 
-	timeline2
-		if (navItems.length) {
-	  		timeline2.from('[data-tilt]', {
-	   		x: -100,
-	    		opacity: 0,
-	    		ease: "elastic.out(1, 0.5)",
-	    		duration: 1,
-	    		stagger: 0.15,
-	  		});
-		}
+	// timeline2
+	// 	if (navItems.length) {
+	//   		timeline2.from('[data-tilt]', {
+	//    		x: -100,
+	//     		opacity: 0,
+	//     		ease: "elastic.out(1, 0.5)",
+	//     		duration: 1,
+	//     		stagger: 0.15,
+	//   		});
+	// 	}
 
 
 	timeline2

@@ -11,13 +11,13 @@ p,
 h2{
 		text-wrap: pretty;
 		max-width: 45ch;
-		line-height: 1.4em;
+		line-height: 1.3em;
 }
 
 figcaption {
 	max-width: 50ch;
 	text-wrap: pretty;
-	line-height: 1.4em;
+	line-height: 1.3em;
 }
 
 .video {
@@ -40,8 +40,8 @@ figcaption {
 }
 
 body {
-	background-color: var(--main-black);
-	color: var(--main-white);
+	background-color: var(--main-white);
+	color: var(--main-black);
 	font-family: "Overused Grotesk";
 	overflow-x: hidden;
 	display: flex;
@@ -82,7 +82,8 @@ nav {
 			gap: 16px;
 
 
-			.arrow {
+			.arrow,
+			.mail {
 				align-self: end;
 			}
 		}
@@ -93,8 +94,8 @@ nav {
 aside {
 	grid-row: 1;
 	grid-column: span 4;
-	background-color: var(--main-red);
-	color: var(--main-black);
+	background-color: var(--main-black);
+	color: var(--main-white);
 	position: relative;
 	padding-top: 400px;
 
@@ -112,7 +113,7 @@ aside {
 		bottom: 16px;
 
 		@media (width >= 1024px){
-			top: 48px;
+			top: 56px;
 			bottom: 0;
 		}
 	}

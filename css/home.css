@@ -19,8 +19,23 @@
 		
 
 		.intro {
+			display: block;
 			padding-top: 72px;
 			padding-bottom: 120px;
+
+			h2 + p {
+				margin-top: 24px;
+			}
+
+			p + a {
+				margin-top: 16px;
+			}
+
+			a {
+				text-decoration: underline;
+				text-underline-offset: 4px;
+				width: fit-content;
+			}
 
 			@media(width >= 1024px) {
 				padding-top: 0;
