@@ -34,10 +34,6 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 							<div class="color black">
 								<p class="bold">--main-black</p>
 							</div>
-
-							<div class="color red">
-								<p class="bold">--main-red</p>
-							</div>
 						</div>
 
 
@@ -60,6 +56,10 @@ $isSlidesMode = isset($_GET['slides']) && $_GET['slides'] === 'true';
 
 							<div class="color teal">
 								<p class="bold">--teal</p>
+							</div>
+
+							<div class="color red">
+								<p class="bold">--main-red</p>
 							</div>
 						</div>
 					</div>
