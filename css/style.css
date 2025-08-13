@@ -7,6 +7,21 @@ html {
 	overflow-x: hidden;
 }
 
+#video-hover-label {
+  position: fixed;
+  pointer-events: none;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transform: translate(-50%, calc(-50% - 14px));
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  z-index: 9999;
+}
+
 p,
 h2{
 		text-wrap: pretty;

@@ -24,5 +24,6 @@
 		<script src="/js/p5/circles/sketch.js"></script>
 	<?php endif ?>
 
+	<div id="video-hover-label">See Case Study</div>
 	</body>
 </html>

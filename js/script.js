@@ -4,6 +4,8 @@ window.onload = () => {
 	const closeMainButton = document.querySelector('#close');
 	const circleCursor = document.getElementById('circle-cursor');
 	const navItems = document.querySelectorAll('.main-nav ul li');
+	const hoverLabel = document.getElementById('video-hover-label');
+	const videos = document.querySelectorAll('.video');
 
 	document.querySelectorAll('[data-tilt]').forEach(el => {
 	  el.style.opacity = 1;
@@ -131,9 +133,6 @@ window.onload = () => {
 	    });
 	  });
 
-
-	  const videos = document.querySelectorAll('.video');
-
 	  videos.forEach(video => {
 	    video.addEventListener('mouseenter', () => {
 	      video.play();
@@ -141,6 +140,23 @@ window.onload = () => {
 	    
 	    video.addEventListener('mouseleave', () => {
 	      video.pause();
+	    });
+	  });
+
+	  // Track mouse position
+	  document.addEventListener('mousemove', e => {
+	    hoverLabel.style.left = `${e.clientX}px`;
+	    hoverLabel.style.top = `${e.clientY}px`;
+	  });
+
+	  // Show label on video hover
+	  videos.forEach(video => {
+	    video.addEventListener('mouseenter', () => {
+	      hoverLabel.style.opacity = 1;
+	    });
+
+	    video.addEventListener('mouseleave', () => {
+	      hoverLabel.style.opacity = 0;
 	    });
 	  });
 
