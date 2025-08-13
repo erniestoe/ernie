@@ -63,7 +63,7 @@ if ($projectSlug) {
 
 			<inner-column>
 
-			<h1 class="logo <?=$currentPage['name'] === 'garden' ? 'hidden': ''?>">Ernesto <br> Rivera-Saavedra</h1>
+			<h1 class="logo <?=$currentPage['name'] === 'garden' ? 'hidden': ''?>"><a href="<?= ENV === 'production'? '/home' : '?page=home'?>">Ernesto <br> Rivera-Saavedra</a></h1>
 
 			<?php if($currentPage['name'] === 'garden'):?>
 				<nav class="garden-nav">
