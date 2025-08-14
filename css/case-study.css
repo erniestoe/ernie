@@ -151,7 +151,7 @@
 	}
 
 	.main-carousel {
-		margin-block: 64px;
+		margin-block: 24px;
 		border-radius: 10px;
 		overflow: hidden;
 	}
@@ -159,6 +159,7 @@
 	.main-carousel .carousel-cell {
 	  position: relative;
 	  width: 100%;
+	  max-height: 750px;
 	  aspect-ratio: 1/1;
 	  margin-right: 10px;
 	  overflow: hidden; 
