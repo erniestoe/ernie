@@ -13,11 +13,11 @@
 		</figure>
 	<?php endforeach; ?>
 
-	<?php if ($project['figma']): ?>
+	<!-- <?php if ($project['figma']): ?>
 		<?php foreach ($project['figma'] as $figmaEmbed): ?>
 			<iframe width="100%" loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);"  src="<?= $figmaEmbed['src']; ?>" allowfullscreen></iframe>
 		<?php endforeach ?>
-	<?php endif; ?>
+	<?php endif; ?> -->
 	
 	<?php if ($project['youtube']): ?>
 		<iframe width="100%" loading="lazy" src="<?= $project['youtube'] ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

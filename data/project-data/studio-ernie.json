@@ -2,9 +2,10 @@
 	"id": 6,
 	"projectName": "Studio Ernie",
 	"slug": "studio-ernie",
-	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753965658/studio-ernie-header_x7nop1.png",
+	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010137/CleanShot_2025-08-12_at_10.47.58_2x_z0f1gq.png",
+	"headerText": "Turning myself into a studio.",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753478430/studio-ernie-header-alt_byckos.png",
-	"tags": ["Visual Identity", "UI/UX Design", "WordPress Development", "Concept"],
+	"tags": ["Concept", "Visual Identity", "UI/UX Design", "WordPress Development"],
 	"caseStudy": [
 		{"content": "<p><span class='bold'>Bold, fun, <em>French?</em></span></p>"},
 		{"content": "<p>The goal here was to create a brand / visual identity and website for Studio Ernie (conceptual studio) in 72 hrs. Deliverables included the website (WordPress Block editor and custom CSS), logo work, and a visual identity to guide the studio's visual direction.</p>"}

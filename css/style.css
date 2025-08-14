@@ -166,8 +166,6 @@ aside {
 				padding: 8px 48px;
 			}
 		}
-
-		
 	}
 
 	.main-nav {
@@ -178,6 +176,7 @@ aside {
 			width: auto;
 			overflow: visible;
 			position: fixed;
+			/*bottom: 68px; */
 			bottom: 152px;
 			white-space: normal;
 		}

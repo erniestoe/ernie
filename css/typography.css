@@ -54,6 +54,10 @@ p,
 	font-size: clamp(3rem, 5vw, 4.25rem);
 }
 
+.loud-voice.project-name {
+	font-size: clamp(2rem, 5vw, 4.25rem);
+}
+
 /*.loud-voice.highlight {
 	font-variation-settings: "wght" 641, "ital" 0;
 }*/
