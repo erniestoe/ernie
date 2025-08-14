@@ -6,30 +6,30 @@
 	"headerText": "A custom WordPress theme for finding local resources easier.",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png",
 	"tags": ["Visual Identity", "UI/UX Design", "WordPress Development"],
+	"showcase": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1755189633/openresource-showcase_k1xxjl.mp4",
 	"caseStudy": [
-		{"content": "<p>Initially OpenResource was just a passion project of mine, something I had been thinking about doing but just hadn’t… Until I did.</p>"},
-		{"content": "<p>After creating OpenResource, I decided it would be better if it was more than just a WordPress template floating around in the ether. So in an unusual fashion I worked backwards and created a brand to center around the template. Essentially turning OpenResource the theme into OpenResource the project behind the theme.</p>"}
+		{"content": "<p>While working in non-profits, I saw firsthand how inefficient resource sharing could be. So I built to a simple, reliable WordPress theme to empower people to find resources themselves, and give organizations a way to build and maintain their own online directories.</p>"}
 	],
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753881111/CleanShot_2025-07-29_at_16.12.29_2x_pyhs5m.png",
-			"caption": "So how did all of this even start?<br><br>With a PHP prototype you can check out <a target='_blank' href='https://peprojects.dev/beta-two/ernie/projects/resource-list/index.php'>here</a> or read more about it on my blog. Essentially this was my proof of concept for OpenResource, that A. I could actually make it and B. It wouldn’t be terrible.<br><br>After my prototype I was excited to move to phase two which was releasing it as an open sourced project that anyone could grab and make their own!<br><br>One problem though… Technical debt.<br><br>While yes in theory if I put out that code (it technically is out now if you want it) it would mean that in order for you as the <em>user</em> you would need: A text editor to make changes, some kind of local PHP server to view those changes, and then find a hosting service that supports PHP sites (then either manually move files over or learn how to use git and pipelines). So yeah, not very user friendly.<br><br>That's where WordPress enters the picture. As someone who has been around nonprofits for a while both professionally and personally, I knew that they often defaulted to using WordPress for their websites (sometimes Wix and Squarespace, but we shan't speak those names here)."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753881509/CleanShot_2025-07-30_at_09.18.16_2x_ftb4ff.png",
-			"caption": "So my initial conversion from full PHP prototype to WordPress template turned into this. I kept the name Forsyth Community Resources because at the time that is what made the most sense to me (this was the <em>brand</em>).<br><br>This turned out to be one of those projects that given the opportunity could be stuck in development for 3 years while I make it perfect. The goal here was not perfection, just usability. As long as users could find resources, and add them to their PDF which can then be printed or saved, then the project could be released in an alpha state.<br><br>Once I did release the theme though a big thing stuck out to me. How do I distinguish the OpenResource theme from Forsyth Community Resources? At that moment they were the same thing."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753881795/branding_g65piu.png",
-			"caption": "This is when I moved into creating a brand or identity for OpenResource, which was different from Forsyth Community Resources. A wholly backwards way of doing things but hey, that's life sometimes."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753883503/openresource-original-site_vka9jp.png",
-			"caption": "I started this process by making a separate WordPress site for OpenResource that would act as an introduction to the project / documentation page (once moved out of GitHub).<br><br>As you can see I just borrowed the visual identity used for Forsyth Community Resources to try and make a visual language that tied the two things together. However I realized later that this missed the mark. I was technically tying two completely unrelated things together.<br><br>OpenResource is one thing: a project which main product is a free open sourced WordPress theme that can be used to make things <em>like</em> FCR. Forsyth Community Resources != OpenResource instead OpenResource allows for things <em>like</em> FCR.<br><br>This is when I really broke things down and re-evaluated OpenResource itself."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg",
-			"caption": "The site in its current state (desktop). I decided to stray away from image usage, and instead focused on using iconography as the main visual asset. I used icons from the Phosphor icon library to support another open sourced project."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-iphone-view_pqxajk.jpg",
@@ -41,27 +41,23 @@
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg",
-			"caption": "It took a while to really break down OpenResource into its own thing (a brand if you will) due to the fact that I had really engrained the product (template) with the project. Kind of how everyone knows about ChatGPT but <em>not</em> everyone knows about Open AI. The project boils down to one word ‘clarity’, meaning OpenResource wants to make getting resources as available and easy to get for as many people as possible. So this is where the great divide began."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753883827/CleanShot_2025-07-30_at_09.56.51_gtmlme.png",
-			"caption": "One of the biggest visual changes was the typeface. Initially I used the same typeface from the template: Inclusive Sans, and while I feel that this typeface is still a good choice for the actual theme it made less sense for OpenResource as a brand. Its human touches made it feel almost <em>not serious</em>. So that is why I changed to using a more neutral and definitely not overused type: Inter. The main reason being that if I was going to be using the green (explained later) as a main color, it would need to be contrasted by something with a little less character or opinions."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg",
-			"caption": "I used this typeface to create a wordmark because I felt that a full logo would detract from the project's message of clarity and just didn’t really fit in this context. With its name clearly printed it speaks to the fact that OpenResource strives for clarity.<br><br>As seen here it can even be used in more professional scenarios like business cards."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753884014/CleanShot_2025-07-30_at_10.00.00_wflxqq.png",
-			"caption": "I did explore a more fun option however, <em>fun</em> wasn’t a brand keyword, friendly was and I felt that while those can work in tandem, in this case it made it feel like I wasn’t taking things seriously, so I axed that idea."
+			"caption": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753887275/CleanShot_2025-07-30_at_10.53.47_tpapax.png",
-			"caption": "For the palette I kept the original green while tweaking it slightly to get a better contrast ratio with the black text. If you look closely you might think I just ripped the Hulu colors. You’d be right to think that. I thought that too.<br><br>I felt that the green worked best as a color that was both friendly and welcoming, while blending with the neutral typeface in a calm way. Also if we want to zoom out, green can be aligned with go (green light), and that's what OpenResource is trying to achieve, removing the friction (red light) of getting resources, and giving communities the tools to make things for themselves by themselves."
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753495856/openresource-social-media-assets_wtxcrp.png",
-			"caption": "With the OpenResource ‘Brand’ established, I explored different ways this could be used such as templates for social media posts. Should that ever become a thing."
+			"caption": ""
 		}
 	],
 	"youtube": "",

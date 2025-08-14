@@ -10,7 +10,7 @@
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755008446/openresource_coizx2.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755189452/openresource-teaser_rdm7id.mp4"
 				      class="video"
 				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010182/CleanShot_2025-08-12_at_10.48.23_2x_cl7zrb.png"
 				    ></video>

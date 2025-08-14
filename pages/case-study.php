@@ -22,14 +22,9 @@
 				<h3 class="strong-voice"><?=$project['headerText']?></h3>
 			<?php endif;?>
 		</div>
-
-		<!-- <picture>
-			<img loading="lazy" src="<?= $project['headerImage'] ?>" alt="Case study header image">
-		</picture> -->
 	</header>
 	
 	<inner-column>
-		
 			<div class="text">
 
 				<ul class="tags">
@@ -43,6 +38,20 @@
 					<?= $content['content'] ?>
 				<?php endforeach; ?>
 			</div>
+			<?php if ($project['showcase']):?>
+			<a data-fslightbox="gallery" href="<?= $project['showcase'] ?>">
+				<video
+				      muted
+				      playsinline
+				      loop
+				      preload="metadata"
+				      style="display:block;width:100%;height:auto;"
+				      src="<?= $project['showcase'] ?>"
+				      class="collage video"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010182/CleanShot_2025-08-12_at_10.48.23_2x_cl7zrb.png"
+				    ></video>
+			</a>
+			<?php endif;?>
 
 			<?php include('modules/case-study-gallery.php'); ?>
 

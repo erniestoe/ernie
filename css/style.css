@@ -25,12 +25,12 @@ html {
 p,
 h2{
 		text-wrap: pretty;
-		max-width: 45ch;
+		max-width: 48ch;
 		line-height: 1.3em;
 }
 
 figcaption {
-	max-width: 50ch;
+	max-width: 48ch;
 	text-wrap: pretty;
 	line-height: 1.3em;
 }

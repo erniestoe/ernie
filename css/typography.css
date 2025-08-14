@@ -52,6 +52,7 @@ p,
 
 .loud-voice.intro-headline {
 	font-size: clamp(3rem, 5vw, 4.25rem);
+	max-width: 23ch;
 }
 
 .loud-voice.project-name {

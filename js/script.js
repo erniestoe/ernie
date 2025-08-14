@@ -152,13 +152,16 @@ window.onload = () => {
 
 	  // Show label on video hover
 	  videos.forEach(video => {
-	    video.addEventListener('mouseenter', () => {
-	      hoverLabel.style.opacity = 1;
-	    });
+	  	if (!video.classList.contains('collage')) {
+	  		video.addEventListener('mouseenter', () => {
+	  		  hoverLabel.style.opacity = 1;
+	  		});
 
-	    video.addEventListener('mouseleave', () => {
-	      hoverLabel.style.opacity = 0;
-	    });
+	  		video.addEventListener('mouseleave', () => {
+	  		  hoverLabel.style.opacity = 0;
+	  		});
+	  	}
+	    
 	  });
 
 	  gsap.registerPlugin(MorphSVGPlugin);

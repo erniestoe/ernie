@@ -6,6 +6,7 @@
 	"headerText": "Turning myself into a studio.",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753478430/studio-ernie-header-alt_byckos.png",
 	"tags": ["Concept", "Visual Identity", "UI/UX Design", "WordPress Development"],
+	"showcase": "",
 	"caseStudy": [
 		{"content": "<p><span class='bold'>Bold, fun, <em>French?</em></span></p>"},
 		{"content": "<p>The goal here was to create a brand / visual identity and website for Studio Ernie (conceptual studio) in 72 hrs. Deliverables included the website (WordPress Block editor and custom CSS), logo work, and a visual identity to guide the studio's visual direction.</p>"}

@@ -87,7 +87,7 @@
 	case-study-gallery {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 64px;
+		gap: 16px;
 
 		iframe {
 			display: none;
@@ -111,13 +111,13 @@
 		}
 
 		@media (width >=1024px) {
-			figure:nth-of-type(even){
+			/*figure:nth-of-type(even){
 				grid-column: 2/5;
 			}
 
 			figure:nth-of-type(odd){
 				grid-column: span 3;
-			}
+			}*/
 			/*a {
 				width: fit-content;
 				height: auto;
@@ -148,5 +148,13 @@
 		li + li {
 			margin-top: 16px;
 		}
+	}
+
+	.collage {
+		margin-block: 48px;
+
+		@media(width >= 1024px) {
+				margin-block: 64px;
+			}
 	}
 }
