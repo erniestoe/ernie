@@ -27,15 +27,6 @@ window.onload = () => {
 		});
 	}
 
-	var elem = document.querySelector('.main-carousel');
-	if (elem) {
-		new Flickity( elem, {
-  		// options
-  		cellAlign: 'left',
-  		contain: true
-		});
-	}
-
 	//morphing shape
 	gsap.registerPlugin(MorphSVGPlugin);
 
@@ -208,5 +199,17 @@ window.onload = () => {
 	    .to("#shape2", { morphSVG: CIRCLE,   fill: "#141414" }, "step3")
 	    .to("#shape3", { morphSVG: SQUARE,   fill: "#141414" }, "step3");
 
+// Flickity stuff?
+	    const elem = document.querySelector('.main-carousel');
+	    if (elem) {
+	        const flkty = new Flickity(elem, {
+	          cellAlign: 'left',
+	          contain: true,
+	          wrapAround: true,       // optional
+	          imagesLoaded: true      // waits for images before sizing cells
+	        });
+	      }
+
+	   
 
 }

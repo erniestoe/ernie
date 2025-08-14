@@ -22,7 +22,12 @@
 		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.9/lib/p5.min.js"></script>
 		<script src="/js/p5/eyeballs/sketch.js"></script>
 		<script src="/js/p5/circles/sketch.js"></script>
-	<?php endif ?>
+	<?php endif; ?>
+
+	<?php if ($currentPage['name'] === 'case-study'): ?>
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<?php endif;?>
 
 	<div id="video-hover-label">See Case Study</div>
 	</body>

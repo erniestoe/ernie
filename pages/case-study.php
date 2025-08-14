@@ -38,19 +38,17 @@
 					<?= $content['content'] ?>
 				<?php endforeach; ?>
 			</div>
+
 			<?php if ($project['showcase']):?>
-			<a data-fslightbox="gallery" href="<?= $project['showcase'] ?>">
-				<video
-				      muted
-				      playsinline
-				      loop
-				      preload="metadata"
-				      style="display:block;width:100%;height:auto;"
-				      src="<?= $project['showcase'] ?>"
-				      class="collage video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010182/CleanShot_2025-08-12_at_10.48.23_2x_cl7zrb.png"
-				    ></video>
-			</a>
+				<div class="main-carousel">
+					<?php foreach ($project['showcase'] as $image): ?>
+						<div class="carousel-cell">
+							<picture>
+								<img loading="lazy" src="<?=$image['src']?>">
+							</picture>
+						</div>
+					<?php endforeach;?>
+				</div>
 			<?php endif;?>
 
 			<?php include('modules/case-study-gallery.php'); ?>

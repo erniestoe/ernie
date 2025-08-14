@@ -6,7 +6,16 @@
 	"headerText": "A custom WordPress theme for finding local resources easier.",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png",
 	"tags": ["Visual Identity", "UI/UX Design", "WordPress Development"],
-	"showcase": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1755189633/openresource-showcase_k1xxjl.mp4",
+	"showcase": [
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755199804/openresource-mobile_vivqkq.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200498/openresource-tablet-view_x60jsd.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200479/fcr-mobile_lw1uwc.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200480/fcr-tablet_fvsrw6.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755199803/fcr-desktop_snzuoa.jpg"}
+	],
 	"caseStudy": [
 		{"content": "<p>While working in non-profits, I saw firsthand how inefficient resource sharing could be. So I built to a simple, reliable WordPress theme to empower people to find resources themselves, and give organizations a way to build and maintain their own online directories.</p>"}
 	],
@@ -36,7 +45,7 @@
 			"caption": "Site on Mobile."
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-tablet-view_t8mtga.jpg",
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200498/openresource-tablet-view_x60jsd.png",
 			"caption": "Site on Tablet."
 		},
 		{
