@@ -21,52 +21,9 @@
 	],
 	"gallery": [
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753881111/CleanShot_2025-07-29_at_16.12.29_2x_pyhs5m.png",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753881509/CleanShot_2025-07-30_at_09.18.16_2x_ftb4ff.png",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753881795/branding_g65piu.png",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753883503/openresource-original-site_vka9jp.png",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876705/openresource-iphone-view_pqxajk.jpg",
-			"caption": "Site on Mobile."
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200498/openresource-tablet-view_x60jsd.png",
-			"caption": "Site on Tablet."
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753883827/CleanShot_2025-07-30_at_09.56.51_gtmlme.png",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753884014/CleanShot_2025-07-30_at_10.00.00_wflxqq.png",
-			"caption": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753887275/CleanShot_2025-07-30_at_10.53.47_tpapax.png",
-			"caption": ""
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755208906/openresource-branding-notes_cigsqb.png",
+			"caption": "Branding notes & ideation.",
+			"class": "square"
 		}
 	],
 	"youtube": "",

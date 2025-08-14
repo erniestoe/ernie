@@ -33,7 +33,6 @@
 					<?php endforeach; ?>
 				</ul>
 
-
 				<?php foreach ($project['caseStudy'] as $content): ?>
 					<?= $content['content'] ?>
 				<?php endforeach; ?>

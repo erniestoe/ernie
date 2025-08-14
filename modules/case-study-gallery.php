@@ -1,7 +1,8 @@
 <case-study-gallery>
+	<h2 class="attention-voice">Process</h2>
 	<?php foreach ($project['gallery']  as $image): ?>
 		<figure>
-			<picture>
+			<picture class="<?= $image['class'] ?>">
 				<img loading="lazy" src="<?= $image['src']; ?>" alt="Case study image">
 			</picture>
 

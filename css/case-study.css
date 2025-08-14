@@ -99,6 +99,15 @@
 			} 
 		}
 
+		picture.portrait {
+			max-width: 450px;
+		}
+
+		picture.square {
+			max-width: 900px;
+		}
+
+
 		iframe,
 		a,
 		picture,
