@@ -19,6 +19,7 @@
 	"caseStudy": [
 		{"content": "<p>Non-profits I've worked with often told me about how much they cared but how hard it was to brand their organization, so I took on this project to better understand that process. Under a three day sprint I designed a visual identity and website to prepare CRFT (conceptual brand) for their grand opening.</p>"}
 	],
+	"processIntro": "",
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753976223/crft-logo_psnmgf.png",
@@ -32,7 +33,7 @@
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/kira-3000_rfgdxs.png",
-			"caption": "Branded images are given a duotone treatment to contrast with the main black and white colors of the brand.",
+			"caption": "Images are given a duotone treatment to contrast with the main black and white colors of the brand.",
 			"class": "portrait"
 		}
 	],

@@ -113,7 +113,8 @@
 
 		iframe,
 		picture,
-		figure{
+		figure,
+		.intro{
 			grid-column: span 4;
 		}
 
@@ -147,7 +148,7 @@
 
 		@media (width >= 1024px) {
 			grid-template-columns: 200px 200px;
-			padding-top: 78px;
+			padding-top: 96px;
 
 			h2 {
 				grid-column: span 2;

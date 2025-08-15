@@ -1,5 +1,10 @@
 <case-study-gallery>
-	<h2 class="attention-voice">Process</h2>
+	<div class="intro">
+		<h2 class="attention-voice">Process</h2>
+		<?php if ($project['processIntro']): ?>
+			<?=$project['processIntro']?>
+		<?php endif ?>
+	</div>
 	<?php foreach ($project['gallery']  as $image): ?>
 		<figure>
 			<?php if (!empty($image['src'])): ?>

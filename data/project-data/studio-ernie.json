@@ -15,10 +15,16 @@
 	"caseStudy": [
 		{"content": "<p>I made this project so that I can get more experience building a visual identity for a service-based business. In 72hrs I built a visual identity and WordPress site for Studio Ernie (conceptual studio)."}
 	],
+	"processIntro": "",
 	"gallery": [
 		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755284294/studio-ernie-brief-and-notes_urpewz.png",
+			"caption": "Initial brief and notes.",
+			"class": "square"
+		},
+		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755278387/studio-ernie-sketches_kcvgxo.png",
-			"caption": "Initial website sketches.",
+			"caption": "Website sketches and ideation.",
 			"class": ""
 		}
 	],
