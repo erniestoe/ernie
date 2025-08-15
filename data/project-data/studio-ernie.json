@@ -13,26 +13,16 @@
 	],
 	"nextProject": "crft",
 	"caseStudy": [
-		{"content": "<p>Created a visual identity and website for Studio Ernie (conceptual studio) in 72 hrs."}
+		{"content": "<p>I made this project so that I can get more experience building a visual identity for a service-based business. In 72hrs I built a visual identity and WordPress site for Studio Ernie (conceptual studio)."}
 	],
 	"gallery": [
 		{
-			"src": "",
-			"caption": "",
-			"class": ""
-		},
-		{
-			"src": "",
-			"caption": "",
-			"class": ""
-		},
-		{
-			"src": "",
-			"caption": "",
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755278387/studio-ernie-sketches_kcvgxo.png",
+			"caption": "Initial website sketches.",
 			"class": ""
 		}
 	],
-	"youtube": "https://www.youtube.com/embed/1D-mGgpdHsA?si=J2V4BC50dZwHfF47",
+	"youtube": "",
 	"figma": [
 		{"src": "https://embed.figma.com/design/dGuEHOUzxiLfEjUF3vEeiX/studio-ernie---style-tile-and-mockup?node-id=4-879&embed-host=share"},
 		{"src": "https://embed.figma.com/board/JluCVbyIGt9TC6J6J5HtaS/Studio-Ernie?node-id=0-1&embed-host=share"}
