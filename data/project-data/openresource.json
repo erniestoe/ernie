@@ -53,14 +53,7 @@
 		}
 	],
 	"githubLinks": [
-		{
-			"href": "https://github.com/erniestoe/openresource",
-			"text": "GitHub (Site)"
-		},
-		{
-			"href": "https://github.com/erniestoe/resource-theme",
-			"text": "GitHub (Theme)"
-		}
+		
 	]
 
 }
