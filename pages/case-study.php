@@ -50,6 +50,8 @@
 				</div>
 			<?php endif;?>
 
+			<!-- <a href="<?= ENV === 'production'? '/case-study/' . $project['nextProject'] : '?page=case-study&slug=' . $project['nextProject'] ?>">Next Project?</a> -->
+
 			<?php include('modules/case-study-gallery.php'); ?>
 
 			<?php include('modules/case-study-links.php'); ?>

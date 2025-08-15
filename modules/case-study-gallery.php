@@ -7,7 +7,7 @@
 			</picture>
 
 			<?php if (!empty($image['caption'])): ?>
-				<figcaption class="calm-voice"><?=$image['caption']?></figcaption>
+				<figcaption class="quiet-voice"><?=$image['caption']?></figcaption>
 			<?php endif;?>
 		</figure>
 	<?php endforeach; ?>
