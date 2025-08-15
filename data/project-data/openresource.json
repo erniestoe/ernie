@@ -18,12 +18,17 @@
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755199803/fcr-desktop_snzuoa.jpg"}
 	],
 	"caseStudy": [
-		{"content": "<p>While working in non-profits, I saw firsthand how inefficient resource sharing could be. So I built to a simple, reliable WordPress theme to empower people to find resources themselves, and give organizations a way to build and maintain their own online directories.</p>"}
+		{"content": "<p>While working in non-profits, I saw firsthand how inefficient resource sharing could be. So I built a simple, reliable WordPress theme to empower people to find resources themselves, and give organizations a way to build and maintain their own online directories.</p>"}
 	],
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755217083/openresource-sketches_tcjoy8.png",
 			"caption": "Sketches for initial prototype.",
+			"class": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755221324/openresource-typography-notes_uahxiu.png",
+			"caption": "<p class='quiet-voice'>Inital notes on typography usage. (Credit to <a class='credit-link' target='_blank' href='https://www.oliviaking.com/inclusivesans/feature'>Olivia King</a> for Inclusive Sans graphic.)</p>",
 			"class": ""
 		},
 		{
