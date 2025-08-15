@@ -2,9 +2,11 @@
 	<h2 class="attention-voice">Process</h2>
 	<?php foreach ($project['gallery']  as $image): ?>
 		<figure>
+			<?php if (!empty($image['src'])): ?>
 			<picture class="<?= $image['class'] ?>">
 				<img loading="lazy" src="<?= $image['src']; ?>" alt="Case study image">
 			</picture>
+			<?php endif;?>
 
 			<?php if (!empty($image['caption'])): ?>
 				<figcaption class="quiet-voice"><?=$image['caption']?></figcaption>

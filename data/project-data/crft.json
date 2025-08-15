@@ -6,62 +6,34 @@
 	"headerText": "Web design and a visual idenity for the hottest new music venue.",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png",
 	"tags": ["Concept", "UI/UX Design", "Branding"],
-	"showcase": "",
+	"showcase": [
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/crft-wall_iekrzl.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-artist-spotlight_ntjsph.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633883/crft-shirt_conce4.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-site-mobile_jr0obm.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-site-tablet_s4bnfv.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633884/crft-site-desktop_aonct9.jpg"}
+	],
 	"nextProject": "openresource",
 	"caseStudy": [
-		{"content": "<p>The concept client here was Crft and they were looking for a quick branding / visual suite including a web site to prepare for the grand opening of their music venue.</p>"},
-		{"content": "<p><span class='bold'>Deliverables included</span> logowork, promotional material (print), and a website design.</p>"}
+		{"content": "<p>Non-profits I've worked with often told me about how much they cared but how hard it was to brand their organization, so I took on this project to better understand that process. Under a three day sprint I designed a visual identity and website to prepare CRFT (conceptual brand) for their grand opening.</p>"}
 	],
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753976223/crft-logo_psnmgf.png",
-			"caption": "So in this case I started with the logo, split into 4 to incorporate the modularity, and each piece represents a key aspect of the space. <br><br> Square to represent the actual physical location and ties to architecture. <br><br>Half circles going up followed by half circles going down to represent the party that goes on from sun up to sun down. <br><br> Finally the circle to represent records getting spun.",
+			"caption": "Square represents modularity and ties to architecture. Half circles going up followed by half circles going down represent partying from sun up to sun down. Circle represents records getting spun.",
 			"class": "square"
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/crft-wall_iekrzl.jpg",
-			"caption": "Showcasing the main colors of the brand (black and white) in a real world setting. These designs also have a wordmark logo attached to each bottom left corner. <br><br>This Design in particular was meant to invoke curiosty into the brand (hence the logo being the main subject) without promiting a singular event. The pattern of alternating between black and white is a call to the rythmic electronic music you can expect to hear at this venue.",
-			"class": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg",
-			"caption": "This second piece of promotional design was created to be used as a template to showcase their monthly lineup. It uses one of the secondary colors from their palette that manages to be welcoming but alos eye catching.<br><br> Once again the goal here was to be minimal and modular. Both the logo and the CRFT OCTOBER text suggest a sort of 'building' around the event lineup, suggesting to the viewer that all of these events will take place within CRFT.",
-			"class": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-artist-spotlight_ntjsph.jpg",
-			"caption": "Here I designed promo material (also a template) for artist spolights. I felt that they could use some material for more of their big name acts. <br><br>Suprise, suprise the design here was very minimal and modular. Almost too minimal? I intentionally left out information like the time and adress to really draw attention to the artist and the wordmarked logo in the bottom left corner.<br><br> This sort of promo material should be used <em>after</em> the grand opening and some social media marketing has taken place.",
-			"class": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753635185/crft-danger-web_qssdal.jpg",
-			"caption": "Full image example of the template being used for a different artist.",
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755270837/crft-danger_hidtxa.png",
+			"caption": "Artist spotlight poster template.",
 			"class": "portrait"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/kira-3000_rfgdxs.png",
-			"caption": "I made the call that any image of an artist or non illustrations in general should be given a duotone treatment with one of the accent palette colors. <br><br>This was to both give an opportunity to use those colors and to add contrast to the black and white main palette. It also really drives home that feeling of being new and fresh on the scene.",
+			"caption": "Branded images are given a duotone treatment to contrast with the main black and white colors of the brand.",
 			"class": "portrait"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633883/crft-shirt_conce4.jpg",
-			"caption": "Example of potential venue merch. For merch I felt that at this stage of the brand it makes sense to have a logo and wordmark combo, just to really get that name to stick with people.<br><br> Once they get on Boiler Room level they can consider merchandise with the logo only.",
-			"class": "portrait"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-site-mobile_jr0obm.jpg",
-			"caption": "Mobile view of the website. <br><br> The main UI goal here was to stay as on brand as possible while providing a good web experience. So Minimal and modular but also informative and interesting. <br><br>This goal was met by stripping down the web experience to what the absolute essentials: The who, what, where, and when. With the logo and wordmark clear and present at the top of the site followed by a quick intro the who got covered.<br><br>The next element calling attention to the user is the lineup list (designed to be changed out each month with ease), which when tapped expands to show more info about that event. This covers the what and when.<br><br>Finally the <span class='bold'>where</span> is clearly labeled in the footer, which is where most users look for contact information and such.",
-			"class": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-site-tablet_s4bnfv.jpg",
-			"caption": "Tablet view of website.",
-			"class": "portrait"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633884/crft-site-desktop_aonct9.jpg",
-			"caption": "Desktop view of website.<br><br>Note that I take advantage of the newly created negative space at this viewpoint to introduce one of the branded images. This could be replaced with a video montage, but creates some visual interest to keep the minimalism from getting boring.",
-			"class": ""
 		}
 	],
 	"youtube": "",

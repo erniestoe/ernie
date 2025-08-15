@@ -1,5 +1,5 @@
 <links>
-	<h2 class="attention-voice">Results</h2>
+	<h2 class="attention-voice">Links</h2>
 	<div class="live">
 		<ul>
 			<?php foreach ($project['liveLinks'] as $liveLink):?>
