@@ -59,14 +59,14 @@
 			</figure>
 		</inner-column>
 	</section>
-
+<!-- 
 	<section class="about">
 		<inner-column>
 			<p class="attention-voice">From sun up to sun down, we believe thats the best time for good music, local drinks, and your “main character” moment.</p>
 
 			<p class="attention-voice">So join us at CRFT on opening night for all that while supporting local artists and musicians.</p>
 		</inner-column>
-	</section>
+	</section> -->
 
 	<footer>
 		<inner-column>
