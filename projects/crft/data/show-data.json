@@ -1,0 +1,60 @@
+{
+	"shows": [
+		{
+			"title": "<h3 class='show-title'>OPENING NIGHT</h3>",
+			"date": "<p class='show-date'>10//4//2025</p>",
+			"blurb": [
+				{"text": "<p class='show-text strong-voice'>With D.A.N.G.E.R. (Live Modular Set), Zena C. (Downtempo), visuals by Lightbody. Kickoff event celebrating sound design + spatial design.</p>"},
+				{"text": "<p class='show-text strong-voice'>Audiovisual takeover.</p>"}
+			]
+		},
+		{
+			"title": "<h3 class='show-title'>PAST LIVES</h3>",
+			"date": "<p class='show-date'>10//7//2025</p>",
+			"blurb": [
+				{"text": "<p class='show-text strong-voice'>An evening of ambient textures and experimental loops exploring memory and reincarnation in sound.</p>"},
+				{"text": "<p class='show-text strong-voice'>Immersive lighting installation accompanies the set.</p>"}
+			]
+		},
+		{
+			"title": "<h3 class='show-title'>OSCILLATE</h3>",
+			"date": "<p class='show-date'>10//12//2025</p>",
+			"blurb": [
+				{"text": "<p class='show-text strong-voice'>Pulsating techno and kinetic visuals—oscillations between rhythm and light.</p>"},
+				{"text": "<p class='show-text strong-voice'>A night built for movement.</p>"}
+			]
+		},
+		{
+			"title": "<h3 class='show-title'>STOKES ART WALK</h3>",
+			"date": "<p class='show-date'>10//15//2025</p>",
+			"blurb": [
+				{"text": "<p class='show-text strong-voice'>Outdoor showcase blending local visual artists with live electronic sets.</p>"},
+				{"text": "<p class='show-text strong-voice'>Art, music, and community intersect in the streets.</p>"}
+			]
+		},
+		{
+			"title": "<h3 class='show-title'>HEAVY ROTATION</h3>",
+			"date": "<p class='show-date'>10//19//2025</p>",
+			"blurb": [
+				{"text": "<p class='show-text strong-voice'>Bass-driven night featuring DJs pushing the boundaries of house, drum & bass, and experimental club sounds.</p>"},
+				{"text": "<p class='show-text strong-voice'>Expect nonstop energy.</p>"}
+			]
+		},
+		{
+			"title": "<h3 class='show-title'>SOUND IN MOTION</h3>",
+			"date": "<p class='show-date'>10//25//2025</p>",
+			"blurb": [
+				{"text": "<p class='show-text strong-voice'>Cross-disciplinary performance merging dance and live electronic composition.</p>"},
+				{"text": "<p class='show-text strong-voice'>A collaboration of movement and sound design.</p>"}
+			]
+		},
+		{
+			"title": "<h3 class='show-title'>HALLOWEEN</h3>",
+			"date": "<p class='show-date'>10//31//2025</p>",
+			"blurb": [
+				{"text": "<p class='show-text strong-voice'>Darkwave, industrial, and immersive horror visuals for a night of spectral soundscapes.</p>"},
+				{"text": "<p class='show-text strong-voice'>Costumes encouraged—full sensory haunt.</p>"}
+			]
+		}
+	]
+}
