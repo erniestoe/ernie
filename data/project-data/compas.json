@@ -1,0 +1,50 @@
+{
+	"id": 6,
+	"projectName": "Compañeras Campesinas",
+	"slug": "compas",
+	"headerImage": "",
+	"headerText": "Design and branding for a non-profit rooted in empowering women in agriculture.",
+	"altHeaderImage": "",
+	"tags": ["Concept", "UI/UX Design", "Branding"],
+	"showcase": [
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755886899/cc-iphone-mockup_wmrthz.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755886899/cc-tablet-mockup_bnor9h.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755886899/cc-desktop-mockup_ttnvsm.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755887545/cc-ig-posts_yhrlxb.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755886899/cc-cards-mockup_bg0rh7.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755886900/cc-tote-mockup_zd8ukl.jpg"}
+	],
+	"nextProject": "openresource",
+	"caseStudy": [
+		{"content": "<p>Compañeras Campesinas wanted a website and a better understanding of their brand. I expanded their existing branding into a more clear system and showed how to use it in different contexts.</p>"}
+	],
+	"processIntro": "",
+	"gallery": [
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755888972/cc-brand-notes_ahsbzu.png",
+			"caption": "Intial branding notes, used to help Compañeras Campesinas understand what they had more clearly before moving forward.",
+			"class": "square"
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755887644/cc-sketch-1_rsjkni.png",
+			"caption": "Initial website sketches and notes.",
+			"class": "portrait"
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755888078/cc-logos_im8h5c.png",
+			"caption": "Old logo (top), new logo with its safe space (bottom). Recreated the logo to ensure a high quality SVG and make it more usuable for any context.",
+			"class": "square"
+		}
+	],
+	"youtube": "",
+	"figma": [
+		
+	],
+	"liveLinks": [
+		
+	],
+	"githubLinks": [
+		
+	]
+
+}

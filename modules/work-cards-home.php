@@ -66,4 +66,25 @@
 		</div>
 	</work-card>
 
+	<work-card>
+		<a href="<?= ENV === 'production'? '/case-study/compas' : '?page=case-study&slug=compas'?>">
+				<video				
+				      muted
+				      playsinline
+				      loop
+				      preload="metadata"
+				      style="display:block;width:100%;height:auto;"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755890458/cc-teaser_st54uh.mp4"
+				      class="video"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755890536/CleanShot_2025-08-22_at_15.22.00_2x_xdd4lg.png"
+				    ></video>
+		</a>
+
+		<div class="text">
+			<h4 class="quiet-voice bold">Compañeras Campesinas</h4>
+
+			<button class="video-control">PLAY</button>
+		</div>
+	</work-card>
+
 </work-cards>
