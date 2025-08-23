@@ -26,41 +26,6 @@
 			"class": "square"
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755912806/cc-brand-slide-1_mdpkid.png",
-			"caption": "",
-			"class": "landscape"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755912807/cc-brand-slide-2_k30gek.png",
-			"caption": "",
-			"class": "landscape"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755912808/cc-brand-slide-3_ekoww9.png",
-			"caption": "",
-			"class": "landscape"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755912809/cc-brand-slide-4_hhkulo.png",
-			"caption": "",
-			"class": "landscape"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755912810/cc-brand-slide-5_wxasen.png",
-			"caption": "",
-			"class": "landscape"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755912811/cc-brand-slide-6_a7dn6i.png",
-			"caption": "",
-			"class": "landscape"
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755912812/cc-brand-slide-7_pxyemi.png",
-			"caption": "",
-			"class": "landscape"
-		},
-		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755887644/cc-sketch-1_rsjkni.png",
 			"caption": "Initial website sketches and notes.",
 			"class": "portrait"
