@@ -50,11 +50,14 @@
 				</div>
 			<?php endif;?>
 
-			<!-- <a href="<?= ENV === 'production'? '/case-study/' . $project['nextProject'] : '?page=case-study&slug=' . $project['nextProject'] ?>">Next Project?</a> -->
-
 			<?php include('modules/case-study-gallery.php'); ?>
 
-			<?php include('modules/case-study-links.php'); ?>
+
+			<?php if ($project['liveLinks'] || $project['githubLinks']): ?>
+				<?php include('modules/case-study-links.php'); ?>
+			<?php endif ?>
+			
+			<a class="calm-voice" href="<?= ENV === 'production'? '/case-study/' . $project['nextProject'] : '?page=case-study&slug=' . $project['nextProject'] ?>">See Next Project</a>
 
 <?php else: ?>
 	<p class="error">No case study found for that ID.</p>

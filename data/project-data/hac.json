@@ -1,0 +1,64 @@
+{
+	"id": 7,
+	"projectName": "Hunger Action Coalition",
+	"slug": "hac",
+	"headerImage": "",
+	"headerText": "Design and branding for a non-profit focused on fighting hunger.",
+	"altHeaderImage": "",
+	"tags": ["Concept", "UI/UX", "Branding", "Social Media"],
+	"showcase": [
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-mobile_lbwtqa.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-tablet_bwajzz.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-desktop_hxbher.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319572/hac-mobile-volunteering_i2ah8m.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-tablet-volunteering_snbuff.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-desktop-volunteering_nvulbe.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756390843/hac-social-posts-all_u3luel.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319600/hac-social-posts-black-bg-half-1_deqoo2.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756390843/hac-social-posts-half-2_bap5cn.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319572/hac-letterheads_ufa2ze.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389346/hac-cards_tixp7i.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389345/hac-hoodie_kbepeq.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756400687/hac-poster-showcase_xblnth.jpg"}
+
+	],
+	"nextProject": "openresource",
+	"caseStudy": [
+		{"content": "<p>Appearing serious enough for donors, while still engaging younger audiences was a common pain point I saw in Nonprofits. For Hunger Action Coalition, I designed a flexible identity system built around PP Neue Montreal and a muted core palette, with a defined <em>flex space</em> for youth and volunteer communications.</p>"}
+	],
+	"processIntro": "<p>The goal was to design a core identity for Hunger Action Coalition that felt credible and consistent, while building in a flexible space for youth and volunteer outreach.</p>",
+	"gallery": [
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398044/logos_ddjwoc.png",
+			"caption": "Logo sketches and notes, final main logo in the top right. In this case I create a logo suite with a set or wordmarks that can be used instead of the logo. The main icon of three wheat symbolizes the focus on hunger, and community.",
+			"class": "square"
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398301/hac-sketch2_pzsa56.png",
+			"caption": "Sketches and ideation for the main site.",
+			"class": "portrait"
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398974/style-tiles_kos6ec.png",
+			"caption": "Style tiles showcasing a more core visual for the main site, and a more vibrant, bold visual language for the volunteer pages.",
+			"class": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756391775/main-vs-volunteer-screens-mobile-2_wo67hu.png",
+			"caption": "Mobile screens used to show the contrast between the two languages at work.",
+			"class": "square"
+		}
+		
+	],
+	"youtube": "",
+	"figma": [
+		
+	],
+	"liveLinks": [
+		
+	],
+	"githubLinks": [
+		
+	]
+
+}

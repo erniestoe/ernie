@@ -1,6 +1,27 @@
 <work-cards>
 	<h3 class="attention-voice">Featured Work</h3>
 
+	<work-card>
+		<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
+				<video				
+				      muted
+				      playsinline
+				      loop
+				      preload="metadata"
+				      style="display:block;width:100%;height:auto;"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756401394/hac-teaser_iahgn3.mp4"
+				      class="video"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756401449/CleanShot_2025-08-28_at_13.17.03_2x_uyyswg.png"
+				    ></video>
+		</a>
+
+		<div class="text">
+			<h4 class="quiet-voice bold">Hunger Action Coalition</h4>
+
+			<button class="video-control">PLAY</button>
+		</div>
+	</work-card>
+
 	<work-card >
 		<a href="<?= ENV === 'production'? '/case-study/openresource
 		' : '?page=case-study&slug=openresource'?>">

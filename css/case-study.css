@@ -1,6 +1,15 @@
 @import "style.css";
 
 .case-study {
+	a.calm-voice {
+		text-decoration: underline;
+	}
+
+	case-study-gallery + a,
+	links + a {
+		margin-top: 48px;
+	}
+
 	header {
 		max-width: 600px;
 		padding-top: 52px;
@@ -99,12 +108,16 @@
 			} 
 		}
 
+		picture {
+			max-width: 800px;
+		}
+
 		picture.portrait {
 			max-width: 450px;
 		}
 
 		picture.square {
-			max-width: 700px;
+			max-width: 800px;
 		}
 
 		.credit-link {
