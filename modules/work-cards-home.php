@@ -43,28 +43,6 @@
 		</div>
 	</work-card>
 
-	<work-card >
-		<a href="<?= ENV === 'production'? '/case-study/openresource
-		' : '?page=case-study&slug=openresource'?>">
-			<video
-				      muted
-				      playsinline
-				      loop
-				      preload="metadata"
-				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755189452/openresource-teaser_rdm7id.mp4"
-				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010182/CleanShot_2025-08-12_at_10.48.23_2x_cl7zrb.png"
-				    ></video>
-		</a>
-
-		<div class="text">
-			<h4 class="quiet-voice bold">OpenResource</h4>
-
-			<button class="video-control">PLAY</button>
-		</div>
-	</work-card>
-
 	<work-card>
 		<a href="<?= ENV === 'production'? '/case-study/studio-ernie
 		' : '?page=case-study&slug=studio-ernie'?>">
@@ -108,6 +86,25 @@
 		</div>
 	</work-card>
 
-	
+	<work-card >
+		<a href="<?= ENV === 'production'? '/case-study/openresource
+		' : '?page=case-study&slug=openresource'?>">
+			<video
+				      muted
+				      playsinline
+				      loop
+				      preload="metadata"
+				      style="display:block;width:100%;height:auto;"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755189452/openresource-teaser_rdm7id.mp4"
+				      class="video"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010182/CleanShot_2025-08-12_at_10.48.23_2x_cl7zrb.png"
+				    ></video>
+		</a>
 
+		<div class="text">
+			<h4 class="quiet-voice bold">OpenResource</h4>
+
+			<button class="video-control">PLAY</button>
+		</div>
+	</work-card>
 </work-cards>
