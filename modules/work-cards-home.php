@@ -74,9 +74,9 @@
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1754955155/crft_k4uz7s.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756483611/crft-teaser_dzjxbw.mp4"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010167/CleanShot_2025-08-12_at_10.48.37_2x_yvi7xo.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483744/CleanShot_2025-08-29_at_12.08.24_2x_crmfwh.png"
 				    ></video>
 		</a>
 
@@ -107,5 +107,7 @@
 			<button class="video-control">PLAY</button>
 		</div>
 	</work-card>
+
+	
 
 </work-cards>

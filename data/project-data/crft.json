@@ -35,6 +35,11 @@
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/kira-3000_rfgdxs.png",
 			"caption": "Images are given a duotone treatment to contrast with the main black and white colors of the brand.",
 			"class": "portrait"
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483930/crft-mobile-screens-pink_xugd6y.png",
+			"caption": "Mobile site screens.",
+			"class": "square"
 		}
 	],
 	"youtube": "",
