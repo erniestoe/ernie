@@ -11,9 +11,9 @@
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-artist-spotlight_ntjsph.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633883/crft-shirt_conce4.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-site-mobile_jr0obm.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-site-tablet_s4bnfv.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633884/crft-site-desktop_aonct9.jpg"}
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481975/crft-mobile-showcase_e7khec.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-tablet-showcase_l1wsvd.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-desktop-showcase_mdc111.png"}
 	],
 	"nextProject": "compas",
 	"caseStudy": [
@@ -22,7 +22,7 @@
 	"processIntro": "",
 	"gallery": [
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756474657/crft-logo-suite_flfj8e.png",
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756482407/crft-logos_y88vhy.png",
 			"caption": "Square represents modularity and ties to architecture. Half circles going up followed by half circles going down represent partying from sun up to sun down. Circle represents records getting spun.",
 			"class": "square"
 		},
