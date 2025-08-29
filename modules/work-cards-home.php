@@ -95,9 +95,9 @@
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755189452/openresource-teaser_rdm7id.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756504511/openresource-teaser_f139yi.mp4"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010182/CleanShot_2025-08-12_at_10.48.23_2x_cl7zrb.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756504501/CleanShot_2025-08-29_at_17.54.36_2x_kgvgmw.png"
 				    ></video>
 		</a>
 

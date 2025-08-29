@@ -1,9 +1,7 @@
 {
 	"title": "Playground",
 	"portrait": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271189/wine_cm6my9.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271189/summerlark_v7e04v.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271190/cyberpunk_fdy1vo.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752888173/print-1_vlk8ui.jpg"}
 		
 	],
@@ -11,6 +9,7 @@
 		
 	],
 	"landscape": [
-		
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271189/wine_cm6my9.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271190/cyberpunk_fdy1vo.jpg"}
 	]
 }
