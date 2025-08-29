@@ -76,7 +76,6 @@ picture,
 video,
 .sketch {
 	display: block;
-	border-radius: 10px;
 	overflow: hidden;
 	object-fit: contain;
 }

@@ -7,13 +7,16 @@
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png",
 	"tags": ["Concept", "UI/UX Design", "Branding"],
 	"showcase": [
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481975/crft-mobile-showcase_e7khec.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-tablet-showcase_l1wsvd.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-desktop-showcase_mdc111.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756491739/crft-social-posts_e02ajy.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/crft-wall_iekrzl.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-artist-spotlight_ntjsph.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633883/crft-shirt_conce4.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481975/crft-mobile-showcase_e7khec.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-tablet-showcase_l1wsvd.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-desktop-showcase_mdc111.png"}
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633883/crft-shirt_conce4.jpg"}
+
+
 	],
 	"nextProject": "compas",
 	"caseStudy": [
