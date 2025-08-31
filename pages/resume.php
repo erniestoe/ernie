@@ -12,7 +12,7 @@
 			<div class="intro">
 				<h3 class="strong-voice">Ernesto Rivera-Saavedra</h3>
 
-				<p>Interdisciplinary designer with a focus on making good stuff.</p>
+				<p>Graphic designer with a focus on websites & branding.</p>
 			</div>
 
 			<div class="education">
@@ -31,7 +31,7 @@
 				<h3 class="strong-voice">Experience</h3>
 
 				<ul class="experience-list">
-					<li class="job">
+					<!-- <li class="job">
 						<div class="title">
 							<p><em>Product Designer, OpenResource</em></p>
 
@@ -45,7 +45,7 @@
 
 							<li class="quiet-voice">Used Figma for UX research, user testing, and UI design </li>
 						</ul>
-					</li>
+					</li> -->
 
 					<li class="job">
 						<div class="title">

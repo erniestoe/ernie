@@ -3,44 +3,34 @@
 	"projectName": "OpenResource",
 	"slug": "openresource",
 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753965659/openresource-header_n43y5b.png",
-	"headerText": "A custom WordPress theme for finding local resources easier.",
+	"headerText": "A lightweight design system for creating resource directories.",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753312243/openresource-header-alt_ubi0hs.png",
-	"tags": ["Visual Identity", "UI/UX Design", "WordPress Development"],
+	"tags": ["Design System", "UI/UX"],
 	"nextProject": "hac",
 	"showcase": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876966/openresource-style-tile_ddeiez.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-cards-1_yjfmn5.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755199804/openresource-mobile_vivqkq.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200498/openresource-tablet-view_x60jsd.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752876704/openresource-desktop-view_dqwbqu.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200479/fcr-mobile_lw1uwc.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755200480/fcr-tablet_fvsrw6.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755199803/fcr-desktop_snzuoa.jpg"}
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756646319/openresource-mobile-showcase_w0b04x.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756646319/openresource-tablet-showcase_mqoy19.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756646319/openresource-desktop-showcase_q5urkb.png"}
 	],
 	"caseStudy": [
-		{"content": "<p>While working in non-profits, I saw firsthand how inefficient resource sharing could be. So I built a simple, reliable WordPress theme to empower people to find resources themselves, and give organizations a way to build and maintain their own online directories.</p>"}
+		{"content": "<p>While working in non-profits, I saw firsthand how inefficient resource sharing could be. So I built a simple and straightforward design system to power a new way of creating resource directories.</p>"}
 	],
-	"processIntro": "<p>One project, <em>two faces</em>. The idea was to give OpenResource a clear visual direction while allowing the theme to focus on accessibility and community adoption.</p>",
+	"processIntro": "",
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755217083/openresource-sketches_tcjoy8.png",
-			"caption": "Sketches for initial theme prototype.",
+			"caption": "Initial Sketches for components and layouts.",
 			"class": ""
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755221324/openresource-typography-notes_uahxiu.png",
-			"caption": "<p class='quiet-voice'>Inital notes on typography usage. (Credit to <a class='credit-link' target='_blank' href='https://www.oliviaking.com/inclusivesans/feature'>Olivia King</a> for Inclusive Sans graphic.)</p>",
-			"class": ""
-		},
-		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755208906/openresource-branding-notes_cigsqb.png",
-			"caption": "Branding notes & ideation.",
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756665786/openresrouce-component-sheet_kbugik.png",
+			"caption": "Initial component sheet.",
 			"class": "square"
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755217882/openresource-wordmarks_vyeaxf.png",
-			"caption": "Wordmark exploration.",
-			"class": ""
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756667144/openresource-typography-and-shape_a6rkyb.png",
+			"caption": "Sheet detailing type and shape systems.",
+			"class": "square"
 		}
 	],
 	"youtube": "",
