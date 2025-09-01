@@ -10,5 +10,5 @@
 	<h4 class="loud-voice">Less noise, <br> more clarity.</h4>
 
 	<p class="strong-voice">
-		I take scattered ideas and morph them into clear systems that <em>just work</em>.<br><br>My approach is deliberate and careful, thoughtful, yet effective. I won't bother stuffing a ton of buzzwords here, just know that I care about good design and getting you the clarity that <em>you deserve</em>.</p>
+		I like to morph scattered ideas into clear systems and designs that <em>just work</em>. With a background in Computer Science and Nonprofits I do this in a way that works both for the web and for people.
 </div>
