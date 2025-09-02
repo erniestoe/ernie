@@ -20,14 +20,14 @@
 p,
 .calm-voice
 {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	font-weight: 400;
 	/*line-height: 1em;*/
 	
 }
 
 .strong-voice {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	/*font-weight: 800;*/
 	font-variation-settings: "wght" 560, "ital" 0;
 	letter-spacing: .02em;
@@ -37,17 +37,18 @@ p,
 .attention-voice {
 	font-size: 2rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 645, "ital" 0;
+	font-variation-settings: "wght" 545, "ital" 0;
 	/*letter-spacing: .02em;*/
 
 }
 
 .loud-voice {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	/*font-weight: 900;*/
-	font-variation-settings: "wght" 641, "ital" 0;
+	font-variation-settings: "wght" 600, "ital" 0;
 	letter-spacing: -.021em;
 	line-height: 1em;
+	max-width: 20ch;
 }
 
 .loud-voice.intro-headline {

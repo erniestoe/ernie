@@ -26,12 +26,12 @@ p,
 .calm-voice,
 h2{
 		text-wrap: pretty;
-		max-width: 48ch;
+		max-width: 60ch;
 		line-height: 1.3em;
 }
 
 figcaption {
-	max-width: 48ch;
+	max-width: 60ch;
 	text-wrap: pretty;
 	line-height: 1.3em;
 }
