@@ -4,7 +4,7 @@
 		<inner-column>
 			<nav class="footer-nav">
 				<a href="<?= ENV === 'production' ? '/resume' : '?page=resume'?>" class=" quiet-voice">Resume</a>
-				<a class="attention-voice footer-contact" href="mailto:ersaavedra.nc@gmail.com">Let's Chat</a>
+				
 				<a href="<?= ENV === 'production' ? '/style-guide' : '?page=style-guide'?>" class="quiet-voice">Style Guide</a>
 			</nav>
 			
