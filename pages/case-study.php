@@ -53,7 +53,9 @@
 				<div class="reflection">
 					<h2 class="attention-voice">Reflection</h2>
 
-					<?=$project['reflection']?>
+					<div class="reflection-text">
+						<?=$project['reflection']?>
+					</div>
 				</div>
 			<?php endif ?>
 

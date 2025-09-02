@@ -84,10 +84,24 @@
 		.overview,
 		.reflection {
 			display: grid;
-			gap: 32px ;
+			gap: 32px;
 
 			@media(width >= 1024px) {
 				grid-template-columns: 1fr 1fr;
+			}
+		}
+
+		.reflection {
+			gap: 0 32px;
+
+			.reflection-text {
+				grid-column: span 2;
+				display: grid;
+				gap: 32px;
+
+				@media(width >= 1024px) {
+					grid-template-columns: 1fr 1fr;
+				}
 			}
 		}
 
