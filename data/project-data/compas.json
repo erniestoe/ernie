@@ -3,9 +3,9 @@
 	"projectName": "Compañeras Campesinas",
 	"slug": "compas",
 	"headerImage": "",
-	"headerText": "Design and branding for a non-profit rooted in empowering women in agriculture.",
+	"headerText": "Design and brand understanding for a nonprofit working to empower women in agriculture.",
 	"altHeaderImage": "",
-	"tags": ["Concept", "Branding", "UI/UX Design"],
+	"tags": ["Conceptual", "UI/UX", "Social Media"],
 	"showcase": [
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756499737/compas-mobile-showcase_ahmfjz.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756499739/compas-tablet-showcase_qghbqa.png"},
@@ -16,27 +16,27 @@
 	],
 	"nextProject": "openresource",
 	"caseStudy": [
-		{"content": "<p>Compañeras Campesinas wanted a website and a better understanding of their brand. I expanded their existing branding into a more clear system and designed their new website.</p>"}
+		{"content": "<p>Compañeras Campesinas already had a brand direction they cared about, but needed a clearer, more usable system online. I helped refine their existing materials and built a website that could showcase their mission, events, and donation options in a way that felt both trustworthy and approachable.</p><p>I focused on expanding their existing toolkit into digital spaces by updating the logo for consistency, desigining a functional website, and creating templates they could adapt for social media.</p>"}
 	],
-	"processIntro": "",
+	"processIntro": "<p>The challenge was taking the existing idenity and translating it to different mediums without losing the character of the original brand.</p>",
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755888972/cc-brand-notes_ahsbzu.png",
-			"caption": "Intial branding notes, used to help Compañeras Campesinas understand what they had more clearly before moving forward.",
+			"caption": "<h4 class='bold'>Brand Refinement</h4><p class='quiet-voice'>I started by clarifying their brand assets by documenting colors, typography, and tone of voice, so the team could use them consistently across platforms.</p>",
 			"class": "square"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756501441/cc-logos_zyjuqn.png",
-			"caption": "Top: Original logo - Bottom: updated logo. Updated their logo to ensure high quality and make it usuable for any context.",
+			"caption": "<h4 class='bold'>Logo Update</h4><p class='quiet-voice'>Their existing logo was recreated to ensure high quality output across print, digital, and social applications.</p>",
 			"class": "square"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755887644/cc-sketch-1_rsjkni.png",
-			"caption": "Initial website sketches and notes.",
+			"caption": "<h4 class='bold'>Website Planning</h4><p class='quiet-voice'>Initial sketches mapped out the clear storytelling: introducting who they are followed by their work and upcoming events.</p>",
 			"class": "portrait"
 		}
 	],
-	"reflection": "",
+	"reflection": "<p>This project highlighted how even small adjustments, like cleaning up a logo and documenting brand basics can make a big difference when brought into a website. What worked well was creating a site structure that put their mission front and center.</p><p>Next steps would be building social media templates for other platforms to help them extend their presence beyond instagram.</p>",
 	"youtube": "",
 	"figma": [
 		
