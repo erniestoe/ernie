@@ -3,11 +3,7 @@
 .case-study {
 	a.calm-voice {
 		text-decoration: underline;
-	}
-
-	case-study-gallery + a,
-	links + a {
-		margin-top: 48px;
+		margin-top: 24px;
 	}
 
 	header {
@@ -64,41 +60,56 @@
 	inner-column {
 		padding-top: 8px;
 
+	/*	h2 + p,
+		h2 + .case-study {
+			margin-top: 8px;
+		}*/
+
 		.tags li {
 			border: 1px solid var(--main-black);
 		}
 
 		.tags {
-			padding-top: 24px;
+			/*padding-top: 24px;*/
 		}
 
-		.tags + p {
-			margin-top: 48px;
+		.tags + h2 {
+			margin-top: 24px;
 
 			@media(width >= 1024px) {
-				margin-top: 64px;
+				margin-top: 48px;
 			}
 		}
 
-		.text {
-			p + p {
-				margin-top: 24px;
+		.overview,
+		.reflection {
+			display: grid;
+			gap: 32px ;
+
+			@media(width >= 1024px) {
+				grid-template-columns: 1fr 1fr;
 			}
 		}
 
-		.text + case-study-gallery {
+		.text + case-study-gallery,
+		case-study-gallery + .reflection  {
 			margin-top: 64px;
 
 			@media(width >= 1024px) {
 				/*margin-top: 160px;*/
 			}
 		}
+
+		.reflection h2 {
+			grid-column: span 2;
+		}
+
 	}
 
 	case-study-gallery {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 24px;
+		gap: 48px;
 
 		iframe {
 			display: none;
@@ -127,6 +138,12 @@
 			width: fit-content;
 		}
 
+		.intro {
+			position: sticky;
+			top: 0;
+			left: 0;
+		}
+
 		iframe,
 		picture,
 		figure,
@@ -135,7 +152,13 @@
 		}
 
 		picture + figcaption {
-			margin-top: 8px;
+			/*margin-top: 16px;*/
+		}
+
+		figcaption {
+			h4 + p {
+				margin-top: 8px;
+			}
 		}
 
 		@media (width >=1024px) {
@@ -185,7 +208,7 @@
 	.main-carousel {
 		margin-block: 24px;
 		overflow: hidden;
-		max-width: 800px;
+		/*max-width: 800px;*/
 	}
 
 	.main-carousel .carousel-cell {

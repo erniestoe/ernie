@@ -75,7 +75,6 @@ body {
 .tags {
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 8px;
 	gap: 8px;
 
 	li {

@@ -3,9 +3,9 @@
 	"projectName": "CRFT",
 	"slug": "crft",
 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753965659/crft-header_xsvaxu.png",
-	"headerText": "Web design and a visual identity for the hottest new music venue.",
+	"headerText": "A deep dive into branding.",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png",
-	"tags": ["Concept", "UI/UX Design", "Branding"],
+	"tags": ["Conceptual", "Branding", "UI/UX", "Social Media"],
 	"showcase": [
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481975/crft-mobile-showcase_e7khec.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-tablet-showcase_l1wsvd.png"},
@@ -20,31 +20,32 @@
 	],
 	"nextProject": "compas",
 	"caseStudy": [
-		{"content": "<p>Non-profits I've worked with often told me about how much they cared but how hard it was to brand their organization, so I took on this project to better understand that process. Under a three day sprint I designed a visual identity and website to prepare CRFT (a conceptual brand) for their grand opening.</p>"}
+		{"content": "<p>Nonprofits I worked with often told me how difficult branding felt, especially when trying to balance being serious and trustworthy while still capturing energy and relevance. CRFT was a conceptual project I took on to explore that challenge in the context of a music venue.</p><p>My solution was to design a system built on minimal, geometric form paired with bold, duotone treatments. The core identity is clean and restrained, while event posters and digital assets push into louder, more expressive territory to give the brand both credibility and vibrancy.</p>"}
 	],
-	"processIntro": "",
+	"processIntro": "<p>The challenge here was to design a identity that was restrained, but still delivered the energy of a live music venue.</p>",
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756482407/crft-logos_y88vhy.png",
-			"caption": "Square represents modularity and ties to architecture. Half circles going up followed by half circles going down represent partying from sun up to sun down. Circle represents records getting spun.",
+			"caption": "<h4 class='bold'>Logo Development</h4><p class='quiet-voice'>This logo suite uses basic geometric forms to represent sound and structure: square for modularity and their ties to architecture, half circles rising and falling to suggest a party from sunup to sundown, and the circle to represent the records getting spun.</p>",
 			"class": "square"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755270837/crft-danger_hidtxa.png",
-			"caption": "Artist spotlight poster template.",
+			"caption": "<h4 class='bold'>Brand in Use</h4><p class='quiet-voice'>Artist poster templates epxerimented with clean typography and bold duotone treatments to ensure brand consistency with artist images.</p>",
 			"class": "portrait"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/kira-3000_rfgdxs.png",
-			"caption": "Images are given a duotone treatment to contrast with the main black and white colors of the brand.",
+			"caption": "<h4 class='bold'>Visual Language</h4><p class='quiet-voice'>Isolated artist image with the duotone treatment showcases how the brand can stay consistent regardless of quality or previous treatments of artist images.</p>",
 			"class": "portrait"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483930/crft-mobile-screens-pink_xugd6y.png",
-			"caption": "Mobile site screens.",
+			"caption": "<h4 class='bold'>Application</h4><p class='quiet-voice'>Mobile screens showing the system in action, paring the minimal core identity with event details, and high contrast images.</p>",
 			"class": ""
 		}
 	],
+	"reflection": "<p>This project really showed me how basic forms can scale into a strong brand identity. What worked well was establishing clear rules for type and color early, allowing me to keep brand consistency across posters, screens, and social media posts.</p><p>If I were to continue, I'd build out a more extensive toolkit for venuse to use independently</p>",
 	"youtube": "",
 	"figma": [
 		{"src": "https://embed.figma.com/board/jjwDmyPNdAi9fjs5WUStu5/Crft?node-id=0-1&embed-host=share"},

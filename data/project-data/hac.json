@@ -3,9 +3,9 @@
 	"projectName": "Hunger Action Coalition",
 	"slug": "hac",
 	"headerImage": "",
-	"headerText": "Design and branding for a conceptual non-profit focused on fighting hunger.",
+	"headerText": "A visual identity built for impact and flexibility.",
 	"altHeaderImage": "",
-	"tags": ["Concept", "Branding", "UI/UX", "Social Media"],
+	"tags": ["Conceptual", "Branding", "UI/UX", "Social Media"],
 	"showcase": [
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-mobile_lbwtqa.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-tablet_bwajzz.png"},
@@ -22,32 +22,33 @@
 	],
 	"nextProject": "crft",
 	"caseStudy": [
-		{"content": "<p>Appearing serious enough for donors, while still engaging younger audiences was a common pain point I saw in Nonprofits. For Hunger Action Coalition, I designed a flexible identity system built around PP Neue Montreal and a muted core palette, with a defined <em>flex space</em> for youth and volunteer communications.</p>"}
+		{"content": "<p>I’ve seen firsthand how nonprofits can struggle with looking credible to donors while staying relevant to younger volunteers and communities. Hunger Action Coalition was a conceptual project I took on to test how a single identity could flex between audiences without losing consistency.</p><p>My solution was to design a system with two voices: a muted, professional core identity to build donor trust, and a more bold, youth focused layer for outreach and volunteer engagement. The system uses typography, color and layout shifts to communicate to different audiences without creating a confused brand.</p>"}
 	],
-	"processIntro": "<p>The goal was to design a core identity for Hunger Action Coalition that felt credible and consistent, while building in a flexible space for youth and volunteer outreach.</p>",
+	"processIntro": "<p>The challenge here was to create a core identity that felt trustworth and consistent, while leaving space for a more vibrant, youth focused voice.</p>",
 	"gallery": [
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398044/logos_ddjwoc.png",
-			"caption": "Logo sketches and notes, final main logo in the top right. In this case I create a logo suite with a set or wordmarks that can be used instead of the logo. The main icon of three wheat symbolizes the focus on hunger, and community.",
+			"caption": "<h4 class='bold'>Logo Development</h4><p class='quiet-voice'>Early sketches explored multiple directions. The final system uses a primary icon of three wheat stalks to sybolize hunger, action, and community. Added a set of adaptable wordmarks for different contexts.</p>",
 			"class": "square"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398301/hac-sketch2_pzsa56.png",
-			"caption": "Sketches and ideation for the main site.",
+			"caption": "<h4 class='bold'>Explorations & Ideation</h4><p class='quiet-voice'>Initial site sketches focused on clear hierarchy and ease of navigation, laying the groundwork for both donor facing and volunteer facing content.</p>",
 			"class": "portrait"
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398974/style-tiles_kos6ec.png",
-			"caption": "Style tiles showcasing a more core visual for the main site, and a more vibrant, bold visual language for the volunteer pages.",
+			"caption": "<h4 class='bold'>System & Style Tiles</h4><p class='quiet-voice'>Two visual languages emerged: a muted, neutral system for the main site, and a bold, high contrast style for youth and volunteer communications.</p>",
 			"class": ""
 		},
 		{
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756391775/main-vs-volunteer-screens-mobile-2_wo67hu.png",
-			"caption": "Mobile screens used to show the contrast between the two languages at work.",
+			"caption": "<h4 class='bold'>Application</h4><p class='quiet-voice'>Mobile screens demonstrate the contrast between the core identity and the volunteer identity, showing how the system can flex without losing cohesion.</p>",
 			"class": "square"
 		}
 		
 	],
+	"reflection": "<p>This project taught me the importance of designing with dual audiences in mind. What worked well was building flexibility directly into the system, rather than treating youth outreach as an afterthought.</p><p>If I were to continue, I’d develop templates to make adoption even easier for nonprofits.</p>",
 	"youtube": "",
 	"figma": [
 		

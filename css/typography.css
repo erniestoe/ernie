@@ -29,7 +29,7 @@ p,
 .strong-voice {
 	font-size: 1.125rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 560, "ital" 0;
+	font-variation-settings: "wght" 545, "ital" 0;
 	letter-spacing: .02em;
 	line-height: 1.2em;
 }
@@ -48,7 +48,7 @@ p,
 	font-variation-settings: "wght" 600, "ital" 0;
 	letter-spacing: -.021em;
 	line-height: 1em;
-	max-width: 20ch;
+	max-width: 50ch;
 }
 
 .loud-voice.intro-headline {
@@ -80,7 +80,7 @@ em.bold {
 }
 
 .bold {
-	font-variation-settings: "wght" 641, "ital" 0;
+	font-variation-settings: "wght" 545, "ital" 0;
 	/*font-weight: 800;*/
 	/*letter-spacing: .01em;*/
 }

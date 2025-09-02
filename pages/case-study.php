@@ -14,19 +14,6 @@
 
 			</div>
 		</header>
-			<div class="text">
-
-				<ul class="tags">
-					<?php foreach ($project['tags'] as $tag): ?>
-						<li class="tag"><?= $tag ?></li>
-					<?php endforeach; ?>
-				</ul>
-
-				<?php foreach ($project['caseStudy'] as $content): ?>
-					<?= $content['content'] ?>
-				<?php endforeach; ?>
-			</div>
-
 			<?php if ($project['showcase']):?>
 				<div class="main-carousel">
 					<?php foreach ($project['showcase'] as $image): ?>
@@ -39,13 +26,37 @@
 				</div>
 			<?php endif;?>
 
+			<div class="text">
+
+				<ul class="tags">
+					<?php foreach ($project['tags'] as $tag): ?>
+						<li class="tag"><?= $tag ?></li>
+					<?php endforeach; ?>
+				</ul>
+
+				<h2 class="attention-voice">Overview</h2>
+				<div class="overview">
+					<?php foreach ($project['caseStudy'] as $content): ?>
+						<?= $content['content'] ?>
+					<?php endforeach; ?>
+				</div>
+			</div>
+
 			<?php include('modules/case-study-gallery.php'); ?>
 
 
 			<?php if ($project['liveLinks'] || $project['githubLinks']): ?>
 				<?php include('modules/case-study-links.php'); ?>
 			<?php endif ?>
-			
+
+			<?php if ($project['reflection']): ?>
+				<div class="reflection">
+					<h2 class="attention-voice">Reflection</h2>
+
+					<?=$project['reflection']?>
+				</div>
+			<?php endif ?>
+
 			<a class="calm-voice" href="<?= ENV === 'production'? '/case-study/' . $project['nextProject'] : '?page=case-study&slug=' . $project['nextProject'] ?>">See Next Project</a>
 
 <?php else: ?>
