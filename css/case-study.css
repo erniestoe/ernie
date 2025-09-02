@@ -100,8 +100,15 @@
 			}
 		}
 
-		.reflection h2 {
+		.reflection h2,
+		.reflection p {
 			grid-column: span 2;
+		}
+
+		.reflection p {
+			@media(width >= 1024px) {
+				grid-column: span 1;
+			}
 		}
 
 	}
