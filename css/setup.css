@@ -97,7 +97,7 @@ img {
 inner-column {
 	display: block;
 	max-width: 1440px;
-	padding-block: 48px;
+	padding-block: 32px;
 	padding-inline: 16px;
 
 	@media (width > 1024px){
