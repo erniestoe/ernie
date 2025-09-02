@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "typography.css";
 @import "setup.css";
+@import "resume.css";
 
 html {
 	scroll-behavior: smooth;
@@ -108,7 +109,6 @@ nav {
 	}
 }
 
-
 aside {
 	grid-row: 1;
 	grid-column: span 4;
@@ -144,9 +144,9 @@ aside {
 
 		button {
 			border-radius: 25px;
-			border: 1px solid var(--main-white);
-			background-color: var(--main-black);
-			color: var(--main-white);
+			border: none;
+			background-color: var(--yellow);
+			color: var(--main-black);
 			padding: 8px 24px;
 		}
 

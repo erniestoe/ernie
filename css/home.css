@@ -108,13 +108,26 @@
 		margin-top: 120px;
 	}
 
+	.about + h3 {
+		margin-top: 64px;
+	}
+
+	summary {
+		cursor: pointer;
+	}
+
 	.about {
-		h3 + h4 {
+		h3 + p {
 			margin-top: 8px;
 		}
 
 		h4 + p {
 			margin-top: 24px;
 		}
+
+		p + p {
+			margin-top: 16px;
+		}
 	}
+
 }

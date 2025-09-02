@@ -32,5 +32,7 @@
 		<?php include ('modules/work-cards-home.php'); ?>
 
 		<?php include ('modules/home-about.php'); ?>
+		<h3 class="attention-voice">Resume</h3>
+		<?php include ('modules/resume.php') ?>
 	</inner-column>
 </section>

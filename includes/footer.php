@@ -3,7 +3,7 @@
 	<footer class="site-footer <?=$currentPage['name'] === 'garden'? 'garden-footer': ''?>">
 		<inner-column>
 			<nav class="footer-nav">
-				<a href="<?= ENV === 'production' ? '/resume' : '?page=resume'?>" class=" quiet-voice">Resume</a>
+				<!-- <a href="<?= ENV === 'production' ? '/resume' : '?page=resume'?>" class=" quiet-voice">Resume</a> -->
 				
 				<a href="<?= ENV === 'production' ? '/style-guide' : '?page=style-guide'?>" class="quiet-voice">Style Guide</a>
 			</nav>

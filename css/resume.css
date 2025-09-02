@@ -1,5 +1,60 @@
 @import "style.css";
 
+resume {
+	padding-top: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+
+	.intro,
+	.education,
+	.experience {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.education li {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		.date {
+			justify-self: end;
+		}
+	}
+
+	.experience {
+		.experience-list {
+			display: flex;
+			flex-direction: column;
+			gap: 48px;
+		}
+
+		.experience-sublist {
+			padding-top: 24px;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			list-style-type: disc;
+			padding-left: 16px;
+
+			li {
+				max-width: 45ch;
+				text-wrap: pretty;
+			}
+		}
+		
+		.title {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			.date {
+				justify-self: end;
+			}
+		}
+	}
+}
+
 .resume {
 	picture {
 
@@ -10,58 +65,6 @@
 		}
 	}
 
-	resume {
-		display: flex;
-		flex-direction: column;
-		gap: 32px;
-
-		.intro,
-		.education,
-		.experience {
-			display: flex;
-			flex-direction: column;
-			gap: 24px;
-		}
-
-		.education li {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-
-			.date {
-				justify-self: end;
-			}
-		}
-
-		.experience {
-			.experience-list {
-				display: flex;
-				flex-direction: column;
-				gap: 48px;
-			}
-
-			.experience-sublist {
-				padding-top: 24px;
-				display: flex;
-				flex-direction: column;
-				gap: 16px;
-				list-style-type: disc;
-				padding-left: 16px;
-
-				li {
-					max-width: 45ch;
-					text-wrap: pretty;
-				}
-			}
-			
-			.title {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-
-				.date {
-					justify-self: end;
-				}
-			}
-		}
-	}
+	
 	
 }
