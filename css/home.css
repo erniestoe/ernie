@@ -3,8 +3,12 @@
 .home-content {
 	svg-container {
 			display:flex;
-			transform: translate(-4px, 24px);
-			padding-bottom: 48px;
+			transform: translate(-4px, 0);
+			/*flex-basis:50%;*/
+
+			@media (width > 1000px) {
+				transform: translate(-4px, 7px);
+			}
 
 			svg {
 			     width: 50px;
@@ -15,6 +19,16 @@
 			   path {
 			     fill: #141414;
 			   }
+		}
+
+		.main-intro {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 8px;
+			padding-bottom: 32px;
+
+			
 		}
 	
 	/*picture{

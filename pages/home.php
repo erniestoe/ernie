@@ -7,24 +7,26 @@
 				  <path id="shape" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
 				</svg>
 			</div> -->
+			<div class="main-intro">
+				<svg-container>
+				  <svg viewBox="0 0 200 200">
+				    <path id="shape1" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
+				  </svg>
+				  
+				  <svg viewBox="0 0 200 200">
+				    <path id="shape2" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
+				  </svg>
+				  
+				  <svg viewBox="0 0 200 200">
+				    <path id="shape3" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
+				  </svg>
+				</svg-container>
 
-			<h2 class="loud-voice intro-headline"><?= $pageData["headline"]?></h2>
+				<h2 class="loud-voice intro-headline"><?= $pageData["headline"]?></h2>
+			</div>
 			<p class="strong-voice"><?= $pageData["subheadline"]?></p>
 			<!-- <a href="<?= ENV === 'production'? '/case-study-index' : '?page=case-study-index'?>"><?= $pageData["cta"]?></a> -->
 
-				<svg-container>
-			  <svg viewBox="0 0 200 200">
-			    <path id="shape1" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-			  </svg>
-			  
-			  <svg viewBox="0 0 200 200">
-			    <path id="shape2" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-			  </svg>
-			  
-			  <svg viewBox="0 0 200 200">
-			    <path id="shape3" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-			  </svg>
-			</svg-container>
 		</intro>
 
 		<?php include ('modules/work-cards-home.php'); ?>

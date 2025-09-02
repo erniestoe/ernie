@@ -105,11 +105,11 @@ inner-column {
 	}
 }
 
-section inner-column {
+/*section inner-column {
 	@media(width >= 1024px) {
 			padding-left: 0;
 		}
-}
+}*/
 
 .body-invert,
 .body-garden {

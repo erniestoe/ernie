@@ -101,6 +101,8 @@ nav {
 			.arrow,
 			.mail {
 				align-self: end;
+				
+				transform: translate(0, 3px);
 			}
 		}
 	}
@@ -142,7 +144,7 @@ aside {
 
 		button {
 			border-radius: 25px;
-			border: none;
+			border: 1px solid var(--main-white);
 			background-color: var(--main-black);
 			color: var(--main-white);
 			padding: 8px 24px;
@@ -210,7 +212,7 @@ main {
 
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 6/13;
+		grid-column: 5/13;
 	}
 }
 
@@ -220,13 +222,11 @@ footer {
 	align-self: end;
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 6/13;
+		grid-column: 5/13;
 	}
 
 	inner-column {
-		@media(width >= 1024px) {
-			padding-left: 0;
-		}
+		
 		nav {
 			display: flex;
 			justify-content: space-between;
