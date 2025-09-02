@@ -6,6 +6,10 @@
 		grid-template-columns: repeat(4, 1fr);
 		gap: 24px;
 
+		picture {
+			align-self: end;
+		}
+
 		picture,
 		.sketch {
 			grid-column: span 4;
@@ -14,12 +18,12 @@
 		@media (width >=1024px) {
 			picture:nth-of-type(even),
 			.sketch:nth-of-type(even) {
-				grid-column: 2/5;
+				grid-column: span 2;
 			}
 
 			picture:nth-of-type(odd),
 			.sketch:nth-of-type(odd) {
-				grid-column: span 3;
+				grid-column: span 2;
 			}
 		}
 	}

@@ -11,11 +11,9 @@
 	}
 
 	header {
-		max-width: 600px;
+		
 		padding-top: 52px;
 		/*padding-bottom: 120px;*/
-		margin-left: 16px;
-		margin-right: 16px;
 		display: flex;
 		flex-direction:column;
 		/*flex-direction: row-reverse;*/
@@ -68,6 +66,10 @@
 
 		.tags li {
 			border: 1px solid var(--main-black);
+		}
+
+		.tags {
+			padding-top: 24px;
 		}
 
 		.tags + p {
