@@ -1,5 +1,5 @@
 <header>
-	<button id="open" class="quiet-voice <?=$currentPage['name'] === 'garden' ? 'show' : 'hidden'?>">Menu</button>
+	<button id="open" class="quiet-voice glass-element <?=$currentPage['name'] === 'garden' ? 'show' : 'hidden'?>">Menu</button>
 
 	<div class="mobile-menu visually-hidden">
 		<inner-column>
