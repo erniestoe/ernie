@@ -90,7 +90,7 @@ nav {
 	ul {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: 16px;
 
 		li {
 			display: flex;
@@ -121,7 +121,7 @@ aside {
 	}
 
 	@media (width >= 1024px){
-		grid-column: span 4;
+		grid-column: span 3;
 		grid-row: span 2;
 	}
 
@@ -211,7 +211,7 @@ main {
 
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 5/13;
+		grid-column: 4/13;
 	}
 }
 
@@ -221,7 +221,7 @@ footer {
 	align-self: end;
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 5/13;
+		grid-column: 4/13;
 	}
 
 	inner-column {

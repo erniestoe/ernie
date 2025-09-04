@@ -43,7 +43,7 @@
 		</div>
 	</work-card>
 
-	<work-card>
+	<!-- <work-card>
 		<a href="<?= ENV === 'production'? '/case-study/compas' : '?page=case-study&slug=compas'?>">
 				<video				
 				      muted
@@ -62,7 +62,7 @@
 
 			<button class="video-control">PLAY</button>
 		</div>
-	</work-card>
+	</work-card> -->
 
 	<!-- <work-card>
 		<a href="<?= ENV === 'production'? '/case-study/studio-ernie
@@ -95,9 +95,9 @@
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756504511/openresource-teaser_f139yi.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757028739/openresource-teaser_xujvre.mp4"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756504501/CleanShot_2025-08-29_at_17.54.36_2x_kgvgmw.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757028756/CleanShot_2025-09-04_at_19.32.03_2x_wl40q9.png"
 				    ></video>
 		</a>
 
