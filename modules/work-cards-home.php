@@ -16,7 +16,7 @@
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">Hunger Action Coalition</h4>
+			<h4 class="quiet-voice bold">A visual identity built for impact and flexibility.</h4>
 
 			<button class="video-control">PLAY</button>
 		</div>
@@ -37,7 +37,7 @@
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">CRFT</h4>
+			<h4 class="quiet-voice bold">Learning to understand branding.</h4>
 
 			<button class="video-control">PLAY</button>
 		</div>
@@ -102,7 +102,7 @@
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">OpenResource</h4>
+			<h4 class="quiet-voice bold">A flexible design system for resource directories.</h4>
 
 			<button class="video-control">PLAY</button>
 		</div>
