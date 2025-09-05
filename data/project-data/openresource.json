@@ -26,6 +26,11 @@
 			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757026761/openresource-sheets_mcs0wj.png",
 			"caption": "<h3 class='bold'>Foundation Sheets</h3><p class='quiet-voice'>In an attempt to dig my heels into this whole design system thing, I defined a typography scale, spacing system, and defined “grids”.</p>",
 			"class": ""
+		},
+		{
+			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757092463/openresource-examples_nptq0t.png",
+			"caption": "<h3 class='bold'>System in Use</h3><p class='quiet-voice'>These two screens both utilize the same system but take two very different directions.</p>",
+			"class": ""
 		}
 	],
 	"reflection": "<p>While I'm by no means finished, this project has already taught me the potential of designing a system around principles, rather than fixed aesthetics. This means with one system you can build both simple, neutral directories and highly expressive ones.</p><p>As I continue, I will expand the system into layouts and base components to make adoption easier for real nonprofits.</p>",
