@@ -58,6 +58,15 @@
 	}
 
 	inner-column {
+		.initial-gallery {
+			display: grid;
+			gap: 24px;
+
+			@media (width >= 630px) {
+				/*grid-template-columns: 1fr 1fr;*/
+			}
+		}
+
 		padding-top: 8px;
 
 	/*	h2 + p,

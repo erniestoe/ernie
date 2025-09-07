@@ -5,7 +5,7 @@
 	"headerImage": "",
 	"headerText": "A visual identity built for impact and flexibility.",
 	"altHeaderImage": "",
-	"tags": ["Conceptual", "Branding", "UI/UX", "Social Media"],
+	"tags": ["Branding", "UI/UX"],
 	"showcase": [
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-mobile_lbwtqa.png"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-tablet_bwajzz.png"},
@@ -22,7 +22,7 @@
 	],
 	"nextProject": "crft",
 	"caseStudy": [
-		{"content": "<p>I’ve seen firsthand how nonprofits can struggle with looking credible to donors while staying relevant to younger volunteers and communities. Hunger Action Coalition was a conceptual project I took on to test how a single identity could flex between audiences without losing consistency.</p><p>My solution was to design a system with two voices: a muted, professional core identity to build donor trust, and a more bold, youth focused layer for outreach and volunteer engagement. The system uses typography, color and layout shifts to communicate to different audiences without creating a confused brand.</p>"}
+		{"content": "<p>Nonprofits often struggle to look credible to donors while staying relevant to younger volunteers. Hunger Action Coalition is a conceptual identity project that explores how a single system can flex between audiences without losing consistency.</p>"}
 	],
 	"processIntro": "<p>The challenge here was to create a core identity that felt trustworth and consistent, while leaving space for a more vibrant, youth focused voice.</p>",
 	"gallery": [
