@@ -23,6 +23,10 @@ html {
   z-index: 9999;
 }
 
+.underlined {
+	text-decoration: underline;
+}
+
 p,
 .calm-voice,
 h2{
@@ -87,117 +91,52 @@ body {
 }
 
 nav {
+	display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 8px;
+
 	ul {
 		display: flex;
-		flex-direction: column;
-		gap: 16px;
+		flex-wrap: wrap;
+		gap: 8px;
 
+		@media (width >=1000px) {
+			gap: 16px;
+		}
 		li {
 			display: flex;
 			align-items: center;
-			gap: 16px;
+			gap: 8px;
 
 
 			.arrow,
 			.mail {
-				align-self: end;
 				
-				transform: translate(0, 3px);
+				
+				/*transform: translate(0, 3px);*/
 			}
 		}
 	}
 }
 
-aside {
-	grid-row: 1;
-	grid-column: span 4;
-	background-color: var(--main-black);
-	color: var(--main-white);
-	position: relative;
-	padding-top: 400px;
+.main-header {
+	grid-column: span 12;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--main-white);
+	z-index: 99999999999999999;
 
-	@media (width >= 630px) {
-		grid-column: span 8;
+	inner-column {
+		padding-block: 16px;
 	}
+}
 
-	@media (width >= 1024px){
-		grid-column: span 3;
-		grid-row: span 2;
-	}
-
-	.logo {
-		position: absolute;
-		bottom: 16px;
-
-		@media (width >= 1024px){
-			top: 56px;
-			bottom: 0;
-		}
-	}
-
-	header {
-		position: fixed;
-		left: 16px;
-		top: 8px;
-		z-index: 1;
-
-		button {
-			border-radius: 5px;
-			border: none;
-			background-color: var(--yellow);
-			color: var(--main-black);
-			padding: 8px 24px;
-		}
-
-		.mobile-menu {
-			position: fixed;
-			z-index: 9999999999;
-			top: 0;
-			left: 0;
-			background-color: var(--main-black);
-			color: var(--main-white);
-			width: 100vw;
-			height: 100vh;
-
-			button {
-				margin-top: 48px;
-				border-radius: 5px;
-				border: none;
-				background-color: var(--main-white);
-				color: var(--main-black);
-				padding: 8px 48px;
-			}
-		}
-	}
-
-	.main-nav {
-		@media (width >= 1024px) {
-			clip: auto;
-			clip-path: none;
-			height: auto;
-			width: auto;
-			overflow: visible;
-			position: fixed;
-			/*bottom: 68px; */
-			bottom: 152px;
-			white-space: normal;
-		}
-	}
-
-	.contact {
-		@media (width >= 1024px) {
-			clip: auto;
-			clip-path: none;
-			height: auto;
-			width: auto;
-			overflow: visible;
-			text-decoration: underline;
-			position: absolute;
-			bottom: 48px;
-			white-space: normal;
-		}
-
-	}
+.main-header + main {
+	margin-top: 64px;
 }
 
 main {
@@ -206,54 +145,35 @@ main {
 	grid-column: span 4;
 
 	@media (width >= 630px) {
-		grid-column: span 6;
+		grid-column: span 8;
 	}
 
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 4/13;
+		grid-column: span 12;
 	}
 }
 
 footer {
 	grid-row: 3;
 	grid-column: span 4;
-	align-self: end;
+	/*align-self: end;*/
+
+	@media (width >= 630px) {
+		grid-column: span 8;
+	}
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 4/13;
+		grid-column: span 12;
+		
 	}
 
 	inner-column {
-		
 		nav {
-			display: flex;
-			justify-content: space-between;
-			align-items:center;
+			justify-self: end;
 		}
-	}
-
-	.footer-contact {
-		text-decoration: underline;
-
-		@media (width >= 1024px) {
-			clip: rect(0 0 0 0);
-			clip-path: inset(50%);
-			height: 1px;
-			overflow: hidden;
-			position: absolute;
-			white-space: nowrap;
-			width: 1px;
-		}
+		
 	}
 }
 
-.garden-footer {
-	@media (width >= 1024px) {
-		grid-column: 3/14;
 
-		inner-column {
-			padding-left: 8px;
-		}
-	}
-}

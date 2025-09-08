@@ -1,269 +1,94 @@
 @import "style.css";
 
 .case-study {
-	a.calm-voice {
-		text-decoration: underline;
+	header {
+
+		picture {
+			max-height: 600px;
+		}
+	}
+
+	case-intro,
+	case-block,
+	case-text-block,
+	case-image-block,
+	next-project {
+		display: grid;
+	}
+
+	header + case-intro {
 		margin-top: 24px;
 	}
 
-	header {
-		
-		padding-top: 52px;
-		/*padding-bottom: 120px;*/
-		display: flex;
-		flex-direction:column;
-		/*flex-direction: row-reverse;*/
-		/*align-items: end;*/
-		
-		/*flex-wrap: wrap; */
-		justify-content: space-between;
-
-		svg-container + .header-text {
-			/*margin-top: 96px;*/
-		}
-
-		svg-container {
-			display:flex;
-			transform: translate(-4px, 0);
-
-			svg {
-			     width: 50px;
-			     height: 50px;
-
-
-			   }
-			   path {
-			     fill: #141414;
-			   }
-		}
-
-		.project-name {
-			transform: translate(-2px,0);
-		}
-
-		.header-text {
-			display:flex;
-			flex-direction: column;
-			gap: 8px;
-		}
-		picture{
-			aspect-ratio: 16/9;
-			border-radius: 0;
-		}
-		@media (width > 1024px){
-			margin-left: 0;
-			margin-right: 48px;
-			/*gap: 232px;*/
-		}
-	}
-
-	inner-column {
-		.initial-gallery {
-			display: grid;
-			gap: 24px;
-
-			@media (width >= 630px) {
-				/*grid-template-columns: 1fr 1fr;*/
-			}
-		}
-
-		padding-top: 8px;
-
-	/*	h2 + p,
-		h2 + .case-study {
-			margin-top: 8px;
-		}*/
-
-		.tags li {
-			border: 1px solid var(--main-black);
-		}
-
-		.tags {
-			/*padding-top: 24px;*/
-		}
-
-		.tags + h2 {
-			margin-top: 24px;
-
-			@media(width >= 1024px) {
-				margin-top: 48px;
-			}
-		}
-
-		.overview,
-		.reflection {
-			display: grid;
-			gap: 32px;
-
-			@media(width >= 1024px) {
-				grid-template-columns: 1fr 1fr;
-			}
-		}
-
-		.reflection {
-			gap: 0 32px;
-
-			.reflection-text {
-				grid-column: span 2;
-				display: grid;
-				gap: 32px;
-
-				@media(width >= 1024px) {
-					grid-template-columns: 1fr 1fr;
-				}
-			}
-		}
-
-		.text + case-study-gallery,
-		case-study-gallery + .reflection  {
-			margin-top: 64px;
-
-			@media(width >= 1024px) {
-				/*margin-top: 160px;*/
-			}
-		}
-
-		.reflection h2,
-		.reflection p {
+	case-intro {
+		gap: 24px;
+		h3 {
 			grid-column: span 2;
 		}
 
-		.reflection p {
-			@media(width >= 1024px) {
-				grid-column: span 1;
+		.deets {
+			grid-column: span 2;
+			padding-block: 8px;
+			/*display: grid;
+			gap: 8px;*/
+
+			@media (width >= 1000px) {
+				grid-column: 1;
 			}
 		}
-
 	}
 
-	case-study-gallery {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 48px;
+	case-intro + case-block,
+	case-block + case-block,
+	case-block + next-project {
+		margin-top: 136px;
+	}
 
-		iframe {
-			display: none;
-			overflow: hidden;
-			border-radius: 10px;
-			@media (width >=1024px) {
-				display: block;
-				aspect-ratio: 16/9;
-			} 
+	case-text-block {
+		@media (width >= 1000px) {
+			grid-template-columns: 1fr 1fr;
+			gap: 8px;
+
+			
+
 		}
+	}
+
+	case-block {
+		gap: 24px;
+	}
+
+	case-image-block {
+		gap: 16px;
+		@media (width >= 1000px) {
+			grid-template-columns: repeat(4, 1fr);
+
+			picture {
+				grid-column: span 2;
+				align-self: start;
+			}
+		}
+	}
+
+	next-project {
+		gap: 8px;
+		justify-self: end;
 
 		picture {
-			max-width: 600px;
+			/*max-width: 400px;*/
 		}
+		@media (width >= 1000px) {
+			grid-template-columns: 1fr 1fr;
 
-		picture.portrait {
-			max-width: 400px;
-		}
-
-		picture.square {
-			aspect-ratio: 1/1;
-			max-width: 600px;
-		}
-
-		.credit-link {
-			width: fit-content;
-		}
-
-		.intro {
-			position: sticky;
-			top: 0;
-			left: 0;
-		}
-
-		iframe,
-		picture,
-		figure,
-		.intro{
-			grid-column: span 4;
-		}
-
-		picture + figcaption {
-			/*margin-top: 16px;*/
-		}
-
-		figcaption {
-			h4 + p {
-				margin-top: 8px;
+			h4 {
+				grid-column: 2;
 			}
-		}
-
-		@media (width >=1024px) {
-			/*figure:nth-of-type(even){
-				grid-column: 2/5;
+			a {
+				grid-column: 2;
 			}
 
-			figure:nth-of-type(odd){
-				grid-column: span 3;
-			}*/
-			/*a {
-				width: fit-content;
-				height: auto;
-			}
-			picture {
-				height: 75vh;
 
-			}*/
 		}
+		
 	}
-
-	links {
-		padding-top: 24px;
-		display: grid;
-		gap: 24px;
-
-		@media (width >= 1024px) {
-			grid-template-columns: 200px 200px;
-			padding-top: 96px;
-
-			h2 {
-				grid-column: span 2;
-			}
-		}
-
-		li {
-			display: flex;
-			align-items: center;
-			gap: 8px;
-		}
-
-		li + li {
-			margin-top: 16px;
-		}
-	}
-
-	.main-carousel {
-		margin-block: 24px;
-		overflow: hidden;
-		/*max-width: 800px;*/
-	}
-
-	.main-carousel .carousel-cell {
-	  position: relative;
-	  width: 100%;
-	  /*max-width: 800px;*/
-	  max-height: 750px;
-	  aspect-ratio: 1/1;
-	  margin-right: 10px;
-	  overflow: hidden; 
-	  background: #f5f5f5; 
-	}
-
-	/* Ensure the wrappers fill the box */
-	.main-carousel .carousel-cell picture {
-	  display: block;
-	  width: 100%;
-	  height: 100%;
-	}
-
-	.main-carousel .carousel-cell img {
-	  	display: block;
-	 	width: 100%;
-	  	height: 100%;
-	  	object-fit: contain;
-	}
-
 }

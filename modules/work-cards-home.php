@@ -1,6 +1,4 @@
 <work-cards>
-	<h3 class="attention-voice">Featured Work</h3>
-
 	<work-card>
 		<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
 				<video				
@@ -37,54 +35,11 @@
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">Learning to understand branding.</h4>
+			<h4 class="quiet-voice bold">Exploring how an identity system can scale across culture and community.</h4>
 
 			<button class="video-control">PLAY</button>
 		</div>
 	</work-card>
-
-	<!-- <work-card>
-		<a href="<?= ENV === 'production'? '/case-study/compas' : '?page=case-study&slug=compas'?>">
-				<video				
-				      muted
-				      playsinline
-				      loop
-				      preload="metadata"
-				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755890458/cc-teaser_st54uh.mp4"
-				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755890536/CleanShot_2025-08-22_at_15.22.00_2x_xdd4lg.png"
-				    ></video>
-		</a>
-
-		<div class="text">
-			<h4 class="quiet-voice bold">Compañeras Campesinas</h4>
-
-			<button class="video-control">PLAY</button>
-		</div>
-	</work-card> -->
-
-	<!-- <work-card>
-		<a href="<?= ENV === 'production'? '/case-study/studio-ernie
-		' : '?page=case-study&slug=studio-ernie'?>">
-			<video
-				      muted
-				      playsinline
-				      loop
-				      preload="metadata"
-				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1755007792/CleanShot_2025-08-12_at_10.09.17_qt0knf.mov"
-				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1755010137/CleanShot_2025-08-12_at_10.47.58_2x_z0f1gq.png"
-				    ></video>
-		</a>
-
-		<div class="text">
-			<h4 class="quiet-voice bold">Studio Ernie</h4>
-
-			<button class="video-control">PLAY</button>
-		</div>
-	</work-card> -->
 
 	<work-card >
 		<a href="<?= ENV === 'production'? '/case-study/openresource

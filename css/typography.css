@@ -35,7 +35,7 @@ p,
 }
 
 .attention-voice {
-	font-size: 2rem;
+	font-size: 1.25rem;
 	/*font-weight: 800;*/
 	font-variation-settings: "wght" 545, "ital" 0;
 	/*letter-spacing: .02em;*/
@@ -65,11 +65,12 @@ p,
 }*/
 
 .logo {
-	font-size: 1rem;
-	font-variation-settings: "wght" 585, "ital" 0;
+	/*font-size: clamp(10vw, 20vw, 50vh);*/
 	/*letter-spacing: .01em;*/
 	/*text-transform: uppercase;*/
 }
+
+
 
 em {
 	font-variation-settings: "slnt" -5;

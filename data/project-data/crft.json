@@ -2,8 +2,8 @@
 	"id": 5,
 	"projectName": "CRFT",
 	"slug": "crft",
-	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753965659/crft-header_xsvaxu.png",
-	"headerText": "Learning to understand branding.",
+	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757276332/crft-header-2_emy1t8.png",
+	"headerText": "<h2 class='loud-voice'>Exploring how an identity system can scale across culture and community.</h2>",
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png",
 	"tags": ["Conceptual", "Branding", "UI/UX", "Social Media"],
 	"showcase": [
@@ -15,48 +15,68 @@
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633881/crft-artist-spotlight_ntjsph.jpg"},
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633883/crft-shirt_conce4.jpg"}
-
-
 	],
-	"nextProject": "openresource",
-	"caseStudy": [
-		{"content": "<p>Nonprofits I worked with often told me how difficult branding felt, especially when trying to balance being serious and trustworthy while still capturing energy and relevance. CRFT was a conceptual project I took on to explore that challenge in the context of a music venue.</p><p>My solution was to design a system built on minimal, geometric form paired with bold, duotone treatments. The core identity is clean and restrained, while event posters and digital assets push into louder, more expressive territory to give the brand both credibility and vibrancy.</p>"}
-	],
-	"processIntro": "<p>The challenge here was to design a identity that was restrained, but still delivered the energy of a live music venue.</p>",
-	"gallery": [
+	"caseBlocks": [
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756482407/crft-logos_y88vhy.png",
-			"caption": "<h4 class='bold'>Logo Development</h4><p class='quiet-voice'>This logo suite uses basic geometric forms to represent sound and structure: square for modularity and their ties to architecture, half circles rising and falling to suggest a party from sunup to sundown, and the circle to represent the records getting spun.</p>",
-			"class": "square"
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Research</h3><p>Independent venues often lack consistent branding, which makes it hard to stand out in competitive music scenes or build loyalty with younger audiences. I researched how venues in similar cultural districts promoted themselves and noticed a split: some leaned heavily on credibility (clean, minimal branding), while others embraced chaos and DIY aesthetics.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757277541/crft-moodboard_lqutj6.png",
+					"class": ["square", "first"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757280512/CleanShot_2025-09-07_at_17.28.10_wiyyfk.png",
+					"class": ["second"]
+				}
+			]
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755270837/crft-danger_hidtxa.png",
-			"caption": "<h4 class='bold'>Brand in Use</h4><p class='quiet-voice'>Artist poster templates epxerimented with clean typography and bold duotone treatments to ensure brand consistency with artist images.</p>",
-			"class": "portrait"
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Branding</h3><p>The CRFT identity system is anchored by a bold, modular logotype that can expand or contract across applications. Typography is set in a stark, modern sans serif to emphasize clarity, paired with a high-contrast black/yellow palette for energy.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756492306/crft-social-posts-all_j9m0do.png",
+					"class": ["first"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756482407/crft-logos_y88vhy.png",
+					"class": ["second"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg",
+					"class": ["landscape","third"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/crft-wall_iekrzl.jpg",
+					"class": ["landscape","fourth"]
+				}
+			]
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/kira-3000_rfgdxs.png",
-			"caption": "<h4 class='bold'>Visual Language</h4><p class='quiet-voice'>Isolated artist image with the duotone treatment showcases how the brand can stay consistent regardless of quality or previous treatments of artist images.</p>",
-			"class": "portrait"
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Website</h3><p>For CRFT, the website needed to balance the bold energy of live music with the clarity of a functional event hub. The design uses a modular grid to showcase upcoming shows and ticketing flows, while keeping typography minimal and legible.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-desktop-showcase_mdc111.png",
+					"class": ["first"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483930/crft-mobile-screens-pink_xugd6y.png",
+					"class": ["second"]
+				}
+			]
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483930/crft-mobile-screens-pink_xugd6y.png",
-			"caption": "<h4 class='bold'>Application</h4><p class='quiet-voice'>Mobile screens showing the system in action, paring the minimal core identity with event details, and high contrast images.</p>",
-			"class": ""
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>This project really showed me how basic forms can scale into a strong brand identity. What worked well was establishing clear rules for type and color early, allowing me to keep brand consistency across posters, screens, and social media posts.</p></case-text-block>",
+			"imageBlock": [
+				
+			]
 		}
 	],
-	"reflection": "<p>This project really showed me how basic forms can scale into a strong brand identity. What worked well was establishing clear rules for type and color early, allowing me to keep brand consistency across posters, screens, and social media posts.</p><p>If I were to continue, I'd build out a more extensive toolkit for venues to use independently</p>",
-	"youtube": "",
-	"figma": [
-		{"src": "https://embed.figma.com/board/jjwDmyPNdAi9fjs5WUStu5/Crft?node-id=0-1&embed-host=share"},
-		{"src": "https://embed.figma.com/design/Jd1NgMEV07QUJLouGKBav0/crft-site?node-id=0-1&embed-host=share"},
-		{"src": "https://embed.figma.com/proto/Jd1NgMEV07QUJLouGKBav0/crft-site?page-id=0%3A1&node-id=7-5&viewport=527%2C-1291%2C0.74&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7%3A5&show-proto-sidebar=1&embed-host=share"}
-	],
-	"liveLinks": [
-		
-	],
-	"githubLinks": [
-		
+	"nextProject": {
+		"slug":"openresource",
+		"img": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757028756/CleanShot_2025-09-04_at_19.32.03_2x_wl40q9.png"
+	},
+	"caseStudy": [
+		{"content": "<div class='deets'><p><span class='bold'>Year:</span> 2025</p><p><span class='bold'>What I did: </span>Branding, UI/UX, Social Media<p><p class='strong-voice'>Completed</p></div><p>Nonprofits I worked with often told me how difficult branding felt, especially when trying to balance being serious and trustworthy while still capturing energy and relevance. CRFT was a conceptual project I took on to explore that challenge in the context of a music venue.</p>"}
 	]
 
 }
