@@ -4,12 +4,7 @@
 	<inner-column>
 		
 		<header>
-			<picture>
-				<img src="<?= $project['headerImage'];?>">
-			</picture>
-		</header>
-
-		<case-intro>
+			<case-intro>
 			<?= $project['headerText'];?>
 
 			<case-text-block>
@@ -20,6 +15,12 @@
             <?php endforeach; ?>
 			</case-text-block>
 		</case-intro>
+			<picture>
+				<img src="<?= $project['headerImage'];?>">
+			</picture>
+		</header>
+
+		
 
 		<?php if ($project['caseBlocks']): ?>
 			<?php foreach ($project['caseBlocks'] as $caseBlock): ?>

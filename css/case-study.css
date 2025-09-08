@@ -1,13 +1,6 @@
 @import "style.css";
 
 .case-study {
-	header {
-
-		picture {
-			max-height: 600px;
-		}
-	}
-
 	case-intro,
 	case-block,
 	case-text-block,
@@ -16,9 +9,17 @@
 		display: grid;
 	}
 
-	header + case-intro {
-		margin-top: 24px;
+	header {
+		case-intro + picture {
+			margin-top: 24px;
+		}
+
+
+		picture {
+			max-height: 600px;
+		}
 	}
+
 
 	case-intro {
 		gap: 24px;
@@ -38,10 +39,14 @@
 		}
 	}
 
-	case-intro + case-block,
 	case-block + case-block,
-	case-block + next-project {
-		margin-top: 136px;
+	case-block + next-project,
+	header + case-block {
+		margin-top: 48px;
+
+		@media (width >= 900px) {
+			margin-top: 120px;
+		}
 	}
 
 	case-text-block {
