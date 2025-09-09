@@ -3,12 +3,17 @@
 	<footer class="site-footer <?=$currentPage['name'] === 'garden'? 'garden-footer': ''?>">
 		<inner-column>
 			<nav class="footer-nav">
-				<!-- <a href="<?= ENV === 'production' ? '/resume' : '?page=resume'?>" class=" quiet-voice">Resume</a> -->
-				
 				<a href="<?= ENV === 'production' ? '/style-guide' : '?page=style-guide'?>" class="quiet-voice bold">Style Guide</a>
+
+				<?php if ($currentPage['name'] === 'case-study'): ?>
+					<next-project>
+						<a class="quiet-voice bold" href="<?= ENV === 'production'? '/case-study/' . $project['nextProject']['slug'] : '?page=case-study&slug=' . $project['nextProject']['slug'] ?>">
+							See Next Project
+						</a>
+					</next-project>
+				<?php endif ?>
 			</nav>
-			
-		</inner-column>
+			</inner-column>
 	</footer>
 
 	<script type="module" src="<?= ENV === 'production' ? '/js/script.js' : 'js/script.js'?>"></script>
@@ -28,6 +33,8 @@
 		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<?php endif;?>
+
+	<div class="circle"></div>
 
 	<div id="video-hover-label">See Case Study</div>
 	</body>

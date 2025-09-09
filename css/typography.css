@@ -20,35 +20,36 @@
 p,
 .calm-voice
 {
-	font-size: 1.125rem;
-	font-weight: 400;
-	/*line-height: 1em;*/
+	font-size: 1.35rem;
+	font-variation-settings: "wght" 475, "ital" 0;
+	line-height: 1.3em;
 	
 }
 
 .strong-voice {
-	font-size: 1.125rem;
+	font-size: 1.35rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 545, "ital" 0;
+	font-variation-settings: "wght" 575, "ital" 0;
 	letter-spacing: .02em;
 	line-height: 1.2em;
 }
 
 .attention-voice {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	/*font-weight: 800;*/
-	font-variation-settings: "wght" 545, "ital" 0;
+	font-variation-settings: "wght" 575, "ital" 0;
 	/*letter-spacing: .02em;*/
 
 }
 
 .loud-voice {
-	font-size: 2.5rem;
+	font-size: clamp(3rem, 5vw, 4rem);
 	/*font-weight: 900;*/
 	font-variation-settings: "wght" 600, "ital" 0;
 	letter-spacing: -.021em;
 	line-height: 1em;
-	max-width: 50ch;
+	max-width: 30ch;
+	text-wrap: balance;
 }
 
 .loud-voice.intro-headline {
@@ -70,18 +71,12 @@ p,
 	/*text-transform: uppercase;*/
 }
 
-
-
 em {
 	font-variation-settings: "slnt" -5;
 }
 
-em.bold {
-	font-variation-settings: "wght" 641, "slnt" -5;
-}
-
 .bold {
-	font-variation-settings: "wght" 545, "ital" 0;
+	font-variation-settings: "wght" 575, "ital" 0;
 	/*font-weight: 800;*/
 	/*letter-spacing: .01em;*/
 }

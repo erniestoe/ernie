@@ -55,6 +55,8 @@ if ($projectSlug) {
 		<meta property="og:image" content="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756741273/CleanShot_2025-09-01_at_11.40.11_zt391r.gif">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>">
+		<link rel="icon" type="image/png" href="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757379971/favicon_xakxfc.png"/>
+
 	</head>
 
 	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$bodyClass?>">

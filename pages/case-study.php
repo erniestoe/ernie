@@ -1,9 +1,10 @@
 <section class="case-study ">
 <?php if ($project): ?>
 	
-	<inner-column>
+
 		
 		<header>
+			<inner-column>
 			<case-intro>
 			<?= $project['headerText'];?>
 
@@ -14,12 +15,13 @@
             	<?= $content['content'] ?>
             <?php endforeach; ?>
 			</case-text-block>
+		</inner-column>
 		</case-intro>
 			<picture>
 				<img src="<?= $project['headerImage'];?>">
 			</picture>
 		</header>
-
+		<inner-column>
 		
 
 		<?php if ($project['caseBlocks']): ?>
@@ -33,7 +35,7 @@
 							<?php foreach($image['class'] as $class):?>
 								<?=$class?>
 							<?php endforeach; ?>">
-								<img src="<?=$image['src']?>">
+								<img loading="lazy" src="<?=$image['src']?>">
 							</picture>
 						<?php endforeach ?>
 					</case-image-block>
@@ -41,15 +43,7 @@
 			<?php endforeach ?>
 		<?php endif ?>
 
-		<next-project>
-			<h4 class="strong-voice">See next project</h4>
-
-			<a href="<?= ENV === 'production'? '/case-study/' . $project['nextProject']['slug'] : '?page=case-study&slug=' . $project['nextProject']['slug'] ?>">
-				<picture>
-					<img src="<?=$project["nextProject"]['img']?>">
-				</picture>
-			</a>
-		</next-project>
+		
 <?php else: ?>
 	<p class="error">No case study found for that ID.</p>
 <?php endif; ?>	

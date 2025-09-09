@@ -22,7 +22,9 @@
 
 
 	case-intro {
+		display: grid;
 		gap: 24px;
+		
 		h3 {
 			grid-column: span 2;
 		}
@@ -40,22 +42,23 @@
 	}
 
 	case-block + case-block,
-	case-block + next-project,
-	header + case-block {
+	case-block + next-project {
 		margin-top: 48px;
 
 		@media (width >= 900px) {
-			margin-top: 120px;
+			margin-top: 128px;
 		}
 	}
 
+	header + inner-column {
+		margin-top: 24px;
+	}
+
 	case-text-block {
+		gap: 8px;
 		@media (width >= 1000px) {
 			grid-template-columns: 1fr 1fr;
-			gap: 8px;
-
-			
-
+			gap: 16px;
 		}
 	}
 
@@ -65,6 +68,10 @@
 
 	case-image-block {
 		gap: 16px;
+
+		/*picture {
+				grid-column: span 4;
+			}*/
 		@media (width >= 1000px) {
 			grid-template-columns: repeat(4, 1fr);
 
@@ -72,7 +79,20 @@
 				grid-column: span 2;
 				align-self: start;
 			}
+
+
+
+			.landscape{
+				grid-column: 2/5;
+				/*justify-self: end;*/
+			}
+
+			.landscape.reflection-pic{
+				grid-column: span 4;
+			}
 		}
+
+		
 	}
 
 	next-project {
@@ -85,15 +105,15 @@
 		@media (width >= 1000px) {
 			grid-template-columns: 1fr 1fr;
 
-			h4 {
+			/*h4 {
 				grid-column: 2;
 			}
 			a {
 				grid-column: 2;
-			}
+			}*/
 
 
 		}
 		
-	}
+	/*}*/
 }

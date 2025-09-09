@@ -1,7 +1,7 @@
 :root {
 	/*MAIN PALETTE*/
 	--main-white: #F5F5F5;
-	--main-black: #141414;
+	--main-black: #181818;
 	--main-red: #FF002F;
 
 	/*ACCENT PALETTE*/
@@ -73,8 +73,7 @@ figcaption {
 
 
 picture,
-video,
-.sketch {
+video {
 	display: block;
 	overflow: hidden;
 	object-fit: contain;

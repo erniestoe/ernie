@@ -1,20 +1,22 @@
 <work-cards>
-	<work-card>
-		<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
-				<video				
+
+	<work-card >
+		<a href="<?= ENV === 'production'? '/case-study/openresource
+		' : '?page=case-study&slug=openresource'?>">
+			<video
 				      muted
 				      playsinline
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756401394/hac-teaser_iahgn3.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757028739/openresource-teaser_xujvre.mp4"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756401449/CleanShot_2025-08-28_at_13.17.03_2x_uyyswg.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757028756/CleanShot_2025-09-04_at_19.32.03_2x_wl40q9.png"
 				    ></video>
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">A visual identity built for impact and flexibility.</h4>
+			<h4 class="quiet-voice bold">Rethinking the community directory</h4>
 
 			<button class="video-control">PLAY</button>
 		</div>
@@ -35,31 +37,31 @@
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">Exploring how an identity system can scale across culture and community.</h4>
+			<h4 class="quiet-voice bold">Amplifying local culture with design</h4>
 
 			<button class="video-control">PLAY</button>
 		</div>
 	</work-card>
 
-	<work-card >
-		<a href="<?= ENV === 'production'? '/case-study/openresource
-		' : '?page=case-study&slug=openresource'?>">
-			<video
+	<work-card>
+		<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
+				<video				
 				      muted
 				      playsinline
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757028739/openresource-teaser_xujvre.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756401394/hac-teaser_iahgn3.mp4"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757028756/CleanShot_2025-09-04_at_19.32.03_2x_wl40q9.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756401449/CleanShot_2025-08-28_at_13.17.03_2x_uyyswg.png"
 				    ></video>
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">A flexible design system for resource directories.</h4>
+			<h4 class="quiet-voice bold">Designing for dual audiences</h4>
 
 			<button class="video-control">PLAY</button>
 		</div>
 	</work-card>
+
 </work-cards>

@@ -20,7 +20,7 @@ html {
   transform: translate(-50%, calc(-50% - 14px));
   opacity: 0;
   transition: opacity 0.15s ease;
-  z-index: 9999;
+  z-index: 999999999999999999999999999999999;
 }
 
 .underlined {
@@ -28,11 +28,10 @@ html {
 }
 
 p,
-.calm-voice,
-h2{
+.calm-voice{
 		text-wrap: balance;
-		max-width: 60ch;
-		line-height: 1.3em;
+		max-width: 65ch;
+		line-height: 1.4em;
 }
 
 figcaption {
@@ -168,12 +167,25 @@ footer {
 		
 	}
 
-	inner-column {
-		nav {
-			justify-self: end;
+	nav {
+			display: flex;
 		}
-		
-	}
+
+
 }
 
-
+.circle {
+	display: none;
+	@media (width >= 1024px) {
+		position: fixed;
+		width: 20px;
+		height: 20px;
+		background-color: var(--yellow);
+		border-radius: 100%;
+		top: 5px;
+		left: 5px;
+		pointer-events: none;
+		z-index: 99999999999999999999999999999999;
+	}
+	
+}
