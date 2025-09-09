@@ -38,6 +38,23 @@
 								<img loading="lazy" src="<?=$image['src']?>">
 							</picture>
 						<?php endforeach ?>
+						<?php if ($caseBlock['videos']): ?>
+							<?php foreach ($caseBlock['videos'] as $video): ?>
+								<video
+										loading="lazy"
+										controls
+										autoplay				
+								      muted
+								      playsinline
+								      loop
+								      preload="metadata"
+								      style="display:block;width:100%;height:auto;"
+								      src="<?= $video['src']?>"
+								      class="<?= $video['class']?>"
+								      poster=""
+								    ></video>
+							<?php endforeach ?>
+						<?php endif ?>
 					</case-image-block>
 				</case-block>
 			<?php endforeach ?>

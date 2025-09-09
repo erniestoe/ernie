@@ -20,14 +20,16 @@
 p,
 .calm-voice
 {
-	font-size: 1.35rem;
+	font-size: clamp(1.15rem, 5vw, 1.35rem);
+	/*font-size: 1.35rem;*/
 	font-variation-settings: "wght" 475, "ital" 0;
 	line-height: 1.3em;
 	
 }
 
 .strong-voice {
-	font-size: 1.35rem;
+	font-size: clamp(1.15rem, 5vw, 1.35rem);
+	/*font-size: 1.35rem;*/
 	/*font-weight: 800;*/
 	font-variation-settings: "wght" 575, "ital" 0;
 	letter-spacing: .02em;

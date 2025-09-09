@@ -141,6 +141,7 @@
 
 		picture {
 			max-width: 400px;
+			max-height: 400px;
 			@media (width >= 1000px) {
 				justify-self: end;
 			}

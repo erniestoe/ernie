@@ -231,6 +231,17 @@ window.onload = () => {
 
 	    tick();
 
+	    const dogImageElement = document.querySelector('#dog');
+	    const aboutImageElement = document.querySelector('#aboutPic');
+
+	    dogImageElement.addEventListener("mouseenter", (event) => {
+	    	aboutImageElement.src= "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757456013/doc-1_vxkai4.jpg";
+	    });
+
+	     dogImageElement.addEventListener("mouseleave", (event) => {
+	    	aboutImageElement.src= "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753279197/resume-photo-2_wwhl4o.jpg";
+	    });
+
 
 
 

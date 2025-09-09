@@ -30,7 +30,7 @@ html {
 p,
 .calm-voice{
 		text-wrap: balance;
-		max-width: 65ch;
+		max-width: 50ch;
 		line-height: 1.4em;
 }
 

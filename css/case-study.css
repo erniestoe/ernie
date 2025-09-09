@@ -90,6 +90,10 @@
 			.landscape.reflection-pic{
 				grid-column: span 4;
 			}
+
+			video {
+				grid-column: 4;
+			}
 		}
 
 		

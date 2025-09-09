@@ -24,6 +24,9 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398301/hac-sketch2_pzsa56.png",
 					"class": ["second"]
 				}
+			],
+			"videos": [
+				
 			]
 		},
 		{
@@ -37,6 +40,9 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756492823/hac-ig-posts-half2_p4qhlc.png",
 					"class": ["second"]
 				}
+			],
+			"videos": [
+				
 			]
 		},
 		{
@@ -47,21 +53,20 @@
 					"class": [ "first", "landscape"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389346/hac-tote_tmvoc2.jpg",
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389345/hac-hoodie_kbepeq.jpg",
 					"class": ["second", "portrait"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389345/hac-hoodie_kbepeq.jpg",
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389346/hac-cards_tixp7i.jpg",
 					"class": ["third", "portrait"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389346/hac-cards_tixp7i.jpg",
-					"class": ["fourth", "portrait"]
-				},
-				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319572/hac-letterheads_ufa2ze.png",
-					"class": ["fifth"]
+					"class": ["fourth", "landscape"]
 				}
+			],
+			"videos": [
+				
 			]
 		},
 		{
@@ -83,11 +88,17 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-desktop-volunteering_nvulbe.png",
 					"class": [ "third"]
 				}
+			],
+			"videos": [
+				
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>I’ll admit, this one was a little messy. I moved through research and design decisions quickly, but even at that pace, I created a two voiced system that I’d feel confident showing a client as a starting point for the next phase. The key takeaway here is proving that a nonprofit doesn't have to be one note, it can sing a whole song; maintaining credibility for donors and boldness to engage younger volunteers.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>I’ll admit, this one was a little messy. I moved through research and design decisions quickly, but even at that pace, I created a two voiced system that I’d feel confident showing a client as a starting point for the next phase. The key takeaway here is proving that a nonprofit doesn't have to be one note, it can sing a whole song.</p></case-text-block>",
 			"imageBlock": [
+				
+			],
+			"videos": [
 				
 			]
 		}

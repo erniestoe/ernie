@@ -17,6 +17,9 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757378990/crft-notes-square_f7zf1t.jpg",
 					"class": ["second", "square"]
 				}
+			],
+			"videos": [
+
 			]
 		},
 		{
@@ -26,6 +29,9 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757378098/crft-logos-landscape_nljwwc.jpg",
 					"class": ["first", "landscape"]
 				}
+			],
+			"videos": [
+		
 			]
 		},
 		{
@@ -43,6 +49,9 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/crft-wall_iekrzl.jpg",
 					"class": ["landscape","third"]
 				}
+			],
+			"videos": [
+				
 			]
 		},
 		{
@@ -56,6 +65,9 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483930/crft-mobile-screens-pink_xugd6y.png",
 					"class": ["second"]
 				}
+			],
+			"videos": [
+				
 			]
 		},
 		{
@@ -65,6 +77,9 @@
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757367339/crft-reflection_ajft4z.jpg",
 					"class": ["first", "landscape", "reflection-pic"]
 				}
+			],
+			"videos": [
+				
 			]
 		}
 	],
