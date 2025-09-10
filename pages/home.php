@@ -25,7 +25,7 @@
 			</div>
 			<!-- <h1 class="loud-voice">Ernie</h1>
 			<p class="quiet-voice">(Ernesto Rivera-Saavedra)</p> -->
-			<p><?= $pageData["subheadline"]?></p>
+			<p class="loud-voice"><?= $pageData["subheadline"]?></p>
 			
 
 		</intro>

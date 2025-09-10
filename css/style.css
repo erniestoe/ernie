@@ -6,6 +6,7 @@
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	cursor: none;
 }
 
 #video-hover-label {
@@ -305,17 +306,17 @@ footer {
 }
 
 .circle {
-	display: none;
 	@media (width >= 1024px) {
 		position: fixed;
 		width: 20px;
 		height: 20px;
 		background-color: var(--yellow);
 		border-radius: 100%;
-		top: 5px;
-		left: 5px;
-		pointer-events: none;
+		top: 0;
+		left: 0;
+		/*pointer-events: none;*/
 		z-index: 99999999999999999999999999999999;
+		mix-blend-mode: exclusion;
 	}
 	
 }
