@@ -3,7 +3,7 @@
 
 	<div class="text">
 		<p>
-			Hey. Thanks for scrolling down! I'm Ernie (Ernesto Rivera-Saavedra) and for the past 7 years I’ve been working in nonprofits, juggling website updates, flyers, and data analysis. Then one day I realized my real passion was in designing impactful and clear experiences. So, I'm using the strategy I've learned from nonprofits, storytelling from data, and the technical foundations from my computer science degree, to shape myself into your next best choice.
+			Hey. Thanks for scrolling down! I'm Ernie (Ernesto Rivera-Saavedra) and for the past 7 years I’ve been working in nonprofits, juggling website updates, flyers, and data analysis. Then one day discovered my passion was in design. So, I'm using the strategy I've learned from nonprofits, storytelling from data, and the technical foundations from my computer science degree, to shape myself into your next best choice.
 		</p>
 
 		<p>Other than that... If I'm not adding yet another sans-serif typface to my stash, I'm probably out hiking with my wife and our <span id="dog" class="underlined">Puerto Rican rescue dog Doc</span>, <a class="underlined" target='_blank' href='https://www.instagram.com/erniestoe/'>taking photos</a>, or <a class="underlined" target='_blank' href='https://open.spotify.com/playlist/0N8Lx0njx25Udmeg351kSA?si=4a00dfc055774625'>making cool playlists.</a></p>

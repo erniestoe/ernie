@@ -310,7 +310,7 @@ footer {
 		position: fixed;
 		width: 20px;
 		height: 20px;
-		background-color: var(--yellow);
+		background-color: var(--main-white);
 		border-radius: 100%;
 		top: 0;
 		left: 0;
