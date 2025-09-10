@@ -10,14 +10,16 @@
 	}
 
 	header {
+		background-color: var(--main-black);
 		padding-top: 64px;
+		color: var(--main-white);
 		case-intro + picture {
 			margin-top: 24px;
 		}
 
 
-		picture {
-			max-height: 600px;
+		@media (width >= 1024px) {
+			transform: translate(0,-8px);
 		}
 	}
 

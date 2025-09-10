@@ -1,7 +1,5 @@
 <section class="case-study ">
 <?php if ($project): ?>
-	
-
 		
 		<header>
 			<inner-column>
@@ -17,9 +15,7 @@
 			</case-text-block>
 		</inner-column>
 		</case-intro>
-			<picture>
-				<img src="<?= $project['headerImage'];?>">
-			</picture>
+			
 		</header>
 		<inner-column>
 		

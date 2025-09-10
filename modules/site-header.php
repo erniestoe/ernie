@@ -21,7 +21,7 @@
 		</li>
 	</ul>
 
-	<button id="open" class="attention-voice button <?=$currentPage['name'] === 'garden' ? 'show' : 'hidden'?>">Menu</button>
+	<button id="open" class="attention-voice button opaque <?=$currentPage['name'] === 'garden' ? 'show' : 'hidden'?>">Menu</button>
 </nav>
 <div class="mobile-menu visually-hidden">
 		<ul>

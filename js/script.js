@@ -7,6 +7,13 @@ window.onload = () => {
 	const navItems = document.querySelectorAll('.main-nav ul li');
 	const hoverLabel = document.getElementById('video-hover-label');
 	const videos = document.querySelectorAll('.video');
+	const buttons = document.querySelectorAll('.button');
+
+	buttons.forEach(button => {
+		button.addEventListener('click', () => {
+			button.classList.toggle('opaque');
+		});
+	});
 
 	document.querySelectorAll('[data-tilt]').forEach(el => {
 	  el.style.opacity = 1;

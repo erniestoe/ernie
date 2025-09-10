@@ -1,25 +1,25 @@
 <work-cards>
-
-
 	<work-card>
-		<a href="<?= ENV === 'production'? '/case-study/openresource
-		' : '?page=case-study&slug=openresource'?>">
-			<video
+		<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
+				<video				
 				      muted
 				      playsinline
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757028739/openresource-teaser_xujvre.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757537666/hac_drlsii.mov"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757028756/CleanShot_2025-09-04_at_19.32.03_2x_wl40q9.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757536948/blue_yh0pyd.png"
 				    ></video>
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">Rethinking the community directory</h4>
-
-			<button class="video-control button quiet-voice">PLAY</button>
+			<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
+				<h4 class="quiet-voice bold">Designing for dual audiences</h4>	
+				<p class="quiet-voice">Hunger Action Coaltion</p>
+			</a>
+		
+			<button class="video-control button quiet-voice opaque">PLAY</button>
 		</div>
 	</work-card>
 
@@ -31,37 +31,45 @@
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756483611/crft-teaser_dzjxbw.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757536824/crft_r74ztx.mov"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483744/CleanShot_2025-08-29_at_12.08.24_2x_crmfwh.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757536864/yellow_uitjzv.png"
 				    ></video>
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">Amplifying local culture with design</h4>
+			<a href="<?= ENV === 'production'? '/case-study/crft' : '?page=case-study&slug=crft'?>">
+				<h4 class="quiet-voice bold">Amplifying local culture with design</h4>
+				<p class="quiet-voice">CRFT</p>
+			</a>
 
-			<button class="video-control button quiet-voice">PLAY</button>
+			<button class="video-control button quiet-voice opaque">PLAY</button>
 		</div>
 	</work-card>
 
 	<work-card>
-		<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
-				<video				
+		<a href="<?= ENV === 'production'? '/case-study/openresource
+		' : '?page=case-study&slug=openresource'?>">
+			<video
 				      muted
 				      playsinline
 				      loop
 				      preload="metadata"
 				      style="display:block;width:100%;height:auto;"
-				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1756401394/hac-teaser_iahgn3.mp4"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757536722/openresource_inuaf5.mov"
 				      class="video"
-				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756401449/CleanShot_2025-08-28_at_13.17.03_2x_uyyswg.png"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757536722/red_scxotr.png"
 				    ></video>
 		</a>
 
 		<div class="text">
-			<h4 class="quiet-voice bold">Designing for dual audiences</h4>
+			<a href="<?= ENV === 'production'? '/case-study/openresource
+		' : '?page=case-study&slug=openresource'?>">
+				<h4 class="quiet-voice bold">Rethinking the community directory</h4>
+				<p class="quiet-voice">OpenResource</p>
+			</a>
 
-			<button class="video-control button quiet-voice">PLAY</button>
+			<button class="video-control button quiet-voice opaque">PLAY</button>
 		</div>
 	</work-card>
 

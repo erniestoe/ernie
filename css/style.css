@@ -25,6 +25,7 @@ html {
 
 .underlined {
 	text-decoration: underline;
+	text-underline-offset: 5px;
 }
 
 
@@ -38,6 +39,11 @@ html {
 	background-color: var(--main-white);
 	color: var(--main-black);
 }
+
+.opaque {
+	opacity: 60%;
+}
+
 
 p,
 .calm-voice{
@@ -211,6 +217,15 @@ nav {
 		display: flex;
 		align-items: center;
 		gap: 8px;
+
+		a,
+		svg {
+			opacity: 60%;
+		}
+	}
+
+	a.highlight {
+		opacity: 100%;
 	}
 
 	@media (width >= 1024) {
@@ -249,12 +264,18 @@ footer {
 
 	nav {
 			display: flex;
+			a:not(next-project a){
+				opacity: 60%;
+			}
+
+			a.active {
+				opacity: 100%;
+			}
 
 			@media (width >= 1024px) {
-				a {
+				next-project a {
 					opacity: 60%;
 				}
-
 				a:hover {
 					opacity: 100%;
 				}
