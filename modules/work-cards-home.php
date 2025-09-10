@@ -18,7 +18,7 @@
 		<div class="text">
 			<h4 class="quiet-voice bold">Rethinking the community directory</h4>
 
-			<button class="video-control">PLAY</button>
+			<button class="video-control button quiet-voice">PLAY</button>
 		</div>
 	</work-card>
 
@@ -39,7 +39,7 @@
 		<div class="text">
 			<h4 class="quiet-voice bold">Amplifying local culture with design</h4>
 
-			<button class="video-control">PLAY</button>
+			<button class="video-control button quiet-voice">PLAY</button>
 		</div>
 	</work-card>
 
@@ -60,7 +60,7 @@
 		<div class="text">
 			<h4 class="quiet-voice bold">Designing for dual audiences</h4>
 
-			<button class="video-control">PLAY</button>
+			<button class="video-control button quiet-voice">PLAY</button>
 		</div>
 	</work-card>
 
