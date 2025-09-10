@@ -76,10 +76,27 @@ body {
 
 }
 
-.highlight {
+/*.highlight {
 	text-decoration: underline;
 	text-underline-offset: 10px;
+}*/
+
+.highlight {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 8px;
+	opacity: 100%;
 }
+
+.highlight .menu-circle {
+		width: 10px;
+		height: 10px;
+		background-color: red;
+		border-radius: 50px;
+		transform: translate(0, 1px);
+		
+	}
 
 .tags {
 	display: flex;
@@ -124,6 +141,10 @@ nav {
 			align-items: center;
 			gap: 8px;
 
+			a,
+			svg {
+				opacity: 50%;
+			}
 
 			.arrow,
 			.mail {
@@ -138,7 +159,7 @@ nav {
 .main-nav {
 	ul {
 		@media (width >= 1024px) {
-			gap: 16px;
+			gap: 24px;
 
 			clip: auto;
 			clip-path: none;
@@ -147,6 +168,13 @@ nav {
 			position: relative;
 			white-space: normal;
 			width: auto;
+		}
+	}
+
+	li:hover {
+		a,
+		svg {
+			opacity: 100%;
 		}
 	}
 }
