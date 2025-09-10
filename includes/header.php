@@ -55,30 +55,16 @@ if ($projectSlug) {
 		<meta property="og:image" content="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756741273/CleanShot_2025-09-01_at_11.40.11_zt391r.gif">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>">
+		<link rel="icon" type="image/png" href="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757379971/favicon_xakxfc.png"/>
+
 	</head>
 
 	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$bodyClass?>">
-		<aside class="<?=$headerClass?>">
-			<?php include ('modules/site-header-mobile.php'); ?> 
-
+		
+		<header class="main-header">
 			<inner-column>
-
-			<h1 class="logo <?=$currentPage['name'] === 'garden' ? 'hidden': ''?>"><a href="<?= ENV === 'production'? '/home' : '?page=home'?>">Ernesto <br> Rivera-Saavedra</a></h1>
-
-			<?php if($currentPage['name'] === 'garden'):?>
-				<nav class="garden-nav">
-					<h2 class="calm-voice bold">Layout Garden.</h2>
-				</nav>
-			<?php endif;?>
-
-			<?php if($currentPage['name'] != 'garden'):?>
-			
-			<?php include ('modules/site-header.php'); ?>
-
-			<!-- <a class="attention-voice contact visually-hidden" href="mailto:ersaavedra.nc@gmail.com">Let's Chat</a> -->
-			
+				<?php include('modules/site-header.php') ?>
 			</inner-column>
-			<?php endif;?>
-		</aside>
+		</header>
 
 		<main class="<?=$mainClass?>">

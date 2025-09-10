@@ -20,15 +20,23 @@ html {
   transform: translate(-50%, calc(-50% - 14px));
   opacity: 0;
   transition: opacity 0.15s ease;
-  z-index: 9999;
+  z-index: 999999999999999999999999999999999;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.button {
+	border: none;
+	background-color: var(--main-white);
 }
 
 p,
-.calm-voice,
-h2{
+.calm-voice{
 		text-wrap: balance;
-		max-width: 60ch;
-		line-height: 1.3em;
+		max-width: 50ch;
+		line-height: 1.4em;
 }
 
 figcaption {
@@ -87,116 +95,97 @@ body {
 }
 
 nav {
+	display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 8px;
+
 	ul {
 		display: flex;
-		flex-direction: column;
-		gap: 16px;
+		flex-wrap: wrap;
+		gap: 8px;
+
+		@media (width >= 1024px) {
+			gap: 16px;
+
+			clip: auto;
+			clip-path: none;
+			height: auto;
+			overflow: visible;
+			position: relative;
+			white-space: normal;
+			width: auto;
+		}
 
 		li {
 			display: flex;
 			align-items: center;
-			gap: 16px;
+			gap: 8px;
 
 
 			.arrow,
 			.mail {
-				align-self: end;
 				
-				transform: translate(0, 3px);
+				
+				/*transform: translate(0, 3px);*/
 			}
 		}
 	}
 }
 
-aside {
-	grid-row: 1;
-	grid-column: span 4;
-	background-color: var(--main-black);
-	color: var(--main-white);
-	position: relative;
-	padding-top: 400px;
-
-	@media (width >= 630px) {
-		grid-column: span 8;
-	}
-
-	@media (width >= 1024px){
-		grid-column: span 3;
-		grid-row: span 2;
-	}
-
-	.logo {
-		position: absolute;
-		bottom: 16px;
-
-		@media (width >= 1024px){
-			top: 56px;
-			bottom: 0;
-		}
-	}
-
-	header {
-		position: fixed;
-		left: 16px;
-		top: 8px;
-		z-index: 1;
-
-		button {
-			border-radius: 5px;
-			border: none;
-			background-color: var(--yellow);
-			color: var(--main-black);
-			padding: 8px 24px;
-		}
-
-		.mobile-menu {
-			position: fixed;
-			z-index: 9999999999;
-			top: 0;
-			left: 0;
-			background-color: var(--main-black);
-			color: var(--main-white);
-			width: 100vw;
-			height: 100vh;
-
-			button {
-				margin-top: 48px;
-				border-radius: 5px;
-				border: none;
-				background-color: var(--main-white);
-				color: var(--main-black);
-				padding: 8px 48px;
-			}
-		}
-	}
-
-	.main-nav {
+.main-nav {
+	ul {
 		@media (width >= 1024px) {
+			gap: 16px;
+
 			clip: auto;
 			clip-path: none;
 			height: auto;
-			width: auto;
 			overflow: visible;
-			position: fixed;
-			/*bottom: 68px; */
-			bottom: 152px;
+			position: relative;
 			white-space: normal;
+			width: auto;
 		}
 	}
+}
 
-	.contact {
-		@media (width >= 1024px) {
-			clip: auto;
-			clip-path: none;
-			height: auto;
-			width: auto;
-			overflow: visible;
-			text-decoration: underline;
-			position: absolute;
-			bottom: 48px;
-			white-space: normal;
-		}
+.main-header {
+	grid-column: span 12;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--main-white);
+	z-index: 99999999999999999;
+	border-bottom: 1px solid var(--main-black);
+	inner-column {
+		padding-block: 16px;
+	}
+}
 
+.main-header + main {
+	margin-top: 64px;
+}
+
+.mobile-menu {
+	/*height: 30vh;*/
+
+	ul {
+		/*justify-self: end;*/
+		padding-block: 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	li {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	@media (width >= 1024) {
+		display: none;
 	}
 }
 
@@ -206,54 +195,48 @@ main {
 	grid-column: span 4;
 
 	@media (width >= 630px) {
-		grid-column: span 6;
+		grid-column: span 8;
 	}
 
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 4/13;
+		grid-column: span 12;
 	}
 }
 
 footer {
 	grid-row: 3;
 	grid-column: span 4;
-	align-self: end;
+	/*align-self: end;*/
+
+	@media (width >= 630px) {
+		grid-column: span 8;
+	}
 	@media (width >= 1024px) {
 		grid-row: auto;
-		grid-column: 4/13;
-	}
-
-	inner-column {
+		grid-column: span 12;
 		
-		nav {
+	}
+
+	nav {
 			display: flex;
-			justify-content: space-between;
-			align-items:center;
 		}
-	}
 
-	.footer-contact {
-		text-decoration: underline;
 
-		@media (width >= 1024px) {
-			clip: rect(0 0 0 0);
-			clip-path: inset(50%);
-			height: 1px;
-			overflow: hidden;
-			position: absolute;
-			white-space: nowrap;
-			width: 1px;
-		}
-	}
 }
 
-.garden-footer {
+.circle {
+	display: none;
 	@media (width >= 1024px) {
-		grid-column: 3/14;
-
-		inner-column {
-			padding-left: 8px;
-		}
+		position: fixed;
+		width: 20px;
+		height: 20px;
+		background-color: var(--yellow);
+		border-radius: 100%;
+		top: 5px;
+		left: 5px;
+		pointer-events: none;
+		z-index: 99999999999999999999999999999999;
 	}
+	
 }

@@ -210,6 +210,39 @@ window.onload = () => {
 	        });
 	      }
 
-	   
+	    const circleElement = document.querySelector('.circle');
+	    const mouse = {x: 0, y: 0}, circle = {x:0, y: 0};
+
+	    window.addEventListener('mousemove', e => {
+	    	mouse.x = e.x;
+	    	mouse.y = e.y;
+	    });
+
+	    const speed = 0.15;
+
+	    const tick = () => {
+	    	circle.x += (mouse.x - circle.x) * speed;
+	    	circle.y += (mouse.y - circle.y) * speed;
+
+	    	circleElement.style.transform = `translate(${circle.x}px, ${circle.y}px`;
+
+	    	window.requestAnimationFrame(tick);
+	    }
+
+	    tick();
+
+	    const dogImageElement = document.querySelector('#dog');
+	    const aboutImageElement = document.querySelector('#aboutPic');
+
+	    dogImageElement.addEventListener("mouseenter", (event) => {
+	    	aboutImageElement.src= "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757456013/doc-1_vxkai4.jpg";
+	    });
+
+	     dogImageElement.addEventListener("mouseleave", (event) => {
+	    	aboutImageElement.src= "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753279197/resume-photo-2_wwhl4o.jpg";
+	    });
+
+
+
 
 }
