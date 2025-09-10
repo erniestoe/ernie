@@ -30,6 +30,7 @@ html {
 .button {
 	border: none;
 	background-color: var(--main-white);
+	color: var(--main-black);
 }
 
 p,
