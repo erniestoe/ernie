@@ -1,6 +1,7 @@
 <work-cards>
 
-	<work-card >
+
+	<work-card>
 		<a href="<?= ENV === 'production'? '/case-study/openresource
 		' : '?page=case-study&slug=openresource'?>">
 			<video
