@@ -27,6 +27,12 @@ html {
 	text-decoration: underline;
 }
 
+
+.arrow,
+.mail {
+	transform: translate(0, 2px);
+}
+
 .button {
 	border: none;
 	background-color: var(--main-white);
@@ -143,15 +149,9 @@ nav {
 
 			a,
 			svg {
-				opacity: 50%;
+				opacity: 60%;
 			}
 
-			.arrow,
-			.mail {
-				
-				
-				/*transform: translate(0, 3px);*/
-			}
 		}
 	}
 }
@@ -249,6 +249,16 @@ footer {
 
 	nav {
 			display: flex;
+
+			a {
+				opacity: 60%;
+			}
+
+			@media (width >= 1024px) {
+				a:hover {
+					opacity: 100%;
+				}
+			}
 		}
 
 

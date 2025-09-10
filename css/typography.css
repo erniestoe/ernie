@@ -17,6 +17,10 @@
 	line-height: 1.125em;
 }
 
+button {
+	font-family: "Overused Grotesk";
+}
+
 p,
 .calm-voice
 {

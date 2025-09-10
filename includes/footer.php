@@ -3,7 +3,7 @@
 	<footer class="site-footer <?=$currentPage['name'] === 'garden'? 'garden-footer': ''?>">
 		<inner-column>
 			<nav class="footer-nav">
-				<a href="<?= ENV === 'production' ? '/style-guide' : '?page=style-guide'?>" class="quiet-voice bold">Style Guide</a>
+				<a class="<?= $currentPage['name'] === 'style-guide' ? 'highlight quiet-voice bold' : 'quiet-voice bold'?>" href="<?= ENV === 'production' ? '/style-guide' : '?page=style-guide'?>" class="quiet-voice bold">Style Guide <div class="menu-circle"></div></a>
 
 				<?php if ($currentPage['name'] === 'case-study'): ?>
 					<next-project>
