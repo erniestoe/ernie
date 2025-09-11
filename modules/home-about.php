@@ -10,7 +10,7 @@
 
 		<p>
 			If you care about design and think I’d be a good fit for your needs,
-			<a href="mailto:ersaavedra.nc@gmail.com" class='external-link'> let’s chat. <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#141414" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a>
+			<a href="mailto:ersaavedra.nc@gmail.com" class='external-link'> let’s chat. <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#181818" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a>
 		</p>
 		
 	</div>
