@@ -83,24 +83,38 @@ function renderGardenSection() {
 		<?php } 
 }
 
+function getProjectData() {
+    $projects = [];
+
+    // Adjust path if needed (relative to this function file)
+    $files = glob(__DIR__ . '/../data/project-data/*.json');
+
+    foreach ($files as $file) {
+        $json = file_get_contents($file);
+        $data = json_decode($json, true);
+
+        if (is_array($data) && isset($data['slug'])) {
+            $projects[$data['slug']] = $data; // index by slug for easy lookup
+        }
+    }
+
+    return $projects;
+}
+
 function renderPageTitle($page) {
     $pageData = getPageData($page);
 
-    if ($page != "project") {
-    	return $pageData && isset($pageData['title']) ? $pageData['title'] : "Ernies Site!";
-    } else {
-    	$projectData = getProjectData();
-    	$projectID = $_GET['id'];
-		$selectedProject = null;
-
-		foreach ($projectData as $project) {
-			if ($project["id"] == $projectID) {
-				$selectedProject = $project;
-				break;
-			}
-		}
-		
-    	return $selectedProject["projectName"];
+    if ($page != "case-study") {
+    	return $pageData && isset($pageData['title']) ? $pageData['title'] : "Ernesto Rivera-Saavedra";
     }
+
+    $projects = getProjectData();
+    $slug = $_GET['slug'] ?? null;
+
+    if ($slug && isset($projects[$slug])) {
+        return $projects[$slug]['projectName'] ?? $projects[$slug]['title'];
+    }
+
+    return "Case Study — Ernesto Rivera-Saavedra";
     
 }
