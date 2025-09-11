@@ -10,11 +10,11 @@
 		"img": ""
 	},
 	"caseStudy": [
-		{"content": "<div class='deets'><p><span class='bold'>Year:</span> 2025</p><p><span class='bold'>What I did: </span>Branding, Web Design, Social Media<p><p class='strong-voice'>Completed</p></div><p>After CRFT, I wanted more. Branding a conceptual music venue was fun and all, but it got me thinking… How would this idea of one brand with multiple faces look like in a real (not so real) nonprofit organization? Could they brand themselves in a way that both tackles a serious topic while being able speak to a younger audience that can often feel “unseen” by these groups? That’s the challenge I took on with Hunger Action Coalition (probably should have been “THE” Hunger Action Coalition...)</p>"}
+		{"content": "<div class='deets'><p><span class='bold'>Year:</span> 2025</p><p><span class='bold'>What I did: </span>Branding, Web Design<p><p class='strong-voice'>Completed</p></div><p>In the nonprofit world there seems to be this big disconnect with trying to separate “serious” and trustworthy from energetic and relevant. So I took on Hunger Action Coaltion as a conceptual project to show that the two can live in harmony (in hindsight “THE” Hunger Action Coalition might've been a better name...)</p>"}
 	],
 	"caseBlocks": [
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Gotta Start Somewhere</h3><p>Normally, I'd do a whole lotta market / user / inner research, but in this case I gave myself 3 days to build out this (conceptual) organization from the ground up. So I took an unsual first step here by picking out an initial core pallette and building out a logo suite. Followed by some (probably way too early) sketches of a landing page.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Gotta Start Somewhere</h3><p>Normally, I'd do a whole lotta market / user / inner research, but in this case I gave myself 3 days to build out this (conceptual) organization from the ground up. So I dug deep into my past experiences to build a initial core pallette and a logo suite that met the organizations goals. Followed by a (probably way too early) sketch of a potential landing page.</p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398044/logos_ddjwoc.png",
@@ -30,7 +30,7 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>From Neutral to Bold</h3><p>With a palette in place, typeface locked in (PP Neue Montreal), and a logo, it was time to explore the bold face. What better way then some social media posts? This particular series was made to clearly showcase how the “faces” could live in harmony. The first three are a bit more serious and tame, while the following three introduce bold colors and imagery while still maintaining core brand elements, creating ultimate cohesion.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>From Neutral to Bold</h3><p>So I can come up with some logos and pick out some colors… cool. The real question is how and where do they fit in? Well I knew that organizations love social media, but a lot suffer from the classic case of a non-cohesive voice on their platform of choice. My goal was to use this idea of “two voices” to create a collection of instagram templates that could be repurposed indefinitely. </p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756492821/hac-ig-posts-half-1_wtluuj.png",
@@ -46,7 +46,7 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Brand in Action</h3><p>After creating social media posts to prove my point about the two-faced brand, I decided to keep going. This organization would understand that this brand direction could work if it was the last thing I do. So I threw together some more professional settings they could show up.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Brand in Action</h3><p>HAC needed the ability to show up everywhere. I got the social media covered, but I needed to show how they could show up from a poster on the street to letterheads for sending to the suits on capitol hill.</p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756400687/hac-poster-showcase_xblnth.jpg",
@@ -70,7 +70,7 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Website</h3><p>With the brand in place and fully showcased it made sense to put together a landing page for the main site and for the volunteering page as the final sprint deliverables. This was the penultimate showcase of the brand with many faces. The goal was to create a site that follows the core look, and use the volunteer page to explore that more bold vibrant look. </p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Website</h3><p>With the brand fully showcased it made sense to create landing pages for the main site and for the volunteering page as the final deliverables of this sprint. The goal was to put all of the branding work together and create a site that adopts the duality of Hunger Action Coaliton.</p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756321210/hac-mobile-screens_akjbuy.png",
@@ -94,7 +94,7 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>I’ll admit, this one was a little messy. I moved through research and design decisions quickly, but even at that pace, I created a two voiced system that I’d feel confident showing a client as a starting point for the next phase. The key takeaway here is proving that a nonprofit doesn't have to be one note, it can sing a whole song.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>I’ll admit, this one was a little messy. I moved through research and design decisions quickly, but even at that pace, I created a two voiced system that I’d feel confident showing a client as a starting point for the next phase (refinement). The key takeaway here is that a nonprofit doesn't have to be so one note when it comes to branding.</p></case-text-block>",
 			"imageBlock": [
 				
 			],

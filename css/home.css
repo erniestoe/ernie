@@ -56,23 +56,21 @@
 			display: block;
 			padding-bottom: 80px;
 
-			h2 + p {
-				margin-top: 24px;
-			}
-
-			p + a {
+			h1 + p {
 				margin-top: 16px;
 			}
 
-			a {
-				text-decoration: underline;
-				text-underline-offset: 4px;
-				width: fit-content;
+			p.quiet-voice {
+				transform: translate(2px, 0);
 			}
 
 			@media(width >= 1024px) {
 				padding-top: 0;
 				padding-bottom: 64px;
+
+				p.quiet-voice {
+				transform: translate(4px, 0);
+			}
 			}
 		}
 

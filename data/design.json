@@ -2,14 +2,28 @@
 	"title": "Playground",
 	"portrait": [
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271189/summerlark_v7e04v.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752888173/print-1_vlk8ui.jpg"}
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1752888173/print-1_vlk8ui.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757605977/doghairs-bw_sdxnev.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606103/no-idea_tmhgbt.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606103/no-idea-2_lkowqs.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606745/poster-23_ysnj8x.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606597/poster-3_lfeuly.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606745/poster-17_eztyoh.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606596/poster-4_g6wagx.png"}
 		
 	],
 	"square": [
-		
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606104/m2c3_xek5tz.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606501/squares-2_svcm3j.png"}
 	],
 	"landscape": [
 		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271189/wine_cm6my9.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271190/cyberpunk_fdy1vo.jpg"}
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753271190/cyberpunk_fdy1vo.jpg"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757605976/ethos_keh2rz.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606102/pipelines1_fg4hdr.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606594/graphic-day-1_w6augc.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606592/graphic-day-13_ssjchz.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606593/graphic-day-19_ws0ien.png"},
+		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757606591/lines-day-6_bfhkuq.png"}
 	]
 }

@@ -6,7 +6,7 @@
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
-	cursor: none;
+	/*cursor: none;*/
 }
 
 #video-hover-label {
@@ -194,7 +194,7 @@ nav {
 	width: 100%;
 	background-color: var(--main-white);
 	z-index: 99999999999999999;
-	border-bottom: 1px solid var(--main-black);
+	border-bottom: 2px solid var(--main-black);
 	inner-column {
 		padding-block: 16px;
 	}
@@ -308,8 +308,8 @@ footer {
 .circle {
 	@media (width >= 1024px) {
 		position: fixed;
-		width: 20px;
-		height: 20px;
+		width: 25px;
+		height: 25px;
 		background-color: var(--main-white);
 		border-radius: 100%;
 		top: 0;

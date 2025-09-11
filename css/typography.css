@@ -52,7 +52,7 @@ p,
 }
 
 .loud-voice {
-	font-size: clamp(3rem, 5vw, 4.2rem);
+	font-size: clamp(2.5rem, 5vw, 4.2rem);
 	font-variation-settings: "wght" 600, "ital" 0;
 	letter-spacing: -.021em;
 	line-height: 1em;

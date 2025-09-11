@@ -3,10 +3,16 @@
 
 	<div class="text">
 		<p>
-			Hey. Thanks for scrolling down! I'm Ernie (Ernesto Rivera-Saavedra) and for the past 7 years I’ve been working in nonprofits, juggling website updates, flyers, and data analysis. Then one day discovered my passion was in design. So, I'm using the strategy I've learned from nonprofits, storytelling from data, and the technical foundations from my computer science degree, to shape myself into your next best choice.
+			Thanks for scrolling all the way down here! I’m Ernie (Ernesto Rivera-Saavedra), a graphic designer who found his way through nonprofits. For the past 7 years I’ve been supporting organizations with program management, flyers, and data analysis. Now I’m using the skills I’ve picked up over the years to actualize my passion for shaping ideas into clear, compelling experiences.
 		</p>
 
-		<p>Other than that... If I'm not adding yet another sans-serif typface to my stash, I'm probably out hiking with my wife and our <span id="dog" class="underlined">Puerto Rican rescue dog Doc</span>, <a class="underlined" target='_blank' href='https://www.instagram.com/erniestoe/'>taking photos</a>, or <a class="underlined" target='_blank' href='https://open.spotify.com/playlist/0N8Lx0njx25Udmeg351kSA?si=4a00dfc055774625'>making cool playlists.</a></p>
+		<p>When I’m not adding more typefaces to my collection, I’m probably hiking with my wife and our <span id="dog" class="underlined">Puerto Rican rescue dog Doc</span>, <a class="underlined" target='_blank' href='https://codepen.io/erivera-s'>experimenting on codepen</a>, or <a class="underlined" target='_blank' href='https://open.spotify.com/playlist/0N8Lx0njx25Udmeg351kSA?si=4a00dfc055774625'>putting together playlists.</a></p>
+
+		<p>
+			If you care about design and think I’d be a good fit for your needs,
+			<a href="mailto:ersaavedra.nc@gmail.com" class='external-link'> let’s chat. <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#141414" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg></a>
+		</p>
+		
 	</div>
 	
 
