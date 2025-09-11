@@ -73,6 +73,4 @@
 		</div>
 	</work-card>
 
-	
-
 </work-cards>

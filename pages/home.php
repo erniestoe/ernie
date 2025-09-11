@@ -24,7 +24,7 @@
 				
 			</div>
 			<h1 class="loud-voice"><?= $pageData["subheadline"]?></h1>
-				<?= $pageData["tagline"]?>
+			<?= $pageData["tagline"]?>
 			
 
 		</intro>

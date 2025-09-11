@@ -10,25 +10,28 @@ window.onload = () => {
 	const buttons = document.querySelectorAll('.button');
 	const timeElement = document.querySelector('#time');
 
-	function updateTime() {
-		const now = new Date();
-		let hours = now.getHours();
-		let minutes = now.getMinutes();
-		let seconds = now.getSeconds();
+	function updateTimeEST() {
+	  const now = new Date();
 
-		hours = hours < 10 ? '0' + hours : hours;
-		minutes = minutes < 10 ? '0' + minutes : minutes;
-		seconds = seconds < 10 ? '0' + seconds : seconds;
+	  // EST is UTC-5 (or UTC-4 during daylight saving time)
+	  // Here we use Intl.DateTimeFormat to handle DST automatically
+	  const options = { 
+	    timeZone: 'America/New_York', 
+	    hour: '2-digit', 
+	    minute: '2-digit', 
+	    second: '2-digit', 
+	    hour12: false 
+	  };
 
-		const formattedTime = `${hours}:${minutes}:${seconds}`;
+	  const formattedTime = new Intl.DateTimeFormat('en-US', options).format(now);
 
-		timeElement.innerText = formattedTime;
+	  timeElement.innerText = formattedTime;
 	}
 
 	if(timeElement) {
-		updateTime();
-
-		setInterval(updateTime, 1000);
+		setInterval(updateTimeEST, 1000);
+		
+		updateTimeEST();
 	}
 
 	buttons.forEach(button => {
