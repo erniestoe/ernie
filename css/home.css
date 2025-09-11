@@ -87,7 +87,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 8px;
-
+			/*justify-self: end;*/
 		}
 
 		.text {
@@ -109,6 +109,10 @@
 			work-card:nth-of-type(3){
 				grid-column: span 12;
 			}
+		}
+
+		video {
+			/*max-width: 1000px;*/
 		}
 	}
 
