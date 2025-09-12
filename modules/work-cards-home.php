@@ -17,7 +17,7 @@
 		<div class="text">
 			<a href="<?= ENV === 'production'? '/case-study/openresource
 		' : '?page=case-study&slug=openresource'?>">
-				<h4 class="quiet-voice bold">Rethinking the community directory</h4>
+				<h4 class="quiet-voice bold">Rethinking the Resource Directory</h4>
 				<p class="quiet-voice">OpenResource</p>
 			</a>
 
@@ -41,7 +41,7 @@
 
 		<div class="text">
 			<a href="<?= ENV === 'production'? '/case-study/crft' : '?page=case-study&slug=crft'?>">
-				<h4 class="quiet-voice bold">Amplifying local culture with design</h4>
+				<h4 class="quiet-voice bold">Trendiness Vs Timelessness</h4>
 				<p class="quiet-voice">CRFT</p>
 			</a>
 
@@ -65,7 +65,7 @@
 
 		<div class="text">
 			<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
-				<h4 class="quiet-voice bold">Designing for dual audiences</h4>	
+				<h4 class="quiet-voice bold">One Identity, Two Voices</h4>	
 				<p class="quiet-voice">Hunger Action Coaltion</p>
 			</a>
 		

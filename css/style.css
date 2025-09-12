@@ -201,7 +201,7 @@ nav {
 }
 
 .main-header + main {
-	margin-top: 64px;
+	margin-top: 48px;
 }
 
 .mobile-menu {
@@ -313,7 +313,7 @@ footer {
 		background-color: var(--main-white);
 		border-radius: 100%;
 		top: 0;
-		left: 0;
+		left: -4px;
 		/*pointer-events: none;*/
 		z-index: 99999999999999999999999999999999;
 		mix-blend-mode: exclusion;

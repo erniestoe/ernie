@@ -6,7 +6,7 @@
 			Thanks for scrolling all the way down here! I’m Ernie (Ernesto Rivera-Saavedra), a graphic designer who found his way through nonprofits. For the past 7 years I’ve been supporting organizations with program management, flyers, and data analysis. Now I’m using those skills to actualize my passion for shaping ideas into clear, compelling experiences.
 		</p>
 
-		<p>When I’m not adding more typefaces to my collection, I’m probably hiking with my wife and our <span id="dog" class="underlined">Puerto Rican rescue dog Doc</span>, <a class="underlined" target='_blank' href='https://codepen.io/erivera-s'>experimenting on codepen</a>, or <a class="underlined" target='_blank' href='https://open.spotify.com/playlist/0N8Lx0njx25Udmeg351kSA?si=4a00dfc055774625'>putting together playlists.</a></p>
+		<p>When I’m not adding another display font I'll probably only use once to my collection, I’m probably hiking with my wife and our <span id="dog" class="underlined">Puerto Rican rescue dog Doc</span>, <a class="underlined" target='_blank' href='https://codepen.io/erivera-s'>experimenting on codepen</a>, or <a class="underlined" target='_blank' href='https://open.spotify.com/playlist/0N8Lx0njx25Udmeg351kSA?si=4a00dfc055774625'>putting together playlists.</a></p>
 
 		<p>
 			If you care about design and think I’d be a good fit for your needs,
