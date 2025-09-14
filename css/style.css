@@ -312,9 +312,9 @@ footer {
 		height: 25px;
 		background-color: var(--main-white);
 		border-radius: 100%;
-		top: 0;
-		left: -4px;
-		/*pointer-events: none;*/
+		top: -10px;
+		left: -10px;
+		pointer-events: none;
 		z-index: 99999999999999999999999999999999;
 		mix-blend-mode: exclusion;
 	}
