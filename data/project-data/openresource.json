@@ -43,11 +43,11 @@
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755217083/openresource-sketches_tcjoy8.png",
-					"class": ["first", "landscape"]
+					"class": ["first"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757886120/openresource-sketches_br49kd.png",
-					"class": ["second", "portrait"]
+					"class": ["second"]
 				}
 			],
 			"videos": [
