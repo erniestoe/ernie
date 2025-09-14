@@ -11,11 +11,11 @@
 		"img": ""
 	},
 	"caseStudy": [
-		{"content": "<div class='deets'><p><span class='bold'>Year:</span> 2025</p><p><span class='bold'>What I did: </span>UI/UX<p><p class='strong-voice'>Ongoing Project</p></div><p>OpenResource is my ongoing project aiming to find an answer to one question: Is there a better way to create community resource directories?</p>"}
+		{"content": "<div class='deets'><p><span class='bold'>Year:</span> 2025</p><p><span class='bold'>What I did: </span>UI/UX<p><p class='strong-voice'>Ongoing Project</p></div><p>Working in nonprofits, I regularly whished for a better way to share resources with people. Too often I found myself either putting together sheets of paper from an outdated binder or finding an online directory that was either way too intense, or way too basic. OpenResource is my solution to creating better resource directories.</p>"}
 	],
 	"caseBlocks": [
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Problem Solved?</h3><p>I found that platforms like <a target='_blank' href='https://www.findhelp.org/'>findhelp</a> already exist, but in my opinion, they run the risk of feeling overly corporate and impersonal. I also know that most local governments and nonprofits often create their own lists. So what if, instead of relying on a single platform, these organizations could have a <span class='bold'>simple, unified way to keep doing what they’re doing… just better?</span></p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Problem Solved?</h3><p>Platforms like <a target='_blank' href='https://www.findhelp.org/'>findhelp</a> already exist, but in my opinion, they run the risk of feeling too impersonal. I also know that most local governments and nonprofits often create their own lists. So what if, instead of relying on a single platform, these organizations could have a <span class='bold'>simple, unified way to keep doing what they’re doing… just better?</span></p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757434861/findhelp-screenshot_qseotc.png",
@@ -39,7 +39,7 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Solving it... My Own Way</h3><p>Establishing that one centralized platform feels too impersonal and that local organizations are creating their own directories meant I could shift my focus to finding a solution that both unifies and simplfies.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Solving it... My Own Way</h3><p>Since this is not a problem with no solutions, it became a matter of taking whats already been done and making them better and more accessible for both users and organizations.</p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755217083/openresource-sketches_tcjoy8.png",
