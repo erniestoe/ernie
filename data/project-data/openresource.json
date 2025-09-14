@@ -15,27 +15,23 @@
 	],
 	"caseBlocks": [
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Problem Solved?</h3><p>I found that platforms like <a target='_blank' href='https://www.findhelp.org/'>findhelp</a> already exist, but in my opinion, they run the risk of feeling overly corporate and impersonal. When you build something that covers essentially everything everywhere, it makes it hard to connect with at a community level.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Problem Solved?</h3><p>I found that platforms like <a target='_blank' href='https://www.findhelp.org/'>findhelp</a> already exist, but in my opinion, they run the risk of feeling overly corporate and impersonal. I also know that most local governments and nonprofits often create their own lists. So what if, instead of relying on a single platform, these organizations could have a <span class='bold'>simple, unified way to keep doing what they’re doing… just better?</span></p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757434861/findhelp-screenshot_qseotc.png",
-					"class": ["first", "landscape"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Local Ownership</h3><p>From my past experience, I knew that most local governments and nonprofits often create and curate their own lists. So what if, instead of relying on a single platform, these organizations could have a <span class='bold'>simple, unified way to keep doing what they’re doing… just better?</span></p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757455400/fc-county-screenshot_zlrdlt.png",
 					"class": ["first"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757436459/resource-pamphlet_a3es6z.jpg",
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757455400/fc-county-screenshot_zlrdlt.png",
 					"class": ["second"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757436459/resource-pamphlet_a3es6z.jpg",
+					"class": ["third"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757885961/IMG_3910_srkkbd.jpg",
+					"class": ["fourth"]
 				}
 			],
 			"videos": [
@@ -43,11 +39,15 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Decentralization FTW</h3><p>Establishing that one centralized platform feels too impersonal and that local organizations are creating their own directories meant shifting my focus to finding a solution to decentralizing information.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Solving it... My Own Way</h3><p>Establishing that one centralized platform feels too impersonal and that local organizations are creating their own directories meant I could shift my focus to finding a solution that both unifies and simplfies.</p></case-text-block>",
 			"imageBlock": [
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757437180/central-vs-decentral_jlbmws.jpg",
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755217083/openresource-sketches_tcjoy8.png",
 					"class": ["first", "landscape"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757886120/openresource-sketches_br49kd.png",
+					"class": ["second", "portrait"]
 				}
 			],
 			"videos": [
