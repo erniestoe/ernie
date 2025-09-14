@@ -97,6 +97,10 @@
 			video {
 				grid-column: 4;
 			}
+
+			video.openresource-video {
+				grid-column: span 2;
+			}
 		}
 
 		

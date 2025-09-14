@@ -38,8 +38,7 @@
 							<?php foreach ($caseBlock['videos'] as $video): ?>
 								<video
 										loading="lazy"
-										controls
-										autoplay				
+										controls			
 								      muted
 								      playsinline
 								      loop

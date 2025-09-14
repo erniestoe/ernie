@@ -79,18 +79,17 @@
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756321563/hac-mobile-screens-volunteer_djgqc4.png",
 					"class": [ "second"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-desktop_hxbher.png",
-					"class": [ "third"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319573/hac-desktop-volunteering_nvulbe.png",
-					"class": [ "third"]
 				}
 			],
 			"videos": [
-				
+				{
+					"src":"https://res.cloudinary.com/dhgciqwbz/video/upload/v1757879611/main_zlocww.mp4",
+					"class": "openresource-video"
+				},
+				{
+					"src":"https://res.cloudinary.com/dhgciqwbz/video/upload/v1757879610/volunteer_nb11uu.mov",
+					"class": "openresource-video"
+				}
 			]
 		},
 		{
