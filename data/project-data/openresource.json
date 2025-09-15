@@ -55,19 +55,30 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Simplification</h3><p>A core principle of OpenResource (if not the core principle) is clarity, so I focused on stripping back the overwhelming amount of lists and replacing them with a clean search and filter flow. I coupled this with jargon free tags and consistent card layouts to make resources easy to scan.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Simplification</h3><p>A core principle of OpenResource (if not the core principle) is clarity, so my first step was to strip back the overwhelming parts of lists and focus on simple search and filter flows.</p></case-text-block>",
 			"imageBlock": [
-				
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757949397/search-flow_kgrvlh.png",
+					"class": ["first"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757949397/filter-flow_zdfado.png",
+					"class": ["second"]
+				}
 			],
 			"videos": [
 				{
-					"src":"https://res.cloudinary.com/dhgciqwbz/video/upload/v1757452608/openresource-flows-1_jdm2wl.mp4",
-					"class": "landscape"
+					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1757951770/CleanShot_2025-09-15_at_11.53.32_gkeinl.mp4",
+					"class": "openresource-video"
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1757951770/CleanShot_2025-09-15_at_11.55.05_hvnnlf.mp4",
+					"class": "openresource-video"
 				}
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>OpenResource has been my hardest project to scope, because it feels bigger than a single deliverable and could be executed in many different ways. So far, I’ve focused on making flows and systems that make clear and trustworthy directories which already feels like an improvement to the status quo. While in its current state it works as a single site, OpenResource is still in progress, with the goal to expand this out into a full design system that organizations can adapt to their own local directories.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Next Steps</h3><p>So far, I’ve focused on making flows and systems that already feel like an improvement to the status quo, but my long term goal is to expand this into a more fleshed out design system that organizations can adapt for their own uses.</p></case-text-block>",
 			"imageBlock": [
 				
 			],
