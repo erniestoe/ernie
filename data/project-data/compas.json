@@ -1,51 +1,109 @@
 {
-	"id": 4,
+	"id": 3,
 	"projectName": "Compañeras Campesinas",
 	"slug": "compas",
 	"headerImage": "",
-	"headerText": "Design and brand understanding for a nonprofit working to empower women in agriculture.",
+	"headerText": "<h2 class='loud-voice'>Organizing Communications</h2>",
 	"altHeaderImage": "",
-	"tags": ["Conceptual", "UI/UX", "Social Media"],
-	"showcase": [
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756499737/compas-mobile-showcase_ahmfjz.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756499739/compas-tablet-showcase_qghbqa.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756499740/compas-desktop-showcase_wd40ie.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756499290/cc-ig-posts_sxudo0.png"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755886899/cc-cards-mockup_bg0rh7.jpg"},
-		{"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755886900/cc-tote-mockup_zd8ukl.jpg"}
-	],
-	"nextProject": "openresource",
+	"nextProject": {
+		"slug": "hac",
+		"img": ""
+	},
 	"caseStudy": [
-		{"content": "<p>Compañeras Campesinas already had a brand identity they cared about, but struggled to translate it into digital spaces. My role was to refine their existing materials and build a website that clearly communicated their mission while supporting donations and outreach.</p><p>I focused on expanding their existing toolkit into digital spaces by updating the logo for consistency, desigining a functional website, and creating templates they could adapt for social media.</p>"}
+		{"content": "<div class='deets'><p class='quiet-voice'><span class='bold'>Year:</span> 2025</p><p class='quiet-voice'><span class='bold'>What I did: </span>Communications, Brand Strategy</p><p class='quiet-voice'>Completed</p></div>"}
 	],
-	"processIntro": "<p>The challenge was taking the existing idenity and translating it to different mediums without losing the character of the original brand.</p>",
-	"gallery": [
+	"caseBlocks" : [
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755888972/cc-brand-notes_ahsbzu.png",
-			"caption": "<h4 class='bold'>Brand Refinement</h4><p class='quiet-voice'>I started by clarifying their brand assets by documenting colors, typography, and tone of voice, so the team could use them consistently across platforms.</p>",
-			"class": "square"
+			"textBlock": "<case-text-block><h3 class='attention-voice'>The Problem</h3><p>Compañeras Campesinas, an organization aimed at supporting rural Latina women, had an established logo and a few colors they’d “used before”, but not a cohesive visual system. As a result, each flyer and social media post looked different, and they felt limited by scattered brand assets.</p></case-text-block>",
+			"imageBlock": [
+				
+			],
+			"videos": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1755890458/cc-teaser_st54uh.mp4",
+					"class": "landscape",
+					"poster": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755890536/CleanShot_2025-08-22_at_15.22.00_2x_xdd4lg.png"
+				}
+			]
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756501441/cc-logos_zyjuqn.png",
-			"caption": "<h4 class='bold'>Logo Update</h4><p class='quiet-voice'>Their existing logo was recreated to ensure high quality output across print, digital, and social applications.</p>",
-			"class": "square"
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Logo</h3><p>Their existing logo was the pride and joy of the organization, so rather than reinvent the wheel I worked with them to better understand how and where to use it, and expanded it to include a smaller logomark, allowing for more flexibility in different contexts.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758297382/cc-logo-1_uljnar.png",
+					"class": ["square", "first"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758296861/cc-logo-2_hfodaf.png",
+					"class": ["square", "second"]
+				}
+			],
+			"videos": [
+
+			]
 		},
 		{
-			"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755887644/cc-sketch-1_rsjkni.png",
-			"caption": "<h4 class='bold'>Website Planning</h4><p class='quiet-voice'>Initial sketches mapped out the clear storytelling: introducting who they are followed by their work and upcoming events.</p>",
-			"class": "portrait"
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Typography Selection</h3><p>After research and testing different typefaces, I ultimately recommended Rubik as a versatile, approachable choice that paired well with the logo.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758301093/cc-typography_inohdl.png",
+					"class": ["landscape", "first"]
+				}
+			],
+			"videos": [
+
+			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Color System</h3><p>I took the scattered colors and consolidated them into a simple, core palette with an expanded accent palette, giving the organization a consistent foundation.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758300951/cc-palette_r8jkll.png",
+					"class": ["first"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758300951/cc-palette-expanded_ntqvku.png",
+					"class": ["second"]
+				}
+			],
+			"videos": [
+
+			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Social Media Templates</h3><p>To help them create a more consistent look on social media I designed a set of straightforward social media templates focused on sharing events and highlighting women in action.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758393705/cc-ig-posts_sa0uns.png",
+					"class": ["landscape", "first"]
+				}
+			],
+			"videos": [
+
+			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Print Applications</h3><p>To round everything out, I created more straightforward templates for flyer / posters and based off of discussions with the organization showcased them in an environment that they would ideally like to see them in.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758398199/compas-posters_ah3po3.jpg",
+					"class": ["landscape", "first"]
+				}
+			],
+			"videos": [
+
+			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Conclusion & Result</h3><p>Although the organization later dissolved after unforeseen circumstances, the outcome they were left with was a brand toolkit that transformed their scattered assets into a usable system. The main focus throughout was to ensure the work resulted in a straightforward systems that allowed staff and volunteers to update materials without outside help. This case highlights meeting organizations where they are to keep them impactful, consistent, and focused on their community.</p></case-text-block>",
+			"imageBlock": [
+
+			],
+			"videos": [
+
+			]
 		}
-	],
-	"reflection": "<p>This project highlighted how even small adjustments, like cleaning up a logo and documenting brand basics can make a big difference when brought into a website. What worked well was creating a site structure that put their mission front and center.</p><p>Next steps would be building social media templates for other platforms to help them extend their presence beyond instagram.</p>",
-	"youtube": "",
-	"figma": [
-		
-	],
-	"liveLinks": [
-		
-	],
-	"githubLinks": [
-		
+
 	]
 
 }

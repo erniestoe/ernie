@@ -7,7 +7,6 @@
 			<?= $project['headerText'];?>
 
 			<case-text-block>
-				<h3 class="attention-voice">Overview</h3>
 
 				<?php foreach ($project['caseStudy'] as $content): ?>
             	<?= $content['content'] ?>
@@ -46,7 +45,7 @@
 								      style="display:block;width:100%;height:auto;"
 								      src="<?= $video['src']?>"
 								      class="<?= $video['class']?>"
-								      poster=""
+								      poster="<?= $video['poster']?>"
 								    ></video>
 							<?php endforeach ?>
 						<?php endif ?>

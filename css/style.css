@@ -50,7 +50,7 @@ p,
 .calm-voice{
 		text-wrap: balance;
 		max-width: 50ch;
-		line-height: 1.4em;
+		/*line-height: 1.4em;*/
 }
 
 figcaption {
@@ -291,7 +291,7 @@ footer {
 			@media (width >= 1024px) {
 				svg {
 					transform: translate(1000px, 0);
-					transition: transform .3s ease-in-out;
+					transition: transform .15s ease-in-out;
 				}
 			}
 		}

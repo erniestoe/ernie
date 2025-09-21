@@ -3,42 +3,34 @@
 	"projectName": "Hunger Action Coalition",
 	"slug": "hac",
 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757534745/hac_m3ruen.jpg",
-	"headerText": "<h2 class='loud-voice'>One Identity, Two Voices</h2>",
+	"headerText": "<h2 class='loud-voice'>Branding for Clarity</h2>",
 	"altHeaderImage": "",
 	"nextProject": {
-		"slug": "openresource",
+		"slug": "compas",
 		"img": ""
 	},
 	"caseStudy": [
-		{"content": "<div class='deets'><p><span class='bold'>Year:</span> 2025</p><p><span class='bold'>What I did: </span>Branding, Web Design<p><p class='strong-voice'>Completed</p></div><p>In the nonprofit world there seems to be this big disconnect with trying to separate “serious” and trustworthy from energetic and relevant. So I took on Hunger Action Coaltion as a conceptual project to show that the two can live in harmony (in hindsight “THE” Hunger Action Coalition might've been a better name...)</p>"}
+		{"content": "<div class='deets'><p class='quiet-voice'><span class='bold'>Year:</span> 2025</p><p class='quiet-voice'><span class='bold'>What I did: </span>Branding, Visual Identity</p><p class='quiet-voice'>Completed</p></div>"}
 	],
 	"caseBlocks": [
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Gotta Start Somewhere</h3><p>Normally, I'd do a whole lotta market / user / inner research, but in this case I gave myself 3 days to build out this (conceptual) organization from the ground up. So I dug deep into my past experiences to build a initial core pallette and a logo suite that met the organizations goals. Followed by a (probably way too early) sketch of a potential landing page.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Overview</h3><p>I’ve seen firsthand how often nonprofits struggle with scattered visuals; logos used inconsistently, colors chosen on a whim, and a new font for every project. This inconsistency undermines credibility with donors and causes unnecessary confusion for organization members. In this project, I set out to design a simple, unified brand system for a conceptual nonprofit. The challenge being making a brand clear enough for everyday use while staying flexible enough to grow with the organization.</p></case-text-block>",
 			"imageBlock": [
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398044/logos_ddjwoc.png",
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758239445/hac-logo-2_bk9bzo.png",
 					"class": ["square", "first"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756398301/hac-sketch2_pzsa56.png",
-					"class": ["second"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>From Neutral to Bold</h3><p>So I can come up with some logos and pick out some colors… cool. The real question is how and where do they fit in? Well I knew that organizations love social media, but a lot suffer from the classic case of a non-cohesive voice on their platform of choice. My goal was to use this idea of “two voices” to create a collection of instagram templates that could be repurposed indefinitely. </p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756492821/hac-ig-posts-half-1_wtluuj.png",
-					"class": [ "first"]
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758239445/hac-logo-1_f1zkoh.png",
+					"class": ["second", "square"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756492823/hac-ig-posts-half2_p4qhlc.png",
-					"class": ["second"]
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758239626/hac-typography_erg84v.png",
+					"class": ["third", "landscape"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758239626/hac-palette_ntgbs4.png",
+					"class": ["fourth", "landscape"]
 				}
 			],
 			"videos": [
@@ -46,7 +38,19 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Brand in Action</h3><p>HAC needed the ability to show up everywhere. I got the social media covered, but I needed to show how they could show up from a poster on the street to letterheads for sending to the suits on capitol hill.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Social Media</h3><p>Social media is often where inconsistency shows up the most, with posts that don’t look related, graphics that are hard to read, or colors that are not aligned with the brand. I designed a set of templates for Instagram that lock in brand colors, fonts and logo usage. The goal being to ensure every post reinforces the brand identity regardless of who on staff is creating content.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758241433/hac-social-posts_ffqbxp.png",
+					"class": [ "first", "landscape"]
+				}
+			],
+			"videos": [
+				
+			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Brand in Action</h3><p>Being an organization with real impact means you cant live in the metaverse only, you have to show up in the real world, from posters on the street to letterheads for capitol hill. Each application should demonstrate how the palette, typography, and logo system work together to create a professional, trustworthy presence.</p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756400687/hac-poster-showcase_xblnth.jpg",
@@ -57,11 +61,11 @@
 					"class": ["second", "portrait"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389346/hac-cards_tixp7i.jpg",
-					"class": ["third", "portrait"]
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758240596/hac-poster_hf4kmh.jpg",
+					"class": ["third", "landscape"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756319572/hac-letterheads_ufa2ze.png",
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758488003/hac-stationary_qogien.jpg",
 					"class": ["fourth", "landscape"]
 				}
 			],
@@ -70,30 +74,7 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Website</h3><p>With the brand fully showcased it made sense to create landing pages for the main site and for the volunteering page as the final deliverables of this sprint. The goal was to put all of the branding work together and create a site that adopts the duality of Hunger Action Coaliton.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756321210/hac-mobile-screens_akjbuy.png",
-					"class": [ "first"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756321563/hac-mobile-screens-volunteer_djgqc4.png",
-					"class": [ "second"]
-				}
-			],
-			"videos": [
-				{
-					"src":"https://res.cloudinary.com/dhgciqwbz/video/upload/v1757879611/main_zlocww.mp4",
-					"class": "openresource-video"
-				},
-				{
-					"src":"https://res.cloudinary.com/dhgciqwbz/video/upload/v1757879610/volunteer_nb11uu.mov",
-					"class": "openresource-video"
-				}
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>I’ll admit, this one was a little messy. I moved through research and design decisions quickly, but even at that pace, I created a two voiced system that I’d feel confident showing a client as a starting point for the next phase (refinement). The key takeaway here is that a nonprofit doesn't have to be so one note when it comes to branding.</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Conclusion</h3><p>I took this project on to showcase how a lightweight brand system can make nonprofit communications more consistent and credible. Through a clear identity and practical templates, staff can spend less time “winging it” and more time focusing on the mission and delivering impactful work. The result here is clarity, confidence, and a stronger donor and community presence.</p></case-text-block>",
 			"imageBlock": [
 				
 			],

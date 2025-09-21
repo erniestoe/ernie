@@ -24,7 +24,8 @@
 				
 			<!-- </div> -->
 			<h1 class="loud-voice"><?= $pageData["subheadline"]?></h1>
-			<?= $pageData["tagline"]?>
+			<p>I'm a graphic designer helping nonprofits make communications clear, consistent, and easy to manage.</p>
+			<!-- <?= $pageData["tagline"]?> -->
 			
 
 		</intro>

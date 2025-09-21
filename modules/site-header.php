@@ -1,5 +1,5 @@
 <nav class="main-nav">
-	<a class="attention-voice logo" href="<?= ENV === 'production'? '/' : '?page=home'?>">Ernie.</a>
+	<a class="attention-voice logo" href="<?= ENV === 'production'? '/' : '?page=home'?>">Ernie</a>
 
 	<ul class="visually-hidden">
 		<li data-tilt data-tilt-scale="1.1">

@@ -35,8 +35,8 @@
 		.deets {
 			grid-column: span 2;
 			padding-block: 8px;
-			/*display: grid;
-			gap: 8px;*/
+			display: grid;
+			gap: 8px;
 
 			@media (width >= 1000px) {
 				grid-column: 1;
@@ -89,7 +89,8 @@
 
 
 			.landscape{
-				grid-column: 2/5;
+				grid-column: span 4;
+				
 				/*justify-self: end;*/
 			}
 
