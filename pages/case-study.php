@@ -36,6 +36,7 @@
 						<?php if ($caseBlock['videos']): ?>
 							<?php foreach ($caseBlock['videos'] as $video): ?>
 								<video
+										autoplay
 										loading="lazy"
 										controls			
 								      muted
@@ -45,7 +46,6 @@
 								      style="display:block;width:100%;height:auto;"
 								      src="<?= $video['src']?>"
 								      class="<?= $video['class']?>"
-								      poster="<?= $video['poster']?>"
 								    ></video>
 							<?php endforeach ?>
 						<?php endif ?>

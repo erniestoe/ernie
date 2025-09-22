@@ -21,8 +21,7 @@
 			"videos": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1755890458/cc-teaser_st54uh.mp4",
-					"class": "landscape",
-					"poster": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1755890536/CleanShot_2025-08-22_at_15.22.00_2x_xdd4lg.png"
+					"class": "landscape"
 				}
 			]
 		},

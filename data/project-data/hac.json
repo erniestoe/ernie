@@ -74,6 +74,22 @@
 			]
 		},
 		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Web Design</h3><p>To round everything out I used the brand system to create landing pages for both a home page and a more volunteer centric page.</p></case-text-block>",
+			"imageBlock": [
+				
+			],
+			"videos": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1758575917/hac-site-main_pj4wv5.mp4",
+					"class": "landscape"
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1758575916/hac-site-volunteer_amxklh.mp4",
+					"class": "landscape"
+				}
+			]
+		},
+		{
 			"textBlock": "<case-text-block><h3 class='attention-voice'>Conclusion</h3><p>I took this project on to showcase how a lightweight brand system can make nonprofit communications more consistent and credible. Through a clear identity and practical templates, staff can spend less time “winging it” and more time focusing on the mission and delivering impactful work. The result here is clarity, confidence, and a stronger donor and community presence.</p></case-text-block>",
 			"imageBlock": [
 				
