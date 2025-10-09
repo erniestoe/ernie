@@ -3,7 +3,7 @@
 
 	<div class="text">
 		<p>
-			Hello! I’m Ernie (Ernesto Rivera-Saavedra), a graphic designer who has supported nonprofit organizations with project and program management for the past 7 years. Translation: I know firsthand how clarity and storytelling can drive real impact. Today, I use that experience to help organizations drive impact through communications.
+			Hello! I’m Ernie (Ernesto Rivera-Saavedra), a graphic designer who has supported nonprofit organizations with project and program management for the past 7 years. Translation: I know firsthand how clarity and storytelling can drive real impact. Today, I'm using that experience to help drive impact through communications.
 		</p>
 
 		<p>When I'm not tinkering with this site, I’m probably out on a hike with my wife and our <span id="dog" class="underlined">Puerto Rican rescue dog</span>.

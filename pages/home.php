@@ -23,8 +23,8 @@
 
 				
 			<!-- </div> -->
-			<h1 class="loud-voice"><?= $pageData["subheadline"]?></h1>
-			<p>I'm a graphic designer helping nonprofits make communications clear, consistent, and easy to manage.</p>
+			<!-- <h1 class="loud-voice"><?= $pageData["subheadline"]?></h1> -->
+			<p>Graphic designer focused on building easy to understand systems that help drive missions forward, while keeping your humanity intact.</p>
 			<!-- <?= $pageData["tagline"]?> -->
 			
 
