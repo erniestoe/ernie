@@ -47,4 +47,28 @@
 		</div>
 	</work-card>
 
+	<work-card>
+		<a href="<?= ENV === 'production'? '/case-study/cocoloco' : '?page=case-study&slug=cocoloco'?>">
+				<video				
+				      muted
+				      playsinline
+				      loop
+				      preload="metadata"
+				      style="display:block;width:100%;height:auto;"
+				      src="https://res.cloudinary.com/dhgciqwbz/video/upload/v1757556867/openresource-2_wagox4.mp4"
+				      class="video"
+				      poster="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757536722/red_scxotr.png"
+				    ></video>
+		</a>
+
+		<div class="text">
+			<a href="<?= ENV === 'production'? '/case-study/cocoloco' : '?page=case-study&slug=cocoloco'?>">
+				<h4 class="quiet-voice bold">Contemporary Heritage</h4>
+				<p class="quiet-voice">El Coco Loco</p>
+			</a>
+
+			<button class="video-control button quiet-voice opaque">PLAY</button>
+		</div>
+	</work-card>
+
 </work-cards>

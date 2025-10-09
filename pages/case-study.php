@@ -41,7 +41,6 @@
 										controls			
 								      muted
 								      playsinline
-								      loop
 								      preload="metadata"
 								      style="display:block;width:100%;height:auto;"
 								      src="<?= $video['src']?>"
