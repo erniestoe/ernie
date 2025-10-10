@@ -38,6 +38,18 @@
 			]
 		},
 		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Typography</h3><p>Pretty simple setup, a bold display font for title and logo usage, paired with a simple geometric sans and a script display to be used as an accent piece.</p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760057648/typography_e40my8.png",
+					"class": ["first", "landscape"]
+				}
+			],
+			"videos": [
+				
+			]
+		},
+		{
 			"textBlock": "<case-text-block><h3 class='attention-voice'>Logo</h3><p>I’m a big fan of classic badges when it comes to restaurants (shout out Matty Matheson), but I do recognize they tow a fine line between modern and tacky. So, just to be on the safe side I paired the bold badge with slightly more toned down wordmarks to keep the badge from becoming overused. To me the badge spoke to the American aspect of being Puerto Rican, however different the cultures may be they somehow find a way to be deeply intertwined and this is no different.</p></case-text-block>",
 			"imageBlock": [
 				{
@@ -61,7 +73,7 @@
 			"textBlock": "<case-text-block><h3 class='attention-voice'>Menus</h3><p>Being the first time creating a menu, this proved to be quite the challenge. Hats off to all my menu designers out there, truly. I kept things simple from both an offering standpoint and layout one. A simple two column layout paired with a small accent piece of the Coco Loco himself is where I went to balance readability and clarity, with brand awareness.</p></case-text-block>",
 			"imageBlock": [
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037921/menus_brwex0.jpg",
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760058051/menus_r2sewq.jpg",
 					"class": ["first", "landscape"]
 				}
 			],
