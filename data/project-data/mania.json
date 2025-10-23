@@ -1,0 +1,52 @@
+{
+	"id": 5,
+	"projectName": "Manìa",
+	"slug": "mania",
+	"headerImage": "",
+	"headerText": "<h2 class='loud-voice'>Soundtrack To My Life</h2>",
+	"altHeaderImage": "",
+	"nextProject": {
+		"slug": "hac",
+		"img": ""
+	},
+	"caseStudy": [
+		{"content": "<div class='deets'><p class='quiet-voice'><span class='bold'>Year:</span> 2025</p><p class='quiet-voice'><span class='bold'>What I did: </span>Graphic Design, Art Direction</p><p class='quiet-voice'>Ongoing</p></div>"}
+	],
+	"caseBlocks" : [
+		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Concept</h3><p>Inspired by Jesse Nybergs A-Z hardcore punk albums, I set out to do A-Z albums that have some meaningful connection to my life. Each album correlates to a memory, and each letter is split between one Spanish and one English to encapsulate the growing up in America in an immigrant family. The name Mania is a nod to Fania records (the Motown of Salsa).</p></case-text-block>",
+			"imageBlock": [
+				
+			],
+			"videos": [
+				
+			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='attention-voice'>A</h3><p></p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174612/andres-record-scaled_lz1aif.jpg",
+					"class": ["first"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174612/jimenez-record-mockup-scaled_txkze3.jpg",
+					"class": ["second"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174593/akon-record-scaled_yzmn46.jpg",
+					"class": ["third"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174593/akon-mockup-scaled_o0adpy.jpg",
+					"class": ["fourth"]
+				}
+			],
+			"videos": [
+				
+			]
+		}
+
+	]
+
+}

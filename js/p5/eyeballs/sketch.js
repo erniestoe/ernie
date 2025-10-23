@@ -19,7 +19,7 @@ const eyeballsSketch = (p) => {
   };
 
   p.draw = () => {
-    p.background('#f1f1f1');
+    p.background('#f5f5f5');
 
     p.fill(black);
     p.push();

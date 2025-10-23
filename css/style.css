@@ -45,7 +45,6 @@ html {
 	opacity: 60%;
 }
 
-
 p,
 .calm-voice{
 		text-wrap: balance;
@@ -84,8 +83,8 @@ body {
 	font-family: "Overused Grotesk";
 	overflow-x: hidden;
 	display: flex;
-  	min-height: 100vh;
-  	flex-direction: column;
+  min-height: 100vh;
+  flex-direction: column;
 
 }
 
@@ -93,6 +92,20 @@ body {
 	text-decoration: underline;
 	text-underline-offset: 10px;
 }*/
+
+.logo {
+	opacity:60%;
+
+	.highlight{ 
+		opacity: 100%;
+	 }
+}
+
+@media (width >= 1024px) {
+	.logo:hover {
+		opacity: 100%;
+	}
+}
 
 .highlight {
 	display: flex;
@@ -105,7 +118,7 @@ body {
 .highlight .menu-circle {
 		width: 10px;
 		height: 10px;
-		background-color: var(--main-red);
+		background-color: var(--main-black);
 		border-radius: 50px;
 		transform: translate(0, 1px);
 		
@@ -195,6 +208,7 @@ nav {
 	background-color: var(--main-white);
 	z-index: 99999999999999999;
 	border-bottom: 2px solid var(--main-black);
+	
 	inner-column {
 		padding-block: 16px;
 	}
@@ -250,6 +264,10 @@ main {
 }
 
 footer {
+	inner-column {
+		height: 100%;
+		widhth: 100%;
+	}
 	grid-row: 3;
 	grid-column: span 4;
 	/*align-self: end;*/
@@ -264,6 +282,7 @@ footer {
 	}
 
 	nav {
+			height: 100%;
 			display: flex;
 			a:not(next-project a){
 				opacity: 60%;
@@ -281,12 +300,20 @@ footer {
 					opacity: 100%;
 				}
 			}
+
+			a {
+				align-self: end;
+			}
 		}
 
 		next-project {
 			display: flex;
 			align-items: center;
 			gap: 8px;
+
+			svg {
+				transform: translate(0, 4px);
+			}
 
 			@media (width >= 1024px) {
 				svg {
@@ -299,7 +326,7 @@ footer {
 		@media (width >= 1024px) {
 			next-project:hover {
 				svg {
-					transform: translate(0, 0);
+					transform: translate(0, 3px);
 				}
 			}
 		}
@@ -312,8 +339,8 @@ footer {
 		height: 25px;
 		background-color: var(--main-white);
 		border-radius: 100%;
-		top: -10px;
-		left: -10px;
+		top: 0;
+		left: 0;
 		pointer-events: none;
 		z-index: 99999999999999999999999999999999;
 		mix-blend-mode: exclusion;

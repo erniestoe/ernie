@@ -24,14 +24,12 @@
 				
 			<!-- </div> -->
 			<!-- <h1 class="loud-voice"><?= $pageData["subheadline"]?></h1> -->
-			<p>Graphic designer focused on building easy to understand systems that help drive missions forward, while keeping your humanity intact.</p>
+			<h1 class="loud-voice">Graphic designer & Communications aficionado based in Winston-Salem.</h1>
 			<!-- <?= $pageData["tagline"]?> -->
 			
 
 		</intro>
 
 		<?php include ('modules/work-cards-home.php'); ?>
-
-		<?php include ('modules/home-about.php'); ?>
 	</inner-column>
 </section>

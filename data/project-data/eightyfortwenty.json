@@ -1,0 +1,20 @@
+{
+	"id": 6,
+	"projectName": "80for20",
+	"slug": "80for20",
+	"headerImage": "",
+	"headerText": "<h2 class='loud-voice'>Small actions. Big impact.</h2>",
+	"altHeaderImage": "",
+	"nextProject": {
+		"slug": "mania",
+		"img": ""
+	},
+	"caseStudy": [
+		{"content": "<div class='deets'><p class='quiet-voice'><span class='bold'>Year:</span> 2025</p><p class='quiet-voice'><span class='bold'>What I did: </span>Strategy, Art Direction, Social Media Concepting</p><p class='quiet-voice'>Completed</p></div>"}
+	],
+	"caseBlocks" : [
+		
+
+	]
+
+}

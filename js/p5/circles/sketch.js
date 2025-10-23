@@ -11,7 +11,7 @@ const circlesSketch = (p) => {
   };
 
   p.draw = () => {
-    p.background('#f1f1f1');
+    p.background('#f5f5f5');
     p.fill(0);
     p.noStroke();
     p.translate(p.width / 200, p.height / 200);

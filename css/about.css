@@ -1,0 +1,59 @@
+@import "style.css";
+
+.about {
+	inner-column {
+		display: grid;
+		manifesto {
+			display: grid;
+			gap: 24px;
+
+			text {
+				display: grid;
+				gap: 16px;
+			}
+		}
+
+		manifesto + cta {
+			margin-top: 68px;
+		}
+
+		cta {
+			display: grid;
+			gap: 24px;
+
+			p a {
+				display: inline-block;
+				text-decoration: underline;
+				text-underline-offset: 4px;
+			}
+		}
+
+		me-card {
+			display: grid;
+			margin-top: 48px;
+			gap: 8px;
+		}
+
+		@media(width >= 1024px) {
+			grid-template-columns: 1fr 1fr;
+			gap: 48px;
+
+			manifesto,
+			cta {
+				grid-column: 1;
+			}
+
+			manifesto + cta {
+				margin-top: 24px;
+			} 
+
+			me-card {
+				grid-column: 2;
+				grid-row: 1;
+				align-self: start;
+				margin-top: 16px;
+				/*border: 2px solid red;*/
+			}
+		}
+	}
+}

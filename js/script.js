@@ -245,9 +245,14 @@ window.onload = () => {
 	    const circleElement = document.querySelector('.circle');
 	    const mouse = {x: 0, y: 0}, circle = {x:0, y: 0};
 
+	    const startX = window.innerWidth / 2;
+	    const startY = window.innerHeight / 2;
+	    mouse.x = circle.x = startX;
+	    mouse.y = circle.y = startY;
+
 	    window.addEventListener('mousemove', e => {
-	    	mouse.x = e.x;
-	    	mouse.y = e.y;
+	    	mouse.x = e.clientX;
+	    	mouse.y = e.clientY;
 	    });
 
 	    const speed = 0.15;
@@ -256,9 +261,12 @@ window.onload = () => {
 	    	circle.x += (mouse.x - circle.x) * speed;
 	    	circle.y += (mouse.y - circle.y) * speed;
 
-	    	circleElement.style.transform = `translate(${circle.x}px, ${circle.y}px`;
+	    	const offsetX = circleElement.offsetWidth  / 2;
+	    	const offsetY = circleElement.offsetHeight / 2;
 
-	    	window.requestAnimationFrame(tick);
+	    	circleElement.style.transform = `translate3d(${circle.x - offsetX}px, ${circle.y - offsetY}px, 0)`;
+
+	    	requestAnimationFrame(tick);
 	    }
 
 	    tick();

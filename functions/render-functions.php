@@ -15,6 +15,7 @@ function renderCSS($page) {
     	"exercise" => "exercise.css",
     	"resume" => "resume.css",
     	"goals" => "goals.css",
+    	"about" => "about.css",
     	"404" => "404.css"
 	];
 

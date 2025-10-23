@@ -71,12 +71,12 @@ figcaption {
 	max-width: 75ch;
 }
 
-
 picture,
 video {
 	display: block;
 	overflow: hidden;
 	object-fit: contain;
+	border-radius: 8px;
 }
 
 .sketch {

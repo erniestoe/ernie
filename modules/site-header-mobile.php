@@ -6,7 +6,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a class="loud-voice" href="<?= ENV === 'production'? '/' : '?page=home'?>">Home</a>
+					<a class="loud-voice" href="<?= ENV === 'production'? '/about' : '?page=about'?>">About</a>
 				</li>
 				<!-- <li>
 					<a class="loud-voice" href="<?= ENV === 'production'? '/case-study-index' : '?page=case-study-index'?>">Work</a>

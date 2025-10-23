@@ -52,11 +52,11 @@ p,
 }
 
 .loud-voice {
-	font-size: clamp(2.5rem, 5vw, 4.2rem);
+	font-size: clamp(2.5rem, 5vw, 4rem);
 	font-variation-settings: "wght" 600, "ital" 0;
 	letter-spacing: -.021em;
 	line-height: 1em;
-	max-width: 25ch;
+	max-width: 50ch;
 	text-wrap: balance;
 }
 
@@ -74,9 +74,7 @@ p,
 }*/
 
 .logo {
-	/*font-size: clamp(10vw, 20vw, 50vh);*/
-	/*letter-spacing: .01em;*/
-	/*text-transform: uppercase;*/
+	font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 em {
