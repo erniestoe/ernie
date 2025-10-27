@@ -14,7 +14,7 @@
 	],
 	"caseBlocks" : [
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Concept</h3><p>Inspired by Jesse Nybergs A-Z hardcore punk albums, I set out to do A-Z albums that have some meaningful connection to my life. Each album correlates to a memory, and each letter is split between one Spanish and one English to encapsulate the growing up in America in an immigrant family. The name Mania is a nod to Fania records (the Motown of Salsa).</p></case-text-block>",
+			"textBlock": "<case-text-block><p>Inspired by Jesse Nybergs A-Z hardcore punk albums, I set out to do A-Z albums that have some meaningful connection to my life. Each album correlates to a memory, and each letter is split between one Spanish and one English to encapsulate the growing up in America in an immigrant family. The name Mania is a nod to Fania records (the Motown of Salsa).</p></case-text-block>",
 			"imageBlock": [
 				
 			],
