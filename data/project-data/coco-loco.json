@@ -6,7 +6,7 @@
 	"headerText": "<h2 class='loud-voice'>Contemporary Heritage</h2>",
 	"altHeaderImage": "",
 	"nextProject": {
-		"slug": "hac",
+		"slug": "mania",
 		"img": ""
 	},
 	"caseStudy": [
@@ -16,105 +16,48 @@
 		{
 			"textBlock": "<case-text-block><h3 class='attention-voice'>The Big Idea</h3><p>Bad Bunny meets Matty Matheson. That was the guiding light when it came to this project; the goal being to create an identity rooted in Puerto Rican heritage, without being cheesy.</p></case-text-block>",
 			"imageBlock": [
-				
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760039542/logo-main-2x_rxt3yo.png",
+					"class": ["coco-second", "landscape"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760039234/wordmark_oxtsfq.png",
+					"class": ["coco-third", "square"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760039234/wordmark-alt_y7komj.png",
+					"class": ["coco-fourth", "square"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760058051/menus_r2sewq.jpg",
+					"class": ["coco-fifth", "landscape"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760113002/coco-loco-social-media-posts-all_v7cdtj.jpg",
+					"class": ["coco-sixth", "landscape"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037921/takeout-white-bg_kk39kr.jpg",
+					"class": ["coco-seventh", "landscape"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037920/coco-loco-shirt_bv4hbx.jpg",
+					"class": ["coco-eighth"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037920/menu-specials_xhnyl1.jpg",
+					"class": ["coco-ninth"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037921/website_e1svgt.jpg",
+					"class": ["coco-tenth", "landscape"]
+				}
 			],
 			"videos": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1760037921/coco-loco-intro_e9fk5g.mp4",
-					"class": "landscape"
+					"class": ["coco-first", "landscape"]
 				}
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Colors</h3><p>To me being latino is not all about bold colors and vibrant scenery, but it is a big part when you consider the general public and local audiences. For this project I wanted a palette that spoke to the colorful heritage of Puerto Rico while not being over reliant on it. In this case color is meant to enhance and uplift not overpower.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760049640/palette_bbqrem.jpg",
-					"class": ["first", "landscape"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Typography</h3><p>Pretty simple setup, a bold display font for title and logo usage, paired with a simple geometric sans and a script display to be used as an accent piece.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760057648/typography_e40my8.png",
-					"class": ["first", "landscape"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Logo</h3><p>I’m a big fan of classic badges when it comes to restaurants (shout out Matty Matheson), but I do recognize they tow a fine line between modern and tacky. So, just to be on the safe side I paired the bold badge with slightly more toned down wordmarks to keep the badge from becoming overused. To me the badge spoke to the American aspect of being Puerto Rican, however different the cultures may be they somehow find a way to be deeply intertwined and this is no different.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760039542/logo-main-2x_rxt3yo.png",
-					"class": ["first", "landscape"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760039234/wordmark_oxtsfq.png",
-					"class": ["second", "square"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760039234/wordmark-alt_y7komj.png",
-					"class": ["third", "square"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Menus</h3><p>Being the first time creating a menu, this proved to be quite the challenge. Hats off to all my menu designers out there, truly. I kept things simple from both an offering standpoint and layout one. A simple two column layout paired with a small accent piece of the Coco Loco himself is where I went to balance readability and clarity, with brand awareness.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760058051/menus_r2sewq.jpg",
-					"class": ["first", "landscape"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Social Media</h3><p>Things wouldn’t be “modern” if we didn’t make some instagram templates now would they? I kept the rules pretty simple: Pictures should take up the full post, if text is overlaid it should not be without a background, characters and graphics should be relevant to the message in some way. Making little systems like these are one of those things that I can say I truly enjoy.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760113002/coco-loco-social-media-posts-all_v7cdtj.jpg",
-					"class": ["first", "landscape"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Brand in Action</h3><p>To round everything out I showcased the brand in a packaging setting: using the red white and blue of the flag to be the predominant colors. I also created a dead simple landing page to give the brand a home on the web that “gets the job done”.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037921/takeout-white-bg_kk39kr.jpg",
-					"class": ["first", "landscape"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037920/coco-loco-shirt_bv4hbx.jpg",
-					"class": ["second"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037920/menu-specials_xhnyl1.jpg",
-					"class": ["third"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1760037921/website_e1svgt.jpg",
-					"class": ["fourth", "landscape"]
-				}
-			],
-			"videos": [
-				
 			]
 		}
 	]

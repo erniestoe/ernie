@@ -1,7 +1,7 @@
 <section class="case-study ">
 <?php if ($project): ?>
 		
-		<header>
+		<!-- <header>
 			<inner-column>
 			<case-intro>
 			<?= $project['headerText'];?>
@@ -15,43 +15,71 @@
 		</inner-column>
 		</case-intro>
 			
-		</header>
+		</header> -->
 		<inner-column>
 		
 
-		<?php if ($project['caseBlocks']): ?>
-			<?php foreach ($project['caseBlocks'] as $caseBlock): ?>
-				<case-block>
-					<?= $caseBlock['textBlock'] ?>
+		<?php if (!empty($project['caseBlocks']) && is_array($project['caseBlocks'])): ?>
+		  <?php foreach ($project['caseBlocks'] as $index => $caseBlock): ?>
+		    <?php $isFirst = ($index === 0); ?>
+		    
+		    <case-block>
+		      <?php if ($isFirst): ?>
+		        <case-intro>
+		          <?= $project['headerText'] ?? '' ?>
 
-					<case-image-block>
-						<?php foreach ($caseBlock['imageBlock'] as $image): ?>
-							<picture class="
-							<?php foreach($image['class'] as $class):?>
-								<?=$class?>
-							<?php endforeach; ?>">
-								<img loading="lazy" src="<?=$image['src']?>">
-							</picture>
-						<?php endforeach ?>
-						<?php if ($caseBlock['videos']): ?>
-							<?php foreach ($caseBlock['videos'] as $video): ?>
-								<video
-										autoplay
-										loading="lazy"
-										controls			
-								      muted
-								      playsinline
-								      preload="metadata"
-								      style="display:block;width:100%;height:auto;"
-								      src="<?= $video['src']?>"
-								      class="<?= $video['class']?>"
-								    ></video>
-							<?php endforeach ?>
-						<?php endif ?>
-					</case-image-block>
-				</case-block>
-			<?php endforeach ?>
-		<?php endif ?>
+		          <case-text-block>
+		            <?php if (!empty($project['caseStudy']) && is_array($project['caseStudy'])): ?>
+		              <?php foreach ($project['caseStudy'] as $content): ?>
+		                <?= $content['content'] ?? '' ?>
+		              <?php endforeach; ?>
+		            <?php endif; ?>
+		          </case-text-block>
+		        </case-intro>
+		      <?php endif; ?>
+
+		      <?= $caseBlock['textBlock'] ?? '' ?>
+
+		      <case-image-block>
+		        <?php if (!empty($caseBlock['imageBlock']) && is_array($caseBlock['imageBlock'])): ?>
+		          <?php foreach ($caseBlock['imageBlock'] as $image): ?>
+		            <?php
+		              $imgClasses = !empty($image['class']) && is_array($image['class'])
+		                ? implode(' ', $image['class'])
+		                : '';
+		            ?>
+		            <picture class="<?= htmlspecialchars($imgClasses) ?>">
+		              <img loading="lazy" src="<?= htmlspecialchars($image['src'] ?? '') ?>">
+		            </picture>
+		          <?php endforeach; ?>
+		        <?php endif; ?>
+
+		        <?php if (!empty($caseBlock['videos']) && is_array($caseBlock['videos'])): ?>
+		          <?php foreach ($caseBlock['videos'] as $video): ?>
+		            <?php
+		              $vidClasses = !empty($video['class']) && is_array($video['class'])
+		                ? implode(' ', $video['class'])
+		                : '';
+		            ?>
+		            <video
+		              autoplay
+		              loading="lazy"
+		              controls
+		              muted
+		              playsinline
+		              preload="metadata"
+		              style="display:block;width:100%;height:auto;"
+		              src="<?= htmlspecialchars($video['src'] ?? '') ?>"
+		              class="<?= htmlspecialchars($vidClasses) ?>"
+		            ></video>
+		          <?php endforeach; ?>
+		        <?php endif; ?>
+		      </case-image-block>
+		    </case-block>
+
+		  <?php endforeach; ?>
+		<?php endif; ?>
+
 
 		
 <?php else: ?>

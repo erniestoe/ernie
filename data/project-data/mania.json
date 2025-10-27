@@ -23,23 +23,23 @@
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>A</h3><p></p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='loud-voice'>A</h3><p></p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174612/andres-record-scaled_lz1aif.jpg",
-					"class": ["first"]
+					"class": ["mania"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174612/jimenez-record-mockup-scaled_txkze3.jpg",
-					"class": ["second"]
+					"class": ["mania"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174593/akon-record-scaled_yzmn46.jpg",
-					"class": ["third"]
+					"class": ["mania"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761174593/akon-mockup-scaled_o0adpy.jpg",
-					"class": ["fourth"]
+					"class": ["mania"]
 				}
 			],
 			"videos": [

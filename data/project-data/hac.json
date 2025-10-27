@@ -3,7 +3,7 @@
 	"projectName": "Hunger Action Coalition",
 	"slug": "hac",
 	"headerImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757534745/hac_m3ruen.jpg",
-	"headerText": "<h2 class='loud-voice'>Branding for Clarity</h2>",
+	"headerText": "<h2 class='loud-voice'>Clear Branding</h2>",
 	"altHeaderImage": "",
 	"nextProject": {
 		"slug": "compas",
@@ -14,7 +14,7 @@
 	],
 	"caseBlocks": [
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Overview</h3><p>I’ve seen firsthand how often nonprofits struggle with scattered visuals; logos used inconsistently, colors chosen on a whim, and a new font for every project. This inconsistency undermines credibility with donors and causes unnecessary confusion for organization members. In this project, I set out to design a simple, unified brand system for a conceptual nonprofit. The challenge being making a brand clear enough for everyday use while staying flexible enough to grow with the organization.</p></case-text-block>",
+			"textBlock": "<case-text-block><p>I’ve seen firsthand how often nonprofits struggle with scattered visuals; logos used inconsistently, colors chosen on a whim, and a new font for every project. This inconsistency undermines credibility with donors and causes unnecessary confusion for organization members. In this project, I set out to design a simple, unified brand system for a conceptual nonprofit. The challenge being making a brand clear enough for everyday use while staying flexible enough to grow with the organization.</p></case-text-block>",
 			"imageBlock": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758239445/hac-logo-2_bk9bzo.png",
@@ -25,77 +25,35 @@
 					"class": ["second", "square"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758239626/hac-typography_erg84v.png",
-					"class": ["third", "landscape"]
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758241433/hac-social-posts_ffqbxp.png",
+					"class": [ "third", "landscape"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758239626/hac-palette_ntgbs4.png",
-					"class": ["fourth", "landscape"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Social Media</h3><p>Social media is often where inconsistency shows up the most, with posts that don’t look related, graphics that are hard to read, or colors that are not aligned with the brand. I designed a set of templates for Instagram that lock in brand colors, fonts and logo usage. The goal being to ensure every post reinforces the brand identity regardless of who on staff is creating content.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758241433/hac-social-posts_ffqbxp.png",
-					"class": [ "first", "landscape"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Brand in Action</h3><p>Being an organization with real impact means you cant live in the metaverse only, you have to show up in the real world, from posters on the street to letterheads for capitol hill. Each application should demonstrate how the palette, typography, and logo system work together to create a professional, trustworthy presence.</p></case-text-block>",
-			"imageBlock": [
-				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756400687/hac-poster-showcase_xblnth.jpg",
-					"class": [ "first", "landscape"]
+					"class": [ "fourth", "landscape"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756389345/hac-hoodie_kbepeq.jpg",
-					"class": ["second", "portrait"]
+					"class": ["fifth", "portrait"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758240596/hac-poster_hf4kmh.jpg",
-					"class": ["third", "landscape"]
+					"class": ["sixth", "landscape"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1758488003/hac-stationary_qogien.jpg",
-					"class": ["fourth", "landscape"]
+					"class": ["seventh", "landscape"]
 				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Web Design</h3><p>To round everything out I used the brand system to create landing pages for both a home page and a more volunteer centric page.</p></case-text-block>",
-			"imageBlock": [
-				
 			],
 			"videos": [
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1758575917/hac-site-main_pj4wv5.mp4",
-					"class": "landscape"
+					"class": ["eighth", "landscape"]
 				},
 				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/video/upload/v1758575916/hac-site-volunteer_amxklh.mp4",
-					"class": "landscape"
+					"class": ["ninth", "landscape"]
 				}
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Conclusion</h3><p>I took this project on to showcase how a lightweight brand system can make nonprofit communications more consistent and credible. Through a clear identity and practical templates, staff can spend less time “winging it” and more time focusing on the mission and delivering impactful work. The result here is clarity, confidence, and a stronger donor and community presence.</p></case-text-block>",
-			"imageBlock": [
-				
-			],
-			"videos": [
-				
 			]
 		}
 	]

@@ -11,12 +11,12 @@
 
 		<div class="text">
 			<a href="<?= ENV === 'production'? '/case-study/hac' : '?page=case-study&slug=hac'?>">
-				<h4 class="quiet-voice bold">Branding for Clarity</h4>	
-				<p class="quiet-voice">Hunger Action Coaltion</p>
+				<h4 class="quiet-voice bold">Clear Branding</h4>	
+				<!-- <p class="quiet-voice">Hunger Action Coaltion</p> -->
 			</a>
 			
 			<tags>
-				<p class="quiet-voice opaque">Branding, Campaign</p>
+				<p class="quiet-voice opaque">Branding, Campaign, Conceptual</p>
 			</tags>
 		</div>
 	</work-card>
@@ -51,11 +51,11 @@
 		<div class="text">
 			<a href="<?= ENV === 'production'? '/case-study/cocoloco' : '?page=case-study&slug=cocoloco'?>">
 				<h4 class="quiet-voice bold">Contemporary Heritage</h4>
-				<p class="quiet-voice">El Coco Loco</p>
+				<!-- <p class="quiet-voice">El Coco Loco</p> -->
 			</a>
 
 			<tags>
-				<p class="quiet-voice opaque">Branding, Campaign</p>
+				<p class="quiet-voice opaque">Branding, Campaign, Conceptual</p>
 			</tags>
 		</div>
 	</work-card>
@@ -70,7 +70,7 @@
 		<div class="text">
 			<a href="<?= ENV === 'production'? '/case-study/mania' : '?page=case-study&slug=mania'?>">
 				<h4 class="quiet-voice bold">Soundtrack To My Life</h4>
-				<p class="quiet-voice">Manìa</p>
+				<!-- <p class="quiet-voice">Manìa</p> -->
 			</a>
 
 			<tags>
