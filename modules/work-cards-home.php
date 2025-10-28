@@ -16,7 +16,7 @@
 			</a>
 			
 			<tags>
-				<p class="quiet-voice opaque">Branding, Campaign, Conceptual</p>
+				<p class="quiet-voice opaque">Branding, Campaign, Concept</p>
 			</tags>
 		</div>
 	</work-card>
@@ -55,7 +55,7 @@
 			</a>
 
 			<tags>
-				<p class="quiet-voice opaque">Branding, Campaign, Conceptual</p>
+				<p class="quiet-voice opaque">Branding, Campaign, Concept</p>
 			</tags>
 		</div>
 	</work-card>
@@ -79,24 +79,24 @@
 		</div>
 	</work-card>
 
-	<!-- <work-card>
-		<a href="<?= ENV === 'production'? '/case-study/80for20' : '?page=case-study&slug=80for20'?>">
+	<work-card>
+		<a href="<?= ENV === 'production'? '/case-study/crft' : '?page=case-study&slug=crft'?>">
 				    <picture>
-				    	<img src="https://peprojects.dev/images/bg/landscape.jpg">
+				    	<img src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1761665430/crft_cvw0b8.jpg">
 				    </picture>
 		</a>
 
 		<div class="text">
-			<a href="<?= ENV === 'production'? '/case-study/80for20' : '?page=case-study&slug=80for20'?>">
-				<h4 class="quiet-voice bold">Small actions. Big impact.</h4>
-				<p class="quiet-voice">80for20</p>
+			<a href="<?= ENV === 'production'? '/case-study/crft' : '?page=case-study&slug=crft'?>">
+				<h4 class="quiet-voice bold">Trendiness Vs Timelessness</h4>
+				<!-- <p class="quiet-voice">Crft</p> -->
 			</a>
 
 			<tags>
-				<p class="quiet-voice opaque">Campaign</p>
+				<p class="quiet-voice opaque">Branding, Strategy, Concept</p>
 			</tags>
 
 		</div>
-	</work-card> -->
+	</work-card>
 
 </work-cards>

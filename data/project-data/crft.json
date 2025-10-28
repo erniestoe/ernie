@@ -7,79 +7,56 @@
 	"altHeaderImage": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753634481/crft-header-alt_u5rtl9.png",
 	"caseBlocks": [
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Research</h3><p>I start most projects with a research phase (super unique I know!). However this brief came with a general style direction the client wanted to go with. So I dug through my archives to find vibrant energetic stuff, coupled with some more utilitarian / architectual inspiration. The goal at this stage was to get a solid grasp of what the visuals could look like, pair that with the clients goals and to see what other venues were doing.</p></case-text-block>",
+			"textBlock": "<case-text-block><p>CRFT, a new multiuse music venue, struggled to express its identity across both digital and physical spaces. Their presence felt fragmented; serious in concept but lacking a system that could flex between nightlife energy and cultural credibility. I took on the project to build a modular brand that could capture both sides: adaptable, consistent, and bold. The result was a logo system inspired by the venue’s architecture and rhythm, using shapes to represent its core pillars and, a design language that extended seamlessly from social media to posters. To complete the experience, I designed a minimalist website that functions like a live lineup poster, tying the whole ecosystem together into a confident, cohesive brand.</p></case-text-block>",
 			"imageBlock": [
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757277541/crft-moodboard_lqutj6.png",
-					"class": ["square", "first"]
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757367339/crft-reflection_ajft4z.jpg",
+					"class": ["crft-first", "landscape"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757378990/crft-notes-square_f7zf1t.jpg",
-					"class": ["second", "square"]
-				}
-			],
-			"videos": [
-
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Logo</h3><p>After getting a clear picture from the research phase I CRFTed (sorry) a logo to be as modular as their spaces are. Each form represents a core pillar of CRFT: Square (Modular event space),  Half ellipse up + Half ellipse down (music from sunup to sundown), Ellipse (record waiting to get spun).</p></case-text-block>",
-			"imageBlock": [
-				{
 					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757378098/crft-logos-landscape_nljwwc.jpg",
-					"class": ["first", "landscape"]
+					"class": ["crft-second", "landscape"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757378222/crft-social-posts-landscape_pj0zjt.jpg",
+					"class": ["crft-third"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg",
+					"class": ["crft-fourth"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/crft-wall_iekrzl.jpg",
+					"class": ["crft-fifth"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-desktop-showcase_mdc111.png",
+					"class": ["crft-sixth"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483930/crft-mobile-screens-pink_xugd6y.png",
+					"class": ["crft-seventh"]
 				}
+
 			],
 			"videos": [
 		
 			]
 		},
 		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Brand in Action</h3><p>So naturally, I took that modular logo and slapped it on everything from social media posts to full size wall posters. Why? Because CRFT needed to see exactly how modular they could get and how they could conduct a culture takeover from social media (the metaverse) to every street around town (IRL).</p></case-text-block>",
+			"textBlock": "<case-text-block><h3 class='attention-voice'>Research</h3><p>I start most projects with a research phase (super unique I know!). However this brief came with a general style direction the client wanted to go with. So I dug through my archives to find vibrant energetic stuff, coupled with some more utilitarian / architectual inspiration. The goal at this stage was to get a solid grasp of what the visuals could look like, pair that with the project goals and to see what other venues were doing.</p></case-text-block>",
 			"imageBlock": [
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757378222/crft-social-posts-landscape_pj0zjt.jpg",
-					"class": ["landscape", "first"]
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757277541/crft-moodboard_lqutj6.png",
+					"class": ["crft-research"]
 				},
 				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633880/crft-bus-stop_nmdmdw.jpg",
-					"class": ["landscape","second"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1753633882/crft-wall_iekrzl.jpg",
-					"class": ["landscape","third"]
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757378990/crft-notes-square_f7zf1t.jpg",
+					"class": ["crft-research"]
 				}
 			],
 			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Website</h3><p>Once the branding was nailed down and clearly visualized, I moved to the cherry on top: the official web experience (sometimes known as a website). For this step I focused on making the minimal aesthetic accessible, essentially creating a live line up poster on the web. All that was needed for the site was the month's lineup and some way for users to get tickets. What I ended up with delivers both while holding on to the core brand aesthetic for dear life.</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756481976/crft-desktop-showcase_mdc111.png",
-					"class": ["first"]
-				},
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1756483930/crft-mobile-screens-pink_xugd6y.png",
-					"class": ["second"]
-				}
-			],
-			"videos": [
-				
-			]
-		},
-		{
-			"textBlock": "<case-text-block><h3 class='attention-voice'>Reflection</h3><p>I had a lot of  fun with this project (again… sue me), but more importantly I created a solution to making a brand brand that takes itself seriously without having to be boring. I think the biggest strength there is the ability to tap into that “serious face” to build hype and mystique, then put on that “energetic face” to promote artists and have cohesive social media posts (something I think plenty of organizations could benefit from).</p></case-text-block>",
-			"imageBlock": [
-				{
-					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757367339/crft-reflection_ajft4z.jpg",
-					"class": ["first", "landscape", "reflection-pic"]
-				}
-			],
-			"videos": [
-				
+
 			]
 		}
 	],
@@ -88,7 +65,7 @@
 		"img": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1757028756/CleanShot_2025-09-04_at_19.32.03_2x_wl40q9.png"
 	},
 	"caseStudy": [
-		{"content": "<div class='deets'><p><span class='bold'>Year:</span> 2025</p><p><span class='bold'>What I did: </span>Branding, Web Design<p><p class='strong-voice'>Completed</p></div><p> (in the context of an upcoming music venue… because I like music… sue me).</p>"}
+		{"content": "<div class='deets'><p class='quiet-voice'><span class='bold'>Year:</span> 2025</p><p class='quiet-voice'><span class='bold'>What I did: </span>Branding, Web Design<p><p class='quiet-voice'>Completed</p></div></p>"}
 	]
 
 }
