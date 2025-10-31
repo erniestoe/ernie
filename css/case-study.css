@@ -92,6 +92,10 @@
 		}
 	}
 
+	case-block + case-block {
+		margin-top: 64px;
+	}
+
 	case-image-block {
 		gap: 16px;
 

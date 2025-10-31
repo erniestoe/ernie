@@ -45,6 +45,54 @@
 			"videos": [
 				
 			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='loud-voice'>B</h3><p></p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749697/bb-record-resized_rtlzjg.jpg",
+					"class": ["mania"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749481/bb-mockup-resized_am7ali.jpg",
+					"class": ["mania"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749709/exodus-record-resized_vhns7s.jpg",
+					"class": ["mania"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749710/exodus-mockup-resized_dfdmnq.jpg",
+					"class": ["mania"]
+				}
+			],
+			"videos": [
+				
+			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='loud-voice'>B</h3><p></p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749965/celia-record-resized_jeguxv.jpg",
+					"class": ["mania"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749965/celia-mockup-resized_mbrwtg.jpg",
+					"class": ["mania"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749966/chiddy-record-resized_ovzg7q.jpg",
+					"class": ["mania"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1761749966/chiddy-record-mockup-resized_h3ejrb.jpg",
+					"class": ["mania"]
+				}
+			],
+			"videos": [
+				
+			]
 		}
 
 	]
