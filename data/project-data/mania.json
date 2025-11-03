@@ -93,6 +93,22 @@
 			"videos": [
 				
 			]
+		},
+		{
+			"textBlock": "<case-text-block><h3 class='loud-voice'>D</h3><p></p></case-text-block>",
+			"imageBlock": [
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1762206957/don-record-scaled_rj7q6r.jpg",
+					"class": ["mania"]
+				},
+				{
+					"src": "https://res.cloudinary.com/dhgciqwbz/image/upload/v1762206958/don-mockup-scaled_aaev3o.jpg",
+					"class": ["mania"]
+				}
+			],
+			"videos": [
+				
+			]
 		}
 
 	]
