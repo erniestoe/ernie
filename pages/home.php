@@ -1,35 +1,46 @@
-<section class="home-content">
+<section class="hero">
 	<inner-column>
-		<intro class="intro">
-			<!-- <div data-tilt data-tilt-full-page-listening>
-				<svg class="morph" viewBox="0 0 200 200">
-				  <path id="shape" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-				</svg>
-			</div> -->
-			<!-- <div class="main-intro"> -->
-				<!-- <svg-container>
-				  <svg viewBox="0 0 200 200">
-				    <path id="shape1" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-				  </svg>
-				  
-				  <svg viewBox="0 0 200 200">
-				    <path id="shape2" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-				  </svg>
-				  
-				  <svg viewBox="0 0 200 200">
-				    <path id="shape3" d="M100,50 A50,50 0 1,0 100.01,50 Z"></path>
-				  </svg>
-				</svg-container> -->
+		<h1 class="display home-logo">StudioErnie</h1>
+		<picture class="shark">
+			<img src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1774980683/dark-shark-big_nmmvnx.png">
+		</picture>
+	</inner-column>
+</section>
 
+<section class="intro">
+	<inner-column>
+		<p>
+			A creative design & consulting studio Making things to find better answers For early stage founders building something real. That’s it. Keep scrolling and check out some of those things.
+		</p>
+	</inner-column>
+</section>
+
+<section class="work">
+	<inner-column>
+		<h2>Work</h2>
+
+		<work-list-collection>
+			<work-list-item>
+
+			</work-list-item>
+
+		</work-list-collection>
+		
+	</inner-column>
+	<picture class="weirdo">
+		<img src="https://res.cloudinary.com/dhgciqwbz/image/upload/v1774982495/weirdo_v4zywm.png">
+	</picture>
+</section>
+
+<section class="ecosystem">
+	<inner-column>
+		<h2>Ecosystem</h2>
+
+		<general-list-collection>
+			<general-list-item>
 				
-			<!-- </div> -->
-			<!-- <h1 class="loud-voice"><?= $pageData["subheadline"]?></h1> -->
-			<h1 class="loud-voice">Graphic designer & Communications aficionado based in Winston-Salem.</h1>
-			<!-- <?= $pageData["tagline"]?> -->
+			</general-list-item>
 			
-
-		</intro>
-
-		<?php include ('modules/work-cards-home.php'); ?>
+		</general-list-collection>
 	</inner-column>
 </section>
