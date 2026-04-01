@@ -56,6 +56,8 @@ if ($projectSlug) {
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>">
 		<link rel="icon" type="image/png" href="https://res.cloudinary.com/dhgciqwbz/image/upload/v1757379971/favicon_xakxfc.png"/>
+		<link rel="preconnect" href="https://rsms.me/">
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
 	</head>
 
