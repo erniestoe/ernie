@@ -1,4 +1,5 @@
 <?php 
+// Don't mess with this for now!
 function getCurrentPage() {
 	$page = $_GET['page'] ?? 'home';
 	$pageFilePath = 'pages/' . $page . '.php';
