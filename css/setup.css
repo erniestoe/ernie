@@ -1,22 +1,42 @@
 :root {
-	/*MAIN PALETTE*/
+	/*BRAND COLORS*/
+	--green-100: #41A46A;
+	--pink-100: #E591BE;
+	--blue-100: #2D5A78;
+	--yellow-100: #FFB650;
+	--red-100: #DC1E41;
+	--black-100: #1C1C1C;
+	--white-100: #F5F5F5;
+
 	--main-white: #F5F5F5;
 	--main-black: #181818;
 	--main-red: #FF002F;
 
-	/*ACCENT PALETTE*/
-	--yellow: #FFC800;
-	--green: #69CF79;
-	--teal: #2EB0B8;
+	/*REST OF THE COLORS*/
+	--green-75: #6EB88D;
+	--green-50: #9BCCB0;
+	--pink-75: #E9AACC;
+	--pink-50: #EDC3DA;
+	--blue-75: #5F8197;
+	--blue-50: #91A7B6;
+	--yellow-75: #FFC87C;
+	--yellow-50: #FFDBA7;
+	--red-75: #E55671;
+	--red-50: #ED8EA0;
+	--black-75: #2C2C2C;
+	--black-50: #7A7777;
+	--white-75: #E3E3E3;
+	--white-50: #C7C7C7;
 
-	--spacing-unit: 0.5rem;
-	--space-increment: 1;
-	--accent-hue: 180;
-	--accent-saturation: 0;
-	--accent-lightness: 50%;
-	--grey-saturation: 50%;
-	--text-frame-y: 0.5em;
-	--text-frame-ratio: 1.5;
+	/*SPACING*/
+	--space-xxs: 8px;
+	--spacing-xs: 16px;
+	--spacing-s: 24px;
+	--spacing-m: 32px;
+	--spacing-l: 48px;
+	--spacing-xl: 64px;
+	--spacing-xxl: 96px;
+	--spacing-xxxl: 128px;
 
 }
 
@@ -79,6 +99,10 @@ video {
 	border-radius: 8px;
 }
 
+.shark {
+	mix-blend-mode: color-burn;
+}
+
 .sketch {
 	max-width: 500px;
 	max-height: 500px;
@@ -96,58 +120,13 @@ img {
 inner-column {
 	display: block;
 	margin-inline: auto;
-	max-width: 1440px;
+	max-width: 1680px;
 	padding-block: 32px;
 	padding-inline: 16px;
 
-	@media (width > 1024px){
-		/*padding-inline: 48px;*/
-	}
 }
 
-/*section inner-column {
-	@media(width >= 1024px) {
-			padding-left: 0;
-		}
-}*/
 
-.body-invert,
-.body-garden {
-	background-color: var(--main-white);
-	color: var(--main-black);
-}
-
-.header-invert,
-.header-garden {
-	background-color: var(--main-black);
-	color: var(--main-white);
-}
-
-.header-garden {
-
-		@media (width >= 1024px){
-			grid-column: span 2;
-			grid-row: span 2;
-		}
-}
-
-.main-garden {
-
-	@media (width >= 630px) {
-		grid-column: span 8;
-	}	
-
-	@media (width >= 1024px) {
-		grid-row: auto;
-		grid-column: 3/14;
-
-		inner-column {
-			max-width: 100%;
-			padding: 0;
-			padding: 8px;
-		}
-	}
-}
 
 .logo.hidden {
 	display: none;
