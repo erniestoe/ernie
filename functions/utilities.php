@@ -6,7 +6,7 @@ function getEnvironment() {
 		return 'local';
 	} elseif (strpos($host, 'peprojects.dev') !== false) {
 		return 'staging';
-	} elseif ($host === 'ersaavedra.dev') {
+	} elseif ($host === 'studioernie.art') {
 		return 'production';
 	} else {
 		return 'unkown';
