@@ -1,178 +1,55 @@
 @import "style.css";
 
-.home-content {
-	svg-container {
-			display:flex;
-			transform: translate(-4px, 0);
-			/*flex-basis:50%;*/
+.splash + .selected-work {
+	margin-top: var(--spacing-m);
+}
 
-			@media (width > 1000px) {
-				transform: translate(-4px, 7px);
-			}
+.splash {
+	header + splash-content {
+		margin-top: var(--spacing-m);
 
-			svg {
-			     width: 50px;
-			     height: 50px;
-
-
-			   }
-			   path {
-			     fill: #141414;
-			   }
-		}
-
-		.main-intro {
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: 8px;
-			padding-bottom: 32px;
-
-			
-		}
-	
-	/*picture{
-	  filter: contrast(800%) grayscale(1);
-	}*/
-
-	.morph {
-		width: 200px;
-		height: 200px;
-		transform: translate(-40px, 0);
-
-		@media(width >= 1024px) {
-			transform: translate(-48px, -7px);
-		}
-
-		path {
-			fill: #2EB0B8;
+		@media (width >= 1024px) {
+			margin-top: 0;
 		}
 	}
+}
 
-	inner-column {
-		
+.blob-output {
+  font-family: monospace;
+  font-size: 9.5px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  white-space: pre;
+  color: var(--black);
+  text-align: center;
+  user-select: none;
+  cursor: grab;
+}
 
-		.intro {
-			display: block;
-			padding-bottom: 80px;
+.blob-output:active { cursor: grabbing; }
 
-			h1 + p {
-				margin-top: 16px;
-			}
+splash-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-s);
 
-			p.quiet-voice {
-				transform: translate(2px, 0);
-			}
-
-			@media(width >= 1024px) {
-				padding-top: 0;
-				padding-bottom: 64px;
-
-				p.quiet-voice {
-				transform: translate(4px, 0);
-			}
-			}
-		}
-
-	}
-	
-
-	work-cards {
-		display: grid;
-		gap: 24px;
-
-		work-card {
-			display: flex;
-			flex-direction: column;
-			gap: 8px;
-			/*justify-self: end;*/
-		}
-
-		.text {
-			display: flex;
-			justify-content: space-between;
-
-			tags {
-				display: flex;
-			}
-		}
-
-		@media (width >= 1000px) {
-			grid-template-columns: repeat(12, 1fr);
-			h2 {
-				grid-column: span 12;
-			}
-
-			work-card:nth-of-type(1){
-				grid-column: span 6;
-			}
-
-			work-card:nth-of-type(2){
-				grid-column: span 6;
-			}
-
-			work-card:nth-of-type(3){
-				/*grid-column: 3/13;*/
-				grid-column: span 6;
-			}
-
-			work-card:nth-of-type(4){
-				grid-column: span 6;
-			}
-
-			work-card:nth-of-type(5){
-				grid-column: span 12;
-			}
-
-		
-		}
-
-		
+	@media (width >= 1024px) {
+		flex-direction: row;
 	}
 
+	justify-content: space-between;
 
-	work-cards + .about {
-		margin-top: 120px;
-	}
+	.blob-output {
+		align-self: center;
 
-	.about + h3 {
-		margin-top: 64px;
-	}
-
-	summary {
-		cursor: pointer;
-	}
-
-	.about {
-		display: grid;
-		gap: 8px;
-		@media (width >= 1000px) {
-			grid-template-columns: 1fr 1fr;
-			h3 {
-				grid-column: span 2;
-			}
-
-
-		}
-
-
-
-		picture {
-			max-width: 400px;
-			max-height: 400px;
-			@media (width >= 1000px) {
-				justify-self: end;
-			}
-		}
-
-
-		h4 + p {
-			margin-top: 24px;
-		}
-
-		p + p {
-			margin-top: 16px;
+		@media (width >= 1024px) {
+			align-self: end;
 		}
 	}
+}
 
+splash-text {
+	display: block;
+
+	align-self: end;
 }

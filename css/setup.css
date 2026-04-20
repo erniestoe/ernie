@@ -1,16 +1,16 @@
 :root {
 	/*BRAND COLORS*/
-	--green-100: #41A46A;
-	--pink-100: #E591BE;
-	--blue-100: #2D5A78;
-	--yellow-100: #FFB650;
-	--red-100: #DC1E41;
+	--green-100: #05e67f;
+	--pink-100: #ea8eb4;
+	--blue-100: #1a2284;
+	--yellow-100: #edc95f;
+	--red-100: #f43f5e;
 	--black-100: #1C1C1C;
 	--white-100: #F5F5F5;
 
-	--main-white: #F5F5F5;
-	--main-black: #181818;
-	--main-red: #FF002F;
+	--main-white: #f5f5f4;
+	--main-black: #0c0a09;
+	--main-red: #ec0d39;
 
 	/*REST OF THE COLORS*/
 	--green-75: #6EB88D;
@@ -29,7 +29,8 @@
 	--white-50: #C7C7C7;
 
 	/*SPACING*/
-	--space-xxs: 8px;
+	--spacing-xxxs: 4px;
+	--spacing-xxs: 8px;
 	--spacing-xs: 16px;
 	--spacing-s: 24px;
 	--spacing-m: 32px;
@@ -48,31 +49,19 @@
 	margin: 0;
 }
 
-/**::selection {
-  background: var(--main-black);
-  color: var(--main-white);
+*::selection {
+  background: var(--green-100);
+  color: var(--main-black);
 }
 *::-moz-selection {
-  background: var(--main-black);
-  color: var(--main-white);
+  background: var(--green-100);
+  color: var(--main-black);
 }
 *::-webkit-selection {
-  background: var(--main-black);
-  color: var(--main-white);
-}*/
-
-.main-grid {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-
-	@media (width >= 630px) {
-		grid-template-columns: repeat(8, 1fr);
-	}
-
-	@media (width >= 1024px) {
-		grid-template-columns: repeat(12, 1fr);
-	}
+  background: var(--green-100);
+  color: var(--main-black);
 }
+
 
 a {
 	text-decoration: none;
@@ -86,29 +75,13 @@ p a {
 	text-decoration: underline;
 }
 
-p,
-figcaption {
-	max-width: 75ch;
-}
-
 picture,
 video {
 	display: block;
 	overflow: hidden;
 	object-fit: contain;
-	border-radius: 8px;
 }
 
-.shark {
-	mix-blend-mode: color-burn;
-}
-
-.sketch {
-	max-width: 500px;
-	max-height: 500px;
-	object-fit: contain;
-	aspect-ratio: 1/1;
-}
 
 img {
 	display: block;
@@ -120,16 +93,12 @@ img {
 inner-column {
 	display: block;
 	margin-inline: auto;
-	max-width: 1680px;
-	padding-block: 32px;
-	padding-inline: 16px;
-
+	max-width: 1860px;
+	padding-inline: 24px;
 }
 
-
-
-.logo.hidden {
-	display: none;
+.site-header + main {
+	margin-top: var(--spacing-m);
 }
 
 .hidden {

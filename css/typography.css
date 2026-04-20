@@ -1,44 +1,66 @@
 /*TYPOGRAPHY*/
 :root{
 	font-family: Inter, sans-serif;
-   font-feature-settings: 'liga' 1, 'calt' 1, "ss02" 1, "ss07" 1, "ss08" 1;
+  font-feature-settings: 'liga' 1, 'calt' 1, 'cv08' 1, 'ss07' 1, 'ss08' 1, 'zero' 1, 'cv01' 1, 'cv10' 1 ;
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 .quiet-voice {
 	font-size: clamp(.875rem, 5vw, 1rem);
+	font-weight: 500;
+	letter-spacing: -4%;
+}
+
+.site-navbar .quiet-voice-mono {
+	font-size: 1rem;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+footer .quiet-voice-mono {
+	font-size: .875rem;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 p,
 .calm-voice
 {
-	font-size: clamp(1.125rem, 5vw, 1.25rem);
-	
+	font-size: 1.125rem;
+	font-weight: bold;
+	line-height: 1.3em;
+	letter-spacing: -4%;
 }
 
 .strong-voice {
- /*has this become redundant?*/
+ font-size: clamp(2rem, 5vw, 4rem);
+ font-weight: bold;
+ letter-spacing: -4%;
 }
 
 .attention-voice {
-	font-size: clamp(3rem, 5vw, 4rem);
-
+	font-size: clamp(1.5rem, 10vw, 2rem);
+	font-weight: bold;
+	letter-spacing: -4%;
 }
 
 .loud-voice {
-	font-size: clamp(6rem, 5vw, 8rem);
+	font-size: clamp(2rem, 3vw, 4rem);
+	font-weight: bold;
+	letter-spacing: -4%;
+	max-width: 30ch;
 	
 }
 
 .display {
-	font-size: clamp(8rem, 5vw, 12.5rem);
-}
-
-.display.home-logo {
-	font-size: clamp(1rem, 16vw, 20rem);
+	font-size: clamp(1rem, 18vw, 20rem);
 	/*font-size: 18rem;*/
 	font-weight: 900;
 	letter-spacing: -6.5%;

@@ -10,6 +10,181 @@ window.onload = () => {
 	const buttons = document.querySelectorAll('.button');
 	const timeElement = document.querySelector('#time');
 
+	const blobElement = document.getElementById('blob-output');
+
+	if (blobElement) {
+		const CHARSET = ' ░▒▓█';
+		const COLS = 80;
+		const ROWS = Math.floor(COLS * 0.60);
+		let warpAmt = 0.55;
+		let time = 0;
+		let rotX = 0.3, rotY = 0.4;
+		let targetRotX = 0.3, targetRotY = 0.4;
+		let dragging = false, lastMX = 0, lastMY = 0;
+		 
+		// ── Noise ─────────────────────────────────────────────────────────────────────
+		const B = 256, BM = 255;
+		const g3 = [];
+		const p = new Uint8Array(B + B + 2);
+		(function initNoise() {
+		  for (let i = 0; i < B; i++) {
+		    p[i] = i;
+		    const theta = Math.random() * Math.PI * 2;
+		    const phi   = Math.random() * Math.PI * 2;
+		    g3[i] = [Math.cos(phi)*Math.cos(theta), Math.cos(phi)*Math.sin(theta), Math.sin(phi)];
+		  }
+		  for (let i = B - 1; i > 0; i--) {
+		    const j = Math.floor(Math.random() * (i + 1));
+		    [p[i], p[j]] = [p[j], p[i]];
+		  }
+		  for (let i = 0; i < B + 2; i++) {
+		    p[B + i] = p[i];
+		    g3[B + i] = g3[i];
+		  }
+		})();
+		 
+		function at3(rx,ry,rz,q){ return rx*q[0]+ry*q[1]+rz*q[2]; }
+		function s_curve(t){ return t*t*(3-2*t); }
+		function lerp(t,a,b){ return a+t*(b-a); }
+		 
+		function noise3(x,y,z) {
+		  const bx0=(Math.floor(x))&BM, bx1=(bx0+1)&BM; const rx0=x-Math.floor(x), rx1=rx0-1;
+		  const by0=(Math.floor(y))&BM, by1=(by0+1)&BM; const ry0=y-Math.floor(y), ry1=ry0-1;
+		  const bz0=(Math.floor(z))&BM, bz1=(bz0+1)&BM; const rz0=z-Math.floor(z), rz1=rz0-1;
+		  const sx=s_curve(rx0), sy=s_curve(ry0), sz=s_curve(rz0);
+		  const i=p[bx0],j=p[bx1];
+		  const b00=p[i+by0],b10=p[j+by0],b01=p[i+by1],b11=p[j+by1];
+		  const u=lerp(sx, at3(rx0,ry0,rz0,g3[b00+bz0]), at3(rx1,ry0,rz0,g3[b10+bz0]));
+		  const v=lerp(sx, at3(rx0,ry1,rz0,g3[b01+bz0]), at3(rx1,ry1,rz0,g3[b11+bz0]));
+		  const a=lerp(sy,u,v);
+		  const u2=lerp(sx, at3(rx0,ry0,rz1,g3[b00+bz1]), at3(rx1,ry0,rz1,g3[b10+bz1]));
+		  const v2=lerp(sx, at3(rx0,ry1,rz1,g3[b01+bz1]), at3(rx1,ry1,rz1,g3[b11+bz1]));
+		  const b2=lerp(sy,u2,v2);
+		  return lerp(sz,a,b2);
+		}
+		 
+		function rotateX(pt, a) {
+		  return [pt[0], pt[1]*Math.cos(a)-pt[2]*Math.sin(a), pt[1]*Math.sin(a)+pt[2]*Math.cos(a)];
+		}
+		function rotateY(pt, a) {
+		  return [pt[0]*Math.cos(a)+pt[2]*Math.sin(a), pt[1], -pt[0]*Math.sin(a)+pt[2]*Math.cos(a)];
+		}
+		 
+		function sdf(px, py, pz, t) {
+		  const r = Math.sqrt(px*px+py*py+pz*pz);
+		  if (r < 0.001) return -1;
+		  const nx=px/r, ny=py/r, nz=pz/r;
+		  const freq = 1.8;
+		  const disp = warpAmt * (
+		    0.55 * noise3(nx*freq + t*0.25, ny*freq + t*0.18, nz*freq) +
+		    0.30 * noise3(nx*freq*2.3 - t*0.15, ny*freq*2.3 + t*0.2, nz*freq*2.3 + t*0.1) +
+		    0.15 * noise3(nx*freq*5 + t*0.05, ny*freq*5, nz*freq*5 - t*0.08)
+		  );
+		  return r - (1.0 + disp);
+		}
+		 
+		function march(ox,oy,oz, dx,dy,dz, t) {
+		  let td = 0;
+		  for (let i = 0; i < 64; i++) {
+		    const px=ox+dx*td, py=oy+dy*td, pz=oz+dz*td;
+		    const d = sdf(px,py,pz,t);
+		    if (d < 0.015) return { hit: true, px, py, pz };
+		    if (td > 4.5) break;
+		    td += Math.max(d * 0.55, 0.015);
+		  }
+		  return { hit: false };
+		}
+		 
+		function getNormal(px,py,pz,t) {
+		  const e = 0.012;
+		  const nx = sdf(px+e,py,pz,t) - sdf(px-e,py,pz,t);
+		  const ny = sdf(px,py+e,pz,t) - sdf(px,py-e,pz,t);
+		  const nz = sdf(px,py,pz+e,t) - sdf(px,py,pz-e,t);
+		  const len = Math.sqrt(nx*nx+ny*ny+nz*nz) || 1;
+		  return [nx/len, ny/len, nz/len];
+		}
+		 
+		function render() {
+		  const chars = CHARSET;
+		  const aspect = 2.1;
+		  const camZ = 2.8;
+		  const fov  = 1.1;
+		  let lines = '';
+		 
+		  rotX += (targetRotX - rotX) * 0.08;
+		  rotY += (targetRotY - rotY) * 0.08;
+		 
+		  const lx=0.6, ly=0.8, lz=0.5;
+		  const ll=Math.sqrt(lx*lx+ly*ly+lz*lz);
+		  const lxn=lx/ll, lyn=ly/ll, lzn=lz/ll;
+		 
+		  for (let row = 0; row < ROWS; row++) {
+		    let line = '';
+		    for (let col = 0; col < COLS; col++) {
+		      const ux = (col / COLS - 0.5) * fov;
+		      const uy = (row / ROWS - 0.5) * fov / aspect;
+		 
+		      let d = [ux, uy, -1.0];
+		      const dlen = Math.sqrt(d[0]*d[0]+d[1]*d[1]+d[2]*d[2]);
+		      d = [d[0]/dlen, d[1]/dlen, d[2]/dlen];
+		 
+		      d = rotateX(d, rotX);
+		      d = rotateY(d, rotY);
+		      let o = rotateX([0,0,camZ], rotX);
+		      o = rotateY(o, rotY);
+		 
+		      const res = march(o[0],o[1],o[2], d[0],d[1],d[2], time);
+		 
+		      if (res.hit) {
+		        const n = getNormal(res.px, res.py, res.pz, time);
+		        const diff = Math.max(0, n[0]*lxn + n[1]*lyn + n[2]*lzn);
+		        const amb  = 0.18;
+		        const rr   = 2*(n[0]*lxn+n[1]*lyn+n[2]*lzn);
+		        const sdot = Math.max(0, -d[0]*(n[0]*rr-lxn) - d[1]*(n[1]*rr-lyn) - d[2]*(n[2]*rr-lzn));
+		        const spec = Math.pow(sdot, 14) * 0.35;
+		        let bright = Math.min(1, amb + diff * 0.75 + spec);
+		        const ci = Math.floor(bright * (chars.length - 1));
+		        line += chars[Math.max(0, Math.min(chars.length-1, ci))];
+		      } else {
+		        line += ' ';
+		      }
+		    }
+		    lines += line + '\n';
+		  }
+		 
+		  document.getElementById('blob-output').textContent = lines;
+		}
+		 
+		// ── Auto loop — always running ────────────────────────────────────────────────
+		function loop() {
+		  time += 0.018;
+		  if (!dragging) targetRotY += 0.008;
+		  render();
+		  requestAnimationFrame(loop);
+		}
+		 
+		// ── Drag to rotate ────────────────────────────────────────────────────────────
+		const el = document.getElementById('blob-output');
+		el.addEventListener('mousedown', e => { dragging=true; lastMX=e.clientX; lastMY=e.clientY; });
+		window.addEventListener('mousemove', e => {
+		  if (!dragging) return;
+		  targetRotY += (e.clientX - lastMX) * 0.012;
+		  targetRotX += (e.clientY - lastMY) * 0.012;
+		  lastMX=e.clientX; lastMY=e.clientY;
+		});
+		window.addEventListener('mouseup', () => { dragging=false; });
+		el.addEventListener('touchstart', e => { dragging=true; lastMX=e.touches[0].clientX; lastMY=e.touches[0].clientY; });
+		window.addEventListener('touchmove', e => {
+		  if (!dragging) return;
+		  targetRotY += (e.touches[0].clientX-lastMX)*0.012;
+		  targetRotX += (e.touches[0].clientY-lastMY)*0.012;
+		  lastMX=e.touches[0].clientX; lastMY=e.touches[0].clientY;
+		});
+		window.addEventListener('touchend', () => { dragging=false; });
+		 
+		loop();
+	}
+
 	function updateTimeEST() {
 	  const now = new Date();
 
@@ -17,10 +192,10 @@ window.onload = () => {
 	  // Here we use Intl.DateTimeFormat to handle DST automatically
 	  const options = { 
 	    timeZone: 'America/New_York', 
-	    hour: '2-digit', 
-	    minute: '2-digit', 
-	    second: '2-digit', 
-	    hour12: false 
+	    hour: 'numeric', 
+	    minute: '2-digit',
+	    second: '2-digit',
+	    hour12: true 
 	  };
 
 	  const formattedTime = new Intl.DateTimeFormat('en-US', options).format(now);

@@ -50,8 +50,8 @@ if ($projectSlug) {
 	<head>
 		<title><?=$pageTitle?></title>
 		<meta charset="utf-8">
-		<meta property="og:title" content="Ernestos Personal Site">
-		<meta property="og:description" content="Portfolio of Ernesto Rivera-Saavedra">
+		<meta property="og:title" content="Studio Ernie">
+		<meta property="og:description" content="Studio Ernie">
 		<meta property="og:image" content="https://res.cloudinary.com/dhgciqwbz/image/upload/v1756741273/CleanShot_2025-09-01_at_11.40.11_zt391r.gif">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="<?= renderCSS($currentPage['name']);?>">
@@ -61,12 +61,24 @@ if ($projectSlug) {
 
 	</head>
 
-	<body class="<?= $isSlidesMode ? 'slides-mode' : '' ?> main-grid <?=$bodyClass?>">
-		
-		<header class="main-header">
+	<body>
+		<header class="site-header">
 			<inner-column>
-				<?php include('modules/site-header.php') ?>
+				<nav class="site-navbar">
+					<?php 
+						if ($currentPage['name'] != 'home') {
+							?> 
+							<a class="quiet-voice-mono go-back" href="javascript:history.back()">Back</a> 
+							<?php
+						} 
+					?>
+
+					<main-links>
+						<a class="quiet-voice-mono" target="_blank" href="https://lapanaderia.substack.com/">Blog</a>
+						<a class="quiet-voice-mono" href="mailto:ersaavedra.nc">Contact</a>
+					</main-links>
+				</nav>
 			</inner-column>
 		</header>
 
-		<main class="<?=$mainClass?>">
+		<main>

@@ -16,7 +16,7 @@
 		</case-intro>
 			
 		</header> -->
-		<inner-column>
+		
 		
 
 		<?php if (!empty($project['caseBlocks']) && is_array($project['caseBlocks'])): ?>
@@ -37,6 +37,7 @@
 		          </case-text-block>
 		        </case-intro>
 		      <?php endif; ?>
+		      <inner-column class="case-study-inner-column">
 
 		      <?= $caseBlock['textBlock'] ?? '' ?>
 
@@ -48,7 +49,7 @@
 		                ? implode(' ', $image['class'])
 		                : '';
 		            ?>
-		            <picture class="<?= htmlspecialchars($imgClasses) ?>">
+		            <picture data-tilt data-tilt-scale="1.1" class="<?= htmlspecialchars($imgClasses) ?>">
 		              <img loading="lazy" src="<?= htmlspecialchars($image['src'] ?? '') ?>">
 		            </picture>
 		          <?php endforeach; ?>

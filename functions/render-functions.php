@@ -16,7 +16,8 @@ function renderCSS($page) {
     	"resume" => "resume.css",
     	"goals" => "goals.css",
     	"about" => "about.css",
-    	"404" => "404.css"
+    	"404" => "404.css",
+    	"research" => "research.css"
 	];
 
 	if (ENV === 'staging') {

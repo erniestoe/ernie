@@ -1,22 +1,13 @@
 	</main>
+		<footer>
+			<inner-column>
+				<time-floater>
+					<p class="quiet-voice-mono">Winston-Salem <span id="time"></span></p>
+				</time-floater>
 
-	<footer class="site-footer <?=$currentPage['name'] === 'garden'? 'garden-footer': ''?>">
-		<inner-column>
-			<nav class="footer-nav">
-				<a class="<?= $currentPage['name'] === 'style-guide' ? 'highlight quiet-voice bold' : 'quiet-voice bold'?>" href="<?= ENV === 'production' ? '/style-guide' : '?page=style-guide'?>" class="quiet-voice bold">Style Guide <div class="menu-circle"></div></a>
-
-				<?php if ($currentPage['name'] === 'case-study'): ?>
-					<next-project>
-						<a class="quiet-voice bold" href="<?= ENV === 'production'? '/case-study/' . $project['nextProject']['slug'] : '?page=case-study&slug=' . $project['nextProject']['slug'] ?>">
-							See Next Project
-						</a>
-
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
-					</next-project>
-				<?php endif ?>
-			</nav>
+				<a href="<?= ENV === 'production'? '/research' : '?page=research'?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#1c1c1c" viewBox="0 0 256 256"><path d="M221.69,199.77,160,96.92V40h8a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16h8V96.92L34.31,199.77A16,16,0,0,0,48,224H208a16,16,0,0,0,13.72-24.23ZM110.86,103.25A7.93,7.93,0,0,0,112,99.14V40h32V99.14a7.93,7.93,0,0,0,1.14,4.11L183.36,167c-12,2.37-29.07,1.37-51.75-10.11-15.91-8.05-31.05-12.32-45.22-12.81ZM48,208l28.54-47.58c14.25-1.74,30.31,1.85,47.82,10.72,19,9.61,35,12.88,48,12.88a69.89,69.89,0,0,0,19.55-2.7L208,208Z"></path></svg></a>
 			</inner-column>
-	</footer>
+		</footer>
 
 	<script type="module" src="<?= ENV === 'production' ? '/js/script.js' : 'js/script.js'?>"></script>
 	<script type="text/javascript" src="<?= ENV === 'production' ? '/js/vanilla-tilt.js' : 'js/vanilla-tilt.js'?>"></script>
@@ -38,6 +29,5 @@
 
 	<div class="circle"></div>
 
-	<div id="video-hover-label">See Case Study</div>
 	</body>
 </html>

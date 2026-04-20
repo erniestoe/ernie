@@ -1,0 +1,11 @@
+@import "style.css";
+
+.placeholder {
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	inner-column {
+		max-width: 600px;
+		text-align: center;
+	}
+}
